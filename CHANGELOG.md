@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-29 — UTR expansion
+
+- Undertheradar scraper now paginates the Wellington region listing (was 4 events, now 8)
+- Added venue crawl: gig pages → venue pages → more gigs (8 new events, e.g. MOON)
+- Venue names now captured from venue pages
+
 ## 2026-08-29 — Launch
 
 - Scaffolded Next.js 16 + Tailwind v4 + Postgres app

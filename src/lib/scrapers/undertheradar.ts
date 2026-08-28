@@ -90,13 +90,65 @@ export function parseUtrHtml(html: string, source: string, venue?: string): Arra
   return events;
 }
 
+export function parseVenueName(html: string): string | null {
+  const $ = cheerio.load(html);
+  const name = $('h1.fn.org, h1.org').first().text().trim();
+  return name || null;
+}
+
 export const undertheradarScraper: Scraper = {
   source: 'undertheradar',
   async run(pool: Pool): Promise<ScrapeResult> {
-    const url = 'https://www.undertheradar.co.nz/gig/venue/region/Wellington';
-    const html = await fetchHtml(url);
-    await sleep(500);
-    const events = parseUtrHtml(html, this.source);
+    const seen = new Set<string>();
+    const events: Array<{ id: string; name: string; startsAt: Date | null; url?: string; venue?: string }> = [];
+    const gigUrls: string[] = [];
+    for (let page = 1; page <= 15; page += 1) {
+      const url = `https://www.undertheradar.co.nz/gig/venue/region/Wellington?page=${page}`;
+      const html = await fetchHtml(url);
+      await sleep(500);
+      const pageEvents = parseUtrHtml(html, this.source);
+      let newOnPage = 0;
+      for (const event of pageEvents) {
+        if (seen.has(event.id)) continue;
+        seen.add(event.id);
+        events.push(event);
+        if (event.url) gigUrls.push(event.url);
+        newOnPage += 1;
+      }
+      if (newOnPage === 0) break;
+    }
+
+    // Venue crawl: gig pages link to venue pages, which list more upcoming gigs.
+    const venueUrls = new Set<string>();
+    for (const gigUrl of gigUrls.slice(0, 6)) {
+      try {
+        const gigHtml = await fetchHtml(gigUrl);
+        await sleep(400);
+        const $ = cheerio.load(gigHtml);
+        $('a[href*="/venue/"]').each((_, el) => {
+          const href = $(el).attr('href') ?? '';
+          if (href.startsWith('/venue/')) venueUrls.add(`https://www.undertheradar.co.nz${href}`);
+        });
+      } catch {
+        // gig page fetch failure is non-fatal
+      }
+    }
+    for (const venueUrl of [...venueUrls].slice(0, 8)) {
+      try {
+        const venueHtml = await fetchHtml(venueUrl);
+        await sleep(400);
+        if (!venueHtml.includes('Wellington')) continue;
+        const venueName = parseVenueName(venueHtml);
+        for (const event of parseUtrHtml(venueHtml, this.source, venueName ?? undefined)) {
+          if (seen.has(event.id)) continue;
+          seen.add(event.id);
+          events.push({ ...event, venue: venueName ?? undefined });
+        }
+      } catch {
+        // venue page fetch failure is non-fatal
+      }
+    }
+
     let newCount = 0;
     for (const event of events) {
       const isNew = await upsertEvent(pool, { ...event, source: this.source });
