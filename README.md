@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wellington DJs
 
-## Getting Started
+Open directory of DJs in Wellington, NZ (Te Whanganui-a-Tara). Search DJs, browse bios/genres/socials, see upcoming gigs, discover who's moving the room. Data comes from public sources only, refreshed daily.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router) + TypeScript + Tailwind v4
+- Postgres (Supabase / Neon / Vercel Postgres / local docker all work) via `pg`
+- Scrapers: Node + cheerio + robots.txt checks, run by Vercel Cron
+- Deployed on Vercel
+
+## Quickstart
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+cp .env.example .env.local   # set DATABASE_URL
+pnpm db:setup                # migrate + seed
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Local Postgres (docker):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+docker run -d --name wellington-djs-db \
+  -e POSTGRES_PASSWORD=wellington_djs_dev -e POSTGRES_USER=wellington_djs \
+  -e POSTGRES_DB=wellington_djs -p 5433:5432 postgres:16-alpine
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Commands
 
-## Learn More
+| Command | What it does |
+| --- | --- |
+| `pnpm dev` | dev server |
+| `pnpm build` | production build |
+| `pnpm lint` | eslint |
+| `pnpm typecheck` | tsc |
+| `pnpm db:setup` | migrate + seed |
+| `pnpm db:snapshot` | export DB to `src/data/snapshot.json` (read-only fallback mode) |
+| `pnpm scrape` | run all scrapers once |
 
-To learn more about Next.js, take a look at the following resources:
+## Data modes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Postgres mode**: `DATABASE_URL` set. Live data, scrapers, analytics, opt-out all active. Daily refresh via `POST /api/cron/refresh` (Vercel Cron, 2am NZT, `vercel.json`).
+- **Snapshot mode**: no `DATABASE_URL`. Serves the committed `src/data/snapshot.json` read-only. Pages work; analytics/opt-out are no-ops. Regenerate with `pnpm db:snapshot`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## API
 
-## Deploy on Vercel
+- `GET /health` — health check (reports mode + DJ count)
+- `POST /api/search` — log a search `{ query }`
+- `POST /api/djs/[id]/view` — log a profile view
+- `POST /api/opt-out` — `{ djId }` hides a DJ from the directory
+- `GET|POST /api/cron/refresh` — run all scrapers (protect with `CRON_SECRET`; Vercel Cron sends `Authorization: Bearer <CRON_SECRET>`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Ethics
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Public data only. No paywalls, no logins, no private content.
+- Scrapers check `robots.txt`, rate-limit politely, and record every run in the `scrapes` table.
+- Any DJ can remove themselves: `/opt-out`.
+
+## Docs
+
+- [DATA_SOURCES.md](DATA_SOURCES.md) — every source, status, and how to enable key-gated ones
+- [SELF_IMPROVEMENT.md](SELF_IMPROVEMENT.md) — the feedback loop
+- [CHANGELOG.md](CHANGELOG.md) — what changed, week by week
