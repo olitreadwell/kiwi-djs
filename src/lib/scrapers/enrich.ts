@@ -2,20 +2,15 @@ import type { Pool } from 'pg';
 import { createHash } from 'node:crypto';
 import { fetchHtml, sleep } from './http';
 import { getSoundcloudClientId } from './soundcloud-client';
+import { enrichItunes, enrichMusicbrainz } from './apis';
+import { upsertDjLink } from './links';
+import { runWithConcurrency } from './concurrency';
+export { upsertDjLink };
 import type { ScrapeResult } from './types';
 
 interface DjRow {
   id: string;
   name: string;
-}
-
-export async function upsertDjLink(pool: Pool, djId: string, type: string, url: string, label?: string): Promise<void> {
-  const id = `${djId}-${type}-${createHash('sha1').update(url).digest('hex').slice(0, 12)}`;
-  await pool.query(
-    `INSERT INTO dj_links (id, dj_id, type, url, label) VALUES ($1, $2, $3, $4, $5)
-     ON CONFLICT (id) DO NOTHING`,
-    [id, djId, type, url, label ?? null],
-  );
 }
 
 export async function upsertDjArticle(
@@ -120,14 +115,50 @@ export function parseBingNewsXml(xml: string): NewsItem[] {
   let match: RegExpExecArray | null;
   while ((match = itemRegex.exec(xml)) !== null) {
     const block = match[1];
-    const title = block.match(/<title>(.*?)<\/title>/)?.[1] ?? '';
+    const title = decodeHtmlEntities(block.match(/<title>(.*?)<\/title>/)?.[1] ?? '');
     const link = block.match(/<link>(.*?)<\/link>/)?.[1] ?? '';
     const source = block.match(/<News:Source[^>]*>(.*?)<\/News:Source>/)?.[1] ?? block.match(/<source[^>]*>(.*?)<\/source>/)?.[1] ?? '';
     const pubDate = block.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] ?? '';
-    const description = block.match(/<description>(.*?)<\/description>/)?.[1] ?? '';
+    const description = decodeHtmlEntities(block.match(/<description>(.*?)<\/description>/)?.[1] ?? '');
     if (title && link) items.push({ title, link, source, pubDate, description });
   }
   return items;
+}
+
+// Decode HTML entities (&#232; → è, &amp; → &, ...) in RSS titles/snippets.
+const NAMED_ENTITIES: Record<string, string> = {
+  amp: '&',
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  apos: "'",
+  nbsp: ' ',
+  ndash: '–',
+  mdash: '—',
+  lsquo: '‘',
+  rsquo: '’',
+  ldquo: '“',
+  rdquo: '”',
+  hellip: '…',
+  eacute: 'é',
+  egrave: 'è',
+  agrave: 'à',
+  ugrave: 'ù',
+  oacute: 'ó',
+  aacute: 'á',
+  iacute: 'í',
+  uacute: 'ú',
+  ntilde: 'ñ',
+  ccedil: 'ç',
+  szlig: 'ß',
+};
+
+export function decodeHtmlEntities(input: string): string {
+  return input.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (entity, code: string) => {
+    if (code.startsWith('#x')) return String.fromCodePoint(parseInt(code.slice(2), 16));
+    if (code.startsWith('#')) return String.fromCodePoint(parseInt(code.slice(1), 10));
+    return NAMED_ENTITIES[code] ?? entity;
+  });
 }
 
 export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
@@ -197,6 +228,8 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     { source: 'enrich-mixcloud', getDjs: mixcloudDjs, run: enrichMixcloud },
     { source: 'enrich-news', getDjs: topDjs, run: enrichNews },
     { source: 'enrich-soundcloud', getDjs: topDjs, preflight: soundcloudPreflight, run: enrichSoundcloud },
+    { source: 'enrich-musicbrainz', getDjs: topDjs, run: enrichMusicbrainz },
+    { source: 'enrich-itunes', getDjs: topDjs, run: enrichItunes },
   ];
   for (const source of sources) {
     if (source.preflight) {
@@ -214,7 +247,9 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     let found = 0;
     let errors = 0;
     let rateLimited = 0;
-    for (const dj of djs) {
+    // Enrich several DJs at once per source; per-DJ rate-limit backoff
+    // (Mixcloud 429, SoundCloud preflight) still applies.
+    await runWithConcurrency(djs, 3, async (dj) => {
       try {
         const result = await source.run(pool, dj);
         found += result.items_found;
@@ -227,7 +262,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
         console.log(`  ${source.source}: ${dj.name} → error (${message})`);
       }
       await sleep(300);
-    }
+    });
     const djCount = djs.length;
     const result: ScrapeResult = {
       source: source.source,

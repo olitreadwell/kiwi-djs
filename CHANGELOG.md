@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-29 — Festival lineup sources + multi-event verification
+
+- New scrapers: Northern Bass (`northern-bass`), The Others Way (`the-others-way`), Snow Machine (`snow-machine`), Newtown Festival (`newtown-festival`), Earth Beat (`earthbeat`), Tora Bombora (`tora-bombora`, no lineup announced yet), JamBase Cubadupa (`jambase`, bot-gated)
+- Resident Advisor events via GraphQL (`resident-advisor`) — event pages are captcha-gated but `ra.co/graphql` is open; event IDs live in `src/lib/scrapers/residentadvisor.ts` (first: Carlucci Carnival, ra.co/events/2468041)
+- Festival lineups only add DJ acts — bands, choirs, dance troupes, circus and singer-songwriter acts are filtered out (name/description/genre-tag classifier); non-DJ acts get no candidate row and no event
+- DJs playing at 2+ events earn the new `multi-gigs` verification evidence; a candidate is listed only with ≥2 verifying pieces of info (`verification_level >= 2`)
+- Festival lineup links (`type='festival'`) no longer count as verification evidence — a single festival appearance is not enough to list someone
+- Earth Beat genre tags (per-contributor pages) drive DJ/band classification; curl fallback for its TLS-fingerprint bot block
+- Verification now applies to every DJ (seed, manual, discovered, festival, RA) — no one is listed without ≥2 verifying pieces of info
+
 ## 2026-08-29 — Candidate enrichment pipeline
 
 - Enrichment now covers discovery candidates, not just active DJs: active DJs first, then highest-evidence candidates (by `verification_level`, then `data_completeness`), so candidates can accumulate mixes/links/articles

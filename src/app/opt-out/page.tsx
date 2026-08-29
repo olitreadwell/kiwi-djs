@@ -1,6 +1,6 @@
 import { OptOutForm } from '@/components/opt-out-form';
 
-export const metadata = { title: 'Opt out — Wellington DJs' };
+export const metadata = { title: 'Opt out | NZ DJs' };
 
 export default function OptOutPage() {
   return (

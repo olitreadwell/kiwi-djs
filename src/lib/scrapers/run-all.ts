@@ -5,9 +5,19 @@ import { rogueScraper } from './rogue';
 import { radioactiveScraper } from './radioactive';
 import { soundcloudScraper } from './soundcloud';
 import { eventfindaScraper } from './eventfinda';
+import { northernBassScraper } from './northernbass';
+import { othersWayScraper } from './theothersway';
+import { snowMachineScraper } from './snowmachine';
+import { newtownFestivalScraper } from './newtownfestival';
+import { earthbeatScraper } from './earthbeat';
+import { toraBomboraScraper } from './torabombora';
+import { jamBaseScraper } from './jambase';
+import { residentAdvisorScraper } from './residentadvisor';
 import { bestEffortScrapers } from './best-effort';
 import { enrichAllDjs } from './enrich';
+import { enrichVenueRegions } from './apis';
 import { discoverAll, verifyDiscovered } from './discover';
+import { runWithConcurrency } from './concurrency';
 import type { Scraper, ScrapeResult } from './types';
 
 const scrapers: Scraper[] = [
@@ -17,7 +27,16 @@ const scrapers: Scraper[] = [
   radioactiveScraper,
   soundcloudScraper,
   eventfindaScraper,
+  northernBassScraper,
+  othersWayScraper,
+  snowMachineScraper,
+  newtownFestivalScraper,
+  earthbeatScraper,
+  toraBomboraScraper,
+  jamBaseScraper,
+  residentAdvisorScraper,
   ...bestEffortScrapers,
+  { source: 'enrich-venue-regions', run: enrichVenueRegions },
 ];
 
 export async function runAllScrapers(
@@ -28,7 +47,9 @@ export async function runAllScrapers(
   const activeScrapers = options.disabledSources
     ? scrapers.filter((scraper) => !options.disabledSources?.has(scraper.source))
     : scrapers;
-  for (const scraper of activeScrapers) {
+  // Independent sources run in parallel (each scraper keeps its own
+  // 500ms+ delay), so a cycle collects data from several sites at once.
+  await runWithConcurrency(activeScrapers, 3, async (scraper) => {
     const startedAt = new Date();
     let result: ScrapeResult;
     try {
@@ -43,7 +64,8 @@ export async function runAllScrapers(
       [scraper.source, result.status, result.items_found, result.items_new, result.error ?? null, startedAt],
     );
     results.push(result);
-  }
+  });
+  results.sort((a, b) => (a.source ?? '').localeCompare(b.source ?? ''));
   results.push(...(await discoverAll(pool)));
   results.push(...(await enrichAllDjs(pool)));
   // Second verification pass after enrichment so a candidate that just

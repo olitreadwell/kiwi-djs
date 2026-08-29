@@ -41,8 +41,11 @@ CREATE TABLE IF NOT EXISTS venues (
   name          TEXT NOT NULL,
   address       TEXT,
   url           TEXT,
+  region        TEXT,
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+ALTER TABLE venues ADD COLUMN IF NOT EXISTS region TEXT;
 
 CREATE TABLE IF NOT EXISTS events (
   id            TEXT PRIMARY KEY,

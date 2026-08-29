@@ -177,8 +177,11 @@ export async function discoverFromMixcloud(pool: Pool): Promise<ScrapeResult> {
 
 export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
   // Evidence-weighted verification: level = distinct evidence categories
-  // (mixes / links / articles / gigs). level >= 2 flips a candidate to an
-  // active (listed) DJ; level keeps climbing as more sources accumulate.
+  // (mixes / links / articles / gigs / multi-gigs). level >= 2 flips a
+  // candidate to an active (listed) DJ; level keeps climbing as more
+  // sources accumulate. multi-gigs = playing at 2+ events, which is its
+  // own verification signal (e.g. a DJ on two festival lineups). Applies to
+  // every DJ — no one is listed without at least 2 verifying pieces of info.
   const weighted = await pool.query(
     `UPDATE djs SET
        verification_level = evidence.level,
@@ -188,17 +191,19 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
      FROM (
        SELECT d.id,
          (CASE WHEN EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id) THEN 1 ELSE 0 END) +
-         (CASE WHEN EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id) THEN 1 ELSE 0 END) +
+          (CASE WHEN EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id AND l.type <> 'festival') THEN 1 ELSE 0 END) +
          (CASE WHEN EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id) THEN 1 ELSE 0 END) +
-         (CASE WHEN EXISTS (SELECT 1 FROM events e WHERE e.dj_id = d.id) THEN 1 ELSE 0 END) AS level,
+         (CASE WHEN EXISTS (SELECT 1 FROM events e WHERE e.dj_id = d.id) THEN 1 ELSE 0 END) +
+         (CASE WHEN (SELECT count(*) FROM events e WHERE e.dj_id = d.id) >= 2 THEN 1 ELSE 0 END) AS level,
          COALESCE(
            ARRAY(
              SELECT source
-             FROM unnest(ARRAY['mixes', 'links', 'articles', 'gigs']) AS source
+             FROM unnest(ARRAY['mixes', 'links', 'articles', 'gigs', 'multi-gigs']) AS source
              WHERE (source = 'mixes' AND EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id))
-                OR (source = 'links' AND EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id))
+                OR (source = 'links' AND EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id AND l.type <> 'festival'))
                 OR (source = 'articles' AND EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id))
                 OR (source = 'gigs' AND EXISTS (SELECT 1 FROM events e WHERE e.dj_id = d.id))
+                OR (source = 'multi-gigs' AND (SELECT count(*) FROM events e WHERE e.dj_id = d.id) >= 2)
            ),
            '{}'
          ) AS sources
@@ -208,7 +213,6 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
      WHERE djs.id = evidence.id
        AND djs.opt_out = FALSE
        AND djs.is_nz = TRUE
-       AND djs.source IN ('discovered', 'soundcloud', 'news-article', 'mixcloud', 'radioactive')
        AND (djs.verification_level <> evidence.level OR djs.verification_sources <> evidence.sources)
      RETURNING djs.id`,
   );

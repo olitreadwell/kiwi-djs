@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NZ DJs — Discover DJs across Aotearoa",
+  title: "NZ DJs | Discover DJs across Aotearoa",
   description: "Searchable directory of New Zealand DJs: bios, mixes, socials and upcoming gigs.",
 };
 

@@ -128,18 +128,24 @@ function installLaunchdAgent(): void {
   const home = process.env.HOME ?? '/Users/olitreadwell';
   const plistPath = `${home}/Library/LaunchAgents/com.olitreadwell.nz-djs-loop.plist`;
   const repoPath = REPO_ROOT.replace(/\/$/, '');
-  const pnpmBin = run('which', ['pnpm']).out || 'pnpm';
+  // Run node directly, not `pnpm loop` — pnpm's startup under launchd
+  // (no TTY) intermittently hangs before spawning the child.
+  const nodeBin = run('which', ['node']).out || '/usr/local/bin/node';
   const plist = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>Label</key>
   <string>com.olitreadwell.nz-djs-loop</string>
+  <key>WorkingDirectory</key>
+  <string>${repoPath}</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/bin/zsh</string>
-    <string>-lc</string>
-    <string>cd ${repoPath} && ${pnpmBin} loop</string>
+    <string>${nodeBin}</string>
+    <string>--env-file=.env.local</string>
+    <string>--import</string>
+    <string>tsx</string>
+    <string>scripts/loop.ts</string>
   </array>
   <key>EnvironmentVariables</key>
   <dict>

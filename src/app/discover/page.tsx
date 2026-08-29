@@ -25,7 +25,7 @@ export default async function DiscoverPage() {
 
       <h2 className="mt-12 text-xl font-bold text-stone-100">Needs more data</h2>
       <p className="mt-1 font-mono text-xs text-stone-500">
-        Searched often but thin on details — the self-improvement loop targets these next.
+        Searched often but thin on details. The self-improvement loop targets these next.
       </p>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {needsData.map((dj) => <DjCard key={dj.id} dj={dj} />)}

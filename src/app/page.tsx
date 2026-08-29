@@ -21,7 +21,7 @@ export default async function HomePage() {
           New Zealand <span className="text-amber-400">DJs</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-stone-400">
-          The open directory of DJs across Aotearoa New Zealand — NZ DJs. Bios, mixes, socials and upcoming gigs — pulled from public sources, updated daily.
+          The open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials and upcoming gigs, pulled from public sources and updated daily.
         </p>
         <div className="mx-auto mt-8 max-w-xl">
           <SearchBox autoFocus />
