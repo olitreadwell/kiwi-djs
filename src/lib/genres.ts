@@ -98,3 +98,31 @@ export function normaliseGenre(genre: string): string {
 export function normaliseGenres(genres: string[]): string[] {
   return [...new Set(genres.map(normaliseGenre).filter(Boolean))];
 }
+
+// Only keep tags that resolve to a known genre, so track tags don't pollute
+// genres with artist names and track titles (#33).
+const KNOWN_GENRE_KEYS = new Set(Object.keys(GENRE_ALIASES));
+
+// Single-word genres used to match inside compound tags ("tech house",
+// "jersey club") without matching "technology" or "house music" noise.
+const GENRE_WORDS = new Set([
+  'house', 'techno', 'dubstep', 'garage', 'breaks', 'disco', 'funk', 'soul', 'jazz', 'reggae',
+  'dub', 'dancehall', 'afro', 'latin', 'ambient', 'downtempo', 'trip', 'pop', 'rock', 'metal',
+  'punk', 'folk', 'classical', 'trance', 'electro', 'bass', 'jungle', 'grime', 'minimal',
+  'synthwave', 'hardcore', 'hardstyle', 'gabber', 'cumbia', 'amapiano', 'gqom', 'dnb', 'edm',
+  'boogie', 'eclectic', 'experimental', 'lounge', 'chillout', 'world', 'country', 'indie',
+  'alternative', 'dance', 'electronic', 'rap', 'hip', 'techno', 'house',
+]);
+
+export function isGenreTag(tag: string): boolean {
+  const key = tag.trim().toLowerCase().replace(/[^a-z0-9& ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  if (!key || key.length > 40) return false;
+  if (KNOWN_GENRE_KEYS.has(key)) return true;
+  const words = key.split(' ');
+  if (words.length === 1) return GENRE_WORDS.has(words[0]);
+  // Compound tag: any 2-word window matching a known key counts.
+  for (let i = 0; i < words.length - 1; i += 1) {
+    if (KNOWN_GENRE_KEYS.has(`${words[i]} ${words[i + 1]}`)) return true;
+  }
+  return false;
+}

@@ -4,6 +4,7 @@ import { fetchHtml, sleep } from './http';
 import { getSoundcloudClientId } from './soundcloud-client';
 import { enrichItunes, enrichMusicbrainz } from './apis';
 import { upsertDjLink } from './links';
+import { isGenreTag, normaliseGenres } from '../genres';
 export { upsertDjLink };
 import type { ScrapeResult } from './types';
 
@@ -193,7 +194,9 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
   const url = `https://api-v2.soundcloud.com/search/users?q=${encodeURIComponent(dj.name)}&client_id=${clientId}&limit=5`;
   const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
   if (!res.ok) throw new Error(`SoundCloud HTTP ${res.status}`);
-  const data = (await res.json()) as { collection?: Array<{ permalink: string; username: string; avatar_url?: string }> };
+  const data = (await res.json()) as {
+    collection?: Array<{ id: number; permalink: string; username: string; avatar_url?: string }>;
+  };
   let found = 0;
   for (const user of data.collection ?? []) {
     if (!user.username.toLowerCase().includes(dj.name.toLowerCase())) continue;
@@ -204,6 +207,35 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
       user.avatar_url ?? null,
       dj.id,
     ]);
+    // Pull the artist's own tracks: aggregate genre tags (#33) and add
+    // tracks as mixes. Only the artist's own uploads count (#25).
+    const tracksUrl = `https://api-v2.soundcloud.com/users/${user.id}/tracks?client_id=${clientId}&limit=50`;
+    const tracksRes = await fetch(tracksUrl, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+    if (tracksRes.ok) {
+      const tracks = (await tracksRes.json()) as {
+        collection?: Array<{ permalink_url: string; title: string; genre?: string; tag_list?: string; duration?: number }>;
+      };
+      const genres = new Set<string>();
+      for (const track of tracks.collection ?? []) {
+        if (!track.permalink_url || !track.title) continue;
+        if (track.genre && isGenreTag(track.genre)) genres.add(track.genre);
+        for (const tag of (track.tag_list ?? '').split(/\s+/)) {
+          const clean = tag.replace(/^"|"$/g, '');
+          if (clean && isGenreTag(clean)) genres.add(clean);
+        }
+        if (track.duration && track.duration >= 60_000) {
+          await upsertDjMix(pool, dj.id, 'soundcloud', track.title, track.permalink_url, classifyMixTitle(track.title));
+        }
+      }
+      if (genres.size > 0) {
+        const normalised = normaliseGenres([...genres]);
+        await pool.query(
+          `UPDATE djs SET genres = (SELECT array_agg(DISTINCT g) FROM unnest(genres || $2::text[]) AS g) WHERE id = $1`,
+          [dj.id, normalised],
+        );
+      }
+    }
+    await sleep(500);
   }
   return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: 0, error: found === 0 ? 'No SoundCloud match' : undefined };
 }
