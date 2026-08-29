@@ -1,5 +1,7 @@
 # AGENTS.md
 
+> **Read `CONTEXT.md` first** — it is the live project handoff: current state, active goal, in-progress work, gotchas.
+
 ## Commands
 
 - `pnpm dev` / `pnpm build` / `pnpm lint` / `pnpm typecheck`
