@@ -1,18 +1,16 @@
 {
-  "exportedAt": "2026-08-29T04:47:30.300Z",
+  "exportedAt": "2026-08-29T06:02:02.791Z",
   "djs": [
     {
-      "id": "frank-booker",
-      "name": "Frank Booker",
-      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
+      "id": "state-of-mind",
+      "name": "State of Mind",
+      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
       "genres": [
-        "house",
-        "boogie",
-        "disco"
+        "drum & bass"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
+      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
@@ -22,7 +20,7 @@
       "data_completeness": 55,
       "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.351Z",
+      "created_at": "2026-08-28T12:17:48.356Z",
       "updated_at": "2026-08-29T04:36:25.685Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
@@ -41,15 +39,15 @@
       "bio": null,
       "genres": [],
       "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
+      "image_url": "https://i1.sndcdn.com/avatars-r2xzAdRCppmtiYFI-DkajpQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/queen-estere",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 0,
+      "data_completeness": 25,
       "source": "manual",
       "opt_out": false,
       "created_at": "2026-08-29T04:43:58.604Z",
@@ -96,15 +94,17 @@
       "last_played_at": null
     },
     {
-      "id": "state-of-mind",
-      "name": "State of Mind",
-      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
+      "id": "frank-booker",
+      "name": "Frank Booker",
+      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
       "genres": [
-        "drum & bass"
+        "house",
+        "boogie",
+        "disco"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
+      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
@@ -114,7 +114,131 @@
       "data_completeness": 55,
       "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.356Z",
+      "created_at": "2026-08-28T12:17:48.351Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "frida",
+      "name": "Frida",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-TqAp7PG0xmjuVINL-t9QVoQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/exxtratell",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.468Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "producer-emma",
+      "name": "Producer Emma",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 0,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.543Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "millie",
+      "name": "Millie",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/millie-931007868",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.622Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "dj-cxl",
+      "name": "DJ CXL",
+      "bio": "Wellington drum & bass DJ and producer. Regular on the NZ DnB circuit.",
+      "genres": [
+        "drum & bass"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000489830883-w73czw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/deejaycxl",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.348Z",
       "updated_at": "2026-08-29T04:36:25.685Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
@@ -161,74 +285,6 @@
       "last_played_at": null
     },
     {
-      "id": "dj-cxl",
-      "name": "DJ CXL",
-      "bio": "Wellington drum & bass DJ and producer. Regular on the NZ DnB circuit.",
-      "genres": [
-        "drum & bass"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000489830883-w73czw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/deejaycxl",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.348Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "dj-fitchie",
-      "name": "DJ Fitchie",
-      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
-      "genres": [
-        "funk",
-        "reggae",
-        "soul",
-        "hip-hop"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.346Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "sam",
       "name": "Sam",
       "bio": null,
@@ -261,28 +317,34 @@
       "last_played_at": null
     },
     {
-      "id": "broderbeats",
-      "name": "Broderbeats",
-      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
-      "genres": [],
+      "id": "dj-fitchie",
+      "name": "DJ Fitchie",
+      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
+      "genres": [
+        "funk",
+        "reggae",
+        "soul",
+        "hip-hop"
+      ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 40,
+      "data_completeness": 55,
       "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-29T03:51:17.871Z",
+      "created_at": "2026-08-28T12:17:48.346Z",
       "updated_at": "2026-08-29T04:36:25.685Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
+        "mixes",
         "links",
         "articles"
       ],
@@ -323,39 +385,101 @@
       "is_nz": true,
       "upcoming_events": 0,
       "last_played_at": null
+    },
+    {
+      "id": "broderbeats",
+      "name": "Broderbeats",
+      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-29T03:51:17.871Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "lucas",
+      "name": "Lucas",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-0qvoPzot1nVJEwsX-aO0JyQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/realjoynerlucas",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.591Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "don-luchito",
+      "name": "Don Luchito",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 0,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.488Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
     }
   ],
   "events": [
-    {
-      "id": "undertheradar-103503",
-      "name": "Bass Borne",
-      "venue": null,
-      "starts_at": "2026-09-05T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103503/Bass-Borne.utr",
-      "source": "undertheradar",
-      "dj_id": "bass-borne",
-      "dj_name": "Bass Borne"
-    },
-    {
-      "id": "sanfran-1415326",
-      "name": "KITA",
-      "venue": "San Fran",
-      "starts_at": "2026-09-25T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1417811",
-      "name": "KPOP Club Night",
-      "venue": "San Fran",
-      "starts_at": "2026-09-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
     {
       "id": "sanfran-146474",
       "name": "ASH ‘1977’ 30th Anniversary Tour",
@@ -377,16 +501,6 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1477466",
-      "name": "Reece Mastin",
-      "venue": "San Fran",
-      "starts_at": "2026-09-19T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/reece-mastin-tickets-ae1477466",
-      "source": "sanfran",
-      "dj_id": "reece-mastin",
-      "dj_name": "Reece Mastin"
-    },
-    {
       "id": "sanfran-2148",
       "name": "August Burns Red",
       "venue": "San Fran",
@@ -395,16 +509,6 @@
       "source": "sanfran",
       "dj_id": "august-burns-red",
       "dj_name": "August Burns Red"
-    },
-    {
-      "id": "sanfran-1629242",
-      "name": "Mountain Boy",
-      "venue": "San Fran",
-      "starts_at": "2026-10-08T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/mountain-boy-tickets-ae1629242",
-      "source": "sanfran",
-      "dj_id": "mountain-boy",
-      "dj_name": "Mountain Boy"
     },
     {
       "id": "sanfran-1488974",
@@ -455,16 +559,6 @@
       "source": "sanfran",
       "dj_id": "taking-tangents",
       "dj_name": "Taking Tangents"
-    },
-    {
-      "id": "sanfran-1688826",
-      "name": "Buckshot",
-      "venue": "San Fran",
-      "starts_at": "2026-12-02T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
     },
     {
       "id": "sanfran-1078519",
@@ -667,16 +761,6 @@
       "dj_name": "Parasitic Infestation"
     },
     {
-      "id": "sanfran-288274",
-      "name": "24 Hour Party People",
-      "venue": "San Fran",
-      "starts_at": "2026-08-29T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/24-hour-party-people-tickets-ae288274",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
       "id": "undertheradar-103379",
       "name": "Xile & Zuko - New Zealand 2026",
       "venue": null,
@@ -687,14 +771,34 @@
       "dj_name": "Xile"
     },
     {
-      "id": "sanfran-1681897",
-      "name": "Great Sounds Great Festival 202",
+      "id": "sanfran-1415326",
+      "name": "KITA",
       "venue": "San Fran",
-      "starts_at": "2026-11-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/great-sounds-great-festival-2026-tickets-ae1681897",
+      "starts_at": "2026-09-25T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
+    },
+    {
+      "id": "sanfran-1417811",
+      "name": "KPOP Club Night",
+      "venue": "San Fran",
+      "starts_at": "2026-09-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-103503",
+      "name": "Bass Borne",
+      "venue": null,
+      "starts_at": "2026-09-05T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103503/Bass-Borne.utr",
+      "source": "undertheradar",
+      "dj_id": "bass-borne",
+      "dj_name": "Bass Borne"
     },
     {
       "id": "sanfran-1574004",
@@ -707,6 +811,46 @@
       "dj_name": "Emerson"
     },
     {
+      "id": "sanfran-288274",
+      "name": "24 Hour Party People",
+      "venue": "San Fran",
+      "starts_at": "2026-08-29T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/24-hour-party-people-tickets-ae288274",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1681897",
+      "name": "Great Sounds Great Festival 202",
+      "venue": "San Fran",
+      "starts_at": "2026-11-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/great-sounds-great-festival-2026-tickets-ae1681897",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1477466",
+      "name": "Reece Mastin",
+      "venue": "San Fran",
+      "starts_at": "2026-09-19T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/reece-mastin-tickets-ae1477466",
+      "source": "sanfran",
+      "dj_id": "reece-mastin",
+      "dj_name": "Reece Mastin"
+    },
+    {
+      "id": "sanfran-1629242",
+      "name": "Mountain Boy",
+      "venue": "San Fran",
+      "starts_at": "2026-10-08T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/mountain-boy-tickets-ae1629242",
+      "source": "sanfran",
+      "dj_id": "mountain-boy",
+      "dj_name": "Mountain Boy"
+    },
+    {
       "id": "sanfran-1603030",
       "name": "Where’s Jai",
       "venue": "San Fran",
@@ -717,41 +861,11 @@
       "dj_name": "Where’s Jai"
     },
     {
-      "id": "undertheradar-104409",
-      "name": "Sublimate - Wellington Jazz Festival",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104409/Sublimate---Wellington-Jazz-Festival.utr",
-      "source": "undertheradar",
-      "dj_id": "sublimate",
-      "dj_name": "Sublimate"
-    },
-    {
-      "id": "sanfran-1693142",
-      "name": "Myshaan",
+      "id": "sanfran-1688826",
+      "name": "Buckshot",
       "venue": "San Fran",
-      "starts_at": "2026-11-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1690529",
-      "name": "2010s Time Machine Party - Wellington",
-      "venue": "San Fran",
-      "starts_at": "2026-09-12T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/2010s-time-machine-party-wellington-tickets-ae1690529",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1690521",
-      "name": "Convergence – A Drag Night Fundraiser",
-      "venue": "San Fran",
-      "starts_at": "2026-09-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
+      "starts_at": "2026-12-02T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
@@ -765,26 +879,6 @@
       "source": "undertheradar",
       "dj_id": "absolutely-positively-footwork",
       "dj_name": " Absolutely Positively Footwork"
-    },
-    {
-      "id": "sanfran-1690409",
-      "name": "Avatar - Earth, Wind & Fire Tribute",
-      "venue": "San Fran",
-      "starts_at": "2026-10-18T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/avatar-earth-wind-and-fire-tribute-tickets-ae1690409",
-      "source": "sanfran",
-      "dj_id": "avatar",
-      "dj_name": "Avatar"
-    },
-    {
-      "id": "rogue-vagabond-104067",
-      "name": "The New Zealand Swing Quartet - The Music Of New Orleans",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-11T21:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104067/The-New-Zealand-Swing-Quartet---The-Music-Of-New-Orleans.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "swing-quartet",
-      "dj_name": "Swing Quartet"
     },
     {
       "id": "undertheradar-104388",
@@ -817,6 +911,16 @@
       "dj_name": "Silver Sonics w"
     },
     {
+      "id": "undertheradar-104409",
+      "name": "Sublimate - Wellington Jazz Festival",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104409/Sublimate---Wellington-Jazz-Festival.utr",
+      "source": "undertheradar",
+      "dj_id": "sublimate",
+      "dj_name": "Sublimate"
+    },
+    {
       "id": "undertheradar-103788",
       "name": "Rothko Records: Mothra With Sunwraith, Crying Ivy, Scream By Tulips",
       "venue": null,
@@ -827,12 +931,42 @@
       "dj_name": "Rothko Records: Mothra"
     },
     {
+      "id": "sanfran-1693142",
+      "name": "Myshaan",
+      "venue": "San Fran",
+      "starts_at": "2026-11-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1690529",
+      "name": "2010s Time Machine Party - Wellington",
+      "venue": "San Fran",
+      "starts_at": "2026-09-12T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/2010s-time-machine-party-wellington-tickets-ae1690529",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
       "id": "undertheradar-104261",
       "name": "Moonday Quiz Hosted By Young Gho$t",
       "venue": "MOON",
       "starts_at": null,
       "url": "https://www.undertheradar.co.nz/gig/104261/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
       "source": "undertheradar",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1690521",
+      "name": "Convergence – A Drag Night Fundraiser",
+      "venue": "San Fran",
+      "starts_at": "2026-09-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
+      "source": "sanfran",
       "dj_id": null,
       "dj_name": null
     },
@@ -855,6 +989,26 @@
       "source": "undertheradar",
       "dj_id": null,
       "dj_name": null
+    },
+    {
+      "id": "sanfran-1690409",
+      "name": "Avatar - Earth, Wind & Fire Tribute",
+      "venue": "San Fran",
+      "starts_at": "2026-10-18T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/avatar-earth-wind-and-fire-tribute-tickets-ae1690409",
+      "source": "sanfran",
+      "dj_id": "avatar",
+      "dj_name": "Avatar"
+    },
+    {
+      "id": "rogue-vagabond-104067",
+      "name": "The New Zealand Swing Quartet - The Music Of New Orleans",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-11T21:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104067/The-New-Zealand-Swing-Quartet---The-Music-Of-New-Orleans.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "swing-quartet",
+      "dj_name": "Swing Quartet"
     },
     {
       "id": "undertheradar-104262",
@@ -1759,6 +1913,62 @@
       "label": "RadioActive.FM show: Music Without Subtitles with TV DiSKO – Brought to you by Octo And Herbs"
     },
     {
+      "id": "estere-mixcloud-3c3fd95eecdf",
+      "dj_id": "estere",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/gomez-medina-cristianalejandro/",
+      "label": "Mixcloud: Gomez Medina CristianAlejandro"
+    },
+    {
+      "id": "estere-soundcloud-2cdfa41d69fb",
+      "dj_id": "estere",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/esterelapa56",
+      "label": "SoundCloud: Estere Lapa"
+    },
+    {
+      "id": "estere-soundcloud-bd9ed9e34728",
+      "dj_id": "estere",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/estereeee",
+      "label": "SoundCloud: estere"
+    },
+    {
+      "id": "estere-soundcloud-c70c451a472e",
+      "dj_id": "estere",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/estere-279037855",
+      "label": "SoundCloud: estere"
+    },
+    {
+      "id": "estere-soundcloud-29ba66eeb044",
+      "dj_id": "estere",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/estere-bi-erniece",
+      "label": "SoundCloud: estere"
+    },
+    {
+      "id": "estere-soundcloud-d7dd5ea1f357",
+      "dj_id": "estere",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/queen-estere",
+      "label": "SoundCloud: QUEEN ESTERE"
+    },
+    {
+      "id": "sam-soundcloud-006a0c67724a",
+      "dj_id": "sam",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/samgellaitry",
+      "label": "SoundCloud: sam gellaitry"
+    },
+    {
+      "id": "don-luchito-mixcloud-d284f75c2380",
+      "dj_id": "don-luchito",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Radioactive_FM/",
+      "label": "Mixcloud: RadioActive.FM | 88.6FM"
+    },
+    {
       "id": "sean-johnston-mixcloud-e50678e5f5b3",
       "dj_id": "sean-johnston",
       "type": "mixcloud",
@@ -1913,6 +2123,13 @@
       "label": "SoundCloud: SIAN"
     },
     {
+      "id": "producer-emma-mixcloud-d284f75c2380",
+      "dj_id": "producer-emma",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Radioactive_FM/",
+      "label": "Mixcloud: RadioActive.FM | 88.6FM"
+    },
+    {
       "id": "state-of-mind-soundcloud-84d15c38d2aa",
       "dj_id": "state-of-mind",
       "type": "soundcloud",
@@ -1981,6 +2198,363 @@
       "type": "soundcloud",
       "url": "https://soundcloud.com/broderbeats-music",
       "label": "SoundCloud: broderbeats"
+    },
+    {
+      "id": "frida-mixcloud-7778accbf7be",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/MaxiRadio/",
+      "label": "Mixcloud: Maxi Radio"
+    },
+    {
+      "id": "frida-mixcloud-e74f7775ef54",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/adambeyer/",
+      "label": "Mixcloud: Adam Beyer"
+    },
+    {
+      "id": "frida-mixcloud-51da1fe59ac3",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/frida84/",
+      "label": "Mixcloud: frida_s"
+    },
+    {
+      "id": "frida-mixcloud-de10815523cd",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Fabio_Florido/",
+      "label": "Mixcloud: Fabio Florido.Official"
+    },
+    {
+      "id": "frida-mixcloud-bda5dad9450e",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/eclectic-ladyland/",
+      "label": "Mixcloud: The Eclectic Ladyland Liveshow"
+    },
+    {
+      "id": "frida-mixcloud-02c954fb7a6a",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/fridanipol/",
+      "label": "Mixcloud: Frida Nipol"
+    },
+    {
+      "id": "frida-mixcloud-b9aa36df4e44",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/djmunja/",
+      "label": "Mixcloud: Reljic DjMunja Dejan"
+    },
+    {
+      "id": "frida-mixcloud-661e4ecd82b1",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Mej%C3%ADas/",
+      "label": "Mixcloud: Mejías"
+    },
+    {
+      "id": "frida-mixcloud-2bf17cdf5aa1",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/borisalenko/",
+      "label": "Mixcloud: borisalenko"
+    },
+    {
+      "id": "frida-mixcloud-8d0c5c9afe5d",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/djsunparadox/",
+      "label": "Mixcloud: djsunparadox"
+    },
+    {
+      "id": "frida-mixcloud-2a6c8c0c4df3",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/frida-harnesk/",
+      "label": "Mixcloud: Frida Harnesk"
+    },
+    {
+      "id": "frida-mixcloud-9cb5e2655172",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/TheDirtySpitfire/",
+      "label": "Mixcloud: The Dirty Spitfire"
+    },
+    {
+      "id": "frida-mixcloud-0884201d9f64",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/DeepMnmlTech/",
+      "label": "Mixcloud: DeepMnmlTech"
+    },
+    {
+      "id": "frida-mixcloud-a8e9218e6eab",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/OrokoRadio/",
+      "label": "Mixcloud: Oroko Radio"
+    },
+    {
+      "id": "frida-mixcloud-6be6e6ba753a",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/selectorc/",
+      "label": "Mixcloud: Selector C"
+    },
+    {
+      "id": "frida-mixcloud-1a2867fff81d",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/justabout/",
+      "label": "Mixcloud: jմՏԵɑҍօմԵ"
+    },
+    {
+      "id": "frida-mixcloud-9268f65f3caf",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/fridakaulo/",
+      "label": "Mixcloud: fridakaulo"
+    },
+    {
+      "id": "frida-mixcloud-a8ba20befad1",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/camamuga/",
+      "label": "Mixcloud: Carlos Muñoz (camamuga)"
+    },
+    {
+      "id": "frida-mixcloud-e2e5a5684259",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/styles-shuping/",
+      "label": "Mixcloud: Styles Shuping"
+    },
+    {
+      "id": "frida-mixcloud-41f5e148a190",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/nightshifttoronto/",
+      "label": "Mixcloud: TheNightShiftTO"
+    },
+    {
+      "id": "frida-mixcloud-dbdd29044aee",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/angelina-m%C3%BCller2/",
+      "label": "Mixcloud: AngelinaSissiFee Tyrock (TB32)"
+    },
+    {
+      "id": "lucas-mixcloud-69f0435c5e9e",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/lucas-kong2/",
+      "label": "Mixcloud: DJ LUCAS"
+    },
+    {
+      "id": "lucas-mixcloud-787c0f79daa9",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/lucas-hhs/",
+      "label": "Mixcloud: Lucas"
+    },
+    {
+      "id": "lucas-mixcloud-0fc9fa4eddf5",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/jenkemmag/",
+      "label": "Mixcloud: JENKEM MAGAZINE"
+    },
+    {
+      "id": "lucas-mixcloud-363837585ec9",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/",
+      "label": "Mixcloud: Sang Lucas"
+    },
+    {
+      "id": "lucas-mixcloud-fb66995f6b5a",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/djflexifresh/",
+      "label": "Mixcloud: DJ Flexi Fresh"
+    },
+    {
+      "id": "lucas-mixcloud-a1d202efa4c1",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/gavin-lucas/",
+      "label": "Mixcloud: Gavin Lucas"
+    },
+    {
+      "id": "lucas-mixcloud-e1fd91853bb6",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/jarty-ye/",
+      "label": "Mixcloud: DJ'YE"
+    },
+    {
+      "id": "millie-mixcloud-5487b11fe026",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/thefaceradiobk/",
+      "label": "Mixcloud: The Face Radio"
+    },
+    {
+      "id": "millie-mixcloud-f8aaa2712be4",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/mol_/",
+      "label": "Mixcloud: Mol"
+    },
+    {
+      "id": "millie-mixcloud-bcc34c8665a8",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/melodicdistraction/",
+      "label": "Mixcloud: Melodic Distraction"
+    },
+    {
+      "id": "millie-mixcloud-668084b08517",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/NoodsRadio/",
+      "label": "Mixcloud: Noods Radio"
+    },
+    {
+      "id": "millie-mixcloud-24ceaa77d980",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Senbox/",
+      "label": "Mixcloud: Senbox SUD FM"
+    },
+    {
+      "id": "millie-mixcloud-3425c4727163",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/DJMillieMilz/",
+      "label": "Mixcloud: DJ Millie Milz Vega"
+    },
+    {
+      "id": "millie-mixcloud-32899d900ed9",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/MillieDaKid/",
+      "label": "Mixcloud: DJ MillieDaKid"
+    },
+    {
+      "id": "millie-mixcloud-f69bd8a18e9d",
+      "dj_id": "millie",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/mattybmusic/",
+      "label": "Mixcloud: mattybmusic (DJ sets)"
+    },
+    {
+      "id": "frida-soundcloud-96941a724a74",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/frida-darko",
+      "label": "SoundCloud: Frida Darko"
+    },
+    {
+      "id": "frida-soundcloud-46b2682b23a4",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/frida-114959477",
+      "label": "SoundCloud: Frida"
+    },
+    {
+      "id": "frida-soundcloud-03aa46f8ed5c",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/fridadisc",
+      "label": "SoundCloud: Frida"
+    },
+    {
+      "id": "frida-soundcloud-e6a60643ff3d",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/frida-311666858",
+      "label": "SoundCloud: Frida"
+    },
+    {
+      "id": "frida-soundcloud-a63d7c202bb9",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/exxtratell",
+      "label": "SoundCloud: frida"
+    },
+    {
+      "id": "lucas-soundcloud-ca236ec144d6",
+      "dj_id": "lucas",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lucas-martinez-551563962",
+      "label": "SoundCloud: lucas"
+    },
+    {
+      "id": "lucas-soundcloud-15d0b7defdde",
+      "dj_id": "lucas",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lucasdepaulatracks",
+      "label": "SoundCloud: DJ LUCAS DE PAULA"
+    },
+    {
+      "id": "lucas-soundcloud-23f74cb22c1b",
+      "dj_id": "lucas",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lucas-alvim-5",
+      "label": "SoundCloud: Lucas Alvim"
+    },
+    {
+      "id": "lucas-soundcloud-79079d3f7cd0",
+      "dj_id": "lucas",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/djlucasdotaquaril",
+      "label": "SoundCloud: DJ LUCAS DO TAQUARIL"
+    },
+    {
+      "id": "lucas-soundcloud-73f0c5ab0c80",
+      "dj_id": "lucas",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/realjoynerlucas",
+      "label": "SoundCloud: RealJoynerLucas"
+    },
+    {
+      "id": "millie-soundcloud-8b26ba812a83",
+      "dj_id": "millie",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/millie-633799931",
+      "label": "SoundCloud: Millie"
+    },
+    {
+      "id": "millie-soundcloud-6af544385a90",
+      "dj_id": "millie",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/millie-415654749",
+      "label": "SoundCloud: millie"
+    },
+    {
+      "id": "millie-soundcloud-21376238f0b5",
+      "dj_id": "millie",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/millie-319121343",
+      "label": "SoundCloud: Millie"
+    },
+    {
+      "id": "millie-soundcloud-3d1ba98206d0",
+      "dj_id": "millie",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/millie-499638213",
+      "label": "SoundCloud: millie"
+    },
+    {
+      "id": "millie-soundcloud-538feda5362c",
+      "dj_id": "millie",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/millie-931007868",
+      "label": "SoundCloud: millie"
     },
     {
       "id": "sam-mixcloud-06d0a33f1631",
@@ -2111,6 +2685,69 @@
   ],
   "articles": [
     {
+      "id": "estere-0da27b9faa4901f2",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265339fe64be58e476b025a6e3fe9&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Est&#232;re is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-033fa70f0843c4ea",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265339fe64be58e476b025a6e3fe9&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-41957a61990c66f8",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265339fe64be58e476b025a6e3fe9&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Est&#232;re has rolled out her new &quot;digital doom dance song&quot; entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-50e98216b8d21f63",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265339fe64be58e476b025a6e3fe9&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
+      "id": "estere-8044086fccee4035",
+      "dj_id": "estere",
+      "title": "Est&#232;re at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265339fe64be58e476b025a6e3fe9&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Est&#232;re announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Est&#232;re’s October 2020 San ..."
+    },
+    {
+      "id": "estere-842715d3afc74c16",
+      "dj_id": "estere",
+      "title": "Est&#232;re: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265339fe64be58e476b025a6e3fe9&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Est&#232;re: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "estere-8778ac515c5413bb",
+      "dj_id": "estere",
+      "title": "Album review: Estere, My Design, On Others' Lives",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265339fe64be58e476b025a6e3fe9&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2falbum-review-estere-my-design-on-others-lives%2fWAVDN3Y4SJT37X36OZO466XOPY%2f&amp;c=8439857028581164344&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2018-05-02T17:00:00.000Z",
+      "snippet": "Estere's new album is a beautiful mix of everything the music world is lauding and lusting after right now. You've got African-inspired funk, hip-hop beats, richly layered production, an impressively ..."
+    },
+    {
       "id": "sian-3cc185a028687ef9",
       "dj_id": "sian",
       "title": "Wellington artist wins $25,000 Drawing Prize",
@@ -2118,6 +2755,51 @@
       "source": "Scoop",
       "published_at": "2022-07-31T17:01:00.000Z",
       "snippet": "Si&#226;n Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Si&#226;n’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-8662d12de9501b1c",
+      "dj_id": "sian",
+      "title": "Sian Kingi murder: Four words that led to the killing of a 12yo girl",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926534c2d4476db7b4ffee71e64dec&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fworld%2fsian-kingi-murder-four-words-that-led-to-the-killing-of-a-12yo-girl%2fQCWIREBHJPANQ635HSRX4LSYZY%2f&amp;c=17137776602969284065&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-09-23T16:32:00.000Z",
+      "snippet": "It was those four simple words that sealed Sian Kingi's fate. On the morning of the 27th of November, 1987, a twisted criminal decided it was time to finally launch the sickening plan he had been ..."
+    },
+    {
+      "id": "sian-bbfe784cbde7a2d5",
+      "dj_id": "sian",
+      "title": "Sian Ruck in White Ferns for Women’s world 20/20",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926534c2d4476db7b4ffee71e64dec&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU0904%2fS00423%2fsian-ruck-in-white-ferns-for-womens-world-2020.htm&amp;c=4057591797262742285&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2009-04-30T08:52:00.000Z",
+      "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
+    },
+    {
+      "id": "sian-ea7db7b177742e22",
+      "dj_id": "sian",
+      "title": "Si&#226;n Torrington - Staying open is a practice",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926534c2d4476db7b4ffee71e64dec&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fsian-torrington-staying-open-is-practice%2fdunedin&amp;c=16552586197072206691&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-11-23T16:00:00.000Z",
+      "snippet": "Thu 24 Nov 2022, 10:00am–5:00pm Fri 25 Nov 2022, 10:00am–5:00pm Sat 26 Nov 2022, 10:00am–5:00pm Sun 27 Nov 2022, 10:00am–5:00pm Mon 28 Nov 2022, 10:00am–5:00pm ..."
+    },
+    {
+      "id": "sian-d9199bfd9967e846",
+      "dj_id": "sian",
+      "title": "Wellington artist wins $25,000 Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926534c2d4476db7b4ffee71e64dec&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d146415&amp;c=8162514848878490879&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-07-31T17:01:00.000Z",
+      "snippet": "Si&#226;n Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Si&#226;n’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-faaa671bcd405bed",
+      "dj_id": "sian",
+      "title": "WelTec student representing NZ in chefs’ olympiad",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926534c2d4476db7b4ffee71e64dec&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d141888&amp;c=10363203978555065080&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-05T16:00:00.000Z",
+      "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
     },
     {
       "id": "sian-9c6d5d6935b7ce66",
@@ -2282,6 +2964,24 @@
       "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
     },
     {
+      "id": "sian-db890ea6ded26859",
+      "dj_id": "sian",
+      "title": "Wellington woman named as winner of 10th Parkin Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926534c2d4476db7b4ffee71e64dec&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fnz%2fwellington-woman-named-as-winner-of-10th-parkin-drawing-prize%2fUPYJAZZFMJWLLO354BPUN7GWFU%2f&amp;c=8942328998140355086&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-08-01T00:02:00.000Z",
+      "snippet": "A Wellington artist is overjoyed to have won the 10th Parkin Drawing Prize, saying it will allow her to give back to the art community the way she has always wanted to. Si&#226;n Stephen has won the ..."
+    },
+    {
+      "id": "sian-233959adf547a464",
+      "dj_id": "sian",
+      "title": "Wellington promote schoolgirls for Under-21 tournament",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926534c2d4476db7b4ffee71e64dec&amp;url=https%3a%2f%2fwww.espncricinfo.com%2fstory%2fwellington-promote-schoolgirls-for-under-21-tournament-97447&amp;c=2144595200325648255&amp;mkt=en-nz",
+      "source": "ESPNcricinfo",
+      "published_at": "2001-12-02T16:00:00.000Z",
+      "snippet": "Sarah Bradbury, Amy Burgess, Belina Clifton, Amanda Cooper, Amanda Green, Emily Hobbs, Nicole James, Francis King, Asmita Rama, Sian Ruck, Megan Tuapawa, Megan Wakefield, Pam Yates The Wellington team ..."
+    },
+    {
       "id": "concord-dawn-8508a1372de306c6",
       "dj_id": "concord-dawn",
       "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
@@ -2289,6 +2989,42 @@
       "source": "Scoop",
       "published_at": "2012-07-12T07:26:00.000Z",
       "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "concord-dawn-f3cf70cd08b1fc78",
+      "dj_id": "concord-dawn",
+      "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653877f24a219a0330c7a5cd24b5&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU1207%2fS00196.htm&amp;c=5908793527867863961&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2012-07-12T07:26:00.000Z",
+      "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "dj-fitchie-bf64f1d5a84c99c7",
+      "dj_id": "dj-fitchie",
+      "title": "Fat Freddy’s Drop remember founder Christopher ‘Mu’ Faiumu after sudden death",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653b0d7747ffa6961e95c4b60622&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2ffat-freddys-drop-founder-chris-faiumu-mu-and-dj-fitchie-dies%2fOBPI6ERZCNB65GPNNTIBKSPUIQ%2f&amp;c=5897345948839039140&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2025-07-17T14:14:00.000Z",
+      "snippet": "Fat Freddy’s Drop founder and member Christopher Ta’aloga Faiumu is being remembered as a gracious person and ‘talismanic’ musician. More widely known through his profession monikers ‘DJ Mu’ and ‘DJ ..."
+    },
+    {
+      "id": "dj-fitchie-4bc5158698e9406e",
+      "dj_id": "dj-fitchie",
+      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653b0d7747ffa6961e95c4b60622&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2025-07-17T19:57:00.000Z",
+      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "sam-17f88441fe35a13c",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653c64f14becb0eca06f920afc5d&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
     },
     {
       "id": "dj-fitchie-05d8a7384666005e",
@@ -2903,6 +3639,123 @@
       "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
     },
     {
+      "id": "sam-1bf57319febea9c8",
+      "dj_id": "sam",
+      "title": "A-League: Rising Wellington Phoenix star Sam Sutton could be New Zealand football's next next big thing",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653c64f14becb0eca06f920afc5d&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fsport%2ffootball%2fwellington-phoenix%2fa-league-rising-wellington-phoenix-star-sam-sutton-could-be-new-zealand-footballs-next-next-big-thing%2fAYDETWRWA66KXNHHLYA64MHQOY%2f&amp;c=10057738431275234246&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-07-08T20:00:00.000Z",
+      "snippet": "Sam Sutton will get plenty of game time for the Phoenix over the next month. Photo / Photosport On the day of Sam Sutton's tenth birthday in December 2011, Ben Sigmund headed home a late Leo Bertos ..."
+    },
+    {
+      "id": "sam-17f4926afd87db2b",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653c64f14becb0eca06f920afc5d&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
+      "id": "sam-593ab8e01415cb64",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653c64f14becb0eca06f920afc5d&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-b0213df2dcebb2e1",
+      "dj_id": "sam",
+      "title": "Cam &amp; Sam",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653c64f14becb0eca06f920afc5d&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fcam-sam-live-at-the-residence-courtenay-place%2fwellington&amp;c=14355332596525430878&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-27T17:00:00.000Z",
+      "snippet": "Wed 23 Aug 2023, 9:00pm–11:30pm Wed 27 Sep 2023, 9:00pm–11:30pm Wed 25 Oct 2023, 9:00pm–11:30pm Wed 29 Nov 2023, 9:00pm–11:30pm Wed 20 Dec 2023, 9:00pm–11:30pm ..."
+    },
+    {
+      "id": "broderbeats-2e22df1feac7b5c6",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653d97b646de9a7c81d2cc6187da&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-435268cb01aa0477",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653d97b646de9a7c81d2cc6187da&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-86b306169da38dce",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92653d97b646de9a7c81d2cc6187da&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "estere-40bb8891890e6564",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f78fe6446fb253b139f781497f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Est&#232;re is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-1cff01df4dbd58b6",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f78fe6446fb253b139f781497f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Est&#232;re has rolled out her new &quot;digital doom dance song&quot; entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-d90801d1b82a007a",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f78fe6446fb253b139f781497f&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-1a5ecb4160a30685",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f78fe6446fb253b139f781497f&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
+      "id": "estere-53bf14343f2a98a9",
+      "dj_id": "estere",
+      "title": "Est&#232;re at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f78fe6446fb253b139f781497f&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Est&#232;re announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Est&#232;re’s October 2020 San ..."
+    },
+    {
+      "id": "estere-1e39dc621306ded0",
+      "dj_id": "estere",
+      "title": "Est&#232;re: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f78fe6446fb253b139f781497f&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Est&#232;re: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
       "id": "concord-dawn-1c2acc77e224182f",
       "dj_id": "concord-dawn",
       "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
@@ -3020,6 +3873,123 @@
       "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
     },
     {
+      "id": "estere-8fbeee72635f8944",
+      "dj_id": "estere",
+      "title": "Ambition: Est&#232;re has eyes on the prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f78fe6446fb253b139f781497f&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fbay-of-plenty-times%2flifestyle%2fambition-estere-has-eyes-on-the-prize%2fCX5CFNLSQPPXMHUFVSHTCASEJM%2f&amp;c=4677511028279512710&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2016-11-09T16:42:00.000Z",
+      "snippet": "It's hard to imagine someone more different to Donald Trump than Magdelaine Lavirgin, the fictional persona Wellington producer Est&#232;re has strode into on her new track Ambition. Lavirgin - a young, ..."
+    },
+    {
+      "id": "sian-40f0957a3e676ea3",
+      "dj_id": "sian",
+      "title": "Sian Kingi murder: Four words that led to the killing of a 12yo girl",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f80c714a86bed5e340c7e18525&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fworld%2fsian-kingi-murder-four-words-that-led-to-the-killing-of-a-12yo-girl%2fQCWIREBHJPANQ635HSRX4LSYZY%2f&amp;c=17137776602969284065&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-09-23T16:32:00.000Z",
+      "snippet": "It was those four simple words that sealed Sian Kingi's fate. On the morning of the 27th of November, 1987, a twisted criminal decided it was time to finally launch the sickening plan he had been ..."
+    },
+    {
+      "id": "sian-30762c071df1e014",
+      "dj_id": "sian",
+      "title": "Sian Ruck in White Ferns for Women’s world 20/20",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f80c714a86bed5e340c7e18525&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU0904%2fS00423%2fsian-ruck-in-white-ferns-for-womens-world-2020.htm&amp;c=4057591797262742285&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2009-04-30T08:52:00.000Z",
+      "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
+    },
+    {
+      "id": "sian-ef2f1fa41d37ad5b",
+      "dj_id": "sian",
+      "title": "Si&#226;n Torrington - Staying open is a practice",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f80c714a86bed5e340c7e18525&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fsian-torrington-staying-open-is-practice%2fdunedin&amp;c=16552586197072206691&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-11-23T16:00:00.000Z",
+      "snippet": "Thu 24 Nov 2022, 10:00am–5:00pm Fri 25 Nov 2022, 10:00am–5:00pm Sat 26 Nov 2022, 10:00am–5:00pm Sun 27 Nov 2022, 10:00am–5:00pm Mon 28 Nov 2022, 10:00am–5:00pm ..."
+    },
+    {
+      "id": "sian-fab00b19127b8204",
+      "dj_id": "sian",
+      "title": "Wellington artist wins $25,000 Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f80c714a86bed5e340c7e18525&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d146415&amp;c=8162514848878490879&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-07-31T17:01:00.000Z",
+      "snippet": "Si&#226;n Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Si&#226;n’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-dfd3e2171e8f6441",
+      "dj_id": "sian",
+      "title": "WelTec student representing NZ in chefs’ olympiad",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f80c714a86bed5e340c7e18525&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d141888&amp;c=10363203978555065080&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-05T16:00:00.000Z",
+      "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
+    },
+    {
+      "id": "sian-29d32a1b8e06f6d7",
+      "dj_id": "sian",
+      "title": "Wellington woman named as winner of 10th Parkin Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f80c714a86bed5e340c7e18525&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fnz%2fwellington-woman-named-as-winner-of-10th-parkin-drawing-prize%2fUPYJAZZFMJWLLO354BPUN7GWFU%2f&amp;c=8942328998140355086&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-08-01T00:02:00.000Z",
+      "snippet": "A Wellington artist is overjoyed to have won the 10th Parkin Drawing Prize, saying it will allow her to give back to the art community the way she has always wanted to. Si&#226;n Stephen has won the ..."
+    },
+    {
+      "id": "sian-d058468a334d0389",
+      "dj_id": "sian",
+      "title": "Wellington promote schoolgirls for Under-21 tournament",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265f80c714a86bed5e340c7e18525&amp;url=https%3a%2f%2fwww.espncricinfo.com%2fstory%2fwellington-promote-schoolgirls-for-under-21-tournament-97447&amp;c=2144595200325648255&amp;mkt=en-nz",
+      "source": "ESPNcricinfo",
+      "published_at": "2001-12-02T16:00:00.000Z",
+      "snippet": "Sarah Bradbury, Amy Burgess, Belina Clifton, Amanda Cooper, Amanda Green, Emily Hobbs, Nicole James, Francis King, Asmita Rama, Sian Ruck, Megan Tuapawa, Megan Wakefield, Pam Yates The Wellington team ..."
+    },
+    {
+      "id": "concord-dawn-2c880177d45e80e8",
+      "dj_id": "concord-dawn",
+      "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fbed4646e5bdf7cc6f52ba31c5&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU1207%2fS00196.htm&amp;c=5908793527867863961&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2012-07-12T07:26:00.000Z",
+      "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "sam-8ca2ce23a8686709",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fc6c504c2d9acefa02e5d8b54e&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
+    },
+    {
+      "id": "estere-02ad514bf2c7d710",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Est&#232;re is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "sam-11673bbfc72e93b2",
+      "dj_id": "sam",
+      "title": "A-League: Rising Wellington Phoenix star Sam Sutton could be New Zealand football's next next big thing",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fc6c504c2d9acefa02e5d8b54e&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fsport%2ffootball%2fwellington-phoenix%2fa-league-rising-wellington-phoenix-star-sam-sutton-could-be-new-zealand-footballs-next-next-big-thing%2fAYDETWRWA66KXNHHLYA64MHQOY%2f&amp;c=10057738431275234246&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-07-08T20:00:00.000Z",
+      "snippet": "Sam Sutton will get plenty of game time for the Phoenix over the next month. Photo / Photosport On the day of Sam Sutton's tenth birthday in December 2011, Ben Sigmund headed home a late Leo Bertos ..."
+    },
+    {
+      "id": "sam-0d276d46411ee62a",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fc6c504c2d9acefa02e5d8b54e&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
       "id": "broderbeats-4ec496bf9d014ab5",
       "dj_id": "broderbeats",
       "title": "Broderbeats Presents Intuition Vol. 1",
@@ -3135,6 +4105,1068 @@
       "source": "Scoop",
       "published_at": "2012-07-12T07:26:00.000Z",
       "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "sam-45cd467e9303bb28",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fc6c504c2d9acefa02e5d8b54e&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-b7957be55118fd2f",
+      "dj_id": "sam",
+      "title": "Cam &amp; Sam",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fc6c504c2d9acefa02e5d8b54e&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fcam-sam-live-at-the-residence-courtenay-place%2fwellington&amp;c=14355332596525430878&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-27T17:00:00.000Z",
+      "snippet": "Wed 23 Aug 2023, 9:00pm–11:30pm Wed 27 Sep 2023, 9:00pm–11:30pm Wed 25 Oct 2023, 9:00pm–11:30pm Wed 29 Nov 2023, 9:00pm–11:30pm Wed 20 Dec 2023, 9:00pm–11:30pm ..."
+    },
+    {
+      "id": "dj-fitchie-8ed286721959d734",
+      "dj_id": "dj-fitchie",
+      "title": "Fat Freddy’s Drop remember founder Christopher ‘Mu’ Faiumu after sudden death",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fe415c400b9e4cb6387d5847b7&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2ffat-freddys-drop-founder-chris-faiumu-mu-and-dj-fitchie-dies%2fOBPI6ERZCNB65GPNNTIBKSPUIQ%2f&amp;c=5897345948839039140&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2025-07-17T14:14:00.000Z",
+      "snippet": "Fat Freddy’s Drop founder and member Christopher Ta’aloga Faiumu is being remembered as a gracious person and ‘talismanic’ musician. More widely known through his profession monikers ‘DJ Mu’ and ‘DJ ..."
+    },
+    {
+      "id": "dj-fitchie-b4b05d90bb74b83b",
+      "dj_id": "dj-fitchie",
+      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9265fe415c400b9e4cb6387d5847b7&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2025-07-17T19:57:00.000Z",
+      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "broderbeats-3cc64c1f1370a296",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926603374d46dc9893b80cef9838ca&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-bbc000bd9d58101e",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926603374d46dc9893b80cef9838ca&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-1388b25f1e8a9413",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a926603374d46dc9893b80cef9838ca&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "estere-1f8f1e31a9544128",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Est&#232;re has rolled out her new &quot;digital doom dance song&quot; entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-d8e1c03f7c56e9bb",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-091b52d55106d774",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
+      "id": "estere-42708dd5c1825c3e",
+      "dj_id": "estere",
+      "title": "Est&#232;re at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Est&#232;re announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Est&#232;re’s October 2020 San ..."
+    },
+    {
+      "id": "estere-5db216ff2d5cddf2",
+      "dj_id": "estere",
+      "title": "Est&#232;re: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Est&#232;re: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "estere-b9adabf1d3907fbe",
+      "dj_id": "estere",
+      "title": "Ambition: Est&#232;re has eyes on the prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fbay-of-plenty-times%2flifestyle%2fambition-estere-has-eyes-on-the-prize%2fCX5CFNLSQPPXMHUFVSHTCASEJM%2f&amp;c=4677511028279512710&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2016-11-09T16:42:00.000Z",
+      "snippet": "It's hard to imagine someone more different to Donald Trump than Magdelaine Lavirgin, the fictional persona Wellington producer Est&#232;re has strode into on her new track Ambition. Lavirgin - a young, ..."
+    },
+    {
+      "id": "sian-5b16fd03773ec6b3",
+      "dj_id": "sian",
+      "title": "Sian Kingi murder: Four words that led to the killing of a 12yo girl",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c721b041e5864289eb64617c3d&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fworld%2fsian-kingi-murder-four-words-that-led-to-the-killing-of-a-12yo-girl%2fQCWIREBHJPANQ635HSRX4LSYZY%2f&amp;c=17137776602969284065&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-09-23T16:32:00.000Z",
+      "snippet": "It was those four simple words that sealed Sian Kingi's fate. On the morning of the 27th of November, 1987, a twisted criminal decided it was time to finally launch the sickening plan he had been ..."
+    },
+    {
+      "id": "sian-ec5d18d64edece97",
+      "dj_id": "sian",
+      "title": "Sian Ruck in White Ferns for Women’s world 20/20",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c721b041e5864289eb64617c3d&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU0904%2fS00423%2fsian-ruck-in-white-ferns-for-womens-world-2020.htm&amp;c=4057591797262742285&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2009-04-30T08:52:00.000Z",
+      "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
+    },
+    {
+      "id": "sian-edbc4606ab04a361",
+      "dj_id": "sian",
+      "title": "Si&#226;n Torrington - Staying open is a practice",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c721b041e5864289eb64617c3d&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fsian-torrington-staying-open-is-practice%2fdunedin&amp;c=16552586197072206691&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-11-23T16:00:00.000Z",
+      "snippet": "Thu 24 Nov 2022, 10:00am–5:00pm Fri 25 Nov 2022, 10:00am–5:00pm Sat 26 Nov 2022, 10:00am–5:00pm Sun 27 Nov 2022, 10:00am–5:00pm Mon 28 Nov 2022, 10:00am–5:00pm ..."
+    },
+    {
+      "id": "sian-d8f045a45c5555dd",
+      "dj_id": "sian",
+      "title": "Wellington artist wins $25,000 Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c721b041e5864289eb64617c3d&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d146415&amp;c=8162514848878490879&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-07-31T17:01:00.000Z",
+      "snippet": "Si&#226;n Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Si&#226;n’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-475d4c2078f19a2e",
+      "dj_id": "sian",
+      "title": "WelTec student representing NZ in chefs’ olympiad",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c721b041e5864289eb64617c3d&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d141888&amp;c=10363203978555065080&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-05T16:00:00.000Z",
+      "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
+    },
+    {
+      "id": "sian-bcee854cacd2f4db",
+      "dj_id": "sian",
+      "title": "Wellington woman named as winner of 10th Parkin Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c721b041e5864289eb64617c3d&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fnz%2fwellington-woman-named-as-winner-of-10th-parkin-drawing-prize%2fUPYJAZZFMJWLLO354BPUN7GWFU%2f&amp;c=8942328998140355086&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-08-01T00:02:00.000Z",
+      "snippet": "A Wellington artist is overjoyed to have won the 10th Parkin Drawing Prize, saying it will allow her to give back to the art community the way she has always wanted to. Si&#226;n Stephen has won the ..."
+    },
+    {
+      "id": "sian-ac5b257cd753119c",
+      "dj_id": "sian",
+      "title": "Wellington promote schoolgirls for Under-21 tournament",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c721b041e5864289eb64617c3d&amp;url=https%3a%2f%2fwww.espncricinfo.com%2fstory%2fwellington-promote-schoolgirls-for-under-21-tournament-97447&amp;c=2144595200325648255&amp;mkt=en-nz",
+      "source": "ESPNcricinfo",
+      "published_at": "2001-12-02T16:00:00.000Z",
+      "snippet": "Sarah Bradbury, Amy Burgess, Belina Clifton, Amanda Cooper, Amanda Green, Emily Hobbs, Nicole James, Francis King, Asmita Rama, Sian Ruck, Megan Tuapawa, Megan Wakefield, Pam Yates The Wellington team ..."
+    },
+    {
+      "id": "concord-dawn-ceafe85d26c9515b",
+      "dj_id": "concord-dawn",
+      "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cad1da4590b4e97e7947bfffd3&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU1207%2fS00196.htm&amp;c=5908793527867863961&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2012-07-12T07:26:00.000Z",
+      "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "sam-91bb4ceb17ab0ad7",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cb07b448ff89fedf934f69b5a1&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
+    },
+    {
+      "id": "sam-d89dd0ae3f3616d5",
+      "dj_id": "sam",
+      "title": "A-League: Rising Wellington Phoenix star Sam Sutton could be New Zealand football's next next big thing",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cb07b448ff89fedf934f69b5a1&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fsport%2ffootball%2fwellington-phoenix%2fa-league-rising-wellington-phoenix-star-sam-sutton-could-be-new-zealand-footballs-next-next-big-thing%2fAYDETWRWA66KXNHHLYA64MHQOY%2f&amp;c=10057738431275234246&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-07-08T20:00:00.000Z",
+      "snippet": "Sam Sutton will get plenty of game time for the Phoenix over the next month. Photo / Photosport On the day of Sam Sutton's tenth birthday in December 2011, Ben Sigmund headed home a late Leo Bertos ..."
+    },
+    {
+      "id": "sam-9a575ff1fafc0bd8",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cb07b448ff89fedf934f69b5a1&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
+      "id": "sam-e7f687d38ce77717",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cb07b448ff89fedf934f69b5a1&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-1d45c05632bfd47c",
+      "dj_id": "sam",
+      "title": "Cam &amp; Sam",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cb07b448ff89fedf934f69b5a1&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fcam-sam-live-at-the-residence-courtenay-place%2fwellington&amp;c=14355332596525430878&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-27T17:00:00.000Z",
+      "snippet": "Wed 23 Aug 2023, 9:00pm–11:30pm Wed 27 Sep 2023, 9:00pm–11:30pm Wed 25 Oct 2023, 9:00pm–11:30pm Wed 29 Nov 2023, 9:00pm–11:30pm Wed 20 Dec 2023, 9:00pm–11:30pm ..."
+    },
+    {
+      "id": "dj-fitchie-5905499c604fca0c",
+      "dj_id": "dj-fitchie",
+      "title": "Fat Freddy’s Drop remember founder Christopher ‘Mu’ Faiumu after sudden death",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cffc714bc6b4b57f4740b23139&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2ffat-freddys-drop-founder-chris-faiumu-mu-and-dj-fitchie-dies%2fOBPI6ERZCNB65GPNNTIBKSPUIQ%2f&amp;c=5897345948839039140&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2025-07-17T14:14:00.000Z",
+      "snippet": "Fat Freddy’s Drop founder and member Christopher Ta’aloga Faiumu is being remembered as a gracious person and ‘talismanic’ musician. More widely known through his profession monikers ‘DJ Mu’ and ‘DJ ..."
+    },
+    {
+      "id": "dj-fitchie-49820c9cb782f8c9",
+      "dj_id": "dj-fitchie",
+      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267cffc714bc6b4b57f4740b23139&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2025-07-17T19:57:00.000Z",
+      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "broderbeats-e611a49ee862d760",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267d202494f36bfd540448631ddbf&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-d5d0ed1c44b0c017",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267d202494f36bfd540448631ddbf&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-bfc5e6e7f74776dc",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267d202494f36bfd540448631ddbf&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "estere-c2794861aa396ebe",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688bcc0048be9c477c5ee2934f66&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Est&#232;re is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-8e0355fb850efc68",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688bcc0048be9c477c5ee2934f66&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Est&#232;re has rolled out her new &quot;digital doom dance song&quot; entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-56a664d7d212d087",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688bcc0048be9c477c5ee2934f66&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-9d303198cb210122",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688bcc0048be9c477c5ee2934f66&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
+      "id": "estere-cd81fce20c858be0",
+      "dj_id": "estere",
+      "title": "Est&#232;re at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688bcc0048be9c477c5ee2934f66&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Est&#232;re announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Est&#232;re’s October 2020 San ..."
+    },
+    {
+      "id": "estere-682c02cfe53fa6c4",
+      "dj_id": "estere",
+      "title": "Est&#232;re: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688bcc0048be9c477c5ee2934f66&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Est&#232;re: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "estere-5b39d392e6d6e313",
+      "dj_id": "estere",
+      "title": "Ambition: Est&#232;re has eyes on the prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688bcc0048be9c477c5ee2934f66&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fbay-of-plenty-times%2flifestyle%2fambition-estere-has-eyes-on-the-prize%2fCX5CFNLSQPPXMHUFVSHTCASEJM%2f&amp;c=4677511028279512710&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2016-11-09T16:42:00.000Z",
+      "snippet": "It's hard to imagine someone more different to Donald Trump than Magdelaine Lavirgin, the fictional persona Wellington producer Est&#232;re has strode into on her new track Ambition. Lavirgin - a young, ..."
+    },
+    {
+      "id": "sian-a4db2ca27bd7c14d",
+      "dj_id": "sian",
+      "title": "Sian Kingi murder: Four words that led to the killing of a 12yo girl",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688dbdcd45fca52c4424d3a5a9c7&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fworld%2fsian-kingi-murder-four-words-that-led-to-the-killing-of-a-12yo-girl%2fQCWIREBHJPANQ635HSRX4LSYZY%2f&amp;c=17137776602969284065&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-09-23T16:32:00.000Z",
+      "snippet": "It was those four simple words that sealed Sian Kingi's fate. On the morning of the 27th of November, 1987, a twisted criminal decided it was time to finally launch the sickening plan he had been ..."
+    },
+    {
+      "id": "sian-eb14dd60cd084781",
+      "dj_id": "sian",
+      "title": "Sian Ruck in White Ferns for Women’s world 20/20",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688dbdcd45fca52c4424d3a5a9c7&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU0904%2fS00423%2fsian-ruck-in-white-ferns-for-womens-world-2020.htm&amp;c=4057591797262742285&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2009-04-30T08:52:00.000Z",
+      "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
+    },
+    {
+      "id": "sian-a1515bb60f5c2dd6",
+      "dj_id": "sian",
+      "title": "Si&#226;n Torrington - Staying open is a practice",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688dbdcd45fca52c4424d3a5a9c7&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fsian-torrington-staying-open-is-practice%2fdunedin&amp;c=16552586197072206691&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-11-23T16:00:00.000Z",
+      "snippet": "Thu 24 Nov 2022, 10:00am–5:00pm Fri 25 Nov 2022, 10:00am–5:00pm Sat 26 Nov 2022, 10:00am–5:00pm Sun 27 Nov 2022, 10:00am–5:00pm Mon 28 Nov 2022, 10:00am–5:00pm ..."
+    },
+    {
+      "id": "sian-fb627acbb5c0f535",
+      "dj_id": "sian",
+      "title": "Wellington artist wins $25,000 Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688dbdcd45fca52c4424d3a5a9c7&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d146415&amp;c=8162514848878490879&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-07-31T17:01:00.000Z",
+      "snippet": "Si&#226;n Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Si&#226;n’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-f94522c21326b9c6",
+      "dj_id": "sian",
+      "title": "WelTec student representing NZ in chefs’ olympiad",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688dbdcd45fca52c4424d3a5a9c7&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d141888&amp;c=10363203978555065080&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-05T16:00:00.000Z",
+      "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
+    },
+    {
+      "id": "sian-9bbef8d591c88485",
+      "dj_id": "sian",
+      "title": "Wellington woman named as winner of 10th Parkin Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688dbdcd45fca52c4424d3a5a9c7&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fnz%2fwellington-woman-named-as-winner-of-10th-parkin-drawing-prize%2fUPYJAZZFMJWLLO354BPUN7GWFU%2f&amp;c=8942328998140355086&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-08-01T00:02:00.000Z",
+      "snippet": "A Wellington artist is overjoyed to have won the 10th Parkin Drawing Prize, saying it will allow her to give back to the art community the way she has always wanted to. Si&#226;n Stephen has won the ..."
+    },
+    {
+      "id": "sian-3f634359a3453f86",
+      "dj_id": "sian",
+      "title": "Wellington promote schoolgirls for Under-21 tournament",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92688dbdcd45fca52c4424d3a5a9c7&amp;url=https%3a%2f%2fwww.espncricinfo.com%2fstory%2fwellington-promote-schoolgirls-for-under-21-tournament-97447&amp;c=2144595200325648255&amp;mkt=en-nz",
+      "source": "ESPNcricinfo",
+      "published_at": "2001-12-02T16:00:00.000Z",
+      "snippet": "Sarah Bradbury, Amy Burgess, Belina Clifton, Amanda Cooper, Amanda Green, Emily Hobbs, Nicole James, Francis King, Asmita Rama, Sian Ruck, Megan Tuapawa, Megan Wakefield, Pam Yates The Wellington team ..."
+    },
+    {
+      "id": "sam-39382d7599b626b2",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268903b4947f0a63e211846291f82&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
+      "id": "sam-d3295cfe9bcc016d",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268903b4947f0a63e211846291f82&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
+    },
+    {
+      "id": "sam-1c7de93f8e5ff16f",
+      "dj_id": "sam",
+      "title": "‘Dreams really do come true’ – Chrissie Wellington helps Sam achieve #onemoremarathon",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268903b4947f0a63e211846291f82&amp;url=https%3a%2f%2fwww.tri247.com%2ftriathlon-news%2fchrissie-wellington-sam-perkins-rob-burrow-leeds-marathon-2023&amp;c=960988042153773035&amp;mkt=en-nz",
+      "source": "tri247.com",
+      "published_at": "2023-05-15T05:39:00.000Z",
+      "snippet": "Four-time IRONMAN World Champion Chrissie Wellington helped a “dream come true” for Sam Perkins on an inspiring day at the first-ever Rob Burrow Leeds Marathon on Sunday. Wellington’s triathlon record ..."
+    },
+    {
+      "id": "sam-47538182048f920c",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268903b4947f0a63e211846291f82&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-3f32033d2bb5dd87",
+      "dj_id": "sam",
+      "title": "Cam &amp; Sam Dueling Pianos",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268903b4947f0a63e211846291f82&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2fcam-sam-dueling-pianos8%2fwellington&amp;c=10922525458316902999&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-11-13T16:01:00.000Z",
+      "snippet": "You can fill out the form below to be added to the waiting list for Cam &amp; Sam Dueling Pianos. We will notify you via email when more tickets become available."
+    },
+    {
+      "id": "concord-dawn-f0c26e2bb30928b1",
+      "dj_id": "concord-dawn",
+      "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92689389434b7aba6b64e6067c7abe&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU1207%2fS00196.htm&amp;c=5908793527867863961&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2012-07-12T07:26:00.000Z",
+      "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "dj-fitchie-a6e12403abc83c88",
+      "dj_id": "dj-fitchie",
+      "title": "Fat Freddy’s Drop remember founder Christopher ‘Mu’ Faiumu after sudden death",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92689510b24f2f9f324ee11bc9789d&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2ffat-freddys-drop-founder-chris-faiumu-mu-and-dj-fitchie-dies%2fOBPI6ERZCNB65GPNNTIBKSPUIQ%2f&amp;c=5897345948839039140&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2025-07-17T14:14:00.000Z",
+      "snippet": "Fat Freddy’s Drop founder and member Christopher Ta’aloga Faiumu is being remembered as a gracious person and ‘talismanic’ musician. More widely known through his profession monikers ‘DJ Mu’ and ‘DJ ..."
+    },
+    {
+      "id": "dj-fitchie-558c2d30ef97a892",
+      "dj_id": "dj-fitchie",
+      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92689510b24f2f9f324ee11bc9789d&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2025-07-17T19:57:00.000Z",
+      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "broderbeats-dd8eb3900cfe53c1",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268984d1844da9ea4959f965875f2&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-638e3fd7e819f23a",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268984d1844da9ea4959f965875f2&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-7860c68fd0b54428",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9268984d1844da9ea4959f965875f2&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "estere-ee1e0bb7207fd86b",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702d92224867861b71249499278c&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Est&#232;re is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-dfcf59693fb94cf3",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702d92224867861b71249499278c&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-6c965f9db3644716",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702d92224867861b71249499278c&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Est&#232;re has rolled out her new &quot;digital doom dance song&quot; entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-c37c0bbe3bea71cb",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702d92224867861b71249499278c&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
+      "id": "estere-dad72cd31e506584",
+      "dj_id": "estere",
+      "title": "Est&#232;re at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702d92224867861b71249499278c&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Est&#232;re announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Est&#232;re’s October 2020 San ..."
+    },
+    {
+      "id": "estere-c44255b1d3e6c045",
+      "dj_id": "estere",
+      "title": "Est&#232;re: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702d92224867861b71249499278c&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Est&#232;re: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "estere-4a5b51b1c5d67ced",
+      "dj_id": "estere",
+      "title": "Album review: Estere, My Design, On Others' Lives",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702d92224867861b71249499278c&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2falbum-review-estere-my-design-on-others-lives%2fWAVDN3Y4SJT37X36OZO466XOPY%2f&amp;c=8439857028581164344&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2018-05-02T17:00:00.000Z",
+      "snippet": "Estere's new album is a beautiful mix of everything the music world is lauding and lusting after right now. You've got African-inspired funk, hip-hop beats, richly layered production, an impressively ..."
+    },
+    {
+      "id": "sian-a54d5682539fd98c",
+      "dj_id": "sian",
+      "title": "Sian Kingi murder: Four words that led to the killing of a 12yo girl",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702e6dfb479c92fb8847284bcd2f&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fworld%2fsian-kingi-murder-four-words-that-led-to-the-killing-of-a-12yo-girl%2fQCWIREBHJPANQ635HSRX4LSYZY%2f&amp;c=17137776602969284065&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-09-23T16:32:00.000Z",
+      "snippet": "It was those four simple words that sealed Sian Kingi's fate. On the morning of the 27th of November, 1987, a twisted criminal decided it was time to finally launch the sickening plan he had been ..."
+    },
+    {
+      "id": "sian-478928f6304ba08f",
+      "dj_id": "sian",
+      "title": "Sian Ruck in White Ferns for Women’s world 20/20",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702e6dfb479c92fb8847284bcd2f&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU0904%2fS00423%2fsian-ruck-in-white-ferns-for-womens-world-2020.htm&amp;c=4057591797262742285&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2009-04-30T08:52:00.000Z",
+      "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
+    },
+    {
+      "id": "sian-4856ec9979664be3",
+      "dj_id": "sian",
+      "title": "Si&#226;n Torrington - Staying open is a practice",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702e6dfb479c92fb8847284bcd2f&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fsian-torrington-staying-open-is-practice%2fdunedin&amp;c=16552586197072206691&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-11-23T16:00:00.000Z",
+      "snippet": "Thu 24 Nov 2022, 10:00am–5:00pm Fri 25 Nov 2022, 10:00am–5:00pm Sat 26 Nov 2022, 10:00am–5:00pm Sun 27 Nov 2022, 10:00am–5:00pm Mon 28 Nov 2022, 10:00am–5:00pm ..."
+    },
+    {
+      "id": "sian-5013d0d35cc863eb",
+      "dj_id": "sian",
+      "title": "Wellington artist wins $25,000 Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702e6dfb479c92fb8847284bcd2f&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d146415&amp;c=8162514848878490879&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-07-31T17:01:00.000Z",
+      "snippet": "Si&#226;n Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Si&#226;n’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-c78ebdc07226c1fe",
+      "dj_id": "sian",
+      "title": "WelTec student representing NZ in chefs’ olympiad",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702e6dfb479c92fb8847284bcd2f&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d141888&amp;c=10363203978555065080&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-05T16:00:00.000Z",
+      "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
+    },
+    {
+      "id": "sian-8b36d41d3b8446e8",
+      "dj_id": "sian",
+      "title": "Wellington woman named as winner of 10th Parkin Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702e6dfb479c92fb8847284bcd2f&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fnz%2fwellington-woman-named-as-winner-of-10th-parkin-drawing-prize%2fUPYJAZZFMJWLLO354BPUN7GWFU%2f&amp;c=8942328998140355086&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-08-01T00:02:00.000Z",
+      "snippet": "A Wellington artist is overjoyed to have won the 10th Parkin Drawing Prize, saying it will allow her to give back to the art community the way she has always wanted to. Si&#226;n Stephen has won the ..."
+    },
+    {
+      "id": "sian-e6397770ad3ea614",
+      "dj_id": "sian",
+      "title": "Wellington promote schoolgirls for Under-21 tournament",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92702e6dfb479c92fb8847284bcd2f&amp;url=https%3a%2f%2fwww.espncricinfo.com%2fstory%2fwellington-promote-schoolgirls-for-under-21-tournament-97447&amp;c=2144595200325648255&amp;mkt=en-nz",
+      "source": "ESPNcricinfo",
+      "published_at": "2001-12-02T16:00:00.000Z",
+      "snippet": "Sarah Bradbury, Amy Burgess, Belina Clifton, Amanda Cooper, Amanda Green, Emily Hobbs, Nicole James, Francis King, Asmita Rama, Sian Ruck, Megan Tuapawa, Megan Wakefield, Pam Yates The Wellington team ..."
+    },
+    {
+      "id": "concord-dawn-76f74e0f2dd24df8",
+      "dj_id": "concord-dawn",
+      "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a927033539848b7918794d873b9d4c8&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU1207%2fS00196.htm&amp;c=5908793527867863961&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2012-07-12T07:26:00.000Z",
+      "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "dj-fitchie-f9fe83d52a0ba76a",
+      "dj_id": "dj-fitchie",
+      "title": "Fat Freddy’s Drop remember founder Christopher ‘Mu’ Faiumu after sudden death",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703540774742b6e88cb76bb40aec&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2ffat-freddys-drop-founder-chris-faiumu-mu-and-dj-fitchie-dies%2fOBPI6ERZCNB65GPNNTIBKSPUIQ%2f&amp;c=5897345948839039140&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2025-07-17T14:14:00.000Z",
+      "snippet": "Fat Freddy’s Drop founder and member Christopher Ta’aloga Faiumu is being remembered as a gracious person and ‘talismanic’ musician. More widely known through his profession monikers ‘DJ Mu’ and ‘DJ ..."
+    },
+    {
+      "id": "dj-fitchie-5b54faf285fb12b7",
+      "dj_id": "dj-fitchie",
+      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703540774742b6e88cb76bb40aec&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2025-07-17T19:57:00.000Z",
+      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "sam-d539a0247a55a945",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703696224ec09e5b7c8ad1592625&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
+    },
+    {
+      "id": "sam-6bff5857972ed776",
+      "dj_id": "sam",
+      "title": "A-League: Rising Wellington Phoenix star Sam Sutton could be New Zealand football's next next big thing",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703696224ec09e5b7c8ad1592625&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fsport%2ffootball%2fwellington-phoenix%2fa-league-rising-wellington-phoenix-star-sam-sutton-could-be-new-zealand-footballs-next-next-big-thing%2fAYDETWRWA66KXNHHLYA64MHQOY%2f&amp;c=10057738431275234246&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-07-08T20:00:00.000Z",
+      "snippet": "Sam Sutton will get plenty of game time for the Phoenix over the next month. Photo / Photosport On the day of Sam Sutton's tenth birthday in December 2011, Ben Sigmund headed home a late Leo Bertos ..."
+    },
+    {
+      "id": "sian-55eff52843a528a7",
+      "dj_id": "sian",
+      "title": "Si&#226;n Torrington - Staying open is a practice",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b368a64523b06fa5e1d825d7ea&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fsian-torrington-staying-open-is-practice%2fdunedin&amp;c=16552586197072206691&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-11-23T16:00:00.000Z",
+      "snippet": "Thu 24 Nov 2022, 10:00am–5:00pm Fri 25 Nov 2022, 10:00am–5:00pm Sat 26 Nov 2022, 10:00am–5:00pm Sun 27 Nov 2022, 10:00am–5:00pm Mon 28 Nov 2022, 10:00am–5:00pm ..."
+    },
+    {
+      "id": "sam-74c03718e13e80ee",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703696224ec09e5b7c8ad1592625&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
+      "id": "sam-90cc5f9b6ddeb5bc",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703696224ec09e5b7c8ad1592625&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-0eeb40a5998366dd",
+      "dj_id": "sam",
+      "title": "Cam &amp; Sam",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703696224ec09e5b7c8ad1592625&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fcam-sam-live-at-the-residence-courtenay-place%2fwellington&amp;c=14355332596525430878&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-27T17:00:00.000Z",
+      "snippet": "Wed 23 Aug 2023, 9:00pm–11:30pm Wed 27 Sep 2023, 9:00pm–11:30pm Wed 25 Oct 2023, 9:00pm–11:30pm Wed 29 Nov 2023, 9:00pm–11:30pm Wed 20 Dec 2023, 9:00pm–11:30pm ..."
+    },
+    {
+      "id": "broderbeats-6bd0ddd222506fec",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703906b34ea88e5815dd8c64dfef&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-795f4a6ad507bc25",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703906b34ea88e5815dd8c64dfef&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-a070aeacc4fddaaf",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92703906b34ea88e5815dd8c64dfef&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "sam-937505a5b84fb121",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b2850549959a4bb91ae7176e4c&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
+    },
+    {
+      "id": "sam-34e893edf766cfc4",
+      "dj_id": "sam",
+      "title": "A-League: Rising Wellington Phoenix star Sam Sutton could be New Zealand football's next next big thing",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b2850549959a4bb91ae7176e4c&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fsport%2ffootball%2fwellington-phoenix%2fa-league-rising-wellington-phoenix-star-sam-sutton-could-be-new-zealand-footballs-next-next-big-thing%2fAYDETWRWA66KXNHHLYA64MHQOY%2f&amp;c=10057738431275234246&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-07-08T20:00:00.000Z",
+      "snippet": "Sam Sutton will get plenty of game time for the Phoenix over the next month. Photo / Photosport On the day of Sam Sutton's tenth birthday in December 2011, Ben Sigmund headed home a late Leo Bertos ..."
+    },
+    {
+      "id": "sam-a58745c9b78dbf80",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b2850549959a4bb91ae7176e4c&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
+      "id": "sam-fbd97fd38fa36fa3",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b2850549959a4bb91ae7176e4c&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-54158947b3452872",
+      "dj_id": "sam",
+      "title": "Cam &amp; Sam",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b2850549959a4bb91ae7176e4c&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fcam-sam-live-at-the-residence-courtenay-place%2fwellington&amp;c=14355332596525430878&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-27T17:00:00.000Z",
+      "snippet": "Wed 23 Aug 2023, 9:00pm–11:30pm Wed 27 Sep 2023, 9:00pm–11:30pm Wed 25 Oct 2023, 9:00pm–11:30pm Wed 29 Nov 2023, 9:00pm–11:30pm Wed 20 Dec 2023, 9:00pm–11:30pm ..."
+    },
+    {
+      "id": "sian-ca38eb1767b8d424",
+      "dj_id": "sian",
+      "title": "Sian Kingi murder: Four words that led to the killing of a 12yo girl",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b368a64523b06fa5e1d825d7ea&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fworld%2fsian-kingi-murder-four-words-that-led-to-the-killing-of-a-12yo-girl%2fQCWIREBHJPANQ635HSRX4LSYZY%2f&amp;c=17137776602969284065&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-09-23T16:32:00.000Z",
+      "snippet": "It was those four simple words that sealed Sian Kingi's fate. On the morning of the 27th of November, 1987, a twisted criminal decided it was time to finally launch the sickening plan he had been ..."
+    },
+    {
+      "id": "sian-b512119b22d8c59f",
+      "dj_id": "sian",
+      "title": "Sian Ruck in White Ferns for Women’s world 20/20",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b368a64523b06fa5e1d825d7ea&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU0904%2fS00423%2fsian-ruck-in-white-ferns-for-womens-world-2020.htm&amp;c=4057591797262742285&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2009-04-30T08:52:00.000Z",
+      "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
+    },
+    {
+      "id": "sian-5d72d8bb30a9842c",
+      "dj_id": "sian",
+      "title": "Wellington artist wins $25,000 Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b368a64523b06fa5e1d825d7ea&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d146415&amp;c=8162514848878490879&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-07-31T17:01:00.000Z",
+      "snippet": "Si&#226;n Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Si&#226;n’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-11f1c2c293dc2e39",
+      "dj_id": "sian",
+      "title": "WelTec student representing NZ in chefs’ olympiad",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b368a64523b06fa5e1d825d7ea&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d141888&amp;c=10363203978555065080&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-05T16:00:00.000Z",
+      "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
+    },
+    {
+      "id": "sian-d5e1e1441b7abb6a",
+      "dj_id": "sian",
+      "title": "Wellington woman named as winner of 10th Parkin Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b368a64523b06fa5e1d825d7ea&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fnz%2fwellington-woman-named-as-winner-of-10th-parkin-drawing-prize%2fUPYJAZZFMJWLLO354BPUN7GWFU%2f&amp;c=8942328998140355086&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-08-01T00:02:00.000Z",
+      "snippet": "A Wellington artist is overjoyed to have won the 10th Parkin Drawing Prize, saying it will allow her to give back to the art community the way she has always wanted to. Si&#226;n Stephen has won the ..."
+    },
+    {
+      "id": "sian-c1af7252d3e9a86a",
+      "dj_id": "sian",
+      "title": "Wellington promote schoolgirls for Under-21 tournament",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b368a64523b06fa5e1d825d7ea&amp;url=https%3a%2f%2fwww.espncricinfo.com%2fstory%2fwellington-promote-schoolgirls-for-under-21-tournament-97447&amp;c=2144595200325648255&amp;mkt=en-nz",
+      "source": "ESPNcricinfo",
+      "published_at": "2001-12-02T16:00:00.000Z",
+      "snippet": "Sarah Bradbury, Amy Burgess, Belina Clifton, Amanda Cooper, Amanda Green, Emily Hobbs, Nicole James, Francis King, Asmita Rama, Sian Ruck, Megan Tuapawa, Megan Wakefield, Pam Yates The Wellington team ..."
+    },
+    {
+      "id": "concord-dawn-395a76ab09649444",
+      "dj_id": "concord-dawn",
+      "title": "Concord Dawn Supports, Guests for Auckland &amp; Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b44f184418a45141c39a2fed4e&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU1207%2fS00196.htm&amp;c=5908793527867863961&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2012-07-12T07:26:00.000Z",
+      "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "dj-fitchie-6fe736dfae916d0e",
+      "dj_id": "dj-fitchie",
+      "title": "Fat Freddy’s Drop remember founder Christopher ‘Mu’ Faiumu after sudden death",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b6fe2a4847956e03ee423cdaee&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2ffat-freddys-drop-founder-chris-faiumu-mu-and-dj-fitchie-dies%2fOBPI6ERZCNB65GPNNTIBKSPUIQ%2f&amp;c=5897345948839039140&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2025-07-17T14:14:00.000Z",
+      "snippet": "Fat Freddy’s Drop founder and member Christopher Ta’aloga Faiumu is being remembered as a gracious person and ‘talismanic’ musician. More widely known through his profession monikers ‘DJ Mu’ and ‘DJ ..."
+    },
+    {
+      "id": "dj-fitchie-a257e898367e60ec",
+      "dj_id": "dj-fitchie",
+      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275b6fe2a4847956e03ee423cdaee&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2025-07-17T19:57:00.000Z",
+      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "broderbeats-6815c49424357613",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275bdb5f14bff88d70ed0747488d1&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-31e5ff8876abf074",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275bdb5f14bff88d70ed0747488d1&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-b480daf66afaad4f",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275bdb5f14bff88d70ed0747488d1&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "estere-3a55de583bb8f4b0",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275beea904a1ea44d561beb0b1d5f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Est&#232;re is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-b07773ebb4e6fc1f",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275beea904a1ea44d561beb0b1d5f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Est&#232;re has rolled out her new &quot;digital doom dance song&quot; entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-89acd3f182d9a14f",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275beea904a1ea44d561beb0b1d5f&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-7d64a594f98707b9",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275beea904a1ea44d561beb0b1d5f&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
+      "id": "estere-e0f25dabae356039",
+      "dj_id": "estere",
+      "title": "Est&#232;re at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275beea904a1ea44d561beb0b1d5f&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Est&#232;re announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Est&#232;re’s October 2020 San ..."
+    },
+    {
+      "id": "estere-6472856777101295",
+      "dj_id": "estere",
+      "title": "Est&#232;re: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275beea904a1ea44d561beb0b1d5f&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Est&#232;re: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "estere-7529a3e1dec23a00",
+      "dj_id": "estere",
+      "title": "Ambition: Est&#232;re has eyes on the prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275beea904a1ea44d561beb0b1d5f&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fbay-of-plenty-times%2flifestyle%2fambition-estere-has-eyes-on-the-prize%2fCX5CFNLSQPPXMHUFVSHTCASEJM%2f&amp;c=4677511028279512710&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2016-11-09T16:42:00.000Z",
+      "snippet": "It's hard to imagine someone more different to Donald Trump than Magdelaine Lavirgin, the fictional persona Wellington producer Est&#232;re has strode into on her new track Ambition. Lavirgin - a young, ..."
+    },
+    {
+      "id": "don-luchito-3f6439efb28b4b59",
+      "dj_id": "don-luchito",
+      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c1695c42fe8ebd4a32f137cfea&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-07-18T17:00:00.000Z",
+      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
+    },
+    {
+      "id": "don-luchito-bbe86e00832d6719",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c1695c42fe8ebd4a32f137cfea&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2016-08-19T17:00:00.000Z",
+      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
+    },
+    {
+      "id": "don-luchito-8f3c9ed262377efd",
+      "dj_id": "don-luchito",
+      "title": "Funk N Soul with DJ Don Luchito.",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c1695c42fe8ebd4a32f137cfea&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2015-11-06T16:00:00.000Z",
+      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
+    },
+    {
+      "id": "frida-3b69633076041922",
+      "dj_id": "frida",
+      "title": "Glow in the Dark Paint Night - Fluro Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c4b2f84c0ea8aa8283b1073dcd&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2021%2fglow-in-the-dark-paint-night-fluro-frida%2fwellington&amp;c=14940081104874254031&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2021-02-23T16:00:00.000Z",
+      "snippet": "Deciding what to buy is hard, but paying for it doesn't have to be. Laybuy lets you receive the item now and spread the payment over 6 weekly automatic instalments. No interest, no fees*."
+    },
+    {
+      "id": "frida-7c02e86689268699",
+      "dj_id": "frida",
+      "title": "Buy Tickets to Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c4b2f84c0ea8aa8283b1073dcd&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2024%2ffrida%2fwellington%2ftickets%2fcontact-details%3fguest%3dguest&amp;c=7266203712031812666&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2013-12-10T16:00:00.000Z",
+      "snippet": "Get reimbursed up to 100% of your ticket purchase (excluding Ticket Protection fees). Ticket Protection can provide cover in case of illness, redundancy, public transport delays, and more. These ..."
+    },
+    {
+      "id": "frida-3dcef87fc19da77d",
+      "dj_id": "frida",
+      "title": "Jazz Festival: Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c4b2f84c0ea8aa8283b1073dcd&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2025-10-15T17:00:00.000Z",
+      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
+    },
+    {
+      "id": "lucas-263da36a5c09c8f4",
+      "dj_id": "lucas",
+      "title": "Wellington Lucas da Silva",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c510214dfa83d64c4a55329afd&amp;url=https%3a%2f%2fgithub.com%2fWellington-lucas-silva&amp;c=10085202354046544541&amp;mkt=en-nz",
+      "source": "GitHub",
+      "published_at": "2024-12-01T16:00:00.000Z",
+      "snippet": "Ol&#225;! Tudo bem? Me chamo Wellington, tenho 25 anos e sou um programador iniciante, de momento essa rede servir&#225; para incluir meus projetos de aprendizado."
+    },
+    {
+      "id": "millie-8dafabc61ef98ece",
+      "dj_id": "millie",
+      "title": "Ms X star Niwa Whatuira reveals how wife Millie helped him through his toughest times",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c729994e41b04d46501d89c461&amp;url=https%3a%2f%2fwww.nowtolove.co.nz%2fcelebrity%2fniwa-whatuira-wife-millie-love-story%2f&amp;c=9508750408991759551&amp;mkt=en-nz",
+      "source": "Now To Love",
+      "published_at": "2026-08-21T13:59:00.000Z",
+      "snippet": "Niwa Whatuira and wife millie share their love story, from a surprising first meeting to overcoming grief, marriage and life together."
+    },
+    {
+      "id": "millie-85acbd583afc1423",
+      "dj_id": "millie",
+      "title": "Wellington app business showcased in the United States",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c729994e41b04d46501d89c461&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fbusiness%2fsmall-business%2f69135107%2fwellington-app-business-showcased-in-the-united-states&amp;c=1929179254761370017&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2015-06-04T23:32:00.000Z",
+      "snippet": "Showcase Workshop founder and president Millie Jocelyn in the Wellington office where the company creates apps for marketing professionals. Photo: KEVIN STENT / FAIRFAX NZ Prefer us on Google A ..."
+    },
+    {
+      "id": "millie-323e8168fb1844d1",
+      "dj_id": "millie",
+      "title": "80-year-old Wellington woman ready to run Palm Beaches half-marathon",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c729994e41b04d46501d89c461&amp;url=https%3a%2f%2fwww.wpbf.com%2farticle%2fpalm-beaches-marathon-80-year-old-woman%2f69487690&amp;c=17774741489192572650&amp;mkt=en-nz",
+      "source": "WPBF",
+      "published_at": "2025-11-24T15:25:00.000Z",
+      "snippet": "LADIES, IT’S LOOKING PERFECT. ALL RIGHT CHRIS THANK YOU. WELL WHEN THE US POLO ASSN PALM BEACH’S MARATHON KICKS OFF NEXT MONTH, YOU WON’T FIND MANY RUNNERS, IF ANY, WITH MORE LIFE EXPERIENCES THAN 80 ..."
+    },
+    {
+      "id": "millie-07a39b135efa3eb8",
+      "dj_id": "millie",
+      "title": "Wellington Showcase app judged best in the world at New York",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c729994e41b04d46501d89c461&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fbusiness%2f73599234%2fwellington-showcase-app-judged-best-in-the-world-at-new-york&amp;c=2029774365992584674&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2015-11-01T17:17:00.000Z",
+      "snippet": "Showcase Software president and co-founder Millie Jocelyn praised the Wellington based development and design team for winning a United States award. Photo: KEVIN STENT / FAIRFAX NZ ..."
+    },
+    {
+      "id": "millie-93de59354baa87de",
+      "dj_id": "millie",
+      "title": "Cyclist Millie Donald in fine form",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9275c729994e41b04d46501d89c461&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fkapiti-news%2fnews%2fcyclist-millie-donald-in-fine-form%2fROKYJH6UKNBNTMPJCGNR22XF4E%2f&amp;c=10389908289702545241&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-12-11T19:50:00.000Z",
+      "snippet": "Millie Donald powers up Mount Wellington, Auckland, during the schools' northern tour. Photo / Craig Gerken It has been a busy and rewarding year for promising young cyclist Millie Donald. Donald, who ..."
     }
   ],
   "mixes": [
@@ -4336,6 +6368,482 @@
       "platform": "mixcloud"
     },
     {
+      "id": "estere-mixcloud-7cc0e6d0b3e2",
+      "dj_id": "estere",
+      "title": "Dj chrisfyah / mix tape 2012 / mensualmente estere publicando mixes nuevos ",
+      "url": "https://www.mixcloud.com/gomez-medina-cristianalejandro/dj-chrisfyah-mix-tape-2012-mensualmente-estere-publicando-mixes-nuevos/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-111825b245bb",
+      "dj_id": "don-luchito",
+      "title": "Geoff Marsland of Havana Coffee Works Presents his New Book with Don Luchito",
+      "url": "https://www.mixcloud.com/Radioactive_FM/geoff-marsland-of-havana-coffee-works-presents-his-new-book-with-don-luchito/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-38b41af6e16e",
+      "dj_id": "don-luchito",
+      "title": "Regenerate Magazine talks with Don Luchito 25-4-18",
+      "url": "https://www.mixcloud.com/Radioactive_FM/regenerate-magazine-talks-with-don-luchito-25-4-18/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-bbdd2ff4ee3a",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito 14 Hours Homeless Interview ",
+      "url": "https://www.mixcloud.com/Radioactive_FM/don-luchito-14-hours-homeless-interview/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-328962330f48",
+      "dj_id": "don-luchito",
+      "title": "Tommy Brenneck (Daptone Records) Don Luchito Interview 07-11-18",
+      "url": "https://www.mixcloud.com/Radioactive_FM/tommy-brenneck-daptone-records-don-luchito-interview-07-11-18/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-648c18961ec1",
+      "dj_id": "don-luchito",
+      "title": "Congress of Animals (Age Pryor) Interview w/ Don Luchito 12-11-18",
+      "url": "https://www.mixcloud.com/Radioactive_FM/congress-of-animals-age-pryor-interview-w-don-luchito-12-11-18/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-0561d56d56bb",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito Interviews Hari Mogosanu From Space Place! 30-10-18",
+      "url": "https://www.mixcloud.com/Radioactive_FM/don-luchito-interviews-hari-mogosanu-from-space-place-30-10-18/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-e55145548f63",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito Interviews Tina Farris and Allan Leeds",
+      "url": "https://www.mixcloud.com/Radioactive_FM/don-luchito-interviews-tina-farris-and-allan-leeds/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-bb062194d613",
+      "dj_id": "don-luchito",
+      "title": "Interview with Half/Time on The Amplifier Show with Don Luchito - 21/01/2026",
+      "url": "https://www.mixcloud.com/Radioactive_FM/interview-with-halftime-on-the-amplifier-show-with-don-luchito-21012026/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-9268a135cdab",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito's Interview w/ Jess from Fables 26-09-18",
+      "url": "https://www.mixcloud.com/Radioactive_FM/don-luchitos-interview-w-jess-from-fables-26-09-18/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-2af5a026bbe9",
+      "dj_id": "don-luchito",
+      "title": "Chronic Shnxman Intervew with Don Luchito 6-4-18",
+      "url": "https://www.mixcloud.com/Radioactive_FM/chronic-shnxman-intervew-with-don-luchito-6-4-18/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-4f4413d1a8c2",
+      "dj_id": "don-luchito",
+      "title": "NZ Irish Fest Interview with Don Luchito & Gerry Paul",
+      "url": "https://www.mixcloud.com/Radioactive_FM/nz-irish-fest-interview-with-don-luchito-gerry-paul/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-9977519253f8",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito SWIDT Interview 05-10-18",
+      "url": "https://www.mixcloud.com/Radioactive_FM/don-luchito-swidt-interview-05-10-18/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-4993c3dd0566",
+      "dj_id": "don-luchito",
+      "title": "RadioActive Interviews: Don Luchito & Naram",
+      "url": "https://www.mixcloud.com/Radioactive_FM/radioactive-interviews-roddy-naram/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "don-luchito-mixcloud-cd4aae152a1e",
+      "dj_id": "don-luchito",
+      "title": "Drew James (CEO, CCAT) chats with Don Luchito 10/12/2021",
+      "url": "https://www.mixcloud.com/Radioactive_FM/drew-james-ceo-ccat-chats-with-don-luchito-10122021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "producer-emma-mixcloud-14b94b322a29",
+      "dj_id": "producer-emma",
+      "title": "Tuesday Tune with Producer Emma-03/03/2026",
+      "url": "https://www.mixcloud.com/Radioactive_FM/tuesday-tune-with-producer-emma-03032026/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "producer-emma-mixcloud-ddee8b448876",
+      "dj_id": "producer-emma",
+      "title": "Pallbearer interview w/ Producer Emma - 6/3/25",
+      "url": "https://www.mixcloud.com/Radioactive_FM/pallbearer-interview-w-producer-emma-6325/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "producer-emma-mixcloud-ae1c4bd1f988",
+      "dj_id": "producer-emma",
+      "title": "Tuesday Tune with Producer Emma - 28/07/2026",
+      "url": "https://www.mixcloud.com/Radioactive_FM/tuesday-tune-with-producer-emma-28072026/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "producer-emma-mixcloud-8a179fb9647c",
+      "dj_id": "producer-emma",
+      "title": "Tuesday Tune with Producer Emma- 24/02/2026",
+      "url": "https://www.mixcloud.com/Radioactive_FM/tuesday-tune-with-producer-emma-24022026/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "producer-emma-mixcloud-1b72a60da494",
+      "dj_id": "producer-emma",
+      "title": "Tuesday Tune with Producer Emma- 17/02/2026",
+      "url": "https://www.mixcloud.com/Radioactive_FM/tuesday-tune-with-producer-emma-17022026/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "producer-emma-mixcloud-14910ac6f0fd",
+      "dj_id": "producer-emma",
+      "title": "Tuesday tunes with Producer Emma and Sunaina - 13/01/2026",
+      "url": "https://www.mixcloud.com/Radioactive_FM/tuesday-tunes-with-producer-emma-13012026/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-97186a20c34e",
+      "dj_id": "frida",
+      "title": "Tilburg je bent er w/ Frida B2B Ramses3000 / 14-04-2023",
+      "url": "https://www.mixcloud.com/MaxiRadio/tilburg-je-bent-er-w-frida-b2b-ramses3000-14-04-2023/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-30fede5782e9",
+      "dj_id": "frida",
+      "title": "DCR795 – Drumcode Radio Live - Pan-Pot live from Fridas Pier, Stuttgart",
+      "url": "https://www.mixcloud.com/adambeyer/dcr795-drumcode-radio-live-pan-pot-live-from-fridas-pier-stuttgart/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-a9b147733f3d",
+      "dj_id": "frida",
+      "title": "International Womxn's Day w/ Frida / 14-03-2021",
+      "url": "https://www.mixcloud.com/MaxiRadio/international-womxns-day-w-frida-14-03-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-1cefe09a1936",
+      "dj_id": "frida",
+      "title": "Frida / 11-10-2025",
+      "url": "https://www.mixcloud.com/MaxiRadio/frida-11-10-2025/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-aac7d2adfe72",
+      "dj_id": "frida",
+      "title": "Tilburg Je Bent Er w/ Frida / 29-01-2022",
+      "url": "https://www.mixcloud.com/MaxiRadio/tilburg-je-bent-er-w-frida-29-01-2022/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-e40234f18330",
+      "dj_id": "frida",
+      "title": "Tilburg je bent er w/ Frida & Mehdi-J / 02-06-2023",
+      "url": "https://www.mixcloud.com/MaxiRadio/tilburg-je-bent-er-w-frida-mehdi-j-02-06-2023/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-6d1adaf9de15",
+      "dj_id": "frida",
+      "title": "#13 Un jour comme un autre",
+      "url": "https://www.mixcloud.com/frida84/13-un-jour-comme-un-autre/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-88932be3b06f",
+      "dj_id": "frida",
+      "title": "#3 On the road [1]",
+      "url": "https://www.mixcloud.com/frida84/3-on-the-road-1/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-2942c94e1429",
+      "dj_id": "frida",
+      "title": "Fabio Florido I Live At Frida Open Air, Córdoba 23.03.2019",
+      "url": "https://www.mixcloud.com/Fabio_Florido/fabio-florido-i-live-at-frida-open-air-c%C3%B3rdoba-23032018/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-c167304f9a75",
+      "dj_id": "frida",
+      "title": "Episode 365 - kahlokairi (one for frida)",
+      "url": "https://www.mixcloud.com/eclectic-ladyland/episode-365-kahlokairi/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-35ad8069bca5",
+      "dj_id": "frida",
+      "title": "Matadero Pride",
+      "url": "https://www.mixcloud.com/fridanipol/matadero-pride/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-478e0d457c80",
+      "dj_id": "frida",
+      "title": "#14 Sense / Anti-sense",
+      "url": "https://www.mixcloud.com/frida84/14-sense-anti-sense/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-c2f06d890f09",
+      "dj_id": "frida",
+      "title": "#12 Sun of a beach",
+      "url": "https://www.mixcloud.com/frida84/12-sun-of-a-beach/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-9ee1f07e3841",
+      "dj_id": "frida",
+      "title": "#15 Hidden hand",
+      "url": "https://www.mixcloud.com/frida84/14-hidden-hand/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-b99a386a11ca",
+      "dj_id": "frida",
+      "title": "Tilburg je bent er w/ Frida & Cluster / 28-05-2022",
+      "url": "https://www.mixcloud.com/MaxiRadio/tilburg-je-bent-er-w-frida-cluster-28-05-2022/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-fe0374a31ae7",
+      "dj_id": "frida",
+      "title": "#10 Supplementary material",
+      "url": "https://www.mixcloud.com/frida84/10-supplementary-material/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-f72e0b185003",
+      "dj_id": "frida",
+      "title": "Frida / 04-09-2021",
+      "url": "https://www.mixcloud.com/MaxiRadio/frida-04-09-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-9ccfdf61e551",
+      "dj_id": "frida",
+      "title": "#7 A momentary lapse of reason / Side A'",
+      "url": "https://www.mixcloud.com/frida84/7-a-momentary-lapse-of-reason-side-a/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-53f5f000f5f9",
+      "dj_id": "frida",
+      "title": "#4 On the road [2]",
+      "url": "https://www.mixcloud.com/frida84/4-on-the-road-2/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-9800df7e0ea9",
+      "dj_id": "frida",
+      "title": "#11 Juncture",
+      "url": "https://www.mixcloud.com/frida84/11-juncture/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-f354e5c35c0a",
+      "dj_id": "frida",
+      "title": "Dj Munja - Pop Rock Frida Mix 2013",
+      "url": "https://www.mixcloud.com/djmunja/dj-munja-pop-rock-frida-mix-2013/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-8d904a7e9bb3",
+      "dj_id": "frida",
+      "title": "Mix To Win: Frida and the Oneironauts",
+      "url": "https://www.mixcloud.com/Mej%C3%ADas/mix-to-win-frida-and-the-oneironauts/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-2d3f65571008",
+      "dj_id": "frida",
+      "title": "Frida Mix 100519 Part 1 ( L&N party pack)",
+      "url": "https://www.mixcloud.com/borisalenko/frida-mix-100519-part-1-ln-party-pack/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-e5be783dd0e9",
+      "dj_id": "frida",
+      "title": "Frida Darko - Sunshine  Live Pioneer DJ Mix Mission 2021",
+      "url": "https://www.mixcloud.com/djsunparadox/frida-darko-sunshine-live-pioneer-dj-mix-mission-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-a52c543db772",
+      "dj_id": "frida",
+      "title": "FRIDA - Guest Mix @ Southern FM",
+      "url": "https://www.mixcloud.com/frida-harnesk/frida-guest-mix-southern-fm/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-4ba1bf594589",
+      "dj_id": "frida",
+      "title": "Frida Mix 100519 Part 2 ( L&N party pack)",
+      "url": "https://www.mixcloud.com/borisalenko/frida-mix-100519-part-2-lc-party-pack/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-ca1a2462007c",
+      "dj_id": "frida",
+      "title": "Mix Madriguera Asylum",
+      "url": "https://www.mixcloud.com/fridanipol/madriguera-asylum/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-63102ed44818",
+      "dj_id": "frida",
+      "title": "T.D.S - Blame Frida - Summer Mix - 2025",
+      "url": "https://www.mixcloud.com/TheDirtySpitfire/tds-blame-frida-summer-mix-2025/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-5ef11f77ab0b",
+      "dj_id": "frida",
+      "title": "@ Cantina De Frida 2016 Summer Mix ! :)",
+      "url": "https://www.mixcloud.com/djmunja/cantina-de-frida-2016-summer-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-540555e3335d",
+      "dj_id": "frida",
+      "title": "Frida Joy - Mix (Keep Up Release)",
+      "url": "https://www.mixcloud.com/DeepMnmlTech/frida-joy-mix-keep-up-release/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-222d688c37ac",
+      "dj_id": "frida",
+      "title": "Frida - Guest Mix: Frida Feels Show - 22nd February 2024",
+      "url": "https://www.mixcloud.com/OrokoRadio/frida-guest-mix-frida-feels-show-22nd-february-2024/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-954a652c4606",
+      "dj_id": "frida",
+      "title": "Cozy Frida's galaxyafiwe.net 27th December 2024 Selectorc In The Mix",
+      "url": "https://www.mixcloud.com/selectorc/cozy-fridas-galaxyafiwenet-27th-december-2024-selectorc-in-the-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-31a926ac4691",
+      "dj_id": "frida",
+      "title": "Castabout #009 | mixed by Nici Frida & Sergio Collado",
+      "url": "https://www.mixcloud.com/justabout/castabout-009-mixed-by-nici-frida-sergio-collado/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-9351b37c46cf",
+      "dj_id": "frida",
+      "title": "Frida Kaulo mix",
+      "url": "https://www.mixcloud.com/fridakaulo/frida-kaulo-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-456cd8218b68",
+      "dj_id": "frida",
+      "title": "Jungla reloaded mix 2016 (Los hijos de Frida)",
+      "url": "https://www.mixcloud.com/camamuga/jungla-reloaded-mix-2016-los-hijos-de-frida/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-3d59ef5a8cfb",
+      "dj_id": "frida",
+      "title": "Frida Mix 100519 Part 3 ( L&N party pack)",
+      "url": "https://www.mixcloud.com/borisalenko/frida-mix-100519-part-3-lc-party-pack/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-7faad7b9ebb4",
+      "dj_id": "frida",
+      "title": "Fridae lunch hour mix vol1(Piano)",
+      "url": "https://www.mixcloud.com/styles-shuping/fridae-lunch-hour-mix-vol1piano/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-b6aab1ec274c",
+      "dj_id": "frida",
+      "title": "FRIDA - Guest Mix - 3rd May 2023",
+      "url": "https://www.mixcloud.com/OrokoRadio/frida-guest-mix-3rd-may-2023/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-d168b940b72d",
+      "dj_id": "frida",
+      "title": "The Night Shift's FRIDA KAHLO PUZZLE MIX - May 1st 2020",
+      "url": "https://www.mixcloud.com/nightshifttoronto/the-night-shifts-frida-kahlo-puzzle-mix-may-1st-2020/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frida-mixcloud-d7ce7b919159",
+      "dj_id": "frida",
+      "title": "Frida holt Wasser#Dj Mix@TB32:)",
+      "url": "https://www.mixcloud.com/angelina-m%C3%BCller2/frida-holt-wasserdj-mixtb32/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-9b1943d98b68",
+      "dj_id": "lucas",
+      "title": "ZEnZEnZen●不仅仅是喜欢●走心●互不打扰 DJ Lucas 2K18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/zenzenzen%E4%B8%8D%E4%BB%85%E4%BB%85%E6%98%AF%E5%96%9C%E6%AC%A2%E8%B5%B0%E5%BF%83%E4%BA%92%E4%B8%8D%E6%89%93%E6%89%B0-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-56bf6183ffbb",
+      "dj_id": "lucas",
+      "title": "GucCi PraDa V5●有何不可●戒烟●习惯【Ashley专属】DJ Lucas 2k18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/gucci-prada-v5%E6%9C%89%E4%BD%95%E4%B8%8D%E5%8F%AF%E6%88%92%E7%83%9F%E4%B9%A0%E6%83%AF-ashley%E4%B8%93%E5%B1%9Edj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-c7ecffab68d1",
+      "dj_id": "lucas",
+      "title": "Astromania●Karang Guni●Ice Bell●ZEnZenZen●八神摇 ●摩托摇 Ft GucCi PraDa●Fly Away 全外文舞曲 DJ Lucas 2k18 ReMix",
+      "url": "https://www.mixcloud.com/lucas-kong2/astromaniakarang-guniice-bellzenzenzen%E5%85%AB%E7%A5%9E%E6%91%87-%E6%91%A9%E6%89%98%E6%91%87-ft-gucci-pradafly-away-%E5%85%A8%E5%A4%96%E6%96%87%E8%88%9E%E6%9B%B2-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-f887b47c26d0",
+      "dj_id": "lucas",
+      "title": "疑心病✘醉赤壁✘离人愁✘行星✘如果雨之后 DJ Lucas 2k18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/%E7%96%91%E5%BF%83%E7%97%85%E9%86%89%E8%B5%A4%E5%A3%81%E7%A6%BB%E4%BA%BA%E4%BB%87%E8%A1%8C%E6%98%9F%E5%A6%82%E6%9E%9C%E9%9B%A8%E4%B9%8B%E5%90%8E-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-929e41543d4f",
+      "dj_id": "lucas",
+      "title": "GucCi PraDa●纸短情长●戒烟●最后我们没有在一起【MouTian专属】DJ Lucas 2k18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/gucci-prada%E7%BA%B8%E7%9F%AD%E6%83%85%E9%95%BF%E6%88%92%E7%83%9F%E6%9C%80%E5%90%8E%E6%88%91%E4%BB%AC%E6%B2%A1%E6%9C%89%E5%9C%A8%E4%B8%80%E8%B5%B7moutian%E4%B8%93%E5%B1%9Edj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-2250f72873a9",
+      "dj_id": "lucas",
+      "title": "The Hum●Gam Gam●Church Of Hell●GucCi PraDa Special Request For AnthonyXJeremy DJ Lucas 2k18 ReMix",
+      "url": "https://www.mixcloud.com/lucas-kong2/the-humgam-gamchurch-of-hellgucci-prada-special-request-for-anthonyxjeremy-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-0923660d9401",
+      "dj_id": "lucas",
+      "title": "『爱的故事上集メ男人KTVメ嚣张メ太阳メ我走后メDance Monkeyメ野狼Disco』2o20 Private Nonstop ReMix By DJ LuCas",
+      "url": "https://www.mixcloud.com/lucas-kong2/%E7%88%B1%E7%9A%84%E6%95%85%E4%BA%8B%E4%B8%8A%E9%9B%86%E3%83%A1%E7%94%B7%E4%BA%BAktv%E3%83%A1%E5%9A%A3%E5%BC%A0%E3%83%A1%E5%A4%AA%E9%98%B3%E3%83%A1%E6%88%91%E8%B5%B0%E5%90%8E%E3%83%A1dance-monkey%E3%83%A1%E9%87%8E%E7%8B%BCdisco2o20-private-nonstop-remix-by-dj-lucas/",
+      "platform": "mixcloud"
+    },
+    {
       "id": "sam-mixcloud-ec0bb10b6001",
       "dj_id": "sam",
       "title": "DJ SaMS㊣刚好遇见你✘Club EDM 2017",
@@ -4585,6 +7093,181 @@
       "dj_id": "sam",
       "title": "Sam Divine - Exclusive Mix - CLUBZ",
       "url": "https://www.mixcloud.com/thenightbazaar/sam-divine-exclusive-mix-clubz/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-23be08a6aa9b",
+      "dj_id": "lucas",
+      "title": "STAY HOME LISTEN VINAHOUSE & FUCK U CORONA ! Vinahouse Ver2 ReMix By DJ Lucas 2o20",
+      "url": "https://www.mixcloud.com/lucas-kong2/stay-home-listen-vinahouse-fuck-u-corona-vinahouse-ver2-remix-by-dj-lucas-2o20/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-873115c2a513",
+      "dj_id": "lucas",
+      "title": "DJ Green Lantern (Rock The Bells Radio)",
+      "url": "https://www.mixcloud.com/lucas-hhs/dj-green-lantern-rock-the-bells-radio/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-433ddf256584",
+      "dj_id": "lucas",
+      "title": "『Monsterメ那女孩对我说メ心安理得メ心如止水メ你的酒馆对我打了烊メ来自天堂的魔鬼メ像鱼』2K19 Private Nonstop ReMix By DJ LuCas",
+      "url": "https://www.mixcloud.com/lucas-kong2/monster%E3%83%A1%E9%82%A3%E5%A5%B3%E5%AD%A9%E5%AF%B9%E6%88%91%E8%AF%B4%E3%83%A1%E5%BF%83%E5%AE%89%E7%90%86%E5%BE%97%E3%83%A1%E5%BF%83%E5%A6%82%E6%AD%A2%E6%B0%B4%E3%83%A1%E4%BD%A0%E7%9A%84%E9%85%92%E9%A6%86%E5%AF%B9%E6%88%91%E6%89%93%E4%BA%86%E6%A0%B7%E3%83%A1%E6%9D%A5%E4%B9%8B%E5%A4%A9%E5%A0%82%E7%9A%84%E9%AD%94%E9%AC%BC%E3%83%A1%E5%83%8F%E9%B1%BC2k19-private-nonstop-remix-by-dj-lucas/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-a2739efab8df",
+      "dj_id": "lucas",
+      "title": "DJ TED SMOOTH - PARTY MODE (94.7 THE BLOCK) 07.22.22",
+      "url": "https://www.mixcloud.com/lucas-hhs/dj-ted-smooth-party-mode-947-the-block-072222/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-40c61350bfb9",
+      "dj_id": "lucas",
+      "title": "『Stay Youngメ绿色メ雨下的瞬间メ說一句我不走了メ怎么了メ你会遇见更好的人』2K19 Private Nonstop ReMix By DJ LuCas",
+      "url": "https://www.mixcloud.com/lucas-kong2/stay-young%E3%83%A1%E7%BB%BF%E8%89%B2%E3%83%A1%E9%9B%A8%E4%B8%8B%E7%9A%84%E7%9E%AC%E9%97%B4%E3%83%A1%E5%AF%82%E5%AF%9E%E7%83%9F%E7%81%AB%E3%83%A1%E6%80%8E%E4%B9%88%E4%BA%86%E3%83%A1%E4%BD%A0%E4%BC%9A%E9%81%87%E8%A7%81%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BA%BA2k19-private-nonstop-remix-by-dj-lucas/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-ee87bf0130f2",
+      "dj_id": "lucas",
+      "title": "TECHNICIAN THE DJ - ALL CITY DAY: BRONX (ROCK THE BELLS RADIO) 08.28.21",
+      "url": "https://www.mixcloud.com/lucas-hhs/technician-the-dj-all-city-day-bronx-rock-the-bells-radio-082821/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-e730e9613e5c",
+      "dj_id": "lucas",
+      "title": "JENKEM MIX 29: LUCAS PUIG",
+      "url": "https://www.mixcloud.com/jenkemmag/jenkem-mix-29-lucas-puig/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-2369136eb2cf",
+      "dj_id": "lucas",
+      "title": "NONSTOP VIỆT MIX 2019 | Về Đây Em Lo Remix - DJ Sang Lucas mix",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/nonstop-vi%E1%BB%87t-mix-2019-v%E1%BB%81-%C4%91%C3%A2y-em-lo-remix-dj-sang-lucas-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-479087e3417c",
+      "dj_id": "lucas",
+      "title": "Việt Mix 2019 | Ai Là Người Thương Em Remix Ft Xa em - DJ Sang Lucas mix",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/vi%E1%BB%87t-mix-2019-ai-l%C3%A0-ng%C6%B0%E1%BB%9Di-th%C6%B0%C6%A1ng-em-remix-ft-xa-em-dj-sang-lucas-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-ea2ed7f113a4",
+      "dj_id": "lucas",
+      "title": "Joyner Lucas Mix (1-5-19)",
+      "url": "https://www.mixcloud.com/djflexifresh/joyner-lucas-mix-1-5-19/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-77aaf0896f71",
+      "dj_id": "lucas",
+      "title": "Nonstop Việt Mix 2019 - Anh Đã Khóc Vì Em Remix FT Chẳng Gì Đẹp Mãi Trên Đời - DJ Sang lucas mix",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/nonstop-vi%E1%BB%87t-mix-2019-anh-%C4%91%C3%A3-kh%C3%B3c-v%C3%AC-em-remix-ft-ch%E1%BA%B3ng-g%C3%AC-%C4%91%E1%BA%B9p-m%C3%A3i-tr%C3%AAn-%C4%91%E1%BB%9Di-dj-sang-lucas-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-60aa4badb1d9",
+      "dj_id": "lucas",
+      "title": "Nonstop 2019    Hãy Trao Cho Anh Vocal Nữ Remix  | DJ Sang Lucas mix",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/nonstop-2019-h%C3%A3y-trao-cho-anh-vocal-n%E1%BB%AF-remix-dj-sang-lucas-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-63a7b1f887fa",
+      "dj_id": "lucas",
+      "title": "NONSTOP 2019 I CUỘC VUI CÔ ĐƠN REMIX - Dj Sang Lucas mix",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/nonstop-2019-i-cu%E1%BB%99c-vui-c%C3%B4-%C4%91%C6%A1n-remix-dj-sang-lucas-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-30ec05ba1756",
+      "dj_id": "lucas",
+      "title": "April 2015 Deep house mix: Dixon, Tale of Us, Mind Against, Adriatique, Agoria, Mano Le Tough etc",
+      "url": "https://www.mixcloud.com/gavin-lucas/april-2015-deep-house-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-e4a978e7bd81",
+      "dj_id": "lucas",
+      "title": "DJ'YE【Lucas Private Mix】《抖音熱曲 - 羊了個羊 X 郭頂 - 我們倆 X 葉瓊琳 - 你的輪廓 X 玖壹壹 - 癡情男子漢》Mixtape 2x22",
+      "url": "https://www.mixcloud.com/jarty-ye/djyelucas-private-mix%E6%8A%96%E9%9F%B3%E7%86%B1%E6%9B%B2-%E7%BE%8A%E4%BA%86%E5%80%8B%E7%BE%8A-x-%E9%83%AD%E9%A0%82-%E6%88%91%E5%80%91%E5%80%86-x-%E8%91%89%E7%93%8A%E7%90%B3-%E4%BD%A0%E7%9A%84%E8%BC%AA%E5%BB%93-x-%E7%8E%96%E5%A3%B9%E5%A3%B9-%E7%99%A1%E6%83%85%E7%94%B7%E5%AD%90%E6%BC%A2mixtape-2x22/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-49181c855b6c",
+      "dj_id": "millie",
+      "title": "What’s Going On? - Ady Crampton + Special Guest Millie Jackson // 28-02-23",
+      "url": "https://www.mixcloud.com/thefaceradiobk/whats-going-on-ady-crampton-special-guest-millie-jackson-28-02-23/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-d4e3b6e48481",
+      "dj_id": "millie",
+      "title": "Soul Food Course 9: Al Green, Millie Jackson, Charles Bradley, Barry White, Lee Fields, Choklate...",
+      "url": "https://www.mixcloud.com/mol_/soul-food-course-9-al-green-millie-jackson-charles-bradley-barry-white-lee-fields-choklate/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-72ba99e9aed0",
+      "dj_id": "millie",
+      "title": "Kirat & Millie (March '23)",
+      "url": "https://www.mixcloud.com/melodicdistraction/kirat-millie-march-23/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-f3715eeb8937",
+      "dj_id": "millie",
+      "title": "Millie McKee: 10th October '22",
+      "url": "https://www.mixcloud.com/NoodsRadio/milly-mckee/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-a4d175907dd5",
+      "dj_id": "millie",
+      "title": "SENBOX MARY J BLIDGE TONI BRAXTON AALIYAH  BRANDY MONICA R KELLY WHITNEY HOUSTON MILLIE VANILLIE KRI",
+      "url": "https://www.mixcloud.com/Senbox/senbox-mary-j-blidge-toni-braxton-aaliyah-brandy-monica-r-kelly-whitney-houston-millie-vanillie-kri/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-7425e678fd9f",
+      "dj_id": "millie",
+      "title": "Millie McKee: 25th April '22",
+      "url": "https://www.mixcloud.com/NoodsRadio/millie-mckee-25th-april-22/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-1a614e7b5a1c",
+      "dj_id": "millie",
+      "title": "Sporecast Radio w/ Millie Mckee: 15th October '22",
+      "url": "https://www.mixcloud.com/NoodsRadio/sporecast-radio-w-millie-mckee-15th-october-22/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-49a5ead92f6b",
+      "dj_id": "millie",
+      "title": "Millie Milz WBLS 107.5FM Inside the Mix with Kevin Hedge",
+      "url": "https://www.mixcloud.com/DJMillieMilz/millie-milz-wbls-1075fm-inside-the-mix-with-kevin-hedge/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-ba25d4cc5e61",
+      "dj_id": "millie",
+      "title": "Keep Goin' Millie - MIX",
+      "url": "https://www.mixcloud.com/MillieDaKid/keep-goin-millie-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "millie-mixcloud-fb4475289cc9",
+      "dj_id": "millie",
+      "title": "Millie's 17th Birthday Mix (Her Set List) 17 songs for 17 years. Her favourite dance tracks so far.",
+      "url": "https://www.mixcloud.com/mattybmusic/millies-17th-birthday-mix-her-set-list-17-songs-for-17-years-her-favourite-dance-tracks-so-far/",
       "platform": "mixcloud"
     }
   ],
