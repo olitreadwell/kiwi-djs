@@ -2,6 +2,7 @@ import type { Pool } from 'pg';
 import { undertheradarScraper } from './undertheradar';
 import { sanfranScraper } from './sanfran';
 import { rogueScraper } from './rogue';
+import { radioactiveScraper } from './radioactive';
 import { soundcloudScraper } from './soundcloud';
 import { eventfindaScraper } from './eventfinda';
 import { bestEffortScrapers } from './best-effort';
@@ -13,6 +14,7 @@ const scrapers: Scraper[] = [
   undertheradarScraper,
   sanfranScraper,
   rogueScraper,
+  radioactiveScraper,
   soundcloudScraper,
   eventfindaScraper,
   ...bestEffortScrapers,

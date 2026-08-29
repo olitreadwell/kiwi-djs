@@ -119,7 +119,7 @@ export const openApiSpec: JsonObject = {
     schemas: {
       DjSummary: {
         type: 'object',
-        required: ['id', 'name', 'genres', 'popularity', 'data_completeness', 'upcoming_events'],
+        required: ['id', 'name', 'genres', 'popularity', 'data_completeness', 'verification_level', 'verification_sources', 'upcoming_events', 'last_played_at'],
         properties: {
           id: { type: 'string' },
           name: { type: 'string' },
@@ -133,7 +133,10 @@ export const openApiSpec: JsonObject = {
           website_url: { type: 'string', nullable: true },
           popularity: { type: 'integer' },
           data_completeness: { type: 'integer' },
+          verification_level: { type: 'integer', description: 'Evidence-weighted: 0 candidate, 1 listed, 2+ verified' },
+          verification_sources: { type: 'array', items: { type: 'string' }, description: 'Evidence categories: mixes, links, articles, gigs' },
           upcoming_events: { type: 'integer' },
+          last_played_at: { type: 'string', format: 'date-time', nullable: true, description: 'Most recent past gig date' },
         },
       },
       DjListResponse: {

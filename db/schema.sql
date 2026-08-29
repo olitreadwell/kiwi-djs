@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS djs (
   opt_out       BOOLEAN NOT NULL DEFAULT FALSE,
   mixcloud_backoff_until TIMESTAMPTZ,        -- rate-limit hold until (Mixcloud 429)
   discovery_note TEXT,                       -- junk/seen on unverified candidates
+  verification_level INTEGER NOT NULL DEFAULT 0, -- 0 candidate, 1 listed, 2+ verified (evidence-weighted)
+  verification_sources TEXT[] NOT NULL DEFAULT '{}', -- evidence categories: mixes, links, articles, gigs
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
@@ -29,6 +31,8 @@ CREATE TABLE IF NOT EXISTS djs (
 -- idempotent column adds for pre-existing tables
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS mixcloud_backoff_until TIMESTAMPTZ;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS discovery_note TEXT;
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_level INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_sources TEXT[] NOT NULL DEFAULT '{}';
 
 CREATE TABLE IF NOT EXISTS venues (
   id            TEXT PRIMARY KEY,

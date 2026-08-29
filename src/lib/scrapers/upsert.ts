@@ -10,6 +10,25 @@ export interface EventRecord {
 }
 
 export async function upsertEvent(pool: Pool, event: EventRecord): Promise<boolean> {
+  // Dedupe across sources: same gig appears on Undertheradar, Rogue & Vagabond
+  // (UTR-powered) etc. Match on normalized name + venue within a 24h window.
+  if (event.startsAt) {
+    const dupe = await pool.query(
+      `SELECT id FROM events
+       WHERE lower(regexp_replace(name, '[^a-z0-9]', '', 'g')) = $1
+         AND venue IS NOT DISTINCT FROM $2
+         AND abs(extract(epoch FROM (starts_at - $3::timestamptz))) < 86400
+       LIMIT 1`,
+      [
+        event.name.toLowerCase().replace(/[^a-z0-9]/g, ''),
+        event.venue ?? null,
+        event.startsAt.toISOString(),
+      ],
+    );
+    if (dupe.rows[0]) {
+      return false;
+    }
+  }
   const result = await pool.query(
     `INSERT INTO events (id, name, venue, starts_at, url, source)
      VALUES ($1, $2, $3, $4, $5, $6)
@@ -23,9 +42,19 @@ export async function upsertEvent(pool: Pool, event: EventRecord): Promise<boole
 
 export async function linkDjToEvent(pool: Pool, eventId: string, eventName: string): Promise<void> {
   const djMatch = await pool.query(
-    `SELECT id FROM djs
-     WHERE opt_out = FALSE AND position(lower(name) in lower($1)) > 0
-     ORDER BY length(name) DESC LIMIT 1`,
+    `SELECT d.id FROM djs d
+     WHERE d.opt_out = FALSE
+       AND (
+         position(lower(d.name) in lower($1)) > 0
+         OR position(lower($1) in lower(d.name)) > 0
+         OR EXISTS (
+           SELECT 1 FROM dj_aliases a
+           WHERE a.dj_id = d.id
+             AND (position(lower(a.alias) in lower($1)) > 0 OR position(lower($1) in lower(a.alias)) > 0)
+         )
+       )
+     ORDER BY length(d.name) DESC, (d.active = TRUE) DESC
+     LIMIT 1`,
     [eventName],
   );
   if (djMatch.rows[0]) {

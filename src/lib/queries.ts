@@ -31,8 +31,11 @@ export interface DjRow {
   active: boolean;
   popularity: number;
   data_completeness: number;
+  verification_level: number;
+  verification_sources: string[];
   source: string;
   upcoming_events: number;
+  last_played_at: string | null;
 }
 
 export interface EventRow {
@@ -70,7 +73,8 @@ export async function listDjs(opts: { query?: string; genre?: string } = {}): Pr
   }
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
-            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events
+            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d
      WHERE ${where.join(' AND ')}
      ORDER BY popularity DESC, name ASC`,
@@ -86,7 +90,8 @@ export async function getDjById(id: string): Promise<DjRow | null> {
   const pool = getPool();
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
-            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events
+            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.id = $1 AND d.opt_out = FALSE AND d.active = TRUE`,
     [id],
   );
@@ -172,7 +177,8 @@ export async function getPopularDjs(limit = 8): Promise<DjRow[]> {
   const pool = getPool();
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
-            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events
+            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d
      WHERE d.opt_out = FALSE AND d.active = TRUE
      ORDER BY d.popularity DESC, d.name ASC

@@ -13,7 +13,8 @@ const djs = (
             (CASE WHEN d.facebook_url IS NOT NULL THEN 10 ELSE 0 END) +
             (CASE WHEN d.website_url IS NOT NULL THEN 10 ELSE 0 END) +
             (CASE WHEN d.mixcloud_url IS NOT NULL THEN 5 ELSE 0 END) AS data_completeness,
-            (SELECT count(*)::int FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events
+            (SELECT count(*)::int FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at)::text FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.opt_out = FALSE AND d.active = TRUE`,
   )
 ).rows;

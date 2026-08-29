@@ -120,7 +120,7 @@ export const undertheradarScraper: Scraper = {
 
     // Venue crawl: gig pages link to venue pages, which list more upcoming gigs.
     const venueUrls = new Set<string>();
-    for (const gigUrl of gigUrls.slice(0, 6)) {
+    for (const gigUrl of gigUrls.slice(0, 15)) {
       try {
         const gigHtml = await fetchHtml(gigUrl);
         await sleep(400);
@@ -133,7 +133,7 @@ export const undertheradarScraper: Scraper = {
         // gig page fetch failure is non-fatal
       }
     }
-    for (const venueUrl of [...venueUrls].slice(0, 8)) {
+    for (const venueUrl of [...venueUrls].slice(0, 25)) {
       try {
         const venueHtml = await fetchHtml(venueUrl);
         await sleep(400);

@@ -63,6 +63,18 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         <div className="rounded-lg border border-stone-800 bg-stone-900/60 p-4 font-mono text-xs text-stone-400">
           <p>{dj.popularity} profile plays</p>
           <p>{dj.data_completeness}% data complete</p>
+          <p className="mt-1 text-stone-300">
+            {dj.last_played_at
+              ? `last played ${new Date(dj.last_played_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}`
+              : 'last played: unknown'}
+          </p>
+          <p className="mt-1 text-emerald-400">
+            {dj.verification_level >= 2
+              ? `verified · ${dj.verification_sources.join(' + ')}`
+              : dj.verification_level === 1
+                ? 'listed · needs more sources'
+                : 'candidate · unverified'}
+          </p>
           <p className="mt-1 text-stone-600">source: {dj.source}</p>
         </div>
       </div>

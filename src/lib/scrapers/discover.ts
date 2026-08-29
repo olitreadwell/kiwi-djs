@@ -1,7 +1,7 @@
 import type { Pool } from 'pg';
 import { slugify } from '../slug';
 import { sleep } from './http';
-import { upsertDjLink } from './enrich';
+import { upsertDjLink, upsertDjArticle, parseBingNewsXml } from './enrich';
 import type { ScrapeResult } from './types';
 
 const STOP_WORDS = new Set([
@@ -20,6 +20,7 @@ const JUNK_NAMES = new Set([
   'band', 'bands', 'mc', 'host', 'hosts', 'resident', 'residents', 'guest', 'guests', 'special guest',
   'headline', 'headliner', 'opener', 'closer', 'warm up', 'warmup', 'tbc', 'tba', 'to be announced',
   'to be confirmed', 'various artists', 'all night long', 'all night', 'late night', 'early bird',
+  'edm music', 'radioactive fm', 'mouthfull radio', 'radio station', 'fm radio', '88.6fm',
 ]);
 
 export function normalizeArtistName(name: string): string {
@@ -112,19 +113,46 @@ interface MixcloudUser {
   city?: string;
 }
 
+// Wellington venue/place anchors — a cloudcast mentioning one of these is
+// strong evidence the uploader plays Wellington. City aliases included
+// (Pōneke, Te Whanganui-a-Tara) per user direction.
+const WELLINGTON_ANCHORS = [
+  'san fran', 'meow', 'valhalla', 'caroline', 'ivy bar', 'sly bar', 'deadpool', 'third eye',
+  'rogue and vagabond', 'rogue & vagabond', 'moon', 'big fan', 'laundry', 'mishmash', 'brewtown',
+  'thistle', 'wunderbar', 'hunter lounge', 'grand', 'embassy', 'racket', 'malt', 'backyard',
+  'green room', 'cuba st', 'courtenay', 'ghuznee', 'lambton quay', 'willis st', 'pōneke', 'poneke',
+  'te whanganui-a-tara', 'whanganui-a-tara', '121 festival', 'club 121',
+  'meow nū', 'meow nu', 'lulus', 'lūlūs', 'dakota', 'pow wow room', 'afters', 'cuba street tavern',
+  'moon bar', 'newtown', 'mish mash', 'homegrown', 'cubadupa', 'cuba dupa',
+  'rhythm and vines', 'rhythm & vines', 'northern bass', 'bay dreams', 'electric avenue',
+  'hidden valley', 'splore', 'soundsplash', 'twisted frequency', 'rhythm and alps', 'rhythm & alps',
+  'womad', 'aum festival', 'otherside festival', 'frequency festival',
+];
+
+const CITY_WORDS = ['wellington', 'wlg', 'pōneke', 'poneke', 'whanganui'];
+
+function nameContainsCityWord(name: string): boolean {
+  const normalized = normalizeArtistName(name);
+  return CITY_WORDS.some((word) => normalized === word || normalized.includes(`${word} `) || normalized.includes(` ${word}`));
+}
+
 export async function discoverFromMixcloud(pool: Pool): Promise<ScrapeResult> {
-  const queries = ['wellington dj', 'wellington djs', 'wellington techno', 'wellington house'];
+  const queries = ['wellington', 'pōneke', 'poneke', 'te whanganui-a-tara', 'whanganui-a-tara'];
   const existing = await loadExistingNames(pool);
   let found = 0;
   let newCount = 0;
   for (const query of queries) {
-    const url = `https://api.mixcloud.com/search/?q=${encodeURIComponent(query)}&type=user`;
+    const url = `https://api.mixcloud.com/search/?q=${encodeURIComponent(query)}&type=cloudcast`;
     const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
     if (!res.ok) continue;
-    const data = (await res.json()) as { data?: MixcloudUser[] };
-    for (const user of data.data ?? []) {
-      const text = `${user.name} ${user.city ?? ''}`.toLowerCase();
-      if (!text.includes('wellington')) continue;
+    const data = (await res.json()) as { data?: Array<{ name: string; user?: MixcloudUser }> };
+    for (const cloudcast of data.data ?? []) {
+      const user = cloudcast.user;
+      if (!user?.name) continue;
+      const cloudcastName = normalizeArtistName(cloudcast.name);
+      const anchored = WELLINGTON_ANCHORS.some((anchor) => cloudcastName.includes(normalizeArtistName(anchor)));
+      if (!anchored) continue;
+      if (nameContainsCityWord(user.name)) continue;
       const key = normalizeArtistName(user.name);
       if (existing.has(key)) continue;
       existing.add(key);
@@ -144,28 +172,183 @@ export async function discoverFromMixcloud(pool: Pool): Promise<ScrapeResult> {
     }
     await sleep(500);
   }
-  return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: newCount, error: found === 0 ? 'No Wellington users' : undefined };
+  return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: newCount, error: found === 0 ? 'No Wellington-anchored cloudcasts' : undefined };
 }
 
 export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
-  const result = await pool.query(
-    `UPDATE djs SET active = TRUE, updated_at = now()
-     WHERE source IN ('discovered', 'mixcloud') AND active = FALSE AND opt_out = FALSE
-       AND (discovery_note IS NULL OR discovery_note <> 'junk')
-       AND (
-         EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = djs.id) OR
-         EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = djs.id) OR
-         EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = djs.id)
-       )
-     RETURNING id`,
+  // Evidence-weighted verification: level = distinct evidence categories
+  // (mixes / links / articles / gigs). level >= 2 flips a candidate to an
+  // active (listed) DJ; level keeps climbing as more sources accumulate.
+  const weighted = await pool.query(
+    `UPDATE djs SET
+       verification_level = evidence.level,
+       verification_sources = evidence.sources,
+       active = evidence.level >= 2,
+       updated_at = now()
+     FROM (
+       SELECT d.id,
+         (CASE WHEN EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id) THEN 1 ELSE 0 END) +
+         (CASE WHEN EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id) THEN 1 ELSE 0 END) +
+         (CASE WHEN EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id) THEN 1 ELSE 0 END) +
+         (CASE WHEN EXISTS (SELECT 1 FROM events e WHERE e.dj_id = d.id) THEN 1 ELSE 0 END) AS level,
+         COALESCE(
+           ARRAY(
+             SELECT source
+             FROM unnest(ARRAY['mixes', 'links', 'articles', 'gigs']) AS source
+             WHERE (source = 'mixes' AND EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id))
+                OR (source = 'links' AND EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id))
+                OR (source = 'articles' AND EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id))
+                OR (source = 'gigs' AND EXISTS (SELECT 1 FROM events e WHERE e.dj_id = d.id))
+           ),
+           '{}'
+         ) AS sources
+       FROM djs d
+       WHERE d.opt_out = FALSE
+     ) evidence
+     WHERE djs.id = evidence.id
+       AND djs.opt_out = FALSE
+       AND (djs.verification_level <> evidence.level OR djs.verification_sources <> evidence.sources)
+     RETURNING djs.id`,
   );
-  return { status: 'ok', items_found: result.rows.length, items_new: result.rows.length };
+  return { status: 'ok', items_found: weighted.rows.length, items_new: weighted.rows.length };
+}
+
+// News-article discovery: interviews/previews about Wellington DJs surface
+// names alongside an article, which is also verification evidence.
+function extractDjNamesFromTitle(title: string): string[] {
+  const t = title.replace(/\s+/g, ' ').trim();
+  const names: string[] = [];
+  const patterns = [
+    /^Interview(?:\s*[:\-–—])?\s*(?:with\s+)?["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?/i,
+    /^Meet\s+["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?[,.]/i,
+    /^["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?\s*[:\-–—]/,
+    /([A-Z][A-Za-z0-9 .'&+!-]{2,40})\s+(?:drops?|releases?|brings|returns to|talks)\s+(?:a|the|new|his|her|their)?\s*(?:mix|track|album|show|gig|set)/i,
+  ];
+  for (const pattern of patterns) {
+    const match = t.match(pattern);
+    if (match?.[1]) names.push(match[1]);
+  }
+  const possessive = t.match(/Wellington'?s?\s+["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?/i);
+  if (possessive?.[1]) names.push(possessive[1]);
+  return names;
+}
+
+const NEWS_ANCHOR_QUERIES = [
+  '"wellington" dj interview', '"wellington" dj news', '"wellington" dj preview', '"wellington" djs',
+  '"pōneke" dj', '"te whanganui-a-tara" dj', '"wellington" techno', '"wellington" drum and bass',
+  '"wellington" house music', '"wellington" nightlife dj', '"wellington" club dj', '"san fran" dj wellington',
+  '"meow" wellington dj', '"cuba street" dj', '"121 festival" dj', '"valhalla" wellington dj',
+  '"muzic.net.nz" dj', '"nz musician" dj', '"rnz" dj interview', '"spinoff" dj wellington',
+  '"sniffers" dj', '"ambient light" dj', '"cheeky monkey" dj wellington', '"backseat mafia" dj nz',
+];
+
+// NZ music news feeds — nationwide DJ coverage (interviews, releases, gigs).
+const NZ_MUSIC_FEEDS = [
+  'https://www.muzic.net.nz/news/rss',
+  'https://www.nzmusician.co.nz/feed',
+  'https://sniffers.co.nz/feed',
+];
+
+export async function discoverFromNewsArticles(pool: Pool): Promise<ScrapeResult> {
+  const existing = await loadExistingNames(pool);
+  let found = 0;
+  let newCount = 0;
+  for (const query of NEWS_ANCHOR_QUERIES) {
+    const url = `https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss`;
+    let xml = '';
+    try {
+      const res = await fetch(url, { headers: { accept: 'application/xml' }, signal: AbortSignal.timeout(15000) });
+      xml = await res.text();
+    } catch {
+      continue;
+    }
+    for (const item of parseBingNewsXml(xml)) {
+      for (const name of extractDjNamesFromTitle(item.title)) {
+        if (isJunkName(name)) continue;
+        const key = normalizeArtistName(name);
+        if (existing.has(key)) continue;
+        existing.add(key);
+        found += 1;
+        const id = slugify(name);
+        const result = await pool.query(
+          `INSERT INTO djs (id, name, source, data_completeness, active, discovery_note) VALUES ($1, $2, 'news-article', 15, FALSE, NULL)
+           ON CONFLICT (id) DO NOTHING RETURNING id`,
+          [id, name],
+        );
+        if (result.rows.length > 0) {
+          newCount += 1;
+          await pool.query(`INSERT INTO dj_aliases (dj_id, alias) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [id, key]);
+          await upsertDjArticle(pool, id, {
+            title: item.title,
+            url: item.link,
+            source: item.source,
+            publishedAt: item.pubDate ? new Date(item.pubDate) : null,
+            snippet: item.description.replace(/<[^>]+>/g, '').slice(0, 300),
+          });
+          await upsertDjLink(pool, id, 'news', item.link, `News: ${item.source}`.trim());
+          console.log(`  discover-news: candidate ${name} (${item.title.slice(0, 80)})`);
+        }
+      }
+    }
+    await sleep(500);
+  }
+  return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: newCount, error: found === 0 ? 'No DJ names in news' : undefined };
+}
+
+export async function discoverFromNzMusicFeeds(pool: Pool): Promise<ScrapeResult> {
+  const existing = await loadExistingNames(pool);
+  let found = 0;
+  let newCount = 0;
+  for (const feedUrl of NZ_MUSIC_FEEDS) {
+    let xml = '';
+    try {
+      const res = await fetch(feedUrl, { headers: { accept: 'application/xml' }, signal: AbortSignal.timeout(15000) });
+      if (!res.ok) continue;
+      xml = await res.text();
+    } catch {
+      continue;
+    }
+    for (const item of parseBingNewsXml(xml)) {
+      const titleHasDjSignal = /(^|\b)(dj|deejay|disc jockey)\b/i.test(item.title);
+      if (!titleHasDjSignal) continue;
+      for (const name of extractDjNamesFromTitle(item.title)) {
+        if (isJunkName(name)) continue;
+        const key = normalizeArtistName(name);
+        if (existing.has(key)) continue;
+        existing.add(key);
+        found += 1;
+        const id = slugify(name);
+        const result = await pool.query(
+          `INSERT INTO djs (id, name, source, data_completeness, active, discovery_note) VALUES ($1, $2, 'news-article', 15, FALSE, NULL)
+           ON CONFLICT (id) DO NOTHING RETURNING id`,
+          [id, name],
+        );
+        if (result.rows.length > 0) {
+          newCount += 1;
+          await pool.query(`INSERT INTO dj_aliases (dj_id, alias) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [id, key]);
+          await upsertDjArticle(pool, id, {
+            title: item.title,
+            url: item.link,
+            source: item.source,
+            publishedAt: item.pubDate ? new Date(item.pubDate) : null,
+            snippet: item.description.replace(/<[^>]+>/g, '').slice(0, 300),
+          });
+          await upsertDjLink(pool, id, 'news', item.link, `News: ${item.source}`.trim());
+          console.log(`  discover-nz-music: candidate ${name} (${item.title.slice(0, 80)})`);
+        }
+      }
+    }
+    await sleep(500);
+  }
+  return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: newCount, error: found === 0 ? 'No DJ names in NZ music feeds' : undefined };
 }
 
 export async function discoverAll(pool: Pool): Promise<ScrapeResult[]> {
   const runners: Array<{ source: string; run: (pool: Pool) => Promise<ScrapeResult> }> = [
     { source: 'discover-events', run: discoverFromEvents },
     { source: 'discover-mixcloud', run: discoverFromMixcloud },
+    { source: 'discover-news', run: discoverFromNewsArticles },
+    { source: 'discover-nz-music', run: discoverFromNzMusicFeeds },
     { source: 'verify-discovered', run: verifyDiscovered },
   ];
   const results: ScrapeResult[] = [];

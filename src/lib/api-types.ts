@@ -14,7 +14,10 @@ export interface DjSummary {
   website_url: string | null;
   popularity: number;
   data_completeness: number;
+  verification_level: number;
+  verification_sources: string[];
   upcoming_events: number;
+  last_played_at: string | null;
 }
 
 export interface DjDetail extends DjSummary {
@@ -70,6 +73,9 @@ export function toDjSummary(dj: DjRow): DjSummary {
     website_url: dj.website_url,
     popularity: dj.popularity,
     data_completeness: dj.data_completeness,
+    verification_level: dj.verification_level,
+    verification_sources: dj.verification_sources,
     upcoming_events: dj.upcoming_events,
+    last_played_at: dj.last_played_at,
   };
 }

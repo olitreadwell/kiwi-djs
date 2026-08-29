@@ -1,6 +1,7 @@
 import type { Pool } from 'pg';
 import { createHash } from 'node:crypto';
 import { fetchHtml, sleep } from './http';
+import { getSoundcloudClientId } from './soundcloud-client';
 import type { ScrapeResult } from './types';
 
 interface DjRow {
@@ -130,9 +131,9 @@ export function parseBingNewsXml(xml: string): NewsItem[] {
 }
 
 export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
-  const clientId = process.env.SOUNDCLOUD_CLIENT_ID;
+  const clientId = await getSoundcloudClientId();
   if (!clientId) {
-    return { status: 'partial', items_found: 0, items_new: 0, error: 'SOUNDCLOUD_CLIENT_ID not set' };
+    return { status: 'partial', items_found: 0, items_new: 0, error: 'no valid SoundCloud client id' };
   }
   const url = `https://api-v2.soundcloud.com/search/users?q=${encodeURIComponent(dj.name)}&client_id=${clientId}&limit=5`;
   const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
@@ -153,9 +154,9 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
 }
 
 export async function soundcloudPreflight(): Promise<ScrapeResult | null> {
-  const clientId = process.env.SOUNDCLOUD_CLIENT_ID;
+  const clientId = await getSoundcloudClientId();
   if (!clientId) {
-    return { status: 'partial', items_found: 0, items_new: 0, error: 'SOUNDCLOUD_CLIENT_ID not set — skipping' };
+    return { status: 'error', items_found: 0, items_new: 0, error: 'SoundCloud auth failed — no valid client id (set SOUNDCLOUD_CLIENT_ID)' };
   }
   const url = `https://api-v2.soundcloud.com/search/users?q=wellington&client_id=${clientId}&limit=1`;
   const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
