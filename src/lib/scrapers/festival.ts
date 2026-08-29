@@ -66,6 +66,15 @@ export function isDjAct(name: string, description?: string): boolean {
   return false;
 }
 
+// True when a name/description carries an unambiguous non-DJ signal (band,
+// choir, dance troupe, circus, singer, acoustic/rock act). Neutral names
+// ("Zinc", "Sam") return false — absence of a DJ signal is not a junk signal.
+export function isNonDjAct(name: string, description?: string): boolean {
+  const nameText = name.toLowerCase();
+  const descText = (description ?? '').toLowerCase();
+  return NON_DJ_SIGNALS.some((re) => re.test(nameText) || re.test(descText));
+}
+
 // Lenient DJ signals for structured genre tags (Earth Beat contributor pages
 // tag every act, e.g. "Deep house and techno", "Acoustic Funk").
 const GENRE_DJ_SIGNALS: RegExp[] = [

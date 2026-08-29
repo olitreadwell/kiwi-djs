@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-30 — Loop issues phase + dataset fixes
+
+- Loop now alternates between an **issues phase** (fixes open automatable dataset issues, one per cycle, closes them when resolved) and the scrape phase; phase state in `.loop/phase.json`
+- New `scripts/dataset-fixes.ts` registry: duplicate DJ detection + merge (#159), multi-source name match confidence scoring with auto-merge >0.9 (#193), stale DJ flagging via `stale_since` (#138), junk candidate cleanup with venue/non-DJ signals (#195), bio quality audit via `bio_quality` (#142), `data_completeness` recalibration (#140)
+- `data_completeness` weights recalibrated: mixes 30, gigs 20, bio 15, photo 10, links 10, articles 10, genres 5 — same formula in queries, snapshot export and stored column
+- Fixed pre-existing CI failure: `RootLayout` no longer depends on Next-generated `LayoutProps` type (typecheck now passes before build)
+
 ## 2026-08-29 — API enrichment, data quality, UX batch
 
 - Keyless APIs: MusicBrainz (aliases, links, genres), iTunes Search (photos, genres), Nominatim (venue regions)

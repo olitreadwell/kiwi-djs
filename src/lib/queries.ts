@@ -6,15 +6,14 @@ import { extractArtistNames } from './scrapers/discover';
 export const isDbMode = Boolean(process.env.DATABASE_URL);
 
 const completenessSql = `(
-  (CASE WHEN name IS NOT NULL THEN 10 ELSE 0 END) +
   (CASE WHEN bio IS NOT NULL THEN 15 ELSE 0 END) +
-  (CASE WHEN cardinality(genres) > 0 THEN 15 ELSE 0 END) +
-  (CASE WHEN image_url IS NOT NULL THEN 15 ELSE 0 END) +
-  (CASE WHEN soundcloud_url IS NOT NULL THEN 10 ELSE 0 END) +
-  (CASE WHEN instagram_url IS NOT NULL THEN 10 ELSE 0 END) +
-  (CASE WHEN facebook_url IS NOT NULL THEN 10 ELSE 0 END) +
-  (CASE WHEN website_url IS NOT NULL THEN 10 ELSE 0 END) +
-  (CASE WHEN mixcloud_url IS NOT NULL THEN 5 ELSE 0 END)
+  (CASE WHEN cardinality(genres) > 0 THEN 5 ELSE 0 END) +
+  (CASE WHEN image_url IS NOT NULL THEN 10 ELSE 0 END) +
+  (CASE WHEN soundcloud_url IS NOT NULL OR instagram_url IS NOT NULL OR facebook_url IS NOT NULL
+         OR website_url IS NOT NULL OR mixcloud_url IS NOT NULL THEN 10 ELSE 0 END) +
+  (SELECT LEAST(30, count(*)::int * 10) FROM dj_mixes m WHERE m.dj_id = d.id) +
+  (SELECT LEAST(20, count(*)::int * 5) FROM event_djs ed WHERE ed.dj_id = d.id) +
+  (SELECT LEAST(10, count(*)::int * 5) FROM dj_articles a WHERE a.dj_id = d.id)
 )`;
 
 export interface DjRow {

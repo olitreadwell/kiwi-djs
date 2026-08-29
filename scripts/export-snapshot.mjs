@@ -6,13 +6,13 @@ const djs = (
   await pool.query(
     `SELECT d.*,
             (CASE WHEN d.bio IS NOT NULL THEN 15 ELSE 0 END) +
-            (CASE WHEN cardinality(d.genres) > 0 THEN 15 ELSE 0 END) +
-            (CASE WHEN d.image_url IS NOT NULL THEN 15 ELSE 0 END) +
-            (CASE WHEN d.soundcloud_url IS NOT NULL THEN 10 ELSE 0 END) +
-            (CASE WHEN d.instagram_url IS NOT NULL THEN 10 ELSE 0 END) +
-            (CASE WHEN d.facebook_url IS NOT NULL THEN 10 ELSE 0 END) +
-            (CASE WHEN d.website_url IS NOT NULL THEN 10 ELSE 0 END) +
-            (CASE WHEN d.mixcloud_url IS NOT NULL THEN 5 ELSE 0 END) AS data_completeness,
+            (CASE WHEN cardinality(d.genres) > 0 THEN 5 ELSE 0 END) +
+            (CASE WHEN d.image_url IS NOT NULL THEN 10 ELSE 0 END) +
+            (CASE WHEN d.soundcloud_url IS NOT NULL OR d.instagram_url IS NOT NULL OR d.facebook_url IS NOT NULL
+                   OR d.website_url IS NOT NULL OR d.mixcloud_url IS NOT NULL THEN 10 ELSE 0 END) +
+            (SELECT LEAST(30, count(*)::int * 10) FROM dj_mixes m WHERE m.dj_id = d.id) +
+            (SELECT LEAST(20, count(*)::int * 5) FROM event_djs ed WHERE ed.dj_id = d.id) +
+            (SELECT LEAST(10, count(*)::int * 5) FROM dj_articles a WHERE a.dj_id = d.id) AS data_completeness,
             (SELECT count(*)::int FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
             (SELECT max(e2.starts_at)::text FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,

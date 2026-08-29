@@ -3,6 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { getPool } from './lib/db.mjs';
 import { runAllScrapers } from '../src/lib/scrapers/run-all';
+import { DATASET_FIXES } from './dataset-fixes';
 
 // Self-improving scrape loop.
 //
@@ -39,6 +40,40 @@ interface SourceState {
   lastSeen: string;
 }
 const HANDOFF_FILE = new URL('../.loop/handoff.md', import.meta.url);
+const PHASE_FILE = new URL('../.loop/phase.json', import.meta.url);
+
+// Issues phase: the loop works through open automatable dataset issues
+// (dedupe, stale flagging, junk cleanup, bio audit, completeness) before
+// resuming scrape/enrich cycles. One fix per cycle, then back to scraping
+// once the queue is drained or MAX_ISSUE_CYCLES pass.
+const MAX_ISSUE_CYCLES = 6;
+const ISSUE_BACKOFF_MINUTES = 5;
+
+interface PhaseState {
+  phase: 'issues' | 'scrape';
+  cyclesInPhase: number;
+  issuesResolved: number;
+}
+
+function loadPhase(): PhaseState {
+  if (!existsSync(PHASE_FILE)) return { phase: 'issues', cyclesInPhase: 0, issuesResolved: 0 };
+  try {
+    const parsed = JSON.parse(readFileSync(PHASE_FILE, 'utf8')) as Partial<PhaseState>;
+    return {
+      phase: parsed.phase === 'scrape' ? 'scrape' : 'issues',
+      cyclesInPhase: parsed.cyclesInPhase ?? 0,
+      issuesResolved: parsed.issuesResolved ?? 0,
+    };
+  } catch {
+    return { phase: 'issues', cyclesInPhase: 0, issuesResolved: 0 };
+  }
+}
+
+function savePhase(state: PhaseState): void {
+  const dir = new URL('../.loop/', import.meta.url);
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  writeFileSync(PHASE_FILE, JSON.stringify(state, null, 2));
+}
 
 function log(line: string): void {
   const entry = `[${new Date().toISOString()}] ${line}`;
@@ -234,6 +269,51 @@ function openIssueTitles(): Set<string> {
   }
 }
 
+function openIssueNumbers(): Set<number> {
+  const out = runGh(['issue', 'list', '--state', 'open', '--limit', '200', '--json', 'number']);
+  try {
+    return new Set((JSON.parse(out) as Array<{ number: number }>).map((issue) => issue.number));
+  } catch {
+    return new Set();
+  }
+}
+
+// Issues phase cycle: pick the highest-priority open automatable dataset
+// issue, run its fix, close it when resolved. Switches back to the scrape
+// phase when the queue is drained or MAX_ISSUE_CYCLES pass.
+async function runIssuesCycle(pool: ReturnType<typeof getPool>): Promise<{ switchedToScrape: boolean }> {
+  const phase = loadPhase();
+  const open = openIssueNumbers();
+  const openFixes = DATASET_FIXES.filter((fix) => open.has(fix.issueNumber)).sort((a, b) => a.priority - b.priority);
+  if (openFixes.length === 0) {
+    log('Issues phase: no open automatable dataset issues — resuming data improvement runs.');
+    savePhase({ phase: 'scrape', cyclesInPhase: 0, issuesResolved: phase.issuesResolved });
+    return { switchedToScrape: true };
+  }
+  const fix = openFixes[0];
+  log(`Issues phase (cycle ${phase.cyclesInPhase + 1}): working on #${fix.issueNumber} — ${fix.title}.`);
+  try {
+    const result = await fix.fix(pool);
+    if (result.resolved) {
+      runGh(['issue', 'close', String(fix.issueNumber)]);
+      log(`Issues phase: #${fix.issueNumber} resolved — closed. ${result.detail}`);
+      phase.issuesResolved += 1;
+    } else {
+      log(`Issues phase: #${fix.issueNumber} not yet resolved. ${result.detail}`);
+    }
+  } catch (err) {
+    log(`Issues phase: #${fix.issueNumber} fix errored: ${err instanceof Error ? err.message : String(err)}`);
+  }
+  phase.cyclesInPhase += 1;
+  if (phase.cyclesInPhase >= MAX_ISSUE_CYCLES) {
+    log(`Issues phase: ${MAX_ISSUE_CYCLES} cycles done — resuming data improvement runs.`);
+    savePhase({ phase: 'scrape', cyclesInPhase: 0, issuesResolved: phase.issuesResolved });
+    return { switchedToScrape: true };
+  }
+  savePhase(phase);
+  return { switchedToScrape: false };
+}
+
 async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<void> {
   // Audit phase: surface data gaps as GitHub issues (cheap, rule-based — no
   // LLM). Files up to 4 new issues per cycle, one per category, skipping
@@ -350,9 +430,11 @@ async function writeHandoff(pool: ReturnType<typeof getPool>, totals: { totalNew
        GROUP BY source ORDER BY count(*) DESC LIMIT 3`,
     )
   ).rows as Array<{ source: string }>;
+  const phase = loadPhase();
   const handoff = [
     '# Loop handoff — compact state',
     `Updated: ${new Date().toISOString()}`,
+    `Phase: ${phase.phase} (cycle ${phase.cyclesInPhase}, ${phase.issuesResolved} issues resolved)`,
     `Last cycle: ${totals.totalNew} new / ${totals.totalFound} found`,
     `Dataset: ${counts.active_djs} active DJs, ${counts.candidates} candidates, ${counts.mixes} mixes, ${counts.articles} articles, ${counts.links} links, ${counts.events} events`,
     failing.length > 0 ? `Failing sources: ${failing.map((f) => f.source).join(', ')}` : 'Failing sources: none',
@@ -436,8 +518,24 @@ async function main(): Promise<void> {
   try {
     let lastTotals = { totalNew: 0, totalFound: 0 };
     do {
+      if (loadPhase().phase === 'issues') {
+        const { switchedToScrape } = await runIssuesCycle(pool);
+        if (once) break;
+        if (switchedToScrape) continue;
+        log(`Next issues cycle in ${ISSUE_BACKOFF_MINUTES} min.`);
+        await new Promise((resolve) => setTimeout(resolve, ISSUE_BACKOFF_MINUTES * 60_000));
+        continue;
+      }
       lastTotals = await runCycle(pool);
       if (once) break;
+      // After a scrape cycle, if automatable dataset issues are open, work
+      // on them before the next data improvement run.
+      const open = openIssueNumbers();
+      if (DATASET_FIXES.some((fix) => open.has(fix.issueNumber))) {
+        log('Automatable dataset issues open — switching to issues phase.');
+        savePhase({ phase: 'issues', cyclesInPhase: 0, issuesResolved: loadPhase().issuesResolved });
+        continue;
+      }
       const backoff = nextBackoffMinutes(lastTotals.totalNew, lastTotals.totalFound);
       log(`Next cycle in ${backoff} min.`);
       await new Promise((resolve) => setTimeout(resolve, backoff * 60_000));

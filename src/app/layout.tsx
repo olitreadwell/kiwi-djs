@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "Searchable directory of New Zealand DJs: bios, mixes, socials and upcoming gigs.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
