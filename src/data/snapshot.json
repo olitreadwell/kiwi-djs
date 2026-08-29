@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T08:47:58.235Z",
+  "exportedAt": "2026-08-29T08:54:09.509Z",
   "djs": [
     {
       "id": "dick-johnson",
@@ -25,6 +25,7 @@
         "Techno",
         "World",
         "bass",
+        "jazz",
         "trip"
       ],
       "city": "Wellington",
@@ -163,6 +164,108 @@
       ],
       "is_nz": true,
       "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "emerson",
+      "name": "Emerson",
+      "bio": null,
+      "genres": [
+        "#afrobeats",
+        "Alternative",
+        "Electronic",
+        "Hip-hop & Rap",
+        "House",
+        "Pop",
+        "Rock",
+        "aor",
+        "art rock",
+        "classic rock",
+        "folk rock",
+        "pop rock",
+        "progressive rock",
+        "rock",
+        "symphonic prog",
+        "symphonic rock"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-XBDEzbc5k9WPKVeq-j2LHwA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/bonerotx",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "https://www.emersonlakepalmer.com/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 50,
+      "source": "discovered",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:04:28.974Z",
+      "updated_at": "2026-08-29T08:54:05.798Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
+        "gigs",
+        "multi-gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "sam",
+      "name": "Sam",
+      "bio": null,
+      "genres": [
+        "Country",
+        "Dance",
+        "Deep House",
+        "Electronic",
+        "Hardcore",
+        "Hip",
+        "House",
+        "Jazz",
+        "Pop",
+        "Rock",
+        "Techno",
+        "Trance",
+        "gospel",
+        "pop soul",
+        "r&b",
+        "soul",
+        "southern soul",
+        "traditional pop",
+        "vocal jazz"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-VdEft2477csXAXhB-FyypqQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-236855318-534237943",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.501Z",
+      "updated_at": "2026-08-29T04:47:25.884Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
+        "gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
       "last_played_at": null
     },
     {
@@ -312,21 +415,22 @@
       "last_played_at": null
     },
     {
-      "id": "emerson",
-      "name": "Emerson",
+      "id": "sublimate",
+      "name": "Sublimate",
       "bio": null,
       "genres": [
-        "#afrobeats",
-        "Alternative",
+        "Bass",
+        "Deep House",
+        "Disco",
+        "Drum and Bass",
+        "Dubstep",
         "Electronic",
-        "Hip-hop & Rap",
         "House",
-        "Pop",
-        "Rock"
+        "House,"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-XBDEzbc5k9WPKVeq-j2LHwA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/bonerotx",
+      "image_url": "https://i1.sndcdn.com/avatars-000099113019-eixsk7-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/463112adc6317d8d74252dc61",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
@@ -336,12 +440,13 @@
       "data_completeness": 40,
       "source": "discovered",
       "opt_out": false,
-      "created_at": "2026-08-29T04:04:28.974Z",
-      "updated_at": "2026-08-29T08:43:53.506Z",
+      "created_at": "2026-08-29T04:04:29.030Z",
+      "updated_at": "2026-08-29T08:52:10.344Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
+      "verification_level": 4,
       "verification_sources": [
+        "mixes",
         "links",
         "gigs",
         "multi-gigs"
@@ -351,26 +456,15 @@
       "last_played_at": null
     },
     {
-      "id": "sam",
-      "name": "Sam",
+      "id": "evie",
+      "name": "Evie",
       "bio": null,
       "genres": [
-        "Country",
-        "Dance",
-        "Deep House",
-        "Electronic",
-        "Hardcore",
-        "Hip",
-        "House",
-        "Jazz",
-        "Pop",
-        "Rock",
-        "Techno",
-        "Trance"
+        "Electronic"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-VdEft2477csXAXhB-FyypqQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-236855318-534237943",
+      "image_url": "https://i1.sndcdn.com/avatars-Mt1YneZXpZEavarT-ihMWmA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/evangelinewoods",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
@@ -380,16 +474,112 @@
       "data_completeness": 40,
       "source": "radioactive",
       "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.501Z",
-      "updated_at": "2026-08-29T04:47:25.884Z",
+      "created_at": "2026-08-29T04:18:26.814Z",
+      "updated_at": "2026-08-29T08:52:10.344Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 4,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
         "links",
-        "articles",
         "gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "frida",
+      "name": "Frida",
+      "bio": null,
+      "genres": [
+        "Ambient",
+        "Bass",
+        "Breaks",
+        "Dancehall",
+        "Disco",
+        "Downtempo",
+        "Dub",
+        "Electro",
+        "Electronic",
+        "Experimental",
+        "Grime",
+        "Hip-hop & Rap",
+        "House",
+        "Jazz",
+        "Melodic Techno",
+        "Minimal",
+        "Pop",
+        "Techno",
+        "Trip",
+        "World",
+        "jazz",
+        "pop"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-TqAp7PG0xmjuVINL-t9QVoQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/exxtratell",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 40,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.468Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "estere",
+      "name": "Estere",
+      "bio": null,
+      "genres": [
+        "Alternative",
+        "Bass",
+        "Dance",
+        "Drum and Bass",
+        "Dub",
+        "Electronic",
+        "Hip-Hop",
+        "House",
+        "Rap",
+        "TECH HOUSE JERSEY CLUB BALTIMORE CLUB",
+        "Techno"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-r2xzAdRCppmtiYFI-DkajpQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/queen-estere",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 40,
+      "source": "manual",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:43:58.604Z",
+      "updated_at": "2026-08-29T07:10:51.894Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
       ],
       "is_nz": true,
       "upcoming_events": 0,
@@ -516,213 +706,6 @@
       "last_played_at": null
     },
     {
-      "id": "sublimate",
-      "name": "Sublimate",
-      "bio": null,
-      "genres": [
-        "Bass",
-        "Deep House",
-        "Disco",
-        "Drum and Bass",
-        "Dubstep",
-        "Electronic",
-        "House",
-        "House,"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000099113019-eixsk7-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/463112adc6317d8d74252dc61",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "discovered",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:04:29.030Z",
-      "updated_at": "2026-08-29T08:43:53.506Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "evie",
-      "name": "Evie",
-      "bio": null,
-      "genres": [
-        "Electronic"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-Mt1YneZXpZEavarT-ihMWmA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/evangelinewoods",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.814Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "estere",
-      "name": "Estere",
-      "bio": null,
-      "genres": [
-        "Alternative",
-        "Bass",
-        "Dance",
-        "Drum and Bass",
-        "Dub",
-        "Electronic",
-        "Hip-Hop",
-        "House",
-        "Rap",
-        "TECH HOUSE JERSEY CLUB BALTIMORE CLUB",
-        "Techno"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-r2xzAdRCppmtiYFI-DkajpQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/queen-estere",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 40,
-      "source": "manual",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:43:58.604Z",
-      "updated_at": "2026-08-29T07:10:51.894Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "frida",
-      "name": "Frida",
-      "bio": null,
-      "genres": [
-        "Ambient",
-        "Bass",
-        "Breaks",
-        "Dancehall",
-        "Disco",
-        "Downtempo",
-        "Dub",
-        "Electro",
-        "Electronic",
-        "Experimental",
-        "Grime",
-        "Hip-hop & Rap",
-        "House",
-        "Jazz",
-        "Melodic Techno",
-        "Minimal",
-        "Pop",
-        "Techno",
-        "Trip",
-        "World"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-TqAp7PG0xmjuVINL-t9QVoQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/exxtratell",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 40,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.468Z",
-      "updated_at": "2026-08-29T06:01:58.309Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "musical",
-      "name": "Musical",
-      "bio": null,
-      "genres": [
-        "Dance",
-        "Electronic",
-        "Indie",
-        "Pop",
-        "R&B",
-        "Rap",
-        "Rock",
-        "World"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-mgTojyJKHSxIjMNV-Clvpag-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/musicalweapo",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "discovered",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:04:29.285Z",
-      "updated_at": "2026-08-29T08:43:53.506Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "serenna",
       "name": "Serenna",
       "bio": null,
@@ -745,12 +728,57 @@
       "source": "discovered",
       "opt_out": false,
       "created_at": "2026-08-29T04:04:29.310Z",
-      "updated_at": "2026-08-29T08:43:53.506Z",
+      "updated_at": "2026-08-29T08:54:05.798Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
+      "verification_level": 5,
       "verification_sources": [
+        "mixes",
         "links",
+        "articles",
+        "gigs",
+        "multi-gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "musical",
+      "name": "Musical",
+      "bio": null,
+      "genres": [
+        "Dance",
+        "Electronic",
+        "Indie",
+        "Pop",
+        "R&B",
+        "Rap",
+        "Rock",
+        "Soundtrack",
+        "World"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-mgTojyJKHSxIjMNV-Clvpag-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/musicalweapo",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "discovered",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:04:29.285Z",
+      "updated_at": "2026-08-29T08:54:05.798Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
         "gigs",
         "multi-gigs"
       ],
@@ -872,6 +900,126 @@
       "last_played_at": null
     },
     {
+      "id": "club-medder",
+      "name": "Club Medder",
+      "bio": null,
+      "genres": [
+        "Ambient",
+        "Bass",
+        "Dance",
+        "Drum and Bass",
+        "Dub",
+        "Electro",
+        "Electronic",
+        "Hip",
+        "House",
+        "Jungle",
+        "R&B",
+        "Rap",
+        "Reggae",
+        "Techno",
+        "bass"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000265559473-cbfhal-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/club-medder-247426126",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.802Z",
+      "updated_at": "2026-08-29T08:52:10.344Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "frank-booker",
+      "name": "Frank Booker",
+      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
+      "genres": [
+        "Afro",
+        "Boogie",
+        "Deep House",
+        "Disco",
+        "Electronic",
+        "Funk",
+        "Garage",
+        "House",
+        "Jazz",
+        "Soul"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "https://frankbooker.net/",
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 65,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.351Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "tv-disko",
+      "name": "TV DiSKO",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 0,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.855Z",
+      "updated_at": "2026-08-29T08:37:35.686Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
+        "gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
       "id": "clova",
       "name": "CLOVA",
       "bio": null,
@@ -915,12 +1063,14 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:15.468Z",
-      "updated_at": "2026-08-29T08:43:53.506Z",
+      "updated_at": "2026-08-29T08:54:05.798Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
+      "verification_level": 5,
       "verification_sources": [
+        "mixes",
         "links",
+        "articles",
         "gigs",
         "multi-gigs"
       ],
@@ -934,6 +1084,7 @@
       "bio": null,
       "genres": [
         "Dance",
+        "House",
         "Minimal"
       ],
       "city": "Wellington",
@@ -949,92 +1100,16 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:42.653Z",
-      "updated_at": "2026-08-29T08:43:53.506Z",
+      "updated_at": "2026-08-29T08:54:05.798Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
-      "id": "tv-disko",
-      "name": "TV DiSKO",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 0,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.855Z",
-      "updated_at": "2026-08-29T08:37:35.686Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
+      "verification_level": 5,
       "verification_sources": [
         "mixes",
         "links",
         "articles",
-        "gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
-      "id": "club-medder",
-      "name": "Club Medder",
-      "bio": null,
-      "genres": [
-        "Ambient",
-        "Bass",
-        "Dance",
-        "Drum and Bass",
-        "Dub",
-        "Electro",
-        "Electronic",
-        "Hip",
-        "House",
-        "Jungle",
-        "R&B",
-        "Rap",
-        "Reggae",
-        "Techno",
-        "bass"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000265559473-cbfhal-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/club-medder-247426126",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.802Z",
-      "updated_at": "2026-08-29T06:56:26.603Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "gigs"
+        "gigs",
+        "multi-gigs"
       ],
       "is_nz": true,
       "upcoming_events": 1,
@@ -1045,7 +1120,10 @@
       "name": "Paige Julia",
       "bio": null,
       "genres": [
-        "Dance"
+        "Dance",
+        "drum and bass",
+        "dubstep",
+        "electronic"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
@@ -1075,47 +1153,6 @@
       "last_played_at": null
     },
     {
-      "id": "frank-booker",
-      "name": "Frank Booker",
-      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
-      "genres": [
-        "Afro",
-        "Boogie",
-        "Deep House",
-        "Disco",
-        "Electronic",
-        "Funk",
-        "Garage",
-        "House",
-        "Jazz",
-        "Soul"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.351Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "tali",
       "name": "TALI",
       "bio": null,
@@ -1139,7 +1176,23 @@
         "Psytrance",
         "Soul",
         "Techno",
-        "afro"
+        "afro",
+        "breakbeat",
+        "breaks",
+        "dance",
+        "deep house",
+        "drum and bass",
+        "electro",
+        "electronica",
+        "freestyle",
+        "grime",
+        "house",
+        "jungle",
+        "liquid funk",
+        "organic house",
+        "pop",
+        "psytrance",
+        "techno"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-v0AVSOyFp5UAVhn8-7DdYSw-large.jpg",
@@ -1244,16 +1297,6 @@
   ],
   "events": [
     {
-      "id": "sanfran-1434150",
-      "name": "Steve Hofstetter",
-      "venue": "San Fran",
-      "starts_at": "2027-02-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/steve-hofstetter-tickets-ae1434150",
-      "source": "sanfran",
-      "dj_id": "steve-hofstetter",
-      "dj_name": "Steve Hofstetter"
-    },
-    {
       "id": "sanfran-1221656",
       "name": "Grace Petrie",
       "venue": "San Fran",
@@ -1264,24 +1307,24 @@
       "dj_name": "Grace Petrie"
     },
     {
-      "id": "rogue-vagabond-103654",
-      "name": "Sam Manzanza's Afrobeat Band",
+      "id": "rogue-vagabond-104058",
+      "name": "Sunday Jazz - Oscar Lavën",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-08-29T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/103654/Sam-Manzanzas-Afrobeat-Band.utr",
+      "starts_at": "2026-08-30T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104058/Sunday-Jazz---Oscar-Lavn.utr",
       "source": "rogue-vagabond",
-      "dj_id": "sam-manzanza-s-afrobeat-band",
-      "dj_name": "Sam Manzanza's Afrobeat Band"
+      "dj_id": "sunday-jazz",
+      "dj_name": "Sunday Jazz"
     },
     {
-      "id": "rogue-vagabond-104171",
-      "name": "Rory Johns And The Mystic",
+      "id": "rogue-vagabond-104308",
+      "name": "Bojack Funkman",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-10T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "starts_at": "2026-09-04T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104308/Bojack-Funkman.utr",
       "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
+      "dj_id": "bojack-funkman",
+      "dj_name": "Bojack Funkman"
     },
     {
       "id": "rogue-vagabond-104059",
@@ -1294,16 +1337,6 @@
       "dj_name": "Sam"
     },
     {
-      "id": "rogue-vagabond-104060",
-      "name": "Sunday Jazz - Miles Craford",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-06T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104060/Sunday-Jazz---Miles-Craford.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "miles-craford",
-      "dj_name": "Miles Craford"
-    },
-    {
       "id": "rogue-vagabond-103454",
       "name": "Sunday Jazz - Double Take",
       "venue": "The Rogue & Vagabond",
@@ -1312,6 +1345,16 @@
       "source": "rogue-vagabond",
       "dj_id": "sunday-jazz",
       "dj_name": "Sunday Jazz"
+    },
+    {
+      "id": "rogue-vagabond-102968",
+      "name": "The Racket Lounge",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-09T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102968/The-Racket-Lounge.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-104062",
@@ -1354,16 +1397,6 @@
       "dj_name": "Cumulonimbus"
     },
     {
-      "id": "sanfran-288274",
-      "name": "24 Hour Party People",
-      "venue": "San Fran",
-      "starts_at": "2026-08-29T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/24-hour-party-people-tickets-ae288274",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
       "id": "rogue-vagabond-104170",
       "name": "Slow Jazz Ensemble",
       "venue": "The Rogue & Vagabond",
@@ -1372,6 +1405,16 @@
       "source": "rogue-vagabond",
       "dj_id": "slow-jazz-ensemble",
       "dj_name": "Slow Jazz Ensemble"
+    },
+    {
+      "id": "sanfran-1417811",
+      "name": "KPOP Club Night",
+      "venue": "San Fran",
+      "starts_at": "2026-09-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-102969",
@@ -1384,11 +1427,31 @@
       "dj_name": null
     },
     {
+      "id": "undertheradar-103788",
+      "name": "Rothko Records: Mothra With Sunwraith, Crying Ivy, Scream By Tulips",
+      "venue": null,
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103788/Rothko-Records-Mothra-With-Sunwraith-Crying-Ivy-Scream-By-Tulips.utr",
+      "source": "undertheradar",
+      "dj_id": "rothko-records-mothra",
+      "dj_name": "Rothko Records: Mothra"
+    },
+    {
       "id": "sanfran-1415326",
       "name": "KITA",
       "venue": "San Fran",
       "starts_at": "2026-09-25T19:00:00.000Z",
       "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-288274",
+      "name": "24 Hour Party People",
+      "venue": "San Fran",
+      "starts_at": "2026-08-29T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/24-hour-party-people-tickets-ae288274",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
@@ -1404,11 +1467,11 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1417811",
-      "name": "KPOP Club Night",
+      "id": "sanfran-1681897",
+      "name": "Great Sounds Great Festival 202",
       "venue": "San Fran",
-      "starts_at": "2026-09-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
+      "starts_at": "2026-11-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/great-sounds-great-festival-2026-tickets-ae1681897",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
@@ -1422,46 +1485,6 @@
       "source": "earthbeat",
       "dj_id": null,
       "dj_name": null
-    },
-    {
-      "id": "sanfran-1681897",
-      "name": "Great Sounds Great Festival 202",
-      "venue": "San Fran",
-      "starts_at": "2026-11-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/great-sounds-great-festival-2026-tickets-ae1681897",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-146474",
-      "name": "ASH ‘1977’ 30th Anniversary Tour",
-      "venue": "San Fran",
-      "starts_at": "2026-09-15T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/ash-tickets-ae146474",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1477466",
-      "name": "Reece Mastin",
-      "venue": "San Fran",
-      "starts_at": "2026-09-19T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/reece-mastin-tickets-ae1477466",
-      "source": "sanfran",
-      "dj_id": "reece-mastin",
-      "dj_name": "Reece Mastin"
-    },
-    {
-      "id": "sanfran-2148",
-      "name": "August Burns Red",
-      "venue": "San Fran",
-      "starts_at": "2026-10-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/august-burns-red-tickets-ae2148",
-      "source": "sanfran",
-      "dj_id": "august-burns-red",
-      "dj_name": "August Burns Red"
     },
     {
       "id": "sanfran-1574004",
@@ -1484,11 +1507,31 @@
       "dj_name": "Debt"
     },
     {
-      "id": "sanfran-1488974",
-      "name": "Old Mervs",
+      "id": "sanfran-2148",
+      "name": "August Burns Red",
       "venue": "San Fran",
-      "starts_at": "2026-11-06T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
+      "starts_at": "2026-10-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/august-burns-red-tickets-ae2148",
+      "source": "sanfran",
+      "dj_id": "august-burns-red",
+      "dj_name": "August Burns Red"
+    },
+    {
+      "id": "sanfran-1629242",
+      "name": "Mountain Boy",
+      "venue": "San Fran",
+      "starts_at": "2026-10-08T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/mountain-boy-tickets-ae1629242",
+      "source": "sanfran",
+      "dj_id": "mountain-boy",
+      "dj_name": "Mountain Boy"
+    },
+    {
+      "id": "sanfran-146474",
+      "name": "ASH ‘1977’ 30th Anniversary Tour",
+      "venue": "San Fran",
+      "starts_at": "2026-09-15T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/ash-tickets-ae146474",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
@@ -1504,14 +1547,14 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1629242",
-      "name": "Mountain Boy",
+      "id": "sanfran-1541224",
+      "name": "PRINS",
       "venue": "San Fran",
-      "starts_at": "2026-10-08T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/mountain-boy-tickets-ae1629242",
+      "starts_at": "2026-11-26T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
       "source": "sanfran",
-      "dj_id": "mountain-boy",
-      "dj_name": "Mountain Boy"
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "sanfran-1603030",
@@ -1524,11 +1567,31 @@
       "dj_name": "Where’s Jai"
     },
     {
-      "id": "sanfran-1541224",
-      "name": "PRINS",
+      "id": "sanfran-1488974",
+      "name": "Old Mervs",
       "venue": "San Fran",
-      "starts_at": "2026-11-26T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
+      "starts_at": "2026-11-06T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1464135",
+      "name": "YĪN YĪN",
+      "venue": "San Fran",
+      "starts_at": "2026-11-27T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/yīn-yīn-tickets-ae1464135",
+      "source": "sanfran",
+      "dj_id": "y-n-y-n",
+      "dj_name": "YĪN YĪN"
+    },
+    {
+      "id": "sanfran-1078519",
+      "name": "The Reytons",
+      "venue": "San Fran",
+      "starts_at": "2026-12-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
@@ -1544,14 +1607,14 @@
       "dj_name": "Taking Tangents"
     },
     {
-      "id": "sanfran-1464135",
-      "name": "YĪN YĪN",
+      "id": "sanfran-1434150",
+      "name": "Steve Hofstetter",
       "venue": "San Fran",
-      "starts_at": "2026-11-27T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/yīn-yīn-tickets-ae1464135",
+      "starts_at": "2027-02-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/steve-hofstetter-tickets-ae1434150",
       "source": "sanfran",
-      "dj_id": "y-n-y-n",
-      "dj_name": "YĪN YĪN"
+      "dj_id": "steve-hofstetter",
+      "dj_name": "Steve Hofstetter"
     },
     {
       "id": "sanfran-430631",
@@ -1564,44 +1627,24 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1078519",
-      "name": "The Reytons",
-      "venue": "San Fran",
-      "starts_at": "2026-12-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104058",
-      "name": "Sunday Jazz - Oscar Lavën",
+      "id": "rogue-vagabond-104060",
+      "name": "Sunday Jazz - Miles Craford",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-08-30T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104058/Sunday-Jazz---Oscar-Lavn.utr",
+      "starts_at": "2026-09-06T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104060/Sunday-Jazz---Miles-Craford.utr",
       "source": "rogue-vagabond",
-      "dj_id": "sunday-jazz",
-      "dj_name": "Sunday Jazz"
+      "dj_id": "miles-craford",
+      "dj_name": "Miles Craford"
     },
     {
-      "id": "rogue-vagabond-102968",
-      "name": "The Racket Lounge",
+      "id": "rogue-vagabond-104171",
+      "name": "Rory Johns And The Mystic",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-09T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102968/The-Racket-Lounge.utr",
+      "starts_at": "2026-09-10T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
       "source": "rogue-vagabond",
       "dj_id": null,
       "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104308",
-      "name": "Bojack Funkman",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-04T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104308/Bojack-Funkman.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "bojack-funkman",
-      "dj_name": "Bojack Funkman"
     },
     {
       "id": "the-others-way-2025-high-dependency",
@@ -1612,6 +1655,16 @@
       "source": "the-others-way",
       "dj_id": null,
       "dj_name": null
+    },
+    {
+      "id": "sanfran-1477466",
+      "name": "Reece Mastin",
+      "venue": "San Fran",
+      "starts_at": "2026-09-19T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/reece-mastin-tickets-ae1477466",
+      "source": "sanfran",
+      "dj_id": "reece-mastin",
+      "dj_name": "Reece Mastin"
     },
     {
       "id": "northern-bass-2026",
@@ -1644,11 +1697,11 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1693142",
-      "name": "Myshaan",
+      "id": "sanfran-1690521",
+      "name": "Convergence – A Drag Night Fundraiser",
       "venue": "San Fran",
-      "starts_at": "2026-11-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
+      "starts_at": "2026-09-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
@@ -1674,16 +1727,6 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104388",
-      "name": "Toxa Album Release",
-      "venue": null,
-      "starts_at": "2026-09-24T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104388/Toxa-Album-Release.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
       "id": "undertheradar-104178",
       "name": "Single Malt Presents ‘Wetlands’",
       "venue": null,
@@ -1692,16 +1735,6 @@
       "source": "undertheradar",
       "dj_id": null,
       "dj_name": null
-    },
-    {
-      "id": "undertheradar-103537",
-      "name": "Silver Sonics w/ Seismic State and Electric Tapestry",
-      "venue": null,
-      "starts_at": "2026-09-27T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103537/Silver-Sonics-w-Seismic-State-and-Electric-Tapestry.utr",
-      "source": "undertheradar",
-      "dj_id": "silver-sonics-w",
-      "dj_name": "Silver Sonics w"
     },
     {
       "id": "undertheradar-104261",
@@ -1744,12 +1777,22 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1690521",
-      "name": "Convergence – A Drag Night Fundraiser",
-      "venue": "San Fran",
-      "starts_at": "2026-09-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
-      "source": "sanfran",
+      "id": "undertheradar-103890",
+      "name": "Spring For Kaibosh - Musical Fundraiser",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/103890/Spring-For-Kaibosh---Musical-Fundraiser.utr",
+      "source": "undertheradar",
+      "dj_id": "musical",
+      "dj_name": "Musical"
+    },
+    {
+      "id": "undertheradar-104264",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "source": "undertheradar",
       "dj_id": null,
       "dj_name": null
     },
@@ -1784,6 +1827,16 @@
       "dj_name": "Swing Quartet"
     },
     {
+      "id": "snow-machine-2026-henry-who",
+      "name": "Snow Machine 2026 — Henry Who",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "henry-who",
+      "dj_name": "Henry Who"
+    },
+    {
       "id": "eventfinda-sitemap-88f640841748",
       "name": "Kevin Bridges - Here If You Need Me",
       "venue": "Michael Fowler Centre",
@@ -1794,34 +1847,24 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-103890",
-      "name": "Spring For Kaibosh - Musical Fundraiser",
+      "id": "undertheradar-104403",
+      "name": "E TŪ - Soandso Sophomore EP Debut",
       "venue": "MOON",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/103890/Spring-For-Kaibosh---Musical-Fundraiser.utr",
+      "url": "https://www.undertheradar.co.nz/gig/104403/E-T---Soandso-Sophomore-EP-Debut.utr",
       "source": "undertheradar",
-      "dj_id": "musical",
-      "dj_name": "Musical"
+      "dj_id": "soandso-sophomore",
+      "dj_name": "Soandso Sophomore"
     },
     {
-      "id": "undertheradar-104264",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "id": "undertheradar-104385",
+      "name": "Serenna With Tragedies And Diplopoda",
       "venue": "MOON",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "url": "https://www.undertheradar.co.nz/gig/104385/Serenna-With-Tragedies-And-Diplopoda.utr",
       "source": "undertheradar",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "snow-machine-2026-henry-who",
-      "name": "Snow Machine 2026 — Henry Who",
-      "venue": "Queenstown",
-      "starts_at": null,
-      "url": "https://nz.snow-machine.com/artists/",
-      "source": "snow-machine",
-      "dj_id": "henry-who",
-      "dj_name": "Henry Who"
+      "dj_id": "serenna",
+      "dj_name": "Serenna"
     },
     {
       "id": "eventfinda-sitemap-7f6c7ed5e55a",
@@ -1874,24 +1917,24 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104403",
-      "name": "E TŪ - Soandso Sophomore EP Debut",
+      "id": "undertheradar-100998",
+      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
       "venue": "MOON",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104403/E-T---Soandso-Sophomore-EP-Debut.utr",
+      "url": "https://www.undertheradar.co.nz/gig/100998/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
       "source": "undertheradar",
-      "dj_id": "soandso-sophomore",
-      "dj_name": "Soandso Sophomore"
+      "dj_id": null,
+      "dj_name": null
     },
     {
-      "id": "undertheradar-103503",
-      "name": "Bass Borne",
+      "id": "undertheradar-104079",
+      "name": "Soulstroke X Teraset - Dual Release Show - All Ages",
       "venue": null,
-      "starts_at": "2026-09-05T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103503/Bass-Borne.utr",
+      "starts_at": "2026-09-12T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104079/Soulstroke-X-Teraset---Dual-Release-Show---All-Ages.utr",
       "source": "undertheradar",
-      "dj_id": "bass-borne",
-      "dj_name": "Bass Borne"
+      "dj_id": "soulstroke-x-teraset",
+      "dj_name": "Soulstroke X Teraset"
     },
     {
       "id": "eventfinda-sitemap-84da11c8485c",
@@ -1934,24 +1977,14 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104385",
-      "name": "Serenna With Tragedies And Diplopoda",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104385/Serenna-With-Tragedies-And-Diplopoda.utr",
+      "id": "undertheradar-103503",
+      "name": "Bass Borne",
+      "venue": null,
+      "starts_at": "2026-09-05T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103503/Bass-Borne.utr",
       "source": "undertheradar",
-      "dj_id": "serenna",
-      "dj_name": "Serenna"
-    },
-    {
-      "id": "undertheradar-100998",
-      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/100998/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "dj_name": null
+      "dj_id": "bass-borne",
+      "dj_name": "Bass Borne"
     },
     {
       "id": "undertheradar-104409",
@@ -1962,6 +1995,26 @@
       "source": "undertheradar",
       "dj_id": "sublimate",
       "dj_name": "Sublimate"
+    },
+    {
+      "id": "sanfran-1693142",
+      "name": "Myshaan",
+      "venue": "San Fran",
+      "starts_at": "2026-11-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-104388",
+      "name": "Toxa Album Release",
+      "venue": null,
+      "starts_at": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104388/Toxa-Album-Release.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "eventfinda-sitemap-fac78a749bc4",
@@ -2144,26 +2197,6 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-103379",
-      "name": "Xile & Zuko - New Zealand 2026",
-      "venue": null,
-      "starts_at": "2026-09-04T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103379/Xile--Zuko---New-Zealand-2026.utr",
-      "source": "undertheradar",
-      "dj_id": "xile",
-      "dj_name": "Xile"
-    },
-    {
-      "id": "undertheradar-104079",
-      "name": "Soulstroke X Teraset - Dual Release Show - All Ages",
-      "venue": null,
-      "starts_at": "2026-09-12T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104079/Soulstroke-X-Teraset---Dual-Release-Show---All-Ages.utr",
-      "source": "undertheradar",
-      "dj_id": "soulstroke-x-teraset",
-      "dj_name": "Soulstroke X Teraset"
-    },
-    {
       "id": "undertheradar-104012",
       "name": "Corner Store Presents: Absolutely Positively Footwork",
       "venue": null,
@@ -2174,14 +2207,14 @@
       "dj_name": " Absolutely Positively Footwork"
     },
     {
-      "id": "northern-bass-2026-4am-kru",
-      "name": "Northern Bass 2026 — 4AM KRU",
-      "venue": "Kaiwaka, Northland",
-      "starts_at": "2026-12-30T00:00:00.000Z",
-      "url": "https://northernbass.co.nz/lineup",
-      "source": "northern-bass",
-      "dj_id": "4am-kru",
-      "dj_name": "4AM KRU"
+      "id": "undertheradar-103379",
+      "name": "Xile & Zuko - New Zealand 2026",
+      "venue": null,
+      "starts_at": "2026-09-04T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103379/Xile--Zuko---New-Zealand-2026.utr",
+      "source": "undertheradar",
+      "dj_id": "xile",
+      "dj_name": "Xile"
     },
     {
       "id": "northern-bass-2026-a-little-sound",
@@ -2364,6 +2397,16 @@
       "dj_name": "PEARLY"
     },
     {
+      "id": "northern-bass-2026-4am-kru",
+      "name": "Northern Bass 2026 — 4AM KRU",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "4am-kru",
+      "dj_name": "4AM KRU"
+    },
+    {
       "id": "undertheradar-103697",
       "name": "Soul Void, Molosser (EP Release), Parasitic Infestation, Dredge",
       "venue": null,
@@ -2372,16 +2415,6 @@
       "source": "undertheradar",
       "dj_id": "parasitic-infestation",
       "dj_name": "Parasitic Infestation"
-    },
-    {
-      "id": "undertheradar-103788",
-      "name": "Rothko Records: Mothra With Sunwraith, Crying Ivy, Scream By Tulips",
-      "venue": null,
-      "starts_at": "2026-09-11T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103788/Rothko-Records-Mothra-With-Sunwraith-Crying-Ivy-Scream-By-Tulips.utr",
-      "source": "undertheradar",
-      "dj_id": "rothko-records-mothra",
-      "dj_name": "Rothko Records: Mothra"
     },
     {
       "id": "northern-bass-2026-pirapus",
@@ -2784,24 +2817,14 @@
       "dj_name": "Dutch Kiss"
     },
     {
-      "id": "sanfran-1690529",
-      "name": "2010s Time Machine Party - Wellington",
-      "venue": "San Fran",
-      "starts_at": "2026-09-12T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/2010s-time-machine-party-wellington-tickets-ae1690529",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "snow-machine-2026-kelly-tee",
-      "name": "Snow Machine 2026 — Kelly Tee",
-      "venue": "Queenstown",
-      "starts_at": null,
-      "url": "https://nz.snow-machine.com/artists/",
-      "source": "snow-machine",
-      "dj_id": "kelly-tee",
-      "dj_name": "Kelly Tee"
+      "id": "undertheradar-103537",
+      "name": "Silver Sonics w/ Seismic State and Electric Tapestry",
+      "venue": null,
+      "starts_at": "2026-09-27T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103537/Silver-Sonics-w-Seismic-State-and-Electric-Tapestry.utr",
+      "source": "undertheradar",
+      "dj_id": "silver-sonics-w",
+      "dj_name": "Silver Sonics w"
     },
     {
       "id": "snow-machine-2026-lenni-vibe",
@@ -2914,6 +2937,16 @@
       "dj_name": "Alopex"
     },
     {
+      "id": "sanfran-1690529",
+      "name": "2010s Time Machine Party - Wellington",
+      "venue": "San Fran",
+      "starts_at": "2026-09-12T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/2010s-time-machine-party-wellington-tickets-ae1690529",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
       "id": "newtown-festival-2027-baeoli",
       "name": "Newtown Festival 2027 — Baeoli",
       "venue": "Newtown, Wellington",
@@ -2922,16 +2955,6 @@
       "source": "newtown-festival",
       "dj_id": "baeoli",
       "dj_name": "Baeoli"
-    },
-    {
-      "id": "newtown-festival-2027-benjamin-bunny",
-      "name": "Newtown Festival 2027 — Benjamin Bunny",
-      "venue": "Newtown, Wellington",
-      "starts_at": "2027-03-07T00:00:00.000Z",
-      "url": "https://www.newtownfestival.org.nz/artists/",
-      "source": "newtown-festival",
-      "dj_id": "benjamin-bunny",
-      "dj_name": "Benjamin Bunny"
     },
     {
       "id": "newtown-festival-2027-club-medder",
@@ -3154,14 +3177,24 @@
       "dj_name": "Synthetic Children"
     },
     {
-      "id": "newtown-festival-2027-the-good-taste-selector",
-      "name": "Newtown Festival 2027 — The Good Taste Selector",
-      "venue": "Newtown, Wellington",
-      "starts_at": "2027-03-07T00:00:00.000Z",
-      "url": "https://www.newtownfestival.org.nz/artists/",
-      "source": "newtown-festival",
-      "dj_id": "the-good-taste-selector",
-      "dj_name": "The Good Taste Selector"
+      "id": "snow-machine-2026-kelly-tee",
+      "name": "Snow Machine 2026 — Kelly Tee",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "kelly-tee",
+      "dj_name": "Kelly Tee"
+    },
+    {
+      "id": "rogue-vagabond-103654",
+      "name": "Sam Manzanza's Afrobeat Band",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-08-29T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/103654/Sam-Manzanzas-Afrobeat-Band.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "sam-manzanza-s-afrobeat-band",
+      "dj_name": "Sam Manzanza's Afrobeat Band"
     },
     {
       "id": "newtown-festival-2027-tv-disko",
@@ -3172,6 +3205,16 @@
       "source": "newtown-festival",
       "dj_id": "tv-disko",
       "dj_name": "TV DiSKO"
+    },
+    {
+      "id": "earthbeat-2025-paige-julia",
+      "name": "Earth Beat Festival 2025 — Paige Julia",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "paige-julia",
+      "dj_name": "Paige Julia"
     },
     {
       "id": "utr-venue-fa281dbc8c3e",
@@ -3244,14 +3287,14 @@
       "dj_name": null
     },
     {
-      "id": "earthbeat-2025-paige-julia",
-      "name": "Earth Beat Festival 2025 — Paige Julia",
+      "id": "earthbeat-2025-bwoy-de-bhajan",
+      "name": "Earth Beat Festival 2025 — Bwoy De Bhajan",
       "venue": "Kaipara, Northland",
       "starts_at": null,
       "url": "https://www.earthbeatfestival.com/music-lineup",
       "source": "earthbeat",
-      "dj_id": "paige-julia",
-      "dj_name": "Paige Julia"
+      "dj_id": "bwoy-de-bhajan",
+      "dj_name": "Bwoy De Bhajan"
     },
     {
       "id": "utr-venue-2e829d445861",
@@ -3274,14 +3317,14 @@
       "dj_name": null
     },
     {
-      "id": "earthbeat-2025-bwoy-de-bhajan",
-      "name": "Earth Beat Festival 2025 — Bwoy De Bhajan",
+      "id": "earthbeat-2025-kora-ca",
+      "name": "Earth Beat Festival 2025 — Kora (CA)",
       "venue": "Kaipara, Northland",
       "starts_at": null,
       "url": "https://www.earthbeatfestival.com/music-lineup",
       "source": "earthbeat",
-      "dj_id": "bwoy-de-bhajan",
-      "dj_name": "Bwoy De Bhajan"
+      "dj_id": "kora-ca",
+      "dj_name": "Kora (CA)"
     },
     {
       "id": "utr-venue-c47c2fa386f5",
@@ -3294,14 +3337,14 @@
       "dj_name": "Serenna"
     },
     {
-      "id": "earthbeat-2025-kora-ca",
-      "name": "Earth Beat Festival 2025 — Kora (CA)",
+      "id": "earthbeat-2025-nizhana",
+      "name": "Earth Beat Festival 2025 — NIZHANA",
       "venue": "Kaipara, Northland",
       "starts_at": null,
       "url": "https://www.earthbeatfestival.com/music-lineup",
       "source": "earthbeat",
-      "dj_id": "kora-ca",
-      "dj_name": "Kora (CA)"
+      "dj_id": "nizhana",
+      "dj_name": "NIZHANA"
     },
     {
       "id": "utr-venue-d1d18782bfa1",
@@ -3332,16 +3375,6 @@
       "source": "undertheradar-venues",
       "dj_id": null,
       "dj_name": null
-    },
-    {
-      "id": "earthbeat-2025-nizhana",
-      "name": "Earth Beat Festival 2025 — NIZHANA",
-      "venue": "Kaipara, Northland",
-      "starts_at": null,
-      "url": "https://www.earthbeatfestival.com/music-lineup",
-      "source": "earthbeat",
-      "dj_id": "nizhana",
-      "dj_name": "NIZHANA"
     },
     {
       "id": "utr-venue-3259a0b50095",
@@ -3502,16 +3535,6 @@
       "source": "rogue-vagabond",
       "dj_id": "undubbed-goes",
       "dj_name": "Undubbed Goes"
-    },
-    {
-      "id": "earthbeat-2025-deep-fried-dub",
-      "name": "Earth Beat Festival 2025 — Deep Fried Dub",
-      "venue": "Kaipara, Northland",
-      "starts_at": null,
-      "url": "https://www.earthbeatfestival.com/music-lineup",
-      "source": "earthbeat",
-      "dj_id": "deep-fried-dub",
-      "dj_name": "Deep Fried Dub"
     },
     {
       "id": "earthbeat-2025-calla",
@@ -3884,6 +3907,16 @@
       "dj_name": "DJ Sun Ray"
     },
     {
+      "id": "newtown-festival-2027-benjamin-bunny",
+      "name": "Newtown Festival 2027 — Benjamin Bunny",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "benjamin-bunny",
+      "dj_name": "Benjamin Bunny"
+    },
+    {
       "id": "utr-venue-1f1ceb2aab66",
       "name": "Our House - Deep House With Live Violin",
       "venue": "Cuba St Tavern",
@@ -4134,6 +4167,16 @@
       "dj_name": "Takas"
     },
     {
+      "id": "newtown-festival-2027-the-good-taste-selector",
+      "name": "Newtown Festival 2027 — The Good Taste Selector",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "the-good-taste-selector",
+      "dj_name": "The Good Taste Selector"
+    },
+    {
       "id": "earthbeat-2025-kukan-dub-lagan",
       "name": "Earth Beat Festival 2025 — Kukan Dub Lagan",
       "venue": "Kaipara, Northland",
@@ -4142,6 +4185,16 @@
       "source": "earthbeat",
       "dj_id": "kukan-dub-lagan",
       "dj_name": "Kukan Dub Lagan"
+    },
+    {
+      "id": "earthbeat-2025-deep-fried-dub",
+      "name": "Earth Beat Festival 2025 — Deep Fried Dub",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "deep-fried-dub",
+      "dj_name": "Deep Fried Dub"
     },
     {
       "id": "earthbeat-2025-hunua-hustle",
@@ -8582,6 +8635,881 @@
       "type": "wikidata",
       "url": "https://www.wikidata.org/wiki/Q6715090",
       "label": "wikidata: https://www.wikidata.org/wiki/Q6715090"
+    },
+    {
+      "id": "herman-saiz-mixcloud-49a66891b229",
+      "dj_id": "herman-saiz",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/aguaysedlabel/",
+      "label": "Mixcloud: Agua y Sed Label"
+    },
+    {
+      "id": "clova-mixcloud-d284f75c2380",
+      "dj_id": "clova",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Radioactive_FM/",
+      "label": "Mixcloud: RadioActive.FM | 88.6FM"
+    },
+    {
+      "id": "clova-mixcloud-a875cb43c80b",
+      "dj_id": "clova",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/radiocoteaux/",
+      "label": "Mixcloud: radiocoteaux"
+    },
+    {
+      "id": "clova-mixcloud-0c1d9f1268c9",
+      "dj_id": "clova",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/singlesimulcast/",
+      "label": "Mixcloud: Single Simulcast"
+    },
+    {
+      "id": "musical-mixcloud-9cba99d8d817",
+      "dj_id": "musical",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/MusicalFreedom/",
+      "label": "Mixcloud: Musical Freedom"
+    },
+    {
+      "id": "musical-mixcloud-ef944d933048",
+      "dj_id": "musical",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/themixfeed/",
+      "label": "Mixcloud: theMixFeed.com"
+    },
+    {
+      "id": "musical-mixcloud-0d98b2086b2f",
+      "dj_id": "musical",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/dds330/",
+      "label": "Mixcloud: dds330"
+    },
+    {
+      "id": "musical-mixcloud-635f7fe49dcc",
+      "dj_id": "musical",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/djsaulivan/",
+      "label": "Mixcloud: DJSAULIVAN"
+    },
+    {
+      "id": "emerson-mixcloud-c141378dec50",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/MusicBoxRadioUK/",
+      "label": "Mixcloud: Music Box Radio UK"
+    },
+    {
+      "id": "emerson-mixcloud-8a3cc1b7a470",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/johndigweed/",
+      "label": "Mixcloud: John Digweed"
+    },
+    {
+      "id": "emerson-mixcloud-d9c7dc4a42ea",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/arfm/",
+      "label": "Mixcloud: ARfm"
+    },
+    {
+      "id": "emerson-mixcloud-9fcf69b32e4e",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/NTSRadio/",
+      "label": "Mixcloud: Mixcloud NTS Radio"
+    },
+    {
+      "id": "emerson-mixcloud-890ee7b37096",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/darrenemerson/",
+      "label": "Mixcloud: DARREN EMERSON"
+    },
+    {
+      "id": "emerson-mixcloud-97c7fe2ecd19",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/TechnoClubNet/",
+      "label": "Mixcloud: techno-club.net"
+    },
+    {
+      "id": "emerson-mixcloud-cbd874dc9c84",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/DJANDRUSEMERSON/",
+      "label": "Mixcloud: DJ ANDRUS EMERSON"
+    },
+    {
+      "id": "emerson-mixcloud-0d40501d351a",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/globalundergroundseries/",
+      "label": "Mixcloud: Global Underground Series"
+    },
+    {
+      "id": "emerson-mixcloud-98e978d5d84d",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/emersongomiinola/",
+      "label": "Mixcloud: Dj-Emerson El Mago Melodico"
+    },
+    {
+      "id": "emerson-mixcloud-c9fc85d10b39",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/daveseaman/",
+      "label": "Mixcloud: Dave Seaman"
+    },
+    {
+      "id": "emerson-mixcloud-93bd1b7aa3dd",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/JAZZAMATAZZ/",
+      "label": "Mixcloud: Jazzamatazz"
+    },
+    {
+      "id": "emerson-mixcloud-120734255257",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Real_Techno/",
+      "label": "Mixcloud: Real_Techno"
+    },
+    {
+      "id": "emerson-mixcloud-8df61dd50bb3",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/CashmereRadio/",
+      "label": "Mixcloud: Cashmere Radio"
+    },
+    {
+      "id": "emerson-mixcloud-5cb18ae0089a",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/amemgmt/",
+      "label": "Mixcloud: Amore Music Experience"
+    },
+    {
+      "id": "emerson-mixcloud-e1fd91853bb6",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/jarty-ye/",
+      "label": "Mixcloud: DJ'YE"
+    },
+    {
+      "id": "emerson-mixcloud-35fe9cde1633",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/thenightbazaar/",
+      "label": "Mixcloud: The Night Bazaar"
+    },
+    {
+      "id": "emerson-mixcloud-5caefe1f3326",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/DJ_Mix/",
+      "label": "Mixcloud: E_Mix"
+    },
+    {
+      "id": "emerson-mixcloud-35b307de41d1",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/rhybooze/",
+      "label": "Mixcloud: rhybooze"
+    },
+    {
+      "id": "emerson-mixcloud-67b2821ab3fd",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/%D0%B1%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%BE%D0%B2-%D0%B4%D0%B5%D0%BD%D0%B8%D1%81/",
+      "label": "Mixcloud: macromusic.ru"
+    },
+    {
+      "id": "emerson-mixcloud-232b050379cb",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/MixesByOtherDJs/",
+      "label": "Mixcloud: Mixes By Other DJs"
+    },
+    {
+      "id": "emerson-mixcloud-1acdbf0ce0ae",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/classic_house_mixes/",
+      "label": "Mixcloud: classic_house_mixes"
+    },
+    {
+      "id": "emerson-mixcloud-57e156baea85",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/NUDETechno/",
+      "label": "Mixcloud: NUDE"
+    },
+    {
+      "id": "emerson-mixcloud-48916717950e",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/screen2/",
+      "label": "Mixcloud: screen2"
+    },
+    {
+      "id": "paige-julia-bandcamp-118f37043e6c",
+      "dj_id": "paige-julia",
+      "type": "bandcamp",
+      "url": "https://paigejulia.bandcamp.com/",
+      "label": "bandcamp: https://paigejulia.bandcamp.com/"
+    },
+    {
+      "id": "paige-julia-discogs-c192bf42bdb2",
+      "dj_id": "paige-julia",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/7592353",
+      "label": "discogs: https://www.discogs.com/artist/7592353"
+    },
+    {
+      "id": "paige-julia-free streaming-7c23835cf1d8",
+      "dj_id": "paige-julia",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/5mPKCBUW1bFZxDZWp6ITbg",
+      "label": "free streaming: https://open.spotify.com/artist/5mPKCBUW1bFZxDZWp6ITbg"
+    },
+    {
+      "id": "paige-julia-free streaming-5983dd900b4a",
+      "dj_id": "paige-julia",
+      "type": "free streaming",
+      "url": "https://www.deezer.com/artist/11184566",
+      "label": "free streaming: https://www.deezer.com/artist/11184566"
+    },
+    {
+      "id": "paige-julia-purchase for download-4099ef06524f",
+      "dj_id": "paige-julia",
+      "type": "purchase for download",
+      "url": "https://www.beatport.com/artist/paige-julia/585313",
+      "label": "purchase for download: https://www.beatport.com/artist/paige-julia/585313"
+    },
+    {
+      "id": "paige-julia-purchase for download-8bc2ebb58c39",
+      "dj_id": "paige-julia",
+      "type": "purchase for download",
+      "url": "https://www.junodownload.com/artists/Paige+Julia/",
+      "label": "purchase for download: https://www.junodownload.com/artists/Paige+Julia/"
+    },
+    {
+      "id": "paige-julia-social network-789ccb85bcde",
+      "dj_id": "paige-julia",
+      "type": "social network",
+      "url": "https://www.facebook.com/paige.julia.nicholai",
+      "label": "social network: https://www.facebook.com/paige.julia.nicholai"
+    },
+    {
+      "id": "paige-julia-social network-ffdb4a045130",
+      "dj_id": "paige-julia",
+      "type": "social network",
+      "url": "https://www.mixcloud.com/thatsnotpanicyoufeel/",
+      "label": "social network: https://www.mixcloud.com/thatsnotpanicyoufeel/"
+    },
+    {
+      "id": "paige-julia-soundcloud-1cbeadc21c12",
+      "dj_id": "paige-julia",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/paigelol",
+      "label": "soundcloud: https://soundcloud.com/paigelol"
+    },
+    {
+      "id": "paige-julia-streaming-0b9a50fcb3eb",
+      "dj_id": "paige-julia",
+      "type": "streaming",
+      "url": "https://music.apple.com/gb/artist/1164545636",
+      "label": "streaming: https://music.apple.com/gb/artist/1164545636"
+    },
+    {
+      "id": "paige-julia-streaming-87c01b3d7f6f",
+      "dj_id": "paige-julia",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/45897965",
+      "label": "streaming: https://tidal.com/artist/45897965"
+    },
+    {
+      "id": "paige-julia-streaming-96b376e1479e",
+      "dj_id": "paige-julia",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/8195423",
+      "label": "streaming: https://tidal.com/artist/8195423"
+    },
+    {
+      "id": "frank-booker-discogs-2b1e238ba70e",
+      "dj_id": "frank-booker",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/1389020",
+      "label": "discogs: https://www.discogs.com/artist/1389020"
+    },
+    {
+      "id": "frank-booker-website-ce2c43b59dfd",
+      "dj_id": "frank-booker",
+      "type": "website",
+      "url": "https://frankbooker.net/",
+      "label": "official homepage: https://frankbooker.net/"
+    },
+    {
+      "id": "frank-booker-social network-b6254509dbe4",
+      "dj_id": "frank-booker",
+      "type": "social network",
+      "url": "https://twitter.com/FrankBooker",
+      "label": "social network: https://twitter.com/FrankBooker"
+    },
+    {
+      "id": "frank-booker-social network-a5cc4043b41b",
+      "dj_id": "frank-booker",
+      "type": "social network",
+      "url": "https://www.facebook.com/frankbookerdisco",
+      "label": "social network: https://www.facebook.com/frankbookerdisco"
+    },
+    {
+      "id": "frank-booker-social network-24f7ac3198ea",
+      "dj_id": "frank-booker",
+      "type": "social network",
+      "url": "https://www.instagram.com/frankbooker/",
+      "label": "social network: https://www.instagram.com/frankbooker/"
+    },
+    {
+      "id": "frank-booker-social network-ac569ced9731",
+      "dj_id": "frank-booker",
+      "type": "social network",
+      "url": "https://www.mixcloud.com/frankbooker/",
+      "label": "social network: https://www.mixcloud.com/frankbooker/"
+    },
+    {
+      "id": "sam-allmusic-a8c7a635f544",
+      "dj_id": "sam",
+      "type": "allmusic",
+      "url": "https://www.allmusic.com/artist/mn0000238115",
+      "label": "allmusic: https://www.allmusic.com/artist/mn0000238115"
+    },
+    {
+      "id": "sam-bbc music page-2572bde48370",
+      "dj_id": "sam",
+      "type": "bbc music page",
+      "url": "https://www.bbc.co.uk/music/artists/6c8fd0be-d961-454c-aee0-4366a6dbc993",
+      "label": "BBC Music page: https://www.bbc.co.uk/music/artists/6c8fd0be-d961-454c-aee0-4366a6dbc993"
+    },
+    {
+      "id": "sam-biography-60d4b0d0cb09",
+      "dj_id": "sam",
+      "type": "biography",
+      "url": "http://rockhall.com/inductees/sam-cooke/bio/",
+      "label": "biography: http://rockhall.com/inductees/sam-cooke/bio/"
+    },
+    {
+      "id": "sam-biography-cb2598af837b",
+      "dj_id": "sam",
+      "type": "biography",
+      "url": "http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=1900",
+      "label": "biography: http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=1900"
+    },
+    {
+      "id": "sam-biography-88347f4aba58",
+      "dj_id": "sam",
+      "type": "biography",
+      "url": "http://www.rockabilly.nl/references/messages/sam_cooke.htm",
+      "label": "biography: http://www.rockabilly.nl/references/messages/sam_cooke.htm"
+    },
+    {
+      "id": "sam-discography page-dc4ac6e090f7",
+      "dj_id": "sam",
+      "type": "discography page",
+      "url": "http://www.songsofsamcooke.com/original_sam_cooke_albums.htm",
+      "label": "discography page: http://www.songsofsamcooke.com/original_sam_cooke_albums.htm"
+    },
+    {
+      "id": "sam-discogs-be0410000ac1",
+      "dj_id": "sam",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/295202",
+      "label": "discogs: https://www.discogs.com/artist/295202"
+    },
+    {
+      "id": "sam-fanpage-05811a595e78",
+      "dj_id": "sam",
+      "type": "fanpage",
+      "url": "http://www.samcookefanclub.com/",
+      "label": "fanpage: http://www.samcookefanclub.com/"
+    },
+    {
+      "id": "sam-free streaming-c16c82ebc87b",
+      "dj_id": "sam",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/6hnWRPzGGKiapVX1UCdEAC",
+      "label": "free streaming: https://open.spotify.com/artist/6hnWRPzGGKiapVX1UCdEAC"
+    },
+    {
+      "id": "sam-free streaming-00f751f7568b",
+      "dj_id": "sam",
+      "type": "free streaming",
+      "url": "https://www.deezer.com/artist/900",
+      "label": "free streaming: https://www.deezer.com/artist/900"
+    },
+    {
+      "id": "sam-imdb-177a6508f246",
+      "dj_id": "sam",
+      "type": "imdb",
+      "url": "https://www.imdb.com/name/nm0177492/",
+      "label": "IMDb: https://www.imdb.com/name/nm0177492/"
+    },
+    {
+      "id": "sam-last.fm-31962e3ba7d4",
+      "dj_id": "sam",
+      "type": "last.fm",
+      "url": "https://www.last.fm/music/Sam+Cooke",
+      "label": "last.fm: https://www.last.fm/music/Sam+Cooke"
+    },
+    {
+      "id": "sam-lyrics-d2d75fa6ec1d",
+      "dj_id": "sam",
+      "type": "lyrics",
+      "url": "http://muzikum.eu/en/122-6132/sam-cooke/lyrics.html",
+      "label": "lyrics: http://muzikum.eu/en/122-6132/sam-cooke/lyrics.html"
+    },
+    {
+      "id": "sam-myspace-9edd9f84a4f6",
+      "dj_id": "sam",
+      "type": "myspace",
+      "url": "https://myspace.com/samcookesoul",
+      "label": "myspace: https://myspace.com/samcookesoul"
+    },
+    {
+      "id": "sam-other databases-d7c28f1fa87d",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "http://id.loc.gov/authorities/names/n91099512",
+      "label": "other databases: http://id.loc.gov/authorities/names/n91099512"
+    },
+    {
+      "id": "sam-other databases-88beb6cd762e",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "http://musicmoz.org/Bands_and_Artists/C/Cooke,_Sam/",
+      "label": "other databases: http://musicmoz.org/Bands_and_Artists/C/Cooke,_Sam/"
+    },
+    {
+      "id": "sam-other databases-3ccc7586ad63",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb138927038",
+      "label": "other databases: https://catalogue.bnf.fr/ark:/12148/cb138927038"
+    },
+    {
+      "id": "sam-other databases-7d4a5a477cc1",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "https://d-nb.info/gnd/120393654",
+      "label": "other databases: https://d-nb.info/gnd/120393654"
+    },
+    {
+      "id": "sam-other databases-ef203749d2d6",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "http://snaccooperative.org/ark:/99166/w6p56827",
+      "label": "other databases: http://snaccooperative.org/ark:/99166/w6p56827"
+    },
+    {
+      "id": "sam-other databases-af5210da65e7",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "https://rateyourmusic.com/artist/sam_cooke",
+      "label": "other databases: https://rateyourmusic.com/artist/sam_cooke"
+    },
+    {
+      "id": "sam-other databases-b7f5688a3442",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "https://www.ibdb.com/person.php?id=90815",
+      "label": "other databases: https://www.ibdb.com/person.php?id=90815"
+    },
+    {
+      "id": "sam-other databases-dc270d8c38f0",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "https://www.musik-sammler.de/artist/sam-cooke/",
+      "label": "other databases: https://www.musik-sammler.de/artist/sam-cooke/"
+    },
+    {
+      "id": "sam-other databases-5ad59f2425fb",
+      "dj_id": "sam",
+      "type": "other databases",
+      "url": "https://www.worldcat.org/identities/lccn-n91099512",
+      "label": "other databases: https://www.worldcat.org/identities/lccn-n91099512"
+    },
+    {
+      "id": "sam-purchase for download-905cdf90c491",
+      "dj_id": "sam",
+      "type": "purchase for download",
+      "url": "https://mora.jp/artist/22056/",
+      "label": "purchase for download: https://mora.jp/artist/22056/"
+    },
+    {
+      "id": "sam-purchase for download-941a868f34df",
+      "dj_id": "sam",
+      "type": "purchase for download",
+      "url": "https://music.apple.com/us/artist/1725545877",
+      "label": "purchase for download: https://music.apple.com/us/artist/1725545877"
+    },
+    {
+      "id": "sam-purchase for download-d6c835d0f815",
+      "dj_id": "sam",
+      "type": "purchase for download",
+      "url": "https://www.qobuz.com/us-en/interpreter/sam-cooke/47405",
+      "label": "purchase for download: https://www.qobuz.com/us-en/interpreter/sam-cooke/47405"
+    },
+    {
+      "id": "sam-secondhandsongs-bf5bbdd48866",
+      "dj_id": "sam",
+      "type": "secondhandsongs",
+      "url": "https://secondhandsongs.com/artist/123",
+      "label": "secondhandsongs: https://secondhandsongs.com/artist/123"
+    },
+    {
+      "id": "sam-social network-8c967497b4c7",
+      "dj_id": "sam",
+      "type": "social network",
+      "url": "https://www.facebook.com/SamCooke",
+      "label": "social network: https://www.facebook.com/SamCooke"
+    },
+    {
+      "id": "sam-songkick-f9a63957932a",
+      "dj_id": "sam",
+      "type": "songkick",
+      "url": "https://www.songkick.com/artists/216784",
+      "label": "songkick: https://www.songkick.com/artists/216784"
+    },
+    {
+      "id": "sam-streaming-a7f7665e54bd",
+      "dj_id": "sam",
+      "type": "streaming",
+      "url": "https://music.apple.com/us/artist/1195231",
+      "label": "streaming: https://music.apple.com/us/artist/1195231"
+    },
+    {
+      "id": "sam-streaming-941a868f34df",
+      "dj_id": "sam",
+      "type": "streaming",
+      "url": "https://music.apple.com/us/artist/1725545877",
+      "label": "streaming: https://music.apple.com/us/artist/1725545877"
+    },
+    {
+      "id": "sam-streaming-e8a94223ad2a",
+      "dj_id": "sam",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/3500082",
+      "label": "streaming: https://tidal.com/artist/3500082"
+    },
+    {
+      "id": "sam-streaming-d6c835d0f815",
+      "dj_id": "sam",
+      "type": "streaming",
+      "url": "https://www.qobuz.com/us-en/interpreter/sam-cooke/47405",
+      "label": "streaming: https://www.qobuz.com/us-en/interpreter/sam-cooke/47405"
+    },
+    {
+      "id": "sam-viaf-743024a34cb8",
+      "dj_id": "sam",
+      "type": "viaf",
+      "url": "http://viaf.org/viaf/29717629",
+      "label": "VIAF: http://viaf.org/viaf/29717629"
+    },
+    {
+      "id": "sam-wikidata-12784b18f2a1",
+      "dj_id": "sam",
+      "type": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q295919",
+      "label": "wikidata: https://www.wikidata.org/wiki/Q295919"
+    },
+    {
+      "id": "emerson-allmusic-c0a07fd83843",
+      "dj_id": "emerson",
+      "type": "allmusic",
+      "url": "https://www.allmusic.com/artist/mn0000798992",
+      "label": "allmusic: https://www.allmusic.com/artist/mn0000798992"
+    },
+    {
+      "id": "emerson-bandsintown-815c4b4cfda3",
+      "dj_id": "emerson",
+      "type": "bandsintown",
+      "url": "https://www.bandsintown.com/a/54868",
+      "label": "bandsintown: https://www.bandsintown.com/a/54868"
+    },
+    {
+      "id": "emerson-bbc music page-c4666e992a36",
+      "dj_id": "emerson",
+      "type": "bbc music page",
+      "url": "https://www.bbc.co.uk/music/artists/ad996aef-cc1c-42ac-af5c-619c370f4b8a",
+      "label": "BBC Music page: https://www.bbc.co.uk/music/artists/ad996aef-cc1c-42ac-af5c-619c370f4b8a"
+    },
+    {
+      "id": "emerson-discogs-6dd2471c7ec1",
+      "dj_id": "emerson",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/39765",
+      "label": "discogs: https://www.discogs.com/artist/39765"
+    },
+    {
+      "id": "emerson-free streaming-4af309cb9292",
+      "dj_id": "emerson",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/0nCiidE5GgDrc5kWN3NZgZ",
+      "label": "free streaming: https://open.spotify.com/artist/0nCiidE5GgDrc5kWN3NZgZ"
+    },
+    {
+      "id": "emerson-free streaming-279693e7de2a",
+      "dj_id": "emerson",
+      "type": "free streaming",
+      "url": "https://www.deezer.com/artist/3612",
+      "label": "free streaming: https://www.deezer.com/artist/3612"
+    },
+    {
+      "id": "emerson-image-b30754a9f89a",
+      "dj_id": "emerson",
+      "type": "image",
+      "url": "https://commons.wikimedia.org/wiki/File:Emerson_Lake_and_Palmer_band_photo.jpg",
+      "label": "image: https://commons.wikimedia.org/wiki/File:Emerson_Lake_and_Palmer_band_photo.jpg"
+    },
+    {
+      "id": "emerson-imdb-34d7cbf5d2db",
+      "dj_id": "emerson",
+      "type": "imdb",
+      "url": "https://www.imdb.com/name/nm1431457/",
+      "label": "IMDb: https://www.imdb.com/name/nm1431457/"
+    },
+    {
+      "id": "emerson-last.fm-7a9c92919aa6",
+      "dj_id": "emerson",
+      "type": "last.fm",
+      "url": "https://www.last.fm/music/Emerson,+Lake+&+Palmer",
+      "label": "last.fm: https://www.last.fm/music/Emerson,+Lake+&+Palmer"
+    },
+    {
+      "id": "emerson-lyrics-8729b6e192b4",
+      "dj_id": "emerson",
+      "type": "lyrics",
+      "url": "https://genius.com/artists/Emerson-lake-and-palmer",
+      "label": "lyrics: https://genius.com/artists/Emerson-lake-and-palmer"
+    },
+    {
+      "id": "emerson-website-c3062fbefa28",
+      "dj_id": "emerson",
+      "type": "website",
+      "url": "https://www.emersonlakepalmer.com/",
+      "label": "official homepage: https://www.emersonlakepalmer.com/"
+    },
+    {
+      "id": "emerson-other databases-b33e493974dc",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://jaxsta.com/profile/65c789a7-80ca-4f71-acfd-444526f8afa2",
+      "label": "other databases: https://jaxsta.com/profile/65c789a7-80ca-4f71-acfd-444526f8afa2"
+    },
+    {
+      "id": "emerson-other databases-3ecc119a1eb8",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "http://id.loc.gov/authorities/names/nr89011806",
+      "label": "other databases: http://id.loc.gov/authorities/names/nr89011806"
+    },
+    {
+      "id": "emerson-other databases-4c9df0213eab",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb139031840",
+      "label": "other databases: https://catalogue.bnf.fr/ark:/12148/cb139031840"
+    },
+    {
+      "id": "emerson-other databases-f27099f40b22",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://d-nb.info/gnd/16040632-8",
+      "label": "other databases: https://d-nb.info/gnd/16040632-8"
+    },
+    {
+      "id": "emerson-other databases-3aa459baf7c8",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://rateyourmusic.com/artist/emerson-lake-and-palmer",
+      "label": "other databases: https://rateyourmusic.com/artist/emerson-lake-and-palmer"
+    },
+    {
+      "id": "emerson-other databases-cce03244d5a6",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.45cat.com/artist/emerson-lake-and-palmer",
+      "label": "other databases: https://www.45cat.com/artist/emerson-lake-and-palmer"
+    },
+    {
+      "id": "emerson-other databases-1e4a06b189c8",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.idref.fr/08627404X",
+      "label": "other databases: https://www.idref.fr/08627404X"
+    },
+    {
+      "id": "emerson-other databases-040cc3e6fab9",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.jazzmusicarchives.com/artist/emerson-lake-and-palmer",
+      "label": "other databases: https://www.jazzmusicarchives.com/artist/emerson-lake-and-palmer"
+    },
+    {
+      "id": "emerson-other databases-19f808ae98af",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.musik-sammler.de/artist/emerson-lake-palmer/",
+      "label": "other databases: https://www.musik-sammler.de/artist/emerson-lake-palmer/"
+    },
+    {
+      "id": "emerson-other databases-2f6c9009a36d",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.progarchives.com/artist.asp?id=94",
+      "label": "other databases: https://www.progarchives.com/artist.asp?id=94"
+    },
+    {
+      "id": "emerson-other databases-e83e8b5a04b4",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.spirit-of-rock.com/en/band/Emerson_Lake_And_Palmer",
+      "label": "other databases: https://www.spirit-of-rock.com/en/band/Emerson_Lake_And_Palmer"
+    },
+    {
+      "id": "emerson-other databases-c0bfc967fd2c",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.whosampled.com/Emerson,-Lake-%26-Palmer/",
+      "label": "other databases: https://www.whosampled.com/Emerson,-Lake-%26-Palmer/"
+    },
+    {
+      "id": "emerson-other databases-fd5d2faac909",
+      "dj_id": "emerson",
+      "type": "other databases",
+      "url": "https://www.worldcat.org/identities/lccn-nr89011806/",
+      "label": "other databases: https://www.worldcat.org/identities/lccn-nr89011806/"
+    },
+    {
+      "id": "emerson-purchase for download-d73874b2cdd6",
+      "dj_id": "emerson",
+      "type": "purchase for download",
+      "url": "https://play.google.com/store/music/artist?id=A33i4fj6c6fzmrb3rwag2kwa2ny",
+      "label": "purchase for download: https://play.google.com/store/music/artist?id=A33i4fj6c6fzmrb3rwag2kwa2ny"
+    },
+    {
+      "id": "emerson-purchase for download-2f34026d4986",
+      "dj_id": "emerson",
+      "type": "purchase for download",
+      "url": "https://itunes.apple.com/us/artist/id27358441",
+      "label": "purchase for download: https://itunes.apple.com/us/artist/id27358441"
+    },
+    {
+      "id": "emerson-purchase for download-4154837a7a15",
+      "dj_id": "emerson",
+      "type": "purchase for download",
+      "url": "https://music.apple.com/us/artist/27358441",
+      "label": "purchase for download: https://music.apple.com/us/artist/27358441"
+    },
+    {
+      "id": "emerson-purchase for download-5cf5febb0c04",
+      "dj_id": "emerson",
+      "type": "purchase for download",
+      "url": "https://www.7digital.com/artist/emerson-lake-palmer",
+      "label": "purchase for download: https://www.7digital.com/artist/emerson-lake-palmer"
+    },
+    {
+      "id": "emerson-purchase for download-a8645a929e6a",
+      "dj_id": "emerson",
+      "type": "purchase for download",
+      "url": "https://www.qobuz.com/us-en/interpreter/emerson-lake-palmer/73278",
+      "label": "purchase for download: https://www.qobuz.com/us-en/interpreter/emerson-lake-palmer/73278"
+    },
+    {
+      "id": "emerson-purchase for download-50581286b137",
+      "dj_id": "emerson",
+      "type": "purchase for download",
+      "url": "http://www.emusic.com/artist/-/11622349/",
+      "label": "purchase for download: http://www.emusic.com/artist/-/11622349/"
+    },
+    {
+      "id": "emerson-secondhandsongs-20df1188178f",
+      "dj_id": "emerson",
+      "type": "secondhandsongs",
+      "url": "https://secondhandsongs.com/artist/21522",
+      "label": "secondhandsongs: https://secondhandsongs.com/artist/21522"
+    },
+    {
+      "id": "emerson-setlistfm-209c21f8cd85",
+      "dj_id": "emerson",
+      "type": "setlistfm",
+      "url": "https://www.setlist.fm/setlists/emerson-lake-and-palmer-1bd6b534.html",
+      "label": "setlistfm: https://www.setlist.fm/setlists/emerson-lake-and-palmer-1bd6b534.html"
+    },
+    {
+      "id": "emerson-social network-f19a803a60eb",
+      "dj_id": "emerson",
+      "type": "social network",
+      "url": "https://www.facebook.com/EmersonLakePalmer",
+      "label": "social network: https://www.facebook.com/EmersonLakePalmer"
+    },
+    {
+      "id": "emerson-songkick-10cd408bac5d",
+      "dj_id": "emerson",
+      "type": "songkick",
+      "url": "https://www.songkick.com/artists/265092",
+      "label": "songkick: https://www.songkick.com/artists/265092"
+    },
+    {
+      "id": "emerson-soundcloud-4faa74012dd1",
+      "dj_id": "emerson",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/emerson-lake-palmer",
+      "label": "soundcloud: https://soundcloud.com/emerson-lake-palmer"
+    },
+    {
+      "id": "emerson-streaming-4154837a7a15",
+      "dj_id": "emerson",
+      "type": "streaming",
+      "url": "https://music.apple.com/us/artist/27358441",
+      "label": "streaming: https://music.apple.com/us/artist/27358441"
+    },
+    {
+      "id": "emerson-streaming-c6272a8aacad",
+      "dj_id": "emerson",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/3579254",
+      "label": "streaming: https://tidal.com/artist/3579254"
+    },
+    {
+      "id": "emerson-streaming-a8645a929e6a",
+      "dj_id": "emerson",
+      "type": "streaming",
+      "url": "https://www.qobuz.com/us-en/interpreter/emerson-lake-palmer/73278",
+      "label": "streaming: https://www.qobuz.com/us-en/interpreter/emerson-lake-palmer/73278"
+    },
+    {
+      "id": "emerson-viaf-9109e0297eb8",
+      "dj_id": "emerson",
+      "type": "viaf",
+      "url": "http://viaf.org/viaf/121287817",
+      "label": "VIAF: http://viaf.org/viaf/121287817"
+    },
+    {
+      "id": "emerson-wikidata-81f21d9e851a",
+      "dj_id": "emerson",
+      "type": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q273171",
+      "label": "wikidata: https://www.wikidata.org/wiki/Q273171"
+    },
+    {
+      "id": "emerson-youtube music-48fb92daa101",
+      "dj_id": "emerson",
+      "type": "youtube music",
+      "url": "https://music.youtube.com/channel/UCGNoW1_LSm0mCZDC1aZzwQA",
+      "label": "youtube music: https://music.youtube.com/channel/UCGNoW1_LSm0mCZDC1aZzwQA"
     }
   ],
   "articles": [
@@ -9027,6 +9955,123 @@
       "snippet": "Strategic acquisition and $1.5M equity raising to bolster education initiatives. TALi Digital Ltd (ASX:TD1) has announced the acquisition of You Can Do It! (YCDI!) Education for $1.34 million, ..."
     },
     {
+      "id": "don-luchito-fb17b67c7029429f",
+      "dj_id": "don-luchito",
+      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929de8068d461faeb0b799cf50e85f&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-07-18T17:00:00.000Z",
+      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
+    },
+    {
+      "id": "don-luchito-03e23b67e4c24760",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929de8068d461faeb0b799cf50e85f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2016-08-19T17:00:00.000Z",
+      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
+    },
+    {
+      "id": "don-luchito-29c65ba70505fdc5",
+      "dj_id": "don-luchito",
+      "title": "Funk N Soul with DJ Don Luchito.",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929de8068d461faeb0b799cf50e85f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2015-11-06T16:00:00.000Z",
+      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
+    },
+    {
+      "id": "broderbeats-bc48b2e0323bdab2",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deb51f14965b8e7edd8775dac41&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-681ab769a03a6873",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deb51f14965b8e7edd8775dac41&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-8b9fd7f1e976eb81",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deb51f14965b8e7edd8775dac41&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "frida-de1089ef2d00a983",
+      "dj_id": "frida",
+      "title": "Glow in the Dark Paint Night - Fluro Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dec66c9432dbc6e64fe7dcf9257&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2021%2fglow-in-the-dark-paint-night-fluro-frida%2fwellington&amp;c=14940081104874254031&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2021-02-23T16:00:00.000Z",
+      "snippet": "Deciding what to buy is hard, but paying for it doesn't have to be. Laybuy lets you receive the item now and spread the payment over 6 weekly automatic instalments. No interest, no fees*."
+    },
+    {
+      "id": "frida-a4c32fd971aef5b4",
+      "dj_id": "frida",
+      "title": "Buy Tickets to Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dec66c9432dbc6e64fe7dcf9257&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2024%2ffrida%2fwellington%2ftickets%2fcontact-details%3fguest%3dguest&amp;c=7266203712031812666&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2013-12-10T16:00:00.000Z",
+      "snippet": "Get reimbursed up to 100% of your ticket purchase (excluding Ticket Protection fees). Ticket Protection can provide cover in case of illness, redundancy, public transport delays, and more. These ..."
+    },
+    {
+      "id": "frida-6949087afba9a9a9",
+      "dj_id": "frida",
+      "title": "Jazz Festival: Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dec66c9432dbc6e64fe7dcf9257&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2025-10-15T17:00:00.000Z",
+      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
+    },
+    {
+      "id": "estere-d07e361e5b9c12ce",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-9ed957ef7475def9",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Estère has rolled out her new \"digital doom dance song\" entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-1bdeb48d1e7293fd",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-5f678b02b3c359c1",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
       "id": "broderbeats-0af2474cebc940a3",
       "dj_id": "broderbeats",
       "title": "Broderbeats Presents Intuition Vol. 1",
@@ -9036,6 +10081,51 @@
       "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
     },
     {
+      "id": "estere-4f411d461410f598",
+      "dj_id": "estere",
+      "title": "Estère at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Estère announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Estère’s October 2020 San ..."
+    },
+    {
+      "id": "estere-450f861f132391ad",
+      "dj_id": "estere",
+      "title": "Estère: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Estère: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "estere-b073f6abbcf2da83",
+      "dj_id": "estere",
+      "title": "Ambition: Estère has eyes on the prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fbay-of-plenty-times%2flifestyle%2fambition-estere-has-eyes-on-the-prize%2fCX5CFNLSQPPXMHUFVSHTCASEJM%2f&amp;c=4677511028279512710&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2016-11-09T16:42:00.000Z",
+      "snippet": "It's hard to imagine someone more different to Donald Trump than Magdelaine Lavirgin, the fictional persona Wellington producer Estère has strode into on her new track Ambition. Lavirgin - a young, ..."
+    },
+    {
+      "id": "tali-15219796683de33a",
+      "dj_id": "tali",
+      "title": "Tali And Georgie Fisher at Havana in January",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df3c1e34663874da8e0cb01dcfe&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d83686&amp;c=14364539553564639859&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2015-11-09T16:00:00.000Z",
+      "snippet": "Singer-songwriters Tali and Georgie Fisher are delighted to announce a New Zealand summer tour, travelling across the country in January. Meeting through a mutual friend amidst the vibrant street ..."
+    },
+    {
+      "id": "tv-disko-d87a342a7947fa8c",
+      "dj_id": "tv-disko",
+      "title": "TV Disko",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df5fe544e899fb92625bdf95a4d&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2025-09-15T17:01:00.000Z",
+      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
+    },
+    {
       "id": "estere-2e2c68ca296e990f",
       "dj_id": "estere",
       "title": "Estère at Meow in February",
@@ -9043,6 +10133,177 @@
       "source": "Scoop",
       "published_at": "2020-12-14T16:00:00.000Z",
       "snippet": "Estère announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Estère’s October 2020 San ..."
+    },
+    {
+      "id": "sam-56cd8a12df788f72",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df78a374966b597d2ad5b2f4475&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
+      "id": "sam-5ae1585ed04a3bff",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df78a374966b597d2ad5b2f4475&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
+    },
+    {
+      "id": "sam-1133d928b222ee76",
+      "dj_id": "sam",
+      "title": "‘Dreams really do come true’ – Chrissie Wellington helps Sam achieve #onemoremarathon",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df78a374966b597d2ad5b2f4475&amp;url=https%3a%2f%2fwww.tri247.com%2ftriathlon-news%2fchrissie-wellington-sam-perkins-rob-burrow-leeds-marathon-2023&amp;c=960988042153773035&amp;mkt=en-nz",
+      "source": "tri247.com",
+      "published_at": "2023-05-15T05:39:00.000Z",
+      "snippet": "Four-time IRONMAN World Champion Chrissie Wellington helped a “dream come true” for Sam Perkins on an inspiring day at the first-ever Rob Burrow Leeds Marathon on Sunday. Wellington’s triathlon record ..."
+    },
+    {
+      "id": "sam-eb6eee2632c4d3dc",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df78a374966b597d2ad5b2f4475&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-dbfde3e5a18ca25c",
+      "dj_id": "sam",
+      "title": "Cam & Sam Dueling Pianos",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df78a374966b597d2ad5b2f4475&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2fcam-sam-dueling-pianos8%2fwellington&amp;c=10922525458316902999&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-11-13T16:01:00.000Z",
+      "snippet": "You can fill out the form below to be added to the waiting list for Cam & Sam Dueling Pianos. We will notify you via email when more tickets become available."
+    },
+    {
+      "id": "herman-saiz-99ab1a73848df87e",
+      "dj_id": "herman-saiz",
+      "title": "Morning Rave - Herman Saiz",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df9028e4e1b8bb837d31ad85682&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f57363%2fMorning-Rave---Herman-Saiz.utr&amp;c=15584981201017345094&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-11-07T16:00:00.000Z",
+      "snippet": "Morning People are proud to present progressive tech maestro Herman Saiz (Agua y Sed, Aprapta, Tempura and Leuchtturm Records) Squeezed between dates in South America and Bali, DJ, producer and cosmic ..."
+    },
+    {
+      "id": "clova-cf0d7ff93c19fe77",
+      "dj_id": "clova",
+      "title": "Solar Daze, Clova And RENÉE",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfa710b4834ab39228066ee0c15&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f94732%2fSolar-Daze-Clova-And-RENE.utr&amp;c=14929666363624278837&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-02-25T16:00:00.000Z",
+      "snippet": "Catch Solar Daze, Clova, and RENÉE live at Valhalla on February 26th. Doors open at 7:30 PM, with the first act hitting the stage at 8:00 PM. Headlining the night, Solar Daze, a Pōneke-based hip ..."
+    },
+    {
+      "id": "clova-7f7a80f93f3d7843",
+      "dj_id": "clova",
+      "title": "Clova: Spiral B Side Release Party",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfa710b4834ab39228066ee0c15&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102417%2fClova-Spiral-B-Side-Release-Party.utr&amp;c=2770393012493913114&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-28T17:00:00.000Z",
+      "snippet": "We're thrilled to have the one and only CLOVA host the release party for the B side of her debut album, SPIRAL. A celebrate pioneer of sonics in our city, she is a unique talent with a forward-looking ..."
+    },
+    {
+      "id": "musical-1d9b5347073f4e22",
+      "dj_id": "musical",
+      "title": "Matilda The Musical Landing In Wellington In 2026",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfb698e459e9b49d27da0ba60d8&amp;url=https%3a%2f%2fauckland.scoop.co.nz%2f2025%2f09%2fmatilda-the-musical-landing-in-wellington-in-2026%2f&amp;c=13479736437305694537&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2025-09-28T17:00:00.000Z",
+      "snippet": "Wellington, get ready! New Zealand’s most revolting children are set to storm the capital for the very first time in the premiere season of Matilda the Musical at the St James Theatre in 2026. Now, it ..."
+    },
+    {
+      "id": "musical-9fe403592769ca5f",
+      "dj_id": "musical",
+      "title": "Menopause The Musical at Positively Wellington, Opera House",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfb698e459e9b49d27da0ba60d8&amp;url=https%3a%2f%2fwww.broadwayworld.com%2fnew-zealand%2fregional%2fMenopause-The-Musical-161667&amp;c=6268371732042340427&amp;mkt=en-nz",
+      "source": "BroadwayWorld",
+      "published_at": "2016-08-24T17:00:00.000Z",
+      "snippet": "What’s a hot flush between friends!? Frickin’ hilarious that’s what! Ladies – and brave men keen to avoid domestic meltdowns by not attending – MENOPAUSE THE MUSICAL is set to pour more blood, sweat ..."
+    },
+    {
+      "id": "musical-bc4dc3eb8090b21b",
+      "dj_id": "musical",
+      "title": "Reimagined Cinderella Musical Debuts In Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfb698e459e9b49d27da0ba60d8&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU2201%2fS00067%2freimagined-cinderella-musical-debuts-in-wellington.htm&amp;c=14699690629794192059&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-17T23:35:00.000Z",
+      "snippet": "The Wellington Footlights Society is proud to present the New Zealand premiere of Soho Cinders, a charming and hilarious modern musical adaptation of the Cinderella story. Originally debuted off-West ..."
+    },
+    {
+      "id": "musical-0892aa4aed8bf08c",
+      "dj_id": "musical",
+      "title": "Hit Pop Musical & Juliet To Take The Stage In Auckland, Wellington And Christchurch In 2026",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfb698e459e9b49d27da0ba60d8&amp;url=https%3a%2f%2fauckland.scoop.co.nz%2f2025%2f08%2fhit-pop-musical-juliet-to-take-the-stage-in-auckland-wellington-and-christchurch-in-2026%2f&amp;c=151027792065943359&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2025-08-24T17:00:00.000Z",
+      "snippet": "The smash-hit musical that took the West End and Broadway by storm is coming to Aotearoa in 2026. & Juliet will make its highly anticipated New Zealand debut, with strictly limited seasons at three of ..."
+    },
+    {
+      "id": "musical-c8461063d9d326c5",
+      "dj_id": "musical",
+      "title": "Wellington High School student writes musical based on Faust with Asian and queer representation during 1860s Otago",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfb698e459e9b49d27da0ba60d8&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fentertainment%2fstage-and-theatre%2f125886919%2fwellington-high-school-student-writes-musical-based-on-faust-with-asian-and-queer-representation-during-1860s-otago&amp;c=463580701493912903&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2021-07-27T17:21:00.000Z",
+      "snippet": "Wellington High School students will be performing a musical called In Blind Faith, which is a retelling of Faust. Cian Ye will be playing Edward. Photo: Supplied / Supplied Prefer us on Google Not ..."
+    },
+    {
+      "id": "emerson-410e7a75d25bcc99",
+      "dj_id": "emerson",
+      "title": "5 Wings of Fire Challenge launch with Richard Emerson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfd6fd549b6bfc24368f54d33c6&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2f5-wings-of-fire-challenge-launch-with-richard-emerson%2fwellington&amp;c=14629424725145005289&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-14T04:30:00.000Z",
+      "snippet": "Mon 26 Sep 2022, 11:30am–9:00pm Tue 27 Sep 2022, 11:30am–9:00pm Wed 28 Sep 2022, 11:30am–9:00pm Thu 29 Sep 2022, 11:30am–9:00pm Fri 30 Sep 2022, 11:30am–9:00pm ..."
+    },
+    {
+      "id": "emerson-7acc832978702657",
+      "dj_id": "emerson",
+      "title": "Emerson- \"Leap! on Tour\"",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfd6fd549b6bfc24368f54d33c6&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2femerson-leap-on-tour%2fwellington&amp;c=520751472391549312&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-07-14T17:22:00.000Z",
+      "snippet": "Following a breakout two years that saw her win the 2024 Smokefree Rockquest Solo/Duo Award, earn editorial support from Spotify and Apple Music, and feature in Rolling Stone AU/NZ, Auckland alt-pop ..."
+    },
+    {
+      "id": "emerson-1e60c80ab76f5857",
+      "dj_id": "emerson",
+      "title": "Emerson’s and Harrington’s create ultimate BBQ sausage",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfd6fd549b6bfc24368f54d33c6&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d123733&amp;c=9364730505040116815&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2019-11-11T16:00:00.000Z",
+      "snippet": "Two well-known Kiwi companies have collaborated to make the ultimate Kiwi BBQ sausage, using award-winning pilsner and 100% Kiwi free-range pork. Harrington’s Smallgoods from Wellington and Emersons ..."
+    },
+    {
+      "id": "serenna-2744c2461023abb3",
+      "dj_id": "serenna",
+      "title": "Gnarling, Western Haikus & Serenna",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfe4da34fa58b92bef4a77fe081&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f100534%2fGnarling-Western-Haikus--Serenna.utr&amp;c=16261802539973465078&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-01-28T16:00:00.000Z",
+      "snippet": "Hey Wellington! New band here. The internet is a bit of a hell-scape now-a-days... so we thought the best way to introduce ourselves would be in person. You might already know some of us from other ..."
+    },
+    {
+      "id": "serenna-81b1be0d822be9ec",
+      "dj_id": "serenna",
+      "title": "Gnarling, Western Haikus & Serenna",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfe4da34fa58b92bef4a77fe081&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fgnarling-western-haikus-serenna%2fwellington&amp;c=11564180881397164952&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-01-29T12:00:00.000Z",
+      "snippet": "And where better to share that gloomy doominess with you than at Wellington's gloomiest and doomiest venue, Valhalla? As luck would have it, we're putting on a totally FREE show at Valhalla on ..."
+    },
+    {
+      "id": "serenna-7cd14c54448d2515",
+      "dj_id": "serenna",
+      "title": "The Blue Summer EP Release w/ Serenna",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfe4da34fa58b92bef4a77fe081&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101185%2fThe-Blue-Summer-EP-Release-w-Serenna.utr&amp;c=13983016515648085948&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-04-09T17:00:00.000Z",
+      "snippet": "After slaving away at a leisurely pace for a year in Lyall Bay, dynamic Wellington rock five-piece The Blue Summer finally has something to show for their toil. Engineered by scene veteran Peter ..."
     },
     {
       "id": "sian-1b2810fd1638a5b7",
@@ -20268,6 +21529,405 @@
       "title": "CLOSER (TALI REMIX)",
       "url": "https://soundcloud.com/talimusic111/ne-yo-closer-t-a-l-i-remix",
       "platform": "soundcloud"
+    },
+    {
+      "id": "herman-saiz-mixcloud-14b70aa76ea3",
+      "dj_id": "herman-saiz",
+      "title": "Herman Saiz - Agua y Sed Podcast 15",
+      "url": "https://www.mixcloud.com/aguaysedlabel/herman-saiz-agua-y-sed-podcast-15/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "herman-saiz-mixcloud-4167846492bf",
+      "dj_id": "herman-saiz",
+      "title": "Collab x Agua y Sed Podcast - Herman Saiz",
+      "url": "https://www.mixcloud.com/aguaysedlabel/collab-x-agua-y-sed-podcast-herman-saiz/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "clova-mixcloud-2f97cb6df98b",
+      "dj_id": "clova",
+      "title": "Meddercation Guest Mix & Interview: Clova - 22/10/25",
+      "url": "https://www.mixcloud.com/Radioactive_FM/meddercation-guest-mix-interview-clova/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "clova-mixcloud-0623276164d6",
+      "dj_id": "clova",
+      "title": "Claudine et line clovaly 07 février 2022",
+      "url": "https://www.mixcloud.com/radiocoteaux/claudine-et-line-clovaly-07-f%C3%A9vrier-2022/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "clova-mixcloud-48b1fd03d73b",
+      "dj_id": "clova",
+      "title": "Episode 134: Do You Know Who the F*ck I AM? ft @Sherasaurus @Clovasaurus @Mr_Spann @BlakGodzilla - S",
+      "url": "https://www.mixcloud.com/singlesimulcast/episode-134-do-you-know-who-the-fck-i-am-ft-sherasaurus-clovasaurus-mr_spann-blakgodzilla-/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "clova-mixcloud-8f1bac0048c0",
+      "dj_id": "clova",
+      "title": "Episode 191: Fight Music pt. 1 (ft @Sherasaurus @Clovasaurus @LonzoHarrisJr)",
+      "url": "https://www.mixcloud.com/singlesimulcast/episode-191-fight-music-pt-1-ft-sherasaurus-clovasaurus-lonzoharrisjr-/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "clova-mixcloud-66bd4d254869",
+      "dj_id": "clova",
+      "title": "Episode 246: Chickenhead Baseball (ft. @Sherasaurus & @Clovasaurus from @Chonilla)",
+      "url": "https://www.mixcloud.com/singlesimulcast/episode-246-chickenhead-baseball-ft-sherasaurus-clovasaurus-from-chonilla-single-simulcas/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "clova-mixcloud-d521697727d0",
+      "dj_id": "clova",
+      "title": "Episode 191: Fight Music Pt. 2 (ft @Sherasaurus @Clovasaurus @LonzoHarrisJr)",
+      "url": "https://www.mixcloud.com/singlesimulcast/episode-191-fight-music-pt-2-ft-sherasaurus-clovasaurus-lonzoharrisjr-/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-ca64a1dbdc93",
+      "dj_id": "musical",
+      "title": "Magnificence – Musical Freedom Radio Residency [August 14th, 2020]",
+      "url": "https://www.mixcloud.com/MusicalFreedom/magnificence-musical-freedom-radio-residency-august-14th-2020/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-bfcfc9a98eb6",
+      "dj_id": "musical",
+      "title": "KREAM | Musical Freedom Radio | March 2021",
+      "url": "https://www.mixcloud.com/MusicalFreedom/kream-musical-freedom-radio-march-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-32d6c5776058",
+      "dj_id": "musical",
+      "title": "DubDogz | Musical Freedom Radio | February 2021",
+      "url": "https://www.mixcloud.com/MusicalFreedom/dubdogz-musical-freedom-radio-february-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-17fb3dcba448",
+      "dj_id": "musical",
+      "title": "Dubdogz | Musical Freedom Radio | March 2021",
+      "url": "https://www.mixcloud.com/MusicalFreedom/dubdogz-musical-freedom-radio-march-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-2a1ca5724b39",
+      "dj_id": "musical",
+      "title": "KREAM | Musical Freedom Radio | March 26th, 2021",
+      "url": "https://www.mixcloud.com/MusicalFreedom/kream-musical-freedom-radio-march-26th-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-fc4c817105e7",
+      "dj_id": "musical",
+      "title": "MARTEN HØRGER – Musical Freedom Radio Residency [September 4, 2020]",
+      "url": "https://www.mixcloud.com/MusicalFreedom/marten-h%C3%B8rger-musical-freedom-radio-residency-september-4th-2020/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-3825b71a858a",
+      "dj_id": "musical",
+      "title": "VOLAC | Musical Freedom Radio | February 2021",
+      "url": "https://www.mixcloud.com/MusicalFreedom/volac-musical-freedom-radio-february-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-cb33ce6a1bb5",
+      "dj_id": "musical",
+      "title": "Magnificence – Musical Freedom Radio Residency [September 11th, 2020]",
+      "url": "https://www.mixcloud.com/MusicalFreedom/magnificence-musical-freedom-radio-residency-september-11th-2020/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-1f5b9f7d667c",
+      "dj_id": "musical",
+      "title": "KREAM | Musical Freedom Radio | April 2021",
+      "url": "https://www.mixcloud.com/MusicalFreedom/kream-musical-freedom-radio-april-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-964b50d14988",
+      "dj_id": "musical",
+      "title": "VOLAC | Musical Freedom Radio | January 2021",
+      "url": "https://www.mixcloud.com/MusicalFreedom/volac-musical-freedom-radio-january-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-1d2f4bbbe069",
+      "dj_id": "musical",
+      "title": "BYOR – Musical Freedom Radio Residency [September 18th, 2020]",
+      "url": "https://www.mixcloud.com/MusicalFreedom/byor-musical-freedom-radio-residency-september-18th-2020/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-f44da0c6db30",
+      "dj_id": "musical",
+      "title": "DJ Musical Mix - Taste Of Soca 2017",
+      "url": "https://www.mixcloud.com/themixfeed/dj-musical-mix-taste-of-soca-2017/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-5654e9c94c55",
+      "dj_id": "musical",
+      "title": "DJ Musical Mix - 90s R&B",
+      "url": "https://www.mixcloud.com/dds330/dj-musical-mix-90s-rb/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "musical-mixcloud-595932901380",
+      "dj_id": "musical",
+      "title": "PEQUEÑOS MUSICAL MIX- DJ SAULIVAN",
+      "url": "https://www.mixcloud.com/djsaulivan/peque%C3%B1os-musical-mix-dj-saulivan/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-42e2a482ef1b",
+      "dj_id": "emerson",
+      "title": "The Radio Show with Tall Paul, Seb Fontaine & Darren Emerson - Friday 3rd March 2023",
+      "url": "https://www.mixcloud.com/MusicBoxRadioUK/the-radio-show-with-tall-paul-seb-fontaine-darren-emerson-friday-3rd-march-2023/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-0991962d076a",
+      "dj_id": "emerson",
+      "title": "Transitions with John Digweed and 3D : Danny Howells, Dave Seaman, Darren Emerson.",
+      "url": "https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-3d-danny-howells-dave-seaman-darren-emerson/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-fe3501177d49",
+      "dj_id": "emerson",
+      "title": "Transitions with John Digweed and Darren Emerson",
+      "url": "https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-_darren-emerson/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-500e6d134cda",
+      "dj_id": "emerson",
+      "title": "Steve Price Rock Show - Saturday 12 Mar 16 with tributes to George Martin, Keith Emerson and more",
+      "url": "https://www.mixcloud.com/arfm/steve-price-rock-show-saturday-12-mar-16-with-tributes-to-george-martin-keith-emerson-and-more/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-80eb32b9a5ff",
+      "dj_id": "emerson",
+      "title": "Transitions with John Digweed and Darren Emerson",
+      "url": "https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-and-darren-emerson/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-77f579a4f571",
+      "dj_id": "emerson",
+      "title": "Transitions with John Digweed and Darren Emerson",
+      "url": "https://www.mixcloud.com/johndigweed/transitions-with-john-digweed-darren-emerson/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-9b3d87682b70",
+      "dj_id": "emerson",
+      "title": "Avalon Emerson - 2nd October 2020",
+      "url": "https://www.mixcloud.com/NTSRadio/avalon-emerson-2nd-october-2020/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-05e6a420adfc",
+      "dj_id": "emerson",
+      "title": "DJ Mix for John Digweed's Transitions OCT 2016",
+      "url": "https://www.mixcloud.com/darrenemerson/dj-mix-for-john-digweeds-transitions-oct-2016/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-46faa2d18594",
+      "dj_id": "emerson",
+      "title": "DJ Emerson - Nov 16th, 2024 - techno-club.net",
+      "url": "https://www.mixcloud.com/TechnoClubNet/dj-emerson-nov-16th-2024-techno-clubnet/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-57c15b5ed97d",
+      "dj_id": "emerson",
+      "title": "Ibiza chillout/lounge mix 2014 by Andrus Emerson",
+      "url": "https://www.mixcloud.com/DJANDRUSEMERSON/ibiza-chilloutlounge-mix-2014-by-andrus-emerson/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-6ba429b0998c",
+      "dj_id": "emerson",
+      "title": "Global Underground 036 - Darren Emerson - Bogota - CD1",
+      "url": "https://www.mixcloud.com/globalundergroundseries/global-underground-036-darren-emerson-bogota-cd1/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-eae27dba63d0",
+      "dj_id": "emerson",
+      "title": "Alejandra Guzman Mix DJ Emerson El Mago Melodico (System Music)",
+      "url": "https://www.mixcloud.com/emersongomiinola/alejandra-guzman-mix-dj-emerson-el-mago-melodico-system-music/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-d6f814e143c7",
+      "dj_id": "emerson",
+      "title": "Selador Sessions 45 - 3D (Dave Seaman, Danny Howells & Darren Emerson B2B2B)",
+      "url": "https://www.mixcloud.com/daveseaman/selador-sessions-45-3d-live/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-4d31cbbac5d6",
+      "dj_id": "emerson",
+      "title": "Global Underground 036 - Darren Emerson - Bogota - CD2",
+      "url": "https://www.mixcloud.com/globalundergroundseries/global-underground-036-darren-emerson-bogota-cd2/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-33d22f9843a7",
+      "dj_id": "emerson",
+      "title": "DARREN EMERSON PRESENTS -DETONE SESSIONS 009 MIX - INTER FM JAPAN",
+      "url": "https://www.mixcloud.com/darrenemerson/darren-emerson-presents-detone-sessions-009-mix-inter-fm-japan/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-68069d25c23e",
+      "dj_id": "emerson",
+      "title": "Global Underground 020 - Darren Emerson - Singapore - CD1",
+      "url": "https://www.mixcloud.com/globalundergroundseries/global-underground-020-darren-emerson-singapore-cd1/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-4c50bad74fa3",
+      "dj_id": "emerson",
+      "title": "ROCK ON THE ROAD 9= Steppenwolf, Jefferson Airplane, Jethro Tull, Emerson Lake & Palmer, ZZ Top...",
+      "url": "https://www.mixcloud.com/JAZZAMATAZZ/rock-on-the-road-9/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-5af1eae85efd",
+      "dj_id": "emerson",
+      "title": "Real Techno presents Darren Emerson",
+      "url": "https://www.mixcloud.com/Real_Techno/real-techno-presents-darren-emerson/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-1ec176396870",
+      "dj_id": "emerson",
+      "title": "Cashmere Texture Mix #24 w/ Avalon Emerson 20.01.2018",
+      "url": "https://www.mixcloud.com/CashmereRadio/cashmere-texture-mix-25-w-avalon-emerson-20012018/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-ec8f9e81b103",
+      "dj_id": "emerson",
+      "title": "Avalon Emerson @ London Printworks",
+      "url": "https://www.mixcloud.com/amemgmt/avalon-emerson-london-printworks/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-425aa1535941",
+      "dj_id": "emerson",
+      "title": "DJ'YE【Emerson Private Mix】《ДЕТИ RAVE - УРЫЛ 0$ X 單依純 - 在夜裡跳舞 X 葉斯潡 - 我曾遇到一束光》Mixtape 2x23",
+      "url": "https://www.mixcloud.com/jarty-ye/djyeemerson-private-mix%D0%B4%D0%B5%D1%82%D0%B8-rave-%D1%83%D1%80%D1%8B%D0%BB-0-x-%E5%96%AE%E4%BE%9D%E7%B4%94-%E5%9C%A8%E5%A4%9C%E8%A3%A1%E8%B7%B3%E8%88%9E-x-%E8%91%89%E6%96%AF%E6%BD%A1-%E6%88%91%E6%9B%BE%E9%81%87%E5%88%B0%E4%B8%80%E6%9D%9F%E5%85%89mixtape-2x23/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-1607f3593814",
+      "dj_id": "emerson",
+      "title": "Darren Emerson - Inception Mix - Exclusive - CLUBZ",
+      "url": "https://www.mixcloud.com/thenightbazaar/darren-emerson-inception-mix-exclusive-clubz/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-c0b75eaf5754",
+      "dj_id": "emerson",
+      "title": "Darren Emerson - Essential Mix - 1994-07-09",
+      "url": "https://www.mixcloud.com/DJ_Mix/darren-emerson-essential-mix-1994-07-09/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-3e0c9c0e2f6f",
+      "dj_id": "emerson",
+      "title": "Avalon Emerson - London Mix 2021",
+      "url": "https://www.mixcloud.com/amemgmt/avalon-emerson-london-mix-2021/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-70bb7cc2a0e6",
+      "dj_id": "emerson",
+      "title": "Mix Yonics_Dj Emerson_ElMagoMelodico_SystemMusic",
+      "url": "https://www.mixcloud.com/emersongomiinola/mix-yonics_dj-emerson_elmagomelodico_systemmusic/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-6576bbcb572b",
+      "dj_id": "emerson",
+      "title": "Darren Emerson John Digweed - Essential Mix 2 (1996)",
+      "url": "https://www.mixcloud.com/rhybooze/darren-emerson-john-digweed-essential-mix-2-1996/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-20a22dcd0b82",
+      "dj_id": "emerson",
+      "title": "Mix Mega Loco Vol 5 Dj Emerson ElMagoMelodico_SystemMusic.",
+      "url": "https://www.mixcloud.com/emersongomiinola/mix-mega-loco-vol-5-dj-emerson-elmagomelodico_systemmusic/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-2e8b67e2af99",
+      "dj_id": "emerson",
+      "title": "05-RancheronesMixVol.2_Mix Banda Hits_Dj Emerson Ft Dj Velasco (System Music)",
+      "url": "https://www.mixcloud.com/emersongomiinola/05-rancheronesmixvol2_mix-banda-hits_dj-emerson-ft-dj-velasco-system-music/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-b8ad3aee128b",
+      "dj_id": "emerson",
+      "title": "Matvey Emerson - Special Mix For Macromusic",
+      "url": "https://www.mixcloud.com/%D0%B1%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%BE%D0%B2-%D0%B4%D0%B5%D0%BD%D0%B8%D1%81/matvey-emerson-special-mix-for-macromusic/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-92fe0916708c",
+      "dj_id": "emerson",
+      "title": "Underworld - The Darren Emerson Mix",
+      "url": "https://www.mixcloud.com/MixesByOtherDJs/underworld-the-darren-emerson-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-155d9cb4d1a2",
+      "dj_id": "emerson",
+      "title": "02-RancheronesMixVol.2_Mix Rancheras De Relajo_Dj Emerson Ft Dj Velasco (System Music)",
+      "url": "https://www.mixcloud.com/emersongomiinola/02-rancheronesmixvol2_mix-rancheras-de-relajo_dj-emerson-ft-dj-velasco-system-music/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-d8f7e0e77984",
+      "dj_id": "emerson",
+      "title": "Darren Emerson Essential Mix 1994-07-09 Radio 1",
+      "url": "https://www.mixcloud.com/classic_house_mixes/darren-emerson-essential-mix-1994-07-09-radio-1/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-b6ec518650cc",
+      "dj_id": "emerson",
+      "title": "117. DJ Emerson (techno mix)",
+      "url": "https://www.mixcloud.com/NUDETechno/117-dj-emerson-techno-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-d2a35d2baf7d",
+      "dj_id": "emerson",
+      "title": "Matvey Emerson Deep house mix  18.08.2015",
+      "url": "https://www.mixcloud.com/screen2/matvey-emerson-deep-house-mix-18082015/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-286ed89bcd9f",
+      "dj_id": "emerson",
+      "title": "06-Mix Alejandro Sanz Dj Elam L.G. Music",
+      "url": "https://www.mixcloud.com/emersongomiinola/06-mix-alejandro-sanz-dj-elam-lg-music/",
+      "platform": "mixcloud"
     }
   ],
   "eventDjs": [
