@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { DjRow } from '@/lib/queries';
-import { genreAccent } from '@/lib/genres';
+import { genreAccent, topGenres } from '@/lib/genres';
 
 export function DjCard({ dj }: { dj: DjRow }) {
   const accent = genreAccent(dj.genres);
@@ -13,7 +13,7 @@ export function DjCard({ dj }: { dj: DjRow }) {
         <h3 className="text-lg font-semibold text-foreground group-hover:text-accent">{dj.name}</h3>
         {dj.genres.length > 0 && (
           <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted">
-            {dj.genres.join(' / ')}
+            {topGenres(dj.genres).join(' / ')}
           </p>
         )}
         {dj.bio && <p className="mt-3 line-clamp-3 text-sm text-muted">{dj.bio}</p>}

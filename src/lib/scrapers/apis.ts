@@ -115,7 +115,7 @@ export async function enrichMusicbrainz(pool: Pool, dj: DjRow): Promise<ScrapeRe
   if (genres.size > 0) {
     const normalised = normaliseGenres([...genres]);
     await pool.query(
-      `UPDATE djs SET genres = (SELECT array_agg(DISTINCT g) FROM unnest(genres || $2::text[]) AS g) WHERE id = $1`,
+      `UPDATE djs SET genres = (SELECT array_agg(g) FROM (SELECT DISTINCT g FROM unnest(genres || $2::text[]) AS g LIMIT 8) t) WHERE id = $1`,
       [dj.id, normalised],
     );
     found += normalised.length;
@@ -169,7 +169,7 @@ export async function enrichItunes(pool: Pool, dj: DjRow): Promise<ScrapeResult>
   if (artist.primaryGenreName) {
     const normalised = normaliseGenres([artist.primaryGenreName]);
     await pool.query(
-      `UPDATE djs SET genres = (SELECT array_agg(DISTINCT g) FROM unnest(genres || $2::text[]) AS g) WHERE id = $1`,
+      `UPDATE djs SET genres = (SELECT array_agg(g) FROM (SELECT DISTINCT g FROM unnest(genres || $2::text[]) AS g LIMIT 8) t) WHERE id = $1`,
       [dj.id, normalised],
     );
     found += normalised.length;

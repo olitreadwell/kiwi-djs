@@ -232,7 +232,7 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
       if (genres.size > 0) {
         const normalised = normaliseGenres([...genres]);
         await pool.query(
-          `UPDATE djs SET genres = (SELECT array_agg(DISTINCT g) FROM unnest(genres || $2::text[]) AS g) WHERE id = $1`,
+          `UPDATE djs SET genres = (SELECT array_agg(g) FROM (SELECT DISTINCT g FROM unnest(genres || $2::text[]) AS g LIMIT 8) t) WHERE id = $1`,
           [dj.id, normalised],
         );
       }

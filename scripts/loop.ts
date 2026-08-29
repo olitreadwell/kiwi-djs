@@ -235,45 +235,98 @@ function openIssueTitles(): Set<string> {
 }
 
 async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<void> {
-  // Audit phase: surface data gaps as GitHub issues (cheap, rule-based — no LLM).
+  // Audit phase: surface data gaps as GitHub issues (cheap, rule-based — no
+  // LLM). Files up to 4 new issues per cycle, one per category, skipping
+  // titles already open so the queue stays fresh.
   const open = openIssueTitles();
+  const MAX_PER_CYCLE = 4;
   let filed = 0;
 
-  const thin = (
-    await pool.query(
-      `SELECT d.id, d.name, d.verification_level, d.verification_sources
-       FROM djs d
-       WHERE d.opt_out = FALSE AND d.is_nz = TRUE AND d.active = TRUE
-         AND NOT EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id)`,
-    )
-  ).rows as Array<{ id: string; name: string; verification_level: number; verification_sources: string[] }>;
-  if (filed < 1 && thin.length >= 2) {
-    const names = thin.slice(0, 5).map((d) => `- ${d.name}`).join('\n');
-    const title = `data: ${thin.length} verified DJs have no mixes`;
-    if (!open.has(title)) {
-      runGh(['issue', 'create', '--title', title, '--body', `${names}\n\nFind SoundCloud/Mixcloud mixes or mark as not applicable.`]);
-      log(`Filed issue: ${title}`);
-      filed += 1;
-    }
+  const file = (title: string, body: string): void => {
+    if (filed >= MAX_PER_CYCLE || open.has(title)) return;
+    runGh(['issue', 'create', '--title', title, '--body', body]);
+    log(`Filed issue: ${title}`);
+    filed += 1;
+  };
+
+  const noMixes = (await pool.query(
+    `SELECT name FROM djs d WHERE opt_out = FALSE AND is_nz = TRUE AND active = TRUE
+     AND (discovery_note IS NULL OR discovery_note <> 'junk')
+     AND NOT EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id)`,
+  )).rows as Array<{ name: string; genres: string[] }>;
+  if (noMixes.length >= 2) {
+    file(
+      `data: ${noMixes.length} verified DJs have no mixes`,
+      `${noMixes.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nFind SoundCloud/Mixcloud mixes or mark as not applicable.`,
+    );
   }
 
-  const failing = (
-    await pool.query(
-      `SELECT source, count(*) AS failures
-       FROM scrapes
-       WHERE status = 'error' AND started_at > now() - interval '48 hours'
-       GROUP BY source ORDER BY failures DESC LIMIT 2`,
-    )
-  ).rows as Array<{ source: string; failures: string }>;
-  if (filed < 1 && failing.length > 0) {
-    for (const row of failing) {
-      const title = `fix: scraper "${row.source}" failing`;
-      if (open.has(title)) continue;
-      runGh(['issue', 'create', '--title', title, '--body', `${row.source}: ${row.failures} errors in 48h. See scrapes table.`]);
-      log(`Filed issue: ${title}`);
-      break;
-    }
+  const failing = (await pool.query(
+    `SELECT source, count(*) AS failures FROM scrapes
+     WHERE status = 'error' AND started_at > now() - interval '48 hours'
+     GROUP BY source ORDER BY failures DESC LIMIT 2`,
+  )).rows as Array<{ source: string; failures: string }>;
+  for (const row of failing) {
+    file(`fix: scraper "${row.source}" failing`, `${row.source}: ${row.failures} errors in 48h. See scrapes table.`);
   }
+
+  const noBio = (await pool.query(
+    `SELECT name FROM djs WHERE opt_out = FALSE AND is_nz = TRUE AND active = TRUE
+     AND (discovery_note IS NULL OR discovery_note <> 'junk') AND bio IS NULL`,
+  )).rows as Array<{ name: string }>;
+  if (noBio.length >= 2) {
+    file(
+      `data: ${noBio.length} verified DJs have no bio`,
+      `${noBio.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nWrite a short bio from public sources.`,
+    );
+  }
+
+  const noPhoto = (await pool.query(
+    `SELECT name FROM djs WHERE opt_out = FALSE AND is_nz = TRUE AND active = TRUE
+     AND (discovery_note IS NULL OR discovery_note <> 'junk') AND image_url IS NULL`,
+  )).rows as Array<{ name: string }>;
+  if (noPhoto.length >= 2) {
+    file(
+      `data: ${noPhoto.length} verified DJs have no photo`,
+      `${noPhoto.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nPull avatar from SoundCloud/Mixcloud/iTunes or mark as not applicable.`,
+    );
+  }
+
+  const genericGenres = (await pool.query(
+    `SELECT name, genres FROM djs WHERE opt_out = FALSE AND is_nz = TRUE AND active = TRUE
+     AND (discovery_note IS NULL OR discovery_note <> 'junk')
+     AND cardinality(genres) > 0
+     AND genres <@ ARRAY['Dance','Electronic','Alternative','Pop','Rock','Country','Eclectic','World','Experimental','Indie','Metal','Punk','Folk','Classical','Lounge','Chillout']`,
+  )).rows as Array<{ name: string; genres: string[] }>;
+  if (genericGenres.length >= 2) {
+    file(
+      `data: ${genericGenres.length} DJs have only generic genres`,
+      `${genericGenres.slice(0, 5).map((d) => `- ${d.name} (${d.genres.join(', ')})`).join('\n')}\n\nPull specific subgenres from track tags.`,
+    );
+  }
+
+  const noRegion = (await pool.query(
+    `SELECT name FROM venues WHERE address IS NOT NULL AND (region IS NULL OR region = '')`,
+  )).rows as Array<{ name: string }>;
+  if (noRegion.length >= 2) {
+    file(
+      `data: ${noRegion.length} venues have no region`,
+      `${noRegion.slice(0, 5).map((v) => `- ${v.name}`).join('\n')}\n\nGeocode via Nominatim or set manually.`,
+    );
+  }
+
+  const stuck = (await pool.query(
+    `SELECT name FROM djs WHERE opt_out = FALSE AND is_nz = TRUE AND active = FALSE
+     AND (discovery_note IS NULL OR discovery_note <> 'junk')
+     AND created_at < now() - interval '7 days'`,
+  )).rows as Array<{ name: string }>;
+  if (stuck.length >= 3) {
+    file(
+      `data: ${stuck.length} candidates stuck unverified for 7+ days`,
+      `${stuck.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nReview: verify, junk, or drop.`,
+    );
+  }
+
 }
 
 async function writeHandoff(pool: ReturnType<typeof getPool>, totals: { totalNew: number; totalFound: number }): Promise<void> {

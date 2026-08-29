@@ -5,6 +5,7 @@ import { ProfileViewTracker } from '@/components/profile-view-tracker';
 import { MixList } from '@/components/mix-list';
 import { MixEmbed } from '@/components/mix-embed';
 import { SuggestForm } from '@/components/suggest-form';
+import { topGenres } from '@/lib/genres';
 import {
   buildDossier,
   getDjArticles,
@@ -90,7 +91,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         )}
         <div>
           <h1 className="text-4xl font-black text-foreground">{dj.name}</h1>
-          <p className="mt-2 font-mono text-xs uppercase tracking-wider text-accent">{dj.genres.join(' / ') || 'genre tbc'}</p>
+          <p className="mt-2 font-mono text-xs uppercase tracking-wider text-accent">{topGenres(dj.genres).join(' / ') || 'genre tbc'}</p>
           {dj.bpm_range && <p className="mt-1 font-mono text-xs text-muted">{dj.bpm_range} BPM</p>}
         </div>
         <div className="rounded-lg border border-edge bg-surface p-4 font-mono text-xs text-muted">

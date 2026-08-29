@@ -161,3 +161,8 @@ export function genreAccent(genres: string[]): string {
   }
   return 'border-edge hover:border-accent/60';
 }
+
+// Show at most the top N genres — DJs accumulate long tag lists otherwise.
+export function topGenres(genres: string[], limit = 5): string[] {
+  return genres.slice(0, limit);
+}
