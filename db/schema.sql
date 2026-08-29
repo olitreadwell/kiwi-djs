@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS djs (
   verification_level INTEGER NOT NULL DEFAULT 0, -- 0 candidate, 1 listed, 2+ verified (evidence-weighted)
   verification_sources TEXT[] NOT NULL DEFAULT '{}', -- evidence categories: mixes, links, articles, gigs
   is_nz          BOOLEAN NOT NULL DEFAULT TRUE, -- public list is Aotearoa/NZ-only
+  bpm_range      TEXT,                          -- e.g. "128-140" from track BPMs (#35)
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
@@ -35,6 +36,7 @@ ALTER TABLE djs ADD COLUMN IF NOT EXISTS discovery_note TEXT;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_level INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_sources TEXT[] NOT NULL DEFAULT '{}';
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS is_nz BOOLEAN NOT NULL DEFAULT TRUE;
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS bpm_range TEXT;
 
 CREATE TABLE IF NOT EXISTS venues (
   id            TEXT PRIMARY KEY,

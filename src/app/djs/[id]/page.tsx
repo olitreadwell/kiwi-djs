@@ -91,6 +91,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         <div>
           <h1 className="text-4xl font-black text-stone-100">{dj.name}</h1>
           <p className="mt-2 font-mono text-xs uppercase tracking-wider text-amber-400">{dj.genres.join(' / ') || 'genre tbc'}</p>
+          {dj.bpm_range && <p className="mt-1 font-mono text-xs text-stone-500">{dj.bpm_range} BPM</p>}
         </div>
         <div className="rounded-lg border border-stone-800 bg-stone-900/60 p-4 font-mono text-xs text-stone-400">
           <p>{dj.popularity} profile plays</p>

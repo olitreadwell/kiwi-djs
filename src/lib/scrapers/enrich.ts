@@ -213,9 +213,10 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
     const tracksRes = await fetch(tracksUrl, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
     if (tracksRes.ok) {
       const tracks = (await tracksRes.json()) as {
-        collection?: Array<{ permalink_url: string; title: string; genre?: string; tag_list?: string; duration?: number }>;
+        collection?: Array<{ permalink_url: string; title: string; genre?: string; tag_list?: string; duration?: number; bpm?: number }>;
       };
       const genres = new Set<string>();
+      const bpms: number[] = [];
       for (const track of tracks.collection ?? []) {
         if (!track.permalink_url || !track.title) continue;
         if (track.genre && isGenreTag(track.genre)) genres.add(track.genre);
@@ -226,6 +227,7 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
         if (track.duration && track.duration >= 60_000) {
           await upsertDjMix(pool, dj.id, 'soundcloud', track.title, track.permalink_url, classifyMixTitle(track.title));
         }
+        if (track.bpm && track.bpm >= 60 && track.bpm <= 200) bpms.push(track.bpm);
       }
       if (genres.size > 0) {
         const normalised = normaliseGenres([...genres]);
@@ -233,6 +235,12 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
           `UPDATE djs SET genres = (SELECT array_agg(DISTINCT g) FROM unnest(genres || $2::text[]) AS g) WHERE id = $1`,
           [dj.id, normalised],
         );
+      }
+      if (bpms.length >= 3) {
+        const sorted = [...bpms].sort((a, b) => a - b);
+        const low = sorted[Math.floor(sorted.length * 0.1)];
+        const high = sorted[Math.floor(sorted.length * 0.9)];
+        await pool.query(`UPDATE djs SET bpm_range = $2 WHERE id = $1`, [dj.id, `${low}-${high}`]);
       }
     }
     await sleep(500);

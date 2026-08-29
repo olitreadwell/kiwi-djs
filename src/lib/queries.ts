@@ -38,6 +38,7 @@ export interface DjRow {
   upcoming_events: number;
   last_played_at: string | null;
   created_at: string;
+  bpm_range?: string | null;
 }
 
 export interface EventRow {
