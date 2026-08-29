@@ -34,7 +34,9 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
               {dayEvents.map((event) => (
                 <li key={event.id} className="flex items-center justify-between gap-4 px-4 py-3">
                   <div>
-                    <p className="text-sm text-foreground">{event.name}</p>
+                    <Link href={`/events/${event.id}`} className="text-sm text-foreground transition-colors hover:text-accent">
+                      {event.name}
+                    </Link>
                     <p className="font-mono text-xs text-muted">{event.venue ?? 'TBC'}</p>
                   </div>
                   <div className="text-right">

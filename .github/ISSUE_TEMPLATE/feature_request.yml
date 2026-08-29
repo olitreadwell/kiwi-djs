@@ -1,0 +1,90 @@
+name: Feature request
+description: Spec for a new feature, change or dataset addition for NZ DJs.
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for speccing a feature. The loop turns these into shipped code, so concrete acceptance criteria matter more than prose.
+  - type: input
+    id: summary
+    attributes:
+      label: One-line summary
+      placeholder: "e.g. Venue pages with upcoming lineup"
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why does this matter?
+      description: Who is stuck, and what do they do today instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: persona
+    attributes:
+      label: Primary persona
+      options:
+        - attendee
+        - dj
+        - promoter
+        - researcher
+        - nz-fan
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P0 (blocks launch / live bug)
+        - P1 (high value, unblocks core use)
+        - P2 (nice to have)
+        - P3 (backlog / someday)
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkbox list. Be concrete and testable.
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      description: Anything this touches
+      options:
+        - label: New page/route
+        - label: New API endpoint or query
+        - label: New data fields/table (data improvement — owned by the data LLM, leave alone here)
+        - label: New scraper/source
+        - label: Styling / theme (night/day)
+        - label: Accessibility (WCAG)
+  - type: textarea
+    id: a11y
+    attributes:
+      label: Accessibility notes
+      description: Keyboard flow, focus states, contrast, landmarks — anything a blind, keyboard-only or motion-sensitive user needs.
+      placeholder: "e.g. New nav must be reachable via skip link, AA+ contrast in both themes..."
+  - type: textarea
+    id: data
+    attributes:
+      label: Data model impact
+      description: New columns, tables or sources. Data-improvement issues are owned by the data LLM — mark them and leave them alone here.
+      placeholder: "None. / New table follows db/schema.sql conventions..."
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation notes
+      description: Where to look — existing queries, components, scrapers that are similar.
+      placeholder: "Reuse getUpcomingEvents() in src/lib/queries.ts..."
+  - type: input
+    id: related
+    attributes:
+      label: Related issues / sources
+      placeholder: "#123, https://..."

@@ -4,6 +4,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/djs', label: 'DJs' },
   { href: '/events', label: 'Events' },
+  { href: '/venues', label: 'Venues' },
   { href: '/discover', label: 'Discover' },
   { href: '/orgs', label: 'Orgs' },
   { href: '/soundsystems', label: 'Soundsystems' },
@@ -32,7 +33,7 @@ export function Nav() {
               <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </summary>
-          <nav className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-edge bg-surface p-2 font-mono text-sm text-muted shadow-xl">
+          <nav className="absolute right-0 top-full mt-2 max-h-[80vh] w-48 overflow-y-auto rounded-lg border border-edge bg-surface p-2 font-mono text-sm text-muted shadow-xl">
             {links.map((link) => (
               <Link
                 key={link.href}

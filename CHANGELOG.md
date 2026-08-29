@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-30 — Venue + event pages, smart links, WCAG batch (#74 #76 #83 #84 #87 #198)
+
+- Venue index + venue pages with upcoming lineup, address, region and links to DJs and events
+- Event pages with full lineup, headliner, venue link and collapsed sources
+- Smart link page per DJ (`/djs/[id]/links`) grouping every public link by type
+- Verified badge on DJ profiles with an expandable evidence list (mixes/links/news/gigs)
+- "Who's playing this weekend" landing section on the home page, grouped by day
+- WCAG: skip-to-content link, consistent high-contrast focus ring, scrollable mobile nav
+- Issue template: detailed form with persona, priority, acceptance criteria, a11y and data-model fields
+
 ## 2026-08-29 — API enrichment, data quality, UX batch
 
 - Keyless APIs: MusicBrainz (aliases, links, genres), iTunes Search (photos, genres), Nominatim (venue regions)
