@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import type { DjRow } from '@/lib/queries';
+import { genreAccent } from '@/lib/genres';
 
 export function DjCard({ dj }: { dj: DjRow }) {
+  const accent = genreAccent(dj.genres);
   return (
     <Link
       href={`/djs/${dj.id}`}
-      className="group flex flex-col justify-between rounded-lg border border-stone-800 bg-stone-900/60 p-4 transition-colors hover:border-amber-500/60"
+      className={`group flex flex-col justify-between rounded-lg border bg-stone-900/60 p-4 transition-colors ${accent}`}
     >
       <div>
         <h3 className="text-lg font-semibold text-stone-100 group-hover:text-amber-300">{dj.name}</h3>

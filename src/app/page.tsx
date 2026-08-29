@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { DjCard } from '@/components/dj-card';
 import { SearchBox } from '@/components/search-box';
 import { getPopularDjs, getUpcomingEvents, getGenres, listDjs } from '@/lib/queries';
+import { hasSpecificGenre } from '@/lib/genres';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,6 +13,7 @@ export default async function HomePage() {
     getGenres(),
     listDjs(),
   ]);
+  const listed = all.filter((dj) => hasSpecificGenre(dj.genres));
 
   return (
     <div className="mx-auto max-w-6xl px-4">
@@ -27,7 +29,7 @@ export default async function HomePage() {
           <SearchBox autoFocus />
         </div>
         <div className="mt-6 flex justify-center gap-6 font-mono text-xs text-stone-500">
-          <span>{all.length} DJs listed</span>
+          <span>{listed.length} DJs listed</span>
           <span>{events.length}+ upcoming gigs</span>
           <span>{genres.length} genres</span>
         </div>

@@ -126,3 +126,38 @@ export function isGenreTag(tag: string): boolean {
   }
   return false;
 }
+
+// Generic umbrella genres don't tell users anything (#51/#53). A DJ needs a
+// specific subgenre to be worth listing.
+const GENERIC_GENRES = new Set([
+  'Dance', 'Electronic', 'Alternative', 'Pop', 'Rock', 'Country', 'Eclectic', 'World',
+  'Experimental', 'Indie', 'Metal', 'Punk', 'Folk', 'Classical', 'Lounge', 'Chillout',
+]);
+
+export function hasSpecificGenre(genres: string[]): boolean {
+  return genres.some((genre) => !GENERIC_GENRES.has(genre));
+}
+
+// Accent color per primary genre for cards (#52). Tailwind classes, dark-bg
+// friendly. Falls back to stone for unknown/multi-genre.
+const GENRE_ACCENTS: Array<[string[], string]> = [
+  [['Drum and Bass', 'Liquid Drum and Bass', 'Neurofunk', 'Jungle'], 'border-red-500/60 hover:border-red-400'],
+  [['House', 'Deep House', 'Tech House', 'Progressive House', 'Acid House'], 'border-amber-500/60 hover:border-amber-400'],
+  [['Techno', 'Hard Techno', 'Minimal Techno', 'Melodic Techno', 'Acid Techno', 'Detroit Techno'], 'border-sky-500/60 hover:border-sky-400'],
+  [['Garage', 'UK Garage', '2-Step', 'Grime'], 'border-emerald-500/60 hover:border-emerald-400'],
+  [['Dubstep', 'Deep Dubstep'], 'border-purple-500/60 hover:border-purple-400'],
+  [['Hip-Hop', 'Rap'], 'border-orange-500/60 hover:border-orange-400'],
+  [['Jazz'], 'border-yellow-500/60 hover:border-yellow-400'],
+  [['Soul', 'Funk', 'Boogie'], 'border-pink-500/60 hover:border-pink-400'],
+  [['Reggae', 'Dub', 'Dancehall'], 'border-lime-500/60 hover:border-lime-400'],
+  [['Disco', 'Nu-Disco'], 'border-fuchsia-500/60 hover:border-fuchsia-400'],
+  [['Ambient', 'Downtempo', 'Trip-Hop'], 'border-teal-500/60 hover:border-teal-400'],
+  [['Afro House', 'Afrobeats', 'Amapiano', 'Gqom'], 'border-rose-500/60 hover:border-rose-400'],
+];
+
+export function genreAccent(genres: string[]): string {
+  for (const [matches, accent] of GENRE_ACCENTS) {
+    if (genres.some((genre) => matches.includes(genre))) return accent;
+  }
+  return 'border-stone-800 hover:border-amber-500/60';
+}

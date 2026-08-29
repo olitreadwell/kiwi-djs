@@ -1,12 +1,14 @@
 import { DjCard } from '@/components/dj-card';
 import { getPopularDjs, listDjs } from '@/lib/queries';
+import { hasSpecificGenre } from '@/lib/genres';
 
 export const dynamic = 'force-dynamic';
 
 export default async function DiscoverPage() {
   const [popular, all] = await Promise.all([getPopularDjs(12), listDjs()]);
-  const recentlyAdded = [...all].sort((a, b) => b.data_completeness - a.data_completeness).slice(0, 6);
-  const needsData = all.filter((dj) => dj.data_completeness < 40).slice(0, 6);
+  const withGenres = all.filter((dj) => hasSpecificGenre(dj.genres));
+  const recentlyAdded = [...withGenres].sort((a, b) => b.data_completeness - a.data_completeness).slice(0, 6);
+  const needsData = withGenres.filter((dj) => dj.data_completeness < 40).slice(0, 6);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
