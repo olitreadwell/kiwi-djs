@@ -61,13 +61,13 @@ async function main() {
 
   const datasetRes = await fetch(`${base}/api/v1/dataset`);
   const dataset = await datasetRes.json();
-  check(dataset.djs?.length === djs.data.length, `dataset.djs (${dataset.djs?.length}) == /djs (${djs.data.length})`);
+  check(dataset.djs?.length === djs.meta.total, `dataset.djs (${dataset.djs?.length}) == /djs total (${djs.meta.total})`);
 
   const csvRes = await fetch(`${base}/api/v1/dataset.csv`);
   const csv = await csvRes.text();
   const csvLines = csv.trim().split('\n');
   check(csvLines[0].toLowerCase().includes('name'), 'CSV has header row');
-  check(csvLines.length - 1 === djs.data.length, `CSV rows (${csvLines.length - 1}) == djs count (${djs.data.length})`);
+  check(csvLines.length - 1 === djs.meta.total, `CSV rows (${csvLines.length - 1}) == djs total (${djs.meta.total})`);
   check(csvRes.headers.get('content-type')?.includes('text/csv') ?? false, 'CSV content-type');
 
   const searchRes = await fetch(`${base}/api/v1/search?q=wellington`);
@@ -76,7 +76,7 @@ async function main() {
   const metaRes = await fetch(`${base}/api/v1/dataset/meta`);
   const meta = await metaRes.json();
   check(metaRes.status === 200 && typeof meta.version === 'string', 'GET /api/v1/dataset/meta returns version');
-  check(meta.counts?.djs === djs.data.length, `dataset/meta counts.djs (${meta.counts?.djs}) == /djs (${djs.data.length})`);
+  check(meta.counts?.djs === djs.meta.total, `dataset/meta counts.djs (${meta.counts?.djs}) == /djs total (${djs.meta.total})`);
 
   const etag = datasetRes.headers.get('etag');
   check(etag !== null, 'dataset response has ETag');
