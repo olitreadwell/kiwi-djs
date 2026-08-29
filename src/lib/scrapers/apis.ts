@@ -2,6 +2,7 @@ import type { Pool } from 'pg';
 import { get as httpsGet } from 'node:https';
 import { sleep } from './http';
 import { upsertDjLink } from './links';
+import { normaliseGenres } from '../genres';
 import type { ScrapeResult } from './types';
 
 interface DjRow {
@@ -112,11 +113,12 @@ export async function enrichMusicbrainz(pool: Pool, dj: DjRow): Promise<ScrapeRe
     if (name) genres.add(name);
   }
   if (genres.size > 0) {
+    const normalised = normaliseGenres([...genres]);
     await pool.query(
       `UPDATE djs SET genres = (SELECT array_agg(DISTINCT g) FROM unnest(genres || $2::text[]) AS g) WHERE id = $1`,
-      [dj.id, [...genres]],
+      [dj.id, normalised],
     );
-    found += genres.size;
+    found += normalised.length;
   }
 
   for (const relation of full.relations ?? []) {
@@ -165,11 +167,12 @@ export async function enrichItunes(pool: Pool, dj: DjRow): Promise<ScrapeResult>
     found += 1;
   }
   if (artist.primaryGenreName) {
+    const normalised = normaliseGenres([artist.primaryGenreName]);
     await pool.query(
       `UPDATE djs SET genres = (SELECT array_agg(DISTINCT g) FROM unnest(genres || $2::text[]) AS g) WHERE id = $1`,
-      [dj.id, [artist.primaryGenreName]],
+      [dj.id, normalised],
     );
-    found += 1;
+    found += normalised.length;
   }
   return {
     status: found > 0 ? 'ok' : 'partial',

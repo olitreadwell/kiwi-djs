@@ -1,51 +1,16 @@
 {
-  "exportedAt": "2026-08-29T08:37:39.143Z",
+  "exportedAt": "2026-08-29T08:39:35.758Z",
   "djs": [
-    {
-      "id": "frank-booker",
-      "name": "Frank Booker",
-      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
-      "genres": [
-        "Electronic",
-        "boogie",
-        "disco",
-        "house"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.351Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
     {
       "id": "dick-johnson",
       "name": "Dick Johnson",
       "bio": "Veteran Wellington DJ and radio host active since the 1980s. Long-running figure of the Wellington music scene.",
       "genres": [
         "House",
-        "eclectic",
-        "funk",
-        "jazz",
-        "soul"
+        "Eclectic",
+        "Funk",
+        "Jazz",
+        "Soul"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-ZMXqU5NNOPHzJyaY-65YzfQ-large.jpg",
@@ -60,6 +25,40 @@
       "source": "seed",
       "opt_out": false,
       "created_at": "2026-08-28T12:17:48.337Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "state-of-mind",
+      "name": "State of Mind",
+      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
+      "genres": [
+        "Dance",
+        "Drum and Bass",
+        "Electronic"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.stateofmindnz.com/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 65,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.356Z",
       "updated_at": "2026-08-29T04:36:25.685Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
@@ -106,41 +105,6 @@
       "last_played_at": null
     },
     {
-      "id": "state-of-mind",
-      "name": "State of Mind",
-      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
-      "genres": [
-        "Dance",
-        "drum & bass",
-        "drum and bass",
-        "electronic"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.stateofmindnz.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 65,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.356Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "producer-emma",
       "name": "Producer Emma",
       "bio": null,
@@ -171,15 +135,49 @@
       "last_played_at": null
     },
     {
+      "id": "frank-booker",
+      "name": "Frank Booker",
+      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
+      "genres": [
+        "Electronic",
+        "Boogie",
+        "Disco",
+        "House"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 55,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.351Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "dj-fitchie",
       "name": "DJ Fitchie",
       "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
       "genres": [
         "Reggae",
-        "funk",
-        "hip-hop",
-        "reggae",
-        "soul"
+        "Funk",
+        "Hip-Hop",
+        "Soul"
       ],
       "city": "Wellington",
       "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
@@ -202,6 +200,38 @@
         "mixes",
         "links",
         "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "dj-cxl",
+      "name": "DJ CXL",
+      "bio": "Wellington drum & bass DJ and producer. Regular on the NZ DnB circuit.",
+      "genres": [
+        "Drum and Bass"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000489830883-w73czw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/deejaycxl",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.348Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
       ],
       "is_nz": true,
       "upcoming_events": 0,
@@ -273,32 +303,34 @@
       "last_played_at": null
     },
     {
-      "id": "dj-cxl",
-      "name": "DJ CXL",
-      "bio": "Wellington drum & bass DJ and producer. Regular on the NZ DnB circuit.",
+      "id": "lucas",
+      "name": "Lucas",
+      "bio": null,
       "genres": [
-        "drum & bass"
+        "K-Pop",
+        "Rock"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000489830883-w73czw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/deejaycxl",
+      "image_url": "https://i1.sndcdn.com/avatars-0qvoPzot1nVJEwsX-aO0JyQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/realjoynerlucas",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": null,
+      "website_url": "http://www.garylucas.com/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
-      "source": "seed",
+      "data_completeness": 50,
+      "source": "radioactive",
       "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.348Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
+      "created_at": "2026-08-29T04:18:26.591Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
-        "links"
+        "links",
+        "articles"
       ],
       "is_nz": true,
       "upcoming_events": 0,
@@ -335,49 +367,13 @@
       "last_played_at": null
     },
     {
-      "id": "lucas",
-      "name": "Lucas",
-      "bio": null,
-      "genres": [
-        "K-Pop",
-        "rock"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-0qvoPzot1nVJEwsX-aO0JyQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/realjoynerlucas",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.garylucas.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 50,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.591Z",
-      "updated_at": "2026-08-29T06:01:58.309Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "concord-dawn",
       "name": "Concord Dawn",
       "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
       "genres": [
         "Electronic",
-        "dance",
-        "drum & bass",
-        "drum and bass",
-        "electronic"
+        "Dance",
+        "Drum and Bass"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-000001604320-vel4a7-large.jpg",
@@ -683,8 +679,7 @@
       "bio": null,
       "genres": [
         "Pop",
-        "jazz",
-        "pop"
+        "Jazz"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-TqAp7PG0xmjuVINL-t9QVoQ-large.jpg",
@@ -777,8 +772,8 @@
       "name": "Millie",
       "bio": null,
       "genres": [
-        "Hip-Hop/Rap",
-        "soul"
+        "Hip-Hop",
+        "Soul"
       ],
       "city": "Wellington",
       "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
@@ -812,7 +807,7 @@
       "bio": "Wellington-born techno DJ and producer who has toured internationally. Known for driving, industrial-leaning techno.",
       "genres": [
         "Dance",
-        "techno"
+        "Techno"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-MvQC1Qauzv5dT53b-KyxgRA-large.jpg",
