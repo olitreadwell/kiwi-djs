@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ProfileViewTracker } from '@/components/profile-view-tracker';
 import {
@@ -23,7 +24,25 @@ const TYPE_LABELS: Record<string, string> = {
   facebook: 'Facebook',
   website: 'Website',
   spotify: 'Spotify',
+  bandcamp: 'Bandcamp',
+  'resident-advisor': 'Resident Advisor',
+  twitter: 'Twitter / X',
+  youtube: 'YouTube',
+  discogs: 'Discogs',
+  tiktok: 'TikTok',
+  mastodon: 'Mastodon',
+  threads: 'Threads',
+  radio: 'Radio',
+  festival: 'Festival',
   news: 'News',
+  'other databases': 'Other databases',
+  'free streaming': 'Free streaming',
+  'purchase for download': 'Download',
+  streaming: 'Streaming',
+  'social network': 'Social',
+  wikidata: 'Wikidata',
+  allmusic: 'AllMusic',
+  myspace: 'MySpace',
 };
 
 export default async function DjProfilePage({ params }: { params: Promise<{ id: string }> }) {
@@ -56,6 +75,16 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       <Link href="/djs" className="font-mono text-xs text-stone-500 hover:text-amber-400">← all DJs</Link>
 
       <div className="mt-6 flex flex-wrap items-start justify-between gap-6">
+        {dj.image_url && (
+          <Image
+            src={dj.image_url}
+            alt={`${dj.name} photo`}
+            width={96}
+            height={96}
+            unoptimized
+            className="h-24 w-24 rounded-full border border-stone-800 object-cover"
+          />
+        )}
         <div>
           <h1 className="text-4xl font-black text-stone-100">{dj.name}</h1>
           <p className="mt-2 font-mono text-xs uppercase tracking-wider text-amber-400">{dj.genres.join(' / ') || 'genre tbc'}</p>
