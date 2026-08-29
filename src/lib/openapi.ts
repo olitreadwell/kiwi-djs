@@ -177,6 +177,7 @@ export const openApiSpec: JsonObject = {
           source: { type: 'string' },
           dj_id: { type: 'string', nullable: true },
           dj_name: { type: 'string', nullable: true },
+          region: { type: 'string', nullable: true },
         },
       },
       EventListResponse: {
@@ -220,6 +221,7 @@ export const openApiSpec: JsonObject = {
           platform: { type: 'string', enum: ['soundcloud', 'mixcloud'] },
           title: { type: 'string' },
           url: { type: 'string' },
+          kind: { type: 'string', enum: ['mix', 'interview'] },
         },
       },
       Article: {

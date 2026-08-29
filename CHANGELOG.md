@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-08-29 — API enrichment, data quality, UX batch
+
+- Keyless APIs: MusicBrainz (aliases, links, genres), iTunes Search (photos, genres), Nominatim (venue regions)
+- SoundCloud enrichment restored (client id rotation working) — track tags → genres, tracks → mixes
+- Mixes classified: interviews/podcasts split into own section, profile plays excluded, Mixcloud owner-only
+- Festival events deduped: one event per festival via `event_djs` join table (was one per DJ)
+- Event-series guard: "Sunday Jazz", soundsystems, festivals never promoted as DJs
+- Eventfinda sitemap fallback (no API key needed) + UnderTheRadar per-venue RSS feeds
+- News deduped by title (492 → 47 rows); HTML entities decoded
+- Genres normalised via alias map; cards colored by genre; DJs without subgenres hidden from lists
+- Dossier: photo, embedded SoundCloud/Mixcloud players, paginated mixes, collapsed sources table, suggest-an-update form + review queue
+- Nav: NZ DJs brand, mobile hamburger; collapsible genre filter; /djs sort + load more; events region filter; About page
+- bfm-radio fetches via HTTP (was unreachable over HTTPS)
+
 ## 2026-08-29 — Festival lineup sources + multi-event verification
 
 - New scrapers: Northern Bass (`northern-bass`), The Others Way (`the-others-way`), Snow Machine (`snow-machine`), Newtown Festival (`newtown-festival`), Earth Beat (`earthbeat`), Tora Bombora (`tora-bombora`, no lineup announced yet), JamBase Cubadupa (`jambase`, bot-gated)
