@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ProfileViewTracker } from '@/components/profile-view-tracker';
+import { MixList } from '@/components/mix-list';
 import {
   buildDossier,
   getDjArticles,
@@ -147,32 +148,14 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       {mixes.filter((mix) => mix.kind === 'mix').length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-bold text-stone-100">Mixes</h2>
-          <ul className="mt-4 divide-y divide-stone-800 rounded-lg border border-stone-800">
-            {mixes.filter((mix) => mix.kind === 'mix').map((mix) => (
-              <li key={mix.id} className="flex items-center justify-between gap-4 px-4 py-3">
-                <p className="text-sm text-stone-200">{mix.title}</p>
-                <a href={mix.url} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-amber-400 hover:underline">
-                  {mix.platform} ↗
-                </a>
-              </li>
-            ))}
-          </ul>
+          <MixList mixes={mixes.filter((mix) => mix.kind === 'mix')} />
         </section>
       )}
 
       {mixes.filter((mix) => mix.kind === 'interview').length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-bold text-stone-100">Interviews</h2>
-          <ul className="mt-4 divide-y divide-stone-800 rounded-lg border border-stone-800">
-            {mixes.filter((mix) => mix.kind === 'interview').map((mix) => (
-              <li key={mix.id} className="flex items-center justify-between gap-4 px-4 py-3">
-                <p className="text-sm text-stone-200">{mix.title}</p>
-                <a href={mix.url} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-amber-400 hover:underline">
-                  {mix.platform} ↗
-                </a>
-              </li>
-            ))}
-          </ul>
+          <MixList mixes={mixes.filter((mix) => mix.kind === 'interview')} />
         </section>
       )}
 
@@ -286,6 +269,27 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           </div>
         </section>
       )}
+
+      <details className="mt-12 rounded-lg border border-stone-800">
+        <summary className="cursor-pointer px-4 py-3 font-mono text-xs uppercase tracking-wider text-stone-400 transition-colors hover:text-amber-300">
+          Sources
+        </summary>
+        <div className="border-t border-stone-800 px-4 py-3 font-mono text-xs text-stone-500">
+          <p className="text-stone-400">Verification evidence: {dj.verification_sources.join(', ') || 'none'}</p>
+          <p className="mt-1">Source: {dj.source}</p>
+          {links.length > 0 && (
+            <ul className="mt-2 space-y-1">
+              {links.map((link) => (
+                <li key={link.id}>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-stone-400 hover:text-amber-300">
+                    {TYPE_LABELS[link.type] ?? link.type}: {link.url}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </details>
     </div>
   );
 }
