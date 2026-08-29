@@ -159,5 +159,5 @@ export function genreAccent(genres: string[]): string {
   for (const [matches, accent] of GENRE_ACCENTS) {
     if (genres.some((genre) => matches.includes(genre))) return accent;
   }
-  return 'border-stone-800 hover:border-amber-500/60';
+  return 'border-edge hover:border-accent/60';
 }

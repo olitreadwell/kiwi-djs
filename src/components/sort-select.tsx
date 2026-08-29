@@ -22,12 +22,12 @@ export function SortSelect({ current }: { current: string }) {
   }
 
   return (
-    <label className="font-mono text-xs text-stone-400">
+    <label className="font-mono text-xs text-muted">
       sort
       <select
         value={current}
         onChange={(event) => setSort(event.target.value)}
-        className="ml-2 rounded-md border border-stone-700 bg-stone-900 px-2 py-1.5 text-stone-200"
+        className="ml-2 rounded-md border border-edge bg-surface px-2 py-1.5 text-foreground"
       >
         {SORTS.map((option) => (
           <option key={option.value} value={option.value}>{option.label}</option>

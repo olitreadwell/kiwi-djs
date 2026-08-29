@@ -18,7 +18,7 @@ export function DjGrid({ djs }: { djs: DjRow[] }) {
         <div className="mt-6 text-center">
           <button
             onClick={() => setVisible((value) => value + PAGE_SIZE)}
-            className="rounded-full border border-stone-700 px-5 py-2 font-mono text-xs text-stone-300 transition-colors hover:border-amber-500 hover:text-amber-300"
+            className="rounded-full border border-edge px-5 py-2 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
           >
             load more ({djs.length - visible} left)
           </button>

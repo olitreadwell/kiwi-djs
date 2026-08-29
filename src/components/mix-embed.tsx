@@ -21,7 +21,7 @@ export function MixEmbed({ mixes }: { mixes: MixRow[] }) {
           src={url!}
           title={mix.title}
           height="120"
-          className="w-full rounded-lg border border-stone-800"
+          className="w-full rounded-lg border border-edge"
           allow="autoplay"
           loading="lazy"
         />

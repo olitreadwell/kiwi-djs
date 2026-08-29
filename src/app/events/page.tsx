@@ -19,32 +19,32 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
-      <h1 className="text-3xl font-black text-stone-100">Event calendar</h1>
-      <p className="mt-2 font-mono text-xs text-stone-500">{events.length} upcoming gigs from public listings</p>
+      <h1 className="text-3xl font-black text-foreground">Event calendar</h1>
+      <p className="mt-2 font-mono text-xs text-muted">{events.length} upcoming gigs from public listings</p>
       <div className="mt-4">
         <RegionFilter regions={regions} />
       </div>
       <div className="mt-8 space-y-10">
         {[...byDate.entries()].map(([day, dayEvents]) => (
           <section key={day}>
-            <h2 className="font-mono text-sm uppercase tracking-wider text-amber-400">
+            <h2 className="font-mono text-sm uppercase tracking-wider text-accent">
               {new Date(day).toLocaleDateString('en-NZ', { weekday: 'long', day: 'numeric', month: 'long' })}
             </h2>
-            <ul className="mt-3 divide-y divide-stone-800 rounded-lg border border-stone-800">
+            <ul className="mt-3 divide-y divide-edge rounded-lg border border-edge">
               {dayEvents.map((event) => (
                 <li key={event.id} className="flex items-center justify-between gap-4 px-4 py-3">
                   <div>
-                    <p className="text-sm text-stone-200">{event.name}</p>
-                    <p className="font-mono text-xs text-stone-500">{event.venue ?? 'TBC'}</p>
+                    <p className="text-sm text-foreground">{event.name}</p>
+                    <p className="font-mono text-xs text-muted">{event.venue ?? 'TBC'}</p>
                   </div>
                   <div className="text-right">
                     {event.dj_id && (
-                      <Link href={`/djs/${event.dj_id}`} className="font-mono text-xs text-amber-400 hover:underline">
+                      <Link href={`/djs/${event.dj_id}`} className="font-mono text-xs text-accent hover:underline">
                         {event.dj_name}
                       </Link>
                     )}
                     {event.url && (
-                      <a href={event.url} target="_blank" rel="noopener noreferrer" className="mt-1 block font-mono text-xs text-stone-500 hover:text-amber-400">
+                      <a href={event.url} target="_blank" rel="noopener noreferrer" className="mt-1 block font-mono text-xs text-muted hover:text-accent">
                         source ↗
                       </a>
                     )}

@@ -7,20 +7,20 @@ export function DjCard({ dj }: { dj: DjRow }) {
   return (
     <Link
       href={`/djs/${dj.id}`}
-      className={`group flex flex-col justify-between rounded-lg border bg-stone-900/60 p-4 transition-colors ${accent}`}
+      className={`group flex flex-col justify-between rounded-lg border bg-surface p-4 transition-colors ${accent}`}
     >
       <div>
-        <h3 className="text-lg font-semibold text-stone-100 group-hover:text-amber-300">{dj.name}</h3>
+        <h3 className="text-lg font-semibold text-foreground group-hover:text-accent">{dj.name}</h3>
         {dj.genres.length > 0 && (
-          <p className="mt-1 font-mono text-xs uppercase tracking-wider text-stone-500">
+          <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted">
             {dj.genres.join(' / ')}
           </p>
         )}
-        {dj.bio && <p className="mt-3 line-clamp-3 text-sm text-stone-400">{dj.bio}</p>}
+        {dj.bio && <p className="mt-3 line-clamp-3 text-sm text-muted">{dj.bio}</p>}
       </div>
-      <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-stone-500">
+      <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-muted">
         <span>{dj.upcoming_events > 0 ? `${dj.upcoming_events} upcoming gig${dj.upcoming_events === 1 ? '' : 's'}` : 'no listed gigs'}</span>
-        <span className="text-amber-500/80">{dj.popularity} plays</span>
+        <span className="text-accent/80">{dj.popularity} plays</span>
       </div>
     </Link>
   );

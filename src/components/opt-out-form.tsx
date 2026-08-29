@@ -18,19 +18,19 @@ export function OptOutForm() {
 
   return (
     <div className="mx-auto max-w-md space-y-4">
-      <label className="block font-mono text-xs text-stone-400" htmlFor="djId">
-        DJ page id (the part after /djs/, e.g. <span className="text-amber-400">dick-johnson</span>)
+      <label className="block font-mono text-xs text-muted" htmlFor="djId">
+        DJ page id (the part after /djs/, e.g. <span className="text-accent">dick-johnson</span>)
       </label>
       <input
         id="djId"
         value={djId}
         onChange={(e) => setDjId(e.target.value)}
-        className="w-full rounded-lg border border-stone-700 bg-stone-900 px-4 py-3 font-mono text-sm text-stone-100 focus:border-amber-500 focus:outline-none"
+        className="w-full rounded-lg border border-edge bg-surface px-4 py-3 font-mono text-sm text-foreground focus:border-accent focus:outline-none"
         placeholder="dick-johnson"
       />
       <button
         onClick={submit}
-        className="w-full rounded-lg border border-amber-500 bg-amber-500/10 px-4 py-3 font-mono text-sm text-amber-300 transition-colors hover:bg-amber-500/20"
+        className="w-full rounded-lg border border-accent bg-accent/10 px-4 py-3 font-mono text-sm text-accent transition-colors hover:bg-accent/20"
       >
         Remove my profile
       </button>

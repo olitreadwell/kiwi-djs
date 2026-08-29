@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 
 export default async function AdminSuggestionsPage() {
   if (!isDbMode) {
-    return <p className="p-8 font-mono text-sm text-stone-500">Suggestions require DATABASE_URL to be configured.</p>;
+    return <p className="p-8 font-mono text-sm text-muted">Suggestions require DATABASE_URL to be configured.</p>;
   }
   const pool = getPool();
   const rows = (
@@ -16,27 +16,27 @@ export default async function AdminSuggestionsPage() {
   ).rows;
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
-      <h1 className="text-2xl font-black text-stone-100">Suggestions</h1>
-      <p className="mt-1 font-mono text-xs text-stone-500">{rows.length} recent</p>
+      <h1 className="text-2xl font-black text-foreground">Suggestions</h1>
+      <p className="mt-1 font-mono text-xs text-muted">{rows.length} recent</p>
       <ul className="mt-6 space-y-3">
         {rows.map((row) => (
-          <li key={row.id} className="rounded-lg border border-stone-800 bg-stone-900/60 p-4">
+          <li key={row.id} className="rounded-lg border border-edge bg-surface p-4">
             <div className="flex items-center justify-between gap-4">
-              <p className="text-sm font-semibold text-stone-200">{row.dj_name ?? 'unknown DJ'} · {row.field}</p>
-              <span className={`font-mono text-[11px] ${row.status === 'pending' ? 'text-amber-400' : 'text-stone-500'}`}>{row.status}</span>
+              <p className="text-sm font-semibold text-foreground">{row.dj_name ?? 'unknown DJ'} · {row.field}</p>
+              <span className={`font-mono text-[11px] ${row.status === 'pending' ? 'text-accent' : 'text-muted'}`}>{row.status}</span>
             </div>
-            {row.current_value && <p className="mt-2 text-sm text-stone-500">was: {row.current_value}</p>}
-            <p className="mt-1 text-sm text-stone-200">suggested: {row.suggested_value}</p>
+            {row.current_value && <p className="mt-2 text-sm text-muted">was: {row.current_value}</p>}
+            <p className="mt-1 text-sm text-foreground">suggested: {row.suggested_value}</p>
             {row.source_url && (
-              <a href={row.source_url} target="_blank" rel="noopener noreferrer" className="mt-1 block font-mono text-xs text-amber-400 hover:underline">
+              <a href={row.source_url} target="_blank" rel="noopener noreferrer" className="mt-1 block font-mono text-xs text-accent hover:underline">
                 {row.source_url}
               </a>
             )}
-            {row.note && <p className="mt-1 font-mono text-xs text-stone-500">{row.note}</p>}
-            <p className="mt-2 font-mono text-[11px] text-stone-600">{new Date(row.created_at).toLocaleString('en-NZ')}</p>
+            {row.note && <p className="mt-1 font-mono text-xs text-muted">{row.note}</p>}
+            <p className="mt-2 font-mono text-[11px] text-faint">{new Date(row.created_at).toLocaleString('en-NZ')}</p>
           </li>
         ))}
-        {rows.length === 0 && <p className="font-mono text-sm text-stone-500">No suggestions yet.</p>}
+        {rows.length === 0 && <p className="font-mono text-sm text-muted">No suggestions yet.</p>}
       </ul>
     </div>
   );

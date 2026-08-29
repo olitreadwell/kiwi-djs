@@ -34,7 +34,7 @@ export function SearchBox({ autoFocus = false }: { autoFocus?: boolean }) {
       value={value}
       onChange={(e) => setValue(e.target.value)}
       placeholder="Search DJs, genres, sounds…"
-      className="w-full rounded-lg border border-stone-700 bg-stone-900 px-4 py-3 font-mono text-sm text-stone-100 placeholder:text-stone-500 focus:border-amber-500 focus:outline-none"
+      className="w-full rounded-lg border border-edge bg-surface px-4 py-3 font-mono text-sm text-foreground placeholder:text-muted focus:border-accent focus:outline-none"
       aria-label="Search DJs"
     />
   );

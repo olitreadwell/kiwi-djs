@@ -21,11 +21,11 @@ export function GenreFilter({ genres }: { genres: string[] }) {
       <button
         onClick={() => setOpen((value) => !value)}
         aria-expanded={open}
-        className="flex items-center gap-2 rounded-full border border-stone-700 px-3 py-1.5 font-mono text-xs text-stone-300 transition-colors hover:border-amber-500/50 hover:text-amber-300"
+        className="flex items-center gap-2 rounded-full border border-edge px-3 py-1.5 font-mono text-xs text-muted transition-colors hover:border-accent/50 hover:text-accent"
       >
         Filters
         {active !== '' && (
-          <span className="rounded-full bg-amber-500/20 px-2 py-0.5 text-amber-300">{active}</span>
+          <span className="rounded-full bg-accent/20 px-2 py-0.5 text-accent">{active}</span>
         )}
         <span aria-hidden="true" className={`transition-transform ${open ? 'rotate-180' : ''}`}>▾</span>
       </button>
@@ -34,7 +34,7 @@ export function GenreFilter({ genres }: { genres: string[] }) {
           <button
             onClick={() => setGenre('')}
             className={`rounded-full border px-3 py-1 font-mono text-xs transition-colors ${
-              active === '' ? 'border-amber-500 bg-amber-500/10 text-amber-300' : 'border-stone-700 text-stone-400 hover:border-amber-500/50'
+              active === '' ? 'border-accent bg-accent/10 text-accent' : 'border-edge text-muted hover:border-accent/50'
             }`}
           >
             all
@@ -44,7 +44,7 @@ export function GenreFilter({ genres }: { genres: string[] }) {
               key={genre}
               onClick={() => setGenre(genre)}
               className={`rounded-full border px-3 py-1 font-mono text-xs transition-colors ${
-                active === genre ? 'border-amber-500 bg-amber-500/10 text-amber-300' : 'border-stone-700 text-stone-400 hover:border-amber-500/50'
+                active === genre ? 'border-accent bg-accent/10 text-accent' : 'border-edge text-muted hover:border-accent/50'
               }`}
             >
               {genre}

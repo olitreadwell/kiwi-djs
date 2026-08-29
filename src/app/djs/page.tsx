@@ -17,8 +17,8 @@ export default async function DjsPage({ searchParams }: { searchParams: Promise<
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="text-3xl font-black text-stone-100">All DJs</h1>
-      <p className="mt-2 font-mono text-xs text-stone-500">{listed.length} result{listed.length === 1 ? '' : 's'}</p>
+      <h1 className="text-3xl font-black text-foreground">All DJs</h1>
+      <p className="mt-2 font-mono text-xs text-muted">{listed.length} result{listed.length === 1 ? '' : 's'}</p>
       <div className="mt-6 space-y-4">
         <SearchBox />
         <div className="flex flex-wrap items-center justify-between gap-3">
@@ -30,7 +30,7 @@ export default async function DjsPage({ searchParams }: { searchParams: Promise<
         <DjGrid djs={listed} />
       </div>
       {listed.length === 0 && (
-        <p className="mt-16 text-center font-mono text-sm text-stone-500">No DJs match. Try another search.</p>
+        <p className="mt-16 text-center font-mono text-sm text-muted">No DJs match. Try another search.</p>
       )}
     </div>
   );

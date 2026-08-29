@@ -40,12 +40,12 @@ export function SuggestForm({ djId, djName }: { djId: string; djName: string }) 
   return (
     <form onSubmit={submit} className="mt-3 space-y-3">
       <div className="flex flex-wrap gap-2">
-        <label className="font-mono text-xs text-stone-400">
+        <label className="font-mono text-xs text-muted">
           Field
           <select
             value={field}
             onChange={(event) => setField(event.target.value)}
-            className="ml-2 rounded-md border border-stone-700 bg-stone-900 px-2 py-1 text-stone-200"
+            className="ml-2 rounded-md border border-edge bg-surface px-2 py-1 text-foreground"
           >
             {FIELDS.map((option) => (
               <option key={option} value={option}>{option}</option>
@@ -58,26 +58,26 @@ export function SuggestForm({ djId, djName }: { djId: string; djName: string }) 
         onChange={(event) => setSuggestedValue(event.target.value)}
         placeholder="What should be updated?"
         required
-        className="w-full rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600"
+        className="w-full rounded-md border border-edge bg-surface px-3 py-2 text-sm text-foreground placeholder:text-faint"
         rows={3}
       />
       <input
         value={sourceUrl}
         onChange={(event) => setSourceUrl(event.target.value)}
         placeholder="Source URL (optional)"
-        className="w-full rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600"
+        className="w-full rounded-md border border-edge bg-surface px-3 py-2 text-sm text-foreground placeholder:text-faint"
       />
       <input
         value={note}
         onChange={(event) => setNote(event.target.value)}
         placeholder="Note (optional)"
-        className="w-full rounded-md border border-stone-700 bg-stone-900 px-3 py-2 text-sm text-stone-200 placeholder:text-stone-600"
+        className="w-full rounded-md border border-edge bg-surface px-3 py-2 text-sm text-foreground placeholder:text-faint"
       />
       {status === 'error' && <p className="font-mono text-xs text-red-400">{error}</p>}
       <button
         type="submit"
         disabled={status === 'sending' || suggestedValue.length < 3}
-        className="rounded-full border border-amber-500/60 px-4 py-1.5 font-mono text-xs text-amber-300 transition-colors hover:bg-amber-500/10 disabled:opacity-50"
+        className="rounded-full border border-accent/60 px-4 py-1.5 font-mono text-xs text-accent transition-colors hover:bg-accent/10 disabled:opacity-50"
       >
         {status === 'sending' ? 'Sending…' : 'Submit suggestion'}
       </button>

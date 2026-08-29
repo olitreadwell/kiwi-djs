@@ -18,17 +18,17 @@ export default async function HomePage() {
   return (
     <div className="mx-auto max-w-6xl px-4">
       <section className="py-20 text-center">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber-400">Aotearoa New Zealand</p>
-        <h1 className="mt-4 text-5xl font-black tracking-tight text-stone-100 sm:text-7xl">
-          New Zealand <span className="text-amber-400">DJs</span>
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">Aotearoa New Zealand</p>
+        <h1 className="mt-4 text-5xl font-black tracking-tight text-foreground sm:text-7xl">
+          New Zealand <span className="text-accent">DJs</span>
         </h1>
-        <p className="mx-auto mt-6 max-w-xl text-stone-400">
+        <p className="mx-auto mt-6 max-w-xl text-muted">
           The open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials and upcoming gigs, pulled from public sources and updated daily.
         </p>
         <div className="mx-auto mt-8 max-w-xl">
           <SearchBox autoFocus />
         </div>
-        <div className="mt-6 flex justify-center gap-6 font-mono text-xs text-stone-500">
+        <div className="mt-6 flex justify-center gap-6 font-mono text-xs text-muted">
           <span>{listed.length} DJs listed</span>
           <span>{events.length}+ upcoming gigs</span>
           <span>{genres.length} genres</span>
@@ -37,8 +37,8 @@ export default async function HomePage() {
 
       <section className="pb-16">
         <div className="mb-4 flex items-end justify-between">
-          <h2 className="text-2xl font-bold text-stone-100">Popular right now</h2>
-          <Link href="/discover" className="font-mono text-xs text-amber-400 hover:underline">discover →</Link>
+          <h2 className="text-2xl font-bold text-foreground">Popular right now</h2>
+          <Link href="/discover" className="font-mono text-xs text-accent hover:underline">discover →</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {popular.map((dj) => <DjCard key={dj.id} dj={dj} />)}
@@ -47,20 +47,20 @@ export default async function HomePage() {
 
       <section className="pb-16">
         <div className="mb-4 flex items-end justify-between">
-          <h2 className="text-2xl font-bold text-stone-100">Next gigs</h2>
-          <Link href="/events" className="font-mono text-xs text-amber-400 hover:underline">calendar →</Link>
+          <h2 className="text-2xl font-bold text-foreground">Next gigs</h2>
+          <Link href="/events" className="font-mono text-xs text-accent hover:underline">calendar →</Link>
         </div>
-        <ul className="divide-y divide-stone-800 rounded-lg border border-stone-800">
+        <ul className="divide-y divide-edge rounded-lg border border-edge">
           {events.map((event) => (
             <li key={event.id} className="flex items-center justify-between gap-4 px-4 py-3">
               <div>
-                <p className="text-sm text-stone-200">{event.name}</p>
-                <p className="font-mono text-xs text-stone-500">
+                <p className="text-sm text-foreground">{event.name}</p>
+                <p className="font-mono text-xs text-muted">
                   {event.venue ?? 'TBC'} · {new Date(event.starts_at).toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric', month: 'short' })}
                 </p>
               </div>
               {event.dj_id && (
-                <Link href={`/djs/${event.dj_id}`} className="font-mono text-xs text-amber-400 hover:underline">
+                <Link href={`/djs/${event.dj_id}`} className="font-mono text-xs text-accent hover:underline">
                   {event.dj_name}
                 </Link>
               )}

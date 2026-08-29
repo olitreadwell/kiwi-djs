@@ -15,12 +15,12 @@ export function RegionFilter({ regions }: { regions: string[] }) {
   }
 
   return (
-    <label className="font-mono text-xs text-stone-400">
+    <label className="font-mono text-xs text-muted">
       region
       <select
         value={active}
         onChange={(event) => setRegion(event.target.value)}
-        className="ml-2 rounded-md border border-stone-700 bg-stone-900 px-2 py-1.5 text-stone-200"
+        className="ml-2 rounded-md border border-edge bg-surface px-2 py-1.5 text-foreground"
       >
         <option value="">all</option>
         {regions.map((region) => (
