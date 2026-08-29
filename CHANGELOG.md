@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-29 — Candidate enrichment pipeline
+
+- Enrichment now covers discovery candidates, not just active DJs: active DJs first, then highest-evidence candidates (by `verification_level`, then `data_completeness`), so candidates can accumulate mixes/links/articles
+- Second `verify-discovered` pass after enrichment promotes same-cycle candidates instead of waiting a full cycle
+- Junk-marker candidates excluded from the enrichment pool
+
 ## 2026-08-29 — Self-improving loop
 
 - `pnpm loop` — self-improving scrape loop: compact dataset → scrape → verify → snapshot → commit → push
