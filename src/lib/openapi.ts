@@ -3,7 +3,7 @@ import type { JsonObject } from 'type-fest';
 export const openApiSpec: JsonObject = {
   openapi: '3.1.0',
   info: {
-    title: 'Aotearoa NZ DJs API',
+    title: 'NZ DJs API',
     description:
       'Open dataset of Wellington (Te Whanganui-a-Tara) DJs: profiles, mixes, news, gigs, venues. Public data only. Opt-out respected.',
     version: '1.0.0',

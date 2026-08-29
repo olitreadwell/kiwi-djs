@@ -126,7 +126,7 @@ function run(cmd: string, args: string[]): { ok: boolean; out: string } {
 
 function installLaunchdAgent(): void {
   const home = process.env.HOME ?? '/Users/olitreadwell';
-  const plistPath = `${home}/Library/LaunchAgents/com.olitreadwell.aotearoa-djs-loop.plist`;
+  const plistPath = `${home}/Library/LaunchAgents/com.olitreadwell.nz-djs-loop.plist`;
   const repoPath = REPO_ROOT.replace(/\/$/, '');
   const pnpmBin = run('which', ['pnpm']).out || 'pnpm';
   const plist = `<?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +134,7 @@ function installLaunchdAgent(): void {
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.olitreadwell.aotearoa-djs-loop</string>
+  <string>com.olitreadwell.nz-djs-loop</string>
   <key>ProgramArguments</key>
   <array>
     <string>/bin/zsh</string>

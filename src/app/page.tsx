@@ -18,10 +18,10 @@ export default async function HomePage() {
       <section className="py-20 text-center">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber-400">Aotearoa New Zealand</p>
         <h1 className="mt-4 text-5xl font-black tracking-tight text-stone-100 sm:text-7xl">
-          Aotearoa NZ <span className="text-amber-400">DJs</span>
+          New Zealand <span className="text-amber-400">DJs</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-stone-400">
-          The open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials and upcoming gigs — pulled from public sources, updated daily.
+          The open directory of DJs across Aotearoa New Zealand — NZ DJs. Bios, mixes, socials and upcoming gigs — pulled from public sources, updated daily.
         </p>
         <div className="mx-auto mt-8 max-w-xl">
           <SearchBox autoFocus />

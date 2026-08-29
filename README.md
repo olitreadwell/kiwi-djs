@@ -1,4 +1,4 @@
-# Aotearoa NZ DJs
+# NZ DJs
 
 Open directory of DJs in Wellington, NZ (Te Whanganui-a-Tara). Search DJs, browse bios/genres/socials, see upcoming gigs, discover who's moving the room. Data comes from public sources only, refreshed daily.
 

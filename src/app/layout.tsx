@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aotearoa NZ DJs — Discover DJs across Aotearoa",
-  description: "Searchable directory of Aotearoa New Zealand DJs: bios, mixes, socials and upcoming gigs.",
+  title: "NZ DJs — Discover DJs across Aotearoa",
+  description: "Searchable directory of New Zealand DJs: bios, mixes, socials and upcoming gigs.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

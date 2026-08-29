@@ -11,7 +11,7 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 - Next.js 16 (App Router) + TypeScript + Tailwind v4, `pg` for Postgres, Vercel deploy
 - Local DB: docker container `wellington-djs-db`, port 5433
   - `postgres://wellington_djs:wellington_djs_dev@localhost:5433/wellington_djs`
-- Live: https://aotearoa-nz-djs.vercel.app · Repo: https://github.com/olitreadwell/aotearoa-nz-djs
+- Live: https://nz-djs.vercel.app · Repo: https://github.com/olitreadwell/nz-djs
 - Prod runs in **snapshot mode** (serves `src/data/snapshot.json`) until a managed DB is added — Vercel CLI refuses AI-agent term acceptance, so a human must run `vercel integration add supabase` and set `DATABASE_URL`.
 
 ## Commands
