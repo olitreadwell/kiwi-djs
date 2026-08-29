@@ -38,6 +38,7 @@ yarn-error.log*
 
 # self-improving loop
 /logs
+.loop/
 
 # typescript
 *.tsbuildinfo

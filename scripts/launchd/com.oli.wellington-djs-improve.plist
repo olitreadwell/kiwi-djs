@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Self-improvement loop for the Wellington DJs app. Fires every 5 minutes;
+  scripts/improve-loop.ts decides whether a pass is due (backoff ladder
+  5/10/15/30/60m, then daily at 06:00 local — inside DeepSeek off-peak
+  16:30-00:30 UTC year-round). Install:
+    cp scripts/launchd/com.oli.wellington-djs-improve.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.oli.wellington-djs-improve.plist
+  Local system time — see the timezone note in com.oli.daily-orchestrator.plist.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.oli.wellington-djs-improve</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>pnpm improve</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/olitreadwell/code/wellington-djs</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+
+  <key>StartInterval</key>
+  <integer>300</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/olitreadwell/code/wellington-djs/scripts/launchd/logs/improve-loop.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/olitreadwell/code/wellington-djs/scripts/launchd/logs/improve-loop.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

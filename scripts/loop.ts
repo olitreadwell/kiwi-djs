@@ -27,6 +27,7 @@ const REPO_ROOT = fileURLToPath(new URL('..', import.meta.url));
 const LOG_DIR = new URL('../logs/', import.meta.url);
 const LOG_FILE = new URL('loop.log', LOG_DIR);
 const PID_FILE = new URL('loop.pid', LOG_DIR);
+const HANDOFF_FILE = new URL('../.loop/handoff.md', import.meta.url);
 
 function log(line: string): void {
   const entry = `[${new Date().toISOString()}] ${line}`;
@@ -70,6 +71,55 @@ function releaseLock(): void {
 function run(cmd: string, args: string[]): { ok: boolean; out: string } {
   const result = spawnSync(cmd, args, { cwd: REPO_ROOT, encoding: 'utf8' });
   return { ok: result.status === 0, out: (result.stdout || result.stderr || '').trim() };
+}
+
+function installLaunchdAgent(): void {
+  const home = process.env.HOME ?? '/Users/olitreadwell';
+  const plistPath = `${home}/Library/LaunchAgents/com.aotearoa-nz-djs.loop.plist`;
+  const nodeBin = process.execPath;
+  const plist = `<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.aotearoa-nz-djs.loop</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>${nodeBin}</string>
+    <string>--env-file=.env.local</string>
+    <string>--import</string>
+    <string>tsx</string>
+    <string>scripts/loop.ts</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>${REPO_ROOT.replace(/\/$/, '')}</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>${home}</string>
+    <key>PATH</key>
+    <string>${home}/.local/share/mise/shims:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>4</integer>
+    <key>Minute</key>
+    <integer>30</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>${REPO_ROOT.replace(/\/$/, '')}/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>${REPO_ROOT.replace(/\/$/, '')}/logs/launchd.err.log</string>
+</dict>
+</plist>
+`;
+  writeFileSync(plistPath, plist, 'utf8');
+  log(`Wrote ${plistPath}`);
+  const boot = run('launchctl', ['bootstrap', `gui/${process.getuid?.() ?? process.env.UID ?? ''}`, plistPath]);
+  log(boot.ok ? `launchctl bootstrap ok: ${boot.out}` : `launchctl bootstrap failed: ${boot.out} — run: launchctl bootstrap gui/$(id -u) ${plistPath}`);
 }
 
 function regenerateSnapshot(): void {
@@ -116,6 +166,97 @@ async function reportFailingSources(pool: ReturnType<typeof getPool>): Promise<v
   }
 }
 
+function runGh(args: string[]): string {
+  const result = run('gh', args);
+  return result.out;
+}
+
+function openIssueTitles(): Set<string> {
+  const out = runGh(['issue', 'list', '--state', 'open', '--limit', '50', '--json', 'title']);
+  try {
+    return new Set((JSON.parse(out) as Array<{ title: string }>).map((issue) => issue.title));
+  } catch {
+    return new Set();
+  }
+}
+
+async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<void> {
+  // Audit phase: surface data gaps as GitHub issues (cheap, rule-based — no LLM).
+  const open = openIssueTitles();
+  let filed = 0;
+
+  const thin = (
+    await pool.query(
+      `SELECT d.id, d.name, d.verification_level, d.verification_sources
+       FROM djs d
+       WHERE d.opt_out = FALSE AND d.is_nz = TRUE AND d.active = TRUE
+         AND NOT EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id)`,
+    )
+  ).rows as Array<{ id: string; name: string; verification_level: number; verification_sources: string[] }>;
+  if (filed < 1 && thin.length >= 2) {
+    const names = thin.slice(0, 5).map((d) => `- ${d.name}`).join('\n');
+    const title = `data: ${thin.length} verified DJs have no mixes`;
+    if (!open.has(title)) {
+      runGh(['issue', 'create', '--title', title, '--body', `${names}\n\nFind SoundCloud/Mixcloud mixes or mark as not applicable.`]);
+      log(`Filed issue: ${title}`);
+      filed += 1;
+    }
+  }
+
+  const failing = (
+    await pool.query(
+      `SELECT source, count(*) AS failures
+       FROM scrapes
+       WHERE status = 'error' AND started_at > now() - interval '48 hours'
+       GROUP BY source ORDER BY failures DESC LIMIT 2`,
+    )
+  ).rows as Array<{ source: string; failures: string }>;
+  if (filed < 1 && failing.length > 0) {
+    for (const row of failing) {
+      const title = `fix: scraper "${row.source}" failing (${row.failures} errors)`;
+      if (open.has(title)) continue;
+      runGh(['issue', 'create', '--title', title, '--body', `${row.source}: ${row.failures} errors in 48h. See scrapes table.`]);
+      log(`Filed issue: ${title}`);
+      break;
+    }
+  }
+}
+
+async function writeHandoff(pool: ReturnType<typeof getPool>, totals: { totalNew: number; totalFound: number }): Promise<void> {
+  // Compaction phase: compact state so the next loop starts from memory,
+  // not a fresh cold start.
+  const counts = (
+    await pool.query(
+      `SELECT
+         count(*) FILTER (WHERE active)::int AS active_djs,
+         count(*) FILTER (WHERE NOT active)::int AS candidates,
+         (SELECT count(*)::int FROM dj_mixes) AS mixes,
+         (SELECT count(*)::int FROM dj_articles) AS articles,
+         (SELECT count(*)::int FROM dj_links) AS links,
+         (SELECT count(*)::int FROM events) AS events
+       FROM djs`,
+    )
+  ).rows[0] as Record<string, number>;
+  const failing = (
+    await pool.query(
+      `SELECT source FROM scrapes WHERE status = 'error' AND started_at > now() - interval '24 hours'
+       GROUP BY source ORDER BY count(*) DESC LIMIT 3`,
+    )
+  ).rows as Array<{ source: string }>;
+  const handoff = [
+    '# Loop handoff — compact state',
+    `Updated: ${new Date().toISOString()}`,
+    `Last cycle: ${totals.totalNew} new / ${totals.totalFound} found`,
+    `Dataset: ${counts.active_djs} active DJs, ${counts.candidates} candidates, ${counts.mixes} mixes, ${counts.articles} articles, ${counts.links} links, ${counts.events} events`,
+    failing.length > 0 ? `Failing sources: ${failing.map((f) => f.source).join(', ')}` : 'Failing sources: none',
+    'Next: run `pnpm loop --once`; open GitHub issues are the work queue.',
+    '',
+  ].join('\n');
+  const handoffDir = new URL('../.loop/', import.meta.url);
+  if (!existsSync(handoffDir)) mkdirSync(handoffDir, { recursive: true });
+  writeFileSync(HANDOFF_FILE, handoff);
+}
+
 // Dataset compaction, run before every cycle: drop junk candidates that
 // never got verified, prune stale scrape history, refresh planner stats.
 async function compactDataset(pool: ReturnType<typeof getPool>): Promise<void> {
@@ -141,6 +282,8 @@ async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: n
   }
   log(`Cycle done in ${elapsed}s: ${totalNew} new items, ${totalFound} found.`);
   await reportFailingSources(pool);
+  await auditAndFileIssues(pool);
+  await writeHandoff(pool, { totalNew, totalFound });
   if (totalNew > 0) {
     const before = existsSync(new URL('../src/data/snapshot.json', import.meta.url))
       ? readFileSync(new URL('../src/data/snapshot.json', import.meta.url), 'utf8')
@@ -154,6 +297,10 @@ async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: n
 
 async function main(): Promise<void> {
   const once = process.argv.includes('--once');
+  if (process.argv.includes('--install')) {
+    installLaunchdAgent();
+    process.exit(0);
+  }
   if (!existsSync(LOG_DIR)) mkdirSync(LOG_DIR, { recursive: true });
   if (!acquireLock()) process.exit(0);
 
