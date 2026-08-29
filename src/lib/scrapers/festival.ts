@@ -146,16 +146,17 @@ export async function ingestFestivalLineup(pool: Pool, source: string, lineup: F
       await upsertDjLink(pool, id, 'festival', lineup.url, `${lineup.eventName} lineup`);
       console.log(`  ${source}: candidate ${name}`);
     }
-    const eventId = `${lineup.eventIdPrefix}-${id}`;
+    // One event row per festival, not one per DJ (#16). Every DJ on the
+    // lineup links via event_djs.
     await upsertEvent(pool, {
-      id: eventId,
-      name: `${lineup.eventName} — ${name}`,
+      id: lineup.eventIdPrefix,
+      name: lineup.eventName,
       venue: lineup.venue,
       startsAt: lineup.startsAt ?? null,
       url: lineup.url,
       source,
     });
-    await pool.query(`UPDATE events SET dj_id = $1 WHERE id = $2 AND dj_id IS NULL`, [id, eventId]);
+    await pool.query(`INSERT INTO event_djs (event_id, dj_id) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [lineup.eventIdPrefix, id]);
   }
   return {
     status: artists.length > 0 ? 'ok' : 'partial',

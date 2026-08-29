@@ -23,6 +23,26 @@ const JUNK_NAMES = new Set([
   'edm music', 'radioactive fm', 'mouthfull radio', 'radio station', 'fm radio', '88.6fm',
 ]);
 
+const WEEKDAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+const GENRE_WORDS = [
+  'jazz', 'techno', 'house', 'dnb', 'drum and bass', 'drum & bass', 'garage', 'soul', 'funk',
+  'reggae', 'dub', 'hip hop', 'hip-hop', 'disco', 'trance', 'ambient', 'breaks', 'electro',
+  'rock', 'blues', 'metal', 'pop', 'country', 'folk', 'classical', 'latin', 'afro', 'bass', 'edm', 'dance',
+];
+
+// Event series and rigs are not DJs (#27, #19): "Sunday Jazz" is a weekly
+// night, "Scorpios Nest Soundsystem" is a rig. Never promote these.
+export function isEventSeriesName(name: string): boolean {
+  const normalized = normalizeArtistName(name);
+  if (/\b(soundsystem|sound system|festival)\b/.test(normalized)) return true;
+  const words = normalized.split(' ');
+  if (words.length >= 2 && WEEKDAYS.includes(words[0])) {
+    const rest = words.slice(1).join(' ');
+    return GENRE_WORDS.some((genre) => rest.includes(genre));
+  }
+  return false;
+}
+
 export function normalizeArtistName(name: string): string {
   return name
     .toLowerCase()
@@ -176,6 +196,19 @@ export async function discoverFromMixcloud(pool: Pool): Promise<ScrapeResult> {
 }
 
 export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
+  // Event-series names (weekly nights, soundsystems, festivals) are not DJs.
+  // Park them as junk so they never get promoted or listed.
+  const series = (
+    await pool.query(`SELECT id, name FROM djs WHERE opt_out = FALSE AND (discovery_note IS NULL OR discovery_note <> 'junk')`)
+  ).rows as Array<{ id: string; name: string }>;
+  let parked = 0;
+  for (const dj of series) {
+    if (!isEventSeriesName(dj.name)) continue;
+    await pool.query(`UPDATE djs SET active = FALSE, discovery_note = 'junk', verification_level = 0, updated_at = now() WHERE id = $1`, [dj.id]);
+    parked += 1;
+  }
+  if (parked > 0) console.log(`  verify-discovered: parked ${parked} event-series names as junk`);
+
   // Evidence-weighted verification: level = distinct evidence categories
   // (mixes / links / articles / gigs / multi-gigs). level >= 2 flips a
   // candidate to an active (listed) DJ; level keeps climbing as more
@@ -193,8 +226,8 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
          (CASE WHEN EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id) THEN 1 ELSE 0 END) +
           (CASE WHEN EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id AND l.type <> 'festival') THEN 1 ELSE 0 END) +
          (CASE WHEN EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id) THEN 1 ELSE 0 END) +
-         (CASE WHEN EXISTS (SELECT 1 FROM events e WHERE e.dj_id = d.id) THEN 1 ELSE 0 END) +
-         (CASE WHEN (SELECT count(*) FROM events e WHERE e.dj_id = d.id) >= 2 THEN 1 ELSE 0 END) AS level,
+         (CASE WHEN EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id) THEN 1 ELSE 0 END) +
+         (CASE WHEN (SELECT count(*) FROM event_djs ed WHERE ed.dj_id = d.id) >= 2 THEN 1 ELSE 0 END) AS level,
          COALESCE(
            ARRAY(
              SELECT source
@@ -202,17 +235,19 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
              WHERE (source = 'mixes' AND EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id))
                 OR (source = 'links' AND EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id AND l.type <> 'festival'))
                 OR (source = 'articles' AND EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id))
-                OR (source = 'gigs' AND EXISTS (SELECT 1 FROM events e WHERE e.dj_id = d.id))
-                OR (source = 'multi-gigs' AND (SELECT count(*) FROM events e WHERE e.dj_id = d.id) >= 2)
+                OR (source = 'gigs' AND EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id))
+                OR (source = 'multi-gigs' AND (SELECT count(*) FROM event_djs ed WHERE ed.dj_id = d.id) >= 2)
            ),
            '{}'
          ) AS sources
        FROM djs d
        WHERE d.opt_out = FALSE
+         AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')
      ) evidence
      WHERE djs.id = evidence.id
        AND djs.opt_out = FALSE
        AND djs.is_nz = TRUE
+       AND (djs.discovery_note IS NULL OR djs.discovery_note <> 'junk')
        AND (djs.verification_level <> evidence.level OR djs.verification_sources <> evidence.sources)
      RETURNING djs.id`,
   );

@@ -4,7 +4,6 @@ import { fetchHtml, sleep } from './http';
 import { getSoundcloudClientId } from './soundcloud-client';
 import { enrichItunes, enrichMusicbrainz } from './apis';
 import { upsertDjLink } from './links';
-import { runWithConcurrency } from './concurrency';
 export { upsertDjLink };
 import type { ScrapeResult } from './types';
 
@@ -26,12 +25,29 @@ export async function upsertDjArticle(
   );
 }
 
-export async function upsertDjMix(pool: Pool, djId: string, platform: 'soundcloud' | 'mixcloud', title: string, url: string): Promise<void> {
+export type MixKind = 'mix' | 'interview';
+
+// Interviews, podcasts and talk segments are not mixes (#55). Profile plays
+// and stations have no real audio and are not valuable (#56).
+const INTERVIEW_PATTERN = /\b(interview|podcast|chat|talks? with|conversation|q&a|q\.?a\.?)\b/i;
+
+export function classifyMixTitle(title: string): MixKind {
+  return INTERVIEW_PATTERN.test(title) ? 'interview' : 'mix';
+}
+
+export async function upsertDjMix(
+  pool: Pool,
+  djId: string,
+  platform: 'soundcloud' | 'mixcloud',
+  title: string,
+  url: string,
+  kind: MixKind = 'mix',
+): Promise<void> {
   const id = `${djId}-${platform}-${createHash('sha1').update(url).digest('hex').slice(0, 12)}`;
   await pool.query(
-    `INSERT INTO dj_mixes (id, dj_id, platform, title, url) VALUES ($1, $2, $3, $4, $5)
+    `INSERT INTO dj_mixes (id, dj_id, platform, title, url, kind) VALUES ($1, $2, $3, $4, $5, $6)
      ON CONFLICT (id) DO NOTHING`,
-    [id, djId, platform, title, url],
+    [id, djId, platform, title, url, kind],
   );
 }
 
@@ -40,6 +56,7 @@ interface MixcloudResult {
   url: string;
   user?: { name: string; url: string };
   created_time?: string;
+  audio_length?: number;
 }
 
 export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
@@ -60,10 +77,13 @@ export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResul
     const data = (await res.json()) as { data?: MixcloudResult[] };
     for (const item of data.data ?? []) {
       const owner = item.user?.name ?? '';
-      const matches = owner.toLowerCase().includes(dj.name.toLowerCase()) || item.name.toLowerCase().includes(dj.name.toLowerCase());
-      if (!matches) continue;
+      // Only the artist's own Mixcloud account counts (#25). Item-name
+      // matches from other accounts (radio shows, interviews) are excluded.
+      if (!owner.toLowerCase().includes(dj.name.toLowerCase())) continue;
+      // Profile plays / stations have no real audio — not valuable (#56).
+      if (!item.audio_length || item.audio_length < 60) continue;
       found += 1;
-      await upsertDjMix(pool, dj.id, 'mixcloud', item.name, item.url);
+      await upsertDjMix(pool, dj.id, 'mixcloud', item.name, item.url, classifyMixTitle(item.name));
       if (item.user?.url) {
         await upsertDjLink(pool, dj.id, 'mixcloud', item.user.url, `Mixcloud: ${item.user.name}`);
       }
@@ -247,9 +267,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     let found = 0;
     let errors = 0;
     let rateLimited = 0;
-    // Enrich several DJs at once per source; per-DJ rate-limit backoff
-    // (Mixcloud 429, SoundCloud preflight) still applies.
-    await runWithConcurrency(djs, 3, async (dj) => {
+    for (const dj of djs) {
       try {
         const result = await source.run(pool, dj);
         found += result.items_found;
@@ -262,7 +280,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
         console.log(`  ${source.source}: ${dj.name} → error (${message})`);
       }
       await sleep(300);
-    });
+    }
     const djCount = djs.length;
     const result: ScrapeResult = {
       source: source.source,

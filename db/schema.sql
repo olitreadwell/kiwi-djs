@@ -58,6 +58,14 @@ CREATE TABLE IF NOT EXISTS events (
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+-- One event row per festival/venue night; event_djs links every DJ on the
+-- lineup so a festival is not duplicated per DJ (#16).
+CREATE TABLE IF NOT EXISTS event_djs (
+  event_id      TEXT NOT NULL REFERENCES events(id) ON DELETE CASCADE,
+  dj_id         TEXT NOT NULL REFERENCES djs(id) ON DELETE CASCADE,
+  PRIMARY KEY (event_id, dj_id)
+);
+
 CREATE TABLE IF NOT EXISTS scrapes (
   id            BIGSERIAL PRIMARY KEY,
   source        TEXT NOT NULL,
@@ -115,8 +123,11 @@ CREATE TABLE IF NOT EXISTS dj_mixes (
   platform      TEXT NOT NULL,               -- soundcloud | mixcloud
   title         TEXT NOT NULL,
   url           TEXT NOT NULL,
+  kind          TEXT NOT NULL DEFAULT 'mix', -- mix | interview
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+ALTER TABLE dj_mixes ADD COLUMN IF NOT EXISTS kind TEXT NOT NULL DEFAULT 'mix';
 
 CREATE TABLE IF NOT EXISTS dj_aliases (
   dj_id         TEXT NOT NULL REFERENCES djs(id) ON DELETE CASCADE,

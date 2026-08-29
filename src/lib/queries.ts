@@ -50,6 +50,11 @@ export interface EventRow {
   dj_name: string | null;
 }
 
+interface EventDjLink {
+  event_id: string;
+  dj_id: string;
+}
+
 export async function listDjs(opts: { query?: string; genre?: string } = {}): Promise<DjRow[]> {
   if (!isDbMode) {
     let rows = snapshot.djs as DjRow[];
@@ -74,8 +79,8 @@ export async function listDjs(opts: { query?: string; genre?: string } = {}): Pr
   }
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
-            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
-            (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
+            (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d
      WHERE ${where.join(' AND ')}
      ORDER BY popularity DESC, name ASC`,
@@ -91,8 +96,8 @@ export async function getDjById(id: string): Promise<DjRow | null> {
   const pool = getPool();
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
-            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
-            (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
+            (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.id = $1 AND d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,
     [id],
   );
@@ -144,7 +149,7 @@ export async function getEvents(opts: { upcoming?: boolean; venue?: string; dj?:
   }
   if (opts.dj) {
     params.push(opts.dj);
-    where.push(`e.dj_id = $${params.length}`);
+    where.push(`e.id IN (SELECT event_id FROM event_djs WHERE dj_id = $${params.length})`);
   }
   const result = await pool.query(
     `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name
@@ -178,8 +183,8 @@ export async function getPopularDjs(limit = 8): Promise<DjRow[]> {
   const pool = getPool();
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
-            (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
-            (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
+            (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d
      WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE
      ORDER BY d.popularity DESC, d.name ASC
@@ -192,8 +197,9 @@ export async function getPopularDjs(limit = 8): Promise<DjRow[]> {
 export async function getDjGigs(djId: string, limit = 20): Promise<EventRow[]> {
   if (!isDbMode) {
     const now = Date.now();
+    const djEventIds = new Set(((snapshot.eventDjs ?? []) as EventDjLink[]).filter((link) => link.dj_id === djId).map((link) => link.event_id));
     return (snapshot.events as EventRow[])
-      .filter((event) => event.dj_id === djId && event.starts_at && new Date(event.starts_at).getTime() > now)
+      .filter((event) => djEventIds.has(event.id) && event.starts_at && new Date(event.starts_at).getTime() > now)
       .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
       .slice(0, limit);
   }
@@ -201,7 +207,7 @@ export async function getDjGigs(djId: string, limit = 20): Promise<EventRow[]> {
   const result = await pool.query(
     `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name
      FROM events e LEFT JOIN djs d ON d.id = e.dj_id
-     WHERE e.dj_id = $1 AND e.starts_at > now()
+     WHERE e.id IN (SELECT event_id FROM event_djs WHERE dj_id = $1) AND e.starts_at > now()
      ORDER BY e.starts_at ASC LIMIT $2`,
     [djId, limit],
   );
@@ -214,6 +220,7 @@ export interface MixRow {
   title: string;
   url: string;
   platform: string;
+  kind: 'mix' | 'interview';
 }
 
 export interface ArticleRow {
@@ -248,7 +255,7 @@ export interface LabelRow {
 export async function getDjMixes(djId: string): Promise<MixRow[]> {
   if (!isDbMode) return (snapshot.mixes as MixRow[] | undefined)?.filter((mix) => mix.dj_id === djId) ?? [];
   const pool = getPool();
-  const result = await pool.query('SELECT id, title, url, platform FROM dj_mixes WHERE dj_id = $1 ORDER BY created_at DESC', [djId]);
+  const result = await pool.query('SELECT id, title, url, platform, kind FROM dj_mixes WHERE dj_id = $1 ORDER BY created_at DESC', [djId]);
   return result.rows as MixRow[];
 }
 
@@ -272,8 +279,9 @@ export async function getDjLinks(djId: string): Promise<LinkRow[]> {
 export async function getDjPastGigs(djId: string, limit = 20): Promise<EventRow[]> {
   if (!isDbMode) {
     const now = Date.now();
+    const djEventIds = new Set(((snapshot.eventDjs ?? []) as EventDjLink[]).filter((link) => link.dj_id === djId).map((link) => link.event_id));
     return (snapshot.events as EventRow[])
-      .filter((event) => event.dj_id === djId && event.starts_at && new Date(event.starts_at).getTime() <= now)
+      .filter((event) => djEventIds.has(event.id) && event.starts_at && new Date(event.starts_at).getTime() <= now)
       .sort((a, b) => new Date(b.starts_at).getTime() - new Date(a.starts_at).getTime())
       .slice(0, limit);
   }
@@ -281,7 +289,7 @@ export async function getDjPastGigs(djId: string, limit = 20): Promise<EventRow[
   const result = await pool.query(
     `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name
      FROM events e LEFT JOIN djs d ON d.id = e.dj_id
-     WHERE e.dj_id = $1 AND e.starts_at <= now()
+     WHERE e.id IN (SELECT event_id FROM event_djs WHERE dj_id = $1) AND e.starts_at <= now()
      ORDER BY e.starts_at DESC LIMIT $2`,
     [djId, limit],
   );

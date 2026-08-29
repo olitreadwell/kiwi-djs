@@ -115,11 +115,27 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         </div>
       )}
 
-      {mixes.length > 0 && (
+      {mixes.filter((mix) => mix.kind === 'mix').length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-bold text-stone-100">Mixes</h2>
           <ul className="mt-4 divide-y divide-stone-800 rounded-lg border border-stone-800">
-            {mixes.map((mix) => (
+            {mixes.filter((mix) => mix.kind === 'mix').map((mix) => (
+              <li key={mix.id} className="flex items-center justify-between gap-4 px-4 py-3">
+                <p className="text-sm text-stone-200">{mix.title}</p>
+                <a href={mix.url} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-amber-400 hover:underline">
+                  {mix.platform} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {mixes.filter((mix) => mix.kind === 'interview').length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-bold text-stone-100">Interviews</h2>
+          <ul className="mt-4 divide-y divide-stone-800 rounded-lg border border-stone-800">
+            {mixes.filter((mix) => mix.kind === 'interview').map((mix) => (
               <li key={mix.id} className="flex items-center justify-between gap-4 px-4 py-3">
                 <p className="text-sm text-stone-200">{mix.title}</p>
                 <a href={mix.url} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-amber-400 hover:underline">

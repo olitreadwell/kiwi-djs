@@ -17,7 +17,6 @@ import { bestEffortScrapers } from './best-effort';
 import { enrichAllDjs } from './enrich';
 import { enrichVenueRegions } from './apis';
 import { discoverAll, verifyDiscovered } from './discover';
-import { runWithConcurrency } from './concurrency';
 import type { Scraper, ScrapeResult } from './types';
 
 const scrapers: Scraper[] = [
@@ -47,9 +46,7 @@ export async function runAllScrapers(
   const activeScrapers = options.disabledSources
     ? scrapers.filter((scraper) => !options.disabledSources?.has(scraper.source))
     : scrapers;
-  // Independent sources run in parallel (each scraper keeps its own
-  // 500ms+ delay), so a cycle collects data from several sites at once.
-  await runWithConcurrency(activeScrapers, 3, async (scraper) => {
+  for (const scraper of activeScrapers) {
     const startedAt = new Date();
     let result: ScrapeResult;
     try {
@@ -64,8 +61,7 @@ export async function runAllScrapers(
       [scraper.source, result.status, result.items_found, result.items_new, result.error ?? null, startedAt],
     );
     results.push(result);
-  });
-  results.sort((a, b) => (a.source ?? '').localeCompare(b.source ?? ''));
+  }
   results.push(...(await discoverAll(pool)));
   results.push(...(await enrichAllDjs(pool)));
   // Second verification pass after enrichment so a candidate that just

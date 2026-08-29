@@ -13,8 +13,8 @@ const djs = (
             (CASE WHEN d.facebook_url IS NOT NULL THEN 10 ELSE 0 END) +
             (CASE WHEN d.website_url IS NOT NULL THEN 10 ELSE 0 END) +
             (CASE WHEN d.mixcloud_url IS NOT NULL THEN 5 ELSE 0 END) AS data_completeness,
-            (SELECT count(*)::int FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
-            (SELECT max(e2.starts_at)::text FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
+            (SELECT count(*)::int FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at)::text FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,
   )
 ).rows;
@@ -27,10 +27,11 @@ const events = (
 const links = (await pool.query('SELECT id, dj_id, type, url, label FROM dj_links')).rows;
 const articles = (await pool.query('SELECT id, dj_id, title, url, source, published_at, snippet FROM dj_articles')).rows;
 const mixes = (await pool.query('SELECT id, dj_id, title, url, platform FROM dj_mixes')).rows;
+const eventDjs = (await pool.query('SELECT event_id, dj_id FROM event_djs')).rows;
 const venues = (await pool.query('SELECT id, name, address, url FROM venues')).rows;
 writeFileSync(
   new URL('../src/data/snapshot.json', import.meta.url),
-  JSON.stringify({ exportedAt: new Date().toISOString(), djs, events, links, articles, mixes, venues }, null, 2),
+  JSON.stringify({ exportedAt: new Date().toISOString(), djs, events, links, articles, mixes, eventDjs, venues }, null, 2),
 );
-console.log(`Snapshot written: ${djs.length} DJs, ${events.length} events, ${venues.length} venues, ${links.length} links, ${articles.length} articles, ${mixes.length} mixes.`);
+console.log(`Snapshot written: ${djs.length} DJs, ${events.length} events, ${eventDjs.length} event-DJ links, ${venues.length} venues, ${links.length} links, ${articles.length} articles, ${mixes.length} mixes.`);
 await pool.end();

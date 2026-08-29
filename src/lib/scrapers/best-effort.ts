@@ -26,5 +26,4 @@ export const bestEffortScrapers: Scraper[] = [
   bestEffortScraper('caroline', 'https://www.caroline.co.nz'),
   bestEffortScraper('100-percent-wellington', 'https://www.100percent.co.nz'),
   bestEffortScraper('bfm-radio', 'https://www.bfm.co.nz/radio/shows'),
-  bestEffortScraper('resident-advisor', 'https://ra.co/clubs/wellington'),
 ];
