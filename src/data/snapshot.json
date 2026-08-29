@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T08:43:23.765Z",
+  "exportedAt": "2026-08-29T08:45:45.221Z",
   "djs": [
     {
       "id": "state-of-mind",
@@ -40,9 +40,9 @@
       "name": "Dick Johnson",
       "bio": "Veteran Wellington DJ and radio host active since the 1980s. Long-running figure of the Wellington music scene.",
       "genres": [
-        "House",
         "Eclectic",
         "Funk",
+        "House",
         "Jazz",
         "Soul"
       ],
@@ -66,74 +66,6 @@
       "verification_sources": [
         "mixes",
         "links"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "frank-booker",
-      "name": "Frank Booker",
-      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
-      "genres": [
-        "Electronic",
-        "Boogie",
-        "Disco",
-        "House"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.351Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "estere",
-      "name": "Estere",
-      "bio": null,
-      "genres": [
-        "Alternative"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-r2xzAdRCppmtiYFI-DkajpQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/queen-estere",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 40,
-      "source": "manual",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:43:58.604Z",
-      "updated_at": "2026-08-29T07:10:51.894Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
       ],
       "is_nz": true,
       "upcoming_events": 0,
@@ -173,7 +105,9 @@
       "id": "geneva-am",
       "name": "Geneva AM",
       "bio": null,
-      "genres": [],
+      "genres": [
+        "Alternative"
+      ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-yuMmmnjdZ9FXES2B-pztAsw-large.jpg",
       "soundcloud_url": "https://soundcloud.com/geneva_am",
@@ -183,15 +117,16 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 25,
+      "data_completeness": 40,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:24.153Z",
-      "updated_at": "2026-08-29T07:22:49.718Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
+        "links",
         "gigs",
         "multi-gigs"
       ],
@@ -200,65 +135,34 @@
       "last_played_at": null
     },
     {
-      "id": "concord-dawn",
-      "name": "Concord Dawn",
-      "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
+      "id": "dj-fitchie",
+      "name": "DJ Fitchie",
+      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
       "genres": [
-        "Electronic",
-        "Dance",
-        "Drum and Bass"
+        "Funk",
+        "Hip-Hop",
+        "Reggae",
+        "Soul"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000001604320-vel4a7-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/concord-dawn-1",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": "http://www.concord-dawn.co.nz/",
+      "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 65,
+      "data_completeness": 55,
       "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.358Z",
+      "created_at": "2026-08-28T12:17:48.346Z",
       "updated_at": "2026-08-29T04:36:25.685Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
       "verification_sources": [
         "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "broderbeats",
-      "name": "Broderbeats",
-      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
-      "genres": [
-        "Electronic"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-29T03:51:17.871Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
         "links",
         "articles"
       ],
@@ -330,36 +234,6 @@
       "last_played_at": null
     },
     {
-      "id": "emerson",
-      "name": "Emerson",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-XBDEzbc5k9WPKVeq-j2LHwA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/bonerotx",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "discovered",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:04:28.974Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "lucas",
       "name": "Lucas",
       "bio": null,
@@ -381,42 +255,6 @@
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.591Z",
       "updated_at": "2026-08-29T06:01:58.309Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "dj-fitchie",
-      "name": "DJ Fitchie",
-      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
-      "genres": [
-        "Reggae",
-        "Funk",
-        "Hip-Hop",
-        "Soul"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.346Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -458,6 +296,72 @@
         "links",
         "articles",
         "gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "concord-dawn",
+      "name": "Concord Dawn",
+      "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
+      "genres": [
+        "Dance",
+        "Drum and Bass",
+        "Electronic"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000001604320-vel4a7-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/concord-dawn-1",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.concord-dawn.co.nz/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 65,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.358Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "emerson",
+      "name": "Emerson",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-XBDEzbc5k9WPKVeq-j2LHwA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/bonerotx",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "discovered",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:04:28.974Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-gigs"
       ],
       "is_nz": true,
       "upcoming_events": 0,
@@ -588,8 +492,10 @@
       "name": "Frida",
       "bio": null,
       "genres": [
+        "Jazz",
         "Pop",
-        "Jazz"
+        "jazz",
+        "pop"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-TqAp7PG0xmjuVINL-t9QVoQ-large.jpg",
@@ -605,6 +511,52 @@
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.468Z",
       "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "estere",
+      "name": "Estere",
+      "bio": null,
+      "genres": [
+        "Alternative",
+        "Dance",
+        "Dance & EDM",
+        "Drum and Bass",
+        "Dub",
+        "Electronic",
+        "HOUSE, ELECTRONIC",
+        "HOUSEMUSIC",
+        "Hip-Hop",
+        "House",
+        "TECH HOUSE JERSEY CLUB BALTIMORE CLUB",
+        "TECHHOUSE",
+        "Techno",
+        "Technology"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-r2xzAdRCppmtiYFI-DkajpQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/queen-estere",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 40,
+      "source": "manual",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:43:58.604Z",
+      "updated_at": "2026-08-29T07:10:51.894Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -635,11 +587,12 @@
       "source": "discovered",
       "opt_out": false,
       "created_at": "2026-08-29T04:04:29.030Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
+        "links",
         "gigs",
         "multi-gigs"
       ],
@@ -665,11 +618,43 @@
       "source": "discovered",
       "opt_out": false,
       "created_at": "2026-08-29T04:04:29.285Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
+        "links",
+        "gigs",
+        "multi-gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "serenna",
+      "name": "Serenna",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-7gTkznAAzyAOkNKL-mW7ndA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/serenna-634096401",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "discovered",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:04:29.310Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
         "gigs",
         "multi-gigs"
       ],
@@ -708,72 +693,14 @@
       "last_played_at": null
     },
     {
-      "id": "serenna",
-      "name": "Serenna",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-7gTkznAAzyAOkNKL-mW7ndA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/serenna-634096401",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "discovered",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:04:29.310Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "tali",
-      "name": "TALI",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-v0AVSOyFp5UAVhn8-7DdYSw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/talimusic111",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:21.085Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
       "id": "millie",
       "name": "Millie",
       "bio": null,
       "genres": [
         "Hip-Hop",
-        "Soul"
+        "Hip-Hop/Rap",
+        "Soul",
+        "soul"
       ],
       "city": "Wellington",
       "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
@@ -836,125 +763,42 @@
       "last_played_at": null
     },
     {
-      "id": "clova",
-      "name": "CLOVA",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-rDV6MorizOOVvqaw-jtQxzA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/clovamax-sc",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:15.468Z",
-      "updated_at": "2026-08-29T07:22:59.576Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "gigs",
-        "multi-gigs"
+      "id": "broderbeats",
+      "name": "Broderbeats",
+      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
+      "genres": [
+        "2-step/British",
+        "Dance",
+        "Drum and Bass",
+        "Electronic",
+        "Garage",
+        "House",
+        "Techno"
       ],
-      "is_nz": true,
-      "upcoming_events": 2,
-      "last_played_at": null
-    },
-    {
-      "id": "tv-disko",
-      "name": "TV DiSKO",
-      "bio": null,
-      "genres": [],
       "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
+      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
-      "popularity": 0,
-      "data_completeness": 0,
-      "source": "radioactive",
+      "popularity": 2,
+      "data_completeness": 55,
+      "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.855Z",
-      "updated_at": "2026-08-29T08:37:35.686Z",
+      "created_at": "2026-08-29T03:51:17.871Z",
+      "updated_at": "2026-08-29T08:45:41.899Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 4,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
         "links",
-        "articles",
-        "gigs"
+        "articles"
       ],
       "is_nz": true,
-      "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
-      "id": "club-medder",
-      "name": "Club Medder",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000265559473-cbfhal-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/club-medder-247426126",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.802Z",
-      "updated_at": "2026-08-29T06:56:26.603Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
-      "id": "herman-saiz",
-      "name": "Herman Saiz",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000472587639-sqqdkw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/hermansaiz-music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:42.653Z",
-      "updated_at": "2026-08-29T07:22:59.576Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 1,
+      "upcoming_events": 0,
       "last_played_at": null
     },
     {
@@ -992,6 +836,225 @@
       "last_played_at": null
     },
     {
+      "id": "tv-disko",
+      "name": "TV DiSKO",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 0,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.855Z",
+      "updated_at": "2026-08-29T08:37:35.686Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
+        "gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "frank-booker",
+      "name": "Frank Booker",
+      "bio": "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
+      "genres": [
+        "Boogie",
+        "Deep House",
+        "Disco",
+        "Disco Deviance",
+        "Discobelle",
+        "Electronic",
+        "Funk",
+        "Garage",
+        "House",
+        "Jazz",
+        "Jazz Funk",
+        "Soul",
+        "Soulful",
+        "soulful"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-60mN6tzPCdwyxdSM-1l5hFg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/frank-booker-284744466",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 55,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.351Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "club-medder",
+      "name": "Club Medder",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000265559473-cbfhal-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/club-medder-247426126",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.802Z",
+      "updated_at": "2026-08-29T06:56:26.603Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "clova",
+      "name": "CLOVA",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-rDV6MorizOOVvqaw-jtQxzA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/clovamax-sc",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:15.468Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 2,
+      "last_played_at": null
+    },
+    {
+      "id": "herman-saiz",
+      "name": "Herman Saiz",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000472587639-sqqdkw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/hermansaiz-music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:42.653Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "tali",
+      "name": "TALI",
+      "bio": null,
+      "genres": [
+        "breakbeat",
+        "breaks",
+        "dance",
+        "deep house",
+        "drum and bass",
+        "electro",
+        "electronica",
+        "freestyle",
+        "grime",
+        "house",
+        "jungle",
+        "liquid funk",
+        "organic house",
+        "pop",
+        "psytrance",
+        "techno"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-v0AVSOyFp5UAVhn8-7DdYSw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/talimusic111",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:21.085Z",
+      "updated_at": "2026-08-29T08:45:41.899Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
+        "gigs",
+        "multi-gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
       "id": "sunday-jazz",
       "name": "Sunday Jazz",
       "bio": null,
@@ -1009,11 +1072,12 @@
       "source": "discovered",
       "opt_out": false,
       "created_at": "2026-08-29T04:04:28.311Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
+      "updated_at": "2026-08-29T08:43:53.506Z",
       "mixcloud_backoff_until": null,
       "discovery_note": "junk",
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
+        "links",
         "gigs",
         "multi-gigs"
       ],
@@ -4437,6 +4501,13 @@
       "label": "Mixcloud: Guido's Lounge Café"
     },
     {
+      "id": "tali-mixcloud-120ce12c608f",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/KaneFM/",
+      "label": "Mixcloud: Kane FM"
+    },
+    {
       "id": "state-of-mind-mixcloud-bdaf0e67a388",
       "dj_id": "state-of-mind",
       "type": "mixcloud",
@@ -6572,6 +6643,13 @@
       "label": "Earth Beat Festival 2025 lineup"
     },
     {
+      "id": "tali-mixcloud-f8aaa2712be4",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/mol_/",
+      "label": "Mixcloud: Mol"
+    },
+    {
       "id": "k-roto-festival-1481d8e67135",
       "dj_id": "k-roto",
       "type": "festival",
@@ -8054,9 +8132,312 @@
       "type": "soundcloud",
       "url": "https://soundcloud.com/talimusic111",
       "label": "SoundCloud: TALI"
+    },
+    {
+      "id": "tali-mixcloud-8b45748b785f",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/DiscConnected/",
+      "label": "Mixcloud: Mr.Bortolotti@DiscConnected"
+    },
+    {
+      "id": "tali-mixcloud-bc2e9262c55d",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/DJJSTAR/",
+      "label": "Mixcloud: DJ J-STAR"
+    },
+    {
+      "id": "tali-mixcloud-8fdfc4aa7ee1",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/reformradio/",
+      "label": "Mixcloud: Reform Radio"
+    },
+    {
+      "id": "tali-mixcloud-92f39f6dae08",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/zerogravitymix/",
+      "label": "Mixcloud: ZERO GRAVITY"
+    },
+    {
+      "id": "tali-mixcloud-58ff9d0ec02b",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/respectdnb/",
+      "label": "Mixcloud: RESPECT DnB"
+    },
+    {
+      "id": "tali-mixcloud-8a939de12998",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/rachith-roshan/",
+      "label": "Mixcloud: SLIDER ( SL )"
+    },
+    {
+      "id": "tali-mixcloud-b5c52cc7756e",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/talismansound/",
+      "label": "Mixcloud: Talisman"
+    },
+    {
+      "id": "tali-mixcloud-3eb3a665a1f3",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/alyens/",
+      "label": "Mixcloud: Alyens Asylum "
+    },
+    {
+      "id": "tali-mixcloud-91595723fb3a",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/talipolak/",
+      "label": "Mixcloud: Tali Polak"
+    },
+    {
+      "id": "tali-mixcloud-0507b33c1442",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/GreensleevesRec/",
+      "label": "Mixcloud: Greensleeves Records"
+    },
+    {
+      "id": "tali-mixcloud-294d4a20b74e",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/ECHOPLEX-ADEEP/",
+      "label": "Mixcloud: EchoPlex Hosted By ADEEP"
+    },
+    {
+      "id": "tali-mixcloud-ca420ee9b04e",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Yilmaz%C3%96zdil/",
+      "label": "Mixcloud: Yilo"
+    },
+    {
+      "id": "tali-mixcloud-e2cd3771ec94",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/evil_concussion/",
+      "label": "Mixcloud: Evil Concussion"
+    },
+    {
+      "id": "tali-mixcloud-5a8241d0f399",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/avid/",
+      "label": "Mixcloud: John 'Avid' Bolz"
+    },
+    {
+      "id": "tali-mixcloud-0159482f72a9",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/tali_baba/",
+      "label": "Mixcloud: Tali Baba"
+    },
+    {
+      "id": "tali-mixcloud-a4a1ddb63f93",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/eranga-sewmina/",
+      "label": "Mixcloud: Reky_Sarathchandra"
+    },
+    {
+      "id": "tali-mixcloud-a07c09979f4c",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/EonityMixes/",
+      "label": "Mixcloud: Eonity Mixes"
+    },
+    {
+      "id": "tali-mixcloud-5aae9ffaacbd",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/nome-edonna/",
+      "label": "Mixcloud: NoMe Edonna"
+    },
+    {
+      "id": "tali-mixcloud-039d1eeda700",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/FokuzRecordingsNL/",
+      "label": "Mixcloud: Fokuz Recordings"
+    },
+    {
+      "id": "tali-mixcloud-4d4367304fb1",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/LUCHiSVETA/",
+      "label": "Mixcloud: LUCHiSVETA radioshow"
+    },
+    {
+      "id": "tali-mixcloud-2faf15491494",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/fanno-faheem/",
+      "label": "Mixcloud: Fanno"
+    },
+    {
+      "id": "tali-mixcloud-ac4df2588c2e",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Tande/",
+      "label": "Mixcloud: Alexandre Gomes"
+    },
+    {
+      "id": "tali-mixcloud-46b06ec533f3",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/raashhour/",
+      "label": "Mixcloud: raasHHour"
+    },
+    {
+      "id": "tali-mixcloud-77c2286a2a46",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/Allintwo/",
+      "label": "Mixcloud: Allintwo"
+    },
+    {
+      "id": "tali-mixcloud-9e078076d1a5",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/TALI_MUSS/",
+      "label": "Mixcloud: TALI_MUSS"
+    },
+    {
+      "id": "tali-mixcloud-baea6dd0080d",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/canismusic/",
+      "label": "Mixcloud: canismusic"
+    },
+    {
+      "id": "tali-mixcloud-c18c0e343e01",
+      "dj_id": "tali",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/manuel-godemann/",
+      "label": "Mixcloud: DJ Godi"
+    },
+    {
+      "id": "tali-blog-b796d3eb4a86",
+      "dj_id": "tali",
+      "type": "blog",
+      "url": "http://talimusic.tumblr.com/",
+      "label": "blog: http://talimusic.tumblr.com/"
+    },
+    {
+      "id": "tali-discogs-043806d83490",
+      "dj_id": "tali",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/32695",
+      "label": "discogs: https://www.discogs.com/artist/32695"
+    },
+    {
+      "id": "tali-discogs-eb1f6cc9edf8",
+      "dj_id": "tali",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/719947",
+      "label": "discogs: https://www.discogs.com/artist/719947"
+    },
+    {
+      "id": "tali-free streaming-e26b5709e48d",
+      "dj_id": "tali",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/1HzjYKBYzU5HamS57RbqhB",
+      "label": "free streaming: https://open.spotify.com/artist/1HzjYKBYzU5HamS57RbqhB"
+    },
+    {
+      "id": "tali-free streaming-7c71e64d8d5b",
+      "dj_id": "tali",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/2IzewUY71zuiCmfPZWahxv",
+      "label": "free streaming: https://open.spotify.com/artist/2IzewUY71zuiCmfPZWahxv"
+    },
+    {
+      "id": "tali-myspace-78b24fba8668",
+      "dj_id": "tali",
+      "type": "myspace",
+      "url": "https://myspace.com/mc_tali",
+      "label": "myspace: https://myspace.com/mc_tali"
+    },
+    {
+      "id": "tali-other databases-78bcf51cc6ad",
+      "dj_id": "tali",
+      "type": "other databases",
+      "url": "http://www.rolldabeats.com/artist/tali",
+      "label": "other databases: http://www.rolldabeats.com/artist/tali"
+    },
+    {
+      "id": "tali-purchase for download-1de553b832e5",
+      "dj_id": "tali",
+      "type": "purchase for download",
+      "url": "https://www.beatport.com/artist/tali/10209",
+      "label": "purchase for download: https://www.beatport.com/artist/tali/10209"
+    },
+    {
+      "id": "tali-social network-98921901805b",
+      "dj_id": "tali",
+      "type": "social network",
+      "url": "https://twitter.com/TALITHE1stLADY",
+      "label": "social network: https://twitter.com/TALITHE1stLADY"
+    },
+    {
+      "id": "tali-social network-70f01e0734ac",
+      "dj_id": "tali",
+      "type": "social network",
+      "url": "https://www.facebook.com/mctali",
+      "label": "social network: https://www.facebook.com/mctali"
+    },
+    {
+      "id": "tali-social network-6306210efa98",
+      "dj_id": "tali",
+      "type": "social network",
+      "url": "https://www.facebook.com/taliofficial",
+      "label": "social network: https://www.facebook.com/taliofficial"
+    },
+    {
+      "id": "tali-songkick-ced09e33e6e0",
+      "dj_id": "tali",
+      "type": "songkick",
+      "url": "https://www.songkick.com/artists/281901",
+      "label": "songkick: https://www.songkick.com/artists/281901"
+    },
+    {
+      "id": "tali-soundcloud-9ed4af0a5e78",
+      "dj_id": "tali",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/talimusic",
+      "label": "soundcloud: https://soundcloud.com/talimusic"
+    },
+    {
+      "id": "tali-streaming-d370b5aff032",
+      "dj_id": "tali",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/3540173",
+      "label": "streaming: https://tidal.com/artist/3540173"
+    },
+    {
+      "id": "tali-wikidata-91a6c6153fbc",
+      "dj_id": "tali",
+      "type": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q6715090",
+      "label": "wikidata: https://www.wikidata.org/wiki/Q6715090"
     }
   ],
   "articles": [
+    {
+      "id": "don-luchito-01862dcd12ff0faf",
+      "dj_id": "don-luchito",
+      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf5e6e94576ae661628bfbcd1cc&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-07-18T17:00:00.000Z",
+      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
+    },
     {
       "id": "estere-033fa70f0843c4ea",
       "dj_id": "estere",
@@ -8065,6 +8446,330 @@
       "source": "The New Zealand Herald",
       "published_at": "2020-01-24T10:00:00.000Z",
       "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "don-luchito-f368aff247987c0b",
+      "dj_id": "don-luchito",
+      "title": "Don Luchito",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf5e6e94576ae661628bfbcd1cc&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2016-08-19T17:00:00.000Z",
+      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
+    },
+    {
+      "id": "don-luchito-3c88026c559c2a44",
+      "dj_id": "don-luchito",
+      "title": "Funk N Soul with DJ Don Luchito.",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf5e6e94576ae661628bfbcd1cc&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2015-11-06T16:00:00.000Z",
+      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
+    },
+    {
+      "id": "frida-ee98943067c80e1a",
+      "dj_id": "frida",
+      "title": "Glow in the Dark Paint Night - Fluro Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf84abd4e3ca05f15c02f6175ec&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2021%2fglow-in-the-dark-paint-night-fluro-frida%2fwellington&amp;c=14940081104874254031&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2021-02-23T16:00:00.000Z",
+      "snippet": "Deciding what to buy is hard, but paying for it doesn't have to be. Laybuy lets you receive the item now and spread the payment over 6 weekly automatic instalments. No interest, no fees*."
+    },
+    {
+      "id": "frida-66fdc3e67a6ad23a",
+      "dj_id": "frida",
+      "title": "Buy Tickets to Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf84abd4e3ca05f15c02f6175ec&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2024%2ffrida%2fwellington%2ftickets%2fcontact-details%3fguest%3dguest&amp;c=7266203712031812666&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2013-12-10T16:00:00.000Z",
+      "snippet": "Get reimbursed up to 100% of your ticket purchase (excluding Ticket Protection fees). Ticket Protection can provide cover in case of illness, redundancy, public transport delays, and more. These ..."
+    },
+    {
+      "id": "frida-04cac66f99f2a16f",
+      "dj_id": "frida",
+      "title": "Jazz Festival: Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf84abd4e3ca05f15c02f6175ec&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2025-10-15T17:00:00.000Z",
+      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
+    },
+    {
+      "id": "estere-55aba42ac569999f",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-6afdb904ab1e7b2b",
+      "dj_id": "estere",
+      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-01-24T10:00:00.000Z",
+      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "estere-44910585fbc30c14",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Estère has rolled out her new \"digital doom dance song\" entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-1b4077323b300506",
+      "dj_id": "estere",
+      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2014-02-01T16:00:00.000Z",
+      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
+    },
+    {
+      "id": "estere-ae6ad84493f10089",
+      "dj_id": "estere",
+      "title": "Estère at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Estère announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Estère’s October 2020 San ..."
+    },
+    {
+      "id": "estere-46902339105ccafd",
+      "dj_id": "estere",
+      "title": "Estère: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Estère: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "estere-737d83faaa452a2e",
+      "dj_id": "estere",
+      "title": "Album review: Estere, My Design, On Others' Lives",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2falbum-review-estere-my-design-on-others-lives%2fWAVDN3Y4SJT37X36OZO466XOPY%2f&amp;c=8439857028581164344&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2018-05-02T17:00:00.000Z",
+      "snippet": "Estere's new album is a beautiful mix of everything the music world is lauding and lusting after right now. You've got African-inspired funk, hip-hop beats, richly layered production, an impressively ..."
+    },
+    {
+      "id": "broderbeats-f06b4f6dda3ebe0f",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bfb186d4c8c9e09b1bfb163a175&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-61240b2b5442ef40",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bfb186d4c8c9e09b1bfb163a175&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101473%2fBroderbeats-Presents-Intuition-Vol-1.utr&amp;c=4650032428826959733&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "INTUITION Vol. 1 by broderbeats, is the first edition of a continual series that showcases his love for high energy, innovative production and massive moments. Taking inspiration from Knock 2’s ‘Room ..."
+    },
+    {
+      "id": "broderbeats-d72a41e007911f94",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bfb186d4c8c9e09b1bfb163a175&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "sam-fd0984ab7d18c530",
+      "dj_id": "sam",
+      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c00580644febdd7de4584765508&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
+      "source": "Newstalk ZB",
+      "published_at": "2024-04-19T12:42:00.000Z",
+      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
+    },
+    {
+      "id": "sam-d9e0125650c386a4",
+      "dj_id": "sam",
+      "title": "A-League: Rising Wellington Phoenix star Sam Sutton could be New Zealand football's next next big thing",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c00580644febdd7de4584765508&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fsport%2ffootball%2fwellington-phoenix%2fa-league-rising-wellington-phoenix-star-sam-sutton-could-be-new-zealand-footballs-next-next-big-thing%2fAYDETWRWA66KXNHHLYA64MHQOY%2f&amp;c=10057738431275234246&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2020-07-08T20:00:00.000Z",
+      "snippet": "Sam Sutton will get plenty of game time for the Phoenix over the next month. Photo / Photosport On the day of Sam Sutton's tenth birthday in December 2011, Ben Sigmund headed home a late Leo Bertos ..."
+    },
+    {
+      "id": "sam-610c725e4ee0f349",
+      "dj_id": "sam",
+      "title": "Hurricanes, Wellington sign former Warrior Sam Lousi from Waratahs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c00580644febdd7de4584765508&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2frugby%2fsuper-rugby%2f82135350%2fhurricanes-recruit-former-warrior-sam-lousi-from-waratahs--report&amp;c=11954784102094947518&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2016-07-14T16:29:00.000Z",
+      "snippet": "Former Warriors league player Sam Lousi will boost Wellington in next month's rugby NPC after he was signed from the Waratahs. The 199cm, 128kg lock was confirmed as the Hurricanes' latest signing on ..."
+    },
+    {
+      "id": "sam-54db05ef8a8127e8",
+      "dj_id": "sam",
+      "title": "Death of Wellington kaumatua Sam Jackson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c00580644febdd7de4584765508&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d62133&amp;c=1533989209568551632&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2013-11-20T16:00:00.000Z",
+      "snippet": "Prominent Wellington kaumatua Sam Jackson has died. Wellington Mayor Celia Wade-Brown is mourning his death. He had close ties with the City Council and helped welcome thousands of new New Zealanders ..."
+    },
+    {
+      "id": "sam-03f6f2a4d378e4ee",
+      "dj_id": "sam",
+      "title": "Cam & Sam",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c00580644febdd7de4584765508&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fcam-sam-live-at-the-residence-courtenay-place%2fwellington&amp;c=14355332596525430878&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-27T17:00:00.000Z",
+      "snippet": "Wed 23 Aug 2023, 9:00pm–11:30pm Wed 27 Sep 2023, 9:00pm–11:30pm Wed 25 Oct 2023, 9:00pm–11:30pm Wed 29 Nov 2023, 9:00pm–11:30pm Wed 20 Dec 2023, 9:00pm–11:30pm ..."
+    },
+    {
+      "id": "tv-disko-cb69d226a5d24a8f",
+      "dj_id": "tv-disko",
+      "title": "TV Disko",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c02425444efa4b61fd93031c7c5&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2025-09-15T17:01:00.000Z",
+      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
+    },
+    {
+      "id": "sian-ff2d4036e6f02b0f",
+      "dj_id": "sian",
+      "title": "Sian Kingi murder: Four words that led to the killing of a 12yo girl",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c03b636490685e9296124b77307&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fworld%2fsian-kingi-murder-four-words-that-led-to-the-killing-of-a-12yo-girl%2fQCWIREBHJPANQ635HSRX4LSYZY%2f&amp;c=17137776602969284065&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-09-23T16:32:00.000Z",
+      "snippet": "It was those four simple words that sealed Sian Kingi's fate. On the morning of the 27th of November, 1987, a twisted criminal decided it was time to finally launch the sickening plan he had been ..."
+    },
+    {
+      "id": "sian-8d071d701a1af038",
+      "dj_id": "sian",
+      "title": "Sian Ruck in White Ferns for Women’s world 20/20",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c03b636490685e9296124b77307&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU0904%2fS00423%2fsian-ruck-in-white-ferns-for-womens-world-2020.htm&amp;c=4057591797262742285&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2009-04-30T08:52:00.000Z",
+      "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
+    },
+    {
+      "id": "sian-bf92f3409bdd8ded",
+      "dj_id": "sian",
+      "title": "Siân Torrington - Staying open is a practice",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c03b636490685e9296124b77307&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2fsian-torrington-staying-open-is-practice%2fdunedin&amp;c=16552586197072206691&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-11-23T16:00:00.000Z",
+      "snippet": "Thu 24 Nov 2022, 10:00am–5:00pm Fri 25 Nov 2022, 10:00am–5:00pm Sat 26 Nov 2022, 10:00am–5:00pm Sun 27 Nov 2022, 10:00am–5:00pm Mon 28 Nov 2022, 10:00am–5:00pm ..."
+    },
+    {
+      "id": "sian-39a144b961077cfc",
+      "dj_id": "sian",
+      "title": "Wellington artist wins $25,000 Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c03b636490685e9296124b77307&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d146415&amp;c=8162514848878490879&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-07-31T17:01:00.000Z",
+      "snippet": "Siân Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Siân’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "sian-5a0089a2795bf2c7",
+      "dj_id": "sian",
+      "title": "WelTec student representing NZ in chefs’ olympiad",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c03b636490685e9296124b77307&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d141888&amp;c=10363203978555065080&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2022-01-05T16:00:00.000Z",
+      "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
+    },
+    {
+      "id": "sian-f419403872cbc769",
+      "dj_id": "sian",
+      "title": "Wellington woman named as winner of 10th Parkin Drawing Prize",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c03b636490685e9296124b77307&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fnz%2fwellington-woman-named-as-winner-of-10th-parkin-drawing-prize%2fUPYJAZZFMJWLLO354BPUN7GWFU%2f&amp;c=8942328998140355086&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-08-01T00:02:00.000Z",
+      "snippet": "A Wellington artist is overjoyed to have won the 10th Parkin Drawing Prize, saying it will allow her to give back to the art community the way she has always wanted to. Siân Stephen has won the ..."
+    },
+    {
+      "id": "sian-478132c92e262610",
+      "dj_id": "sian",
+      "title": "Wellington promote schoolgirls for Under-21 tournament",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c03b636490685e9296124b77307&amp;url=https%3a%2f%2fwww.espncricinfo.com%2fstory%2fwellington-promote-schoolgirls-for-under-21-tournament-97447&amp;c=2144595200325648255&amp;mkt=en-nz",
+      "source": "ESPNcricinfo",
+      "published_at": "2001-12-02T16:00:00.000Z",
+      "snippet": "Sarah Bradbury, Amy Burgess, Belina Clifton, Amanda Cooper, Amanda Green, Emily Hobbs, Nicole James, Francis King, Asmita Rama, Sian Ruck, Megan Tuapawa, Megan Wakefield, Pam Yates The Wellington team ..."
+    },
+    {
+      "id": "concord-dawn-45068696e660cb6e",
+      "dj_id": "concord-dawn",
+      "title": "Concord Dawn Supports, Guests for Auckland & Wellington",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c05b84b4bd9865b9c2bfb6c0576&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU1207%2fS00196.htm&amp;c=5908793527867863961&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2012-07-12T07:26:00.000Z",
+      "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "dj-fitchie-db69a5f222d94650",
+      "dj_id": "dj-fitchie",
+      "title": "Fat Freddy’s Drop remember founder Christopher ‘Mu’ Faiumu after sudden death",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c06787d421cbf47bf787430db7e&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2ffat-freddys-drop-founder-chris-faiumu-mu-and-dj-fitchie-dies%2fOBPI6ERZCNB65GPNNTIBKSPUIQ%2f&amp;c=5897345948839039140&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2025-07-17T14:14:00.000Z",
+      "snippet": "Fat Freddy’s Drop founder and member Christopher Ta’aloga Faiumu is being remembered as a gracious person and ‘talismanic’ musician. More widely known through his profession monikers ‘DJ Mu’ and ‘DJ ..."
+    },
+    {
+      "id": "dj-fitchie-8a4ed404fdd3f959",
+      "dj_id": "dj-fitchie",
+      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c06787d421cbf47bf787430db7e&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2025-07-17T19:57:00.000Z",
+      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "millie-f690cc46aa0f3982",
+      "dj_id": "millie",
+      "title": "Ms X star Niwa Whatuira reveals how wife Millie helped him through his toughest times",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c07de8a4842856606229b6da290&amp;url=https%3a%2f%2fwww.nowtolove.co.nz%2fcelebrity%2fniwa-whatuira-wife-millie-love-story%2f&amp;c=9508750408991759551&amp;mkt=en-nz",
+      "source": "Now To Love",
+      "published_at": "2026-08-21T13:59:00.000Z",
+      "snippet": "Niwa Whatuira and wife millie share their love story, from a surprising first meeting to overcoming grief, marriage and life together."
+    },
+    {
+      "id": "millie-a0017787c754fcda",
+      "dj_id": "millie",
+      "title": "Wellington app business showcased in the United States",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c07de8a4842856606229b6da290&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fbusiness%2fsmall-business%2f69135107%2fwellington-app-business-showcased-in-the-united-states&amp;c=1929179254761370017&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2015-06-04T23:32:00.000Z",
+      "snippet": "Showcase Workshop founder and president Millie Jocelyn in the Wellington office where the company creates apps for marketing professionals. Photo: KEVIN STENT / FAIRFAX NZ Prefer us on Google A ..."
+    },
+    {
+      "id": "millie-158cfba120d60e4c",
+      "dj_id": "millie",
+      "title": "80-year-old Wellington woman ready to run Palm Beaches half-marathon",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c07de8a4842856606229b6da290&amp;url=https%3a%2f%2fwww.wpbf.com%2farticle%2fpalm-beaches-marathon-80-year-old-woman%2f69487690&amp;c=17774741489192572650&amp;mkt=en-nz",
+      "source": "WPBF",
+      "published_at": "2025-11-24T15:25:00.000Z",
+      "snippet": "LADIES, IT’S LOOKING PERFECT. ALL RIGHT CHRIS THANK YOU. WELL WHEN THE US POLO ASSN PALM BEACH’S MARATHON KICKS OFF NEXT MONTH, YOU WON’T FIND MANY RUNNERS, IF ANY, WITH MORE LIFE EXPERIENCES THAN 80 ..."
+    },
+    {
+      "id": "millie-441ea99d4c1494e0",
+      "dj_id": "millie",
+      "title": "Wellington Showcase app judged best in the world at New York",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c07de8a4842856606229b6da290&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fbusiness%2f73599234%2fwellington-showcase-app-judged-best-in-the-world-at-new-york&amp;c=2029774365992584674&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2015-11-01T17:17:00.000Z",
+      "snippet": "Showcase Software president and co-founder Millie Jocelyn praised the Wellington based development and design team for winning a United States award. Photo: KEVIN STENT / FAIRFAX NZ ..."
+    },
+    {
+      "id": "millie-b4cc631577571765",
+      "dj_id": "millie",
+      "title": "Cyclist Millie Donald in fine form",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c07de8a4842856606229b6da290&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fkapiti-news%2fnews%2fcyclist-millie-donald-in-fine-form%2fROKYJH6UKNBNTMPJCGNR22XF4E%2f&amp;c=10389908289702545241&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-12-11T19:50:00.000Z",
+      "snippet": "Millie Donald powers up Mount Wellington, Auckland, during the schools' northern tour. Photo / Craig Gerken It has been a busy and rewarding year for promising young cyclist Millie Donald. Donald, who ..."
     },
     {
       "id": "dj-fitchie-05d8a7384666005e",
@@ -8076,6 +8781,15 @@
       "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
     },
     {
+      "id": "lucas-eaae1db335bef1f4",
+      "dj_id": "lucas",
+      "title": "Wellington Lucas da Silva",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c08c2d441fbb9a589904159f069&amp;url=https%3a%2f%2fgithub.com%2fWellington-lucas-silva&amp;c=10085202354046544541&amp;mkt=en-nz",
+      "source": "GitHub",
+      "published_at": "2024-12-01T16:00:00.000Z",
+      "snippet": "Olá! Tudo bem? Me chamo Wellington, tenho 25 anos e sou um programador iniciante, de momento essa rede servirá para incluir meus projetos de aprendizado."
+    },
+    {
       "id": "sian-050c9c61579b9162",
       "dj_id": "sian",
       "title": "Sian Ruck in White Ferns for Women’s world 20/20",
@@ -8085,6 +8799,24 @@
       "snippet": "State Wellington Blaze left-arm opening bowler Sian Ruck is one of three new caps in the White Ferns side to contest the ICC Women’s World Cup in June. Ruck joins Wellington Blaze teammates Sophie ..."
     },
     {
+      "id": "tali-37c512fa954554f3",
+      "dj_id": "tali",
+      "title": "Mass Effect 2: How To Get & Keep Tali Loyal",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c0b6cf44f5c855b41a85da23af8&amp;url=https%3a%2f%2ftwinfinite.net%2fguides%2fmass-effect-2-keep-tali-loyal-how-to%2f&amp;c=16853046569097263501&amp;mkt=en-nz",
+      "source": "Twinfinite",
+      "published_at": "2021-05-13T03:11:00.000Z",
+      "snippet": "Mass Effect 2 has, perhaps, the most complex relationship-building system in the entire series. You can choose to, or not to, recruit certain members. You can also make decisions that lead to their ..."
+    },
+    {
+      "id": "tali-55d61f69b5cad03d",
+      "dj_id": "tali",
+      "title": "Tali - a treasure trove",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c0b6cf44f5c855b41a85da23af8&amp;url=https%3a%2f%2fwww.thenews.com.pk%2fmagazine%2fus%2f425594-tali-a-treasure-trove&amp;c=1650025946245712547&amp;mkt=en-nz",
+      "source": "The News International",
+      "published_at": "2019-01-31T16:00:00.000Z",
+      "snippet": "Tali (taali) is the Sindhi name for widely used indigenous wood community known as Sheesham. I didn’t know I was going on a mini Pakistan tour when I left for Tali - an arts and crafts store in ..."
+    },
+    {
       "id": "sian-0e1e7f00669392e4",
       "dj_id": "sian",
       "title": "WelTec student representing NZ in chefs’ olympiad",
@@ -8092,6 +8824,51 @@
       "source": "Scoop",
       "published_at": "2022-01-05T16:00:00.000Z",
       "snippet": "Wellington Institute of Technology Ltd (WelTec) student Sian Davis is this month to represent New Zealand in the 8th annual Young Chef Olympiad (YCO) event. YCO is the biggest culinary event in the ..."
+    },
+    {
+      "id": "tali-d2b997b6bcde03cf",
+      "dj_id": "tali",
+      "title": "How to Romance Tali'Zorah",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c0b6cf44f5c855b41a85da23af8&amp;url=https%3a%2f%2fwww.ign.com%2fwikis%2fmass-effect-2%2fHow_to_Romance_Tali%2527Zorah&amp;c=17616760936298879391&amp;mkt=en-nz",
+      "source": "IGN",
+      "published_at": "2021-07-22T05:35:00.000Z",
+      "snippet": "Tali is only available to Male Shepards, and she becomes available after you successfully complete her Loyalty Mission, Tali: Treason. Importantly, you MUST ensure Tali is Loyal to you by NOT ..."
+    },
+    {
+      "id": "tali-3dad805a2347e1d4",
+      "dj_id": "tali",
+      "title": "Mass Effect Legendary Edition changes Tali's controversial cabin photo",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c0b6cf44f5c855b41a85da23af8&amp;url=https%3a%2f%2fwww.eurogamer.net%2fmass-effect-legendary-edition-changes-talis-controversial-cabin-photo&amp;c=5009837566130074809&amp;mkt=en-nz",
+      "source": "Eurogamer",
+      "published_at": "2021-05-15T03:49:00.000Z",
+      "snippet": "Eurogamer news cast: Microsoft's plan to kill console scalping Eurogamer news cast: Microsoft's plan to kill console scalpingWatch on YouTube Original party member Tali'Zorah is a quarian whose face ..."
+    },
+    {
+      "id": "tali-061c73e7919b2fa5",
+      "dj_id": "tali",
+      "title": "Tali Shapiro: Where is the Dating Game Killer Survivor Now?",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c0b6cf44f5c855b41a85da23af8&amp;url=https%3a%2f%2fthecinemaholic.com%2fwhere-is-tali-shapiro-now%2f&amp;c=8902568517525725295&amp;mkt=en-nz",
+      "source": "thecinemaholic.com",
+      "published_at": "2024-10-17T13:38:00.000Z",
+      "snippet": "ABC’s ’20/20: The Dating Game Killer’ chronicles the story of Rodney Alcala, a prolific serial killer, who often posed as a friendly photographer to lure women and young girls into a secluded place so ..."
+    },
+    {
+      "id": "tali-b5dbd95f87272910",
+      "dj_id": "tali",
+      "title": "Tali'Zorah nar Rayya",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c0b6cf44f5c855b41a85da23af8&amp;url=https%3a%2f%2fwww.ign.com%2fwikis%2fmass-effect%2fTali%2527Zorah_nar_Rayya&amp;c=9488058674033845161&amp;mkt=en-nz",
+      "source": "IGN",
+      "published_at": "2021-05-21T23:23:00.000Z",
+      "snippet": "Like Garrus Vakarian, Tali is a consist Squad Mate throughout the entire trilogy. The Quarians have one of the most complex arcs, so Tali by your side is a vital ally and crucial resource. She's a ..."
+    },
+    {
+      "id": "tali-7542495ebdc1e93b",
+      "dj_id": "tali",
+      "title": "TALi Digital Acquires YCDI!, Raises Capital",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c0b6cf44f5c855b41a85da23af8&amp;url=https%3a%2f%2fwww.sharecafe.com.au%2f2025%2f06%2f16%2ftali-digital-acquires-ycdi-raises-capital%2f&amp;c=8019698297656036226&amp;mkt=en-nz",
+      "source": "sharecafe",
+      "published_at": "2025-06-15T19:40:00.000Z",
+      "snippet": "Strategic acquisition and $1.5M equity raising to bolster education initiatives. TALi Digital Ltd (ASX:TD1) has announced the acquisition of You Can Do It! (YCDI!) Education for $1.34 million, ..."
     },
     {
       "id": "broderbeats-0af2474cebc940a3",
@@ -9033,6 +9810,13 @@
       "platform": "mixcloud"
     },
     {
+      "id": "tali-mixcloud-b54aeb899f91",
+      "dj_id": "tali",
+      "title": "KFMI: CJ Dread Captures – MC Tali",
+      "url": "https://www.mixcloud.com/KaneFM/kfmi-cj-dread-captures-mc-tali/",
+      "platform": "mixcloud"
+    },
+    {
       "id": "dj-fitchie-mixcloud-470a6e1bb82d",
       "dj_id": "dj-fitchie",
       "title": "Dedicated to DJ Fitchie",
@@ -9201,6 +9985,13 @@
       "platform": "mixcloud"
     },
     {
+      "id": "tali-mixcloud-e633a09f0042",
+      "dj_id": "tali",
+      "title": "Soulful Hip Hop Vol. 1: The Roots, Talib Kweli, J Dilla, De La Soul, Masta Ace, The Pharcyde, Q-tip",
+      "url": "https://www.mixcloud.com/mol_/soulful-hip-hop-vol-1-the-roots-talib-kweli-j-dilla-de-la-soul-masta-ace-the-pharcyde-q-tip/",
+      "platform": "mixcloud"
+    },
+    {
       "id": "frank-booker-mixcloud-5bd4cec1c400",
       "dj_id": "frank-booker",
       "title": "Frank Booker DJ Mix 2011",
@@ -9220,6 +10011,13 @@
       "title": "Frank Booker - People Must Jam Mix",
       "url": "https://www.mixcloud.com/ElectronicBunker/frank-booker-people-must-jam-mix/",
       "platform": "mixcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-0bc9bf3c8431",
+      "dj_id": "frank-booker",
+      "title": "House of Booker 2026",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-2026",
+      "platform": "soundcloud"
     },
     {
       "id": "sian-mixcloud-22e5a1ff1a41",
@@ -9570,6 +10368,13 @@
       "title": "Wu York State Of Mind",
       "url": "https://www.mixcloud.com/DjGreenLantern/wu-york-state-of-mind/",
       "platform": "mixcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-31f9ae3d4db3",
+      "dj_id": "frank-booker",
+      "title": "Resonate Mixtape",
+      "url": "https://soundcloud.com/frankbooker/resonate-mix-aug-25-pn",
+      "platform": "soundcloud"
     },
     {
       "id": "state-of-mind-mixcloud-758c48f50653",
@@ -9936,6 +10741,62 @@
       "platform": "mixcloud"
     },
     {
+      "id": "tali-mixcloud-0798caa41704",
+      "dj_id": "tali",
+      "title": "Erick Sermon \"Best of Production\" ft Redman, EPMD, LL Cool J, Method Man, Marvin Gaye, Talib Kweli ",
+      "url": "https://www.mixcloud.com/DiscConnected/erick-sermon-vol-1-ft-redman-epmd-ll-cool-j-method-man-marvin-gaye-talib-kweli-keith-murray/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-864688800f9c",
+      "dj_id": "frank-booker",
+      "title": "Underground Disco Mixtape",
+      "url": "https://soundcloud.com/frankbooker/underground-disco-mixtape",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "tali-mixcloud-772f8d2d1c50",
+      "dj_id": "tali",
+      "title": "Best Of Arcangel (Hosted By Tali) - DJ J STAR",
+      "url": "https://www.mixcloud.com/DJJSTAR/best-of-arcangel-hosted-by-tali-dj-j-star/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-b551cbf15a2d",
+      "dj_id": "tali",
+      "title": "#JagerReform - From Manchester With Love w/ DJ Marky, MC Tali, Inja & Chimpo 14th May 2020",
+      "url": "https://www.mixcloud.com/reformradio/jagerreform-from-manchester-with-love-14th-may-2020/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-8598f8f5cd60",
+      "dj_id": "tali",
+      "title": "Zero Gravity Guest Mix  EP #001 Tali Muss",
+      "url": "https://www.mixcloud.com/zerogravitymix/zero-gravity-guest-mix-by-tali-muss/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-2cfc42400e9f",
+      "dj_id": "tali",
+      "title": "MC Tali feat. Machete + Scooba -Respect DnB Radio [9.21.11]",
+      "url": "https://www.mixcloud.com/respectdnb/mc-tali-feat-machete-scooba-respect-dnb-radio-92111/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-0477b8083eb1",
+      "dj_id": "tali",
+      "title": "Downsouth Vibes - EP 140 By Tali Muss",
+      "url": "https://www.mixcloud.com/rachith-roshan/downsouth-vibes-ep-140-by-tali-muss/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-e04682511210",
+      "dj_id": "tali",
+      "title": "Supercell & EGOIST-Shaking Headphone Mix- vol.1",
+      "url": "https://www.mixcloud.com/talismansound/supercell-egoist-shaking-headphone-mix/",
+      "platform": "mixcloud"
+    },
+    {
       "id": "don-luchito-mixcloud-2af5a026bbe9",
       "dj_id": "don-luchito",
       "title": "Chronic Shnxman Intervew with Don Luchito 6-4-18",
@@ -9943,10 +10804,45 @@
       "platform": "mixcloud"
     },
     {
+      "id": "tali-mixcloud-e3a26f5efcb9",
+      "dj_id": "tali",
+      "title": "DJ Bailey & MC Tali Live",
+      "url": "https://www.mixcloud.com/alyens/dj-bailey-mc-tali-live/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-0df69433ce7d",
+      "dj_id": "tali",
+      "title": "'Secret Category' Mixtape #1",
+      "url": "https://www.mixcloud.com/talipolak/aviva-zilberman-secret-category-mixtape-2/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-866ed21e8c1f",
+      "dj_id": "tali",
+      "title": "Selectors Choice: DON TALI ECHO",
+      "url": "https://www.mixcloud.com/GreensleevesRec/selectors-choice-don-tali-echo/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-5f71de4afde3",
+      "dj_id": "tali",
+      "title": "'Secret Category' Mixtape",
+      "url": "https://www.mixcloud.com/talipolak/secret-category-mixtape-2/",
+      "platform": "mixcloud"
+    },
+    {
       "id": "producer-emma-mixcloud-14b94b322a29",
       "dj_id": "producer-emma",
       "title": "Tuesday Tune with Producer Emma-03/03/2026",
       "url": "https://www.mixcloud.com/Radioactive_FM/tuesday-tune-with-producer-emma-03032026/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-eda36f2817bc",
+      "dj_id": "tali",
+      "title": "EchoPlex Episode 28 - Guest Mix By Tali Muss",
+      "url": "https://www.mixcloud.com/ECHOPLEX-ADEEP/echoplex-episode-28-guest-mix-by-tali-muss/",
       "platform": "mixcloud"
     },
     {
@@ -10129,6 +11025,13 @@
       "dj_id": "frida",
       "title": "Mix To Win: Frida and the Oneironauts",
       "url": "https://www.mixcloud.com/Mej%C3%ADas/mix-to-win-frida-and-the-oneironauts/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-fd42038c764c",
+      "dj_id": "tali",
+      "title": "Progressive Mantra Mix - Stan Kolev - Teklix - Tali Muss - Matan Caspi - Yilo Mix",
+      "url": "https://www.mixcloud.com/Yilmaz%C3%96zdil/progressive-mantra-mix-stan-kolev-teklix-tali-muss-matan-caspi-yilo-mix/",
       "platform": "mixcloud"
     },
     {
@@ -10937,6 +11840,125 @@
       "platform": "mixcloud"
     },
     {
+      "id": "tali-mixcloud-895b88c354d2",
+      "dj_id": "tali",
+      "title": "DJ Emma G featuring MC Tali (Superfine Music - New Zealand) @ Soulside Sessions Vol. 08 (18.03.2016)",
+      "url": "https://www.mixcloud.com/evil_concussion/dj-emma-g-featuring-mc-tali-superfine-music-new-zealand-soulside-sessions-vol-08-18032016/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-1266cffc4774",
+      "dj_id": "tali",
+      "title": "DJ Emma G & MC Tali - Soulside Sessions Vol. 7",
+      "url": "https://www.mixcloud.com/avid/dj-emma-g-mc-tali-soulside-sessions-vol-7/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-114ce474d249",
+      "dj_id": "tali",
+      "title": "Tali Baba DJ  Set - Goa Full On Festival Feb 2016",
+      "url": "https://www.mixcloud.com/tali_baba/tali-baba-dj-set-goas-full-on-festival-feb-2016/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-da9c4fb4aaf2",
+      "dj_id": "tali",
+      "title": "The Universe Inside Me #2 - Tali Muss , Teklix",
+      "url": "https://www.mixcloud.com/eranga-sewmina/the-universe-inside-me-2-tali-muss-teklix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-79870f25447b",
+      "dj_id": "tali",
+      "title": "Supercell & EGOIST-Shaking Headphone Mix- vol.2",
+      "url": "https://www.mixcloud.com/talismansound/supercell-egoist-shaking-headphone-mix-vol2/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-ac8cf17e0f9c",
+      "dj_id": "tali",
+      "title": "Eonity Mixes #004 - Tali Rush - 'Movin' Bass'",
+      "url": "https://www.mixcloud.com/EonityMixes/eonity-mixes-004-tali-rush-movin-bass/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-4f31fca709a0",
+      "dj_id": "tali",
+      "title": "Tali's Mix",
+      "url": "https://www.mixcloud.com/nome-edonna/talis-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-60c615b9c662",
+      "dj_id": "tali",
+      "title": "Liquid Drum & Bass - Dreazz & Tali - Love & Migration 30 Min Album Mix",
+      "url": "https://www.mixcloud.com/FokuzRecordingsNL/liquid-drum-bass-dreazz-tali-love-migration-30-min-album-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-a1d73f454112",
+      "dj_id": "tali",
+      "title": "Indie Dance Mix 2023 - Stan Kolev - Teklix - Jon.K - Zafrir - Tali Muss - Anatolian Sessions",
+      "url": "https://www.mixcloud.com/Yilmaz%C3%96zdil/indie-dance-mix-2023-stan-kolev-teklix-jonk-zafrir-tali-muss-anatolian-sessions/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-5a44020f1b9e",
+      "dj_id": "tali",
+      "title": "Tali Muss guest mix",
+      "url": "https://www.mixcloud.com/LUCHiSVETA/tali-muss-guest-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-a16c3cc75e28",
+      "dj_id": "tali",
+      "title": "SUBCODE PRESENT - IMMERSION #17 GUEST MIX BY TALI MUSS",
+      "url": "https://www.mixcloud.com/fanno-faheem/subcode-present-immersion-17-guest-mix-by-tali-muss/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-d9f203a66d00",
+      "dj_id": "tali",
+      "title": "Dj Patife & MC Tali @ BBC Radio 1 Worldwide Snowbombing Mix 11-04-2002",
+      "url": "https://www.mixcloud.com/Tande/dj-patife-mc-tali-bbc-radio-1-worldwide-snowbombing-mix-11-04-2002/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-10b6d5982afa",
+      "dj_id": "tali",
+      "title": "Tali Ben Itzhak - Voodoo Mix",
+      "url": "https://www.mixcloud.com/raashhour/tali-ben-itzhak-voodoo-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-49f709c846c5",
+      "dj_id": "tali",
+      "title": "Allintune Radio #3 Guest Mix: Tali Rush",
+      "url": "https://www.mixcloud.com/Allintwo/allintune-radio-3-guest-mix-tali-rush/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-7d9832f6a9bd",
+      "dj_id": "tali",
+      "title": "Tali Ben Itzhak Bedroom Mix",
+      "url": "https://www.mixcloud.com/raashhour/tali-ben-itzhak-bedroom-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-97d2c97f5dfd",
+      "dj_id": "tali",
+      "title": "Tali Muss - ESM radio 027 guest mix",
+      "url": "https://www.mixcloud.com/TALI_MUSS/tali-muss-esm-radio-027-guest-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-6e5bbb204011",
+      "dj_id": "tali",
+      "title": "PROGRESSIVE INDIE MANTRA HOUSE MIX 2024 | MANTRA THERAPY | TEKLIX | TALI MUSS | CANIS MIXTAPE",
+      "url": "https://www.mixcloud.com/canismusic/progressive-indie-mantra-house-mix-2024-mantra-therapy-teklix-tali-muss-canis-mixtape/",
+      "platform": "mixcloud"
+    },
+    {
       "id": "tv-disko-mixcloud-9b66a0fa4722",
       "dj_id": "tv-disko",
       "title": "Music Without Subtitles, May 12th, 2012",
@@ -11068,6 +12090,510 @@
       "title": "Music Without Subtitles, L'Eighties Night (Radio Mix)",
       "url": "https://www.mixcloud.com/tvdisko/music-without-subtitles-leighties-night-radio-mix/",
       "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-5fd890755048",
+      "dj_id": "tali",
+      "title": "Live Mix by Godi Gipsy Soul Aioaska Escape E-Mov Divination One Function Orisma Silent Sphere Talies",
+      "url": "https://www.mixcloud.com/manuel-godemann/live-mix-by-godi-gipsy-soul-aioaska-escape-e-mov-divination-one-function-orisma-silent-sphere-talies/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "tali-mixcloud-5fc732c8eb92",
+      "dj_id": "tali",
+      "title": "Tali Baba Dj Set - Halloween Witch Bitch (Visionary Shamanics Records Promo Mix) 31/10/14",
+      "url": "https://www.mixcloud.com/tali_baba/tali-baba-dj-set-halloween-witch-bitch-visionary-shamanics-records-promo-mix-311014/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-0b9b2895df79",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker Mixtape 2025",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-mixtape-2025",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-a351e1b71f39",
+      "dj_id": "frank-booker",
+      "title": "Live @ Double Whammy (September, 2024)",
+      "url": "https://soundcloud.com/frankbooker/live-double-whammy-september-2024",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-35eb963403d7",
+      "dj_id": "frank-booker",
+      "title": "Changing Times Mix",
+      "url": "https://soundcloud.com/frankbooker/changing-times-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-d5c7a7ae1349",
+      "dj_id": "frank-booker",
+      "title": "HOUSE OF BOOKER / 2024",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-2024",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-ee7f702de1d7",
+      "dj_id": "frank-booker",
+      "title": "Booker X Hauswerk",
+      "url": "https://soundcloud.com/frankbooker/booker-x-hauswerk",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-d34050d97303",
+      "dj_id": "frank-booker",
+      "title": "HOUSE KEEPING",
+      "url": "https://soundcloud.com/frankbooker/house-keeping",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-73ac3b81889a",
+      "dj_id": "frank-booker",
+      "title": "Welcome 2... House Of Booker",
+      "url": "https://soundcloud.com/frankbooker/welcome-2-house-of-booker",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-d6f1871d932e",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker Mix 001: Manuel Bundy",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-mix-001-manuel-bundy",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-b696f219f940",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker: Episode 4 - Disco",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-episode-4-disco",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-2a62f7477d95",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker: Episode 3 - House + NYC Garage",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-episode-3-house-nyc-garage",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-8e2fce691a06",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker: Episode 2 - Boogie + Proto-House",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-episode-2-boogie-proto-house",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-cf2a5fd1cf98",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker: Episode 1 - Broken Beat",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-episode-1-broken-beat",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-5340bf7f0efa",
+      "dj_id": "frank-booker",
+      "title": "Splore 2022: Find Yourself A Friend Mix",
+      "url": "https://soundcloud.com/frankbooker/frank-booker-splore-2022-find-yourself-a-friend-mix-pn",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-b94b7cd4b941",
+      "dj_id": "frank-booker",
+      "title": "Thank U (aka Just Do You Part 2)",
+      "url": "https://soundcloud.com/frankbooker/thank-u-aka-just-do-you-part-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-b9328ec19fe9",
+      "dj_id": "frank-booker",
+      "title": "Welcome to the club...",
+      "url": "https://soundcloud.com/frankbooker/welcome-to-the-club",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-7b1c5099f089",
+      "dj_id": "frank-booker",
+      "title": "Do It (Edit)",
+      "url": "https://soundcloud.com/frankbooker/do-it-edit",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-0a08e389d1be",
+      "dj_id": "frank-booker",
+      "title": "Basement Boogie",
+      "url": "https://soundcloud.com/frankbooker/basement-boogie",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-5633d8499778",
+      "dj_id": "frank-booker",
+      "title": "ISO MIX 007 - Bandcamp Mixtape",
+      "url": "https://soundcloud.com/frankbooker/iso-mix-007-bandcamp-mixtape",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-d665b69c4efb",
+      "dj_id": "frank-booker",
+      "title": "ISO Mix 006 - Thank You Bohannon",
+      "url": "https://soundcloud.com/frankbooker/iso-mix-006-thank-you-bohannon",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-efd30451fe89",
+      "dj_id": "frank-booker",
+      "title": "ISO Mix 005",
+      "url": "https://soundcloud.com/frankbooker/iso-mix-005",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-4e354a10d31f",
+      "dj_id": "frank-booker",
+      "title": "Iso Mix 004 - 45 Friday",
+      "url": "https://soundcloud.com/frankbooker/iso-mix-004-45-friday",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-bf36e7fc41bf",
+      "dj_id": "frank-booker",
+      "title": "Love Letter Mixtape",
+      "url": "https://soundcloud.com/frankbooker/love-letter-mixtape",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-f7fda5794852",
+      "dj_id": "frank-booker",
+      "title": "ISO Mix 002",
+      "url": "https://soundcloud.com/frankbooker/iso-mix-vol-002",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-93bd36838cd1",
+      "dj_id": "frank-booker",
+      "title": "ISO Mix 001",
+      "url": "https://soundcloud.com/frankbooker/iso-mix-001",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-52577f411db5",
+      "dj_id": "frank-booker",
+      "title": "Pleasure... For The People Mix 2019",
+      "url": "https://soundcloud.com/frankbooker/pleasure-for-the-people-mix-2019",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-77b039a8784c",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker 2019",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker-2019",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-ac21d28d6972",
+      "dj_id": "frank-booker",
+      "title": "Just Do You Mixtape 2017",
+      "url": "https://soundcloud.com/frankbooker/missing-you-mixtape-booker-on-the-road-2017",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-fc88d2559cfe",
+      "dj_id": "frank-booker",
+      "title": "Rotary Connection Volume 4",
+      "url": "https://soundcloud.com/frankbooker/rotary-connection-volume-4",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-fd67cb0f3aa3",
+      "dj_id": "frank-booker",
+      "title": "Live at Rotary Disco, Sydney (15 July, 2016)",
+      "url": "https://soundcloud.com/frankbooker/live-at-rotary-disco-sydney-15-july-2016",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-edb87287f320",
+      "dj_id": "frank-booker",
+      "title": "Down In The Basement Vol.3",
+      "url": "https://soundcloud.com/frankbooker/down-in-the-basement-vol3",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-21e76fcb91b0",
+      "dj_id": "frank-booker",
+      "title": "Discobelle Mix 127",
+      "url": "https://soundcloud.com/frankbooker/discobelle-mix-127",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-d2bc9eca48f0",
+      "dj_id": "frank-booker",
+      "title": "Lucia Mixtape",
+      "url": "https://soundcloud.com/frankbooker/lucia-mixtape",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-06cdd90ca308",
+      "dj_id": "frank-booker",
+      "title": "Side A2 (Down In The Basement 001)",
+      "url": "https://soundcloud.com/frankbooker/24-hour-dl-side-a2-down-in-the-basement-001",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-6d8c97fd6970",
+      "dj_id": "frank-booker",
+      "title": "Sequence of Movement (PREVIEW)",
+      "url": "https://soundcloud.com/frankbooker/sequence-of-movement-preview",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-545e29b14a6b",
+      "dj_id": "frank-booker",
+      "title": "Unburdened (Unmixed) - Forthcoming on Kolour LTD",
+      "url": "https://soundcloud.com/frankbooker/unburdened-demo-clip-unmixed",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-f24d4449e6f3",
+      "dj_id": "frank-booker",
+      "title": "Down In The Basement Vol 2: Julien Dyne Edits       (*LOW RES PREVIEW*)",
+      "url": "https://soundcloud.com/frankbooker/down-in-the-basement-vol-2-julien-dyne-edits-low-res-preview",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-6a698a96f70f",
+      "dj_id": "frank-booker",
+      "title": "Destination Mixtape: Europe + USA 2015 Tour",
+      "url": "https://soundcloud.com/frankbooker/destination-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-0c643c88145d",
+      "dj_id": "frank-booker",
+      "title": "45 Friday Mixtape (Edit Version)",
+      "url": "https://soundcloud.com/frankbooker/45-friday-mixtape-edit-version",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-aebf0fee9f01",
+      "dj_id": "frank-booker",
+      "title": "Rotary Connection Volume Three",
+      "url": "https://soundcloud.com/frankbooker/rotary-connection-volume-three",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-b1feec2df723",
+      "dj_id": "frank-booker",
+      "title": "Down In The Basement Vol.1 (Sneak Preview)",
+      "url": "https://soundcloud.com/frankbooker/down-in-the-basement-vol1-sneak-preview",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "frank-booker-soundcloud-143b985294f5",
+      "dj_id": "frank-booker",
+      "title": "House Of Booker (Press Play #76)",
+      "url": "https://soundcloud.com/frankbooker/house-of-booker",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-2f73707193cf",
+      "dj_id": "estere",
+      "title": "Tokyo drift",
+      "url": "https://soundcloud.com/esterelapa56/tokyo-drift",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-a7c2fed07539",
+      "dj_id": "estere",
+      "title": "Моя Е61 (Дрифт в сердце)",
+      "url": "https://soundcloud.com/esterelapa56/moya-e61-drift-v-serdcze",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-cbcb8c6fd44f",
+      "dj_id": "estere",
+      "title": "Без тормозов",
+      "url": "https://soundcloud.com/esterelapa56/bez-tormozov",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-4fc2130bcca2",
+      "dj_id": "estere",
+      "title": "2026-03-30 00-48-Между светом и трассой -HQ-M3I4GU.wav.mp3",
+      "url": "https://soundcloud.com/esterelapa56/2026-03-30-00-48-mezhdu-svetom",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-f4021fbc70c0",
+      "dj_id": "estere",
+      "title": "Между светом и трассой",
+      "url": "https://soundcloud.com/esterelapa56/mezhdu-svetom-i-trassoi",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-7a91f1d0cc0c",
+      "dj_id": "estere",
+      "title": "Разбитая",
+      "url": "https://soundcloud.com/esterelapa56/razbitaya",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-28ea93fe356b",
+      "dj_id": "estere",
+      "title": "С днем рождением любимая❤️",
+      "url": "https://soundcloud.com/esterelapa56/s-dnem-rozhdeniem-lyubimaya-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-817c1d0a5298",
+      "dj_id": "estere",
+      "title": "С днем рождением любимая",
+      "url": "https://soundcloud.com/esterelapa56/s-dnem-rozhdeniem-lyubimaya",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-fb51e03e2c0c",
+      "dj_id": "estere",
+      "title": "Boom x Бродяга",
+      "url": "https://soundcloud.com/estere-279037855/boom-x-brodyaga",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-dd7d40e5d046",
+      "dj_id": "estere",
+      "title": "VICTORY LAP   UPTEMPO  REMIX",
+      "url": "https://soundcloud.com/queen-estere/victory-lap-uptempo-remix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-3bcbe5f7e147",
+      "dj_id": "estere",
+      "title": "WORLD HOLD ON X BENT QUEEN ESTERE  BLEND X MASHUP",
+      "url": "https://soundcloud.com/queen-estere/world-hold-on-x-bent-final",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-504080356b06",
+      "dj_id": "estere",
+      "title": "ON MY LONDON TING QUEEN ESTERE  DJ MIX",
+      "url": "https://soundcloud.com/queen-estere/on-my-london-ting-queen-estere-dj-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-12b7313f3b6a",
+      "dj_id": "estere",
+      "title": "FEELS LIKE SUMMER PT.2 MIXED BY QUEEN ESTERE",
+      "url": "https://soundcloud.com/queen-estere/feels-like-summer-pt2-mixed-by-queen-estere",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-d4d843aa31ee",
+      "dj_id": "estere",
+      "title": "QUEEN ESTERE  FEELS LIKE SUMMER MIX  DANCE , CLUB ,PARTY",
+      "url": "https://soundcloud.com/queen-estere/queen-estere-feels-like-summer-mix-dance-club-party",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-146c80500865",
+      "dj_id": "estere",
+      "title": "AND THE OSCAR GOES TO... DJ QUEEN ESTERE LIVE OSCARS NIGHT MIX 2025",
+      "url": "https://soundcloud.com/queen-estere/and-the-oscar-goes-to-dj-queen-estere-live-oscars-night-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-5eaee00f2e58",
+      "dj_id": "estere",
+      "title": "QUEEN ESTERE PUMP THAT TECHNO MIX",
+      "url": "https://soundcloud.com/queen-estere/queen-estere-pump-that-techno-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-e1c63b3d43a9",
+      "dj_id": "estere",
+      "title": "QUEEN ESTERE  HOLLY JOLLY MIX",
+      "url": "https://soundcloud.com/queen-estere/queen-estere-holly-jolly-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-87f561d9f48f",
+      "dj_id": "estere",
+      "title": "GIMME MY DRUM N BASS MIX",
+      "url": "https://soundcloud.com/queen-estere/gimme-my-drum-n-bass-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-375af8f8f8c8",
+      "dj_id": "estere",
+      "title": "WE BE CLUBBIN' QUEEN ESTERE MIX",
+      "url": "https://soundcloud.com/queen-estere/we-be-clubbin-queen-estere-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-f82dc2e1a67d",
+      "dj_id": "estere",
+      "title": "QUEEN ESTERE BANGS !  MIX",
+      "url": "https://soundcloud.com/queen-estere/queen-estere-bangs-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-4e76ccc8d191",
+      "dj_id": "estere",
+      "title": "I'M SO JERSEY CLUB MIX",
+      "url": "https://soundcloud.com/queen-estere/im-so-jersey-club-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "estere-soundcloud-6083994ea82b",
+      "dj_id": "estere",
+      "title": "I'LL TECH HOUSE U  MIX",
+      "url": "https://soundcloud.com/queen-estere/tech-house-u-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "broderbeats-soundcloud-d3f0b388bba1",
+      "dj_id": "broderbeats",
+      "title": "Titanium x levitation (broderbeats D&B Edit)",
+      "url": "https://soundcloud.com/broderbeats/titanium-x-levitation-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "broderbeats-soundcloud-dbb906c348d1",
+      "dj_id": "broderbeats",
+      "title": "Bang Bang - Jessie J, Ariana Grande, Nicki Minaj (broderbeats Jersey Edit)",
+      "url": "https://soundcloud.com/broderbeats/bang-bang-jessie-j-broderbeats-jersey-edit",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "broderbeats-soundcloud-c5dffbb4fdd7",
+      "dj_id": "broderbeats",
+      "title": "Fridoof on George FM - broderbeats Guest Mix",
+      "url": "https://soundcloud.com/broderbeats/fridoof-on-george-fm-broderbeats-guest-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "broderbeats-soundcloud-f52c3a8b7322",
+      "dj_id": "broderbeats",
+      "title": "broderbeats Opener DJ Set | Odd Mob @ Eva Wellington",
+      "url": "https://soundcloud.com/broderbeats/broderbeats-opener-dj-set-odd-mob-eva-wellington",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "broderbeats-soundcloud-d48a3737b694",
+      "dj_id": "broderbeats",
+      "title": "broderbeats DJ Set | Rhythm and Vines 2024 | Waiohika Warmup",
+      "url": "https://soundcloud.com/broderbeats/broderbeats-dj-set-rhythm-and-vines-2024-waiohika-warmup",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "broderbeats-soundcloud-a59977eca4e3",
+      "dj_id": "broderbeats",
+      "title": "SUPERFLY",
+      "url": "https://soundcloud.com/broderbeats-music/superfly",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "broderbeats-soundcloud-dc96681d545d",
+      "dj_id": "broderbeats",
+      "title": "BOUNCE",
+      "url": "https://soundcloud.com/broderbeats-music/bounce",
+      "platform": "soundcloud"
     }
   ],
   "eventDjs": [
