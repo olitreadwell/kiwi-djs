@@ -1,74 +1,6 @@
 {
-  "exportedAt": "2026-08-29T08:36:38.944Z",
+  "exportedAt": "2026-08-29T08:37:39.143Z",
   "djs": [
-    {
-      "id": "frida",
-      "name": "Frida",
-      "bio": null,
-      "genres": [
-        "Pop",
-        "jazz",
-        "pop"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-TqAp7PG0xmjuVINL-t9QVoQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/exxtratell",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 40,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.468Z",
-      "updated_at": "2026-08-29T06:01:58.309Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "estere",
-      "name": "Estere",
-      "bio": null,
-      "genres": [
-        "Alternative"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-r2xzAdRCppmtiYFI-DkajpQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/queen-estere",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 40,
-      "source": "manual",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:43:58.604Z",
-      "updated_at": "2026-08-29T07:10:51.894Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
     {
       "id": "frank-booker",
       "name": "Frank Booker",
@@ -141,12 +73,47 @@
       "last_played_at": null
     },
     {
+      "id": "estere",
+      "name": "Estere",
+      "bio": null,
+      "genres": [
+        "Alternative"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-r2xzAdRCppmtiYFI-DkajpQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/queen-estere",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 40,
+      "source": "manual",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:43:58.604Z",
+      "updated_at": "2026-08-29T07:10:51.894Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "state-of-mind",
       "name": "State of Mind",
       "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
       "genres": [
         "Dance",
-        "drum & bass"
+        "drum & bass",
+        "drum and bass",
+        "electronic"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
@@ -154,10 +121,10 @@
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": null,
+      "website_url": "http://www.stateofmindnz.com/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
+      "data_completeness": 65,
       "source": "seed",
       "opt_out": false,
       "created_at": "2026-08-28T12:17:48.356Z",
@@ -204,30 +171,61 @@
       "last_played_at": null
     },
     {
-      "id": "concord-dawn",
-      "name": "Concord Dawn",
-      "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
+      "id": "dj-fitchie",
+      "name": "DJ Fitchie",
+      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
       "genres": [
-        "Electronic",
-        "dance",
-        "drum & bass",
-        "drum and bass",
-        "electronic"
+        "Reggae",
+        "funk",
+        "hip-hop",
+        "reggae",
+        "soul"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000001604320-vel4a7-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/concord-dawn-1",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": "http://www.concord-dawn.co.nz/",
+      "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 65,
+      "data_completeness": 55,
       "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.358Z",
+      "created_at": "2026-08-28T12:17:48.346Z",
       "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "don-luchito",
+      "name": "Don Luchito",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 4,
+      "data_completeness": 0,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.488Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -269,69 +267,6 @@
         "links",
         "articles",
         "gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "don-luchito",
-      "name": "Don Luchito",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 4,
-      "data_completeness": 0,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.488Z",
-      "updated_at": "2026-08-29T06:01:58.309Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "broderbeats",
-      "name": "Broderbeats",
-      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
-      "genres": [
-        "Electronic"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 55,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-29T03:51:17.871Z",
-      "updated_at": "2026-08-29T04:36:25.685Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "articles"
       ],
       "is_nz": true,
       "upcoming_events": 0,
@@ -404,7 +339,8 @@
       "name": "Lucas",
       "bio": null,
       "genres": [
-        "K-Pop"
+        "K-Pop",
+        "rock"
       ],
       "city": "Wellington",
       "image_url": "https://i1.sndcdn.com/avatars-0qvoPzot1nVJEwsX-aO0JyQ-large.jpg",
@@ -412,10 +348,10 @@
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": null,
+      "website_url": "http://www.garylucas.com/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 40,
+      "data_completeness": 50,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.591Z",
@@ -433,35 +369,67 @@
       "last_played_at": null
     },
     {
-      "id": "dj-fitchie",
-      "name": "DJ Fitchie",
-      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
+      "id": "concord-dawn",
+      "name": "Concord Dawn",
+      "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
       "genres": [
-        "Reggae",
-        "funk",
-        "hip-hop",
-        "reggae",
-        "soul"
+        "Electronic",
+        "dance",
+        "drum & bass",
+        "drum and bass",
+        "electronic"
       ],
       "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
+      "image_url": "https://i1.sndcdn.com/avatars-000001604320-vel4a7-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/concord-dawn-1",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": null,
+      "website_url": "http://www.concord-dawn.co.nz/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
+      "data_completeness": 65,
       "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.346Z",
+      "created_at": "2026-08-28T12:17:48.358Z",
       "updated_at": "2026-08-29T04:36:25.685Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
       "verification_sources": [
         "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "broderbeats",
+      "name": "Broderbeats",
+      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
+      "genres": [
+        "Electronic"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 55,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-29T03:51:17.871Z",
+      "updated_at": "2026-08-29T04:36:25.685Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
         "links",
         "articles"
       ],
@@ -710,6 +678,41 @@
       "last_played_at": null
     },
     {
+      "id": "frida",
+      "name": "Frida",
+      "bio": null,
+      "genres": [
+        "Pop",
+        "jazz",
+        "pop"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-TqAp7PG0xmjuVINL-t9QVoQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/exxtratell",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 40,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.468Z",
+      "updated_at": "2026-08-29T06:01:58.309Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "geneva-am",
       "name": "Geneva AM",
       "bio": null,
@@ -774,7 +777,8 @@
       "name": "Millie",
       "bio": null,
       "genres": [
-        "Hip-Hop/Rap"
+        "Hip-Hop/Rap",
+        "soul"
       ],
       "city": "Wellington",
       "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
@@ -782,10 +786,10 @@
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": null,
+      "website_url": "https://www.weirdwreckuds.com/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 40,
+      "data_completeness": 50,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.622Z",
@@ -816,10 +820,10 @@
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": null,
+      "website_url": "http://www.djsian.com/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
+      "data_completeness": 65,
       "source": "seed",
       "opt_out": false,
       "created_at": "2026-08-28T12:17:48.353Z",
@@ -897,37 +901,6 @@
       "last_played_at": null
     },
     {
-      "id": "tv-disko",
-      "name": "TV DiSKO",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 0,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.855Z",
-      "updated_at": "2026-08-29T08:35:40.023Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
       "id": "herman-saiz",
       "name": "Herman Saiz",
       "bio": null,
@@ -986,6 +959,38 @@
         "links",
         "gigs",
         "multi-gigs"
+      ],
+      "is_nz": true,
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "tv-disko",
+      "name": "TV DiSKO",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 0,
+      "source": "radioactive",
+      "opt_out": false,
+      "created_at": "2026-08-29T04:18:26.855Z",
+      "updated_at": "2026-08-29T08:37:35.686Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
+        "gigs"
       ],
       "is_nz": true,
       "upcoming_events": 1,
@@ -7265,6 +7270,181 @@
       "label": "youtube: https://www.youtube.com/channel/UCD5UM4gIgNNfOFwwqELU8ig"
     },
     {
+      "id": "sian-bandsintown-8eb0f495e564",
+      "dj_id": "sian",
+      "type": "bandsintown",
+      "url": "https://www.bandsintown.com/a/12319899",
+      "label": "bandsintown: https://www.bandsintown.com/a/12319899"
+    },
+    {
+      "id": "sian-discogs-c4de0638de47",
+      "dj_id": "sian",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/225388",
+      "label": "discogs: https://www.discogs.com/artist/225388"
+    },
+    {
+      "id": "sian-free streaming-78bdeb499587",
+      "dj_id": "sian",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/4JkX37Ibpb0cJq2IItah0y",
+      "label": "free streaming: https://open.spotify.com/artist/4JkX37Ibpb0cJq2IItah0y"
+    },
+    {
+      "id": "sian-free streaming-a4ce384f7202",
+      "dj_id": "sian",
+      "type": "free streaming",
+      "url": "https://www.deezer.com/artist/75049",
+      "label": "free streaming: https://www.deezer.com/artist/75049"
+    },
+    {
+      "id": "sian-website-d19e563c5b1e",
+      "dj_id": "sian",
+      "type": "website",
+      "url": "http://www.djsian.com/",
+      "label": "official homepage: http://www.djsian.com/"
+    },
+    {
+      "id": "sian-other databases-9c1771eb08dd",
+      "dj_id": "sian",
+      "type": "other databases",
+      "url": "https://rateyourmusic.com/artist/sian_f1",
+      "label": "other databases: https://rateyourmusic.com/artist/sian_f1"
+    },
+    {
+      "id": "sian-purchase for download-f12dd805aae8",
+      "dj_id": "sian",
+      "type": "purchase for download",
+      "url": "https://www.beatport.com/artist/sian/10794",
+      "label": "purchase for download: https://www.beatport.com/artist/sian/10794"
+    },
+    {
+      "id": "sian-social network-728d856490c5",
+      "dj_id": "sian",
+      "type": "social network",
+      "url": "https://twitter.com/DJSianOfficial",
+      "label": "social network: https://twitter.com/DJSianOfficial"
+    },
+    {
+      "id": "sian-social network-2a019425ae6f",
+      "dj_id": "sian",
+      "type": "social network",
+      "url": "https://www.facebook.com/SianOfficial",
+      "label": "social network: https://www.facebook.com/SianOfficial"
+    },
+    {
+      "id": "sian-social network-a6afc68bc874",
+      "dj_id": "sian",
+      "type": "social network",
+      "url": "https://www.instagram.com/sianofficial/",
+      "label": "social network: https://www.instagram.com/sianofficial/"
+    },
+    {
+      "id": "sian-streaming-f6ebb94b97d4",
+      "dj_id": "sian",
+      "type": "streaming",
+      "url": "https://music.apple.com/gb/artist/82446504",
+      "label": "streaming: https://music.apple.com/gb/artist/82446504"
+    },
+    {
+      "id": "sian-streaming-a055b53fe45a",
+      "dj_id": "sian",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/3504259",
+      "label": "streaming: https://tidal.com/artist/3504259"
+    },
+    {
+      "id": "lucas-allmusic-a455520d262b",
+      "dj_id": "lucas",
+      "type": "allmusic",
+      "url": "https://www.allmusic.com/artist/mn0000988727",
+      "label": "allmusic: https://www.allmusic.com/artist/mn0000988727"
+    },
+    {
+      "id": "lucas-discogs-690329a166d6",
+      "dj_id": "lucas",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/258476",
+      "label": "discogs: https://www.discogs.com/artist/258476"
+    },
+    {
+      "id": "lucas-imdb-239c2496a03d",
+      "dj_id": "lucas",
+      "type": "imdb",
+      "url": "https://www.imdb.com/name/nm0524134/",
+      "label": "IMDb: https://www.imdb.com/name/nm0524134/"
+    },
+    {
+      "id": "lucas-last.fm-7745685247d9",
+      "dj_id": "lucas",
+      "type": "last.fm",
+      "url": "https://www.last.fm/music/Gary%20Lucas",
+      "label": "last.fm: https://www.last.fm/music/Gary%20Lucas"
+    },
+    {
+      "id": "lucas-myspace-75ee98cccca9",
+      "dj_id": "lucas",
+      "type": "myspace",
+      "url": "https://myspace.com/garylucas",
+      "label": "myspace: https://myspace.com/garylucas"
+    },
+    {
+      "id": "lucas-website-8436ce65fc61",
+      "dj_id": "lucas",
+      "type": "website",
+      "url": "http://www.garylucas.com/",
+      "label": "official homepage: http://www.garylucas.com/"
+    },
+    {
+      "id": "lucas-online community-3f1b27cd953e",
+      "dj_id": "lucas",
+      "type": "online community",
+      "url": "https://indianclassical.net/a/gary-lucas",
+      "label": "online community: https://indianclassical.net/a/gary-lucas"
+    },
+    {
+      "id": "lucas-other databases-4f11e3d65dbc",
+      "dj_id": "lucas",
+      "type": "other databases",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb142008306",
+      "label": "other databases: https://catalogue.bnf.fr/ark:/12148/cb142008306"
+    },
+    {
+      "id": "lucas-other databases-ac31592558c9",
+      "dj_id": "lucas",
+      "type": "other databases",
+      "url": "https://d-nb.info/gnd/134735595",
+      "label": "other databases: https://d-nb.info/gnd/134735595"
+    },
+    {
+      "id": "lucas-other databases-4d351590e8bf",
+      "dj_id": "lucas",
+      "type": "other databases",
+      "url": "https://rateyourmusic.com/artist/gary_lucas",
+      "label": "other databases: https://rateyourmusic.com/artist/gary_lucas"
+    },
+    {
+      "id": "lucas-viaf-c65f188de38e",
+      "dj_id": "lucas",
+      "type": "viaf",
+      "url": "http://viaf.org/viaf/42051189",
+      "label": "VIAF: http://viaf.org/viaf/42051189"
+    },
+    {
+      "id": "lucas-wikidata-fc87222bd33d",
+      "dj_id": "lucas",
+      "type": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q441904",
+      "label": "wikidata: https://www.wikidata.org/wiki/Q441904"
+    },
+    {
+      "id": "millie-allmusic-19c728e72e66",
+      "dj_id": "millie",
+      "type": "allmusic",
+      "url": "https://www.allmusic.com/artist/mn0000488859",
+      "label": "allmusic: https://www.allmusic.com/artist/mn0000488859"
+    },
+    {
       "id": "club-medder-soundcloud-20c009922185",
       "dj_id": "club-medder",
       "type": "soundcloud",
@@ -7277,6 +7457,335 @@
       "type": "soundcloud",
       "url": "https://soundcloud.com/club-medder-247426126",
       "label": "SoundCloud: Club Medder"
+    },
+    {
+      "id": "millie-bandsintown-cf8d74a2790a",
+      "dj_id": "millie",
+      "type": "bandsintown",
+      "url": "https://www.bandsintown.com/a/150791",
+      "label": "bandsintown: https://www.bandsintown.com/a/150791"
+    },
+    {
+      "id": "millie-discography page-7001e017e0c8",
+      "dj_id": "millie",
+      "type": "discography page",
+      "url": "http://www.acerecords.co.uk/content.php?page_id=60&artist=3565",
+      "label": "discography page: http://www.acerecords.co.uk/content.php?page_id=60&artist=3565"
+    },
+    {
+      "id": "millie-discogs-0976b11d9272",
+      "dj_id": "millie",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/94928",
+      "label": "discogs: https://www.discogs.com/artist/94928"
+    },
+    {
+      "id": "millie-free streaming-ecd458cbf2ed",
+      "dj_id": "millie",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/27XI002zivG9xuzrZ9dIb1",
+      "label": "free streaming: https://open.spotify.com/artist/27XI002zivG9xuzrZ9dIb1"
+    },
+    {
+      "id": "millie-imdb-8ae3f65ff4a9",
+      "dj_id": "millie",
+      "type": "imdb",
+      "url": "https://www.imdb.com/name/nm1821175/",
+      "label": "IMDb: https://www.imdb.com/name/nm1821175/"
+    },
+    {
+      "id": "millie-last.fm-3f56a7a78059",
+      "dj_id": "millie",
+      "type": "last.fm",
+      "url": "https://www.last.fm/music/Millie+Jackson",
+      "label": "last.fm: https://www.last.fm/music/Millie+Jackson"
+    },
+    {
+      "id": "millie-lyrics-c95275367434",
+      "dj_id": "millie",
+      "type": "lyrics",
+      "url": "http://muzikum.eu/en/122-10602/millie-jackson/lyrics.html",
+      "label": "lyrics: http://muzikum.eu/en/122-10602/millie-jackson/lyrics.html"
+    },
+    {
+      "id": "millie-myspace-29be51075bbc",
+      "dj_id": "millie",
+      "type": "myspace",
+      "url": "https://myspace.com/milliejackson69",
+      "label": "myspace: https://myspace.com/milliejackson69"
+    },
+    {
+      "id": "millie-website-461d5f2814ab",
+      "dj_id": "millie",
+      "type": "website",
+      "url": "https://www.weirdwreckuds.com/",
+      "label": "official homepage: https://www.weirdwreckuds.com/"
+    },
+    {
+      "id": "millie-other databases-f2cb3ca2a706",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "http://id.loc.gov/authorities/names/n92047680",
+      "label": "other databases: http://id.loc.gov/authorities/names/n92047680"
+    },
+    {
+      "id": "millie-other databases-c827874c6111",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb13974775c",
+      "label": "other databases: https://catalogue.bnf.fr/ark:/12148/cb13974775c"
+    },
+    {
+      "id": "millie-other databases-64dd7dcbe337",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "https://d-nb.info/gnd/134415396",
+      "label": "other databases: https://d-nb.info/gnd/134415396"
+    },
+    {
+      "id": "millie-other databases-1464a5ec37bc",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "http://snaccooperative.org/ark:/99166/w62b91q4",
+      "label": "other databases: http://snaccooperative.org/ark:/99166/w62b91q4"
+    },
+    {
+      "id": "millie-other databases-24343952f065",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "https://rateyourmusic.com/artist/millie_jackson",
+      "label": "other databases: https://rateyourmusic.com/artist/millie_jackson"
+    },
+    {
+      "id": "millie-other databases-02d7d3bf7a66",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "https://www.musik-sammler.de/artist/14732/",
+      "label": "other databases: https://www.musik-sammler.de/artist/14732/"
+    },
+    {
+      "id": "millie-other databases-2aa9fab20816",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "https://www.muziekweb.nl/Link/M00000096384/POPULAR/",
+      "label": "other databases: https://www.muziekweb.nl/Link/M00000096384/POPULAR/"
+    },
+    {
+      "id": "millie-other databases-3d2fa91b0241",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "https://www.whosampled.com/Millie-Jackson/",
+      "label": "other databases: https://www.whosampled.com/Millie-Jackson/"
+    },
+    {
+      "id": "millie-other databases-96bbf9a945c8",
+      "dj_id": "millie",
+      "type": "other databases",
+      "url": "https://www.worldcat.org/identities/lccn-n92047680",
+      "label": "other databases: https://www.worldcat.org/identities/lccn-n92047680"
+    },
+    {
+      "id": "millie-purchase for download-cb6dc54f0605",
+      "dj_id": "millie",
+      "type": "purchase for download",
+      "url": "https://music.apple.com/us/artist/241027",
+      "label": "purchase for download: https://music.apple.com/us/artist/241027"
+    },
+    {
+      "id": "millie-secondhandsongs-4791579e1840",
+      "dj_id": "millie",
+      "type": "secondhandsongs",
+      "url": "https://secondhandsongs.com/artist/14950",
+      "label": "secondhandsongs: https://secondhandsongs.com/artist/14950"
+    },
+    {
+      "id": "millie-setlistfm-65a73fb05a70",
+      "dj_id": "millie",
+      "type": "setlistfm",
+      "url": "https://www.setlist.fm/setlists/millie-jackson-23d7b087.html",
+      "label": "setlistfm: https://www.setlist.fm/setlists/millie-jackson-23d7b087.html"
+    },
+    {
+      "id": "millie-songkick-7adcd3343cb4",
+      "dj_id": "millie",
+      "type": "songkick",
+      "url": "https://www.songkick.com/artists/35147",
+      "label": "songkick: https://www.songkick.com/artists/35147"
+    },
+    {
+      "id": "millie-streaming-cb6dc54f0605",
+      "dj_id": "millie",
+      "type": "streaming",
+      "url": "https://music.apple.com/us/artist/241027",
+      "label": "streaming: https://music.apple.com/us/artist/241027"
+    },
+    {
+      "id": "millie-streaming-732b003fe0a1",
+      "dj_id": "millie",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/3609696",
+      "label": "streaming: https://tidal.com/artist/3609696"
+    },
+    {
+      "id": "millie-viaf-b1626f83a2ac",
+      "dj_id": "millie",
+      "type": "viaf",
+      "url": "http://viaf.org/viaf/74045268",
+      "label": "VIAF: http://viaf.org/viaf/74045268"
+    },
+    {
+      "id": "millie-wikidata-94d0c65fe07e",
+      "dj_id": "millie",
+      "type": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q275575",
+      "label": "wikidata: https://www.wikidata.org/wiki/Q275575"
+    },
+    {
+      "id": "state-of-mind-bandcamp-a33a659faad4",
+      "dj_id": "state-of-mind",
+      "type": "bandcamp",
+      "url": "https://stateofmindnz.bandcamp.com/",
+      "label": "bandcamp: https://stateofmindnz.bandcamp.com/"
+    },
+    {
+      "id": "state-of-mind-discogs-7be5cd3add38",
+      "dj_id": "state-of-mind",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/183741",
+      "label": "discogs: https://www.discogs.com/artist/183741"
+    },
+    {
+      "id": "state-of-mind-free streaming-f7a13944c6a1",
+      "dj_id": "state-of-mind",
+      "type": "free streaming",
+      "url": "https://open.spotify.com/artist/6Piel9jEbV4Qb18Yw1B2dI",
+      "label": "free streaming: https://open.spotify.com/artist/6Piel9jEbV4Qb18Yw1B2dI"
+    },
+    {
+      "id": "state-of-mind-free streaming-5777b07fe5ee",
+      "dj_id": "state-of-mind",
+      "type": "free streaming",
+      "url": "https://www.deezer.com/artist/59531",
+      "label": "free streaming: https://www.deezer.com/artist/59531"
+    },
+    {
+      "id": "state-of-mind-website-119fc3d17205",
+      "dj_id": "state-of-mind",
+      "type": "website",
+      "url": "http://www.stateofmindnz.com/",
+      "label": "official homepage: http://www.stateofmindnz.com/"
+    },
+    {
+      "id": "state-of-mind-other databases-6fda9b1ac45a",
+      "dj_id": "state-of-mind",
+      "type": "other databases",
+      "url": "https://rateyourmusic.com/artist/state_of_mind_f4",
+      "label": "other databases: https://rateyourmusic.com/artist/state_of_mind_f4"
+    },
+    {
+      "id": "state-of-mind-other databases-93f0244bc71a",
+      "dj_id": "state-of-mind",
+      "type": "other databases",
+      "url": "http://www.rolldabeats.com/artist/state_of_mind",
+      "label": "other databases: http://www.rolldabeats.com/artist/state_of_mind"
+    },
+    {
+      "id": "state-of-mind-purchase for download-ac8676a855c0",
+      "dj_id": "state-of-mind",
+      "type": "purchase for download",
+      "url": "https://play.google.com/store/music/artist?id=A2pyuqmglyn766pkguiouzhdpsq",
+      "label": "purchase for download: https://play.google.com/store/music/artist?id=A2pyuqmglyn766pkguiouzhdpsq"
+    },
+    {
+      "id": "state-of-mind-purchase for download-0d87343cee58",
+      "dj_id": "state-of-mind",
+      "type": "purchase for download",
+      "url": "https://itunes.apple.com/nz/artist/id4463307",
+      "label": "purchase for download: https://itunes.apple.com/nz/artist/id4463307"
+    },
+    {
+      "id": "state-of-mind-purchase for download-732e2d0d2a9a",
+      "dj_id": "state-of-mind",
+      "type": "purchase for download",
+      "url": "https://www.beatport.com/artist/state-of-mind/16274",
+      "label": "purchase for download: https://www.beatport.com/artist/state-of-mind/16274"
+    },
+    {
+      "id": "state-of-mind-purchase for download-86a464226411",
+      "dj_id": "state-of-mind",
+      "type": "purchase for download",
+      "url": "http://www.junodownload.com/artists/State+Of+Mind/",
+      "label": "purchase for download: http://www.junodownload.com/artists/State+Of+Mind/"
+    },
+    {
+      "id": "state-of-mind-social network-de91f548050f",
+      "dj_id": "state-of-mind",
+      "type": "social network",
+      "url": "https://twitter.com/stateofmindnz",
+      "label": "social network: https://twitter.com/stateofmindnz"
+    },
+    {
+      "id": "state-of-mind-social network-baebeb66b60d",
+      "dj_id": "state-of-mind",
+      "type": "social network",
+      "url": "https://www.facebook.com/stateofmindnz",
+      "label": "social network: https://www.facebook.com/stateofmindnz"
+    },
+    {
+      "id": "state-of-mind-social network-95d80bf4345b",
+      "dj_id": "state-of-mind",
+      "type": "social network",
+      "url": "https://www.instagram.com/stateofmindnz/",
+      "label": "social network: https://www.instagram.com/stateofmindnz/"
+    },
+    {
+      "id": "state-of-mind-social network-a722443aae1f",
+      "dj_id": "state-of-mind",
+      "type": "social network",
+      "url": "https://www.instagram.com/stateofmindpat/",
+      "label": "social network: https://www.instagram.com/stateofmindpat/"
+    },
+    {
+      "id": "state-of-mind-streaming-83743a233e5e",
+      "dj_id": "state-of-mind",
+      "type": "streaming",
+      "url": "https://music.apple.com/nz/artist/4463307",
+      "label": "streaming: https://music.apple.com/nz/artist/4463307"
+    },
+    {
+      "id": "state-of-mind-streaming-d1da60a80a2c",
+      "dj_id": "state-of-mind",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/3581028",
+      "label": "streaming: https://tidal.com/artist/3581028"
+    },
+    {
+      "id": "state-of-mind-streaming-1b90110cb6f8",
+      "dj_id": "state-of-mind",
+      "type": "streaming",
+      "url": "https://tidal.com/artist/39815988",
+      "label": "streaming: https://tidal.com/artist/39815988"
+    },
+    {
+      "id": "state-of-mind-wikidata-235ab1def659",
+      "dj_id": "state-of-mind",
+      "type": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q7603781",
+      "label": "wikidata: https://www.wikidata.org/wiki/Q7603781"
+    },
+    {
+      "id": "state-of-mind-youtube-f7239a52abe4",
+      "dj_id": "state-of-mind",
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UC9VQO8cApX5pNV1v2tPaimw",
+      "label": "youtube: https://www.youtube.com/channel/UC9VQO8cApX5pNV1v2tPaimw"
+    },
+    {
+      "id": "state-of-mind-youtube music-950a9d1448a9",
+      "dj_id": "state-of-mind",
+      "type": "youtube music",
+      "url": "https://music.youtube.com/channel/UCmxHK-huLB89BEsqkMYfSdQ",
+      "label": "youtube music: https://music.youtube.com/channel/UCmxHK-huLB89BEsqkMYfSdQ"
     }
   ],
   "articles": [
@@ -7486,6 +7995,78 @@
       "source": "Scoop",
       "published_at": "2012-07-12T07:26:00.000Z",
       "snippet": "Concord Dawn has announced a selection of high calibre acts who will be supporting him for both the Auckland show at Studio on 21 July and Wellington show at Sandwiches on 27 July. “I can’t wait to ..."
+    },
+    {
+      "id": "lucas-604cb6a68053d88b",
+      "dj_id": "lucas",
+      "title": "Lucas the Spider",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a17bcaa4ec5a01cbe36c4ca5f7c&amp;url=https%3a%2f%2fwww.sky.com%2fwatch%2fseries%2fe6e235c5-a078-4a07-a9bc-6db7cf2e63bb%2fseason-1&amp;c=13735790310660953825&amp;mkt=en-nz",
+      "source": "Sky",
+      "published_at": "2025-05-12T01:21:00.000Z",
+      "snippet": "The heartwarming adventures of four-year-old Lucas, a gentle jumping spider who likes music and is always jolly. Arlo's Portrait; House Flies Don't Dance; Flying the Nest: Episode Image Episode ..."
+    },
+    {
+      "id": "lucas-9386862b40c79a30",
+      "dj_id": "lucas",
+      "title": "What Spielberg, Lucas, and Coppola Got Right",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a17bcaa4ec5a01cbe36c4ca5f7c&amp;url=https%3a%2f%2fwww.theatlantic.com%2fbooks%2f2026%2f02%2fthe-real-secret-to-a-filmmakers-success%2f685934%2f&amp;c=14276791999785595462&amp;mkt=en-nz",
+      "source": "The Atlantic",
+      "published_at": "2026-02-10T08:00:00.000Z",
+      "snippet": "Steven Spielberg likes to tell a story that captures the tension between art and commerce in 1970s Hollywood: In January 1973, the young filmmaker George Lucas screened a preview of American Graffiti, ..."
+    },
+    {
+      "id": "lucas-f1a2095d86a7d1b1",
+      "dj_id": "lucas",
+      "title": "Lucas Casey scores 80m stunner in Otago’s 41-14 NPC win over Southland",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a17bcaa4ec5a01cbe36c4ca5f7c&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fsport%2f361013310%2flucas-casey-scores-80m-stunner-otagos-41-14-npc-win-over-southland&amp;c=16297355842002518669&amp;mkt=en-nz",
+      "source": "Stuff",
+      "published_at": "2026-07-31T21:40:00.000Z",
+      "snippet": "Follow live coverage of the NPC match between Southland v Otago in Invercargill."
+    },
+    {
+      "id": "lucas-a8329f379ccb86fb",
+      "dj_id": "lucas",
+      "title": "Lucas Parts Ways With SM Entertainment",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a17bcaa4ec5a01cbe36c4ca5f7c&amp;url=https%3a%2f%2fwww.soompi.com%2farticle%2f1835870wpp%2flucas-parts-ways-with-sm-entertainment&amp;c=3549912349850320740&amp;mkt=en-nz",
+      "source": "Soompi",
+      "published_at": "2026-04-24T00:03:00.000Z",
+      "snippet": "Lucas, formerly a member of NCT, is leaving SM Entertainment. On April 24, SM Entertainment announced through Weverse that their exclusive contract with Lucas has ended. Read the agency’s full ..."
+    },
+    {
+      "id": "lucas-d72ca4e9cb04b094",
+      "dj_id": "lucas",
+      "title": "Marcia Lucas, ‘Star Wars’ Editor And George Lucas’ Ex-Wife, Dies At 80",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a17bcaa4ec5a01cbe36c4ca5f7c&amp;url=https%3a%2f%2fwww.forbes.com%2fsites%2ftimlammers%2f2026%2f05%2f29%2fmarcia-lucas-star-wars-editor-and-george-lucas-ex-wife-dies-at-80%2f&amp;c=14980229887610027740&amp;mkt=en-nz",
+      "source": "Forbes",
+      "published_at": "2026-05-29T14:45:00.000Z",
+      "snippet": "Forbes contributors publish independent expert analyses and insights. I cover Hollywood and entertainment. This voice experience is generated by AI. Learn more. This voice experience is generated by ..."
+    },
+    {
+      "id": "lucas-44106565ee7d77f9",
+      "dj_id": "lucas",
+      "title": "Ex-NCT member Lucas ends contract with SM Entertainment",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a17bcaa4ec5a01cbe36c4ca5f7c&amp;url=https%3a%2f%2fwww.gmanetwork.com%2fnews%2fshowbiz%2fshowbizabroad%2f985194%2fex-nct-member-lucas-ends-contract-with-sm-entertainment%2fstory%2f&amp;c=11875529784478184211&amp;mkt=en-nz",
+      "source": "GMA Network",
+      "published_at": "2026-04-24T08:43:00.000Z",
+      "snippet": "Former NCT member Lucas has officially parted ways with SM Entertainment following the expiration of his exclusive contract. In a statement posted on Weverse, SM Entertainment said that the contract ..."
+    },
+    {
+      "id": "millie-6c870e1f81a23f10",
+      "dj_id": "millie",
+      "title": "Ms X star Niwa Whatuira reveals how wife Millie helped him through his toughest times",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a18ed0c430cbbcf8765ae6d08c8&amp;url=https%3a%2f%2fwww.nowtolove.co.nz%2fcelebrity%2fniwa-whatuira-wife-millie-love-story%2f&amp;c=9508750408991759551&amp;mkt=en-nz",
+      "source": "Now To Love",
+      "published_at": "2026-08-21T13:59:00.000Z",
+      "snippet": "Niwa Whatuira and wife millie share their love story, from a surprising first meeting to overcoming grief, marriage and life together."
+    },
+    {
+      "id": "millie-f1a2d6ec9c7650f5",
+      "dj_id": "millie",
+      "title": "Wellington app business showcased in the United States",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a18ed0c430cbbcf8765ae6d08c8&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fbusiness%2fsmall-business%2f69135107%2fwellington-app-business-showcased-in-the-united-states&amp;c=1929179254761370017&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2015-06-04T23:32:00.000Z",
+      "snippet": "Showcase Workshop founder and president Millie Jocelyn in the Wellington office where the company creates apps for marketing professionals. Photo: KEVIN STENT / FAIRFAX NZ Prefer us on Google A ..."
     },
     {
       "id": "millie-07a39b135efa3eb8",
@@ -7873,6 +8454,33 @@
       "source": "Scoop",
       "published_at": "2022-07-31T17:01:00.000Z",
       "snippet": "Siân Stephens from Wellington has been announced as winner of the 2022 Parkin Drawing Prize and $25,000 – sponsored by Chris Parkin, arts patron, and philanthropist. Siân’s work ‘Liam Cutting His Hair ..."
+    },
+    {
+      "id": "millie-895a37a32cc3935c",
+      "dj_id": "millie",
+      "title": "Wellington Showcase app judged best in the world at New York",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a18ed0c430cbbcf8765ae6d08c8&amp;url=https%3a%2f%2fwww.stuff.co.nz%2fbusiness%2f73599234%2fwellington-showcase-app-judged-best-in-the-world-at-new-york&amp;c=2029774365992584674&amp;mkt=en-nz",
+      "source": "Stuff.co.nz",
+      "published_at": "2015-11-01T17:17:00.000Z",
+      "snippet": "Showcase Software president and co-founder Millie Jocelyn praised the Wellington based development and design team for winning a United States award. Photo: KEVIN STENT / FAIRFAX NZ ..."
+    },
+    {
+      "id": "millie-78b52df2b1f66e5c",
+      "dj_id": "millie",
+      "title": "Cyclist Millie Donald in fine form",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a18ed0c430cbbcf8765ae6d08c8&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fkapiti-news%2fnews%2fcyclist-millie-donald-in-fine-form%2fROKYJH6UKNBNTMPJCGNR22XF4E%2f&amp;c=10389908289702545241&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2022-12-11T19:50:00.000Z",
+      "snippet": "Millie Donald powers up Mount Wellington, Auckland, during the schools' northern tour. Photo / Craig Gerken It has been a busy and rewarding year for promising young cyclist Millie Donald. Donald, who ..."
+    },
+    {
+      "id": "tv-disko-6c279b40f2b9f9ed",
+      "dj_id": "tv-disko",
+      "title": "TV Disko",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a1bc71149019653effd8f2f81c2&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2025-09-15T17:01:00.000Z",
+      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
     }
   ],
   "mixes": [
