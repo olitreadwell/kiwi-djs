@@ -58,6 +58,25 @@ interface EventDjLink {
   dj_id: string;
 }
 
+export interface OrgRow {
+  id: string;
+  name: string;
+  city: string | null;
+  description: string | null;
+  website: string | null;
+  instagram: string | null;
+  facebook: string | null;
+}
+
+export interface SoundsystemRow {
+  id: string;
+  name: string;
+  city: string | null;
+  style: string | null;
+  description: string | null;
+  website: string | null;
+}
+
 export async function listDjs(opts: { query?: string; genre?: string; sort?: string } = {}): Promise<DjRow[]> {
   if (!isDbMode) {
     let rows = snapshot.djs as DjRow[];
@@ -212,6 +231,20 @@ export async function getGenres(): Promise<string[]> {
     `SELECT DISTINCT unnest(genres) AS genre FROM djs WHERE opt_out = FALSE AND active = TRUE ORDER BY genre`,
   );
   return result.rows.map((row) => row.genre as string);
+}
+
+export async function getOrgs(): Promise<OrgRow[]> {
+  if (!isDbMode) return [];
+  const pool = getPool();
+  const result = await pool.query('SELECT id, name, city, description, website, instagram, facebook FROM orgs ORDER BY name ASC');
+  return result.rows as OrgRow[];
+}
+
+export async function getSoundsystems(): Promise<SoundsystemRow[]> {
+  if (!isDbMode) return [];
+  const pool = getPool();
+  const result = await pool.query('SELECT id, name, city, style, description, website FROM soundsystems ORDER BY name ASC');
+  return result.rows as SoundsystemRow[];
 }
 
 export async function getPopularDjs(limit = 8): Promise<DjRow[]> {

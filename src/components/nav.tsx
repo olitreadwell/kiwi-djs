@@ -5,6 +5,8 @@ const links = [
   { href: '/djs', label: 'DJs' },
   { href: '/events', label: 'Events' },
   { href: '/discover', label: 'Discover' },
+  { href: '/orgs', label: 'Orgs' },
+  { href: '/soundsystems', label: 'Soundsystems' },
   { href: '/about', label: 'About' },
   { href: '/opt-out', label: 'Opt out' },
 ];

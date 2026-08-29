@@ -153,6 +153,29 @@ CREATE TABLE IF NOT EXISTS suggestions (
   created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+-- Event orgs / collectives (#18) and soundsystems (#19) are their own
+-- entities, never DJs.
+CREATE TABLE IF NOT EXISTS orgs (
+  id          TEXT PRIMARY KEY,
+  name        TEXT NOT NULL,
+  city        TEXT,
+  description TEXT,
+  website     TEXT,
+  instagram   TEXT,
+  facebook    TEXT,
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS soundsystems (
+  id          TEXT PRIMARY KEY,
+  name        TEXT NOT NULL,
+  city        TEXT,
+  style       TEXT,
+  description TEXT,
+  website     TEXT,
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 CREATE INDEX IF NOT EXISTS idx_djs_genres ON djs USING GIN (genres);
 CREATE INDEX IF NOT EXISTS idx_djs_name_trgm ON djs USING GIN (name gin_trgm_ops);
 CREATE INDEX IF NOT EXISTS idx_events_dj ON events(dj_id);

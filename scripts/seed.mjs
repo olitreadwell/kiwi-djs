@@ -60,6 +60,37 @@ const venues = [
   { id: 'moon', name: 'Moon', address: '13 Wigan Street, Te Aro, Wellington' },
 ];
 
+// Event orgs / collectives (#18) and soundsystems (#19) — curated from
+// public knowledge; scrapers enrich over time.
+const orgs = [
+  {
+    name: 'Last Light',
+    city: 'Wellington',
+    description: 'Wellington event collective known for club nights and festival stages across house, techno and beyond.',
+    website: 'https://www.instagram.com/lastlightnz',
+  },
+  {
+    name: 'Good Things',
+    city: 'Wellington',
+    description: 'Wellington DJ collective and event series.',
+  },
+];
+
+const soundsystems = [
+  {
+    name: 'Scorpios Nest Soundsystem',
+    city: 'Wellington',
+    style: 'Dub / reggae',
+    description: 'Wellington soundsystem crew playing dub and reggae.',
+  },
+  {
+    name: 'Bigbada Boom Sound System',
+    city: 'Wellington',
+    style: 'Dub / reggae',
+    description: 'Wellington soundsystem.',
+  },
+];
+
 for (const dj of djs) {
   await pool.query(
     `INSERT INTO djs (id, name, bio, genres, source, data_completeness)
@@ -78,5 +109,21 @@ for (const venue of venues) {
   );
 }
 
-console.log(`Seeded ${djs.length} DJs, ${venues.length} venues.`);
+for (const org of orgs) {
+  await pool.query(
+    `INSERT INTO orgs (id, name, city, description, website) VALUES ($1, $2, $3, $4, $5)
+     ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, city = EXCLUDED.city, description = EXCLUDED.description, website = EXCLUDED.website`,
+    [slugify(org.name), org.name, org.city ?? null, org.description ?? null, org.website ?? null],
+  );
+}
+
+for (const system of soundsystems) {
+  await pool.query(
+    `INSERT INTO soundsystems (id, name, city, style, description) VALUES ($1, $2, $3, $4, $5)
+     ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, city = EXCLUDED.city, style = EXCLUDED.style, description = EXCLUDED.description`,
+    [slugify(system.name), system.name, system.city ?? null, system.style ?? null, system.description ?? null],
+  );
+}
+
+console.log(`Seeded ${djs.length} DJs, ${venues.length} venues, ${orgs.length} orgs, ${soundsystems.length} soundsystems.`);
 await pool.end();
