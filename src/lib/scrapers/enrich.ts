@@ -17,6 +17,10 @@ export async function upsertDjArticle(
   djId: string,
   article: { title: string; url: string; source?: string; publishedAt?: Date | null; snippet?: string },
 ): Promise<void> {
+  // Dedupe by title per DJ (#37): Bing RSS returns the same article under
+  // different URLs across queries/runs.
+  const existing = await pool.query(`SELECT 1 FROM dj_articles WHERE dj_id = $1 AND lower(title) = lower($2) LIMIT 1`, [djId, article.title]);
+  if (existing.rows.length > 0) return;
   const id = `${djId}-${createHash('sha1').update(article.url).digest('hex').slice(0, 16)}`;
   await pool.query(
     `INSERT INTO dj_articles (id, dj_id, title, url, source, published_at, snippet) VALUES ($1, $2, $3, $4, $5, $6, $7)
