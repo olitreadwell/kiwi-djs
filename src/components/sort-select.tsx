@@ -4,7 +4,6 @@ import { useRouter, useSearchParams } from 'next/navigation';
 
 const SORTS = [
   { value: 'completeness', label: 'most info' },
-  { value: 'popularity', label: 'most played' },
   { value: 'name', label: 'name A-Z' },
   { value: 'recent', label: 'recently added' },
   { value: 'gigs', label: 'most gigs' },

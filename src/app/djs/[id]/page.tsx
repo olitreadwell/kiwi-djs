@@ -95,7 +95,6 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           {dj.bpm_range && <p className="mt-1 font-mono text-xs text-muted">{dj.bpm_range} BPM</p>}
         </div>
         <div className="rounded-lg border border-edge bg-surface p-4 font-mono text-xs text-muted">
-          <p>{dj.popularity} profile plays</p>
           <p>{dj.data_completeness}% data complete</p>
           <p className="mt-1 text-muted">
             {dj.last_played_at

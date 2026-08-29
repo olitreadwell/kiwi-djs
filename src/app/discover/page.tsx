@@ -15,7 +15,7 @@ export default async function DiscoverPage() {
       <h1 className="text-3xl font-black text-foreground">Discover</h1>
       <p className="mt-2 font-mono text-xs text-muted">Who&apos;s moving the room right now</p>
 
-      <h2 className="mt-10 text-xl font-bold text-foreground">Most played profiles</h2>
+      <h2 className="mt-10 text-xl font-bold text-foreground">Popular profiles</h2>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {popular.map((dj) => <DjCard key={dj.id} dj={dj} />)}
       </div>

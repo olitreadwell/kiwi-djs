@@ -20,7 +20,6 @@ export function DjCard({ dj }: { dj: DjRow }) {
       </div>
       <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-muted">
         <span>{dj.upcoming_events > 0 ? `${dj.upcoming_events} upcoming gig${dj.upcoming_events === 1 ? '' : 's'}` : 'no listed gigs'}</span>
-        <span className="text-accent/80">{dj.popularity} plays</span>
       </div>
     </Link>
   );
