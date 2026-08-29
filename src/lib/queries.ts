@@ -37,6 +37,7 @@ export interface DjRow {
   is_nz: boolean;
   upcoming_events: number;
   last_played_at: string | null;
+  created_at: string;
 }
 
 export interface EventRow {
@@ -55,7 +56,7 @@ interface EventDjLink {
   dj_id: string;
 }
 
-export async function listDjs(opts: { query?: string; genre?: string } = {}): Promise<DjRow[]> {
+export async function listDjs(opts: { query?: string; genre?: string; sort?: string } = {}): Promise<DjRow[]> {
   if (!isDbMode) {
     let rows = snapshot.djs as DjRow[];
     rows = rows.filter((dj) => dj.active === true);
@@ -64,7 +65,7 @@ export async function listDjs(opts: { query?: string; genre?: string } = {}): Pr
       rows = rows.filter((dj) => `${dj.name} ${dj.bio ?? ''} ${dj.genres.join(' ')}`.toLowerCase().includes(q));
     }
     if (opts.genre) rows = rows.filter((dj) => dj.genres.includes(opts.genre!));
-    return rows.sort((a, b) => b.popularity - a.popularity || a.name.localeCompare(b.name));
+    return sortDjs(rows, opts.sort);
   }
   const pool = getPool();
   const params: unknown[] = [];
@@ -78,15 +79,53 @@ export async function listDjs(opts: { query?: string; genre?: string } = {}): Pr
     where.push(`$${params.length} = ANY(genres)`);
   }
   const result = await pool.query(
-    `SELECT d.*, ${completenessSql} AS data_completeness,
-            (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
-            (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
-     FROM djs d
-     WHERE ${where.join(' AND ')}
-     ORDER BY popularity DESC, name ASC`,
+    `SELECT * FROM (
+       SELECT d.id, d.name, d.bio, d.genres, d.city, d.image_url, d.soundcloud_url, d.instagram_url,
+              d.facebook_url, d.mixcloud_url, d.website_url, d.active, d.popularity, d.source, d.opt_out,
+              d.mixcloud_backoff_until, d.discovery_note, d.verification_level, d.verification_sources,
+              d.is_nz, d.created_at, d.updated_at,
+              ${completenessSql} AS data_completeness,
+              (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+              (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
+       FROM djs d
+       WHERE ${where.join(' AND ')}
+     ) sub
+     ${sortSql(opts.sort)}`,
     params,
   );
   return result.rows as DjRow[];
+}
+
+function sortSql(sort?: string): string {
+  switch (sort) {
+    case 'name':
+      return 'ORDER BY name ASC';
+    case 'popularity':
+      return 'ORDER BY popularity DESC, name ASC';
+    case 'recent':
+      return 'ORDER BY created_at DESC, name ASC';
+    case 'gigs':
+      return 'ORDER BY upcoming_events DESC, name ASC';
+    case 'completeness':
+    default:
+      return 'ORDER BY data_completeness DESC, name ASC';
+  }
+}
+
+function sortDjs(rows: DjRow[], sort?: string): DjRow[] {
+  switch (sort) {
+    case 'name':
+      return [...rows].sort((a, b) => a.name.localeCompare(b.name));
+    case 'popularity':
+      return [...rows].sort((a, b) => b.popularity - a.popularity || a.name.localeCompare(b.name));
+    case 'recent':
+      return [...rows].sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)) || a.name.localeCompare(b.name));
+    case 'gigs':
+      return [...rows].sort((a, b) => b.upcoming_events - a.upcoming_events || a.name.localeCompare(b.name));
+    case 'completeness':
+    default:
+      return [...rows].sort((a, b) => b.data_completeness - a.data_completeness || a.name.localeCompare(b.name));
+  }
 }
 
 export async function getDjById(id: string): Promise<DjRow | null> {
