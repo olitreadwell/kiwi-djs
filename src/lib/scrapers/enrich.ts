@@ -168,14 +168,25 @@ export async function soundcloudPreflight(): Promise<ScrapeResult | null> {
 
 export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
   const results: ScrapeResult[] = [];
+  // Enrich active DJs first, then the most promising candidates (highest
+  // verification evidence) so discovery candidates can accumulate mixes,
+  // links and articles — the evidence that promotes them to active.
   const topDjs = (): Promise<{ rows: DjRow[] }> =>
-    pool.query('SELECT id, name FROM djs WHERE opt_out = FALSE AND active = TRUE ORDER BY popularity DESC LIMIT 15');
+    pool.query(
+      `SELECT id, name FROM djs
+       WHERE opt_out = FALSE AND is_nz = TRUE
+         AND (discovery_note IS NULL OR discovery_note <> 'junk')
+       ORDER BY active DESC, popularity DESC, verification_level DESC, data_completeness DESC
+       LIMIT 15`,
+    );
   const mixcloudDjs = (): Promise<{ rows: DjRow[] }> =>
     pool.query(
       `SELECT id, name FROM djs
-       WHERE opt_out = FALSE AND active = TRUE
+       WHERE opt_out = FALSE AND is_nz = TRUE
+         AND (discovery_note IS NULL OR discovery_note <> 'junk')
          AND (mixcloud_backoff_until IS NULL OR mixcloud_backoff_until <= now())
-       ORDER BY popularity DESC LIMIT 15`,
+       ORDER BY active DESC, popularity DESC, verification_level DESC, data_completeness DESC
+       LIMIT 15`,
     );
   const sources: Array<{
     source: string;
@@ -219,6 +230,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     }
     const djCount = djs.length;
     const result: ScrapeResult = {
+      source: source.source,
       status: djCount === 0 ? 'partial' : errors === djCount ? 'error' : found > 0 ? 'ok' : 'partial',
       items_found: found,
       items_new: 0,

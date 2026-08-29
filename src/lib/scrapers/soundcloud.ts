@@ -121,6 +121,6 @@ export const soundcloudScraper: Scraper = {
       await sleep(700);
     }
 
-    return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: newCount, error: found === 0 ? 'No Wellington-anchored SoundCloud users' : undefined };
+    return { source: 'soundcloud', status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: newCount, error: found === 0 ? 'No Wellington-anchored SoundCloud users' : undefined };
   },
 };

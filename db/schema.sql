@@ -130,16 +130,3 @@ CREATE INDEX IF NOT EXISTS idx_search_events_created ON search_events(created_at
 CREATE INDEX IF NOT EXISTS idx_dj_links_dj ON dj_links(dj_id);
 CREATE INDEX IF NOT EXISTS idx_dj_articles_dj ON dj_articles(dj_id);
 CREATE INDEX IF NOT EXISTS idx_dj_mixes_dj ON dj_mixes(dj_id);
-
--- Self-improvement loop state (single row, id 'main')
-CREATE TABLE IF NOT EXISTS loop_state (
-  id                    TEXT PRIMARY KEY,              -- single row: 'main'
-  mode                  TEXT NOT NULL DEFAULT 'active', -- active (5-60m ladder) | daily (off-peak)
-  backoff_index         INTEGER NOT NULL DEFAULT 0,     -- index into 5/10/15/30/60 ladder
-  consecutive_thin_runs INTEGER NOT NULL DEFAULT 0,     -- thin runs at max backoff -> daily mode
-  last_run_at           TIMESTAMPTZ,
-  next_run_at           TIMESTAMPTZ,
-  last_thickness        INTEGER NOT NULL DEFAULT 0,     -- items_new + new djs from last pass
-  last_summary          JSONB,                          -- last pass results
-  updated_at            TIMESTAMPTZ NOT NULL DEFAULT now()
-);

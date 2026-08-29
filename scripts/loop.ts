@@ -27,6 +27,17 @@ const REPO_ROOT = fileURLToPath(new URL('..', import.meta.url));
 const LOG_DIR = new URL('../logs/', import.meta.url);
 const LOG_FILE = new URL('loop.log', LOG_DIR);
 const PID_FILE = new URL('loop.pid', LOG_DIR);
+const STATE_FILE = new URL('source-state.json', LOG_DIR);
+
+// Adaptive source management: a source that errors 3 cycles in a row gets
+// disabled so the loop stops hammering it; it re-enables after 24h to retry.
+const DISABLE_AFTER_FAILURES = 3;
+const REENABLE_AFTER_HOURS = 24;
+
+interface SourceState {
+  consecutiveFailures: number;
+  lastSeen: string;
+}
 const HANDOFF_FILE = new URL('../.loop/handoff.md', import.meta.url);
 
 function log(line: string): void {
@@ -68,6 +79,46 @@ function releaseLock(): void {
   }
 }
 
+function loadSourceState(): Record<string, SourceState> {
+  if (!existsSync(STATE_FILE)) return {};
+  try {
+    return JSON.parse(readFileSync(STATE_FILE, 'utf8')) as Record<string, SourceState>;
+  } catch {
+    return {};
+  }
+}
+
+function saveSourceState(state: Record<string, SourceState>): void {
+  writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+}
+
+function disabledSources(state: Record<string, SourceState>): Set<string> {
+  const now = Date.now();
+  const disabled = new Set<string>();
+  for (const [source, entry] of Object.entries(state)) {
+    const stale = now - new Date(entry.lastSeen).getTime() > REENABLE_AFTER_HOURS * 3_600_000;
+    if (entry.consecutiveFailures >= DISABLE_AFTER_FAILURES && !stale) {
+      disabled.add(source);
+    }
+  }
+  return disabled;
+}
+
+function updateSourceState(
+  state: Record<string, SourceState>,
+  results: Array<{ source?: string; status: string }>,
+): void {
+  const now = new Date().toISOString();
+  for (const result of results) {
+    if (!result.source) continue;
+    const previous = state[result.source]?.consecutiveFailures ?? 0;
+    state[result.source] = {
+      consecutiveFailures: result.status === 'error' ? previous + 1 : 0,
+      lastSeen: now,
+    };
+  }
+}
+
 function run(cmd: string, args: string[]): { ok: boolean; out: string } {
   const result = spawnSync(cmd, args, { cwd: REPO_ROOT, encoding: 'utf8' });
   return { ok: result.status === 0, out: (result.stdout || result.stderr || '').trim() };
@@ -75,30 +126,25 @@ function run(cmd: string, args: string[]): { ok: boolean; out: string } {
 
 function installLaunchdAgent(): void {
   const home = process.env.HOME ?? '/Users/olitreadwell';
-  const plistPath = `${home}/Library/LaunchAgents/com.aotearoa-nz-djs.loop.plist`;
-  const nodeBin = process.execPath;
+  const plistPath = `${home}/Library/LaunchAgents/com.olitreadwell.aotearoa-djs-loop.plist`;
+  const repoPath = REPO_ROOT.replace(/\/$/, '');
+  const pnpmBin = run('which', ['pnpm']).out || 'pnpm';
   const plist = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.aotearoa-nz-djs.loop</string>
+  <string>com.olitreadwell.aotearoa-djs-loop</string>
   <key>ProgramArguments</key>
   <array>
-    <string>${nodeBin}</string>
-    <string>--env-file=.env.local</string>
-    <string>--import</string>
-    <string>tsx</string>
-    <string>scripts/loop.ts</string>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>cd ${repoPath} && ${pnpmBin} loop</string>
   </array>
-  <key>WorkingDirectory</key>
-  <string>${REPO_ROOT.replace(/\/$/, '')}</string>
   <key>EnvironmentVariables</key>
   <dict>
-    <key>HOME</key>
-    <string>${home}</string>
     <key>PATH</key>
-    <string>${home}/.local/share/mise/shims:/usr/local/bin:/usr/bin:/bin</string>
+    <string>${home}/.local/share/mise/installs/node/lts/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
   </dict>
   <key>StartCalendarInterval</key>
   <dict>
@@ -109,10 +155,12 @@ function installLaunchdAgent(): void {
   </dict>
   <key>RunAtLoad</key>
   <false/>
+  <key>ProcessType</key>
+  <string>Background</string>
   <key>StandardOutPath</key>
-  <string>${REPO_ROOT.replace(/\/$/, '')}/logs/launchd.out.log</string>
+  <string>${home}/Library/Logs/aotearoa-djs-loop.log</string>
   <key>StandardErrorPath</key>
-  <string>${REPO_ROOT.replace(/\/$/, '')}/logs/launchd.err.log</string>
+  <string>${home}/Library/Logs/aotearoa-djs-loop.log</string>
 </dict>
 </plist>
 `;
@@ -213,7 +261,7 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
   ).rows as Array<{ source: string; failures: string }>;
   if (filed < 1 && failing.length > 0) {
     for (const row of failing) {
-      const title = `fix: scraper "${row.source}" failing (${row.failures} errors)`;
+      const title = `fix: scraper "${row.source}" failing`;
       if (open.has(title)) continue;
       runGh(['issue', 'create', '--title', title, '--body', `${row.source}: ${row.failures} errors in 48h. See scrapes table.`]);
       log(`Filed issue: ${title}`);
@@ -273,7 +321,14 @@ async function compactDataset(pool: ReturnType<typeof getPool>): Promise<void> {
 async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: number; totalFound: number }> {
   const startedAt = new Date();
   await compactDataset(pool);
-  const results = await runAllScrapers(pool);
+  const state = loadSourceState();
+  const disabled = disabledSources(state);
+  if (disabled.size > 0) {
+    log(`Skipping disabled sources (${DISABLE_AFTER_FAILURES}+ consecutive errors): ${[...disabled].join(', ')}.`);
+  }
+  const results = await runAllScrapers(pool, { disabledSources: disabled });
+  updateSourceState(state, results);
+  saveSourceState(state);
   const totalNew = results.reduce((sum, r) => sum + r.items_new, 0);
   const totalFound = results.reduce((sum, r) => sum + r.items_found, 0);
   const elapsed = Math.round((Date.now() - startedAt.getTime()) / 1000);

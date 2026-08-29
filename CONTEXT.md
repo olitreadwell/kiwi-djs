@@ -23,6 +23,7 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 | `pnpm db:setup` | migrate + seed |
 | `pnpm db:snapshot` | regenerate `src/data/snapshot.json` (needed after schema/data changes) |
 | `pnpm scrape` | run all scrapers + discovery + enrichment once |
+| `pnpm loop` | self-improving loop: compact → scrape → verify → snapshot → commit → push, backing off 5/10/15/30/60 min as data thins |
 | `pnpm contract` | contract test vs running server (`BASE_URL=http://localhost:3001`) |
 
 ## Architecture
@@ -57,6 +58,7 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 - SoundCloud default client id is dead (401). Needs fresh `SOUNDCLOUD_CLIENT_ID`.
 - Mixcloud rate-limits under sustained load → enrichment capped at 15 active DJs/run.
 - Vercel cron: `vercel.json` schedules `/api/cron/refresh` 2am NZT; route skips gracefully without `DATABASE_URL`.
+- Self-improving loop: launchd agent `com.olitreadwell.aotearoa-djs-loop` fires daily 4:30am NZT (16:30 UTC, DeepSeek off-peak start) and self-sustains via `pnpm loop`. Single-instance lock in `logs/loop.pid`; source health in `logs/source-state.json` (3 consecutive errors disables a source for 24h). Loop commits only `src/data/snapshot.json` — never sweeps WIP.
 
 ## Active goal
 

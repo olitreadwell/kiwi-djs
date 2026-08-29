@@ -370,8 +370,9 @@ export async function discoverAll(pool: Pool): Promise<ScrapeResult[]> {
     try {
       result = await runner.run(pool);
     } catch (err) {
-      result = { status: 'error', items_found: 0, items_new: 0, error: err instanceof Error ? err.message : String(err) };
+      result = { source: runner.source, status: 'error', items_found: 0, items_new: 0, error: err instanceof Error ? err.message : String(err) };
     }
+    result.source = runner.source;
     await pool.query(
       `INSERT INTO scrapes (source, status, items_found, items_new, error, started_at, finished_at) VALUES ($1, $2, $3, $4, $5, now(), now())`,
       [runner.source, result.status, result.items_found, result.items_new, result.error ?? null],

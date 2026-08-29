@@ -155,6 +155,6 @@ export const undertheradarScraper: Scraper = {
       if (isNew) newCount += 1;
       await linkDjToEvent(pool, event.id, event.name);
     }
-    return { status: events.length > 0 ? 'ok' : 'error', items_found: events.length, items_new: newCount, error: events.length === 0 ? 'No events parsed' : undefined };
+    return { source: this.source, status: events.length > 0 ? 'ok' : 'error', items_found: events.length, items_new: newCount, error: events.length === 0 ? 'No events parsed' : undefined };
   },
 };

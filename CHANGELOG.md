@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-29 — Self-improving loop
+
+- `pnpm loop` — self-improving scrape loop: compact dataset → scrape → verify → snapshot → commit → push
+- Data-thinness backoff: 5/10/15/30/60 min between cycles; 60-min cap guarantees ≥1 run/day
+- Adaptive source management: a source erroring 3 cycles in a row is disabled for 24h, then retried (`logs/source-state.json`)
+- Compaction before every cycle: junk candidates >30 days old and stale scrape rows pruned, `VACUUM ANALYZE`
+- Failing-source report each cycle (worst offenders from last 24h)
+- Single-instance lock (`logs/loop.pid`) so launchd + manual runs never overlap
+- launchd agent `com.olitreadwell.aotearoa-djs-loop` fires daily 4:30am NZT (16:30 UTC = DeepSeek off-peak start) and self-sustains
+
 ## 2026-08-29 — Loop 2: resilience + dataset product
 
 - Mixcloud rate-limit resilience: per-DJ backoff (`mixcloud_backoff_until`), `Retry-After` honored, resume queue, per-DJ run report lines

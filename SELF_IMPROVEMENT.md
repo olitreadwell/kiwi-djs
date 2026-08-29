@@ -2,6 +2,27 @@
 
 The app improves itself on a weekly cadence using real usage data.
 
+## Automated loop (`pnpm loop`)
+
+`scripts/loop.ts` runs the loop unattended — launchd fires it daily at 4:30am
+NZT (16:30 UTC, DeepSeek off-peak start) and it self-sustains:
+
+- **Compact before every cycle** — junk candidates >30 days old and stale
+  scrape rows are pruned, `VACUUM ANALYZE` runs, and a compact handoff state
+  is written to `.loop/handoff.md` so the next pass starts from memory.
+- **Backoff 5/10/15/30/60 min** — as data thins the loop backs off; the
+  60-min cap guarantees ≥1 run/day.
+- **Adaptive sources** — a source erroring 3 cycles in a row is disabled for
+  24h (`logs/source-state.json`), then retried.
+- **Self-improvement** — each cycle audits gaps (DJs with no mixes, failing
+  scrapers) and files GitHub issues as the work queue; new data triggers
+  snapshot regeneration + commit + push (Vercel deploys).
+- **Single instance** — `logs/loop.pid` lock so launchd and manual runs never
+  overlap.
+
+Install the launchd agent with `pnpm loop --install` (label
+`com.olitreadwell.aotearoa-djs-loop`). Manual run: `pnpm loop --once`.
+
 ## Signals we collect
 
 - `search_events` — every search query + result count

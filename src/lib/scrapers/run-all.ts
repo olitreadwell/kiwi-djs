@@ -7,7 +7,7 @@ import { soundcloudScraper } from './soundcloud';
 import { eventfindaScraper } from './eventfinda';
 import { bestEffortScrapers } from './best-effort';
 import { enrichAllDjs } from './enrich';
-import { discoverAll } from './discover';
+import { discoverAll, verifyDiscovered } from './discover';
 import type { Scraper, ScrapeResult } from './types';
 
 const scrapers: Scraper[] = [
@@ -20,15 +20,22 @@ const scrapers: Scraper[] = [
   ...bestEffortScrapers,
 ];
 
-export async function runAllScrapers(pool: Pool): Promise<ScrapeResult[]> {
+export async function runAllScrapers(
+  pool: Pool,
+  options: { disabledSources?: Set<string> } = {},
+): Promise<ScrapeResult[]> {
   const results: ScrapeResult[] = [];
-  for (const scraper of scrapers) {
+  const activeScrapers = options.disabledSources
+    ? scrapers.filter((scraper) => !options.disabledSources?.has(scraper.source))
+    : scrapers;
+  for (const scraper of activeScrapers) {
     const startedAt = new Date();
     let result: ScrapeResult;
     try {
       result = await scraper.run(pool);
+      result.source = scraper.source;
     } catch (err) {
-      result = { status: 'error', items_found: 0, items_new: 0, error: err instanceof Error ? err.message : String(err) };
+      result = { source: scraper.source, status: 'error', items_found: 0, items_new: 0, error: err instanceof Error ? err.message : String(err) };
     }
     await pool.query(
       `INSERT INTO scrapes (source, status, items_found, items_new, error, started_at, finished_at)
@@ -39,5 +46,14 @@ export async function runAllScrapers(pool: Pool): Promise<ScrapeResult[]> {
   }
   results.push(...(await discoverAll(pool)));
   results.push(...(await enrichAllDjs(pool)));
+  // Second verification pass after enrichment so a candidate that just
+  // gained mixes/links/articles is promoted in the same cycle.
+  const verifyAfter = await verifyDiscovered(pool);
+  await pool.query(
+    `INSERT INTO scrapes (source, status, items_found, items_new, error, started_at, finished_at)
+     VALUES ('verify-discovered', $1, $2, $2, NULL, now(), now())`,
+    [verifyAfter.status, verifyAfter.items_found],
+  );
+  results.push(verifyAfter);
   return results;
 }
