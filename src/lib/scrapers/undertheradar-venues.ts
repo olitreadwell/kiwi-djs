@@ -1,6 +1,6 @@
 import type { Pool } from 'pg';
 import { createHash } from 'node:crypto';
-import { fetchHtml, sleep } from './http';
+import { fetchHtmlCached, sleep } from './http';
 import { parseUtrDate } from './undertheradar';
 import { upsertEvent, linkDjToEvent } from './upsert';
 import type { Scraper, ScrapeResult } from './types';
@@ -44,7 +44,8 @@ export const undertheradarVenuesScraper: Scraper = {
     for (const venue of VENUES) {
       const url = `https://www.undertheradar.co.nz/feeds/showsRssVenues.php?venue=${venue.id}`;
       try {
-        const xml = await fetchHtml(url);
+        const xml = await fetchHtmlCached(url);
+        if (xml === null) continue;
         for (const item of parseRss(xml)) {
           // Description: "Afters., Wellington, Sat, 10 October"
           const dateMatch = item.description.match(/(\d{1,2}(?:st|nd|rd|th)?\s+[A-Za-z]+)/);

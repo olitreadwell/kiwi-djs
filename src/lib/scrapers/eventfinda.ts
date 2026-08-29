@@ -1,7 +1,7 @@
 import type { Pool } from 'pg';
 import { createHash } from 'node:crypto';
 import * as cheerio from 'cheerio';
-import { fetchHtml, sleep } from './http';
+import { fetchHtml, fetchHtmlCached, sleep } from './http';
 import { upsertEvent, linkDjToEvent } from './upsert';
 import type { Scraper, ScrapeResult } from './types';
 
@@ -26,7 +26,8 @@ async function scrapeSitemap(pool: Pool): Promise<ScrapeResult> {
   let newCount = 0;
   for (const url of urls) {
     try {
-      const html = await fetchHtml(url);
+      const html = await fetchHtmlCached(url);
+      if (html === null) continue;
       const $ = cheerio.load(html);
       const name = $('h1.p-name').first().text().trim() || $('h1').first().text().trim();
       if (!name) continue;
