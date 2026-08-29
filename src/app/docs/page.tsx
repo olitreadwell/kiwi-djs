@@ -1,4 +1,4 @@
-export const metadata = { title: 'API docs — Wellington DJs' };
+export const metadata = { title: 'API docs — Aotearoa NZ DJs' };
 
 export default function DocsPage() {
   return (

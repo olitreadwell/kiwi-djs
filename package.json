@@ -1,5 +1,5 @@
 {
-  "name": "wellington-djs",
+  "name": "aotearoa-nz-djs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "db:setup": "pnpm db:migrate && pnpm db:seed",
     "db:snapshot": "node --env-file=.env.local --import tsx scripts/export-snapshot.mjs",
     "scrape": "node --env-file=.env.local --import tsx scripts/run-scrapers.ts",
+    "loop": "node --env-file=.env.local --import tsx scripts/loop.ts",
     "typecheck": "tsc --noEmit",
     "contract": "node scripts/contract-test.mjs",
     "check": "pnpm lint && pnpm typecheck && pnpm build"

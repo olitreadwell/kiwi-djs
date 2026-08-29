@@ -207,6 +207,8 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
      ) evidence
      WHERE djs.id = evidence.id
        AND djs.opt_out = FALSE
+       AND djs.is_nz = TRUE
+       AND djs.source IN ('discovered', 'soundcloud', 'news-article', 'mixcloud', 'radioactive')
        AND (djs.verification_level <> evidence.level OR djs.verification_sources <> evidence.sources)
      RETURNING djs.id`,
   );
@@ -218,18 +220,29 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
 function extractDjNamesFromTitle(title: string): string[] {
   const t = title.replace(/\s+/g, ' ').trim();
   const names: string[] = [];
-  const patterns = [
-    /^Interview(?:\s*[:\-–—])?\s*(?:with\s+)?["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?/i,
-    /^Meet\s+["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?[,.]/i,
-    /^["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?\s*[:\-–—]/,
-    /([A-Z][A-Za-z0-9 .'&+!-]{2,40})\s+(?:drops?|releases?|brings|returns to|talks)\s+(?:a|the|new|his|her|their)?\s*(?:mix|track|album|show|gig|set)/i,
-  ];
-  for (const pattern of patterns) {
-    const match = t.match(pattern);
-    if (match?.[1]) names.push(match[1]);
+  const hasDjSignal = /(^|\b)(dj|deejay|disc jockey|interview|meet)\b/i.test(t);
+  if (!hasDjSignal) return names;
+  const push = (raw: string): void => {
+    const name = raw.replace(/^["“']+|["”']+$/g, '').trim();
+    if (!name || name.length < 3 || name.length > 40) return;
+    if (/\.\.|[,!?]|\.$/.test(name)) return;
+    if (name.split(/\s+/).length > 3) return;
+    if (/^(the|a|an|this|these|those|how|why|what|when|where|region|next|month|tomorrow|today|night|weekend|mural|flood|relief|larger|from|new|top|best|all|cases|artist|band|crew|collective|show|gig|party|festival)\b/i.test(name)) return;
+    if (isJunkName(name)) return;
+    names.push(name);
+  };
+  let match = t.match(/^Interview(?:\s*[:\-–—])?\s*(?:with\s+)?["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?/i);
+  if (match) push(match[1]);
+  match = t.match(/^Meet\s+["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?[,.]/i);
+  if (match) push(match[1]);
+  match = t.match(/[-–—]\s*(DJ\s+[A-Z][A-Za-z0-9 .'&+!-]{1,30})/i);
+  if (match) push(match[1]);
+  match = t.match(/^["“]?([A-Z][A-Za-z0-9 .'&+!-]{1,40})["”]?\s*[:\-–—]/);
+  if (match && !/[-–—]\s*DJ\s/i.test(t)) {
+    const name = match[1].trim();
+    const after = t.slice(t.indexOf(match[0]) + match[0].length);
+    if (name.split(/\s+/).length <= 3 && /dj|interview|meet/i.test(after)) push(name);
   }
-  const possessive = t.match(/Wellington'?s?\s+["“]?([A-Z][A-Za-z0-9 .'&+!-]{2,40})["”]?/i);
-  if (possessive?.[1]) names.push(possessive[1]);
   return names;
 }
 

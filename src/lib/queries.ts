@@ -34,6 +34,7 @@ export interface DjRow {
   verification_level: number;
   verification_sources: string[];
   source: string;
+  is_nz: boolean;
   upcoming_events: number;
   last_played_at: string | null;
 }
@@ -62,7 +63,7 @@ export async function listDjs(opts: { query?: string; genre?: string } = {}): Pr
   }
   const pool = getPool();
   const params: unknown[] = [];
-  const where: string[] = ['opt_out = FALSE AND active = TRUE'];
+  const where: string[] = ['opt_out = FALSE AND active = TRUE AND is_nz = TRUE'];
   if (opts.query) {
     params.push(`%${opts.query}%`);
     where.push(`(name ILIKE $${params.length} OR bio ILIKE $${params.length} OR array_to_string(genres, ' ') ILIKE $${params.length})`);
@@ -92,7 +93,7 @@ export async function getDjById(id: string): Promise<DjRow | null> {
     `SELECT d.*, ${completenessSql} AS data_completeness,
             (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
             (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
-     FROM djs d WHERE d.id = $1 AND d.opt_out = FALSE AND d.active = TRUE`,
+     FROM djs d WHERE d.id = $1 AND d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,
     [id],
   );
   return (result.rows[0] as DjRow) ?? null;
@@ -180,7 +181,7 @@ export async function getPopularDjs(limit = 8): Promise<DjRow[]> {
             (SELECT count(*) FROM events e WHERE e.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
             (SELECT max(e2.starts_at) FROM events e2 WHERE e2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d
-     WHERE d.opt_out = FALSE AND d.active = TRUE
+     WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE
      ORDER BY d.popularity DESC, d.name ASC
      LIMIT $1`,
     [limit],

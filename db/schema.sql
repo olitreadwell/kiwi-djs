@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS djs (
   discovery_note TEXT,                       -- junk/seen on unverified candidates
   verification_level INTEGER NOT NULL DEFAULT 0, -- 0 candidate, 1 listed, 2+ verified (evidence-weighted)
   verification_sources TEXT[] NOT NULL DEFAULT '{}', -- evidence categories: mixes, links, articles, gigs
+  is_nz          BOOLEAN NOT NULL DEFAULT TRUE, -- public list is Aotearoa/NZ-only
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
@@ -33,6 +34,7 @@ ALTER TABLE djs ADD COLUMN IF NOT EXISTS mixcloud_backoff_until TIMESTAMPTZ;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS discovery_note TEXT;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_level INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_sources TEXT[] NOT NULL DEFAULT '{}';
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS is_nz BOOLEAN NOT NULL DEFAULT TRUE;
 
 CREATE TABLE IF NOT EXISTS venues (
   id            TEXT PRIMARY KEY,

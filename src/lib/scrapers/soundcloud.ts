@@ -21,6 +21,20 @@ const WELLINGTON_ANCHORS = [
 
 const CITY_WORDS = ['wellington', 'wlg', 'pōneke', 'poneke', 'whanganui'];
 
+const NZ_CITIES = [
+  'wellington', 'pōneke', 'poneke', 'auckland', 'tāmaki', 'christchurch', 'ōtautahi', 'hamilton',
+  'kirikiriroa', 'dunedin', 'ōtepoti', 'tauranga', 'napier', 'hastings', 'new plymouth', 'nelson',
+  'queenstown', 'wanaka', 'gisborne', 'whanganui', 'palmerston north', 'rotorua', 'invercargill',
+  'timaru', 'blenheim', 'whangārei', 'whangarei', 'new zealand', 'nz', 'aotearoa', 'lower hutt',
+  'upper hutt', 'petone', 'porirua', 'hutt',
+];
+
+function isNzProfile(user: ScUser): boolean {
+  if (!user.city) return true;
+  const city = user.city.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return NZ_CITIES.some((nz) => city.includes(nz));
+}
+
 function nameContainsCityWord(name: string): boolean {
   const normalized = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   return CITY_WORDS.some((word) => normalized === word || normalized.includes(`${word} `) || normalized.includes(` ${word}`));
@@ -66,11 +80,11 @@ export const soundcloudScraper: Scraper = {
       found += 1;
       const id = `soundcloud-${user.permalink}`;
       const result = await pool.query(
-        `INSERT INTO djs (id, name, bio, soundcloud_url, image_url, source, data_completeness, active, discovery_note)
-         VALUES ($1, $2, $3, $4, $5, 'soundcloud', 20, FALSE, NULL)
+        `INSERT INTO djs (id, name, bio, soundcloud_url, image_url, source, data_completeness, active, discovery_note, is_nz)
+         VALUES ($1, $2, $3, $4, $5, 'soundcloud', 20, FALSE, NULL, $6)
          ON CONFLICT (id) DO NOTHING
          RETURNING id`,
-        [id, user.username, user.description ?? null, `https://soundcloud.com/${user.permalink}`, user.avatar_url ?? null],
+        [id, user.username, user.description ?? null, `https://soundcloud.com/${user.permalink}`, user.avatar_url ?? null, isNzProfile(user)],
       );
       if (result.rows.length > 0) {
         newCount += 1;

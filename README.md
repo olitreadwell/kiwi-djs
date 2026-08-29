@@ -1,4 +1,4 @@
-# Wellington DJs
+# Aotearoa NZ DJs
 
 Open directory of DJs in Wellington, NZ (Te Whanganui-a-Tara). Search DJs, browse bios/genres/socials, see upcoming gigs, discover who's moving the room. Data comes from public sources only, refreshed daily.
 
@@ -21,7 +21,7 @@ pnpm dev
 Local Postgres (docker):
 
 ```bash
-docker run -d --name wellington-djs-db \
+docker run -d --name aotearoa-nz-djs-db \
   -e POSTGRES_PASSWORD=wellington_djs_dev -e POSTGRES_USER=wellington_djs \
   -e POSTGRES_DB=wellington_djs -p 5433:5432 postgres:16-alpine
 ```
