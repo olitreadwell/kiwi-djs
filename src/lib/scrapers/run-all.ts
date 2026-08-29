@@ -1,5 +1,6 @@
 import type { Pool } from 'pg';
 import { undertheradarScraper } from './undertheradar';
+import { undertheradarVenuesScraper } from './undertheradar-venues';
 import { sanfranScraper } from './sanfran';
 import { rogueScraper } from './rogue';
 import { radioactiveScraper } from './radioactive';
@@ -21,6 +22,7 @@ import type { Scraper, ScrapeResult } from './types';
 
 const scrapers: Scraper[] = [
   undertheradarScraper,
+  undertheradarVenuesScraper,
   sanfranScraper,
   rogueScraper,
   radioactiveScraper,

@@ -6,7 +6,7 @@ import type { Scraper, ScrapeResult } from './types';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-function parseUtrDate(dayText: string, timeText: string): Date | null {
+export function parseUtrDate(dayText: string, timeText: string): Date | null {
   const match = dayText.match(/(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)/);
   if (!match) return null;
   const day = parseInt(match[1], 10);

@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-29T08:32:14.007Z",
+  "exportedAt": "2026-08-29T08:35:07.269Z",
   "djs": [
     {
       "id": "frida",
@@ -693,14 +693,64 @@
   ],
   "events": [
     {
-      "id": "undertheradar-104079",
-      "name": "Soulstroke X Teraset - Dual Release Show - All Ages",
-      "venue": null,
-      "starts_at": "2026-09-12T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104079/Soulstroke-X-Teraset---Dual-Release-Show---All-Ages.utr",
-      "source": "undertheradar",
-      "dj_id": "soulstroke-x-teraset",
-      "dj_name": "Soulstroke X Teraset"
+      "id": "sanfran-430631",
+      "name": "Uncle Acid and the Deadbeats",
+      "venue": "San Fran",
+      "starts_at": "2026-12-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1434150",
+      "name": "Steve Hofstetter",
+      "venue": "San Fran",
+      "starts_at": "2027-02-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/steve-hofstetter-tickets-ae1434150",
+      "source": "sanfran",
+      "dj_id": "steve-hofstetter",
+      "dj_name": "Steve Hofstetter"
+    },
+    {
+      "id": "sanfran-1221656",
+      "name": "Grace Petrie",
+      "venue": "San Fran",
+      "starts_at": "2027-03-19T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/grace-petrie-tickets-ae1221656",
+      "source": "sanfran",
+      "dj_id": "grace-petrie",
+      "dj_name": "Grace Petrie"
+    },
+    {
+      "id": "rogue-vagabond-102968",
+      "name": "The Racket Lounge",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-09T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102968/The-Racket-Lounge.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-104171",
+      "name": "Rory Johns And The Mystic",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-10T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-104308",
+      "name": "Bojack Funkman",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-04T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104308/Bojack-Funkman.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "bojack-funkman",
+      "dj_name": "Bojack Funkman"
     },
     {
       "id": "rogue-vagabond-104059",
@@ -711,6 +761,26 @@
       "source": "rogue-vagabond",
       "dj_id": "sam",
       "dj_name": "Sam"
+    },
+    {
+      "id": "rogue-vagabond-103454",
+      "name": "Sunday Jazz - Double Take",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-13T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/103454/Sunday-Jazz---Double-Take.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "sunday-jazz",
+      "dj_name": "Sunday Jazz"
+    },
+    {
+      "id": "rogue-vagabond-104062",
+      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-17T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-104066",
@@ -731,6 +801,16 @@
       "source": "rogue-vagabond",
       "dj_id": "loose-parts",
       "dj_name": "Loose Parts"
+    },
+    {
+      "id": "sanfran-1415326",
+      "name": "KITA",
+      "venue": "San Fran",
+      "starts_at": "2026-09-25T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-102962",
@@ -763,34 +843,74 @@
       "dj_name": "Undubbed Goes"
     },
     {
-      "id": "undertheradar-103697",
-      "name": "Soul Void, Molosser (EP Release), Parasitic Infestation, Dredge",
-      "venue": null,
-      "starts_at": "2026-08-29T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103697/Soul-Void-Molosser-EP-Release-Parasitic-Infestation-Dredge.utr",
-      "source": "undertheradar",
-      "dj_id": "parasitic-infestation",
-      "dj_name": "Parasitic Infestation"
+      "id": "rogue-vagabond-102969",
+      "name": "The Racket Lounge",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-07T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "dj_name": null
     },
     {
-      "id": "undertheradar-103379",
-      "name": "Xile & Zuko - New Zealand 2026",
-      "venue": null,
-      "starts_at": "2026-09-04T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103379/Xile--Zuko---New-Zealand-2026.utr",
-      "source": "undertheradar",
-      "dj_id": "xile",
-      "dj_name": "Xile"
+      "id": "ra-2468041",
+      "name": "Carlucci Carnival",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": null,
+      "dj_name": null
     },
     {
-      "id": "undertheradar-103503",
-      "name": "Bass Borne",
-      "venue": null,
-      "starts_at": "2026-09-05T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103503/Bass-Borne.utr",
-      "source": "undertheradar",
-      "dj_id": "bass-borne",
-      "dj_name": "Bass Borne"
+      "id": "sanfran-288274",
+      "name": "24 Hour Party People",
+      "venue": "San Fran",
+      "starts_at": "2026-08-29T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/24-hour-party-people-tickets-ae288274",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "earthbeat-2025-lovelace",
+      "name": "Earth Beat Festival 2025",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1417811",
+      "name": "KPOP Club Night",
+      "venue": "San Fran",
+      "starts_at": "2026-09-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1574004",
+      "name": "Emerson | Leap! On Tour",
+      "venue": "San Fran",
+      "starts_at": "2026-09-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/emerson-tickets-ae1574004",
+      "source": "sanfran",
+      "dj_id": "emerson",
+      "dj_name": "Emerson"
+    },
+    {
+      "id": "sanfran-146474",
+      "name": "ASH ‘1977’ 30th Anniversary Tour",
+      "venue": "San Fran",
+      "starts_at": "2026-09-15T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/ash-tickets-ae146474",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "sanfran-1477466",
@@ -801,6 +921,46 @@
       "source": "sanfran",
       "dj_id": "reece-mastin",
       "dj_name": "Reece Mastin"
+    },
+    {
+      "id": "sanfran-1681897",
+      "name": "Great Sounds Great Festival 202",
+      "venue": "San Fran",
+      "starts_at": "2026-11-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/great-sounds-great-festival-2026-tickets-ae1681897",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1470011",
+      "name": "Debt Club",
+      "venue": "San Fran",
+      "starts_at": "2026-09-18T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/debt-club-tickets-ae1470011",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1603030",
+      "name": "Where’s Jai",
+      "venue": "San Fran",
+      "starts_at": "2026-10-10T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/where-s-jai-tickets-ae1603030",
+      "source": "sanfran",
+      "dj_id": "where-s-jai",
+      "dj_name": "Where’s Jai"
+    },
+    {
+      "id": "sanfran-1488974",
+      "name": "Old Mervs",
+      "venue": "San Fran",
+      "starts_at": "2026-11-06T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "sanfran-2148",
@@ -823,14 +983,14 @@
       "dj_name": "Mountain Boy"
     },
     {
-      "id": "sanfran-1690409",
-      "name": "Avatar - Earth, Wind & Fire Tribute",
+      "id": "sanfran-436891",
+      "name": "Flyte",
       "venue": "San Fran",
-      "starts_at": "2026-10-18T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/avatar-earth-wind-and-fire-tribute-tickets-ae1690409",
+      "starts_at": "2026-11-14T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/flyte-tickets-ae436891",
       "source": "sanfran",
-      "dj_id": "avatar",
-      "dj_name": "Avatar"
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "sanfran-1464135",
@@ -843,6 +1003,26 @@
       "dj_name": "YĪN YĪN"
     },
     {
+      "id": "sanfran-1541224",
+      "name": "PRINS",
+      "venue": "San Fran",
+      "starts_at": "2026-11-26T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1078519",
+      "name": "The Reytons",
+      "venue": "San Fran",
+      "starts_at": "2026-12-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
       "id": "sanfran-1437738",
       "name": "David Nihill - Taking Tangents Tour",
       "venue": "San Fran",
@@ -851,26 +1031,6 @@
       "source": "sanfran",
       "dj_id": "taking-tangents",
       "dj_name": "Taking Tangents"
-    },
-    {
-      "id": "sanfran-1434150",
-      "name": "Steve Hofstetter",
-      "venue": "San Fran",
-      "starts_at": "2027-02-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/steve-hofstetter-tickets-ae1434150",
-      "source": "sanfran",
-      "dj_id": "steve-hofstetter",
-      "dj_name": "Steve Hofstetter"
-    },
-    {
-      "id": "sanfran-1221656",
-      "name": "Grace Petrie",
-      "venue": "San Fran",
-      "starts_at": "2027-03-19T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/grace-petrie-tickets-ae1221656",
-      "source": "sanfran",
-      "dj_id": "grace-petrie",
-      "dj_name": "Grace Petrie"
     },
     {
       "id": "rogue-vagabond-103654",
@@ -883,16 +1043,6 @@
       "dj_name": "Sam Manzanza's Afrobeat Band"
     },
     {
-      "id": "rogue-vagabond-104308",
-      "name": "Bojack Funkman",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-04T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104308/Bojack-Funkman.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "bojack-funkman",
-      "dj_name": "Bojack Funkman"
-    },
-    {
       "id": "rogue-vagabond-104060",
       "name": "Sunday Jazz - Miles Craford",
       "venue": "The Rogue & Vagabond",
@@ -903,24 +1053,54 @@
       "dj_name": "Miles Craford"
     },
     {
-      "id": "rogue-vagabond-104067",
-      "name": "The New Zealand Swing Quartet - The Music Of New Orleans",
+      "id": "rogue-vagabond-104058",
+      "name": "Sunday Jazz - Oscar Lavën",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-11T21:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104067/The-New-Zealand-Swing-Quartet---The-Music-Of-New-Orleans.utr",
+      "starts_at": "2026-08-30T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104058/Sunday-Jazz---Oscar-Lavn.utr",
       "source": "rogue-vagabond",
-      "dj_id": "swing-quartet",
-      "dj_name": "Swing Quartet"
+      "dj_id": "sunday-jazz",
+      "dj_name": "Sunday Jazz"
     },
     {
-      "id": "sanfran-1574004",
-      "name": "Emerson | Leap! On Tour",
-      "venue": "San Fran",
-      "starts_at": "2026-09-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/emerson-tickets-ae1574004",
-      "source": "sanfran",
-      "dj_id": "emerson",
-      "dj_name": "Emerson"
+      "id": "the-others-way-2025-high-dependency",
+      "name": "The Others Way 2025",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
+      "source": "the-others-way",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "northern-bass-2026",
+      "name": "Northern Bass 2026",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "snow-machine-2026-weird-techno-girlfriend-paul-le-b",
+      "name": "Snow Machine 2026",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "newtown-festival-2027-jamie-rose-b2b-k",
+      "name": "Newtown Festival 2027",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "undertheradar-104409",
@@ -933,6 +1113,26 @@
       "dj_name": "Sublimate"
     },
     {
+      "id": "eventfinda-sitemap-d469f6e8bd1a",
+      "name": "Otto Wine Club: Tiwaiwaka",
+      "venue": "Otto Champagneria & Beer Hall",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/otto-wine-club-tiwaiwaka/wellington-region",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-31ae4a99245a",
+      "name": "Songwriters' Showcase #115",
+      "venue": "Moon",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/songwriters-showcase-115/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
       "id": "undertheradar-104012",
       "name": "Corner Store Presents: Absolutely Positively Footwork",
       "venue": null,
@@ -943,14 +1143,24 @@
       "dj_name": " Absolutely Positively Footwork"
     },
     {
-      "id": "undertheradar-103788",
-      "name": "Rothko Records: Mothra With Sunwraith, Crying Ivy, Scream By Tulips",
+      "id": "undertheradar-104388",
+      "name": "Toxa Album Release",
       "venue": null,
-      "starts_at": "2026-09-11T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103788/Rothko-Records-Mothra-With-Sunwraith-Crying-Ivy-Scream-By-Tulips.utr",
+      "starts_at": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104388/Toxa-Album-Release.utr",
       "source": "undertheradar",
-      "dj_id": "rothko-records-mothra",
-      "dj_name": "Rothko Records: Mothra"
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-104178",
+      "name": "Single Malt Presents ‘Wetlands’",
+      "venue": null,
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104178/Single-Malt-Presents-Wetlands.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "undertheradar-103537",
@@ -963,6 +1173,16 @@
       "dj_name": "Silver Sonics w"
     },
     {
+      "id": "undertheradar-104261",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104261/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
       "id": "undertheradar-104029",
       "name": "Delusional Dreamland 5 Year Tour - Wellington",
       "venue": "MOON",
@@ -973,6 +1193,196 @@
       "dj_name": "Delusional Dreamland 5 Year"
     },
     {
+      "id": "sanfran-1693142",
+      "name": "Myshaan",
+      "venue": "San Fran",
+      "starts_at": "2026-11-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1690521",
+      "name": "Convergence – A Drag Night Fundraiser",
+      "venue": "San Fran",
+      "starts_at": "2026-09-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1690409",
+      "name": "Avatar - Earth, Wind & Fire Tribute",
+      "venue": "San Fran",
+      "starts_at": "2026-10-18T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/avatar-earth-wind-and-fire-tribute-tickets-ae1690409",
+      "source": "sanfran",
+      "dj_id": "avatar",
+      "dj_name": "Avatar"
+    },
+    {
+      "id": "sanfran-1688826",
+      "name": "Buckshot",
+      "venue": "San Fran",
+      "starts_at": "2026-12-02T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-88f640841748",
+      "name": "Kevin Bridges - Here If You Need Me",
+      "venue": "Michael Fowler Centre",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2027/kevin-bridges-here-if-you-need-me2/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-104387",
+      "name": "Songwriters' Showcase #115",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104387/Songwriters-Showcase-115.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-104262",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104262/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-104067",
+      "name": "The New Zealand Swing Quartet - The Music Of New Orleans",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-11T21:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104067/The-New-Zealand-Swing-Quartet---The-Music-Of-New-Orleans.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "swing-quartet",
+      "dj_name": "Swing Quartet"
+    },
+    {
+      "id": "eventfinda-sitemap-7f6c7ed5e55a",
+      "name": "Kevin Bridges - Here If You Need Me",
+      "venue": "Michael Fowler Centre",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2027/kevin-bridges-here-if-you-need-me/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-a3e9c46148e4",
+      "name": "Te Reo Kindy Gym session (Full Immersion)",
+      "venue": "Te Rauparaha Arena",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/te-reo-kindy-gym-session-full-immersion/wellington-region",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-562ee2f8b289",
+      "name": "Spring Yum Cha",
+      "venue": "The Botanist",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/spring-yum-cha/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-76459d5f60ab",
+      "name": "Conservation Kōrero: Kākā in the Capital",
+      "venue": "ZEALANDIA Eco-Sanctuary",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/conservation-korero-kaka-in-the-capital/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-3b52393aa266",
+      "name": "Conservation Stories from Country Calendar",
+      "venue": "The Garden Room at St Peter’s on Willis",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/conservation-stories-from-country-calendar/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "snow-machine-2026-henry-who",
+      "name": "Snow Machine 2026 — Henry Who",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "henry-who",
+      "dj_name": "Henry Who"
+    },
+    {
+      "id": "undertheradar-103503",
+      "name": "Bass Borne",
+      "venue": null,
+      "starts_at": "2026-09-05T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103503/Bass-Borne.utr",
+      "source": "undertheradar",
+      "dj_id": "bass-borne",
+      "dj_name": "Bass Borne"
+    },
+    {
+      "id": "eventfinda-sitemap-84da11c8485c",
+      "name": "Italian - Introductory 2",
+      "venue": "Wellington High School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/italian-introductory-22/wellington",
+      "source": "eventfinda",
+      "dj_id": "tali",
+      "dj_name": "TALI"
+    },
+    {
+      "id": "eventfinda-sitemap-8de9d4bf57a8",
+      "name": "Drawing And Painting For Beginners",
+      "venue": "Wellington High School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/drawing-and-painting-for-beginners3/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-0a3527fae22f",
+      "name": "Ukulele Beginners",
+      "venue": "Wellington High School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/ukulele-beginners3/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-51f259cf5ba1",
+      "name": "Cooking - More Tastes of Vietnamese Street Food",
+      "venue": "Wellington High School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/cooking-more-tastes-of-vietnamese-street-food2/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
       "id": "undertheradar-103890",
       "name": "Spring For Kaibosh - Musical Fundraiser",
       "venue": "MOON",
@@ -981,6 +1391,16 @@
       "source": "undertheradar",
       "dj_id": "musical",
       "dj_name": "Musical"
+    },
+    {
+      "id": "undertheradar-104264",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "undertheradar-104403",
@@ -1003,34 +1423,14 @@
       "dj_name": "Serenna"
     },
     {
-      "id": "sanfran-1603030",
-      "name": "Where’s Jai",
-      "venue": "San Fran",
-      "starts_at": "2026-10-10T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/where-s-jai-tickets-ae1603030",
-      "source": "sanfran",
-      "dj_id": "where-s-jai",
-      "dj_name": "Where’s Jai"
-    },
-    {
-      "id": "rogue-vagabond-103454",
-      "name": "Sunday Jazz - Double Take",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-13T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/103454/Sunday-Jazz---Double-Take.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "sunday-jazz",
-      "dj_name": "Sunday Jazz"
-    },
-    {
-      "id": "rogue-vagabond-104058",
-      "name": "Sunday Jazz - Oscar Lavën",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-08-30T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104058/Sunday-Jazz---Oscar-Lavn.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "sunday-jazz",
-      "dj_name": "Sunday Jazz"
+      "id": "eventfinda-sitemap-fac78a749bc4",
+      "name": "Japanese Language - Introductory 2",
+      "venue": "Wellington High School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/japanese-language-introductory-23/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "undertheradar-100998",
@@ -1043,54 +1443,194 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104264",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
+      "id": "eventfinda-sitemap-3b18e5f40cb5",
+      "name": "Guitar - Beginners",
+      "venue": "Wellington High School",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "source": "undertheradar",
+      "url": "https://www.eventfinda.co.nz/2026/guitar-beginners3/wellington",
+      "source": "eventfinda",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "sanfran-1688826",
-      "name": "Buckshot",
-      "venue": "San Fran",
-      "starts_at": "2026-12-02T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
-      "source": "sanfran",
+      "id": "eventfinda-sitemap-43e2d86167b0",
+      "name": "A Night with Pol Roger",
+      "venue": "Dockside Restaurant & Bar",
+      "starts_at": "2026-10-05T05:00:00.000Z",
+      "url": "https://www.eventfinda.co.nz/2026/a-night-with-pol-roger/wellington-region",
+      "source": "eventfinda",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "undertheradar-104262",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
+      "id": "eventfinda-sitemap-1a7a05fff081",
+      "name": "Tessellation - Children Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104262/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "source": "undertheradar",
+      "url": "https://www.eventfinda.co.nz/2026/tessellation-children-creative-arts-holiday-programme/wellington",
+      "source": "eventfinda",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "undertheradar-104387",
-      "name": "Songwriters' Showcase #115",
-      "venue": "MOON",
+      "id": "eventfinda-sitemap-7274d68aec63",
+      "name": "Fun With Oil Pastels and Collage - Children's Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104387/Songwriters-Showcase-115.utr",
-      "source": "undertheradar",
+      "url": "https://www.eventfinda.co.nz/2026/fun-with-oil-pastels-and-collage-childrens-arts-holiday-programme/wellington",
+      "source": "eventfinda",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "sanfran-1690521",
-      "name": "Convergence – A Drag Night Fundraiser",
-      "venue": "San Fran",
-      "starts_at": "2026-09-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
-      "source": "sanfran",
+      "id": "eventfinda-sitemap-ae4cfdee265f",
+      "name": "Acrylic Painting Boot Camp - Creative Arts Holiday Programme for Teens",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/acrylic-painting-boot-camp-creative-arts-holiday-programme-for-teens/wellington",
+      "source": "eventfinda",
       "dj_id": null,
       "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-92e8598e5205",
+      "name": "Build Your Light Castle - Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/build-your-light-castle-creative-arts-holiday-programme/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-43610abc2553",
+      "name": "Whānau Geometric Patterns Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/whanau-geometric-patterns-creative-arts-holiday-programme/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-c5d3e7e12ab1",
+      "name": "Pottery Wheel Throwing & Hand Building for Teens",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/pottery-wheel-throwing-hand-building-for-teens3/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-e0055bc89109",
+      "name": "Creating with Clay - Tweens & Teens - Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/creating-with-clay-tweens-teens-creative-arts-holiday-programme/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-555047af4acb",
+      "name": "Jewellery Making - Creative Arts Holiday Programme for Teens",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/jewellery-making-creative-arts-holiday-programme-for-teens4/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-350962c06bae",
+      "name": "Whānau Sculpture - Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/whanau-sculpture-creative-arts-holiday-programme4/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-f68740315c3c",
+      "name": "Sculpting With Clay - Tweens & Teens - Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/sculpting-with-clay-tweens-teens-creative-arts-holiday-programme2/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-82d5d7c62aba",
+      "name": "Fundamentals of Drawing - Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/fundamentals-of-drawing-creative-arts-holiday-programme/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-c4f7f52c8c5c",
+      "name": "Intro to 2D Traditional Animation - Creative Arts Holiday Programme",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/intro-to-2d-traditional-animation-creative-arts-holiday-programme2/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-df9e67a86301",
+      "name": "Sewing - Creative Arts Holiday Programme for Tweens & Teens",
+      "venue": "Inverlochy Art School",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/sewing-creative-arts-holiday-programme-for-tweens-teens4/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-90de54852ba2",
+      "name": "The King's Gambit",
+      "venue": "BATS Theatre",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/the-kings-gambit/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-sitemap-3654d4504824",
+      "name": "Astronomy On Tap",
+      "venue": "Space Place at Carter Observatory",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/astronomy-on-tap/wellington",
+      "source": "eventfinda",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-103379",
+      "name": "Xile & Zuko - New Zealand 2026",
+      "venue": null,
+      "starts_at": "2026-09-04T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103379/Xile--Zuko---New-Zealand-2026.utr",
+      "source": "undertheradar",
+      "dj_id": "xile",
+      "dj_name": "Xile"
+    },
+    {
+      "id": "undertheradar-104079",
+      "name": "Soulstroke X Teraset - Dual Release Show - All Ages",
+      "venue": null,
+      "starts_at": "2026-09-12T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104079/Soulstroke-X-Teraset---Dual-Release-Show---All-Ages.utr",
+      "source": "undertheradar",
+      "dj_id": "soulstroke-x-teraset",
+      "dj_name": "Soulstroke X Teraset"
     },
     {
       "id": "sanfran-1690529",
@@ -1103,254 +1643,2094 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1693142",
-      "name": "Myshaan",
-      "venue": "San Fran",
-      "starts_at": "2026-11-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104261",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104261/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104178",
-      "name": "Single Malt Presents ‘Wetlands’",
-      "venue": null,
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104178/Single-Malt-Presents-Wetlands.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104388",
-      "name": "Toxa Album Release",
-      "venue": null,
-      "starts_at": "2026-09-24T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104388/Toxa-Album-Release.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "newtown-festival-2027-jamie-rose-b2b-k",
-      "name": "Newtown Festival 2027",
-      "venue": "Newtown, Wellington",
-      "starts_at": "2027-03-07T00:00:00.000Z",
-      "url": "https://www.newtownfestival.org.nz/artists/",
-      "source": "newtown-festival",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "snow-machine-2026-weird-techno-girlfriend-paul-le-b",
-      "name": "Snow Machine 2026",
-      "venue": "Queenstown",
-      "starts_at": null,
-      "url": "https://nz.snow-machine.com/artists/",
-      "source": "snow-machine",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1415326",
-      "name": "KITA",
-      "venue": "San Fran",
-      "starts_at": "2026-09-25T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1417811",
-      "name": "KPOP Club Night",
-      "venue": "San Fran",
-      "starts_at": "2026-09-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "northern-bass-2026",
-      "name": "Northern Bass 2026",
+      "id": "northern-bass-2026-4am-kru",
+      "name": "Northern Bass 2026 — 4AM KRU",
       "venue": "Kaiwaka, Northland",
       "starts_at": "2026-12-30T00:00:00.000Z",
       "url": "https://northernbass.co.nz/lineup",
       "source": "northern-bass",
-      "dj_id": null,
-      "dj_name": null
+      "dj_id": "4am-kru",
+      "dj_name": "4AM KRU"
     },
     {
-      "id": "the-others-way-2025-high-dependency",
-      "name": "The Others Way 2025",
+      "id": "northern-bass-2026-a-little-sound",
+      "name": "Northern Bass 2026 — A LITTLE SOUND",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "a-little-sound",
+      "dj_name": "A LITTLE SOUND"
+    },
+    {
+      "id": "northern-bass-2026-anais",
+      "name": "Northern Bass 2026 — ANAIS",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "anais",
+      "dj_name": "ANAIS"
+    },
+    {
+      "id": "northern-bass-2026-andy-c-tonn-piper",
+      "name": "Northern Bass 2026 — ANDY C + TONN PIPER",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "andy-c-tonn-piper",
+      "dj_name": "ANDY C + TONN PIPER"
+    },
+    {
+      "id": "northern-bass-2026-axis",
+      "name": "Northern Bass 2026 — AXIS",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "axis",
+      "dj_name": "AXIS"
+    },
+    {
+      "id": "northern-bass-2026-break",
+      "name": "Northern Bass 2026 — BREAK",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "break",
+      "dj_name": "BREAK"
+    },
+    {
+      "id": "northern-bass-2026-charli-brix",
+      "name": "Northern Bass 2026 — CHARLI BRIX",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "charli-brix",
+      "dj_name": "CHARLI BRIX"
+    },
+    {
+      "id": "northern-bass-2026-clova",
+      "name": "Northern Bass 2026 — CLOVA",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "clova",
+      "dj_name": "CLOVA"
+    },
+    {
+      "id": "northern-bass-2026-culture-shock",
+      "name": "Northern Bass 2026 — CULTURE SHOCK",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "culture-shock",
+      "dj_name": "CULTURE SHOCK"
+    },
+    {
+      "id": "northern-bass-2026-dj-zinc",
+      "name": "Northern Bass 2026 — DJ ZINC",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "dj-zinc",
+      "dj_name": "DJ ZINC"
+    },
+    {
+      "id": "northern-bass-2026-dylan-c",
+      "name": "Northern Bass 2026 — DYLAN C",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "dylan-c",
+      "dj_name": "DYLAN C"
+    },
+    {
+      "id": "northern-bass-2026-emwa",
+      "name": "Northern Bass 2026 — EMWA",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "emwa",
+      "dj_name": "EMWA"
+    },
+    {
+      "id": "northern-bass-2026-irah",
+      "name": "Northern Bass 2026 — IRAH",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "irah",
+      "dj_name": "IRAH"
+    },
+    {
+      "id": "northern-bass-2026-ivy-lab",
+      "name": "Northern Bass 2026 — IVY LAB",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "ivy-lab",
+      "dj_name": "IVY LAB"
+    },
+    {
+      "id": "northern-bass-2026-jme",
+      "name": "Northern Bass 2026 — JME",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "jme",
+      "dj_name": "JME"
+    },
+    {
+      "id": "northern-bass-2026-joe-hunt",
+      "name": "Northern Bass 2026 — JOE HUNT",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "joe-hunt",
+      "dj_name": "JOE HUNT"
+    },
+    {
+      "id": "northern-bass-2026-lamour",
+      "name": "Northern Bass 2026 — LAMOUR",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "lamour",
+      "dj_name": "LAMOUR"
+    },
+    {
+      "id": "northern-bass-2026-lee-mvtthews",
+      "name": "Northern Bass 2026 — LEE MVTTHEWS",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "lee-mvtthews",
+      "dj_name": "LEE MVTTHEWS"
+    },
+    {
+      "id": "northern-bass-2026-pearly",
+      "name": "Northern Bass 2026 — PEARLY",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "pearly",
+      "dj_name": "PEARLY"
+    },
+    {
+      "id": "undertheradar-103697",
+      "name": "Soul Void, Molosser (EP Release), Parasitic Infestation, Dredge",
+      "venue": null,
+      "starts_at": "2026-08-29T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103697/Soul-Void-Molosser-EP-Release-Parasitic-Infestation-Dredge.utr",
+      "source": "undertheradar",
+      "dj_id": "parasitic-infestation",
+      "dj_name": "Parasitic Infestation"
+    },
+    {
+      "id": "undertheradar-103788",
+      "name": "Rothko Records: Mothra With Sunwraith, Crying Ivy, Scream By Tulips",
+      "venue": null,
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103788/Rothko-Records-Mothra-With-Sunwraith-Crying-Ivy-Scream-By-Tulips.utr",
+      "source": "undertheradar",
+      "dj_id": "rothko-records-mothra",
+      "dj_name": "Rothko Records: Mothra"
+    },
+    {
+      "id": "snow-machine-2026-restricted",
+      "name": "Snow Machine 2026 — Restricted",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "restricted",
+      "dj_name": "Restricted"
+    },
+    {
+      "id": "northern-bass-2026-pirapus",
+      "name": "Northern Bass 2026 — PIRAPUS",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "pirapus",
+      "dj_name": "PIRAPUS"
+    },
+    {
+      "id": "northern-bass-2026-quix",
+      "name": "Northern Bass 2026 — QUIX",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "quix",
+      "dj_name": "QUIX"
+    },
+    {
+      "id": "northern-bass-2026-robustt",
+      "name": "Northern Bass 2026 — ROBUSTT",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "robustt",
+      "dj_name": "ROBUSTT"
+    },
+    {
+      "id": "northern-bass-2026-rova",
+      "name": "Northern Bass 2026 — ROVA",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "rova",
+      "dj_name": "ROVA"
+    },
+    {
+      "id": "northern-bass-2026-s-p-y",
+      "name": "Northern Bass 2026 — S.P.Y",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "s-p-y",
+      "dj_name": "S.P.Y"
+    },
+    {
+      "id": "northern-bass-2026-songer",
+      "name": "Northern Bass 2026 — SONGER",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "songer",
+      "dj_name": "SONGER"
+    },
+    {
+      "id": "northern-bass-2026-subsonic",
+      "name": "Northern Bass 2026 — SUBSONIC",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "subsonic",
+      "dj_name": "SUBSONIC"
+    },
+    {
+      "id": "northern-bass-2026-suune",
+      "name": "Northern Bass 2026 — SUUNE",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "suune",
+      "dj_name": "SUUNE"
+    },
+    {
+      "id": "northern-bass-2026-swindle",
+      "name": "Northern Bass 2026 — SWINDLE",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "swindle",
+      "dj_name": "SWINDLE"
+    },
+    {
+      "id": "northern-bass-2026-tali",
+      "name": "Northern Bass 2026 — TALI",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "tali",
+      "dj_name": "TALI"
+    },
+    {
+      "id": "northern-bass-2026-the-upbeats",
+      "name": "Northern Bass 2026 — THE UPBEATS",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "the-upbeats",
+      "dj_name": "THE UPBEATS"
+    },
+    {
+      "id": "northern-bass-2026-waxx-off",
+      "name": "Northern Bass 2026 — WAXX OFF",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": "waxx-off",
+      "dj_name": "WAXX OFF"
+    },
+    {
+      "id": "the-others-way-2025-christoph-el-truento",
+      "name": "The Others Way 2025 — Christoph El truento",
       "venue": "Auckland",
       "starts_at": null,
       "url": "https://www.theothersway.co.nz/lineup",
       "source": "the-others-way",
+      "dj_id": "christoph-el-truento",
+      "dj_name": "Christoph El truento"
+    },
+    {
+      "id": "the-others-way-2025-high-dependency-unit",
+      "name": "The Others Way 2025 — HIGH DEPENDENCY UNIT",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
+      "source": "the-others-way",
+      "dj_id": "high-dependency-unit",
+      "dj_name": "HIGH DEPENDENCY UNIT"
+    },
+    {
+      "id": "the-others-way-2025-bbyfacekilla",
+      "name": "The Others Way 2025 — BBYFACEKILLA",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
+      "source": "the-others-way",
+      "dj_id": "bbyfacekilla",
+      "dj_name": "BBYFACEKILLA"
+    },
+    {
+      "id": "the-others-way-2025-babetech",
+      "name": "The Others Way 2025 — BABETECH",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
+      "source": "the-others-way",
+      "dj_id": "babetech",
+      "dj_name": "BABETECH"
+    },
+    {
+      "id": "the-others-way-2025-caru-brandn-shiraz",
+      "name": "The Others Way 2025 — Caru & Brandn Shiraz",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
+      "source": "the-others-way",
+      "dj_id": "caru-brandn-shiraz",
+      "dj_name": "Caru & Brandn Shiraz"
+    },
+    {
+      "id": "the-others-way-2025-elliot-vincent",
+      "name": "The Others Way 2025 — ELLIOT & VINCENT",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
+      "source": "the-others-way",
+      "dj_id": "elliot-vincent",
+      "dj_name": "ELLIOT & VINCENT"
+    },
+    {
+      "id": "the-others-way-2025-geneva-am",
+      "name": "The Others Way 2025 — Geneva AM",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
+      "source": "the-others-way",
+      "dj_id": "geneva-am",
+      "dj_name": "Geneva AM"
+    },
+    {
+      "id": "snow-machine-2026-kanine",
+      "name": "Snow Machine 2026 — Kanine",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "kanine",
+      "dj_name": "Kanine"
+    },
+    {
+      "id": "snow-machine-2026-ninajirachi",
+      "name": "Snow Machine 2026 — Ninajirachi",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "ninajirachi",
+      "dj_name": "Ninajirachi"
+    },
+    {
+      "id": "snow-machine-2026-nora-en-pure",
+      "name": "Snow Machine 2026 — Nora En Pure",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "nora-en-pure",
+      "dj_name": "Nora En Pure"
+    },
+    {
+      "id": "snow-machine-2026-orkestrated",
+      "name": "Snow Machine 2026 — Orkestrated",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "orkestrated",
+      "dj_name": "Orkestrated"
+    },
+    {
+      "id": "snow-machine-2026-danny-rants",
+      "name": "Snow Machine 2026 — Danny Rants",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "danny-rants",
+      "dj_name": "Danny Rants"
+    },
+    {
+      "id": "snow-machine-2026-groove-city",
+      "name": "Snow Machine 2026 — Groove City",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "groove-city",
+      "dj_name": "Groove City"
+    },
+    {
+      "id": "snow-machine-2026-jarrod-costello",
+      "name": "Snow Machine 2026 — Jarrod Costello",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "jarrod-costello",
+      "dj_name": "Jarrod Costello"
+    },
+    {
+      "id": "snow-machine-2026-jimi-the-kween",
+      "name": "Snow Machine 2026 — Jimi The Kween",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "jimi-the-kween",
+      "dj_name": "Jimi The Kween"
+    },
+    {
+      "id": "snow-machine-2026-katayanagi-twins",
+      "name": "Snow Machine 2026 — Katayanagi Twins",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "katayanagi-twins",
+      "dj_name": "Katayanagi Twins"
+    },
+    {
+      "id": "snow-machine-2026-mark-knight",
+      "name": "Snow Machine 2026 — Mark Knight",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "mark-knight",
+      "dj_name": "Mark Knight"
+    },
+    {
+      "id": "snow-machine-2026-samantha-loveridge",
+      "name": "Snow Machine 2026 — Samantha Loveridge",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "samantha-loveridge",
+      "dj_name": "Samantha Loveridge"
+    },
+    {
+      "id": "snow-machine-2026-sunset-bros",
+      "name": "Snow Machine 2026 — Sunset Bros",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "sunset-bros",
+      "dj_name": "Sunset Bros"
+    },
+    {
+      "id": "snow-machine-2026-trials",
+      "name": "Snow Machine 2026 — Trials",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "trials",
+      "dj_name": "Trials"
+    },
+    {
+      "id": "snow-machine-2026-y-o-g-a",
+      "name": "Snow Machine 2026 — Y.O.G.A.",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "y-o-g-a",
+      "dj_name": "Y.O.G.A."
+    },
+    {
+      "id": "snow-machine-2026-argonaut",
+      "name": "Snow Machine 2026 — Argonaut",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "argonaut",
+      "dj_name": "Argonaut"
+    },
+    {
+      "id": "snow-machine-2026-beverly-kills",
+      "name": "Snow Machine 2026 — Beverly Kills",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "beverly-kills",
+      "dj_name": "Beverly Kills"
+    },
+    {
+      "id": "snow-machine-2026-charlie-c",
+      "name": "Snow Machine 2026 — Charlie C",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "charlie-c",
+      "dj_name": "Charlie C"
+    },
+    {
+      "id": "snow-machine-2026-daphne-gaye",
+      "name": "Snow Machine 2026 — Daphne Gaye",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "daphne-gaye",
+      "dj_name": "Daphne Gaye"
+    },
+    {
+      "id": "snow-machine-2026-dee-jaye-bux",
+      "name": "Snow Machine 2026 — Dee Jaye Bux",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "dee-jaye-bux",
+      "dj_name": "Dee Jaye Bux"
+    },
+    {
+      "id": "snow-machine-2026-dutch-kiss",
+      "name": "Snow Machine 2026 — Dutch Kiss",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "dutch-kiss",
+      "dj_name": "Dutch Kiss"
+    },
+    {
+      "id": "snow-machine-2026-justice-patterson",
+      "name": "Snow Machine 2026 — Justice Patterson",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "justice-patterson",
+      "dj_name": "Justice Patterson"
+    },
+    {
+      "id": "snow-machine-2026-kelly-tee",
+      "name": "Snow Machine 2026 — Kelly Tee",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "kelly-tee",
+      "dj_name": "Kelly Tee"
+    },
+    {
+      "id": "snow-machine-2026-lenni-vibe",
+      "name": "Snow Machine 2026 — Lenni Vibe",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "lenni-vibe",
+      "dj_name": "Lenni Vibe"
+    },
+    {
+      "id": "snow-machine-2026-lj-groove",
+      "name": "Snow Machine 2026 — LJ Groove",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "lj-groove",
+      "dj_name": "LJ Groove"
+    },
+    {
+      "id": "snow-machine-2026-max-drag-queen",
+      "name": "Snow Machine 2026 — Max Drag Queen",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "max-drag-queen",
+      "dj_name": "Max Drag Queen"
+    },
+    {
+      "id": "snow-machine-2026-myles",
+      "name": "Snow Machine 2026 — MYLES",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "myles",
+      "dj_name": "MYLES"
+    },
+    {
+      "id": "snow-machine-2026-nicka35",
+      "name": "Snow Machine 2026 — NICKA35",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "nicka35",
+      "dj_name": "NICKA35"
+    },
+    {
+      "id": "snow-machine-2026-piste-evo",
+      "name": "Snow Machine 2026 — Piste Evo",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "piste-evo",
+      "dj_name": "Piste Evo"
+    },
+    {
+      "id": "snow-machine-2026-sunshine",
+      "name": "Snow Machine 2026 — Sunshine",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "sunshine",
+      "dj_name": "Sunshine"
+    },
+    {
+      "id": "snow-machine-2026-the-journey",
+      "name": "Snow Machine 2026 — The Journey",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "the-journey",
+      "dj_name": "The Journey"
+    },
+    {
+      "id": "snow-machine-2026-vybe",
+      "name": "Snow Machine 2026 — Vybe",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "vybe",
+      "dj_name": "Vybe"
+    },
+    {
+      "id": "snow-machine-2026-weird-techno-girlfriend-paul-le-b-y",
+      "name": "Snow Machine 2026 — Weird Techno Girlfriend & PAUL LE BÁY",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": "weird-techno-girlfriend-paul-le-b-y",
+      "dj_name": "Weird Techno Girlfriend & PAUL LE BÁY"
+    },
+    {
+      "id": "newtown-festival-2027-9cups",
+      "name": "Newtown Festival 2027 — 9cups",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "9cups",
+      "dj_name": "9cups"
+    },
+    {
+      "id": "newtown-festival-2027-alopex",
+      "name": "Newtown Festival 2027 — Alopex",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "alopex",
+      "dj_name": "Alopex"
+    },
+    {
+      "id": "newtown-festival-2027-baeoli",
+      "name": "Newtown Festival 2027 — Baeoli",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "baeoli",
+      "dj_name": "Baeoli"
+    },
+    {
+      "id": "newtown-festival-2027-benjamin-bunny",
+      "name": "Newtown Festival 2027 — Benjamin Bunny",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "benjamin-bunny",
+      "dj_name": "Benjamin Bunny"
+    },
+    {
+      "id": "newtown-festival-2027-club-medder",
+      "name": "Newtown Festival 2027 — Club Medder",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "club-medder",
+      "dj_name": "Club Medder"
+    },
+    {
+      "id": "newtown-festival-2027-dj-atu-d2",
+      "name": "Newtown Festival 2027 — DJ ATU-D2",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "dj-atu-d2",
+      "dj_name": "DJ ATU-D2"
+    },
+    {
+      "id": "newtown-festival-2027-dj-coleoz",
+      "name": "Newtown Festival 2027 — Dj Coleoz",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "dj-coleoz",
+      "dj_name": "Dj Coleoz"
+    },
+    {
+      "id": "newtown-festival-2027-dj-kerb",
+      "name": "Newtown Festival 2027 — Dj KERB",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "dj-kerb",
+      "dj_name": "Dj KERB"
+    },
+    {
+      "id": "newtown-festival-2027-geneva-am",
+      "name": "Newtown Festival 2027 — Geneva AM",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "geneva-am",
+      "dj_name": "Geneva AM"
+    },
+    {
+      "id": "newtown-festival-2027-grecco-romank",
+      "name": "Newtown Festival 2027 — Grecco Romank",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "grecco-romank",
+      "dj_name": "Grecco Romank"
+    },
+    {
+      "id": "newtown-festival-2027-groove-council",
+      "name": "Newtown Festival 2027 — Groove Council",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "groove-council",
+      "dj_name": "Groove Council"
+    },
+    {
+      "id": "newtown-festival-2027-halo",
+      "name": "Newtown Festival 2027 — Halo",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "halo",
+      "dj_name": "Halo"
+    },
+    {
+      "id": "newtown-festival-2027-iain-c",
+      "name": "Newtown Festival 2027 — Iain C",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "iain-c",
+      "dj_name": "Iain C"
+    },
+    {
+      "id": "newtown-festival-2027-jamie-rose-b2b-k-otik",
+      "name": "Newtown Festival 2027 — Jamie Rose b2b K-otiK",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "jamie-rose-b2b-k-otik",
+      "dj_name": "Jamie Rose b2b K-otiK"
+    },
+    {
+      "id": "newtown-festival-2027-jasper-cali",
+      "name": "Newtown Festival 2027 — Jasper Cali",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "jasper-cali",
+      "dj_name": "Jasper Cali"
+    },
+    {
+      "id": "newtown-festival-2027-jen-kyle",
+      "name": "Newtown Festival 2027 — Jen Kyle",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "jen-kyle",
+      "dj_name": "Jen Kyle"
+    },
+    {
+      "id": "newtown-festival-2027-kb-the-dj",
+      "name": "Newtown Festival 2027 — KB the DJ",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "kb-the-dj",
+      "dj_name": "KB the DJ"
+    },
+    {
+      "id": "newtown-festival-2027-manisah",
+      "name": "Newtown Festival 2027 — Manisah",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "manisah",
+      "dj_name": "Manisah"
+    },
+    {
+      "id": "newtown-festival-2027-marcos-alonso",
+      "name": "Newtown Festival 2027 — Marcos Alonso",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "marcos-alonso",
+      "dj_name": "Marcos Alonso"
+    },
+    {
+      "id": "newtown-festival-2027-max-maxwell",
+      "name": "Newtown Festival 2027 — Max Maxwell",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "max-maxwell",
+      "dj_name": "Max Maxwell"
+    },
+    {
+      "id": "newtown-festival-2027-mi-casa-su-casa",
+      "name": "Newtown Festival 2027 — Mi Casa Su Casa",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "mi-casa-su-casa",
+      "dj_name": "Mi Casa Su Casa"
+    },
+    {
+      "id": "newtown-festival-2027-rich-d-rich",
+      "name": "Newtown Festival 2027 — Rich D Rich",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "rich-d-rich",
+      "dj_name": "Rich D Rich"
+    },
+    {
+      "id": "newtown-festival-2027-ryan-c-b2b-merlin",
+      "name": "Newtown Festival 2027 — Ryan C b2b Merlin",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "ryan-c-b2b-merlin",
+      "dj_name": "Ryan C b2b Merlin"
+    },
+    {
+      "id": "newtown-festival-2027-scorpios-nest-soundsystem",
+      "name": "Newtown Festival 2027 — Scorpios Nest Soundsystem",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "scorpios-nest-soundsystem",
+      "dj_name": "Scorpios Nest Soundsystem"
+    },
+    {
+      "id": "newtown-festival-2027-stolen-tuesday",
+      "name": "Newtown Festival 2027 — Stolen Tuesday",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "stolen-tuesday",
+      "dj_name": "Stolen Tuesday"
+    },
+    {
+      "id": "newtown-festival-2027-synthetic-children",
+      "name": "Newtown Festival 2027 — Synthetic Children",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "synthetic-children",
+      "dj_name": "Synthetic Children"
+    },
+    {
+      "id": "newtown-festival-2027-takas",
+      "name": "Newtown Festival 2027 — Takas",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "takas",
+      "dj_name": "Takas"
+    },
+    {
+      "id": "newtown-festival-2027-the-good-taste-selector",
+      "name": "Newtown Festival 2027 — The Good Taste Selector",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "the-good-taste-selector",
+      "dj_name": "The Good Taste Selector"
+    },
+    {
+      "id": "newtown-festival-2027-tv-disko",
+      "name": "Newtown Festival 2027 — TV DiSKO",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": "tv-disko",
+      "dj_name": "TV DiSKO"
+    },
+    {
+      "id": "utr-venue-fa281dbc8c3e",
+      "name": "Inky Fingers Kiwiburn Fundraiser",
+      "venue": "Afters.",
+      "starts_at": "2026-10-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103494/N/Inky-Fingers-Kiwiburn-Fundraiser.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "sanfran-436891",
+      "id": "utr-venue-4860f6dda85e",
+      "name": "Tam Fm",
+      "venue": "Afters.",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103883/N/Tam-Fm.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-c0a0bc56dbdd",
+      "name": "Manawa: Ahiahi",
+      "venue": "Afters.",
+      "starts_at": "2026-09-12T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104121/N/Manawa:-Ahiahi.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-7aefbd5903d9",
+      "name": "Manawa: Ahiahi",
+      "venue": "Afters.",
+      "starts_at": "2026-09-12T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104245/N/Manawa:-Ahiahi.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-9ef6dcaeff64",
+      "name": "Bassdrop.co.nz Presents: Echoes",
+      "venue": "Afters.",
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103487/N/Bassdrop.co.nz-Presents:-Echoes.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-b44a7566bdf7",
+      "name": "Pur Techno Night 011",
+      "venue": "Afters.",
+      "starts_at": "2026-09-05T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104120/N/Pur-Techno-Night-011.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-3b137a430adb",
+      "name": "Goodthings Session #025",
+      "venue": "Afters.",
+      "starts_at": "2026-08-29T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104011/N/Goodthings-Session-#025.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-2e829d445861",
+      "name": "Sublimate - Wellington Jazz Festival",
+      "venue": "MOON",
+      "starts_at": "2026-10-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104409/N/Sublimate---Wellington-Jazz-Festival.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "sublimate",
+      "dj_name": "Sublimate"
+    },
+    {
+      "id": "utr-venue-e85468e58aba",
+      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
+      "venue": "MOON",
+      "starts_at": "2026-10-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100998/N/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-c47c2fa386f5",
+      "name": "Serenna With Tragedies And Diplopoda",
+      "venue": "MOON",
+      "starts_at": "2026-10-01T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104385/N/Serenna-With-Tragedies-And-Diplopoda.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "serenna",
+      "dj_name": "Serenna"
+    },
+    {
+      "id": "utr-venue-d1d18782bfa1",
+      "name": "Silver Sonics w/ Seismic State and Electric Tapestry",
+      "venue": "MOON",
+      "starts_at": "2026-09-27T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103537/N/Silver-Sonics-w/-Seismic-State-and-Electric-Tapestry.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "silver-sonics-w",
+      "dj_name": "Silver Sonics w"
+    },
+    {
+      "id": "utr-venue-40fe15b13703",
+      "name": "Single Malt Presents ‘Wetlands’",
+      "venue": "MOON",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104178/N/Single-Malt-Presents-‘Wetlands’.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-a0c6591d33a5",
+      "name": "Toxa Album Release",
+      "venue": "MOON",
+      "starts_at": "2026-09-24T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104388/N/Toxa-Album-Release.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-3259a0b50095",
+      "name": "E TŪ - Soandso Sophomore EP Debut",
+      "venue": "MOON",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104403/N/E-TŪ---Soandso-Sophomore-EP-Debut.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "soandso-sophomore",
+      "dj_name": "Soandso Sophomore"
+    },
+    {
+      "id": "utr-venue-45156c42cbf5",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": "2026-09-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104264/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-e7789cb0f62d",
+      "name": "Spring For Kaibosh - Musical Fundraiser",
+      "venue": "MOON",
+      "starts_at": "2026-09-12T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103890/N/Spring-For-Kaibosh---Musical-Fundraiser.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "musical",
+      "dj_name": "Musical"
+    },
+    {
+      "id": "utr-venue-4f7eda0a4b7e",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": "2026-09-07T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104262/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-58e7e427d78c",
+      "name": "Songwriters' Showcase #115",
+      "venue": "MOON",
+      "starts_at": "2026-09-06T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104387/N/Songwriters'-Showcase-#115.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-5379745acd76",
+      "name": "Delusional Dreamland 5 Year Tour - Wellington",
+      "venue": "MOON",
+      "starts_at": "2026-09-05T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104029/N/Delusional-Dreamland-5-Year-Tour---Wellington.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "delusional-dreamland-5-year",
+      "dj_name": "Delusional Dreamland 5 Year"
+    },
+    {
+      "id": "utr-venue-04f6679e6dda",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": "2026-08-31T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104261/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-c239b4562302",
+      "name": "Corner Store Presents: Absolutely Positively Footwork",
+      "venue": "MOON",
+      "starts_at": "2026-08-29T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104012/N/Corner-Store-Presents:-Absolutely-Positively-Footwork.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "absolutely-positively-footwork",
+      "dj_name": " Absolutely Positively Footwork"
+    },
+    {
+      "id": "utr-venue-bfa1a72ce3a7",
+      "name": "Yurt Party - Street Party Music | Wellington",
+      "venue": "San Fran",
+      "starts_at": "2026-12-12T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104125/N/Yurt-Party---Street-Party-Music-|-Wellington.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-21ee5573b9c0",
       "name": "Flyte",
       "venue": "San Fran",
-      "starts_at": "2026-11-14T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/flyte-tickets-ae436891",
-      "source": "sanfran",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "sanfran-1541224",
-      "name": "PRINS",
+      "id": "utr-venue-9f6cdc72bb75",
+      "name": "Wet Denim - Water For Dogs EP Release Tour",
       "venue": "San Fran",
-      "starts_at": "2026-11-26T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
-      "source": "sanfran",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104174/N/Wet-Denim---Water-For-Dogs-EP-Release-Tour.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "sanfran-1488974",
-      "name": "Old Mervs",
+      "id": "utr-venue-2409ef382c2e",
+      "name": "Debt Club - Foothold Release Tour w/ First Reserve and Dillon Jo",
       "venue": "San Fran",
-      "starts_at": "2026-11-06T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
-      "source": "sanfran",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103151/N/Debt-Club---Foothold-Release-Tour-w/-First-Reserve-and-Dillon-Jo.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "sanfran-146474",
-      "name": "ASH ‘1977’ 30th Anniversary Tour",
+      "id": "utr-venue-3f986d374499",
+      "name": "Emerson - Leap! On Tour",
       "venue": "San Fran",
-      "starts_at": "2026-09-15T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/ash-tickets-ae146474",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103388/N/Emerson---Leap!-On-Tour.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "emerson",
+      "dj_name": "Emerson"
     },
     {
-      "id": "sanfran-288274",
+      "id": "utr-venue-62c6679011cf",
+      "name": "Evie Bamford 'Now Rising, Now Falling' Release Tour ",
+      "venue": "San Fran",
+      "starts_at": "2026-09-09T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104034/N/Evie-Bamford-'Now-Rising,-Now-Falling'-Release-Tour-.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "evie",
+      "dj_name": "Evie"
+    },
+    {
+      "id": "utr-venue-931ee96bb0db",
       "name": "24 Hour Party People",
       "venue": "San Fran",
-      "starts_at": "2026-08-29T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/24-hour-party-people-tickets-ae288274",
-      "source": "sanfran",
+      "starts_at": "2026-08-29T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104037/N/24-Hour-Party-People.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "sanfran-1470011",
-      "name": "Debt Club",
-      "venue": "San Fran",
-      "starts_at": "2026-09-18T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/debt-club-tickets-ae1470011",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1681897",
-      "name": "Great Sounds Great Festival 202",
-      "venue": "San Fran",
-      "starts_at": "2026-11-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/great-sounds-great-festival-2026-tickets-ae1681897",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "earthbeat-2025-lovelace",
-      "name": "Earth Beat Festival 2025",
+      "id": "earthbeat-2025-paige-julia",
+      "name": "Earth Beat Festival 2025 — Paige Julia",
       "venue": "Kaipara, Northland",
       "starts_at": null,
       "url": "https://www.earthbeatfestival.com/music-lineup",
       "source": "earthbeat",
+      "dj_id": "paige-julia",
+      "dj_name": "Paige Julia"
+    },
+    {
+      "id": "earthbeat-2025-bwoy-de-bhajan",
+      "name": "Earth Beat Festival 2025 — Bwoy De Bhajan",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "bwoy-de-bhajan",
+      "dj_name": "Bwoy De Bhajan"
+    },
+    {
+      "id": "earthbeat-2025-kora-ca",
+      "name": "Earth Beat Festival 2025 — Kora (CA)",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "kora-ca",
+      "dj_name": "Kora (CA)"
+    },
+    {
+      "id": "earthbeat-2025-nizhana",
+      "name": "Earth Beat Festival 2025 — NIZHANA",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "nizhana",
+      "dj_name": "NIZHANA"
+    },
+    {
+      "id": "earthbeat-2025-kukan-dub-lagan",
+      "name": "Earth Beat Festival 2025 — Kukan Dub Lagan",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "kukan-dub-lagan",
+      "dj_name": "Kukan Dub Lagan"
+    },
+    {
+      "id": "earthbeat-2025-deep-fried-dub",
+      "name": "Earth Beat Festival 2025 — Deep Fried Dub",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "deep-fried-dub",
+      "dj_name": "Deep Fried Dub"
+    },
+    {
+      "id": "earthbeat-2025-calla",
+      "name": "Earth Beat Festival 2025 — Calla",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "calla",
+      "dj_name": "Calla"
+    },
+    {
+      "id": "earthbeat-2025-subset",
+      "name": "Earth Beat Festival 2025 — SUBSET",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "subset",
+      "dj_name": "SUBSET"
+    },
+    {
+      "id": "earthbeat-2025-mia-kober",
+      "name": "Earth Beat Festival 2025 — Mia Kober",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "mia-kober",
+      "dj_name": "Mia Kober"
+    },
+    {
+      "id": "earthbeat-2025-logan-baker",
+      "name": "Earth Beat Festival 2025 — Logan Baker",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "logan-baker",
+      "dj_name": "Logan Baker"
+    },
+    {
+      "id": "earthbeat-2025-communicate",
+      "name": "Earth Beat Festival 2025 — Communicate",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "communicate",
+      "dj_name": "Communicate"
+    },
+    {
+      "id": "earthbeat-2025-facettes",
+      "name": "Earth Beat Festival 2025 — Facettes",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "facettes",
+      "dj_name": "Facettes"
+    },
+    {
+      "id": "earthbeat-2025-taylor-sol",
+      "name": "Earth Beat Festival 2025 — Taylor Sol",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "taylor-sol",
+      "dj_name": "Taylor Sol"
+    },
+    {
+      "id": "earthbeat-2025-anirvan-deva",
+      "name": "Earth Beat Festival 2025 — Anirvan Deva",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "anirvan-deva",
+      "dj_name": "Anirvan Deva"
+    },
+    {
+      "id": "earthbeat-2025-lovelace-roots",
+      "name": "Earth Beat Festival 2025 — Lovelace Roots",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "lovelace-roots",
+      "dj_name": "Lovelace Roots"
+    },
+    {
+      "id": "earthbeat-2025-divinori-di-sun",
+      "name": "Earth Beat Festival 2025 — DIVINORI / DI SUN",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "divinori-di-sun",
+      "dj_name": "DIVINORI / DI SUN"
+    },
+    {
+      "id": "earthbeat-2025-earth-beats",
+      "name": "Earth Beat Festival 2025 — Earth & Beats",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "earth-beats",
+      "dj_name": "Earth & Beats"
+    },
+    {
+      "id": "earthbeat-2025-herman-saiz",
+      "name": "Earth Beat Festival 2025 — Herman Saiz",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "herman-saiz",
+      "dj_name": "Herman Saiz"
+    },
+    {
+      "id": "earthbeat-2025-bigbada-boom-sound-system",
+      "name": "Earth Beat Festival 2025 — Bigbada Boom Sound System",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "bigbada-boom-sound-system",
+      "dj_name": "Bigbada Boom Sound System"
+    },
+    {
+      "id": "earthbeat-2025-arokx-live-feat-j-zealous",
+      "name": "Earth Beat Festival 2025 — Arokx (Live) feat. J.Zealous",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "arokx-live-feat-j-zealous",
+      "dj_name": "Arokx (Live) feat. J.Zealous"
+    },
+    {
+      "id": "earthbeat-2025-dave-marks",
+      "name": "Earth Beat Festival 2025 — Dave Marks",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "dave-marks",
+      "dj_name": "Dave Marks"
+    },
+    {
+      "id": "earthbeat-2025-dj-acetone",
+      "name": "Earth Beat Festival 2025 — DJ ACETONE",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "dj-acetone",
+      "dj_name": "DJ ACETONE"
+    },
+    {
+      "id": "earthbeat-2025-dj-morpho",
+      "name": "Earth Beat Festival 2025 — Dj Morpho",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "dj-morpho",
+      "dj_name": "Dj Morpho"
+    },
+    {
+      "id": "earthbeat-2025-fish-bread",
+      "name": "Earth Beat Festival 2025 — Fish & Bread",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "fish-bread",
+      "dj_name": "Fish & Bread"
+    },
+    {
+      "id": "earthbeat-2025-gandoof",
+      "name": "Earth Beat Festival 2025 — Gandoof",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "gandoof",
+      "dj_name": "Gandoof"
+    },
+    {
+      "id": "earthbeat-2025-hanwho",
+      "name": "Earth Beat Festival 2025 — Hanwho",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "hanwho",
+      "dj_name": "Hanwho"
+    },
+    {
+      "id": "earthbeat-2025-k-roto",
+      "name": "Earth Beat Festival 2025 — Kōroto",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "k-roto",
+      "dj_name": "Kōroto"
+    },
+    {
+      "id": "earthbeat-2025-ladyfem",
+      "name": "Earth Beat Festival 2025 — LadyFem",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "ladyfem",
+      "dj_name": "LadyFem"
+    },
+    {
+      "id": "earthbeat-2025-mathias-light",
+      "name": "Earth Beat Festival 2025 — Mathias Light",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "mathias-light",
+      "dj_name": "Mathias Light"
+    },
+    {
+      "id": "earthbeat-2025-minoa",
+      "name": "Earth Beat Festival 2025 — MiNOA",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "minoa",
+      "dj_name": "MiNOA"
+    },
+    {
+      "id": "earthbeat-2025-misty-g",
+      "name": "Earth Beat Festival 2025 — Misty G",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "misty-g",
+      "dj_name": "Misty G"
+    },
+    {
+      "id": "earthbeat-2025-mojo-filter",
+      "name": "Earth Beat Festival 2025 — Mojo Filter",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "mojo-filter",
+      "dj_name": "Mojo Filter"
+    },
+    {
+      "id": "earthbeat-2025-not-my-sister",
+      "name": "Earth Beat Festival 2025 — Not My Sister",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "not-my-sister",
+      "dj_name": "Not My Sister"
+    },
+    {
+      "id": "earthbeat-2025-rob-warner",
+      "name": "Earth Beat Festival 2025 — Rob Warner",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "rob-warner",
+      "dj_name": "Rob Warner"
+    },
+    {
+      "id": "earthbeat-2025-shady-lady",
+      "name": "Earth Beat Festival 2025 — Shady Lady",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "shady-lady",
+      "dj_name": "Shady Lady"
+    },
+    {
+      "id": "earthbeat-2025-shankara-nz",
+      "name": "Earth Beat Festival 2025 — Shankara NZ",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "shankara-nz",
+      "dj_name": "Shankara NZ"
+    },
+    {
+      "id": "earthbeat-2025-shovaav",
+      "name": "Earth Beat Festival 2025 — Shovaav",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "shovaav",
+      "dj_name": "Shovaav"
+    },
+    {
+      "id": "earthbeat-2025-kimba-jade",
+      "name": "Earth Beat Festival 2025 — Kimba Jade",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "kimba-jade",
+      "dj_name": "Kimba Jade"
+    },
+    {
+      "id": "earthbeat-2025-1tribe",
+      "name": "Earth Beat Festival 2025 — 1TRIBE↟",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "1tribe",
+      "dj_name": "1TRIBE↟"
+    },
+    {
+      "id": "earthbeat-2025-bobby-brazuka-lucas-datt",
+      "name": "Earth Beat Festival 2025 — Bobby Brazuka & Lucas Datt",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "bobby-brazuka-lucas-datt",
+      "dj_name": "Bobby Brazuka & Lucas Datt"
+    },
+    {
+      "id": "earthbeat-2025-darren-bailey-rayza",
+      "name": "Earth Beat Festival 2025 — Darren Bailey & Rayza",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "darren-bailey-rayza",
+      "dj_name": "Darren Bailey & Rayza"
+    },
+    {
+      "id": "earthbeat-2025-dirdygerdi",
+      "name": "Earth Beat Festival 2025 — DirdyGerdi",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "dirdygerdi",
+      "dj_name": "DirdyGerdi"
+    },
+    {
+      "id": "earthbeat-2025-dj-sun-ray",
+      "name": "Earth Beat Festival 2025 — DJ Sun Ray",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "dj-sun-ray",
+      "dj_name": "DJ Sun Ray"
+    },
+    {
+      "id": "utr-venue-1f1ceb2aab66",
+      "name": "Our House - Deep House With Live Violin",
+      "venue": "Cuba St Tavern",
+      "starts_at": "2026-09-04T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103512/N/Our-House---Deep-House-With-Live-Violin.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "dj_name": null
     },
     {
-      "id": "ra-2468041",
-      "name": "Carlucci Carnival",
+      "id": "utr-venue-ff0d8f3c833b",
+      "name": "Noise Control 001",
+      "venue": "The Pow Wow Room",
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104115/N/Noise-Control-001.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-7b8e48f3c8a3",
+      "name": "DECEITS Aotearoa tour 2026",
+      "venue": "Valhalla",
+      "starts_at": "2026-11-29T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103080/N/DECEITS-Aotearoa-tour-2026.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-493681cb9c1f",
+      "name": "Mortiis Aotearoa Tour 2026",
+      "venue": "Valhalla",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102942/N/Mortiis-Aotearoa-Tour-2026.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-04e2dd2b521a",
+      "name": "Negative Approach 2026 AUS &amp; NZ Tour",
+      "venue": "Valhalla",
+      "starts_at": "2026-11-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100445/N/Negative-Approach-2026-AUS--NZ-Tour.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-9b226b3f0941",
+      "name": "OvO (Italy) NZ Tour",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-25T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103443/N/OvO-(Italy)-NZ-Tour.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-e8e28769ab87",
+      "name": "Imperial Slave - Existential Threat Tour - Wellington",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-17T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104129/N/Imperial-Slave---Existential-Threat-Tour---Wellington.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-de1bcc66152a",
+      "name": "Emo Is Back - Free/koha Entry",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-09T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104020/N/Emo-Is-Back---Free/koha-Entry.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-4763b7bb08f4",
+      "name": "Sclera, Mothburn, Lucid",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-27T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104050/N/Sclera,-Mothburn,-Lucid.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-2077d831cd55",
+      "name": "Cindy Album Release Tour With Homing And Cruelly",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103942/N/Cindy-Album-Release-Tour-With-Homing-And-Cruelly.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-96d829b48089",
+      "name": "Vampire Disko At Valhalla: Goth, Wave, Cult Hits + Vampire Attire",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-25T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103114/N/Vampire-Disko-At-Valhalla:-Goth,-Wave,-Cult-Hits-+-Vampire-Attire.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-32ba45dc7ae8",
+      "name": "Dont Tell Me To Smile",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-19T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104045/N/Dont-Tell-Me-To-Smile.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-1d25d3d14f4e",
+      "name": "Don’t Tell Me To Smile",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-19T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104061/N/Don’t-Tell-Me-To-Smile.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-50439a3e4916",
+      "name": "Libbianski Suffering EP Release Show",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104294/N/Libbianski-Suffering-EP-Release-Show.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-f4ae38e357a7",
+      "name": "Wince, Dreamweb, Ritual Heaps - Free",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-17T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104080/N/Wince,-Dreamweb,-Ritual-Heaps---Free.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-03f942aed0b2",
+      "name": "Shred Fest - Feat Obscura (GER), FVKVSHIMA &amp; Guests",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-16T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100141/N/Shred-Fest---Feat-Obscura-(GER),-FVKVSHIMA--Guests.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-35420495ae29",
+      "name": "Strung Out (USA)",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/101652/N/Strung-Out-(USA).utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-c14b94b4e2bf",
+      "name": "The Golden Awesome, Beach Balls, Ceramic, S.L. Reflex",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103666/N/The-Golden-Awesome,-Beach-Balls,-Ceramic,-S.L.-Reflex.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-236ff6b8be0f",
+      "name": "Siege Machine - Twiay - Molipane",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-09T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104274/N/Siege-Machine---Twiay---Molipane.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-aa5dec809bc6",
+      "name": "Dave Against The Machine- Bulls On Parade 2026",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-04T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104021/N/Dave-Against-The-Machine--Bulls-On-Parade-2026.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-a4706f3c6f1f",
+      "name": "Stereoface: A Radiohead Tribute",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-03T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103234/N/Stereoface:-A-Radiohead-Tribute.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-4dcf4f57b400",
+      "name": "Back Pocket Debut Gig",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-02T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103802/N/Back-Pocket-Debut-Gig.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "earthbeat-2025-hunua-hustle",
+      "name": "Earth Beat Festival 2025 — Hunua Hustle",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "hunua-hustle",
+      "dj_name": "Hunua Hustle"
+    },
+    {
+      "id": "earthbeat-2025-mil0",
+      "name": "Earth Beat Festival 2025 — Mil0",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "mil0",
+      "dj_name": "Mil0"
+    },
+    {
+      "id": "earthbeat-2025-miss-sinton",
+      "name": "Earth Beat Festival 2025 — Miss Sinton",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "miss-sinton",
+      "dj_name": "Miss Sinton"
+    },
+    {
+      "id": "earthbeat-2025-patsy-skeet",
+      "name": "Earth Beat Festival 2025 — Patsy Skeet",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "patsy-skeet",
+      "dj_name": "Patsy Skeet"
+    },
+    {
+      "id": "earthbeat-2025-shulgin",
+      "name": "Earth Beat Festival 2025 — SHULGIN",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "shulgin",
+      "dj_name": "SHULGIN"
+    },
+    {
+      "id": "earthbeat-2025-wavrunnr",
+      "name": "Earth Beat Festival 2025 — WAVRUNNR",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "wavrunnr",
+      "dj_name": "WAVRUNNR"
+    },
+    {
+      "id": "earthbeat-2025-yunset",
+      "name": "Earth Beat Festival 2025 — Yunset",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": "yunset",
+      "dj_name": "Yunset"
+    },
+    {
+      "id": "ra-2468041-alix-perez",
+      "name": "Carlucci Carnival — Alix Perez",
       "venue": "Carlucci Land",
       "starts_at": "2026-09-26T03:00:00.000Z",
       "url": "https://ra.co/events/2468041",
       "source": "resident-advisor",
-      "dj_id": null,
-      "dj_name": null
+      "dj_id": "alix-perez",
+      "dj_name": "Alix Perez"
     },
     {
-      "id": "rogue-vagabond-102969",
-      "name": "The Racket Lounge",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-07T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
+      "id": "ra-2468041-azifm",
+      "name": "Carlucci Carnival — Azifm",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": "azifm",
+      "dj_name": "Azifm"
     },
     {
-      "id": "rogue-vagabond-104062",
-      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-17T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
+      "id": "ra-2468041-caru",
+      "name": "Carlucci Carnival — Caru",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": "caru",
+      "dj_name": "Caru"
     },
     {
-      "id": "rogue-vagabond-104171",
-      "name": "Rory Johns And The Mystic",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-10T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
+      "id": "ra-2468041-paige-julia",
+      "name": "Carlucci Carnival — Paige Julia",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": "paige-julia",
+      "dj_name": "Paige Julia"
     },
     {
-      "id": "rogue-vagabond-102968",
-      "name": "The Racket Lounge",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-09T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102968/The-Racket-Lounge.utr",
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
+      "id": "ra-2468041-cameron-morris",
+      "name": "Carlucci Carnival — Cameron Morris",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": "cameron-morris",
+      "dj_name": "Cameron Morris"
     },
     {
-      "id": "sanfran-430631",
-      "name": "Uncle Acid and the Deadbeats",
-      "venue": "San Fran",
-      "starts_at": "2026-12-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
+      "id": "ra-2468041-clova",
+      "name": "Carlucci Carnival — CLOVA",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": "clova",
+      "dj_name": "CLOVA"
     },
     {
-      "id": "sanfran-1078519",
-      "name": "The Reytons",
-      "venue": "San Fran",
-      "starts_at": "2026-12-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
+      "id": "ra-2468041-herman-saiz",
+      "name": "Carlucci Carnival — Herman Saiz",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": "herman-saiz",
+      "dj_name": "Herman Saiz"
     }
   ],
   "links": [

@@ -7,6 +7,7 @@ All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Verc
 | Source | What we get | Status |
 | --- | --- | --- |
 | Undertheradar (Wellington region) | upcoming gigs + names | ✅ live |
+| Undertheradar venue RSS (Afters, MOON, San Fran, Cuba St Tavern, Pow Wow Room, Valhalla) | per-venue gigs + names | ✅ live |
 | San Fran (sanfran.co.nz) | upcoming events + dates | ✅ live |
 | Rogue & Vagabond (rogueandvagabond.co.nz) | upcoming gigs (UTR-powered) | ✅ live |
 | Mixcloud API | per-DJ mixes + user links | ✅ live |
@@ -38,6 +39,15 @@ All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Verc
 | --- | --- | --- |
 | SoundCloud search | `SOUNDCLOUD_CLIENT_ID` | Public web client id. Search "wellington dj/techno/dnb" → new DJ profiles with SoundCloud links. Default public id is revoked; set a fresh one. |
 | Eventfinda API | `EVENTFINDA_API_KEY` | Free key at api.eventfinda.co.nz. Region=wellington events feed. |
+| Eventfinda sitemap fallback | none | Sitemap event URLs + hCalendar parse, no key needed |
+
+## Keyless APIs
+
+| Source | What we get | Status |
+| --- | --- | --- |
+| MusicBrainz API | artist aliases, links (Bandcamp/RA/socials), genres | ✅ live (server can 503 under load) |
+| iTunes Search API | artist image, primary genre | ✅ live |
+| Nominatim (OSM) | venue address → NZ region | ✅ live |
 
 ## Planned
 
