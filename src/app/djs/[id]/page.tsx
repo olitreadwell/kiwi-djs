@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ProfileViewTracker } from '@/components/profile-view-tracker';
 import { MixList } from '@/components/mix-list';
+import { MixEmbed } from '@/components/mix-embed';
 import {
   buildDossier,
   getDjArticles,
@@ -148,6 +149,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       {mixes.filter((mix) => mix.kind === 'mix').length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-bold text-stone-100">Mixes</h2>
+          <MixEmbed mixes={mixes.filter((mix) => mix.kind === 'mix')} />
           <MixList mixes={mixes.filter((mix) => mix.kind === 'mix')} />
         </section>
       )}
