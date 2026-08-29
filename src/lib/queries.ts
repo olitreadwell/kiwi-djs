@@ -49,6 +49,7 @@ export interface EventRow {
   source: string;
   dj_id: string | null;
   dj_name: string | null;
+  region: string | null;
 }
 
 interface EventDjLink {
@@ -153,8 +154,8 @@ export async function getUpcomingEvents(limit = 60): Promise<EventRow[]> {
   }
   const pool = getPool();
   const result = await pool.query(
-    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name
-     FROM events e LEFT JOIN djs d ON d.id = e.dj_id
+    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
+     FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
      WHERE e.starts_at > now()
      ORDER BY e.starts_at ASC
      LIMIT $1`,
@@ -191,8 +192,8 @@ export async function getEvents(opts: { upcoming?: boolean; venue?: string; dj?:
     where.push(`e.id IN (SELECT event_id FROM event_djs WHERE dj_id = $${params.length})`);
   }
   const result = await pool.query(
-    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name
-     FROM events e LEFT JOIN djs d ON d.id = e.dj_id
+    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
+     FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
      ${where.length > 0 ? `WHERE ${where.join(' AND ')}` : ''}
      ORDER BY e.starts_at ASC NULLS LAST
      LIMIT $${params.length + 1}`,

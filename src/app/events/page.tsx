@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import { getUpcomingEvents } from '@/lib/queries';
+import { RegionFilter } from '@/components/region-filter';
 
 export const dynamic = 'force-dynamic';
 
-export default async function EventsPage() {
-  const events = await getUpcomingEvents(100);
+export default async function EventsPage({ searchParams }: { searchParams: Promise<{ region?: string }> }) {
+  const { region } = await searchParams;
+  const all = await getUpcomingEvents(200);
+  const events = region ? all.filter((event) => event.region?.toLowerCase() === region.toLowerCase()) : all;
+  const regions = [...new Set(all.map((event) => event.region).filter((value): value is string => Boolean(value)))].sort();
   const byDate = new Map<string, typeof events>();
   for (const event of events) {
     const day = new Date(event.starts_at).toDateString();
@@ -17,6 +21,9 @@ export default async function EventsPage() {
     <div className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-black text-stone-100">Event calendar</h1>
       <p className="mt-2 font-mono text-xs text-stone-500">{events.length} upcoming gigs from public listings</p>
+      <div className="mt-4">
+        <RegionFilter regions={regions} />
+      </div>
       <div className="mt-8 space-y-10">
         {[...byDate.entries()].map(([day, dayEvents]) => (
           <section key={day}>
