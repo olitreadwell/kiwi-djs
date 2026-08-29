@@ -23,7 +23,7 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 | `pnpm db:setup` | migrate + seed |
 | `pnpm db:snapshot` | regenerate `src/data/snapshot.json` (needed after schema/data changes) |
 | `pnpm scrape` | run all scrapers + discovery + enrichment once |
-| `pnpm loop` | self-improving loop: compact → scrape → verify → snapshot → commit → push, backing off 5/10/15/30/60 min as data thins |
+| `pnpm loop` | self-improving loop: issues phase (fix open automatable dataset issues) ↔ scrape phase (compact → scrape → verify → snapshot → commit → push), backing off 5/10/15/30/60 min as data thins |
 | `pnpm contract` | contract test vs running server (`BASE_URL=http://localhost:3001`) |
 
 ## Architecture
@@ -42,7 +42,14 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 
 - `djs.active = FALSE` = unverified candidate (discovered from event names/Mixcloud). Public queries filter `active = TRUE`. `verify-discovered` promotes candidates that gain mixes/links/articles or co-bill with an active DJ.
 - `djs.opt_out = TRUE` = DJ removed themselves. Every public query filters it.
-- `data_completeness` (0-100) computed from filled fields; drives the "needs more data" section.
+- `data_completeness` (0-100) recalibrated (#140): mixes 30, gigs 20, bio 15, photo 10, links 10, articles 10, genres 5. Same formula in `src/lib/queries.ts`, `scripts/export-snapshot.mjs` and the stored column (recomputed by the loop's dataset fix).
+- `djs.stale_since` set when a DJ's most recent dated activity (gig/article/mix discovery) is >12 months old (#138); cleared when activity resumes. `djs.bio_quality` = `low`/`ok` from the bio audit (#142).
+
+## Loop phases
+
+- **Issues phase** (default on start): each cycle picks the highest-priority open automatable dataset issue from `scripts/dataset-fixes.ts` (duplicate merge #159/#193, stale flagging #138, junk cleanup #195, bio audit #142, completeness recalibration #140), runs the fix, and closes the issue when its acceptance criteria are met. One fix per cycle, 5-min backoff, max 6 cycles, then switches to the scrape phase.
+- **Scrape phase**: compact → scrape → discover → enrich → verify → snapshot → commit → push. After a scrape cycle, if any automatable dataset issue is open, the loop switches back to the issues phase.
+- Phase state lives in `.loop/phase.json`; the handoff file shows the current phase.
 - Scrapers: robots.txt-checked, 500ms+ delays, 15s timeouts, failures recorded in `scrapes` table, never fatal.
 
 ## Current state (2026-08-29)

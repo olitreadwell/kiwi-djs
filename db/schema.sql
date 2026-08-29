@@ -37,6 +37,8 @@ ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_level INTEGER NOT NULL DEF
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_sources TEXT[] NOT NULL DEFAULT '{}';
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS is_nz BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS bpm_range TEXT;
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS stale_since TIMESTAMPTZ;   -- set when no gig/article activity for 12+ months (#138)
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS bio_quality TEXT;          -- 'low' | 'ok' from bio quality audit (#142)
 
 CREATE TABLE IF NOT EXISTS venues (
   id            TEXT PRIMARY KEY,
