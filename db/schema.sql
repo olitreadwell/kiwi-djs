@@ -135,6 +135,22 @@ CREATE TABLE IF NOT EXISTS dj_aliases (
   PRIMARY KEY (dj_id, alias)
 );
 
+-- Public suggestions for updated info (#15): users propose corrections to
+-- a DJ dossier. Reviewed before any data change.
+CREATE TABLE IF NOT EXISTS suggestions (
+  id              BIGSERIAL PRIMARY KEY,
+  dj_id           TEXT REFERENCES djs(id) ON DELETE SET NULL,
+  dj_name         TEXT,
+  field           TEXT NOT NULL,
+  current_value   TEXT,
+  suggested_value TEXT NOT NULL,
+  source_url      TEXT,
+  note            TEXT,
+  status          TEXT NOT NULL DEFAULT 'pending', -- pending | reviewed | rejected
+  ip_hash         TEXT,
+  created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 CREATE INDEX IF NOT EXISTS idx_djs_genres ON djs USING GIN (genres);
 CREATE INDEX IF NOT EXISTS idx_djs_name_trgm ON djs USING GIN (name gin_trgm_ops);
 CREATE INDEX IF NOT EXISTS idx_events_dj ON events(dj_id);

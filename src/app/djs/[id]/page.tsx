@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { ProfileViewTracker } from '@/components/profile-view-tracker';
 import { MixList } from '@/components/mix-list';
 import { MixEmbed } from '@/components/mix-embed';
+import { SuggestForm } from '@/components/suggest-form';
 import {
   buildDossier,
   getDjArticles,
@@ -290,6 +291,16 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
               ))}
             </ul>
           )}
+        </div>
+      </details>
+
+      <details className="mt-4 rounded-lg border border-stone-800">
+        <summary className="cursor-pointer px-4 py-3 font-mono text-xs uppercase tracking-wider text-stone-400 transition-colors hover:text-amber-300">
+          Suggest an update
+        </summary>
+        <div className="border-t border-stone-800 px-4 py-3">
+          <p className="font-mono text-xs text-stone-500">Spot a mistake or something new? Tell us — reviewed before publish.</p>
+          <SuggestForm djId={dj.id} djName={dj.name} />
         </div>
       </details>
     </div>
