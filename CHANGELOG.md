@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-29 — Dossier + dataset API
+
+- DJ dossier: generated summary, Mixcloud mixes, Bing News articles, played-with, labels/promoters, past gigs, similar DJs
+- Discovery scanner: co-billed artists from gig listings + Mixcloud users → hidden candidates, promoted only when verified (mixes/links/articles)
+- Junk detection: `discovery_note='junk'` candidates never promoted
+- Public API v1: `/api/v1/djs`, `/djs/{id}`, `/events`, `/venues`, `/search`, `/dataset`, `/dataset.csv`
+- OpenAPI 3.1 spec (`/api/openapi.json`) + Swagger UI (`/docs`) + contract test (`pnpm contract`)
+- Dataset export for reuse: JSON + CSV
+- Broderbeats seeded + enriched (5 articles, e.g. "Broderbeats Presents Intuition Vol. 2")
+
 ## 2026-08-29 — UTR expansion
 
 - Undertheradar scraper now paginates the Wellington region listing (was 4 events, now 8)

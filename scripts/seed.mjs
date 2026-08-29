@@ -40,6 +40,11 @@ const djs = [
     bio: 'Wellington drum & bass duo with a long catalogue on NZ and international labels.',
     genres: ['drum & bass'],
   },
+  {
+    name: 'Broderbeats',
+    bio: 'Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.',
+    genres: [],
+  },
 ];
 
 const venues = [

@@ -9,6 +9,9 @@ All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Verc
 | Undertheradar (Wellington region) | upcoming gigs + names | ✅ live |
 | San Fran (sanfran.co.nz) | upcoming events + dates | ✅ live |
 | Rogue & Vagabond (rogueandvagabond.co.nz) | upcoming gigs (UTR-powered) | ✅ live |
+| Mixcloud API | per-DJ mixes + user links | ✅ live |
+| Bing News RSS | per-DJ news articles | ✅ live |
+| Event-name discovery | new DJ candidates from co-billed gigs | ✅ live (candidates hidden until verified) |
 
 ## Best-effort (fetched, no structured extraction yet)
 
@@ -31,9 +34,9 @@ All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Verc
 ## Planned
 
 - Venue Instagram/Facebook public event embeds (headless browser, rate-limited)
-- Mixcloud API for mix links per DJ
 - Spotify artist search for genre + image enrichment
 - Eventfinda HTML fallback (no key) via sitemap
+- SoundCloud enrichment (needs fresh `SOUNDCLOUD_CLIENT_ID`)
 
 ## Rules
 

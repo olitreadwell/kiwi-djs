@@ -7,12 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:migrate": "node --env-file=.env.local scripts/migrate.mjs",
-    "db:seed": "node --env-file=.env.local scripts/seed.mjs",
+    "db:migrate": "node --env-file=.env.local --import tsx scripts/migrate.mjs",
+    "db:seed": "node --env-file=.env.local --import tsx scripts/seed.mjs",
     "db:setup": "pnpm db:migrate && pnpm db:seed",
-    "db:snapshot": "node --env-file=.env.local scripts/export-snapshot.mjs",
+    "db:snapshot": "node --env-file=.env.local --import tsx scripts/export-snapshot.mjs",
     "scrape": "node --env-file=.env.local --import tsx scripts/run-scrapers.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "contract": "node scripts/contract-test.mjs",
+    "check": "pnpm lint && pnpm typecheck && pnpm build"
   },
   "dependencies": {
     "cheerio": "1.2.0",
@@ -20,7 +22,8 @@
     "pg": "8.23.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "robots-parser": "3.0.1"
+    "robots-parser": "3.0.1",
+    "type-fest": "5.8.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

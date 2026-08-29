@@ -5,6 +5,8 @@ import { rogueScraper } from './rogue';
 import { soundcloudScraper } from './soundcloud';
 import { eventfindaScraper } from './eventfinda';
 import { bestEffortScrapers } from './best-effort';
+import { enrichAllDjs } from './enrich';
+import { discoverAll } from './discover';
 import type { Scraper, ScrapeResult } from './types';
 
 const scrapers: Scraper[] = [
@@ -33,5 +35,7 @@ export async function runAllScrapers(pool: Pool): Promise<ScrapeResult[]> {
     );
     results.push(result);
   }
+  results.push(...(await discoverAll(pool)));
+  results.push(...(await enrichAllDjs(pool)));
   return results;
 }

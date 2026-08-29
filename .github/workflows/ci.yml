@@ -1,0 +1,26 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+      - name: contract test (snapshot mode)
+        run: |
+          pnpm start -p 3111 &
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:3111/health >/dev/null && break
+            sleep 1
+          done
+          BASE_URL=http://localhost:3111 pnpm contract

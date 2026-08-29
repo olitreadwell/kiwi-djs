@@ -45,11 +45,21 @@ docker run -d --name wellington-djs-db \
 
 ## API
 
+- **Swagger UI**: `/docs` · **OpenAPI spec**: `/api/openapi.json`
+- `GET /api/v1/djs` — list/search DJs (`q`, `genre`, `limit`, `offset`)
+- `GET /api/v1/djs/{id}` — full dossier: summary, mixes, articles, socials, collabs, labels, similar DJs, upcoming + past gigs
+- `GET /api/v1/events` — events (`upcoming`, `venue`, `dj`, `limit`)
+- `GET /api/v1/venues` — venues
+- `GET /api/v1/search?q=` — search DJs
+- `GET /api/v1/dataset` — full dataset export (JSON) for reuse in other products
+- `GET /api/v1/dataset.csv` — DJs as CSV
 - `GET /health` — health check (reports mode + DJ count)
 - `POST /api/search` — log a search `{ query }`
 - `POST /api/djs/[id]/view` — log a profile view
 - `POST /api/opt-out` — `{ djId }` hides a DJ from the directory
 - `GET|POST /api/cron/refresh` — run all scrapers (protect with `CRON_SECRET`; Vercel Cron sends `Authorization: Bearer <CRON_SECRET>`)
+
+Contract test keeps spec and server in agreement: `BASE_URL=http://localhost:3001 pnpm contract`.
 
 ## Ethics
 

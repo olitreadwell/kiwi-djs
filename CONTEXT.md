@@ -45,10 +45,10 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 
 ## Current state (2026-08-29)
 
-- 8 seed DJs (incl. Broderbeats, source=manual), 57+ events from Undertheradar/San Fran/Rogue & Vagabond
-- Dossier schema migrated; enrichment (Mixcloud + Bing News RSS) and discovery (events + Mixcloud) implemented
-- API v1 + OpenAPI + Swagger + dataset export + contract test implemented
-- **In progress:** typecheck fails — `src/data/snapshot.json` needs regeneration to include `venues` (run `pnpm db:snapshot`). Then: typecheck/build/lint, run `pnpm scrape`, contract test, snapshot, commit, deploy, verify `/docs` + `/api/v1/*`, update README/DATA_SOURCES/CHANGELOG.
+- 8 active seed DJs (incl. Broderbeats), 59+ events, 171 mixes, 25 articles, 57 hidden discovery candidates
+- Dossier live: summary, mixes, news, played-with, labels, past gigs, similar DJs
+- API v1 + OpenAPI + Swagger + dataset export + contract test all passing
+- **In progress:** final snapshot + commit + deploy + prod verification
 
 ## Gotchas
 
