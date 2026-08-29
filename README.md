@@ -53,13 +53,21 @@ docker run -d --name wellington-djs-db \
 - `GET /api/v1/search?q=` — search DJs
 - `GET /api/v1/dataset` — full dataset export (JSON) for reuse in other products
 - `GET /api/v1/dataset.csv` — DJs as CSV
+- `GET /api/v1/dataset/meta` — dataset version, counts, license, sources
 - `GET /health` — health check (reports mode + DJ count)
 - `POST /api/search` — log a search `{ query }`
 - `POST /api/djs/[id]/view` — log a profile view
 - `POST /api/opt-out` — `{ djId }` hides a DJ from the directory
 - `GET|POST /api/cron/refresh` — run all scrapers (protect with `CRON_SECRET`; Vercel Cron sends `Authorization: Bearer <CRON_SECRET>`)
 
-Contract test keeps spec and server in agreement: `BASE_URL=http://localhost:3001 pnpm contract`.
+### Dataset product
+
+- `version` = stable content hash; changes only when data changes (not on every request)
+- `ETag` + `Cache-Control: public, max-age=3600` on `/dataset` and `/dataset.csv`; re-request with `If-None-Match` returns `304`
+- `/dataset/meta` describes the export: version, generated-at, counts, license, sources
+- Snapshot exports only public rows (`active = TRUE`, `opt_out = FALSE`)
+
+Contract test keeps spec and server in agreement: `BASE_URL=http://localhost:3001 pnpm contract`. CI runs `pnpm check` + contract test on every push (`.github/workflows/ci.yml`).
 
 ## Ethics
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-29 — Loop 2: resilience + dataset product
+
+- Mixcloud rate-limit resilience: per-DJ backoff (`mixcloud_backoff_until`), `Retry-After` honored, resume queue, per-DJ run report lines
+- SoundCloud enrichment: one-shot preflight — missing/dead `SOUNDCLOUD_CLIENT_ID` skips cleanly instead of 15 errors
+- Discovery dedupe: normalized names (accents/punctuation stripped), alias-aware, venue-name blocklist; junk candidates tagged `discovery_note='junk'` and never promoted
+- Dataset versioning: content-hash `version`, `ETag` + `304`, `Cache-Control` on `/dataset` + `/dataset.csv`, new `/api/v1/dataset/meta`
+- Snapshot now exports only public rows (`active = TRUE`); snapshot-mode queries filter inactive candidates
+- CI: `.github/workflows/ci.yml` — `pnpm check` + contract test on every push/PR
+- 6 GitHub issues written with specs (rate limits, SoundCloud key, dedupe, dataset versioning, contract+CI, prod DB wiring)
+
 ## 2026-08-29 — Dossier + dataset API
 
 - DJ dossier: generated summary, Mixcloud mixes, Bing News articles, played-with, labels/promoters, past gigs, similar DJs
