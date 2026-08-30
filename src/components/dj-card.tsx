@@ -1,20 +1,21 @@
 import Link from 'next/link';
 import type { DjRow } from '@/lib/queries';
-import { genreAccent, topGenres } from '@/lib/genres';
+import { genreAccent, genrePill, topGenres } from '@/lib/genres';
 
 export function DjCard({ dj }: { dj: DjRow }) {
   const accent = genreAccent(dj.genres);
+  const pill = genrePill(dj.genres);
   return (
     <Link
       href={`/djs/${dj.id}`}
-      className={`group flex flex-col justify-between rounded-lg border bg-surface p-4 transition-colors ${accent}`}
+      className={`group flex flex-col justify-between rounded-lg border p-4 transition-colors ${accent}`}
     >
       <div>
         <h3 className="text-lg font-semibold text-foreground group-hover:text-accent">{dj.name}</h3>
         {dj.genres.length > 0 && (
-          <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted">
-            {topGenres(dj.genres).join(' / ')}
-          </p>
+          <span className={`mt-2 inline-block rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${pill}`}>
+            {topGenres(dj.genres)[0]}
+          </span>
         )}
         {dj.bio && <p className="mt-3 line-clamp-3 text-sm text-muted">{dj.bio}</p>}
       </div>

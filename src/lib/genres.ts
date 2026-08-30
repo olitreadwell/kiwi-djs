@@ -224,28 +224,36 @@ export function hasSpecificGenre(genres: string[]): boolean {
   return genres.some((genre) => !GENERIC_GENRES.has(genre));
 }
 
-// Accent color per primary genre for cards (#52). Tailwind classes, dark-bg
-// friendly. Falls back to stone for unknown/multi-genre.
-const GENRE_ACCENTS: Array<[string[], string]> = [
-  [['Drum and Bass', 'Liquid Drum and Bass', 'Neurofunk', 'Jungle'], 'border-red-500/60 hover:border-red-400'],
-  [['House', 'Deep House', 'Tech House', 'Progressive House', 'Acid House'], 'border-amber-500/60 hover:border-amber-400'],
-  [['Techno', 'Hard Techno', 'Minimal Techno', 'Melodic Techno', 'Acid Techno', 'Detroit Techno'], 'border-sky-500/60 hover:border-sky-400'],
-  [['Garage', 'UK Garage', '2-Step', 'Grime'], 'border-emerald-500/60 hover:border-emerald-400'],
-  [['Dubstep', 'Deep Dubstep'], 'border-purple-500/60 hover:border-purple-400'],
-  [['Hip-Hop', 'Rap'], 'border-orange-500/60 hover:border-orange-400'],
-  [['Jazz'], 'border-yellow-500/60 hover:border-yellow-400'],
-  [['Soul', 'Funk', 'Boogie'], 'border-pink-500/60 hover:border-pink-400'],
-  [['Reggae', 'Dub', 'Dancehall'], 'border-lime-500/60 hover:border-lime-400'],
-  [['Disco', 'Nu-Disco'], 'border-fuchsia-500/60 hover:border-fuchsia-400'],
-  [['Ambient', 'Downtempo', 'Trip-Hop'], 'border-teal-500/60 hover:border-teal-400'],
-  [['Afro House', 'Afrobeats', 'Amapiano', 'Gqom'], 'border-rose-500/60 hover:border-rose-400'],
+// Genre color per primary genre for cards and pills (#52). The whole card
+// takes the tint and pills use the same solid color. Tailwind classes must
+// be static literals, dark-bg friendly.
+const GENRE_ACCENTS: Array<[string[], string, string]> = [
+  [['Drum and Bass', 'Liquid Drum and Bass', 'Neurofunk', 'Jungle'], 'border-red-500/60 bg-red-500/10 hover:bg-red-500/20', 'bg-red-500 text-white'],
+  [['House', 'Deep House', 'Tech House', 'Progressive House', 'Acid House'], 'border-amber-500/60 bg-amber-500/10 hover:bg-amber-500/20', 'bg-amber-500 text-white'],
+  [['Techno', 'Hard Techno', 'Minimal Techno', 'Melodic Techno', 'Acid Techno', 'Detroit Techno'], 'border-sky-500/60 bg-sky-500/10 hover:bg-sky-500/20', 'bg-sky-500 text-white'],
+  [['Garage', 'UK Garage', '2-Step', 'Grime'], 'border-emerald-500/60 bg-emerald-500/10 hover:bg-emerald-500/20', 'bg-emerald-500 text-white'],
+  [['Dubstep', 'Deep Dubstep', 'Psytrance', 'Psy Trance', 'Psychedelic Trance'], 'border-purple-500/60 bg-purple-500/10 hover:bg-purple-500/20', 'bg-purple-500 text-white'],
+  [['Hip-Hop', 'Rap'], 'border-orange-500/60 bg-orange-500/10 hover:bg-orange-500/20', 'bg-orange-500 text-white'],
+  [['Jazz'], 'border-yellow-500/60 bg-yellow-500/10 hover:bg-yellow-500/20', 'bg-yellow-500 text-black'],
+  [['Soul', 'Funk', 'Boogie'], 'border-pink-500/60 bg-pink-500/10 hover:bg-pink-500/20', 'bg-pink-500 text-white'],
+  [['Reggae', 'Dub', 'Dancehall'], 'border-lime-500/60 bg-lime-500/10 hover:bg-lime-500/20', 'bg-lime-500 text-black'],
+  [['Disco', 'Nu-Disco'], 'border-fuchsia-500/60 bg-fuchsia-500/10 hover:bg-fuchsia-500/20', 'bg-fuchsia-500 text-white'],
+  [['Ambient', 'Downtempo', 'Trip-Hop'], 'border-teal-500/60 bg-teal-500/10 hover:bg-teal-500/20', 'bg-teal-500 text-white'],
+  [['Afro House', 'Afrobeats', 'Amapiano', 'Gqom'], 'border-rose-500/60 bg-rose-500/10 hover:bg-rose-500/20', 'bg-rose-500 text-white'],
 ];
 
 export function genreAccent(genres: string[]): string {
   for (const [matches, accent] of GENRE_ACCENTS) {
     if (genres.some((genre) => matches.includes(genre))) return accent;
   }
-  return 'border-edge hover:border-accent/60';
+  return 'border-edge bg-surface hover:border-accent/60';
+}
+
+export function genrePill(genres: string[]): string {
+  for (const [matches, , pill] of GENRE_ACCENTS) {
+    if (genres.some((genre) => matches.includes(genre))) return pill;
+  }
+  return 'bg-stone-500 text-white';
 }
 
 // Show at most the top N genres — DJs accumulate long tag lists otherwise.
