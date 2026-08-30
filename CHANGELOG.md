@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-08-30 — Key-plug-and-play API scrapers (Last.fm / Discogs / YouTube)
+
+- `discover-lastfm-nz`: Last.fm `geo.gettopartists` (country=New Zealand) ranks NZ electronic artists by playcount; genre tags via `artist.getTopTags`, filtered to known electronic genres; gated on `LASTFM_API_KEY`
+- `discover-youtube-mixes`: searches `<DJ name> mix` per active DJ, adds matching videos to `dj_mixes` and adds the DJ's channel as a YouTube link when the channel name matches; gated on `YOUTUBE_API_KEY`
+- `enrich-discogs-releases`: pulls releases from an artist's Discogs page into `dj_releases` for DJs with a discogs link and no releases yet; gated on `DISCOGS_TOKEN`
+- All three error cleanly when their key is missing (same pattern as Spotify) so the loop surfaces the credential gap without failing
+
+## 2026-08-30 — Data-access layer + Zod API boundary (refactor)
+
+- `src/lib/queries.ts` is now a thin facade over a `DataRepository` interface (`src/lib/repo/types.ts`) with two adapters: `PostgresRepo` (SQL) and `SnapshotRepo` (snapshot.json). The active repo is chosen once via `isDbMode`; all 40+ import sites are unchanged and behavior is identical (verified against both DB-mode and snapshot-mode dev servers)
+- Added Zod (pinned 4.4.3): `src/lib/schemas.ts` is the single source of truth for API payloads and query params
+- OpenAPI `components.schemas` are now generated from the Zod schemas, fixing spec drift (DjSummary was missing `summary`/`summary_long`, Venue missing `region`, Link/Mix/Article missing `dj_id` + feedback fields)
+- `/api/v1/djs`, `/api/v1/events` and `/api/v1/search` validate query params with Zod and return 400 with field errors on invalid input (non-numeric or out-of-range `limit`, empty `q`)
+- `dataset.csv` normalises embedded newlines in cells so the export is one line per DJ (contract test was failing on a bio containing a literal newline)
+- Contract test passes against the dev server
+
 ## 2026-08-30 — Data-source priority policy (#301)
 
 - New policy + `DATA_SOURCES.md` section: sources are never excluded — they're verified and prioritized by location filter, genre filter, and popularity sort; higher-precision sources seed the ranked list, lower-precision ones contribute candidates until verified

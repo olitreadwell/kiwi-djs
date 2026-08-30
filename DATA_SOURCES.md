@@ -49,6 +49,9 @@ discovery → enrichment → verify pipeline (`discoverAll` → `enrichAllDjs`
 | Bing News RSS | per-DJ news articles | ✅ live |
 | MusicBrainz (area=NZ + electronic/dance tags) | NZ electronic artist candidates + tags + city | ✅ live (candidates hidden until a rankable source verifies them) |
 | Spotify (NZ Top 50 chart + genre search) | play-ranked NZ artists with genres + followers | ⚠️ needs `SPOTIFY_CLIENT_ID` / `SPOTIFY_CLIENT_SECRET` (free client credentials) |
+| Last.fm (`geo.gettopartists` NZ + artist tags) | play-ranked NZ electronic artists + genre tags | ⚠️ needs `LASTFM_API_KEY` (free) |
+| YouTube search (`<DJ> mix` + channel match) | mixes + matching YouTube channel links | ⚠️ needs `YOUTUBE_API_KEY` (free) |
+| Discogs artist releases | discography into `dj_releases` for linked artists | ⚠️ needs `DISCOGS_TOKEN` (free, personal) |
 | Event-name discovery | new DJ candidates from co-billed gigs | ✅ live (candidates hidden until verified) |
 | Northern Bass (northernbass.co.nz/lineup) | festival lineup → DJ candidates + events | ✅ live (electronic-only festival, all acts kept) |
 | The Others Way (theothersway.co.nz/lineup) | festival lineup → DJ candidates + events | ✅ live (DJ acts only) |

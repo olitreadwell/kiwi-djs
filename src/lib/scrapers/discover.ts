@@ -5,6 +5,8 @@ import { sleep } from './http';
 import { upsertDjLink, upsertDjArticle, parseBingNewsXml } from './enrich';
 import { getSoundcloudClientId } from './soundcloud-client';
 import { discoverSpotifyNzEdm } from './spotify';
+import { discoverLastfmNz } from './lastfm';
+import { discoverYoutubeMixes } from './youtube';
 import { cityFromLocation, isNzLocation } from '../locations';
 import { normaliseGenres } from '../genres';
 import type { ScrapeResult } from './types';
@@ -659,6 +661,8 @@ export async function discoverAll(pool: Pool): Promise<ScrapeResult[]> {
     { source: 'discover-soundcloud-nz', run: discoverSoundcloudNz },
     { source: 'discover-musicbrainz-edm', run: discoverMusicbrainzNzEdm },
     { source: 'discover-spotify', run: discoverSpotifyNzEdm },
+    { source: 'discover-lastfm-nz', run: discoverLastfmNz },
+    { source: 'discover-youtube-mixes', run: discoverYoutubeMixes },
     { source: 'discover-events', run: discoverFromEvents },
     { source: 'discover-mixcloud', run: discoverFromMixcloud },
     { source: 'discover-news', run: discoverFromNewsArticles },

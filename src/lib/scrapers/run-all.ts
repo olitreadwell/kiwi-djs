@@ -16,6 +16,7 @@ import { jamBaseScraper } from './jambase';
 import { residentAdvisorScraper } from './residentadvisor';
 import { bestEffortScrapers } from './best-effort';
 import { officialSiteScraper } from './official-site';
+import { enrichDiscogsReleases } from './discogs';
 import { enrichAllDjs } from './enrich';
 import { enrichVenueRegions } from './apis';
 import { discoverAll, verifyDiscovered } from './discover';
@@ -40,6 +41,7 @@ const scrapers: Scraper[] = [
   ...bestEffortScrapers,
   { source: 'enrich-venue-regions', run: enrichVenueRegions },
   officialSiteScraper,
+  { source: 'enrich-discogs-releases', run: enrichDiscogsReleases },
 ];
 
 export async function runAllScrapers(

@@ -33,6 +33,17 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 - `src/lib/queries.ts` — data-access facade; picks `PostgresRepo` or `SnapshotRepo` via `isDbMode`
 - `src/lib/repo/` — `types.ts` (row types + `DataRepository` interface), `postgres.ts` (SQL), `snapshot.ts` (snapshot.json)
 - `src/lib/schemas.ts` — Zod schemas: API responses generate the OpenAPI components; query params are validated at the route boundary (400 on invalid input)
+
+## Data pipeline
+
+ingest → normalize → dedupe → enrich → verify → publish:
+
+- **Ingest**: `src/lib/scrapers/` (one file per source) writes raw facts via `upsert.ts`
+- **Normalize**: `normaliseGenres` (`src/lib/genres.ts`), `normalizeArtistName`/`isJunkName` (`scrapers/discover.ts`), `cityFromLocation` (`src/lib/locations.ts`)
+- **Dedupe**: slug ids + `ON CONFLICT` upserts; duplicate-merge issues run as dataset fixes in the loop
+- **Enrich**: `enrichAllDjs` (`scrapers/enrich.ts`) + source-specific enrichment (official-site bios, Beatport genres, Wayback archiving)
+- **Verify**: `verifyDiscovered` (`scrapers/discover.ts`) — multi-source corroboration; non-NZ profiles demoted (`#321`)
+- **Publish**: `export-snapshot.mjs` → `src/data/snapshot.json`; public reads go through `queries.ts` (repo adapters)
 - `src/lib/openapi.ts` — OpenAPI 3.1 spec (typed with `type-fest`); served at `/api/openapi.json`
 - `src/lib/api-types.ts` — API response types + `toDjSummary`
 - `src/app/api/v1/` — public API: `/djs`, `/djs/{id}`, `/events`, `/venues`, `/search`, `/dataset`, `/dataset.csv`
