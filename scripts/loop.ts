@@ -7,6 +7,7 @@ import { DATASET_FIXES, dedupeEvents } from './dataset-fixes';
 import { buildIssueQueue, loadIssueQueue, writeIssueQueue, type QueueIssue } from './issue-queue';
 import { normaliseGenres } from '../src/lib/genres';
 import { isRelevantArticle } from '../src/lib/scrapers/enrich';
+import { summarizeMissingDjs } from '../src/lib/summarize';
 import { classifyProfileLocation, hasNzLocationEvidence } from '../src/lib/locations';
 
 // Self-improving scrape loop.
@@ -549,6 +550,9 @@ async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: n
   const results = await runAllScrapers(pool, { disabledSources: disabled });
   updateSourceState(state, results);
   saveSourceState(state);
+  const summarizeLimit = Number(process.env.SUMMARIZE_LIMIT ?? 20);
+  const summarised = await summarizeMissingDjs(pool, summarizeLimit);
+  if (summarised > 0) log(`Summarised ${summarised} DJs (AI).`);
   const totalNew = results.reduce((sum, r) => sum + r.items_new, 0);
   const totalFound = results.reduce((sum, r) => sum + r.items_found, 0);
   const elapsed = Math.round((Date.now() - startedAt.getTime()) / 1000);

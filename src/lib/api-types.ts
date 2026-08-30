@@ -6,6 +6,8 @@ export interface DjSummary {
   name: string;
   genres: string[];
   bio: string | null;
+  summary: string | null;
+  summary_long: string | null;
   image_url: string | null;
   soundcloud_url: string | null;
   instagram_url: string | null;
@@ -65,6 +67,8 @@ export function toDjSummary(dj: DjRow): DjSummary {
     name: dj.name,
     genres: dj.genres,
     bio: dj.bio,
+    summary: dj.summary ?? null,
+    summary_long: dj.summary_long ?? null,
     image_url: dj.image_url,
     soundcloud_url: dj.soundcloud_url,
     instagram_url: dj.instagram_url,

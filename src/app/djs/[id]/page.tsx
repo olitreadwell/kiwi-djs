@@ -103,10 +103,12 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         </div>
       </div>
 
-      {summary && (
+      {(dj.summary_long || summary) && (
         <section className="mt-8 rounded-lg border border-accent/30 bg-accent/5 p-5">
-          <h2 className="font-mono text-xs uppercase tracking-wider text-accent">The lowdown</h2>
-          <p className="mt-2 leading-relaxed text-foreground">{summary}</p>
+          <h2 className="font-mono text-xs uppercase tracking-wider text-accent">
+            The lowdown {dj.summary_long && <span className="ml-1 text-faint">· AI</span>}
+          </h2>
+          <p className="mt-2 leading-relaxed text-foreground">{dj.summary_long ?? summary}</p>
         </section>
       )}
 

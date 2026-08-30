@@ -12,6 +12,7 @@
     "db:setup": "pnpm db:migrate && pnpm db:seed",
     "db:snapshot": "node --env-file=.env.local --import tsx scripts/export-snapshot.mjs",
     "scrape": "node --env-file=.env.local --import tsx scripts/run-scrapers.ts",
+    "summarize": "node --env-file=.env.local --import tsx scripts/summarize.ts",
     "loop": "node --env-file=.env.local --import tsx scripts/loop.ts",
     "typecheck": "tsc --noEmit",
     "contract": "node scripts/contract-test.mjs",

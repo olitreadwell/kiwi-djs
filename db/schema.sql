@@ -41,6 +41,8 @@ ALTER TABLE djs ADD COLUMN IF NOT EXISTS bpm_range TEXT;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS profile_location TEXT;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS stale_since TIMESTAMPTZ;   -- set when no gig/article activity for 12+ months (#138)
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS bio_quality TEXT;          -- 'low' | 'ok' from bio quality audit (#142)
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS summary TEXT;              -- short AI summary for cards (#292)
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS summary_long TEXT;         -- longer AI summary for the dossier (#292)
 
 CREATE TABLE IF NOT EXISTS venues (
   id            TEXT PRIMARY KEY,

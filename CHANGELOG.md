@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-30 — AI summaries (#292)
+
+- DJ cards show a short AI summary (with a subtle AI tag) when one exists, falling back to the bio
+- Dossier "The lowdown" shows a longer AI summary, falling back to the rule-based dossier text
+- `src/lib/summarize.ts` generates both from the facts we hold (genres, mixes, gigs, articles, collabs, labels) via DeepSeek when `DEEPSEEK_API_KEY` is set; degrades gracefully without it
+- Loop summarises up to 20 DJs per cycle (`SUMMARIZE_LIMIT`); `pnpm summarize [n]` runs a one-off pass
+
 ## 2026-08-30 — Specific platform links (#74)
 
 - Social links reclassified by host: Instagram, X, Facebook, TikTok, YouTube, Spotify, Apple Music, Tidal, Deezer, Qobuz, Bandcamp, Mastodon, Threads, Snapchat, Twitch, Beatport — no more generic "social network" labels

@@ -21,6 +21,8 @@ export interface DjRow {
   id: string;
   name: string;
   bio: string | null;
+  summary?: string | null;
+  summary_long?: string | null;
   genres: string[];
   image_url: string | null;
   soundcloud_url: string | null;
@@ -104,7 +106,7 @@ export async function listDjs(opts: { query?: string; genre?: string; sort?: str
   }
   const result = await pool.query(
     `SELECT * FROM (
-       SELECT d.id, d.name, d.bio, d.genres, d.city, d.image_url, d.soundcloud_url, d.instagram_url,
+       SELECT d.id, d.name, d.bio, d.summary, d.summary_long, d.genres, d.city, d.image_url, d.soundcloud_url, d.instagram_url,
               d.facebook_url, d.mixcloud_url, d.website_url, d.active, d.popularity, d.source, d.opt_out,
               d.mixcloud_backoff_until, d.discovery_note, d.verification_level, d.verification_sources, d.profile_location,
               d.is_nz, d.created_at, d.updated_at,
