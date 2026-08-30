@@ -26,7 +26,10 @@ export async function enrichBeatport(pool: Pool, dj: DjRow): Promise<ScrapeResul
   let text: string;
   try {
     const res = await fetch(`${JINA_READER}${url}/tracks`, {
-      headers: { accept: 'text/plain' },
+      headers: {
+        accept: 'text/plain',
+        ...(process.env.JINA_API_KEY ? { authorization: `Bearer ${process.env.JINA_API_KEY}` } : {}),
+      },
       signal: AbortSignal.timeout(30000),
     });
     if (!res.ok) return { status: 'error', items_found: 0, items_new: 0, error: `Beatport HTTP ${res.status}` };
