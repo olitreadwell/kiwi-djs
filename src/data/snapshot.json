@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-30T03:04:40.191Z",
+  "exportedAt": "2026-08-30T03:15:03.609Z",
   "djs": [
     {
       "id": "kora-ca",
@@ -88,6 +88,78 @@
       "last_played_at": null
     },
     {
+      "id": "norman-foreman",
+      "name": "Norman Foreman",
+      "bio": null,
+      "genres": [
+        "Dubstep",
+        "Jungle",
+        "Drum and Bass"
+      ],
+      "city": "dunedin",
+      "image_url": "https://i1.sndcdn.com/avatars-8bJaAKgwh0SrwJ3R-yI6eFA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/normanforeman",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.481Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Dunedin",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "emi-music-new-zealand",
+      "name": "EMI Music New Zealand",
+      "bio": null,
+      "genres": [],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000001766513-s11vaf-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/nzemi",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.584Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland City",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "kukan-dub-lagan",
       "name": "Kukan Dub Lagan",
       "bio": "Those familiar with Kukan Dub Lagan tunes will know this project is much more than just chill music. Itay fuses dub, world, <span class=\"peekaboo-text\">down-tempo, funk and the indescribable to create a unique journey full of groove, bass and soulful sounds. In simpler words “sunshine music for smiling people”!! ‘</span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
@@ -128,6 +200,200 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "epoch",
+      "name": "epoch",
+      "bio": null,
+      "genres": [
+        "Synthwave",
+        "Electronic",
+        "Dance",
+        "House",
+        "Pop",
+        "Bass",
+        "Metal",
+        "Techno"
+      ],
+      "city": "christchurch",
+      "image_url": "https://i1.sndcdn.com/avatars-ulKUua98rShHMuks-92yrsQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/nostoppingepoch",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.412Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Christchurch",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "boozie",
+      "name": "Boozie",
+      "bio": null,
+      "genres": [
+        "Hip-Hop"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-MwqfzroVXTJes27M-wCdrZQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/boozieaudio",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.594Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "community-service",
+      "name": "COMMUNITY SERVICE",
+      "bio": null,
+      "genres": [
+        "Garage",
+        "Electronic",
+        "Dance",
+        "House",
+        "Dub",
+        "Grime",
+        "Breaks",
+        "Bass"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-ha5Moc0SgaXNEBeR-1hCzfQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/communityservicerecs",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.603Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "six60",
+      "name": "SIX60",
+      "bio": null,
+      "genres": [
+        "Pop"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000704417758-4w7dd5-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/six60",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.213Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "night-life",
+      "name": "Night Life",
+      "bio": null,
+      "genres": [
+        "Pop"
+      ],
+      "city": "queenstown",
+      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.273Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Queenstown",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -433,6 +699,40 @@
       "last_played_at": null
     },
     {
+      "id": "justice-patterson",
+      "name": "Justice Patterson",
+      "bio": null,
+      "genres": [],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-LjlUHYCJy8JzvUwX-4z76mA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/justice-patterson-344128712",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:27.525Z",
+      "updated_at": "2026-08-30T02:44:07.231Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "dirdygerdi",
       "name": "DirdyGerdi",
       "bio": null,
@@ -562,40 +862,6 @@
       "last_played_at": null
     },
     {
-      "id": "justice-patterson",
-      "name": "Justice Patterson",
-      "bio": null,
-      "genres": [],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-LjlUHYCJy8JzvUwX-4z76mA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/justice-patterson-344128712",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:27.525Z",
-      "updated_at": "2026-08-30T02:44:07.231Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "deep-fried-dub",
       "name": "Deep Fried Dub",
       "bio": null,
@@ -667,6 +933,44 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "lordemusic",
+      "name": "LordeMusic",
+      "bio": null,
+      "genres": [
+        "Electronic",
+        "Pop",
+        "Alternative"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-kyDQkosF3PEouyNS-kzczHw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/lordemusic",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.085Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -832,6 +1136,118 @@
       "last_played_at": null
     },
     {
+      "id": "flipthescripta",
+      "name": "FlipTheScripta",
+      "bio": null,
+      "genres": [],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-duT6ZZtiDjYXJGNj-xzXgsg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-690791248",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 50,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.382Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: West Auckland",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "princesschelsea",
+      "name": "princesschelsea",
+      "bio": null,
+      "genres": [
+        "Indie",
+        "Pop",
+        "Alternative"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000465472743-lwmx74-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/princesschelsea",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.291Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "orphx",
+      "name": "Orphx",
+      "bio": null,
+      "genres": [
+        "Experimental",
+        "Electronic",
+        "Dance",
+        "Dub",
+        "Techno"
+      ],
+      "city": "hamilton",
+      "image_url": "https://i1.sndcdn.com/avatars-000597284061-m4pbnq-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/orphx",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.260Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Hamilton",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "yunset",
       "name": "Yunset",
       "bio": null,
@@ -945,40 +1361,6 @@
       "last_played_at": null
     },
     {
-      "id": "flipthescripta",
-      "name": "FlipTheScripta",
-      "bio": null,
-      "genres": [],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-duT6ZZtiDjYXJGNj-xzXgsg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-690791248",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 50,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.382Z",
-      "updated_at": "2026-08-30T03:04:34.959Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: West Auckland",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "mark-knight",
       "name": "Mark Knight",
       "bio": null,
@@ -1020,6 +1402,82 @@
       "last_played_at": null
     },
     {
+      "id": "kosu",
+      "name": "kosu.",
+      "bio": null,
+      "genres": [
+        "Dubstep",
+        "Electronic",
+        "Dance",
+        "Trance"
+      ],
+      "city": "hamilton",
+      "image_url": "https://i1.sndcdn.com/avatars-HZkRntUuHJQirQcO-oFvWKA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/korewakosu",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 45,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.496Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Hamilton",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "restricted",
+      "name": "Restricted",
+      "bio": null,
+      "genres": [
+        "Dance"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-AEQF3MeV6Nw9I7w8-JSzeag-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/itsrestricted",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/restrictedareamusic",
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:24.950Z",
+      "updated_at": "2026-08-30T02:44:07.231Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Adelaide",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "elliot-vincent",
       "name": "ELLIOT & VINCENT",
       "bio": null,
@@ -1052,43 +1510,6 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "restricted",
-      "name": "Restricted",
-      "bio": null,
-      "genres": [
-        "Dance"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-AEQF3MeV6Nw9I7w8-JSzeag-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/itsrestricted",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:24.950Z",
-      "updated_at": "2026-08-30T02:44:07.231Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Adelaide",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -1739,42 +2160,6 @@
       "last_played_at": null
     },
     {
-      "id": "montell2099",
-      "name": "montell2099",
-      "bio": null,
-      "genres": [
-        "Dance"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-7DPbpJReUSSGXp5Q-3navYQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/montell2099",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 35,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.125Z",
-      "updated_at": "2026-08-30T03:04:34.959Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "dj651-kutmankrew",
       "name": "DJ651 (KutManKrew)",
       "bio": null,
@@ -1893,42 +2278,6 @@
       "last_played_at": null
     },
     {
-      "id": "night-life",
-      "name": "Night Life",
-      "bio": null,
-      "genres": [
-        "Pop"
-      ],
-      "city": "queenstown",
-      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.273Z",
-      "updated_at": "2026-08-30T03:04:34.959Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Queenstown",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "headland",
       "name": "Headland",
       "bio": null,
@@ -1963,42 +2312,6 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: Christchurch",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "six60",
-      "name": "SIX60",
-      "bio": null,
-      "genres": [
-        "Pop"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000704417758-4w7dd5-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/six60",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.213Z",
-      "updated_at": "2026-08-30T03:04:34.959Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -2082,26 +2395,27 @@
       "last_played_at": null
     },
     {
-      "id": "leisure",
-      "name": "LEISURE",
+      "id": "montell2099",
+      "name": "montell2099",
       "bio": null,
       "genres": [
-        "Alternative"
+        "Electronic",
+        "Dance"
       ],
       "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-DEMlND0Ucg9jesSr-3y1lVw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/theleisurecollective",
+      "image_url": "https://i1.sndcdn.com/avatars-7DPbpJReUSSGXp5Q-3navYQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/montell2099",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
+      "data_completeness": 35,
       "source": "discovered-soundcloud",
       "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.225Z",
-      "updated_at": "2026-08-30T03:04:34.959Z",
+      "created_at": "2026-08-30T02:56:17.125Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -2113,7 +2427,7 @@
       "bpm_range": null,
       "stale_since": null,
       "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland ",
+      "profile_location": "SoundCloud: Auckland",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -2329,6 +2643,42 @@
       "bio_quality": null,
       "profile_location": null,
       "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "leisure",
+      "name": "LEISURE",
+      "bio": null,
+      "genres": [
+        "Alternative"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-DEMlND0Ucg9jesSr-3y1lVw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/theleisurecollective",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.225Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland ",
+      "upcoming_events": 0,
       "last_played_at": null
     },
     {
@@ -2645,6 +2995,45 @@
       "last_played_at": null
     },
     {
+      "id": "jimi-the-kween",
+      "name": "Jimi The Kween",
+      "bio": null,
+      "genres": [
+        "Electronic",
+        "Dance",
+        "Pop"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/jimithekween-music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:25.403Z",
+      "updated_at": "2026-08-30T02:44:07.231Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "lj-groove",
       "name": "LJ Groove",
       "bio": null,
@@ -2685,83 +3074,6 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: Queenstown",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "geneva-am",
-      "name": "Geneva AM",
-      "bio": "Geneva AM is an award winning producer and vocalist based in Aotearoa, New Zealand.</p>",
-      "genres": [
-        "Alternative"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-yuMmmnjdZ9FXES2B-pztAsw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/geneva_am",
-      "instagram_url": "https://www.instagram.com/geneva_am/",
-      "facebook_url": "https://www.facebook.com/genevaam1",
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:24.153Z",
-      "updated_at": "2026-08-30T02:44:07.231Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "links",
-        "articles",
-        "gigs",
-        "multi-gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
-      "id": "jimi-the-kween",
-      "name": "Jimi The Kween",
-      "bio": null,
-      "genres": [
-        "Electronic",
-        "Dance",
-        "Pop"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/jimithekween-music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:25.403Z",
-      "updated_at": "2026-08-30T02:44:07.231Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -2808,6 +3120,44 @@
       "bio_quality": null,
       "profile_location": null,
       "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "geneva-am",
+      "name": "Geneva AM",
+      "bio": "Geneva AM is an award winning producer and vocalist based in Aotearoa, New Zealand.</p>",
+      "genres": [
+        "Alternative"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-yuMmmnjdZ9FXES2B-pztAsw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/geneva_am",
+      "instagram_url": "https://www.instagram.com/geneva_am/",
+      "facebook_url": "https://www.facebook.com/genevaam1",
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:24.153Z",
+      "updated_at": "2026-08-30T02:44:07.231Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "links",
+        "articles",
+        "gigs",
+        "multi-gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 1,
       "last_played_at": null
     },
     {
@@ -2940,42 +3290,6 @@
       "last_played_at": null
     },
     {
-      "id": "taylor-sol",
-      "name": "Taylor Sol",
-      "bio": null,
-      "genres": [
-        "World"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/taylor-sol",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 30,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:42.175Z",
-      "updated_at": "2026-08-30T02:44:07.231Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "state-of-mind",
       "name": "State of Mind",
       "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
@@ -3079,6 +3393,42 @@
       "opt_out": false,
       "created_at": "2026-08-29T07:22:43.108Z",
       "updated_at": "2026-08-30T02:34:24.145Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "taylor-sol",
+      "name": "Taylor Sol",
+      "bio": null,
+      "genres": [
+        "World"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/taylor-sol",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 30,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:42.175Z",
+      "updated_at": "2026-08-30T02:44:07.231Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -4778,6 +5128,17 @@
       "dj_name": null
     },
     {
+      "id": "earthbeat-2025",
+      "name": "Earth Beat Festival 2025",
+      "venue": "Kaipara, Northland",
+      "starts_at": null,
+      "url": "https://www.earthbeatfestival.com/music-lineup",
+      "source": "earthbeat",
+      "dj_id": null,
+      "is_dj_event": true,
+      "dj_name": null
+    },
+    {
       "id": "utr-venue-40fe15b13703",
       "name": "Single Malt Presents ‘Wetlands’",
       "venue": "MOON",
@@ -4795,17 +5156,6 @@
       "starts_at": "2026-09-05T00:00:00.000Z",
       "url": "http://www.undertheradar.co.nz/utr/show/SID/104120/N/Pur-Techno-Night-011.utr",
       "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": true,
-      "dj_name": null
-    },
-    {
-      "id": "earthbeat-2025",
-      "name": "Earth Beat Festival 2025",
-      "venue": "Kaipara, Northland",
-      "starts_at": null,
-      "url": "https://www.earthbeatfestival.com/music-lineup",
-      "source": "earthbeat",
       "dj_id": null,
       "is_dj_event": true,
       "dj_name": null
@@ -5086,6 +5436,28 @@
       "dj_name": null
     },
     {
+      "id": "sanfran-1417811",
+      "name": "KPOP Club Night",
+      "venue": "San Fran",
+      "starts_at": "2026-09-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": true,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-45156c42cbf5",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": "2026-09-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104264/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "eventfinda-sitemap-d469f6e8bd1a",
       "name": "Otto Wine Club: Tiwaiwaka",
       "venue": "Otto Champagneria & Beer Hall",
@@ -5125,6 +5497,17 @@
       "starts_at": null,
       "url": "https://www.eventfinda.co.nz/2026/drawing-and-painting-for-beginners3/wellington",
       "source": "eventfinda",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1688826",
+      "name": "Buckshot",
+      "venue": "San Fran",
+      "starts_at": "2026-12-02T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
+      "source": "sanfran",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -5174,34 +5557,12 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-100998",
-      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
+      "id": "utr-venue-58e7e427d78c",
+      "name": "Songwriters' Showcase #115",
       "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/100998/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-45156c42cbf5",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": "2026-09-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104264/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "starts_at": "2026-09-06T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104387/N/Songwriters'-Showcase-#115.utr",
       "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1688826",
-      "name": "Buckshot",
-      "venue": "San Fran",
-      "starts_at": "2026-12-02T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
-      "source": "sanfran",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -5218,45 +5579,23 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1690521",
-      "name": "Convergence – A Drag Night Fundraiser",
-      "venue": "San Fran",
-      "starts_at": "2026-09-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104264",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "id": "undertheradar-100998",
+      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
       "venue": "MOON",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "url": "https://www.undertheradar.co.nz/gig/100998/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
       "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
     },
     {
-      "id": "sanfran-1417811",
-      "name": "KPOP Club Night",
+      "id": "sanfran-1690521",
+      "name": "Convergence – A Drag Night Fundraiser",
       "venue": "San Fran",
-      "starts_at": "2026-09-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
+      "starts_at": "2026-09-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
       "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": true,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-21ee5573b9c0",
-      "name": "Flyte",
-      "venue": "San Fran",
-      "starts_at": "2026-11-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
-      "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -5273,6 +5612,17 @@
       "dj_name": null
     },
     {
+      "id": "utr-venue-21ee5573b9c0",
+      "name": "Flyte",
+      "venue": "San Fran",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "undertheradar-104388",
       "name": "Toxa Album Release",
       "venue": null,
@@ -5284,12 +5634,12 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-58e7e427d78c",
-      "name": "Songwriters' Showcase #115",
+      "id": "undertheradar-104264",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
       "venue": "MOON",
-      "starts_at": "2026-09-06T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104387/N/Songwriters'-Showcase-#115.utr",
-      "source": "undertheradar-venues",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -5328,11 +5678,11 @@
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-102968",
-      "name": "The Racket Lounge",
+      "id": "rogue-vagabond-104171",
+      "name": "Rory Johns And The Mystic",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-09T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102968/The-Racket-Lounge.utr",
+      "starts_at": "2026-09-10T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
       "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
@@ -5345,17 +5695,6 @@
       "starts_at": "2026-09-25T19:00:00.000Z",
       "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
       "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104062",
-      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-17T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
-      "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -5394,22 +5733,22 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-430631",
-      "name": "Uncle Acid and the Deadbeats",
+      "id": "sanfran-1078519",
+      "name": "The Reytons",
       "venue": "San Fran",
-      "starts_at": "2026-12-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
+      "starts_at": "2026-12-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
       "source": "sanfran",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
     },
     {
-      "id": "sanfran-1078519",
-      "name": "The Reytons",
+      "id": "sanfran-430631",
+      "name": "Uncle Acid and the Deadbeats",
       "venue": "San Fran",
-      "starts_at": "2026-12-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
+      "starts_at": "2026-12-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
       "source": "sanfran",
       "dj_id": null,
       "is_dj_event": false,
@@ -5449,22 +5788,22 @@
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-104171",
-      "name": "Rory Johns And The Mystic",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-10T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
-      "source": "rogue-vagabond",
+      "id": "undertheradar-104261",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104261/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-102969",
-      "name": "The Racket Lounge",
+      "id": "rogue-vagabond-104062",
+      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-07T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
+      "starts_at": "2026-09-17T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
       "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
@@ -5482,17 +5821,6 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104261",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104261/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "ra-2468041",
       "name": "Carlucci Carnival",
       "venue": "Carlucci Land",
@@ -5502,9 +5830,38 @@
       "dj_id": null,
       "is_dj_event": true,
       "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-102968",
+      "name": "The Racket Lounge",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-09T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102968/The-Racket-Lounge.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-102969",
+      "name": "The Racket Lounge",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-07T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     }
   ],
   "links": [
+    {
+      "id": "norman-foreman-soundcloud-50129e74164d",
+      "dj_id": "norman-foreman",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/normanforeman",
+      "label": "SoundCloud: Norman Foreman"
+    },
     {
       "id": "frida-allmusic-6d7b0b81066c",
       "dj_id": "frida",
@@ -5905,6 +6262,13 @@
       "label": "Mixcloud: Dj-Emerson El Mago Melodico"
     },
     {
+      "id": "epoch-soundcloud-06e18caec464",
+      "dj_id": "epoch",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/nostoppingepoch",
+      "label": "SoundCloud: Epoch"
+    },
+    {
       "id": "concord-dawn-lyrics-b3cb804a71e7",
       "dj_id": "concord-dawn",
       "type": "lyrics",
@@ -6276,20 +6640,6 @@
       "label": "SoundCloud: Jimi The Kween"
     },
     {
-      "id": "myles-mixcloud-6a133a1dbdc6",
-      "dj_id": "myles",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/johnnymyles/",
-      "label": "Mixcloud: Johnny Myles Music"
-    },
-    {
-      "id": "serenna-soundcloud-a190e01becb2",
-      "dj_id": "serenna",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/lunavella-serenna",
-      "label": "SoundCloud: Serenna"
-    },
-    {
       "id": "sam-biography-cb2598af837b",
       "dj_id": "sam",
       "type": "biography",
@@ -6302,6 +6652,13 @@
       "type": "biography",
       "url": "http://www.rockabilly.nl/references/messages/sam_cooke.htm",
       "label": null
+    },
+    {
+      "id": "myles-mixcloud-6a133a1dbdc6",
+      "dj_id": "myles",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/johnnymyles/",
+      "label": "Mixcloud: Johnny Myles Music"
     },
     {
       "id": "sam-other databases-d7c28f1fa87d",
@@ -6358,6 +6715,13 @@
       "type": "other databases",
       "url": "https://www.worldcat.org/identities/lccn-n91099512",
       "label": "other databases"
+    },
+    {
+      "id": "serenna-soundcloud-a190e01becb2",
+      "dj_id": "serenna",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lunavella-serenna",
+      "label": "SoundCloud: Serenna"
     },
     {
       "id": "emerson-other databases-b33e493974dc",
@@ -6626,18 +6990,18 @@
       "label": "purchase for download"
     },
     {
-      "id": "emerson-purchase for download-5cf5febb0c04",
-      "dj_id": "emerson",
-      "type": "purchase for download",
-      "url": "https://www.7digital.com/artist/emerson-lake-palmer",
-      "label": "purchase for download"
-    },
-    {
       "id": "justice-patterson-soundcloud-d0047ab04ca6",
       "dj_id": "justice-patterson",
       "type": "soundcloud",
       "url": "https://soundcloud.com/justice-patterson-344128712",
       "label": "SoundCloud: Justice Patterson"
+    },
+    {
+      "id": "emerson-purchase for download-5cf5febb0c04",
+      "dj_id": "emerson",
+      "type": "purchase for download",
+      "url": "https://www.7digital.com/artist/emerson-lake-palmer",
+      "label": "purchase for download"
     },
     {
       "id": "emerson-purchase for download-50581286b137",
@@ -6941,6 +7305,13 @@
       "label": "SoundCloud: Kukan Dub Lagan"
     },
     {
+      "id": "restricted-soundcloud-31db49c23cb6",
+      "dj_id": "restricted",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/itsrestricted",
+      "label": "SoundCloud: Restricted"
+    },
+    {
       "id": "sunshine-website-0e42fe91d138",
       "dj_id": "sunshine",
       "type": "website",
@@ -7030,13 +7401,6 @@
       "type": "resident-advisor",
       "url": "https://ra.co/dj/kora-ca",
       "label": null
-    },
-    {
-      "id": "restricted-soundcloud-31db49c23cb6",
-      "dj_id": "restricted",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/itsrestricted",
-      "label": "SoundCloud: Restricted"
     },
     {
       "id": "fairbrother-bandcamp-c42bda6ae4be",
@@ -7585,13 +7949,6 @@
       "label": "Mixcloud: The Journey Men"
     },
     {
-      "id": "frank-booker-mixcloud-ac569ced9731",
-      "dj_id": "frank-booker",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/frankbooker/",
-      "label": "Mixcloud: Frank Booker"
-    },
-    {
       "id": "dick-johnson-mixcloud-faeb5b2af282",
       "dj_id": "dick-johnson",
       "type": "mixcloud",
@@ -7648,6 +8005,13 @@
       "label": null
     },
     {
+      "id": "frank-booker-mixcloud-ac569ced9731",
+      "dj_id": "frank-booker",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/frankbooker/",
+      "label": "Mixcloud: Frank Booker"
+    },
+    {
       "id": "myles-soundcloud-9de6d34daf4a",
       "dj_id": "myles",
       "type": "soundcloud",
@@ -7690,13 +8054,6 @@
       "label": "SoundCloud: Myles Smith"
     },
     {
-      "id": "lordemusic-soundcloud-29e6ac5c20fe",
-      "dj_id": "lordemusic",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/lordemusic",
-      "label": "SoundCloud: LordeMusic"
-    },
-    {
       "id": "lilbubblegum-soundcloud-6f54fcbc6e1b",
       "dj_id": "lilbubblegum",
       "type": "soundcloud",
@@ -7718,39 +8075,11 @@
       "label": "SoundCloud: REVUS"
     },
     {
-      "id": "orphx-soundcloud-8bacdc342e51",
-      "dj_id": "orphx",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/orphx",
-      "label": "SoundCloud: Orphx"
-    },
-    {
-      "id": "princesschelsea-soundcloud-f9cad7c6d185",
-      "dj_id": "princesschelsea",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/princesschelsea",
-      "label": "SoundCloud: princesschelsea"
-    },
-    {
       "id": "epoch-soundcloud-eb416ddbad9c",
       "dj_id": "epoch",
       "type": "soundcloud",
       "url": "https://soundcloud.com/epochalypso",
       "label": "SoundCloud: epoch"
-    },
-    {
-      "id": "norman-foreman-soundcloud-50129e74164d",
-      "dj_id": "norman-foreman",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/normanforeman",
-      "label": "SoundCloud: Norman Foreman"
-    },
-    {
-      "id": "reasxn-soundcloud-ff798f8f6aa6",
-      "dj_id": "reasxn",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/reasxnbeats",
-      "label": "SoundCloud: Reasxn"
     },
     {
       "id": "maps-soundcloud-f9a64790241b",
@@ -7795,27 +8124,6 @@
       "label": "SoundCloud: hexadecimal"
     },
     {
-      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
-      "dj_id": "emi-music-new-zealand",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/nzemi",
-      "label": "SoundCloud: EMI Music New Zealand"
-    },
-    {
-      "id": "boozie-soundcloud-a8f5b2e99f37",
-      "dj_id": "boozie",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/boozieaudio",
-      "label": "SoundCloud: Boozie"
-    },
-    {
-      "id": "community-service-soundcloud-7476d40ab5e1",
-      "dj_id": "community-service",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/communityservicerecs",
-      "label": "SoundCloud: COMMUNITY SERVICE"
-    },
-    {
       "id": "shreddy-soundcloud-95e2388abcfe",
       "dj_id": "shreddy",
       "type": "soundcloud",
@@ -7830,11 +8138,11 @@
       "label": "Mixcloud: Tom Shulgin"
     },
     {
-      "id": "flipthescripta-soundcloud-3e097a087317",
-      "dj_id": "flipthescripta",
+      "id": "six60-soundcloud-22093e2a3210",
+      "dj_id": "six60",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/user-690791248",
-      "label": "SoundCloud: FlipTheScripta"
+      "url": "https://soundcloud.com/six60",
+      "label": "SoundCloud: SIX60"
     },
     {
       "id": "lomez-brown-soundcloud-c9adc7a9e6f9",
@@ -7872,11 +8180,11 @@
       "label": "SoundCloud: DJ651 (KutManKrew)"
     },
     {
-      "id": "six60-soundcloud-22093e2a3210",
-      "dj_id": "six60",
+      "id": "montell2099-soundcloud-33d32a519425",
+      "dj_id": "montell2099",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/six60",
-      "label": "SoundCloud: SIX60"
+      "url": "https://soundcloud.com/montell2099",
+      "label": "SoundCloud: montell2099"
     },
     {
       "id": "fat-freddy-s-drop-soundcloud-b8e08331cf44",
@@ -7893,11 +8201,11 @@
       "label": "SoundCloud: Antidote Audio"
     },
     {
-      "id": "montell2099-soundcloud-33d32a519425",
-      "dj_id": "montell2099",
+      "id": "night-life-soundcloud-03babe5d322f",
+      "dj_id": "night-life",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/montell2099",
-      "label": "SoundCloud: montell2099"
+      "url": "https://soundcloud.com/night-life-584430914",
+      "label": "SoundCloud: Night Life"
     },
     {
       "id": "k-o-n-e-c-s-soundcloud-8914a4113e4d",
@@ -7907,11 +8215,11 @@
       "label": "SoundCloud: K O N E C S"
     },
     {
-      "id": "leisure-soundcloud-80707a8be668",
-      "dj_id": "leisure",
+      "id": "kosu-soundcloud-0b4a92e8b335",
+      "dj_id": "kosu",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/theleisurecollective",
-      "label": "SoundCloud: LEISURE"
+      "url": "https://soundcloud.com/korewakosu",
+      "label": "SoundCloud: kosu."
     },
     {
       "id": "jordan-lee-soundcloud-775e1f5b9cdb",
@@ -7928,11 +8236,11 @@
       "label": "SoundCloud: Redline Records"
     },
     {
-      "id": "night-life-soundcloud-03babe5d322f",
-      "dj_id": "night-life",
+      "id": "leisure-soundcloud-80707a8be668",
+      "dj_id": "leisure",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/night-life-584430914",
-      "label": "SoundCloud: Night Life"
+      "url": "https://soundcloud.com/theleisurecollective",
+      "label": "SoundCloud: LEISURE"
     },
     {
       "id": "giddy-soundcloud-7a5bf37a103e",
@@ -7942,11 +8250,11 @@
       "label": "SoundCloud: Giddy"
     },
     {
-      "id": "kosu-soundcloud-0b4a92e8b335",
-      "dj_id": "kosu",
+      "id": "orphx-soundcloud-8bacdc342e51",
+      "dj_id": "orphx",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/korewakosu",
-      "label": "SoundCloud: kosu."
+      "url": "https://soundcloud.com/orphx",
+      "label": "SoundCloud: Orphx"
     },
     {
       "id": "fairbrother-soundcloud-1f26fc645421",
@@ -7996,6 +8304,55 @@
       "type": "myspace",
       "url": "https://myspace.com/mapsmusic",
       "label": null
+    },
+    {
+      "id": "flipthescripta-soundcloud-3e097a087317",
+      "dj_id": "flipthescripta",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/user-690791248",
+      "label": "SoundCloud: FlipTheScripta"
+    },
+    {
+      "id": "reasxn-soundcloud-ff798f8f6aa6",
+      "dj_id": "reasxn",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/reasxnbeats",
+      "label": "SoundCloud: Reasxn"
+    },
+    {
+      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
+      "dj_id": "emi-music-new-zealand",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/nzemi",
+      "label": "SoundCloud: EMI Music New Zealand"
+    },
+    {
+      "id": "boozie-soundcloud-a8f5b2e99f37",
+      "dj_id": "boozie",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/boozieaudio",
+      "label": "SoundCloud: Boozie"
+    },
+    {
+      "id": "princesschelsea-soundcloud-f9cad7c6d185",
+      "dj_id": "princesschelsea",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/princesschelsea",
+      "label": "SoundCloud: princesschelsea"
+    },
+    {
+      "id": "lordemusic-soundcloud-29e6ac5c20fe",
+      "dj_id": "lordemusic",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lordemusic",
+      "label": "SoundCloud: LordeMusic"
+    },
+    {
+      "id": "community-service-soundcloud-7476d40ab5e1",
+      "dj_id": "community-service",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/communityservicerecs",
+      "label": "SoundCloud: COMMUNITY SERVICE"
     },
     {
       "id": "kukan-dub-lagan-free streaming-643781f78929",
@@ -8331,6 +8688,13 @@
       "dj_id": "lilbubblegum",
       "type": "qobuz",
       "url": "https://open.qobuz.com/artist/7073144",
+      "label": null
+    },
+    {
+      "id": "reasxn-beatport-24fe51ce86ad",
+      "dj_id": "reasxn",
+      "type": "beatport",
+      "url": "https://www.beatport.com/artist/reasxn/860947",
       "label": null
     },
     {
@@ -11337,13 +11701,6 @@
       "label": null
     },
     {
-      "id": "restricted-facebook-b01d580c93f8",
-      "dj_id": "restricted",
-      "type": "facebook",
-      "url": "https://www.facebook.com/restrictedareamusic",
-      "label": "social network"
-    },
-    {
       "id": "jimi-the-kween-spotify-03d90760d7d2",
       "dj_id": "jimi-the-kween",
       "type": "spotify",
@@ -11524,6 +11881,13 @@
       "type": "soundcloud",
       "url": "https://soundcloud.com/nicka35",
       "label": "Nicka35"
+    },
+    {
+      "id": "restricted-facebook-b01d580c93f8",
+      "dj_id": "restricted",
+      "type": "facebook",
+      "url": "https://www.facebook.com/restrictedareamusic",
+      "label": "social network"
     },
     {
       "id": "dave-marks-instagram-8d368759e892",
@@ -14529,6 +14893,174 @@
       "platform": "mixcloud"
     },
     {
+      "id": "kosu-soundcloud-a0f97fcc0747",
+      "dj_id": "kosu",
+      "title": "VOLTA & icesawder - IF (feat. Letsu) [kosu rewind]",
+      "url": "https://soundcloud.com/korewakosu/ifkosuremix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "kosu-soundcloud-3fa4fd046cb1",
+      "dj_id": "kosu",
+      "title": "klypht - home (kosu flip)",
+      "url": "https://soundcloud.com/korewakosu/klypht-home-kosu-flip-v2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-4bf5585502a3",
+      "dj_id": "orphx",
+      "title": "Wroclaw Industrial Festival 2023",
+      "url": "https://soundcloud.com/orphx/wroclaw-industrial-festival-2023",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-26d393607f46",
+      "dj_id": "orphx",
+      "title": "The Light That Returns",
+      "url": "https://soundcloud.com/orphx/the-light-that-returns",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-59948e46a88f",
+      "dj_id": "orphx",
+      "title": "Is It a Circus?",
+      "url": "https://soundcloud.com/orphx/is-it-a-circus",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-5045893fa497",
+      "dj_id": "orphx",
+      "title": "Wildpitch II",
+      "url": "https://soundcloud.com/orphx/wildpitch-ii",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-1f4d0028247d",
+      "dj_id": "orphx",
+      "title": "Future Present",
+      "url": "https://soundcloud.com/orphx/future-present",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-e2e1edcdf8de",
+      "dj_id": "orphx",
+      "title": "Summoning an Iwa",
+      "url": "https://soundcloud.com/orphx/summoning-an-iwa",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-4d95e0722afd",
+      "dj_id": "orphx",
+      "title": "Interdependent / Arising (Live in Montreal + NYC, 2017)",
+      "url": "https://soundcloud.com/orphx/interdependent-arising",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-501b8375ff11",
+      "dj_id": "orphx",
+      "title": "Word And Symbol",
+      "url": "https://soundcloud.com/orphx/word-and-symbol",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-3a900c15679f",
+      "dj_id": "orphx",
+      "title": "Chathexis",
+      "url": "https://soundcloud.com/orphx/chathexis",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-f1796c49c167",
+      "dj_id": "orphx",
+      "title": "Cellular Resonance",
+      "url": "https://soundcloud.com/orphx/cellular-resonance",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-e0599b2092b6",
+      "dj_id": "orphx",
+      "title": "Tanha (Live)",
+      "url": "https://soundcloud.com/orphx/tanha-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-6251f571e48b",
+      "dj_id": "orphx",
+      "title": "Corridor (Live)",
+      "url": "https://soundcloud.com/orphx/corridor-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-3bf83e82bc09",
+      "dj_id": "orphx",
+      "title": "Onset",
+      "url": "https://soundcloud.com/orphx/onset",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-08aca8738e5b",
+      "dj_id": "orphx",
+      "title": "Tape Decay (Live)",
+      "url": "https://soundcloud.com/orphx/tape-decay-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-615190d3a662",
+      "dj_id": "orphx",
+      "title": "Prodrome",
+      "url": "https://soundcloud.com/orphx/prodrome",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-d2b0d57aca20",
+      "dj_id": "orphx",
+      "title": "Final Exit",
+      "url": "https://soundcloud.com/orphx/final-exit",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-fd8baeaf4adc",
+      "dj_id": "orphx",
+      "title": "Tanha",
+      "url": "https://soundcloud.com/orphx/tanha",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-6dc811e52b2c",
+      "dj_id": "orphx",
+      "title": "Oblivion",
+      "url": "https://soundcloud.com/orphx/oblivion",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-e0c028655da2",
+      "dj_id": "orphx",
+      "title": "Pathogenesis",
+      "url": "https://soundcloud.com/orphx/pathogenesis",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-9d5ad01a2fb9",
+      "dj_id": "orphx",
+      "title": "Samsara",
+      "url": "https://soundcloud.com/orphx/samsara",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-78c7c7b8aad0",
+      "dj_id": "orphx",
+      "title": "Layers Of Dura",
+      "url": "https://soundcloud.com/orphx/layers-of-dura",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-f9e142f78221",
+      "dj_id": "orphx",
+      "title": "Layers of Dura (Live)",
+      "url": "https://soundcloud.com/orphx/layers-of-dura-live",
+      "platform": "soundcloud"
+    },
+    {
       "id": "repair-soundcloud-d4eaeb7ec4bd",
       "dj_id": "repair",
       "title": "YOUNG FOLKS (REPAIR BOOTLEG) [FREE DL]",
@@ -15978,6 +16510,62 @@
       "platform": "soundcloud"
     },
     {
+      "id": "orphx-soundcloud-5b1f39fd31d7",
+      "dj_id": "orphx",
+      "title": "Within / Auto Erotic (Live)",
+      "url": "https://soundcloud.com/orphx/within-auto-erotic-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-cbb0ab7c3c16",
+      "dj_id": "orphx",
+      "title": "Samsara (Live)",
+      "url": "https://soundcloud.com/orphx/samsara-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-8fe14354fed4",
+      "dj_id": "orphx",
+      "title": "Auto Erotic",
+      "url": "https://soundcloud.com/orphx/auto-erotic",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-566615b6b2c0",
+      "dj_id": "orphx",
+      "title": "Within",
+      "url": "https://soundcloud.com/orphx/within",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-427aa739e726",
+      "dj_id": "orphx",
+      "title": "Geography",
+      "url": "https://soundcloud.com/orphx/geography",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-1e88927ac697",
+      "dj_id": "orphx",
+      "title": "Words Once Spoken",
+      "url": "https://soundcloud.com/orphx/words-once-spoken",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-2bcc3c469143",
+      "dj_id": "orphx",
+      "title": "Ekstasis",
+      "url": "https://soundcloud.com/orphx/ekstasis",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-8cba09b8fefa",
+      "dj_id": "orphx",
+      "title": "Sepsis",
+      "url": "https://soundcloud.com/orphx/sepsis",
+      "platform": "soundcloud"
+    },
+    {
       "id": "dj-cxl-soundcloud-baa7e4157e1b",
       "dj_id": "dj-cxl",
       "title": "DJ CXL - DJ BATTLE LIVE ON EL ZOL 107.9FM",
@@ -16045,6 +16633,118 @@
       "dj_id": "dj-cxl",
       "title": "#Update - Latin Trap 09-22-17 - @Deejaycxl",
       "url": "https://soundcloud.com/deejaycxl/update-latin-trap-09-22-17-deejaycxl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-f5acf4e2849b",
+      "dj_id": "orphx",
+      "title": "Electroencephalographic Measurements",
+      "url": "https://soundcloud.com/orphx/electroencephalographic",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-9f8fee577ac9",
+      "dj_id": "orphx",
+      "title": "Terminal Posture",
+      "url": "https://soundcloud.com/orphx/terminal-posture",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-414091028275",
+      "dj_id": "orphx",
+      "title": "Summoning (Live)",
+      "url": "https://soundcloud.com/orphx/summoning-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-28cf6fb3a363",
+      "dj_id": "orphx",
+      "title": "Cellular Resonance (Live)",
+      "url": "https://soundcloud.com/orphx/cellular-resonance-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-daeb8906ddea",
+      "dj_id": "orphx",
+      "title": "Maschinenfest (Live in Krefeld, Germany, 2008)",
+      "url": "https://soundcloud.com/orphx/live-at-maschinenfest-2008",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-d81a7ab5e894",
+      "dj_id": "orphx",
+      "title": "State of Nature (DJ set, 2010)",
+      "url": "https://soundcloud.com/orphx/state-of-nature-dj-set-2010",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-6093803a9600",
+      "dj_id": "orphx",
+      "title": "It's In My Blood (DJ set, 2011)",
+      "url": "https://soundcloud.com/orphx/its-in-my-blood-dj-set-2011",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-5c2c8c648296",
+      "dj_id": "orphx",
+      "title": "Secret Thirteen 050 (DJ set, 2013)",
+      "url": "https://soundcloud.com/orphx/secret-thirteen-050",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-e40b1ed212fc",
+      "dj_id": "orphx",
+      "title": "Darkfloor (DJ set, 2014)",
+      "url": "https://soundcloud.com/orphx/darkfloor-dj-set-2014",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-a285b3bdf64b",
+      "dj_id": "orphx",
+      "title": "Silent Weapons for Quiet Wars (DJ set, 2014)",
+      "url": "https://soundcloud.com/orphx/silent-weapons-for-quiet-wars-2014",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-0385bc60a33f",
+      "dj_id": "orphx",
+      "title": "Urban Decay (DJ set, 2015)",
+      "url": "https://soundcloud.com/orphx/urban-decay-dj-mix-2015",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-9924fb3b91ab",
+      "dj_id": "orphx",
+      "title": "93 / 94 Mix - Electric Deluxe Episode 190 (DJ set, 2017)",
+      "url": "https://soundcloud.com/orphx/93-94-mix-electric-deluxe-episode-190",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-4f90f7dda5d9",
+      "dj_id": "orphx",
+      "title": "No Way Back (Live in Detroit, 2014)",
+      "url": "https://soundcloud.com/orphx/no-way-back-live-in-detroit",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-5ecf5846f473",
+      "dj_id": "orphx",
+      "title": "Axial (Original Mix)",
+      "url": "https://soundcloud.com/orphx/axial-original-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "orphx-soundcloud-d5c99b4bf011",
+      "dj_id": "orphx",
+      "title": "Live in Berlin, 2012",
+      "url": "https://soundcloud.com/orphx/orphx-live-at-berghain-april",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-caac10512b56",
+      "dj_id": "norman-foreman",
+      "title": "Ayaluna - Slow Motion // Motherland // Chromehead (NFR005)",
+      "url": "https://soundcloud.com/normanforeman/ayaluna-nfr005",
       "platform": "soundcloud"
     },
     {
@@ -17721,6 +18421,132 @@
       "platform": "soundcloud"
     },
     {
+      "id": "norman-foreman-soundcloud-615fbdddd456",
+      "dj_id": "norman-foreman",
+      "title": "GT Blitz - Blunt // Spooky Riddim // Money Bagz (NFR004)",
+      "url": "https://soundcloud.com/normanforeman/gt-blitz-nfr004",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-8bf175293250",
+      "dj_id": "norman-foreman",
+      "title": "Fluid Haunts - Move With It // The Depth // Slow Down (NFR003)",
+      "url": "https://soundcloud.com/normanforeman/fluid-haunts-nfr003",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-59ed287e33cf",
+      "dj_id": "norman-foreman",
+      "title": "Chunga feat. Tagan - Kotahitanga",
+      "url": "https://soundcloud.com/normanforeman/chunga-feat-tagan-kotahitanga",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-9cd2fd82fb04",
+      "dj_id": "norman-foreman",
+      "title": "Chunga feat. Lotu & Tamar - Better Things",
+      "url": "https://soundcloud.com/normanforeman/chunga-better-things",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-f72732f86f27",
+      "dj_id": "norman-foreman",
+      "title": "Phrase - RTM // Eight08 // Revolution (NFR002)",
+      "url": "https://soundcloud.com/normanforeman/phrase-nfr002",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-ba16431a1d99",
+      "dj_id": "norman-foreman",
+      "title": "Altercation feat. Aunty Rae & Windu - Destination (NFDDNB001)",
+      "url": "https://soundcloud.com/normanforeman/altercation-destination",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-edcc5091aded",
+      "dj_id": "norman-foreman",
+      "title": "Hound, Unwell - Leper // Cash Out // Leper (Paige Julia Remix) (NFR001)",
+      "url": "https://soundcloud.com/normanforeman/hound-unwell-nfr001",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-79a003a0c15b",
+      "dj_id": "norman-foreman",
+      "title": "CHUNGA B2B KYBER | LIVE FROM NORM'S 3RD BDAY",
+      "url": "https://soundcloud.com/normanforeman/3rdbday-chunga-b2b-kyber",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-b80f489086c5",
+      "dj_id": "norman-foreman",
+      "title": "DUSTY B2B MA BARKA | NORM'S 3RD BDAY",
+      "url": "https://soundcloud.com/normanforeman/3rdbday-dusty-b2b-ma-barka",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-e9de3edc1be4",
+      "dj_id": "norman-foreman",
+      "title": "NOCASE B2B OLIVER PRINCE | NORM'S 3RD BDAY",
+      "url": "https://soundcloud.com/normanforeman/3rdbday-nocase-oliver-prince",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-cb7fcbb8c15c",
+      "dj_id": "norman-foreman",
+      "title": "SANO B2B SUGE SOUND W' WINDU | NORM'S 3RD BDAY",
+      "url": "https://soundcloud.com/normanforeman/sano-b2b-suge-sound-w-windu-live-from-norms-3rd-bday",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-e3e81de445ba",
+      "dj_id": "norman-foreman",
+      "title": "MUDMONKEY B2B NAMU B2B TEETS | NORM'S 3RD BDAY",
+      "url": "https://soundcloud.com/normanforeman/mudmonkey-b2b-namu-b2b-teets-live-from-norms-3rd-bday",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-8312454bf321",
+      "dj_id": "norman-foreman",
+      "title": "CTEEZ B2B EVO | NORM'S 3RD BDAY",
+      "url": "https://soundcloud.com/normanforeman/cteez-b2b-evo-live-from-norms-3rd-bday",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-d2fcf2ea5bd0",
+      "dj_id": "norman-foreman",
+      "title": "Shaun Surveillance - YO",
+      "url": "https://soundcloud.com/normanforeman/shaun-surveillance-yo",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-23bb7bd8446f",
+      "dj_id": "norman-foreman",
+      "title": "Oski - Gunnin'",
+      "url": "https://soundcloud.com/normanforeman/oski-gunnin",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-aef28eb233e1",
+      "dj_id": "norman-foreman",
+      "title": "Skopus - Ain't Tough",
+      "url": "https://soundcloud.com/normanforeman/sk0pus-you-aint-tough",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-a777330165bd",
+      "dj_id": "norman-foreman",
+      "title": "Flatline feat. Wavrunnr - Left Behind",
+      "url": "https://soundcloud.com/normanforeman/flatline-left-behind",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "norman-foreman-soundcloud-a26e9f5e999a",
+      "dj_id": "norman-foreman",
+      "title": "MINUIT - EXCEPT YOU (UNWELL REMIX)",
+      "url": "https://soundcloud.com/normanforeman/minuit-except-you-unwell-remix-1",
+      "platform": "soundcloud"
+    },
+    {
       "id": "lucas-soundcloud-5b55e8e26886",
       "dj_id": "lucas",
       "title": "Crashing Down",
@@ -17910,6 +18736,20 @@
       "platform": "soundcloud"
     },
     {
+      "id": "norman-foreman-soundcloud-0a1290992404",
+      "dj_id": "norman-foreman",
+      "title": "MINUIT - AOTEAROA (FLUID HAUNTS REMIX)",
+      "url": "https://soundcloud.com/normanforeman/minuit-aotearoa-fluid-haunts-remix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "emi-music-new-zealand-soundcloud-8a2c7cf4e15e",
+      "dj_id": "emi-music-new-zealand",
+      "title": "Cali Swag District - Where You Are",
+      "url": "https://soundcloud.com/nzemi/cali-swag-district-where-you-are",
+      "platform": "soundcloud"
+    },
+    {
       "id": "lucas-soundcloud-5f2ca3ffd3c2",
       "dj_id": "lucas",
       "title": "Therapy Check Up (Skit)",
@@ -18047,6 +18887,1112 @@
       "dj_id": "lucas",
       "title": "White Noise",
       "url": "https://soundcloud.com/realjoynerlucas/whitenoise",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "emi-music-new-zealand-soundcloud-4bcb92721ad2",
+      "dj_id": "emi-music-new-zealand",
+      "title": "Cali Swag District - Teach Me How To Dougie",
+      "url": "https://soundcloud.com/nzemi/cali-swag-district-teach-me-how-to-dougie",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-5f5bfdd32bfd",
+      "dj_id": "epoch",
+      "title": "07 CRADLE - Stage 3",
+      "url": "https://soundcloud.com/nostoppingepoch/07-cradle-stage-3-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-bf821941571b",
+      "dj_id": "epoch",
+      "title": "04 NATALITY - Stage 1",
+      "url": "https://soundcloud.com/nostoppingepoch/04-natality-stage-1-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-ac51dd84a60d",
+      "dj_id": "epoch",
+      "title": "12 ARBOREALITY 1.0 // GRACE BID - Stage 6",
+      "url": "https://soundcloud.com/nostoppingepoch/12-arboreality-10-grace-bid-stage-6-3",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-af55d0c4faf1",
+      "dj_id": "epoch",
+      "title": "The Needs - Part II: Equinox",
+      "url": "https://soundcloud.com/nostoppingepoch/11-the-needs-part-ii-equinox",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-e3c258f1f944",
+      "dj_id": "epoch",
+      "title": "Karakuchi Suite",
+      "url": "https://soundcloud.com/nostoppingepoch/10-karakuchi-suite",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-da0a0e702273",
+      "dj_id": "epoch",
+      "title": "Demons (Work It)",
+      "url": "https://soundcloud.com/nostoppingepoch/09-demons-work-it",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-a2ff78a70340",
+      "dj_id": "epoch",
+      "title": "Farcasting",
+      "url": "https://soundcloud.com/nostoppingepoch/08-farcasting",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-be2bbabd6033",
+      "dj_id": "epoch",
+      "title": "Red",
+      "url": "https://soundcloud.com/nostoppingepoch/07-red",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-70fa79af1a26",
+      "dj_id": "epoch",
+      "title": "Heart of the Moon",
+      "url": "https://soundcloud.com/nostoppingepoch/05-heart-of-the-moon",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-6509deebf1a4",
+      "dj_id": "epoch",
+      "title": "From The Top",
+      "url": "https://soundcloud.com/nostoppingepoch/04-from-the-top",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-99fe4cdd2874",
+      "dj_id": "epoch",
+      "title": "Sparrows",
+      "url": "https://soundcloud.com/nostoppingepoch/03-sparrows",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-a117c955c3b6",
+      "dj_id": "epoch",
+      "title": "10%",
+      "url": "https://soundcloud.com/nostoppingepoch/tenpercent",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-ab6c312338fa",
+      "dj_id": "epoch",
+      "title": "The Needs - Part I: Solstice",
+      "url": "https://soundcloud.com/nostoppingepoch/01-the-needs-part-i-solstice",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-933467b3c828",
+      "dj_id": "epoch",
+      "title": "Heart Of The Moon",
+      "url": "https://soundcloud.com/nostoppingepoch/heartofthemoon",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-fde4e9d38c0d",
+      "dj_id": "epoch",
+      "title": "Demons (Work It)",
+      "url": "https://soundcloud.com/nostoppingepoch/demons-work-it",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-12870037211d",
+      "dj_id": "epoch",
+      "title": "Earthtones",
+      "url": "https://soundcloud.com/nostoppingepoch/earthtones",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-1ceb7df7749e",
+      "dj_id": "epoch",
+      "title": "NightmareMode",
+      "url": "https://soundcloud.com/nostoppingepoch/nightmaremode",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-ceefc0c79311",
+      "dj_id": "epoch",
+      "title": "SENTRY Announcement Trailer",
+      "url": "https://soundcloud.com/nostoppingepoch/sentry-announcement-trailer",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-28c7bb718b11",
+      "dj_id": "epoch",
+      "title": "The Back Page Theme",
+      "url": "https://soundcloud.com/nostoppingepoch/the-back-page-theme",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-c169ecec6ad5",
+      "dj_id": "epoch",
+      "title": "Leaving [Piano Arr.]",
+      "url": "https://soundcloud.com/nostoppingepoch/leaving-piano-arr",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-5913fc5f6fa9",
+      "dj_id": "epoch",
+      "title": "To The Heart [Vocal Version]",
+      "url": "https://soundcloud.com/nostoppingepoch/to-the-heart-vocal-version",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-f0c20b53cc48",
+      "dj_id": "epoch",
+      "title": "Unlimited∞Luv",
+      "url": "https://soundcloud.com/nostoppingepoch/unlimitedluv",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-3ebb978ccf2d",
+      "dj_id": "epoch",
+      "title": "Adria",
+      "url": "https://soundcloud.com/nostoppingepoch/adria",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-b52e810aa91e",
+      "dj_id": "epoch",
+      "title": "L2VN (20XX)",
+      "url": "https://soundcloud.com/nostoppingepoch/l2vn-20xx",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-fcc4bdbf06e0",
+      "dj_id": "epoch",
+      "title": "WHITEHELL (20XX)",
+      "url": "https://soundcloud.com/nostoppingepoch/whitehell-20xx",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-32fff76ffc58",
+      "dj_id": "epoch",
+      "title": "QUEEN'S SPEECH (20XX)",
+      "url": "https://soundcloud.com/nostoppingepoch/queens-speech-20xx",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-a411a58e54d1",
+      "dj_id": "epoch",
+      "title": "RPD: A Survival Horror Podcast [Theme]",
+      "url": "https://soundcloud.com/nostoppingepoch/rpd",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-bbfb54bf1954",
+      "dj_id": "epoch",
+      "title": "Alexander O'Neal - Remember Why (It's Christmas) - Epoch Remix",
+      "url": "https://soundcloud.com/nostoppingepoch/christmas21",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-74bcc8caa58c",
+      "dj_id": "epoch",
+      "title": "Hoshi",
+      "url": "https://soundcloud.com/nostoppingepoch/hoshi",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-c1ea0b5c4244",
+      "dj_id": "epoch",
+      "title": "Breeze With U",
+      "url": "https://soundcloud.com/nostoppingepoch/breeze-with-u",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-b38f9adb9d93",
+      "dj_id": "epoch",
+      "title": "The Lemegeton Bop",
+      "url": "https://soundcloud.com/nostoppingepoch/the-lemegeton-bop",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-5802c10d633e",
+      "dj_id": "epoch",
+      "title": "Knife & Crystal",
+      "url": "https://soundcloud.com/nostoppingepoch/knife-crystal",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-72264313e12a",
+      "dj_id": "epoch",
+      "title": "Leaving",
+      "url": "https://soundcloud.com/nostoppingepoch/leaving",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-0e2d7d000c97",
+      "dj_id": "epoch",
+      "title": "Paradise (Stay Forever)",
+      "url": "https://soundcloud.com/nostoppingepoch/paradise-stay-forever",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-42049337f62f",
+      "dj_id": "epoch",
+      "title": "Lady Blue",
+      "url": "https://soundcloud.com/nostoppingepoch/lady-blue",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-f930de6d4428",
+      "dj_id": "epoch",
+      "title": "GO!GO!STYLE",
+      "url": "https://soundcloud.com/nostoppingepoch/gogostyle",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-dafc1d20a7da",
+      "dj_id": "epoch",
+      "title": "HEAT",
+      "url": "https://soundcloud.com/nostoppingepoch/heat",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-555e5b9fe65a",
+      "dj_id": "epoch",
+      "title": "Full Burn",
+      "url": "https://soundcloud.com/nostoppingepoch/full-burn",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-44537ff816f9",
+      "dj_id": "epoch",
+      "title": "Zeta (RE)",
+      "url": "https://soundcloud.com/nostoppingepoch/zeta-re",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-de461cb5983a",
+      "dj_id": "epoch",
+      "title": "ZZ",
+      "url": "https://soundcloud.com/nostoppingepoch/doublezeta",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-cb06c89343cc",
+      "dj_id": "epoch",
+      "title": "Encounters",
+      "url": "https://soundcloud.com/nostoppingepoch/encounters",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-3b10f80dc5f5",
+      "dj_id": "epoch",
+      "title": "The Void",
+      "url": "https://soundcloud.com/nostoppingepoch/the-void",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-6ca5ca1639e5",
+      "dj_id": "epoch",
+      "title": "Vanguard - 0133",
+      "url": "https://soundcloud.com/nostoppingepoch/vanguard-0133",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-b8144d975b45",
+      "dj_id": "epoch",
+      "title": "Vanguard - X1",
+      "url": "https://soundcloud.com/nostoppingepoch/vanguard-x1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "epoch-soundcloud-fa2d16532ac0",
+      "dj_id": "epoch",
+      "title": "Vanguard - X2",
+      "url": "https://soundcloud.com/nostoppingepoch/vanguard-x2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-258e8a70c30f",
+      "dj_id": "boozie",
+      "title": "YOUNG KINGS",
+      "url": "https://soundcloud.com/boozieaudio/young-kings",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-8122524f3064",
+      "dj_id": "boozie",
+      "title": "SUICIDAL THOUGHTS? COME BY & RELIEVE THEM. YOUR EGO WILL SOAR.",
+      "url": "https://soundcloud.com/boozieaudio/suicidal-thoughts-come-by",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-caf2792fefe3",
+      "dj_id": "boozie",
+      "title": "QUIT YOUR JOB WHILE YOU CAN.",
+      "url": "https://soundcloud.com/boozieaudio/quit-your-job-while-you-can",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-56ced726d6bd",
+      "dj_id": "boozie",
+      "title": "I GOT A BIG WATCH",
+      "url": "https://soundcloud.com/boozieaudio/i-got-a-big-watch",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-ecfdf42fa1a1",
+      "dj_id": "boozie",
+      "title": "CIRCUS FLOW",
+      "url": "https://soundcloud.com/boozieaudio/circus-flow",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-98f2f7aaa36d",
+      "dj_id": "boozie",
+      "title": "Private Jet",
+      "url": "https://soundcloud.com/boozieaudio/private-jet",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-1b933f4ada01",
+      "dj_id": "boozie",
+      "title": "Temptations",
+      "url": "https://soundcloud.com/boozieaudio/temptations",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-52be9693643f",
+      "dj_id": "boozie",
+      "title": "Black Roses",
+      "url": "https://soundcloud.com/boozieaudio/black-roses",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-cc85e6c5460c",
+      "dj_id": "boozie",
+      "title": "Lightyears",
+      "url": "https://soundcloud.com/boozieaudio/lightyears",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-de44289864c4",
+      "dj_id": "boozie",
+      "title": "Candy Shop",
+      "url": "https://soundcloud.com/boozieaudio/candy-shop",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-7d37381246ec",
+      "dj_id": "boozie",
+      "title": "Bathroom Stall",
+      "url": "https://soundcloud.com/boozieaudio/bathroom-stall-4",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-a0b22bd4566a",
+      "dj_id": "boozie",
+      "title": "Circles",
+      "url": "https://soundcloud.com/boozieaudio/circles-5",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-5b32bd41fb89",
+      "dj_id": "boozie",
+      "title": "Butterfly Wings",
+      "url": "https://soundcloud.com/boozieaudio/butterfly-wings-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-7a1b5e3140df",
+      "dj_id": "boozie",
+      "title": "Check My Phone",
+      "url": "https://soundcloud.com/boozieaudio/check-my-phone",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-f1d498f1ee33",
+      "dj_id": "boozie",
+      "title": "Been Sippin",
+      "url": "https://soundcloud.com/boozieaudio/been-sippin-3",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-baa189fee07a",
+      "dj_id": "boozie",
+      "title": "PILLS & POTIONS",
+      "url": "https://soundcloud.com/boozieaudio/pills-potions",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-6400a6e7f0e6",
+      "dj_id": "boozie",
+      "title": "CHECK YOUR WRIST, IT'S TIME",
+      "url": "https://soundcloud.com/boozieaudio/check-your-wrist-its-time",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-15701d7c76a5",
+      "dj_id": "boozie",
+      "title": "TEMPO & ASHTRAYS",
+      "url": "https://soundcloud.com/boozieaudio/tempo-ashtrays",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-4f725b5257dc",
+      "dj_id": "boozie",
+      "title": "STONED & ALONE",
+      "url": "https://soundcloud.com/boozieaudio/stoned-and-alone",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-b486805ef808",
+      "dj_id": "boozie",
+      "title": "FROYO",
+      "url": "https://soundcloud.com/boozieaudio/froyo",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-964508928a79",
+      "dj_id": "boozie",
+      "title": "FREESTYLE 2.0",
+      "url": "https://soundcloud.com/boozieaudio/freestyle-2-0",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-64f618f9ef17",
+      "dj_id": "boozie",
+      "title": "FREESTYLE 1.0",
+      "url": "https://soundcloud.com/boozieaudio/freestyle-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-10c4cbde0c14",
+      "dj_id": "boozie",
+      "title": "LAVATORY",
+      "url": "https://soundcloud.com/boozieaudio/lavatory",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-4e031d0302ab",
+      "dj_id": "boozie",
+      "title": "STICKY",
+      "url": "https://soundcloud.com/boozieaudio/sticky",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-e0ce1658eb48",
+      "dj_id": "boozie",
+      "title": "SQUIDLIFE",
+      "url": "https://soundcloud.com/boozieaudio/squidlife",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-e85059c0aaf0",
+      "dj_id": "boozie",
+      "title": "WILLIAM JONES.",
+      "url": "https://soundcloud.com/boozieaudio/william-jones-14",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-cd4b75486248",
+      "dj_id": "boozie",
+      "title": "JACKGOD.",
+      "url": "https://soundcloud.com/boozieaudio/jackgod-9",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-d7d5255b255e",
+      "dj_id": "boozie",
+      "title": "SKRRT SKRRT.",
+      "url": "https://soundcloud.com/boozieaudio/skrrt-skrrt-12",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-f63a9203dc9e",
+      "dj_id": "boozie",
+      "title": "SPACE CADET.",
+      "url": "https://soundcloud.com/boozieaudio/space-cadet-13",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-41a3344577ad",
+      "dj_id": "boozie",
+      "title": "HOTDAWGZ.",
+      "url": "https://soundcloud.com/boozieaudio/hotdawgz-7",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-4551036e0375",
+      "dj_id": "boozie",
+      "title": "ROCKET FUEL.",
+      "url": "https://soundcloud.com/boozieaudio/rocket-fuel-10",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-29a49d9c21f0",
+      "dj_id": "boozie",
+      "title": "FATSACK.",
+      "url": "https://soundcloud.com/boozieaudio/fatsack-4",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-0749c768ae02",
+      "dj_id": "boozie",
+      "title": "I'M ON THE TV.",
+      "url": "https://soundcloud.com/boozieaudio/im-on-the-tv-8",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-fdcf000e85f4",
+      "dj_id": "boozie",
+      "title": "SOUNDTEST.",
+      "url": "https://soundcloud.com/boozieaudio/soundtest-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-ee430d676367",
+      "dj_id": "boozie",
+      "title": "GET FLY.",
+      "url": "https://soundcloud.com/boozieaudio/get-fly-5",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-440e87513794",
+      "dj_id": "boozie",
+      "title": "GASOLINE.",
+      "url": "https://soundcloud.com/boozieaudio/gasoline-6",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-ec7b78e79d4d",
+      "dj_id": "boozie",
+      "title": "ROLL DOPE.",
+      "url": "https://soundcloud.com/boozieaudio/roll-dope-11",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-de95df151cc3",
+      "dj_id": "boozie",
+      "title": "KICKIN IN.",
+      "url": "https://soundcloud.com/boozieaudio/kickin-in-3",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-c562c607b0a8",
+      "dj_id": "boozie",
+      "title": "Antique Shop",
+      "url": "https://soundcloud.com/boozieaudio/antique-shop-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-2597e7a6602a",
+      "dj_id": "boozie",
+      "title": "Pray Through The Pain",
+      "url": "https://soundcloud.com/boozieaudio/pray-through-the-pain-9",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-89a41996ae1f",
+      "dj_id": "boozie",
+      "title": "My Very Last Words",
+      "url": "https://soundcloud.com/boozieaudio/my-very-last-words-7",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-7816aafd565b",
+      "dj_id": "boozie",
+      "title": "Old Technology",
+      "url": "https://soundcloud.com/boozieaudio/old-technology-8",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-0ee296edab9c",
+      "dj_id": "boozie",
+      "title": "Home",
+      "url": "https://soundcloud.com/boozieaudio/home-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-fcf764a625ed",
+      "dj_id": "boozie",
+      "title": "Icarus Flew Too Close",
+      "url": "https://soundcloud.com/boozieaudio/icarus-flew-too-close-6",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-5b6a218f4f5b",
+      "dj_id": "boozie",
+      "title": "Home Mart",
+      "url": "https://soundcloud.com/boozieaudio/home-mart-5",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-6e5c3afacdd8",
+      "dj_id": "boozie",
+      "title": "The Sillouette",
+      "url": "https://soundcloud.com/boozieaudio/the-sillouette-10",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-3ea540f744d9",
+      "dj_id": "boozie",
+      "title": "Glorious Days",
+      "url": "https://soundcloud.com/boozieaudio/glorious-days-4",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-1b67d52fbda3",
+      "dj_id": "boozie",
+      "title": "Catnip (Freestyle)",
+      "url": "https://soundcloud.com/boozieaudio/catnip-freestyle-3",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "boozie-soundcloud-11a6f3be7e9a",
+      "dj_id": "boozie",
+      "title": "Daydream",
+      "url": "https://soundcloud.com/boozieaudio/daydream",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-e64b5da76954",
+      "dj_id": "princesschelsea",
+      "title": "The Forest (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/the-forest-live-at-studio-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-3d0115b533a4",
+      "dj_id": "princesschelsea",
+      "title": "Everything Is Going To Be Alright (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/everything-is-going-to-be-3",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-6b4baeea5b1b",
+      "dj_id": "princesschelsea",
+      "title": "I Love My Boyfriend (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/i-love-my-boyfriend-live-at",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-1ccc5e45a36f",
+      "dj_id": "princesschelsea",
+      "title": "Monkey Eats Bananas (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/monkey-eats-bananas-live-at",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-d566db090d2a",
+      "dj_id": "princesschelsea",
+      "title": "Growing Older (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/growing-older-live-at-studio-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-c1d790e206f6",
+      "dj_id": "princesschelsea",
+      "title": "When The World Turns Grey (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/when-the-world-turns-grey-live",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-406d0cf34666",
+      "dj_id": "princesschelsea",
+      "title": "Yulia (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/yulia-live-at-studio-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-d44a2ba5f990",
+      "dj_id": "princesschelsea",
+      "title": "Respect The Labourers (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/respect-the-labourers-live-at",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-1ab10eac8255",
+      "dj_id": "princesschelsea",
+      "title": "Forever Is A Charm (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/forever-is-a-charm-live-at",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "princesschelsea-soundcloud-052d3b1baa9f",
+      "dj_id": "princesschelsea",
+      "title": "Time (Live at Studio Two)",
+      "url": "https://soundcloud.com/princesschelsea/time-live-at-studio-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-e5a899193c2c",
+      "dj_id": "lordemusic",
+      "title": "Broken Glass",
+      "url": "https://soundcloud.com/lordemusic/broken-glass",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-ce07b30f2ef5",
+      "dj_id": "lordemusic",
+      "title": "If She Could See Me Now",
+      "url": "https://soundcloud.com/lordemusic/if-she-could-see-me-now",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-742f52aa8e94",
+      "dj_id": "lordemusic",
+      "title": "Favourite Daughter",
+      "url": "https://soundcloud.com/lordemusic/favourite-daughter",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-a7ccb9a14c20",
+      "dj_id": "lordemusic",
+      "title": "Current Affairs",
+      "url": "https://soundcloud.com/lordemusic/current-affairs",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-8aea2ac5df0c",
+      "dj_id": "lordemusic",
+      "title": "Clearblue",
+      "url": "https://soundcloud.com/lordemusic/clearblue",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-dabee7a87dde",
+      "dj_id": "lordemusic",
+      "title": "Shapeshifter",
+      "url": "https://soundcloud.com/lordemusic/shapeshifter",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-a665dc04b8e3",
+      "dj_id": "lordemusic",
+      "title": "David",
+      "url": "https://soundcloud.com/lordemusic/david",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-ce3e54fdd65e",
+      "dj_id": "lordemusic",
+      "title": "GRWM",
+      "url": "https://soundcloud.com/lordemusic/grwm",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-671be35bf158",
+      "dj_id": "lordemusic",
+      "title": "Hammer",
+      "url": "https://soundcloud.com/lordemusic/hammer",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-b972c7179786",
+      "dj_id": "lordemusic",
+      "title": "Man Of The Year",
+      "url": "https://soundcloud.com/lordemusic/man-of-the-year",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-514273fcc266",
+      "dj_id": "lordemusic",
+      "title": "What Was That",
+      "url": "https://soundcloud.com/lordemusic/what-was-that",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-aca52d69a51f",
+      "dj_id": "lordemusic",
+      "title": "Take Me to the River",
+      "url": "https://soundcloud.com/lordemusic/take-me-to-the-river-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-9c9efad93a34",
+      "dj_id": "lordemusic",
+      "title": "Take Me to the River",
+      "url": "https://soundcloud.com/lordemusic/take-me-to-the-river-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-610b2f86d88c",
+      "dj_id": "lordemusic",
+      "title": "California",
+      "url": "https://soundcloud.com/lordemusic/california",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-abb474c47d5d",
+      "dj_id": "lordemusic",
+      "title": "Fallen Fruit",
+      "url": "https://soundcloud.com/lordemusic/fallen-fruit",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-9f1e61564ed2",
+      "dj_id": "lordemusic",
+      "title": "The Man with the Axe",
+      "url": "https://soundcloud.com/lordemusic/the-man-with-the-axe",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-b4f835369143",
+      "dj_id": "lordemusic",
+      "title": "Secrets from a Girl (Who's Seen it All)",
+      "url": "https://soundcloud.com/lordemusic/secrets-from-a-girl-whos-seen",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-117c58bfd857",
+      "dj_id": "lordemusic",
+      "title": "The Path",
+      "url": "https://soundcloud.com/lordemusic/the-path",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-b82911b7b770",
+      "dj_id": "lordemusic",
+      "title": "Big Star",
+      "url": "https://soundcloud.com/lordemusic/big-star",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-f7fa90df661d",
+      "dj_id": "lordemusic",
+      "title": "Dominoes",
+      "url": "https://soundcloud.com/lordemusic/dominoes",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-581d6a6067fd",
+      "dj_id": "lordemusic",
+      "title": "Oceanic Feeling",
+      "url": "https://soundcloud.com/lordemusic/oceanic-feeling",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-a1d325926e5f",
+      "dj_id": "lordemusic",
+      "title": "Leader of a New Regime",
+      "url": "https://soundcloud.com/lordemusic/leader-of-a-new-regime",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-d57cd8f98225",
+      "dj_id": "lordemusic",
+      "title": "Hine-i-te-Awatea / Oceanic Feeling",
+      "url": "https://soundcloud.com/lordemusic/hine-i-te-awatea-oceanic",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-5d980ce49313",
+      "dj_id": "lordemusic",
+      "title": "Mata Kohore / Stoned at the Nail Salon",
+      "url": "https://soundcloud.com/lordemusic/mata-kohore-stoned-at-the-nail",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-7edec8743d86",
+      "dj_id": "lordemusic",
+      "title": "Te Ao Mārama / Solar Power",
+      "url": "https://soundcloud.com/lordemusic/te-ao-m-rama-solar-power",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-52ee817a5ef7",
+      "dj_id": "lordemusic",
+      "title": "Hua Pirau / Fallen Fruit",
+      "url": "https://soundcloud.com/lordemusic/hua-pirau-fallen-fruit",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-e9714123da42",
+      "dj_id": "lordemusic",
+      "title": "Te Ara Tika / The Path",
+      "url": "https://soundcloud.com/lordemusic/te-ara-tika-the-path",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-c753d9278977",
+      "dj_id": "lordemusic",
+      "title": "Mood Ring",
+      "url": "https://soundcloud.com/lordemusic/mood-ring",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-431a7eac472e",
+      "dj_id": "lordemusic",
+      "title": "Stoned at the Nail Salon",
+      "url": "https://soundcloud.com/lordemusic/stoned-at-the-nail-salon",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-56915747a6e1",
+      "dj_id": "lordemusic",
+      "title": "Solar Power",
+      "url": "https://soundcloud.com/lordemusic/solar-power",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-403eba008b17",
+      "dj_id": "lordemusic",
+      "title": "Supercut (El-P Remix) [feat. Run The Jewels]",
+      "url": "https://soundcloud.com/lordemusic/supercut-el-p-remix-feat-run",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "lordemusic-soundcloud-1ed890145773",
+      "dj_id": "lordemusic",
+      "title": "Homemade Dynamite (REMIX) [feat. Khalid, Post Malone & SZA]",
+      "url": "https://soundcloud.com/lordemusic/homemade-dynamite-remix-feat-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-d13a59b3175f",
+      "dj_id": "community-service",
+      "title": "Hyan - Do u like it (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/hyan-do-u-like-it-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-3f09f015f987",
+      "dj_id": "community-service",
+      "title": "AVERAGE & ADDAX - CHECK WUN (SERVICE04)",
+      "url": "https://soundcloud.com/communityservicerecs/average-addax-check-wun",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-fdc23314a58a",
+      "dj_id": "community-service",
+      "title": "AVERAGE & ADDAX - LUVLY (SERVICE04)",
+      "url": "https://soundcloud.com/communityservicerecs/average-addax-luvly-service04",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-6f40eb71fc30",
+      "dj_id": "community-service",
+      "title": "Blem - 2SHEETS (NZMM01)",
+      "url": "https://soundcloud.com/communityservicerecs/blem-2sheets-nzmm01",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-0e3d54d5059a",
+      "dj_id": "community-service",
+      "title": "Hyan - AINT PLAYIN! (NZMM01)",
+      "url": "https://soundcloud.com/communityservicerecs/hyan-aint-playin-nzmm01",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-c8efb2f886c9",
+      "dj_id": "community-service",
+      "title": "Jai Taylor - Press It (SERVICE03)",
+      "url": "https://soundcloud.com/communityservicerecs/jai-taylor-press-it-service03",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-62976df92712",
+      "dj_id": "community-service",
+      "title": "Jai Taylor - Buss It Up (SERVICE03)",
+      "url": "https://soundcloud.com/communityservicerecs/jai-taylor-buss-it-up",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-0ae09c7c679b",
+      "dj_id": "community-service",
+      "title": "Don Yaya & Engle - Blowin Em Up (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/don-yaya-engle-blowin-em-up",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-f47670c2e31b",
+      "dj_id": "community-service",
+      "title": "Jai Taylor - Tipsy Dub (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/jai-taylor-tipsy-dub-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-e949b83bc947",
+      "dj_id": "community-service",
+      "title": "Reasxn - Back To Get Wild (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/reasxn-back-to-get-wild-free",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-b746e560e266",
+      "dj_id": "community-service",
+      "title": "To The Left",
+      "url": "https://soundcloud.com/communityservicerecs/to-the-left",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-4a7fd8f050c4",
+      "dj_id": "community-service",
+      "title": "Pumped Up Funk",
+      "url": "https://soundcloud.com/communityservicerecs/pumped-up-funk",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-17bc9d741837",
+      "dj_id": "community-service",
+      "title": "Hyan - CANT BE US (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/hyan-cant-be-us-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-74cde24b7e1c",
+      "dj_id": "community-service",
+      "title": "Clifford - Low Widdit (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/clifford-low-widdit-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-7b863f004cbd",
+      "dj_id": "community-service",
+      "title": "zacattacq - Rudeboy Dub (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/zacattacq-rudeboy-dub-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-053abfefeadb",
+      "dj_id": "community-service",
+      "title": "Hit You Like Dat",
+      "url": "https://soundcloud.com/communityservicerecs/hit-you-like-dat-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-3ccfb85459eb",
+      "dj_id": "community-service",
+      "title": "Ya Whole Damn Clan",
+      "url": "https://soundcloud.com/communityservicerecs/ya-whole-danm-clan-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-cdd5802ad231",
+      "dj_id": "community-service",
+      "title": "Oppidan - Wake And Break (YÜTHE Edit) (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/oppidan-wake-and-break-yuthe-edit-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-d6632946c6cc",
+      "dj_id": "community-service",
+      "title": "Hyan & Blem - Way Back (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/hyan-blem-way-back-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-c0db28d1ef77",
+      "dj_id": "community-service",
+      "title": "Caru - Collie Herb Man Dub (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/caru-collie-herb-man-dub-free-dl",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "community-service-soundcloud-624caafdf0df",
+      "dj_id": "community-service",
+      "title": "Juni - Overload Dub (FREE DL)",
+      "url": "https://soundcloud.com/communityservicerecs/0189199f-e58f-4b76-8c69-4fab265cd32e",
       "platform": "soundcloud"
     },
     {
