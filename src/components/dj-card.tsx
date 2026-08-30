@@ -19,9 +19,11 @@ export function DjCard({ dj }: { dj: DjRow }) {
         )}
         {dj.bio && <p className="mt-3 line-clamp-3 text-sm text-muted">{dj.bio}</p>}
       </div>
-      <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-muted">
-        <span>{dj.upcoming_events > 0 ? `${dj.upcoming_events} upcoming gig${dj.upcoming_events === 1 ? '' : 's'}` : 'no listed gigs'}</span>
-      </div>
+      {dj.upcoming_events > 0 && (
+        <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-muted">
+          <span>{dj.upcoming_events} upcoming gig{dj.upcoming_events === 1 ? '' : 's'}</span>
+        </div>
+      )}
     </Link>
   );
 }
