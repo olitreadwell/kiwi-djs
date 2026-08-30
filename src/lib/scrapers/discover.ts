@@ -210,11 +210,13 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
   if (parked > 0) console.log(`  verify-discovered: parked ${parked} event-series names as junk`);
 
   // Evidence-weighted verification: level = distinct evidence categories
-  // (mixes / links / articles / gigs / multi-gigs). level >= 2 flips a
-  // candidate to an active (listed) DJ; level keeps climbing as more
-  // sources accumulate. multi-gigs = playing at 2+ events, which is its
-  // own verification signal (e.g. a DJ on two festival lineups). Applies to
-  // every DJ — no one is listed without at least 2 verifying pieces of info.
+  // (mixes / links / articles / gigs / multi-gigs / multi-source). level >= 2
+  // flips a candidate to an active (listed) DJ; level keeps climbing as more
+  // sources accumulate. multi-gigs = playing at 2+ events; multi-source = the
+  // DJ shows up on 3+ distinct platforms (SoundCloud, Mixcloud, Bandcamp,
+  // radio, news, event listings...) — the "shows up in three or four places,
+  // that's probably a DJ" signal. Applies to every DJ — no one is listed
+  // without at least 2 verifying pieces of info.
   const weighted = await pool.query(
     `UPDATE djs SET
        verification_level = evidence.level,
@@ -227,16 +229,44 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
           (CASE WHEN EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id AND l.type <> 'festival') THEN 1 ELSE 0 END) +
          (CASE WHEN EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id) THEN 1 ELSE 0 END) +
          (CASE WHEN EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id) THEN 1 ELSE 0 END) +
-         (CASE WHEN (SELECT count(*) FROM event_djs ed WHERE ed.dj_id = d.id) >= 2 THEN 1 ELSE 0 END) AS level,
+         (CASE WHEN (SELECT count(*) FROM event_djs ed WHERE ed.dj_id = d.id) >= 2 THEN 1 ELSE 0 END) +
+         (CASE WHEN (
+            SELECT count(DISTINCT s) FROM (
+              SELECT m.platform AS s FROM dj_mixes m WHERE m.dj_id = d.id
+              UNION ALL
+              SELECT l.type FROM dj_links l WHERE l.dj_id = d.id
+                AND l.type IN ('soundcloud','mixcloud','bandcamp','spotify','apple-music','tidal','deezer','qobuz','beatport','youtube','last.fm','songkick','bandsintown','setlistfm','discogs','radio','myspace','free streaming','streaming')
+              UNION ALL
+              SELECT COALESCE(a.source, 'article') FROM dj_articles a WHERE a.dj_id = d.id
+              UNION ALL
+              SELECT e.source FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id
+              UNION ALL
+              SELECT d.source FROM djs WHERE id = d.id AND source <> 'seed'
+            ) t
+         ) >= 3 THEN 1 ELSE 0 END) AS level,
          COALESCE(
            ARRAY(
              SELECT source
-             FROM unnest(ARRAY['mixes', 'links', 'articles', 'gigs', 'multi-gigs']) AS source
+             FROM unnest(ARRAY['mixes', 'links', 'articles', 'gigs', 'multi-gigs', 'multi-source']) AS source
              WHERE (source = 'mixes' AND EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id))
                 OR (source = 'links' AND EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id AND l.type <> 'festival'))
                 OR (source = 'articles' AND EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id))
                 OR (source = 'gigs' AND EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id))
                 OR (source = 'multi-gigs' AND (SELECT count(*) FROM event_djs ed WHERE ed.dj_id = d.id) >= 2)
+                OR (source = 'multi-source' AND (
+                  SELECT count(DISTINCT s) FROM (
+                    SELECT m.platform AS s FROM dj_mixes m WHERE m.dj_id = d.id
+                    UNION ALL
+                    SELECT l.type FROM dj_links l WHERE l.dj_id = d.id
+                      AND l.type IN ('soundcloud','mixcloud','bandcamp','spotify','apple-music','tidal','deezer','qobuz','beatport','youtube','last.fm','songkick','bandsintown','setlistfm','discogs','radio','myspace','free streaming','streaming')
+                    UNION ALL
+                    SELECT COALESCE(a.source, 'article') FROM dj_articles a WHERE a.dj_id = d.id
+                    UNION ALL
+                    SELECT e.source FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id
+                    UNION ALL
+                    SELECT d.source FROM djs WHERE id = d.id AND source <> 'seed'
+                  ) t
+                ) >= 3)
            ),
            '{}'
          ) AS sources
