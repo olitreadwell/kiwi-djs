@@ -167,7 +167,7 @@ function run(cmd: string, args: string[]): { ok: boolean; out: string } {
 
 function installLaunchdAgent(): void {
   const home = process.env.HOME ?? '/Users/olitreadwell';
-  const plistPath = `${home}/Library/LaunchAgents/com.olitreadwell.nz-djs-loop.plist`;
+  const plistPath = `${home}/Library/LaunchAgents/com.olitreadwell.kiwi-djs-loop.plist`;
   const repoPath = REPO_ROOT.replace(/\/$/, '');
   // Run node directly, not `pnpm loop` — pnpm's startup under launchd
   // (no TTY) intermittently hangs before spawning the child.
@@ -177,7 +177,7 @@ function installLaunchdAgent(): void {
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.olitreadwell.nz-djs-loop</string>
+  <string>com.olitreadwell.kiwi-djs-loop</string>
   <key>WorkingDirectory</key>
   <string>${repoPath}</string>
   <key>ProgramArguments</key>
@@ -205,9 +205,9 @@ function installLaunchdAgent(): void {
   <key>ProcessType</key>
   <string>Background</string>
   <key>StandardOutPath</key>
-  <string>${home}/Library/Logs/aotearoa-djs-loop.log</string>
+  <string>${home}/Library/Logs/kiwi-djs-loop.log</string>
   <key>StandardErrorPath</key>
-  <string>${home}/Library/Logs/aotearoa-djs-loop.log</string>
+  <string>${home}/Library/Logs/kiwi-djs-loop.log</string>
 </dict>
 </plist>
 `;

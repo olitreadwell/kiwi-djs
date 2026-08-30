@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 const MAX_PER_IP_PER_HOUR = 30;
 const LEDGER_PATH = 'data/link-votes.json';
-const GITHUB_REPO = process.env.GITHUB_REPO ?? 'olitreadwell/nz-djs';
+const GITHUB_REPO = process.env.GITHUB_REPO ?? 'olitreadwell/kiwi-djs';
 
 interface LedgerEntry {
   helpful: number;
@@ -21,7 +21,7 @@ interface Ledger {
 
 async function readLedger(token: string): Promise<{ ledger: Ledger; sha: string | null }> {
   const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${LEDGER_PATH}`, {
-    headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'user-agent': 'nz-djs' },
+    headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'user-agent': 'kiwi-djs' },
     signal: AbortSignal.timeout(15000),
   });
   if (res.status === 404) return { ledger: { votes: {} }, sha: null };
@@ -40,7 +40,7 @@ async function readLedger(token: string): Promise<{ ledger: Ledger; sha: string 
 async function writeLedger(token: string, sha: string | null, ledger: Ledger): Promise<void> {
   const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${LEDGER_PATH}`, {
     method: 'PUT',
-    headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'user-agent': 'nz-djs', 'content-type': 'application/json' },
+    headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'user-agent': 'kiwi-djs', 'content-type': 'application/json' },
     body: JSON.stringify({
       message: 'chore: link vote',
       content: Buffer.from(JSON.stringify(ledger, null, 2)).toString('base64'),

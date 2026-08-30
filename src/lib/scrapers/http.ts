@@ -1,7 +1,7 @@
 import robotsParser from 'robots-parser';
 
 export const UA =
-  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36 WellingtonDJsBot/1.0';
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36 KiwiDJsBot/1.0';
 
 const robotsCache = new Map<string, ReturnType<typeof robotsParser>>();
 

@@ -21,7 +21,7 @@ NZT (16:30 UTC, DeepSeek off-peak start) and it self-sustains:
   overlap.
 
 Install the launchd agent with `pnpm loop --install` (label
-`com.olitreadwell.aotearoa-djs-loop`). Manual run: `pnpm loop --once`.
+`com.olitreadwell.kiwi-djs-loop`). Manual run: `pnpm loop --once`.
 
 ## Signals we collect
 

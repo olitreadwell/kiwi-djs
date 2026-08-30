@@ -220,7 +220,7 @@ const MB_TAG_QUERIES = [
   'trance', 'garage', 'breaks', 'electro', 'bass',
 ];
 
-const MB_UA = 'WellingtonDJsBot/1.0 (https://github.com/olitreadwell/nz-djs; discovery)';
+const MB_UA = 'KiwiDJsBot/1.0 (https://github.com/olitreadwell/kiwi-djs; discovery)';
 
 // MusicBrainz only answers reliably over IPv4 from this network.
 function musicbrainzJson(url: string): Promise<{ count: number; artists: Array<{ id: string; name: string; country?: string; disambiguation?: string; 'begin-area'?: { name?: string }; tags?: Array<{ name: string }> }> }> {

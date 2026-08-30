@@ -1,17 +1,17 @@
-# Project context — Aotearoa NZ DJs
+# Project context — Kiwi DJs
 
 Read this first. It is the live handoff for any new session working on this repo.
 
 ## What this is
 
-Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data only. Users look up a DJ and get a full dossier: summary, mixes (SoundCloud/Mixcloud), news articles, socials, played-with artists, labels/promoters, upcoming + past gigs, and similar DJs. The dataset is also a standalone OpenAPI/Swagger-compliant product for reuse.
+Open directory + dataset of New Zealand (Aotearoa) DJs. Public data only. Users look up a DJ and get a full dossier: summary, mixes (SoundCloud/Mixcloud), news articles, socials, played-with artists, labels/promoters, upcoming + past gigs, and similar DJs. The dataset is also a standalone OpenAPI/Swagger-compliant product for reuse.
 
 ## Stack & infra
 
 - Next.js 16 (App Router) + TypeScript + Tailwind v4, `pg` for Postgres, Vercel deploy
-- Local DB: docker container `wellington-djs-db`, port 5433
+- Local DB: docker container `wellington-djs-db`, port 5433 (legacy naming; kept until the Neon managed DB is live)
   - `postgres://wellington_djs:wellington_djs_dev@localhost:5433/wellington_djs`
-- Live: https://nz-djs.vercel.app · Repo: https://github.com/olitreadwell/nz-djs
+- Live: https://kiwi-djs.vercel.app · Repo: https://github.com/olitreadwell/kiwi-djs
 - Prod runs in **snapshot mode** (serves `src/data/snapshot.json`) until a managed DB is added — Vercel CLI refuses AI-agent term acceptance, so a human must run `vercel integration add supabase` and set `DATABASE_URL`.
 
 ## Commands
@@ -90,7 +90,7 @@ Recent feedback → issues: venue coverage gaps (#257), played-with graph comple
 - SoundCloud default client id is dead (401). Needs fresh `SOUNDCLOUD_CLIENT_ID`.
 - Mixcloud rate-limits under sustained load → enrichment capped at 30 DJs/run (`ENRICH_LIMIT`), Mixcloud at 20 (`MIXCLOUD_LIMIT`); genre-filling sources prioritise DJs that still need a specific subgenre.
 - Vercel cron: `vercel.json` schedules `/api/cron/refresh` 2am NZT; route skips gracefully without `DATABASE_URL`.
-- Self-improving loop: launchd agent `com.olitreadwell.aotearoa-djs-loop` fires daily 4:30am NZT (16:30 UTC, DeepSeek off-peak start) and self-sustains via `pnpm loop`. Single-instance lock in `logs/loop.pid`; source health in `logs/source-state.json` (3 consecutive errors disables a source for 24h). Loop commits only `src/data/snapshot.json` — never sweeps WIP.
+- Self-improving loop: launchd agent `com.olitreadwell.kiwi-djs-loop` fires daily 4:30am NZT (16:30 UTC, DeepSeek off-peak start) and self-sustains via `pnpm loop`. Single-instance lock in `logs/loop.pid`; source health in `logs/source-state.json` (3 consecutive errors disables a source for 24h). Loop commits only `src/data/snapshot.json` — never sweeps WIP.
 
 ## Active goal
 

@@ -35,12 +35,12 @@ export default function AboutPage() {
       </p>
       <p className="mt-3">
         <a
-          href="https://github.com/olitreadwell/nz-djs"
+          href="https://github.com/olitreadwell/kiwi-djs"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full border border-accent/60 px-4 py-1.5 font-mono text-xs text-accent transition-colors hover:bg-accent/10"
         >
-          github.com/olitreadwell/nz-djs ↗
+          github.com/olitreadwell/kiwi-djs ↗
         </a>
       </p>
     </div>

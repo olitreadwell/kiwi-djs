@@ -23,7 +23,7 @@ export async function GET(req: Request) {
   return new Response([header.join(','), ...rows].join('\n'), {
     headers: {
       'content-type': 'text/csv; charset=utf-8',
-      'content-disposition': 'attachment; filename="wellington-djs.csv"',
+      'content-disposition': 'attachment; filename="kiwi-djs.csv"',
       etag,
       'cache-control': 'public, max-age=3600',
     },

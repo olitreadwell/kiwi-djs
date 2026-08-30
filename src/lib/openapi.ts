@@ -23,7 +23,7 @@ export const openApiSpec: JsonObject = {
   info: {
     title: 'Kiwi DJs API',
     description:
-      'Open dataset of Wellington (Te Whanganui-a-Tara) DJs: profiles, mixes, news, gigs, venues. Public data only. Opt-out respected.',
+      'Open dataset of New Zealand (Aotearoa) DJs: profiles, mixes, news, gigs, venues. Public data only. Opt-out respected.',
     version: '1.0.0',
     license: { name: 'MIT' },
   },

@@ -6,7 +6,7 @@
 import type { Pool } from 'pg';
 import { sleep } from './http';
 
-const WB_UA = 'WellingtonDJsBot/1.0 (https://github.com/olitreadwell/nz-djs; link archiving)';
+const WB_UA = 'KiwiDJsBot/1.0 (https://github.com/olitreadwell/kiwi-djs; link archiving)';
 
 interface WaybackAvailable {
   archived_snapshots?: { closest?: { url?: string } };

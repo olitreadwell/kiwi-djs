@@ -12,7 +12,7 @@ interface DjRow {
 
 // Keyless public APIs: MusicBrainz, iTunes Search, Nominatim (OSM).
 // All three require a descriptive User-Agent and ~1 req/s politeness.
-const API_UA = 'WellingtonDJsBot/1.0 (https://github.com/olitreadwell/nz-djs; data enrichment)';
+const API_UA = 'KiwiDJsBot/1.0 (https://github.com/olitreadwell/kiwi-djs; data enrichment)';
 
 // MusicBrainz only answers reliably over IPv4 from this network; node's
 // fetch hangs on their IPv6 address, so use https with family 4 here.
