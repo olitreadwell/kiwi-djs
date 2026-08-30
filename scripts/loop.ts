@@ -480,14 +480,15 @@ async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: n
   await reportFailingSources(pool);
   await auditAndFileIssues(pool);
   await writeHandoff(pool, { totalNew, totalFound });
-  if (totalNew > 0) {
-    const before = existsSync(new URL('../src/data/snapshot.json', import.meta.url))
-      ? readFileSync(new URL('../src/data/snapshot.json', import.meta.url), 'utf8')
-      : '';
-    regenerateSnapshot();
-    const after = readFileSync(new URL('../src/data/snapshot.json', import.meta.url), 'utf8');
-    commitAndPush(before !== after);
-  }
+  // Regenerate every cycle and commit only when the snapshot actually
+  // changed — enrichment (genres, completeness, verification) mutates the
+  // dataset even when no new scraped items were found.
+  const before = existsSync(new URL('../src/data/snapshot.json', import.meta.url))
+    ? readFileSync(new URL('../src/data/snapshot.json', import.meta.url), 'utf8')
+    : '';
+  regenerateSnapshot();
+  const after = readFileSync(new URL('../src/data/snapshot.json', import.meta.url), 'utf8');
+  commitAndPush(before !== after);
   return { totalNew, totalFound };
 }
 
