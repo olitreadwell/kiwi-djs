@@ -79,12 +79,17 @@ export const soundcloudScraper: Scraper = {
       existing.add(key);
       found += 1;
       const id = `soundcloud-${user.permalink}`;
+      const nz = isNzProfile(user);
+      const location = user.city ? `SoundCloud: ${user.city}` : null;
+      // A profile that names an NZ city is the "at least one source says
+      // NZ" evidence (#308) — record it so the verification rule can see it.
+      const sources = user.city && nz ? ['location'] : [];
       const result = await pool.query(
-        `INSERT INTO djs (id, name, bio, soundcloud_url, image_url, source, data_completeness, active, discovery_note, is_nz)
-         VALUES ($1, $2, $3, $4, $5, 'soundcloud', 20, FALSE, NULL, $6)
+        `INSERT INTO djs (id, name, bio, soundcloud_url, image_url, source, data_completeness, active, discovery_note, is_nz, profile_location, verification_sources)
+         VALUES ($1, $2, $3, $4, $5, 'soundcloud', 20, FALSE, NULL, $6, $7, $8)
          ON CONFLICT (id) DO NOTHING
          RETURNING id`,
-        [id, user.username, user.description ?? null, `https://soundcloud.com/${user.permalink}`, user.avatar_url ?? null, isNzProfile(user)],
+        [id, user.username, user.description ?? null, `https://soundcloud.com/${user.permalink}`, user.avatar_url ?? null, nz, location, sources],
       );
       if (result.rows.length > 0) {
         newCount += 1;
