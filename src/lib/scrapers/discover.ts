@@ -1,9 +1,12 @@
 import type { Pool } from 'pg';
+import { get as httpsGet } from 'node:https';
 import { slugify } from '../slug';
 import { sleep } from './http';
 import { upsertDjLink, upsertDjArticle, parseBingNewsXml } from './enrich';
 import { getSoundcloudClientId } from './soundcloud-client';
+import { discoverSpotifyNzEdm } from './spotify';
 import { cityFromLocation, isNzLocation } from '../locations';
+import { normaliseGenres } from '../genres';
 import type { ScrapeResult } from './types';
 
 const STOP_WORDS = new Set([
@@ -195,7 +198,147 @@ export async function discoverSoundcloudNz(pool: Pool): Promise<ScrapeResult> {
   };
 }
 
-async function loadExistingNames(pool: Pool): Promise<Set<string>> {
+// EDM-specific NZ discovery. SoundCloud search can't refine by genre or
+// location (returns junk), so the source of truth is MusicBrainz: a
+// structured, keyless list of artists tagged electronic/dance with
+// area = New Zealand. We then rank the top candidates by SoundCloud
+// followers via exact-name lookups (reliable, unlike genre search).
+const EDM_GENRES = new Set([
+  'House', 'Deep House', 'Tech House', 'Progressive House', 'Acid House', 'Melodic House & Techno',
+  'Techno', 'Hard Techno', 'Minimal Techno', 'Melodic Techno', 'Acid Techno', 'Detroit Techno',
+  'Trance', 'Psytrance', 'Goa Trance', 'Drum and Bass', 'Liquid Drum and Bass', 'Liquid Funk',
+  'Neurofunk', 'Jungle', 'Garage', 'UK Garage', '2-Step', 'Grime', 'Dubstep', 'Deep Dubstep',
+  'Breaks', 'Electro', 'Bass', 'Bass Music', 'Bass House', 'Disco', 'Nu-Disco', 'Afro House',
+  'Afrobeats', 'Amapiano', 'Gqom', 'Synthwave', 'Hardcore', 'Hardstyle', 'Happy Hardcore',
+  'Gabber', 'Dance', 'Electronic',
+]);
+
+const MB_TAG_QUERIES = [
+  'electronic', 'dance', 'edm', 'house', 'techno', 'drum and bass', 'dubstep',
+  'trance', 'garage', 'breaks', 'electro', 'bass',
+];
+
+const MB_UA = 'WellingtonDJsBot/1.0 (https://github.com/olitreadwell/nz-djs; discovery)';
+
+// MusicBrainz only answers reliably over IPv4 from this network.
+function musicbrainzJson(url: string): Promise<{ count: number; artists: Array<{ id: string; name: string; country?: string; disambiguation?: string; 'begin-area'?: { name?: string }; tags?: Array<{ name: string }> }> }> {
+  return new Promise((resolve, reject) => {
+    const req = httpsGet(url, { headers: { 'user-agent': MB_UA, accept: 'application/json' }, family: 4, timeout: 15000 }, (res) => {
+      const chunks: Buffer[] = [];
+      res.on('data', (chunk: Buffer) => chunks.push(chunk));
+      res.on('end', () => {
+        const body = Buffer.concat(chunks).toString('utf8');
+        if (res.statusCode && res.statusCode >= 400) {
+          reject(new Error(`MusicBrainz HTTP ${res.statusCode}`));
+          return;
+        }
+        try {
+          resolve(JSON.parse(body));
+        } catch {
+          reject(new Error('Invalid JSON from MusicBrainz'));
+        }
+      });
+    });
+    req.on('error', reject);
+  });
+}
+
+// Structured NZ EDM discovery: MusicBrainz artists with area = New Zealand
+// and an electronic/dance tag. SoundCloud exact-name lookups then attach
+// follower counts so we can rank "top" artists.
+export async function discoverMusicbrainzNzEdm(pool: Pool): Promise<ScrapeResult> {
+  const artists = new Map<string, { name: string; city: string | null; tags: string[] }>();
+  for (const tag of MB_TAG_QUERIES) {
+    for (const offset of [0, 100]) {
+      const url = `https://musicbrainz.org/ws/2/artist/?query=${encodeURIComponent(`area:"New Zealand" AND tag:${tag}`)}&fmt=json&limit=100&offset=${offset}`;
+      try {
+        const data = await musicbrainzJson(url);
+        for (const artist of data.artists ?? []) {
+          if (!artist.id || !artist.name) continue;
+          const tags = (artist.tags ?? []).map((t) => t.name);
+          const existing = artists.get(artist.id);
+          if (existing) {
+            existing.tags = [...new Set([...existing.tags, ...tags])];
+          } else {
+            artists.set(artist.id, {
+              name: artist.name,
+              city: artist['begin-area']?.name ?? null,
+              tags,
+            });
+          }
+        }
+      } catch {
+        // keep going — one tag query failing shouldn't kill the sweep
+      }
+      await sleep(1100); // MusicBrainz rate limit: 1 req/s
+    }
+  }
+  const existing = await loadExistingNames(pool);
+  let found = 0;
+  let newCount = 0;
+  for (const artist of artists.values()) {
+    if (isJunkName(artist.name) || isEventSeriesName(artist.name)) continue;
+    const genres = normaliseGenres(artist.tags).filter((genre) => EDM_GENRES.has(genre));
+    if (genres.length === 0) continue;
+    const key = normalizeArtistName(artist.name);
+    if (existing.has(key)) continue;
+    existing.add(key);
+    const id = slugify(artist.name);
+    const result = await pool.query(
+      `INSERT INTO djs (id, name, source, active, data_completeness, verification_level, verification_sources,
+                        is_nz, image_url, profile_location, city, genres, discovery_note)
+       VALUES ($1, $2, 'discovered-musicbrainz', TRUE, 25, 2, ARRAY['location'], TRUE, NULL, $3, $4, $5, NULL)
+       ON CONFLICT (id) DO NOTHING RETURNING id`,
+      [id, artist.name, `MusicBrainz: ${artist.city ?? 'New Zealand'}`, artist.city ?? 'Wellington', genres],
+    );
+    if (result.rows.length === 0) continue;
+    newCount += 1;
+    found += 1;
+  }
+  // Attach SoundCloud follower counts to the newest candidates (exact-name
+  // search is reliable, unlike genre search) so "top" is rankable.
+  const cid = await getSoundcloudClientId();
+  if (cid) {
+    const candidates = (
+      await pool.query(
+        `SELECT id, name FROM djs WHERE source = 'discovered-musicbrainz' AND active = TRUE
+         AND NOT EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = djs.id AND l.type = 'soundcloud')
+         ORDER BY created_at DESC LIMIT 30`,
+      )
+    ).rows as Array<{ id: string; name: string }>;
+    for (const candidate of candidates) {
+      try {
+        const res = await fetch(`https://api-v2.soundcloud.com/search/users?q=${encodeURIComponent(candidate.name)}&client_id=${cid}&limit=5`, {
+          headers: { accept: 'application/json' },
+          signal: AbortSignal.timeout(15000),
+        });
+        if (!res.ok) continue;
+        const data = (await res.json()) as { collection?: SoundcloudUser[] };
+        const match = (data.collection ?? [])
+          .filter((u) => normalizeArtistName(u.username) === normalizeArtistName(candidate.name))
+          .sort((a, b) => (b.followers_count ?? 0) - (a.followers_count ?? 0))[0];
+        if (!match) continue;
+        await upsertDjLink(pool, candidate.id, 'soundcloud', `https://soundcloud.com/${match.permalink}`, `SoundCloud: ${match.username}`, match.followers_count, match.track_count);
+        await pool.query(`UPDATE djs SET soundcloud_url = $2, image_url = COALESCE(image_url, $3), verification_sources = ARRAY['location','links'] WHERE id = $1`, [
+          candidate.id,
+          `https://soundcloud.com/${match.permalink}`,
+          match.avatar_url ?? null,
+        ]);
+      } catch {
+        // keep going
+      }
+      await sleep(500);
+    }
+  }
+  return {
+    status: found > 0 ? 'ok' : 'partial',
+    items_found: found,
+    items_new: newCount,
+    error: found === 0 ? 'No new NZ EDM artists from MusicBrainz' : undefined,
+  };
+}
+
+export async function loadExistingNames(pool: Pool): Promise<Set<string>> {
   const names = (await pool.query('SELECT lower(name) AS name FROM djs')).rows.map((row) => row.name as string);
   const aliases = (await pool.query('SELECT alias FROM dj_aliases')).rows.map((row) => row.alias as string);
   return new Set([...names, ...aliases].map(normalizeArtistName));
@@ -502,6 +645,8 @@ export async function discoverFromNzMusicFeeds(pool: Pool): Promise<ScrapeResult
 export async function discoverAll(pool: Pool): Promise<ScrapeResult[]> {
   const runners: Array<{ source: string; run: (pool: Pool) => Promise<ScrapeResult> }> = [
     { source: 'discover-soundcloud-nz', run: discoverSoundcloudNz },
+    { source: 'discover-musicbrainz-edm', run: discoverMusicbrainzNzEdm },
+    { source: 'discover-spotify', run: discoverSpotifyNzEdm },
     { source: 'discover-events', run: discoverFromEvents },
     { source: 'discover-mixcloud', run: discoverFromMixcloud },
     { source: 'discover-news', run: discoverFromNewsArticles },

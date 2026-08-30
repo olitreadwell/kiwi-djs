@@ -2,6 +2,24 @@
 
 All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Vercel Cron, and record every run in the `scrapes` table (status, items found, items new, error).
 
+## Source priority policy
+
+Sources are ranked by how precisely their API/search supports the three
+signals that define a useful NZ DJ record:
+
+1. **Location filtering** — country/city filter, or a country-specific chart
+2. **Genre filtering** — genre filter, genre charts, or structured genre tags
+3. **Popularity sorting** — followers, plays, or chart position
+
+The database foundation comes only from sources that support all three
+(**Spotify**: genre search + NZ country chart + followers/popularity).
+Profile enrichment uses sources with location + followers per profile
+(**SoundCloud**: exact-name lookups for follower counts; **Mixcloud**).
+Catalog enumeration (MusicBrainz area + tag queries) is structured but
+unranked — fine to fill gaps, never the foundation; its discoveries stay
+unverified candidates until a rankable source confirms them. Sources that
+can't filter by location, genre, or popularity are not used to seed the DB.
+
 ## Working now
 
 | Source | What we get | Status |
@@ -12,6 +30,8 @@ All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Verc
 | Rogue & Vagabond (rogueandvagabond.co.nz) | upcoming gigs (UTR-powered) | ✅ live |
 | Mixcloud API | per-DJ mixes + user links | ✅ live |
 | Bing News RSS | per-DJ news articles | ✅ live |
+| MusicBrainz (area=NZ + electronic/dance tags) | NZ electronic artist candidates + tags + city | ✅ live (candidates hidden until a rankable source verifies them) |
+| Spotify (NZ Top 50 chart + genre search) | play-ranked NZ artists with genres + followers | ⚠️ needs `SPOTIFY_CLIENT_ID` / `SPOTIFY_CLIENT_SECRET` (free client credentials) |
 | Event-name discovery | new DJ candidates from co-billed gigs | ✅ live (candidates hidden until verified) |
 | Northern Bass (northernbass.co.nz/lineup) | festival lineup → DJ candidates + events | ✅ live (electronic-only festival, all acts kept) |
 | The Others Way (theothersway.co.nz/lineup) | festival lineup → DJ candidates + events | ✅ live (DJ acts only) |

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-30 — Data-source priority policy (#301)
+
+- New policy + `DATA_SOURCES.md` section: sources are ranked by location filter, genre filter, and popularity sort; only sources with all three (Spotify) seed the database foundation
+- MusicBrainz NZ electronic sweep added, but its discoveries stay unverified candidates until a rankable source (SoundCloud/Spotify follower data) confirms them — 161 catalog-only finds demoted to candidates
+- Spotify discovery (`discover-spotify`) added: NZ Top 50 country chart + artist genres/followers/popularity, gated on `SPOTIFY_CLIENT_ID` / `SPOTIFY_CLIENT_SECRET`
+
 ## 2026-08-30 — AI summaries (#292)
 
 - DJ cards show a short AI summary (with a subtle AI tag) when one exists, falling back to the bio
