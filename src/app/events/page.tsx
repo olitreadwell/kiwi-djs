@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { getUpcomingEvents } from '@/lib/queries';
+import { getPastEvents, getUpcomingEvents } from '@/lib/queries';
 import { RegionFilter } from '@/components/region-filter';
 
 export const dynamic = 'force-dynamic';
 
-export default async function EventsPage({ searchParams }: { searchParams: Promise<{ region?: string }> }) {
-  const { region } = await searchParams;
-  const all = await getUpcomingEvents(200);
+export default async function EventsPage({ searchParams }: { searchParams: Promise<{ region?: string; period?: string }> }) {
+  const { region, period } = await searchParams;
+  const past = period === 'past';
+  const all = past ? await getPastEvents(500) : await getUpcomingEvents(200);
   const events = region ? all.filter((event) => event.region?.toLowerCase() === region.toLowerCase()) : all;
   const regions = [...new Set(all.map((event) => event.region).filter((value): value is string => Boolean(value)))].sort();
   const byDate = new Map<string, typeof events>();
@@ -20,7 +21,23 @@ export default async function EventsPage({ searchParams }: { searchParams: Promi
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="text-3xl font-black text-foreground">Event calendar</h1>
-      <p className="mt-2 font-mono text-xs text-muted">{events.length} upcoming gigs from public listings</p>
+      <p className="mt-2 font-mono text-xs text-muted">{events.length} {past ? 'past' : 'upcoming'} gigs from public listings</p>
+      <div className="mt-4 flex gap-1 font-mono text-xs">
+        <Link
+          href={region ? `/events?region=${region}` : '/events'}
+          aria-current={!past ? 'page' : undefined}
+          className={`rounded-full px-3 py-1 transition-colors ${!past ? 'bg-accent text-background' : 'border border-edge text-muted hover:border-accent hover:text-accent'}`}
+        >
+          Upcoming
+        </Link>
+        <Link
+          href={region ? `/events?region=${region}&period=past` : '/events?period=past'}
+          aria-current={past ? 'page' : undefined}
+          className={`rounded-full px-3 py-1 transition-colors ${past ? 'bg-accent text-background' : 'border border-edge text-muted hover:border-accent hover:text-accent'}`}
+        >
+          Past
+        </Link>
+      </div>
       <div className="mt-4">
         <RegionFilter regions={regions} />
       </div>

@@ -8,6 +8,7 @@ import { buildIssueQueue, loadIssueQueue, writeIssueQueue, type QueueIssue } fro
 import { normaliseGenres } from '../src/lib/genres';
 import { isRelevantArticle } from '../src/lib/scrapers/enrich';
 import { summarizeMissingDjs } from '../src/lib/summarize';
+import { archiveMissingLinks } from '../src/lib/scrapers/wayback';
 import { classifyProfileLocation, hasNzLocationEvidence } from '../src/lib/locations';
 
 // Self-improving scrape loop.
@@ -553,6 +554,9 @@ async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: n
   const summarizeLimit = Number(process.env.SUMMARIZE_LIMIT ?? 20);
   const summarised = await summarizeMissingDjs(pool, summarizeLimit);
   if (summarised > 0) log(`Summarised ${summarised} DJs (AI).`);
+  const archiveLimit = Number(process.env.ARCHIVE_LIMIT ?? 10);
+  const archived = await archiveMissingLinks(pool, archiveLimit);
+  if (archived > 0) log(`Archived ${archived} links to the Wayback Machine.`);
   const totalNew = results.reduce((sum, r) => sum + r.items_new, 0);
   const totalFound = results.reduce((sum, r) => sum + r.items_found, 0);
   const elapsed = Math.round((Date.now() - startedAt.getTime()) / 1000);

@@ -68,6 +68,7 @@ CREATE TABLE IF NOT EXISTS events (
 );
 
 ALTER TABLE events ADD COLUMN IF NOT EXISTS is_dj_event BOOLEAN NOT NULL DEFAULT FALSE;
+ALTER TABLE events ADD COLUMN IF NOT EXISTS archive_url TEXT;        -- Wayback Machine copy (#302)
 
 -- One event row per festival/venue night; event_djs links every DJ on the
 -- lineup so a festival is not duplicated per DJ (#16).
@@ -121,6 +122,7 @@ CREATE TABLE IF NOT EXISTS dj_links (
 
 ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS followers INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS track_count INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS archive_url TEXT;      -- Wayback Machine copy (#302)
 
 CREATE TABLE IF NOT EXISTS dj_articles (
   id            TEXT PRIMARY KEY,            -- djId-<hash>
@@ -132,6 +134,8 @@ CREATE TABLE IF NOT EXISTS dj_articles (
   snippet       TEXT,
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+ALTER TABLE dj_articles ADD COLUMN IF NOT EXISTS archive_url TEXT;   -- Wayback Machine copy (#302)
 
 -- One article per DJ per title: Bing RSS returns the same story under
 -- different URLs across runs (#37).

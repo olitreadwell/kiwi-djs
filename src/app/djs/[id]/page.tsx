@@ -185,6 +185,11 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
                   {article.source ?? 'press'}
                   {article.published_at ? ` · ${new Date(article.published_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}` : ''}
                 </p>
+                {article.archive_url && (
+                  <a href={article.archive_url} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block font-mono text-xs text-faint transition-colors hover:text-accent">
+                    archived copy ↗
+                  </a>
+                )}
                 {article.snippet && <p className="mt-1 text-xs text-muted">{article.snippet}</p>}
               </li>
             ))}
@@ -335,6 +340,11 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
                   <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent">
                     {linkLabel(link.type, link.label)}: {link.url}
                   </a>
+                  {link.archive_url && (
+                    <a href={link.archive_url} target="_blank" rel="noopener noreferrer" className="ml-2 text-faint hover:text-accent">
+                      archived ↗
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

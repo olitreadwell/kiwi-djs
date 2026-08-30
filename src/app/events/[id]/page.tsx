@@ -35,6 +35,11 @@ export default async function EventPage({ params }: { params: Promise<{ id: stri
           tickets / source ↗
         </a>
       )}
+      {event.archive_url && (
+        <a href={event.archive_url} target="_blank" rel="noopener noreferrer" className="mt-4 ml-2 inline-block rounded-full border border-dashed border-edge px-4 py-2 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent">
+          archived copy ↗
+        </a>
+      )}
 
       <h2 className="mt-10 text-xl font-bold text-foreground">Lineup</h2>
       {lineup.length === 0 ? (
@@ -63,6 +68,7 @@ export default async function EventPage({ params }: { params: Promise<{ id: stri
         <div className="border-t border-edge px-4 py-3 font-mono text-xs text-muted">
           <p>Source: {event.source}</p>
           {event.url && <p className="mt-1">Listing: {event.url}</p>}
+          {event.archive_url && <p className="mt-1">Archived: <a href={event.archive_url} target="_blank" rel="noopener noreferrer" className="text-faint hover:text-accent">{event.archive_url}</a></p>}
         </div>
       </details>
     </div>

@@ -58,6 +58,7 @@ export interface EventRow {
   dj_name: string | null;
   region: string | null;
   is_dj_event?: boolean;
+  archive_url?: string | null;
 }
 
 interface EventDjLink {
@@ -200,6 +201,26 @@ export async function getUpcomingEvents(limit = 60): Promise<EventRow[]> {
   return result.rows as EventRow[];
 }
 
+export async function getPastEvents(limit = 200): Promise<EventRow[]> {
+  if (!isDbMode) {
+    const now = Date.now();
+    return (snapshot.events as EventRow[])
+      .filter((event) => event.is_dj_event !== false && event.starts_at && new Date(event.starts_at).getTime() <= now)
+      .sort((a, b) => new Date(b.starts_at).getTime() - new Date(a.starts_at).getTime())
+      .slice(0, limit);
+  }
+  const pool = getPool();
+  const result = await pool.query(
+    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
+     FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
+     WHERE e.starts_at <= now() AND e.is_dj_event = TRUE
+     ORDER BY e.starts_at DESC
+     LIMIT $1`,
+    [limit],
+  );
+  return result.rows as EventRow[];
+}
+
 export async function getEvents(opts: { upcoming?: boolean; venue?: string; dj?: string; limit?: number } = {}): Promise<EventRow[]> {
   const limit = Math.min(opts.limit ?? 100, 500);
   if (!isDbMode) {
@@ -324,6 +345,7 @@ export interface ArticleRow {
   source: string | null;
   published_at: string | null;
   snippet: string | null;
+  archive_url?: string | null;
 }
 
 export interface LinkRow {
@@ -336,6 +358,7 @@ export interface LinkRow {
   helpful: number;
   unhelpful: number;
   followers: number;
+  archive_url?: string | null;
   track_count: number;
 }
 

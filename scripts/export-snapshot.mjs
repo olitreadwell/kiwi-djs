@@ -22,12 +22,12 @@ const djs = (
 ).rows;
 const events = (
   await pool.query(
-    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, e.is_dj_event, d.name AS dj_name
+    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.archive_url, e.source, e.dj_id, e.is_dj_event, d.name AS dj_name
      FROM events e LEFT JOIN djs d ON d.id = e.dj_id`,
   )
 ).rows;
-const links = (await pool.query('SELECT id, dj_id, type, url, label FROM dj_links')).rows;
-const articles = (await pool.query('SELECT id, dj_id, title, url, source, published_at, snippet FROM dj_articles')).rows;
+const links = (await pool.query('SELECT id, dj_id, type, url, label, archive_url FROM dj_links')).rows;
+const articles = (await pool.query('SELECT id, dj_id, title, url, source, published_at, snippet, archive_url FROM dj_articles')).rows;
 const mixes = (await pool.query('SELECT id, dj_id, title, url, platform FROM dj_mixes')).rows;
 const eventDjs = (await pool.query('SELECT event_id, dj_id FROM event_djs')).rows;
 const venues = (await pool.query('SELECT id, name, address, url FROM venues')).rows;
