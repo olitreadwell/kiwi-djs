@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-30T03:54:00.626Z",
+  "exportedAt": "2026-08-30T04:00:43.206Z",
   "djs": [
     {
       "id": "club-medder",
@@ -45,6 +45,55 @@
       "summary": "Wellington DJ playing ambient, reggae, house, dub, hip-hop, bass, techno, jungle. Upcoming at Newtown Festival 2027.",
       "summary_long": "Club Medder is a Wellington-based DJ with a broad genre range spanning ambient, reggae, house, dub, hip-hop, bass, techno, and jungle. No mixes are currently listed. They are scheduled to play at Newtown Festival 2027 and have recently shared stages with Max Maxwell, Stolen Tuesday, 9cups, and Marcos Alonso.",
       "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "six60",
+      "name": "SIX60",
+      "bio": "Six60 (stylised in all caps as SIX60) is a New Zealand pop rock band formed in Dunedin, Otago in 2008. The band consists of Matiu Walters (lead vocals, guitar), Ji Fraser (lead guitar), Chris Mac (drums, bass guitar), and Marlon Gerbes (guitar, bass guitar, synthesiser).\nTheir self-titled debut album was released on 10 October 2011 on their own label Massive Entertainment. The album was produced and mixed by Tiki Taane and debuted at number one in the New Zealand charts and was certified gold within its first week of release. Their first two singles \"Rise Up 2.0\" and \"Don't Forget Your Roots\" reached number one and number two respectively on the RIANZ singles chart and were both certified double and triple platinum. \nIn 2018 the band won five Vodafone New Zealand Music Awards and were the most streamed artist by New Zealanders on Spotify. On 23 February 2019, Six60 became the first New Zealand band to play a sold-out concert at the Western Springs Stadium, to a crowd of 50,000 fans. On 24 April 2021, Six60 played the first concert at Auckland's Eden Park Stadium, to a crowd of 50,000 fans. It was the closing of the Six60 Saturdays country-wide tour and the largest concert of 2021.\nIn February 2024, founding member Eli Paewai left the band, citing his \"personal journey with music is coming to an end\".",
+      "genres": [
+        "Soul",
+        "Pop",
+        "Rock",
+        "Alternative Rock",
+        "R&B",
+        "Indietronica",
+        "Electronica"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000704417758-4w7dd5-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/six60",
+      "instagram_url": "https://www.instagram.com/six60/",
+      "facebook_url": "https://www.facebook.com/Six60",
+      "mixcloud_url": null,
+      "website_url": "http://www.six60.co.nz/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 70,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.213Z",
+      "updated_at": "2026-08-30T03:48:22.853Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": "Auckland-based band SIX60 blends soul, pop, rock, and electronic sounds. They have 17 mixes on SoundCloud.",
+      "summary_long": "SIX60 is a band from Auckland, New Zealand, known for their genre-crossing style that includes soul, pop, rock, alternative rock, R&B, indietronica, and electronica. They have 17 mixes available on their SoundCloud. No upcoming gigs are currently listed.",
+      "upcoming_events": 0,
+      "mix_count": 17,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -85,6 +134,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 20,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -121,52 +172,59 @@
       "summary": "EMI Music New Zealand is an Auckland-based DJ with two SoundCloud mixes and no upcoming gigs.",
       "summary_long": "EMI Music New Zealand operates from Auckland, New Zealand. The artist has two mixes available on SoundCloud but has not listed any upcoming performances.",
       "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
-      "id": "kora-ca",
-      "name": "Kora (CA)",
+      "id": "paige-julia",
+      "name": "Paige Julia",
       "bio": null,
       "genres": [
-        "Organic House",
-        "Deep House",
-        "Downtempo",
+        "Drum and Bass",
+        "140",
+        "Deep Dubstep",
+        "Grime",
+        "Breaks",
+        "UK Bass",
         "Electronica",
-        "Melodic House & Techno",
-        "Tech House",
-        "Afro House",
-        "Breaks"
+        "Melodic House & Techno"
       ],
       "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
+      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-924604966",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
-      "popularity": 0,
-      "data_completeness": 10,
+      "popularity": 2,
+      "data_completeness": 65,
       "source": "festival",
       "opt_out": false,
-      "created_at": "2026-08-29T07:22:40.347Z",
-      "updated_at": "2026-08-30T03:48:29.539Z",
+      "created_at": "2026-08-29T07:22:39.923Z",
+      "updated_at": "2026-08-30T03:53:56.191Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
+      "verification_level": 5,
       "verification_sources": [
-        "links",
         "gigs",
+        "links",
+        "location",
+        "mixes",
+        "multi-gigs",
         "multi-source"
       ],
       "is_nz": true,
       "bpm_range": null,
       "stale_since": null,
       "bio_quality": null,
-      "profile_location": null,
-      "summary": "Wellington DJ playing organic house, deep house, downtempo, and more.",
-      "summary_long": "Kora is a Wellington-based DJ with a versatile sound spanning organic house, deep house, downtempo, electronica, melodic house and techno, tech house, Afro house, and breaks. They have recently shared the stage with artists like MiNOA, Bwoy De Bhajan, 1TRIBE↟, and SUBSET.",
-      "upcoming_events": 0,
+      "profile_location": "Bandcamp: Christchurch",
+      "summary": "Wellington DJ playing drum and bass, dubstep, grime, and more. Upcoming at Carlucci Carnival.",
+      "summary_long": "Paige Julia is a Wellington-based DJ covering drum and bass, 140, deep dubstep, grime, breaks, UK bass, electronica, and melodic house and techno. She has three mixes on Mixcloud and has recently played alongside Herman Saiz, Shady Lady, Mojo Filter, and Bwoy De Bhajan. Next up is a set at Carlucci Carnival.",
+      "upcoming_events": 1,
+      "mix_count": 3,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -206,6 +264,8 @@
       "summary": "Queenstown pop DJ with 26 SoundCloud mixes, no upcoming gigs listed.",
       "summary_long": "Night Life is a pop DJ based in Queenstown. They have 26 mixes available on SoundCloud. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 26,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -251,6 +311,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 45,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -289,6 +351,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 49,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -334,6 +398,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 21,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -376,6 +442,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -422,51 +490,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "six60",
-      "name": "SIX60",
-      "bio": null,
-      "genres": [
-        "Soul",
-        "Pop",
-        "Rock",
-        "Alternative Rock",
-        "R&B",
-        "Indietronica",
-        "Electronica"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000704417758-4w7dd5-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/six60",
-      "instagram_url": "https://www.instagram.com/six60/",
-      "facebook_url": "https://www.facebook.com/Six60",
-      "mixcloud_url": null,
-      "website_url": "http://www.six60.co.nz/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.213Z",
-      "updated_at": "2026-08-30T03:48:22.853Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "summary": "Auckland-based band SIX60 blends soul, pop, rock, and electronic sounds. They have 17 mixes on SoundCloud.",
-      "summary_long": "SIX60 is a band from Auckland, New Zealand, known for their genre-crossing style that includes soul, pop, rock, alternative rock, R&B, indietronica, and electronica. They have 17 mixes available on their SoundCloud. No upcoming gigs are currently listed.",
-      "upcoming_events": 0,
+      "mix_count": 10,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -474,13 +499,13 @@
       "name": "Kukan Dub Lagan",
       "bio": "Those familiar with Kukan Dub Lagan tunes will know this project is much more than just chill music. Itay fuses dub, world, <span class=\"peekaboo-text\">down-tempo, funk and the indescribable to create a unique journey full of groove, bass and soulful sounds. In simpler words “sunshine music for smiling people”!! ‘</span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
       "genres": [
-        "Kukan Dub Lagan",
         "Dub",
+        "Kukan Dub Lagan",
         "Chill Out",
-        "Downtempo",
         "Spiritual",
-        "World",
+        "Downtempo",
         "Electronica",
+        "World",
         "Ambient"
       ],
       "city": "Wellington",
@@ -514,6 +539,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 23,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -562,6 +589,8 @@
       "summary": "Wellington DJ playing disco, house, techno. One mix on SoundCloud, no upcoming gigs.",
       "summary_long": "Groove City is a Wellington-based DJ with a focus on disco, boogie, electronic, and house genres, including minimal and tech house. They have one mix available on SoundCloud and have recently shared the stage with artists like Jimi The Kween, Sunshine, Vybe, and Restricted. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -606,6 +635,8 @@
       "summary": "Wellington DJ playing dance, house, techno, and trance. One mix on SoundCloud, no gigs listed.",
       "summary_long": "Sunset Bros is a Wellington-based DJ covering dance, house, techno, and trance. They have one mix on SoundCloud and no upcoming gigs listed. Recently played with Jimi The Kween, Sunshine, Vybe, and Restricted, and have been mentioned in two articles.",
       "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -650,6 +681,8 @@
       "summary": "Wellington DJ playing footwork, electronic, juke, and bass. Four mixes on Mixcloud.",
       "summary_long": "BBYFACEKILLA is a Wellington-based DJ focused on footwork, electronic, juke, and bass. They have four mixes on Mixcloud and have recently played alongside HIGH DEPENDENCY UNIT, ELLIOT & VINCENT, BABETECH, and Geneva AM. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 4,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -697,6 +730,56 @@
       "summary": "Wellington DJ playing jungle, experimental, indie, electronic, hip-hop, dance, and punk. 50 mixes on SoundCloud.",
       "summary_long": "Trials is a Wellington-based DJ with a genre-spanning style from jungle to punk. They have 50 mixes on SoundCloud and have recently played with Jimi The Kween, Sunshine, Vybe, and Restricted. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 50,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "kora-ca",
+      "name": "Kora (CA)",
+      "bio": null,
+      "genres": [
+        "Organic House",
+        "Deep House",
+        "Downtempo",
+        "Electronica",
+        "Melodic House & Techno",
+        "Tech House",
+        "Afro House",
+        "Breaks"
+      ],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 10,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:40.347Z",
+      "updated_at": "2026-08-30T03:48:29.539Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "summary": "Wellington DJ playing organic house, deep house, downtempo, and more.",
+      "summary_long": "Kora is a Wellington-based DJ with a versatile sound spanning organic house, deep house, downtempo, electronica, melodic house and techno, tech house, Afro house, and breaks. They have recently shared the stage with artists like MiNOA, Bwoy De Bhajan, 1TRIBE↟, and SUBSET.",
+      "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -744,6 +827,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 13,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -790,6 +875,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -836,6 +923,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 7,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -873,6 +962,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -911,6 +1002,8 @@
       "summary": "9lives is an Auckland-based Hip-Hop DJ with no mixes or gigs listed yet.",
       "summary_long": "9lives is a DJ based in Auckland, New Zealand, specializing in Hip-Hop. Currently, no mixes or upcoming gigs are listed on the directory.",
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -958,6 +1051,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 18,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1007,6 +1102,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 17,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1047,6 +1144,8 @@
       "summary": "Auckland-based Electronic, Pop, and Alternative DJ with 32 SoundCloud mixes.",
       "summary_long": "LordeMusic is an Auckland-based DJ and producer working in Electronic, Pop, and Alternative genres. They have 32 mixes available on SoundCloud. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 32,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1089,52 +1188,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "sian",
-      "name": "Sian",
-      "bio": "Wellington-born techno DJ and producer who has toured internationally. Known for driving, industrial-leaning techno.",
-      "genres": [
-        "Indie Dance",
-        "Tech House",
-        "Melodic House & Techno",
-        "Electronica",
-        "Minimal",
-        "Deep Tech",
-        "Dj Tools",
-        "Acapellas"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-MvQC1Qauzv5dT53b-KyxgRA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/sian-481302499",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.djsian.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 70,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.353Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": null,
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1177,6 +1232,8 @@
       "summary": "Wellington indie rock DJ with 13 SoundCloud mixes, no upcoming gigs.",
       "summary_long": "HIGH DEPENDENCY UNIT is a Wellington-based DJ playing indie, rock, and psychedelic rock. They have 13 mixes on SoundCloud and no upcoming gigs listed. Recently shared stages with BBYFACEKILLA, ELLIOT & VINCENT, BABETECH, and Geneva AM.",
       "upcoming_events": 0,
+      "mix_count": 13,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1215,6 +1272,8 @@
       "summary": "Auckland-based Hip-Hop DJ with no mixes or gigs listed yet.",
       "summary_long": "lilbubblegum is a Hip-Hop DJ based in Auckland. No mixes or upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1262,6 +1321,8 @@
       "summary": "Wellington DJ mixing dub, hip-hop, bass, and world sounds. 12 mixes on SoundCloud.",
       "summary_long": "Bwoy De Bhajan is a Wellington-based DJ who plays dub, hip-hop, downtempo, bass, world, ambient, eclectic, and experimental music. They have 12 mixes on SoundCloud and have recently played with MiNOA, 1TRIBE↟, Shady Lady, and SUBSET. No upcoming gigs are listed.",
       "upcoming_events": 0,
+      "mix_count": 12,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1301,6 +1362,56 @@
       "summary": "Wellington-based downtempo DJ, recently played with MiNOA, Bwoy De Bhajan, 1TRIBE↟, SUBSET.",
       "summary_long": "Deep Fried Dub is a Wellington-based DJ playing downtempo. No mixes or upcoming gigs are listed yet. Recently performed alongside MiNOA, Bwoy De Bhajan, 1TRIBE↟, and SUBSET.",
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "sian",
+      "name": "Sian",
+      "bio": "Wellington-born techno DJ and producer who has toured internationally. Known for driving, industrial-leaning techno.",
+      "genres": [
+        "Indie Dance",
+        "Tech House",
+        "Melodic House & Techno",
+        "Electronica",
+        "Minimal",
+        "Deep Tech",
+        "Dj Tools",
+        "Acapellas"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-MvQC1Qauzv5dT53b-KyxgRA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/sian-481302499",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.djsian.com/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 70,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.353Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": "ok",
+      "profile_location": null,
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 4,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1346,6 +1457,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 14,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1385,6 +1498,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 43,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1425,6 +1540,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1464,6 +1581,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1507,202 +1626,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "flipthescripta",
-      "name": "FlipTheScripta",
-      "bio": null,
-      "genres": [],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-duT6ZZtiDjYXJGNj-xzXgsg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-690791248",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 50,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.382Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: West Auckland",
-      "summary": "Auckland DJ with 30 SoundCloud mixes, no listed gigs yet.",
-      "summary_long": "FlipTheScripta is based in Auckland and has uploaded 30 mixes to SoundCloud. Their genre is not specified, and no upcoming gigs are currently listed.",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "orphx",
-      "name": "Orphx",
-      "bio": null,
-      "genres": [
-        "Experimental",
-        "Electronic",
-        "Dance",
-        "Dub",
-        "Techno"
-      ],
-      "city": "hamilton",
-      "image_url": "https://i1.sndcdn.com/avatars-000597284061-m4pbnq-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/orphx",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.260Z",
-      "updated_at": "2026-08-30T03:14:56.338Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Hamilton",
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "juni",
-      "name": "Juni",
-      "bio": null,
-      "genres": [
-        "Dubstep"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-u3nxLy4oYW7ONAw6-98KdTw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/itsjunimusic",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 35,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.310Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "fairbrother",
-      "name": "Fairbrother",
-      "bio": null,
-      "genres": [
-        "Jungle",
-        "Drum and Bass"
-      ],
-      "city": "christchurch",
-      "image_url": "https://i1.sndcdn.com/avatars-8LkKNyH1dH55VhMC-EfGe9w-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/fairbrotherdnb",
-      "instagram_url": "https://www.instagram.com/fairbrother__/",
-      "facebook_url": "https://www.facebook.com/FairBrotherDnB",
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.463Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Christchurch",
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "charlie-c",
-      "name": "Charlie C",
-      "bio": null,
-      "genres": [
-        "House"
-      ],
-      "city": "Queenstown",
-      "image_url": "https://i1.sndcdn.com/avatars-iGSIBo4BWm5Lo57s-NaXKhQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/charliec_music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:26.214Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Queenstown",
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1748,6 +1673,214 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "flipthescripta",
+      "name": "FlipTheScripta",
+      "bio": null,
+      "genres": [],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-duT6ZZtiDjYXJGNj-xzXgsg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-690791248",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 50,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.382Z",
+      "updated_at": "2026-08-30T03:53:56.191Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: West Auckland",
+      "summary": "Auckland DJ with 30 SoundCloud mixes, no listed gigs yet.",
+      "summary_long": "FlipTheScripta is based in Auckland and has uploaded 30 mixes to SoundCloud. Their genre is not specified, and no upcoming gigs are currently listed.",
+      "upcoming_events": 0,
+      "mix_count": 30,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "orphx",
+      "name": "Orphx",
+      "bio": null,
+      "genres": [
+        "Experimental",
+        "Electronic",
+        "Dance",
+        "Dub",
+        "Techno"
+      ],
+      "city": "hamilton",
+      "image_url": "https://i1.sndcdn.com/avatars-000597284061-m4pbnq-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/orphx",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.260Z",
+      "updated_at": "2026-08-30T03:14:56.338Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Hamilton",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 45,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "juni",
+      "name": "Juni",
+      "bio": null,
+      "genres": [
+        "Dubstep"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-u3nxLy4oYW7ONAw6-98KdTw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/itsjunimusic",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 35,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.310Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "fairbrother",
+      "name": "Fairbrother",
+      "bio": null,
+      "genres": [
+        "Jungle",
+        "Drum and Bass"
+      ],
+      "city": "christchurch",
+      "image_url": "https://i1.sndcdn.com/avatars-8LkKNyH1dH55VhMC-EfGe9w-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/fairbrotherdnb",
+      "instagram_url": "https://www.instagram.com/fairbrother__/",
+      "facebook_url": "https://www.facebook.com/FairBrotherDnB",
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.463Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Christchurch",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "charlie-c",
+      "name": "Charlie C",
+      "bio": null,
+      "genres": [
+        "House"
+      ],
+      "city": "Queenstown",
+      "image_url": "https://i1.sndcdn.com/avatars-iGSIBo4BWm5Lo57s-NaXKhQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/charliec_music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:26.214Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Queenstown",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 3,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1789,6 +1922,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1833,6 +1968,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 25,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1875,6 +2012,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1915,6 +2054,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 75,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1954,6 +2095,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -1996,6 +2139,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2032,6 +2177,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2076,6 +2223,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 27,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2115,6 +2264,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 3,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2154,6 +2305,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 21,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2201,6 +2354,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2238,6 +2393,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2280,6 +2437,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 6,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2325,6 +2484,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 47,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2368,6 +2529,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 3,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2410,6 +2573,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 14,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2447,12 +2612,14 @@
       "summary": "Wellington DJ with no mixes or gigs listed yet, mentioned in 3 articles.",
       "summary_long": "Don Luchito is a DJ based in Wellington, New Zealand. Currently, no genres, mixes, or upcoming gigs are listed for them. They have been mentioned in three articles.",
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
       "id": "fat-freddy-s-drop",
       "name": "Fat Freddy's Drop",
-      "bio": null,
+      "bio": "Fat Freddy's Drop are a New Zealand seven-piece band formed in Wellington in 1999. Their musical style has been characterised as any combination of dub, reggae, soul, jazz, rhythm and blues, and techno. Originally a jam band formed in the late 1990s by musicians from other bands in Wellington, Fat Freddy's Drop gradually became its members' sole focus. Band members continued playing with their other respective groups—The Black Seeds, TrinityRoots, Bongmaster, and others—for much of their 20-year career. Fat Freddy's Drop are known for their improvised live performances. Songs on their studio albums are versions refined over years of playing them live in New Zealand and on tour abroad.\nThe group gained international recognition in 2003 after their single \"Midnight Marauders\" was re-distributed by record labels and DJs in Germany. The group has toured Europe nearly every year since then. The first studio album by Fat Freddy's Drop, Based on a True Story, was the first independently distributed album to reach first place in New Zealand record sales directly after release in 2005, and is the third highest-selling album by a national artist in the country's history. Based on a True Story won Best Album at the New Zealand Music Awards the same year, and remained on the top 40 New Zealand sales chart for over two years.\nFounding member Chris Faiumu died unexpectedly on 16 July 2025.",
       "genres": [
         "Electronic",
         "House"
@@ -2466,7 +2633,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
+      "data_completeness": 70,
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.093Z",
@@ -2486,6 +2653,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 8,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2528,6 +2697,8 @@
       "summary": "Christchurch DJ playing dubstep, electronic and bass, with 24 mixes online.",
       "summary_long": "Headland is a Christchurch-based DJ focused on dubstep, electronic and bass music. They have 24 mixes available on SoundCloud and Mixcloud. No upcoming gigs are currently listed, but they have been mentioned in two articles.",
       "upcoming_events": 0,
+      "mix_count": 24,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2575,6 +2746,8 @@
       "summary": "Auckland DJ spinning World, Garage, Afrobeats, Disco, Soul, Hip-Hop, Dance, Country. 40 mixes online.",
       "summary_long": "Giddy is a DJ based in Auckland, New Zealand, with a genre range spanning World, Garage, Afrobeats, Disco, Soul, Hip-Hop, Dance, and Country. They have 40 mixes available on SoundCloud and Mixcloud. No upcoming gigs are currently listed, but they have been mentioned in two articles.",
       "upcoming_events": 0,
+      "mix_count": 40,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2617,6 +2790,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 39,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2662,6 +2837,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 46,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2699,6 +2876,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2746,6 +2925,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2788,6 +2969,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2834,6 +3017,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2881,6 +3066,8 @@
       "summary": "Wellington DJ mixing hip-hop, trip-hop, pop, breaks, grime, downtempo, bass, and jazz.",
       "summary_long": "Frida is a Wellington-based DJ with a genre-spanning style that includes hip-hop, trip-hop, pop, breaks, grime, downtempo, bass, and jazz. She has six mixes available on Mixcloud and has been mentioned in one article. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 6,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2927,6 +3114,8 @@
       "summary": "Veteran Wellington DJ and radio host active since the 1980s, spanning techno to jazz.",
       "summary_long": "Dick Johnson is a veteran Wellington DJ and radio host active since the 1980s. He's a long-running figure in the local music scene, with 21 mixes on Mixcloud and Soundcloud. His genres span techno, jazz, world, ambient, disco, trip-hop, soul, and house.",
       "upcoming_events": 0,
+      "mix_count": 21,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -2974,6 +3163,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3021,6 +3212,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 42,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3061,6 +3254,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3107,6 +3302,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 63,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3147,6 +3344,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3192,6 +3391,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3233,6 +3434,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3273,6 +3476,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3320,54 +3525,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
-      "last_played_at": null
-    },
-    {
-      "id": "paige-julia",
-      "name": "Paige Julia",
-      "bio": null,
-      "genres": [
-        "Drum and Bass",
-        "140",
-        "Deep Dubstep",
-        "Grime",
-        "Breaks",
-        "UK Bass",
-        "Electronica",
-        "Melodic House & Techno"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-924604966",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 65,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:39.923Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 5,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs",
-        "multi-gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "Bandcamp: Christchurch",
-      "summary": "Wellington DJ playing drum and bass, dubstep, grime, and more. Upcoming at Carlucci Carnival.",
-      "summary_long": "Paige Julia is a Wellington-based DJ covering drum and bass, 140, deep dubstep, grime, breaks, UK bass, electronica, and melodic house and techno. She has three mixes on Mixcloud and has recently played alongside Herman Saiz, Shady Lady, Mojo Filter, and Bwoy De Bhajan. Next up is a set at Carlucci Carnival.",
-      "upcoming_events": 1,
+      "mix_count": 11,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3411,6 +3570,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3451,6 +3612,8 @@
       "summary": "Auckland DJ playing indie, pop, and alternative with 10 SoundCloud mixes.",
       "summary_long": "princesschelsea is based in Auckland and focuses on indie, pop, and alternative music. They have 10 mixes available on SoundCloud and currently have no upcoming gigs listed.",
       "upcoming_events": 0,
+      "mix_count": 10,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3493,6 +3656,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3540,44 +3705,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "leisure",
-      "name": "LEISURE",
-      "bio": null,
-      "genres": [
-        "Alternative"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-DEMlND0Ucg9jesSr-3y1lVw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/theleisurecollective",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.225Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland ",
-      "summary": "LEISURE is an Auckland-based alternative act with 17 mixes on Soundcloud.",
-      "summary_long": "LEISURE is an alternative music project based in Auckland, New Zealand. They have 17 mixes available on Soundcloud. No upcoming gigs are currently listed.",
-      "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3625,6 +3754,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 80,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3667,6 +3798,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 10,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3706,6 +3839,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3740,8 +3875,9 @@
       "discovery_note": null,
       "verification_level": 3,
       "verification_sources": [
-        "links",
         "gigs",
+        "links",
+        "location",
         "multi-source"
       ],
       "is_nz": true,
@@ -3752,6 +3888,8 @@
       "summary": "Wellington producer Maz Hermon's new house project, blending soulful, groove-focused sounds for dancefloors.",
       "summary_long": "9cups is the new house music project from Wellington producer and longtime beatmaker Maz Hermon. Their debut EP Tee Time 9pm explores soulful house with emotional resonance and subtle nostalgia, built for modern dancefloors. 9cups plays at Newtown Festival 2027.",
       "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3795,6 +3933,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 3,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3833,6 +3973,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3867,8 +4009,9 @@
       "discovery_note": null,
       "verification_level": 3,
       "verification_sources": [
-        "mixes",
         "links",
+        "location",
+        "mixes",
         "multi-source"
       ],
       "is_nz": true,
@@ -3879,6 +4022,8 @@
       "summary": "Wellington drum & bass duo, touring internationally since the mid-2000s.",
       "summary_long": "State of Mind is a Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s. They have 25 mixes on Soundcloud and no upcoming gigs listed.",
       "upcoming_events": 0,
+      "mix_count": 25,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3923,6 +4068,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -3969,6 +4116,8 @@
       "summary": "Wellington DJ and producer spinning house, boogie, disco, and more.",
       "summary_long": "Frank Booker is a Wellington-based DJ and producer known for house, boogie, and disco selections. He also does studio work and has 9 mixes on Mixcloud. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 9,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4016,6 +4165,48 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 15,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "leisure",
+      "name": "LEISURE",
+      "bio": null,
+      "genres": [
+        "Alternative"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-DEMlND0Ucg9jesSr-3y1lVw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/theleisurecollective",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.225Z",
+      "updated_at": "2026-08-30T03:53:56.191Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland ",
+      "summary": "LEISURE is an Auckland-based alternative act with 17 mixes on Soundcloud.",
+      "summary_long": "LEISURE is an alternative music project based in Auckland, New Zealand. They have 17 mixes available on Soundcloud. No upcoming gigs are currently listed.",
+      "upcoming_events": 0,
+      "mix_count": 17,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4058,6 +4249,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 5,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4105,6 +4298,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 8,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4153,6 +4348,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 2,
+      "mix_count": 5,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4199,6 +4396,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4246,6 +4445,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 11,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4286,6 +4487,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4327,6 +4530,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4371,6 +4576,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4416,6 +4623,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 35,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4455,6 +4664,8 @@
       "summary": "Auckland electronic and dance DJ with one mix on SoundCloud and no upcoming gigs listed.",
       "summary_long": "montell2099 is an Auckland-based DJ working in electronic and dance music. They have one mix available on SoundCloud and currently have no upcoming gigs listed.",
       "upcoming_events": 0,
+      "mix_count": 1,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4494,6 +4705,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4542,6 +4755,8 @@
       "summary": "Wellington DJ playing tech house, club, hip-hop, and more. 13 mixes on SoundCloud.",
       "summary_long": "Estere is a Wellington-based DJ with a genre-spanning sound that includes tech house, Jersey club, Baltimore club, electronic, hip-hop, dance, house, drum and bass, and dub. They have 13 mixes available on SoundCloud and have been mentioned in three articles, though no upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 13,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4582,6 +4797,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4627,6 +4844,8 @@
       "summary": "Wellington DJ playing garage, house, techno, and bass. Named in ULTRA NZ 2026 coverage.",
       "summary_long": "Broderbeats is a Wellington-based DJ covering genres like garage, house, drum and bass, and techno. Their name appeared in coverage of ULTRA NZ 2026, and they have two mixes on SoundCloud. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4670,6 +4889,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 11,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4713,6 +4934,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
       "last_played_at": null
     },
     {
@@ -4757,6 +4980,8 @@
       "summary": null,
       "summary_long": null,
       "upcoming_events": 1,
+      "mix_count": 6,
+      "past_gig_count": 0,
       "last_played_at": null
     }
   ],
@@ -5620,23 +5845,23 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-b44a7566bdf7",
-      "name": "Pur Techno Night 011",
-      "venue": "Afters.",
-      "starts_at": "2026-09-05T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104120/N/Pur-Techno-Night-011.utr",
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": true,
-      "dj_name": null
-    },
-    {
       "id": "earthbeat-2025",
       "name": "Earth Beat Festival 2025",
       "venue": "Kaipara, Northland",
       "starts_at": null,
       "url": "https://www.earthbeatfestival.com/music-lineup",
       "source": "earthbeat",
+      "dj_id": null,
+      "is_dj_event": true,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-b44a7566bdf7",
+      "name": "Pur Techno Night 011",
+      "venue": "Afters.",
+      "starts_at": "2026-09-05T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104120/N/Pur-Techno-Night-011.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": true,
       "dj_name": null
@@ -5939,17 +6164,6 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1417811",
-      "name": "KPOP Club Night",
-      "venue": "San Fran",
-      "starts_at": "2026-09-04T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": true,
-      "dj_name": null
-    },
-    {
       "id": "eventfinda-sitemap-d469f6e8bd1a",
       "name": "Otto Wine Club: Tiwaiwaka",
       "venue": "Otto Champagneria & Beer Hall",
@@ -5994,14 +6208,14 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-21ee5573b9c0",
-      "name": "Flyte",
+      "id": "sanfran-1417811",
+      "name": "KPOP Club Night",
       "venue": "San Fran",
-      "starts_at": "2026-11-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
-      "source": "undertheradar-venues",
+      "starts_at": "2026-09-04T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kpop-club-night-tickets-ae1417811",
+      "source": "sanfran",
       "dj_id": null,
-      "is_dj_event": false,
+      "is_dj_event": true,
       "dj_name": null
     },
     {
@@ -6027,11 +6241,11 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-58e7e427d78c",
-      "name": "Songwriters' Showcase #115",
-      "venue": "MOON",
-      "starts_at": "2026-09-06T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104387/N/Songwriters'-Showcase-#115.utr",
+      "id": "utr-venue-21ee5573b9c0",
+      "name": "Flyte",
+      "venue": "San Fran",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
       "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
@@ -6060,6 +6274,17 @@
       "dj_name": null
     },
     {
+      "id": "utr-venue-58e7e427d78c",
+      "name": "Songwriters' Showcase #115",
+      "venue": "MOON",
+      "starts_at": "2026-09-06T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104387/N/Songwriters'-Showcase-#115.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "utr-venue-45156c42cbf5",
       "name": "Moonday Quiz Hosted By Young Gho$t",
       "venue": "MOON",
@@ -6077,17 +6302,6 @@
       "starts_at": null,
       "url": "https://www.eventfinda.co.nz/2027/kevin-bridges-here-if-you-need-me2/wellington",
       "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104264",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -6126,6 +6340,17 @@
       "dj_name": null
     },
     {
+      "id": "undertheradar-104264",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "eventfinda-sitemap-31ae4a99245a",
       "name": "Songwriters' Showcase #115",
       "venue": "Moon",
@@ -6148,23 +6373,45 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-436891",
-      "name": "Flyte",
+      "id": "sanfran-1541224",
+      "name": "PRINS",
       "venue": "San Fran",
-      "starts_at": "2026-11-14T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/flyte-tickets-ae436891",
+      "starts_at": "2026-11-26T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
       "source": "sanfran",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
     },
     {
-      "id": "northern-bass-2026",
-      "name": "Northern Bass 2026",
-      "venue": "Kaiwaka, Northland",
-      "starts_at": "2026-12-30T00:00:00.000Z",
-      "url": "https://northernbass.co.nz/lineup",
-      "source": "northern-bass",
+      "id": "rogue-vagabond-102969",
+      "name": "The Racket Lounge",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-07T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1488974",
+      "name": "Old Mervs",
+      "venue": "San Fran",
+      "starts_at": "2026-11-06T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "ra-2468041",
+      "name": "Carlucci Carnival",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
       "dj_id": null,
       "is_dj_event": true,
       "dj_name": null
@@ -6181,22 +6428,11 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1415326",
-      "name": "KITA",
-      "venue": "San Fran",
-      "starts_at": "2026-09-25T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104062",
-      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
+      "id": "rogue-vagabond-104171",
+      "name": "Rory Johns And The Mystic",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-17T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
+      "starts_at": "2026-09-10T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
       "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
@@ -6214,11 +6450,11 @@
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-104171",
-      "name": "Rory Johns And The Mystic",
+      "id": "rogue-vagabond-104062",
+      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-10T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "starts_at": "2026-09-17T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
       "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
@@ -6230,6 +6466,17 @@
       "venue": "San Fran",
       "starts_at": "2026-12-11T19:00:00.000Z",
       "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1415326",
+      "name": "KITA",
+      "venue": "San Fran",
+      "starts_at": "2026-09-25T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
       "source": "sanfran",
       "dj_id": null,
       "is_dj_event": false,
@@ -6258,6 +6505,17 @@
       "dj_name": null
     },
     {
+      "id": "sanfran-436891",
+      "name": "Flyte",
+      "venue": "San Fran",
+      "starts_at": "2026-11-14T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/flyte-tickets-ae436891",
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "undertheradar-104262",
       "name": "Moonday Quiz Hosted By Young Gho$t",
       "venue": "MOON",
@@ -6269,14 +6527,14 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1488974",
-      "name": "Old Mervs",
-      "venue": "San Fran",
-      "starts_at": "2026-11-06T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
-      "source": "sanfran",
+      "id": "northern-bass-2026",
+      "name": "Northern Bass 2026",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
       "dj_id": null,
-      "is_dj_event": false,
+      "is_dj_event": true,
       "dj_name": null
     },
     {
@@ -6286,39 +6544,6 @@
       "starts_at": null,
       "url": "https://www.undertheradar.co.nz/gig/104387/Songwriters-Showcase-115.utr",
       "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1541224",
-      "name": "PRINS",
-      "venue": "San Fran",
-      "starts_at": "2026-11-26T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "ra-2468041",
-      "name": "Carlucci Carnival",
-      "venue": "Carlucci Land",
-      "starts_at": "2026-09-26T03:00:00.000Z",
-      "url": "https://ra.co/events/2468041",
-      "source": "resident-advisor",
-      "dj_id": null,
-      "is_dj_event": true,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-102969",
-      "name": "The Racket Lounge",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-07T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
-      "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null

@@ -39,6 +39,8 @@ export interface DjRow {
   is_nz: boolean;
   profile_location?: string | null;
   upcoming_events: number;
+  mix_count?: number;
+  past_gig_count?: number;
   last_played_at: string | null;
   created_at: string;
   updated_at: string;
@@ -112,6 +114,8 @@ export async function listDjs(opts: { query?: string; genre?: string; sort?: str
               d.is_nz, d.created_at, d.updated_at,
               ${completenessSql} AS data_completeness,
               (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+              (SELECT count(*) FROM dj_mixes m WHERE m.dj_id = d.id) AS mix_count,
+              (SELECT count(*) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS past_gig_count,
               (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
        FROM djs d
        WHERE ${where.join(' AND ')}
@@ -166,6 +170,8 @@ export async function getDjById(id: string): Promise<DjRow | null> {
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
             (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT count(*) FROM dj_mixes m WHERE m.dj_id = d.id) AS mix_count,
+            (SELECT count(*) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS past_gig_count,
             (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.id = $1 AND d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,
     [id],
@@ -269,6 +275,8 @@ export async function getPopularDjs(limit = 8): Promise<DjRow[]> {
   const result = await pool.query(
     `SELECT d.*, ${completenessSql} AS data_completeness,
             (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT count(*) FROM dj_mixes m WHERE m.dj_id = d.id) AS mix_count,
+            (SELECT count(*) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS past_gig_count,
             (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d
      WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE

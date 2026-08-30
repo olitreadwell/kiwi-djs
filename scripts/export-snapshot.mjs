@@ -14,6 +14,8 @@ const djs = (
             (SELECT LEAST(20, count(*)::int * 5) FROM event_djs ed WHERE ed.dj_id = d.id) +
             (SELECT LEAST(10, count(*)::int * 5) FROM dj_articles a WHERE a.dj_id = d.id) AS data_completeness,
             (SELECT count(*)::int FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT count(*)::int FROM dj_mixes m WHERE m.dj_id = d.id) AS mix_count,
+            (SELECT count(*)::int FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS past_gig_count,
             (SELECT max(e2.starts_at)::text FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,
   )

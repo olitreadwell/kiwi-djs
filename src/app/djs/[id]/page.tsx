@@ -8,6 +8,7 @@ import { SuggestForm } from '@/components/suggest-form';
 import { genrePill, topGenres } from '@/lib/genres';
 import { linkLabel, pillLabel } from '@/lib/link-labels';
 import { isNzProfileLocation } from '@/lib/locations';
+import { profileGaps, profileTier, TIER_LABELS } from '@/lib/profile-tier';
 import { pickBestLinks } from '@/lib/queries';
 import {
   buildDossier,
@@ -102,6 +103,24 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           {dj.bpm_range && <p className="mt-1 font-mono text-xs text-muted">{dj.bpm_range} BPM</p>}
         </div>
       </div>
+
+      {profileGaps(dj).length > 0 && (
+        <section className="mt-6 rounded-lg border border-edge bg-surface p-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 className="font-mono text-xs uppercase tracking-wider text-muted">
+              {TIER_LABELS[profileTier(dj)]} — help build it
+            </h2>
+            <a href="#suggest" className="font-mono text-xs text-accent hover:underline">suggest an update →</a>
+          </div>
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            {profileGaps(dj).map((gap) => (
+              <span key={gap} className="rounded-full border border-dashed border-edge px-2.5 py-0.5 font-mono text-xs text-muted">
+                missing: {gap}
+              </span>
+            ))}
+          </div>
+        </section>
+      )}
 
       {(dj.summary_long || summary) && (
         <section className="mt-8 rounded-lg border border-accent/30 bg-accent/5 p-5">
@@ -323,7 +342,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         </div>
       </details>
 
-      <details className="mt-4 rounded-lg border border-edge">
+      <details id="suggest" className="mt-4 rounded-lg border border-edge">
         <summary className="cursor-pointer px-4 py-3 font-mono text-xs uppercase tracking-wider text-muted transition-colors hover:text-accent">
           Suggest an update
         </summary>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { DjRow } from '@/lib/queries';
 import { genreAccent, genrePill, topGenres } from '@/lib/genres';
+import { profileTier, TIER_LABELS } from '@/lib/profile-tier';
 
 export function DjCard({ dj }: { dj: DjRow }) {
   const accent = genreAccent(dj.genres);
@@ -10,7 +11,12 @@ export function DjCard({ dj }: { dj: DjRow }) {
       className={`group flex flex-col justify-between rounded-lg border p-4 transition-colors ${accent}`}
     >
       <div>
-        <h3 className="text-lg font-semibold text-foreground group-hover:text-accent">{dj.name}</h3>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className="text-lg font-semibold text-foreground group-hover:text-accent">{dj.name}</h3>
+          {profileTier(dj) === 'tier1' && (
+            <span className="font-mono text-[10px] uppercase tracking-wider text-accent">{TIER_LABELS.tier1}</span>
+          )}
+        </div>
         {topGenres(dj.genres).length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
             {topGenres(dj.genres).map((genre) => (
