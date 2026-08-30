@@ -42,10 +42,15 @@ async function generateSummaries(facts: DjFacts): Promise<Summaries | null> {
   const collabText = facts.collabs.length > 0 ? `recently played with: ${facts.collabs.join(', ')}` : '';
   const labelText = facts.labels.length > 0 ? `associated with: ${facts.labels.join(', ')}` : '';
   const articleText = facts.articles > 0 ? `mentioned in ${facts.articles} article${facts.articles === 1 ? '' : 's'}` : '';
-  const location = facts.city ?? (facts.profileLocation ? cityFromLocation(facts.profileLocation) : null);
+  // The profile location is the only city we can verify — never claim the
+  // default Wellington when a profile says otherwise (or says nothing).
+  const location = facts.profileLocation ? cityFromLocation(facts.profileLocation) : null;
+  const basedText = location
+    ? `Based: ${location.replace(/\b\w/g, (char) => char.toUpperCase())}`
+    : 'Based: NZ (kiwi)';
   const factsText = [
     `Name: ${facts.name}`,
-    location ? `Based: ${location}` : '',
+    basedText,
     genreText,
     facts.bio ? `Bio: ${facts.bio}` : '',
     mixText,
