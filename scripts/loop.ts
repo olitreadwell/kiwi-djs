@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { getPool } from './lib/db.mjs';
 import { runAllScrapers } from '../src/lib/scrapers/run-all';
 import { DATASET_FIXES } from './dataset-fixes';
+import { normaliseGenres } from '../src/lib/genres';
 
 // Self-improving scrape loop.
 //
@@ -468,8 +469,23 @@ async function compactDataset(pool: ReturnType<typeof getPool>): Promise<void> {
      RETURNING id`,
   );
   const scrapes = await pool.query(`DELETE FROM scrapes WHERE started_at < now() - interval '30 days' RETURNING id`);
+  // Re-normalise stored genres every cycle: scrapers fold new tags through
+  // normaliseGenres, but this catches legacy/edge-case tags that slipped
+  // through (case variants, hashtags, compound soup).
+  const genreRows = (await pool.query(`SELECT id, genres FROM djs WHERE cardinality(genres) > 0`)).rows as Array<{
+    id: string;
+    genres: string[];
+  }>;
+  let genreFixes = 0;
+  for (const row of genreRows) {
+    const normalised = normaliseGenres(row.genres);
+    if (normalised.length !== row.genres.length || normalised.some((g, i) => g !== row.genres[i])) {
+      await pool.query(`UPDATE djs SET genres = $2 WHERE id = $1`, [row.id, normalised]);
+      genreFixes += 1;
+    }
+  }
   await pool.query('VACUUM ANALYZE');
-  log(`Compacted: ${junk.rows.length} junk candidates, ${scrapes.rows.length} stale scrape rows removed.`);
+  log(`Compacted: ${junk.rows.length} junk candidates, ${scrapes.rows.length} stale scrape rows, ${genreFixes} genre normalisations.`);
 }
 
 async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: number; totalFound: number }> {
