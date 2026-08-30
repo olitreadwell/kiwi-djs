@@ -39,6 +39,7 @@ export interface DjRow {
   upcoming_events: number;
   last_played_at: string | null;
   created_at: string;
+  updated_at: string;
   bpm_range?: string | null;
 }
 
@@ -127,6 +128,8 @@ function sortSql(sort?: string): string {
       return 'ORDER BY popularity DESC, name ASC';
     case 'recent':
       return 'ORDER BY created_at DESC, name ASC';
+    case 'updated':
+      return 'ORDER BY updated_at DESC, name ASC';
     case 'gigs':
       return 'ORDER BY upcoming_events DESC, name ASC';
     case 'completeness':
@@ -143,6 +146,8 @@ function sortDjs(rows: DjRow[], sort?: string): DjRow[] {
       return [...rows].sort((a, b) => b.popularity - a.popularity || a.name.localeCompare(b.name));
     case 'recent':
       return [...rows].sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)) || a.name.localeCompare(b.name));
+    case 'updated':
+      return [...rows].sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)) || a.name.localeCompare(b.name));
     case 'gigs':
       return [...rows].sort((a, b) => b.upcoming_events - a.upcoming_events || a.name.localeCompare(b.name));
     case 'completeness':

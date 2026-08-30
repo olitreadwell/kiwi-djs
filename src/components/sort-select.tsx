@@ -6,6 +6,7 @@ const SORTS = [
   { value: 'completeness', label: 'most info' },
   { value: 'name', label: 'name A-Z' },
   { value: 'recent', label: 'recently added' },
+  { value: 'updated', label: 'recently updated' },
   { value: 'gigs', label: 'most gigs' },
 ];
 
