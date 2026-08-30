@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { DjCard } from '@/components/dj-card';
 import type { DjRow } from '@/lib/queries';
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 36;
 
 export function DjGrid({ djs }: { djs: DjRow[] }) {
   const [visible, setVisible] = useState(PAGE_SIZE);

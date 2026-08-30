@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 export default async function EventsPage({ searchParams }: { searchParams: Promise<{ region?: string; period?: string }> }) {
   const { region, period } = await searchParams;
   const past = period === 'past';
-  const all = past ? await getPastEvents(500) : await getUpcomingEvents(200);
+  const all = past ? await getPastEvents(1500) : await getUpcomingEvents(600);
   const events = region ? all.filter((event) => event.region?.toLowerCase() === region.toLowerCase()) : all;
   const regions = [...new Set(all.map((event) => event.region).filter((value): value is string => Boolean(value)))].sort();
   const byDate = new Map<string, typeof events>();
