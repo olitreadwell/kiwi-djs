@@ -1,19 +1,29 @@
 import Link from 'next/link';
 import { DjCard } from '@/components/dj-card';
 import { SearchBox } from '@/components/search-box';
-import { getPopularDjs, getUpcomingEvents, getGenres, listDjs } from '@/lib/queries';
+import { getEventLineup, getPopularDjs, getUpcomingEvents, getGenres, getWeekendEvents, listDjs } from '@/lib/queries';
 import { hasSpecificGenre } from '@/lib/genres';
 
 export const dynamic = 'force-dynamic';
 
 export default async function HomePage() {
-  const [popular, events, genres, all] = await Promise.all([
+  const [popular, events, genres, all, weekend] = await Promise.all([
     getPopularDjs(8),
     getUpcomingEvents(5),
     getGenres(),
     listDjs(),
+    getWeekendEvents(30),
   ]);
   const listed = all.filter((dj) => hasSpecificGenre(dj.genres));
+  const weekendLineups = await Promise.all(weekend.map((event) => getEventLineup(event.id)));
+  const lineupByEvent = new Map(weekend.map((event, index) => [event.id, weekendLineups[index]]));
+  const weekendByDay = new Map<string, typeof weekend>();
+  for (const event of weekend) {
+    const day = new Date(event.starts_at).toDateString();
+    const bucket = weekendByDay.get(day) ?? [];
+    bucket.push(event);
+    weekendByDay.set(day, bucket);
+  }
 
   return (
     <div className="mx-auto max-w-6xl px-4">
@@ -35,6 +45,49 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {weekend.length > 0 && (
+        <section className="pb-16">
+          <div className="mb-4 flex items-end justify-between">
+            <h2 className="text-2xl font-bold text-foreground">Who&apos;s playing this weekend</h2>
+            <Link href="/events" className="font-mono text-xs text-accent hover:underline">calendar →</Link>
+          </div>
+          <div className="space-y-6">
+            {[...weekendByDay.entries()].map(([day, dayEvents]) => (
+              <div key={day}>
+                <h3 className="font-mono text-xs uppercase tracking-wider text-accent">
+                  {new Date(day).toLocaleDateString('en-NZ', { weekday: 'long', day: 'numeric', month: 'long' })}
+                </h3>
+                <ul className="mt-3 divide-y divide-edge rounded-lg border border-edge">
+                  {dayEvents.map((event) => (
+                    <li key={event.id} className="px-4 py-3">
+                      <div className="flex items-center justify-between gap-4">
+                        <Link href={`/events/${event.id}`} className="text-sm text-foreground transition-colors hover:text-accent">
+                          {event.name}
+                        </Link>
+                        <p className="font-mono text-xs text-muted">{event.venue ?? 'TBC'}</p>
+                      </div>
+                      {lineupByEvent.get(event.id) && lineupByEvent.get(event.id)!.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                          {lineupByEvent.get(event.id)!.map((dj) => (
+                            <Link
+                              key={dj.id}
+                              href={`/djs/${dj.id}`}
+                              className="rounded-full border border-edge px-2.5 py-0.5 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
+                            >
+                              {dj.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="pb-16">
         <div className="mb-4 flex items-end justify-between">
           <h2 className="text-2xl font-bold text-foreground">Popular right now</h2>
@@ -54,7 +107,9 @@ export default async function HomePage() {
           {events.map((event) => (
             <li key={event.id} className="flex items-center justify-between gap-4 px-4 py-3">
               <div>
-                <p className="text-sm text-foreground">{event.name}</p>
+                <Link href={`/events/${event.id}`} className="text-sm text-foreground transition-colors hover:text-accent">
+                  {event.name}
+                </Link>
                 <p className="font-mono text-xs text-muted">
                   {event.venue ?? 'TBC'} · {new Date(event.starts_at).toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric', month: 'short' })}
                 </p>

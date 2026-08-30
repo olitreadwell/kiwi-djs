@@ -6,6 +6,7 @@ import { MixList } from '@/components/mix-list';
 import { MixEmbed } from '@/components/mix-embed';
 import { SuggestForm } from '@/components/suggest-form';
 import { topGenres } from '@/lib/genres';
+import { linkLabel } from '@/lib/link-labels';
 import {
   buildDossier,
   getDjArticles,
@@ -21,32 +22,11 @@ import {
 
 export const dynamic = 'force-dynamic';
 
-const TYPE_LABELS: Record<string, string> = {
-  soundcloud: 'SoundCloud',
-  mixcloud: 'Mixcloud',
-  instagram: 'Instagram',
-  facebook: 'Facebook',
-  website: 'Website',
-  spotify: 'Spotify',
-  bandcamp: 'Bandcamp',
-  'resident-advisor': 'Resident Advisor',
-  twitter: 'Twitter / X',
-  youtube: 'YouTube',
-  discogs: 'Discogs',
-  tiktok: 'TikTok',
-  mastodon: 'Mastodon',
-  threads: 'Threads',
-  radio: 'Radio',
-  festival: 'Festival',
-  news: 'News',
-  'other databases': 'Other databases',
-  'free streaming': 'Free streaming',
-  'purchase for download': 'Download',
-  streaming: 'Streaming',
-  'social network': 'Social',
-  wikidata: 'Wikidata',
-  allmusic: 'AllMusic',
-  myspace: 'MySpace',
+const EVIDENCE_LABELS: Record<string, string> = {
+  mixes: 'Mixes',
+  links: 'Links',
+  articles: 'News coverage',
+  gigs: 'Gigs',
 };
 
 export default async function DjProfilePage({ params }: { params: Promise<{ id: string }> }) {
@@ -101,12 +81,32 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
               ? `last played ${new Date(dj.last_played_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}`
               : 'last played: unknown'}
           </p>
-          <p className="mt-1 text-emerald-400">
-            {dj.verification_level >= 2
-              ? `verified · ${dj.verification_sources.join(' + ')}`
-              : dj.verification_level === 1
-                ? 'listed · needs more sources'
-                : 'candidate · unverified'}
+          <p className="mt-1">
+            <span
+              className={
+                dj.verification_level >= 2
+                  ? 'text-emerald-400'
+                  : dj.verification_level === 1
+                    ? 'text-amber-400'
+                    : 'text-faint'
+              }
+            >
+              {dj.verification_level >= 2 ? '✓ verified' : dj.verification_level === 1 ? 'listed' : 'candidate'}
+            </span>
+            {dj.verification_sources.length > 0 && (
+              <details className="mt-1 inline-block align-middle">
+                <summary className="ml-2 inline-block cursor-pointer font-mono text-xs text-faint transition-colors hover:text-accent">
+                  evidence
+                </summary>
+                <ul className="mt-1 space-y-0.5">
+                  {dj.verification_sources.map((source) => (
+                    <li key={source} className="text-faint">
+                      {EVIDENCE_LABELS[source] ?? source}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
           </p>
           <p className="mt-1 text-faint">source: {dj.source}</p>
         </div>
@@ -142,9 +142,17 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
               rel="noopener noreferrer"
               className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
             >
-              {link.label ?? TYPE_LABELS[link.type] ?? link.type} ↗
+              {linkLabel(link.type, link.label)} ↗
             </a>
           ))}
+          {links.length > 0 && (
+            <Link
+              href={`/djs/${dj.id}/links`}
+              className="rounded-full border border-accent px-3 py-1 font-mono text-xs text-accent transition-colors hover:bg-accent hover:text-background"
+            >
+              all links →
+            </Link>
+          )}
         </div>
       )}
 
@@ -286,7 +294,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
               {links.map((link) => (
                 <li key={link.id}>
                   <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent">
-                    {TYPE_LABELS[link.type] ?? link.type}: {link.url}
+                    {linkLabel(link.type, link.label)}: {link.url}
                   </a>
                 </li>
               ))}

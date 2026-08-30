@@ -450,13 +450,126 @@ export interface VenueRow {
   name: string;
   address: string | null;
   url: string | null;
+  region: string | null;
 }
 
 export async function getVenues(): Promise<VenueRow[]> {
   if (!isDbMode) return (snapshot.venues as VenueRow[] | undefined) ?? [];
   const pool = getPool();
-  const result = await pool.query('SELECT id, name, address, url FROM venues ORDER BY name');
+  const result = await pool.query('SELECT id, name, address, url, region FROM venues ORDER BY name');
   return result.rows as VenueRow[];
+}
+
+export interface VenueWithCounts extends VenueRow {
+  upcoming_events: number;
+}
+
+export async function getVenuesWithCounts(): Promise<VenueWithCounts[]> {
+  if (!isDbMode) {
+    const now = Date.now();
+    return (snapshot.venues as VenueRow[]).map((venue) => ({
+      ...venue,
+      upcoming_events: (snapshot.events as EventRow[]).filter(
+        (event) => event.venue?.toLowerCase() === venue.name.toLowerCase() && event.starts_at && new Date(event.starts_at).getTime() > now,
+      ).length,
+    }));
+  }
+  const pool = getPool();
+  const result = await pool.query(
+    `SELECT v.id, v.name, v.address, v.url, v.region,
+            (SELECT count(*) FROM events e WHERE e.venue = v.name AND e.starts_at > now()) AS upcoming_events
+     FROM venues v ORDER BY v.name`,
+  );
+  return result.rows as VenueWithCounts[];
+}
+
+export async function getVenueById(id: string): Promise<VenueRow | null> {
+  if (!isDbMode) {
+    return (snapshot.venues as VenueRow[]).find((venue) => venue.id === id) ?? null;
+  }
+  const pool = getPool();
+  const result = await pool.query('SELECT id, name, address, url, region FROM venues WHERE id = $1', [id]);
+  return (result.rows[0] as VenueRow) ?? null;
+}
+
+export async function getVenueEvents(venueName: string, limit = 30): Promise<EventRow[]> {
+  if (!isDbMode) {
+    const now = Date.now();
+    return (snapshot.events as EventRow[])
+      .filter((event) => event.venue?.toLowerCase() === venueName.toLowerCase() && event.starts_at && new Date(event.starts_at).getTime() > now)
+      .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
+      .slice(0, limit);
+  }
+  const pool = getPool();
+  const result = await pool.query(
+    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
+     FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
+     WHERE e.venue ILIKE $1 AND e.starts_at > now()
+     ORDER BY e.starts_at ASC LIMIT $2`,
+    [venueName, limit],
+  );
+  return result.rows as EventRow[];
+}
+
+export async function getEventById(id: string): Promise<EventRow | null> {
+  if (!isDbMode) {
+    return (snapshot.events as EventRow[]).find((event) => event.id === id) ?? null;
+  }
+  const pool = getPool();
+  const result = await pool.query(
+    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
+     FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
+     WHERE e.id = $1`,
+    [id],
+  );
+  return (result.rows[0] as EventRow) ?? null;
+}
+
+export async function getEventLineup(eventId: string): Promise<DjRow[]> {
+  if (!isDbMode) {
+    const djById = new Map((snapshot.djs as DjRow[]).map((dj) => [dj.id, dj]));
+    const ids = ((snapshot.eventDjs ?? []) as EventDjLink[]).filter((link) => link.event_id === eventId).map((link) => link.dj_id);
+    return ids.map((djId) => djById.get(djId)).filter((dj): dj is DjRow => Boolean(dj));
+  }
+  const pool = getPool();
+  const result = await pool.query(
+    `SELECT d.*, ${completenessSql} AS data_completeness,
+            (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
+            (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
+     FROM event_djs ed JOIN djs d ON d.id = ed.dj_id
+     WHERE ed.event_id = $1 AND d.opt_out = FALSE AND d.active = TRUE
+     ORDER BY d.name ASC`,
+    [eventId],
+  );
+  return result.rows as DjRow[];
+}
+
+function endOfWeekendUtc(now = new Date()): Date {
+  const end = new Date(now);
+  const daysUntilSunday = (7 - end.getUTCDay()) % 7;
+  end.setUTCDate(end.getUTCDate() + daysUntilSunday);
+  end.setUTCHours(23, 59, 59, 999);
+  return end;
+}
+
+export async function getWeekendEvents(limit = 60): Promise<EventRow[]> {
+  if (!isDbMode) {
+    const now = Date.now();
+    const end = endOfWeekendUtc().getTime();
+    return (snapshot.events as EventRow[])
+      .filter((event) => event.starts_at && new Date(event.starts_at).getTime() > now && new Date(event.starts_at).getTime() <= end)
+      .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
+      .slice(0, limit);
+  }
+  const pool = getPool();
+  const result = await pool.query(
+    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
+     FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
+     WHERE e.starts_at > now() AND e.starts_at <= $1
+     ORDER BY e.starts_at ASC LIMIT $2`,
+    [endOfWeekendUtc().toISOString(), limit],
+  );
+  return result.rows as EventRow[];
 }
 
 export async function getSimilarDjs(djId: string, limit = 6): Promise<SimilarDjRow[]> {
