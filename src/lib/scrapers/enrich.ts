@@ -7,7 +7,7 @@ import { enrichBandcamp } from './bandcamp';
 import { enrichBeatport } from './beatport';
 import { upsertDjLink } from './links';
 import { isGenreTag, normaliseGenres } from '../genres';
-import { isNzLocation } from '../locations';
+import { isNzLocation, NZ_CITIES } from '../locations';
 export { upsertDjLink };
 import type { ScrapeResult } from './types';
 
@@ -93,6 +93,17 @@ async function recordProfileLocation(
   if (!display) return;
   await pool.query(`UPDATE djs SET profile_location = COALESCE(profile_location, $2) WHERE id = $1`, [djId, display]);
   if (isNzLocation(city, country, countryCode)) {
+    // A profile that names a known NZ city also fixes the default
+    // Wellington city (#126) — e.g. a Mixcloud profile saying "Auckland"
+    // must never be shown as a Wellington DJ.
+    const named = city?.trim().toLowerCase();
+    if (named && NZ_CITIES.has(named)) {
+      const canonical = named
+        .split(/\s+/)
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+      await pool.query(`UPDATE djs SET city = $2 WHERE id = $1 AND city ILIKE 'wellington'`, [djId, canonical]);
+    }
     await pool.query(
       `UPDATE djs SET verification_sources = (SELECT array_agg(DISTINCT g) FROM unnest(verification_sources || ARRAY['location']) AS g) WHERE id = $1`,
       [djId],
@@ -130,6 +141,10 @@ export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResul
       if (!item.audio_length || item.audio_length < 60) continue;
       found += 1;
       await upsertDjMix(pool, dj.id, 'mixcloud', item.name, item.url, classifyMixTitle(item.name));
+      // Record where the Mixcloud profile says the artist is based — without
+      // this, a DJ whose Mixcloud says "Auckland" keeps the default
+      // Wellington city (#126).
+      await recordProfileLocation(pool, dj.id, 'Mixcloud', item.user?.city, item.user?.country);
       if (item.user?.url) {
         await upsertDjLink(pool, dj.id, 'mixcloud', item.user.url, `Mixcloud: ${item.user.name}`, item.user.follower_count, item.user.cloudcast_count);
       }
