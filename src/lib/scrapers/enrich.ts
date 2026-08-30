@@ -180,15 +180,35 @@ function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function isRelevantArticle(djName: string, item: NewsItem): boolean {
+export function isRelevantArticle(djName: string, item: NewsItem): boolean {
   const haystack = `${item.title} ${item.description}`.toLowerCase();
+  const title = item.title.toLowerCase();
   const name = djName.toLowerCase();
   const namePattern = new RegExp(`\\b${escapeRegExp(name)}\\b`);
   if (!namePattern.test(haystack)) return false;
+  // A name followed by a capitalised surname is a different person
+  // ("Sam Sutton" the footballer, not the DJ "Sam").
+  const titleWords = item.title.split(/\s+/);
+  const nameWords = name.split(' ');
+  for (let i = 0; i + nameWords.length < titleWords.length; i += 1) {
+    if (titleWords.slice(i, i + nameWords.length).join(' ').toLowerCase() !== name) continue;
+    if (/^[A-Z]/.test(titleWords[i + nameWords.length])) return false;
+  }
+  // A name used as a common noun ("The Musical", "The Journey") is not the
+  // artist — the DJ name would stand alone or carry a DJ signal.
+  if (new RegExp(`\\bthe\\s+${escapeRegExp(name)}\\b`, 'i').test(item.title)) return false;
   // The article must also sound music-shaped: Bing returns random news for
-  // common names and phrases ("The Journey", "Sam"), so require a
-  // music-context signal instead of trusting a name match alone.
-  return /\b(dj|mix|gig|music|festival|album|track|set|plays|performs|tour|band|label|release|radio|club)\b/.test(haystack);
+  // common names and phrases ("The Journey", "Sam", "Mark Knight" the
+  // cartoonist), so require a strong music-context signal instead of
+  // trusting a name match alone. Ambiguous words like "set", "plays",
+  // "tour" and "club" are excluded — they match sports and AFL news; bare
+  // "house" is excluded too ("Opera House", "White House").
+  const strongMusic = /\b(dj|deejay|disc jockey|mixes?|mixing|mixtape|remix|music|festival|album|track|single|release|producer|vinyl|gig|concert|playlist|label|record|radio show|dancefloor|techno|house music|deep house|tech house|house dj|house set|house night|drum and bass|dnb|trance|garage|dubstep|nightclub|club night|soundcloud|mixcloud|bandcamp|spotify)\b/i;
+  if (!strongMusic.test(haystack)) return false;
+  // Name in the title is a strong signal; a body-only name match needs an
+  // unambiguous music word (a DJ/mix/producer mention, not just "music").
+  if (namePattern.test(title)) return true;
+  return /\b(dj|deejay|mixes?|mixing|mixtape|remix|producer|vinyl|dancefloor|nightclub|club night|soundcloud|mixcloud|bandcamp|spotify)\b/i.test(haystack);
 }
 
 export function parseBingNewsXml(xml: string): NewsItem[] {

@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-30T02:41:31.580Z",
+  "exportedAt": "2026-08-30T02:42:38.844Z",
   "djs": [
     {
       "id": "kukan-dub-lagan",
@@ -96,7 +96,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:28.385Z",
@@ -139,7 +139,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 70,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:25.833Z",
@@ -183,7 +183,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 40,
+      "data_completeness": 50,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:25.192Z",
@@ -226,7 +226,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:47.681Z",
@@ -637,7 +637,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:40.287Z",
@@ -754,7 +754,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:25.537Z",
@@ -797,7 +797,7 @@
       "website_url": "http://www.garylucas.com/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.591Z",
@@ -1542,7 +1542,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 50,
+      "data_completeness": 60,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:25.101Z",
@@ -1706,7 +1706,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "discovered",
       "opt_out": false,
       "created_at": "2026-08-29T04:04:29.310Z",
@@ -1989,7 +1989,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:21.085Z",
@@ -2193,7 +2193,7 @@
       "website_url": null,
       "active": true,
       "popularity": 2,
-      "data_completeness": 60,
+      "data_completeness": 65,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.468Z",
@@ -2436,7 +2436,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 70,
+      "data_completeness": 75,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:15.468Z",
@@ -2926,7 +2926,7 @@
       "website_url": null,
       "active": true,
       "popularity": 2,
-      "data_completeness": 60,
+      "data_completeness": 70,
       "source": "seed",
       "opt_out": false,
       "created_at": "2026-08-29T03:51:17.871Z",
@@ -6117,6 +6117,13 @@
   ],
   "links": [
     {
+      "id": "emerson-mixcloud-890ee7b37096",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/darrenemerson/",
+      "label": "Mixcloud: DARREN EMERSON"
+    },
+    {
       "id": "frida-allmusic-6d7b0b81066c",
       "dj_id": "frida",
       "type": "allmusic",
@@ -6502,6 +6509,27 @@
       "label": "other databases"
     },
     {
+      "id": "emerson-mixcloud-cbd874dc9c84",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/DJANDRUSEMERSON/",
+      "label": "Mixcloud: DJ ANDRUS EMERSON"
+    },
+    {
+      "id": "emerson-mixcloud-98e978d5d84d",
+      "dj_id": "emerson",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/emersongomiinola/",
+      "label": "Mixcloud: Dj-Emerson El Mago Melodico"
+    },
+    {
+      "id": "lucas-mixcloud-69f0435c5e9e",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/lucas-kong2/",
+      "label": "Mixcloud: DJ LUCAS"
+    },
+    {
       "id": "concord-dawn-lyrics-b3cb804a71e7",
       "dj_id": "concord-dawn",
       "type": "lyrics",
@@ -6829,6 +6857,20 @@
       "type": "discogs",
       "url": "https://www.discogs.com/artist/719947",
       "label": null
+    },
+    {
+      "id": "lucas-mixcloud-787c0f79daa9",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/lucas-hhs/",
+      "label": "Mixcloud: Lucas"
+    },
+    {
+      "id": "lucas-mixcloud-363837585ec9",
+      "dj_id": "lucas",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/",
+      "label": "Mixcloud: Sang Lucas"
     },
     {
       "id": "paige-julia-purchase for download-8bc2ebb58c39",
@@ -11733,6 +11775,15 @@
   ],
   "articles": [
     {
+      "id": "frida-56799a1b2cacc1f4",
+      "dj_id": "frida",
+      "title": "Glow in the Dark Paint Night - Fluro Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93986f4a2f45f0a5b55189123a8bd0&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2021%2fglow-in-the-dark-paint-night-fluro-frida%2fwellington&amp;c=14940081104874254031&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2021-02-23T16:00:00.000Z",
+      "snippet": "Deciding what to buy is hard, but paying for it doesn't have to be. Laybuy lets you receive the item now and spread the payment over 6 weekly automatic instalments. No interest, no fees*."
+    },
+    {
       "id": "estere-033fa70f0843c4ea",
       "dj_id": "estere",
       "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
@@ -11740,6 +11791,168 @@
       "source": "The New Zealand Herald",
       "published_at": "2020-01-24T10:00:00.000Z",
       "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
+    },
+    {
+      "id": "frida-b31d47100fac782c",
+      "dj_id": "frida",
+      "title": "Buy Tickets to Frida",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93986f4a2f45f0a5b55189123a8bd0&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2024%2ffrida%2fwellington%2ftickets%2fcontact-details%3fguest%3dguest&amp;c=7266203712031812666&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2013-12-10T16:00:00.000Z",
+      "snippet": "Get reimbursed up to 100% of your ticket purchase (excluding Ticket Protection fees). Ticket Protection can provide cover in case of illness, redundancy, public transport delays, and more. These ..."
+    },
+    {
+      "id": "estere-a9d17e613e917f4e",
+      "dj_id": "estere",
+      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398708f654fcfaf9a4409593d0b0c&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-07-12T02:18:00.000Z",
+      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
+    },
+    {
+      "id": "estere-c0c3c6126e92dd90",
+      "dj_id": "estere",
+      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398708f654fcfaf9a4409593d0b0c&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2017-08-04T05:22:00.000Z",
+      "snippet": "As promised last month, Wellington artist Estère has rolled out her new \"digital doom dance song\" entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
+    },
+    {
+      "id": "estere-df4e8e87027a3e42",
+      "dj_id": "estere",
+      "title": "Estère at Meow in February",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398708f654fcfaf9a4409593d0b0c&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d133330&amp;c=2345521739070937742&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2020-12-14T16:00:00.000Z",
+      "snippet": "Estère announces her most extensive tour of Aotearoa yet, celebrating the release of Archetypes, due to hit the airwaves and record stores on 22 January. Radio13 described Estère’s October 2020 San ..."
+    },
+    {
+      "id": "estere-6fe740b61453d6a6",
+      "dj_id": "estere",
+      "title": "Estère: The Weta Digital Season of Late Night Gigs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398708f654fcfaf9a4409593d0b0c&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2festere-the-weta-digital-season-of-late-night-gigs%2fwellington&amp;c=10636727233728159723&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2020-03-13T17:00:00.000Z",
+      "snippet": "Estère: The Weta Digital Season of Late Night Gigs, The Weta Digital Season of The Late Night ..., Shed 6, Wellington, Wellington Region, 14 March 2020, ..."
+    },
+    {
+      "id": "broderbeats-b40913db70f09f00",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 1",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398715c6b43a8a31802780bbfe30b&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2fbroderbeats-presents-intuition-vol-1%2fwellington&amp;c=11678636275862281080&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2026-03-20T17:00:00.000Z",
+      "snippet": "Taking inspiration from Knock 2’s ‘Room 202’, K Motionz ‘Crowd Control’, and’ Fred Again’s ‘10 Weeks, 10 Songs’, broderbeats aims to replicate this atmosphere in his own series of headline shows ..."
+    },
+    {
+      "id": "broderbeats-b3e79bf6b189bdd6",
+      "dj_id": "broderbeats",
+      "title": "Broderbeats Presents Intuition Vol. 2",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398715c6b43a8a31802780bbfe30b&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102135%2fBroderbeats-Presents-Intuition-Vol-2.utr&amp;c=3206308160405922229&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-05-08T17:00:00.000Z",
+      "snippet": "After a sell out show at INTUITION Volume 1 broderbeats presents the second iteration of his live show INTUITION, a continual series that showcases his passion for high energy sets, innovative ..."
+    },
+    {
+      "id": "clova-7f8c1a667c4c9c9f",
+      "dj_id": "clova",
+      "title": "Solar Daze, Clova And RENÉE",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939879085f4037bec8b3263dd36c67&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f94732%2fSolar-Daze-Clova-And-RENE.utr&amp;c=14929666363624278837&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-02-25T16:00:00.000Z",
+      "snippet": "Catch Solar Daze, Clova, and RENÉE live at Valhalla on February 26th. Doors open at 7:30 PM, with the first act hitting the stage at 8:00 PM. Headlining the night, Solar Daze, a Pōneke-based hip ..."
+    },
+    {
+      "id": "orkestrated-c9e31471ec4a621c",
+      "dj_id": "orkestrated",
+      "title": "Orkestrated, Papa Smurf, Boogs",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93988305d84e03a60d18b9f688437e&amp;url=https%3a%2f%2fthemusic.com.au%2fgigs%2forkestrated-papa-smurf-boogs%2fpFh_osynL70&amp;c=12641460369081254358&amp;mkt=en-nz",
+      "source": "theMusic",
+      "published_at": "2026-05-01T22:00:00.000Z",
+      "snippet": "As the sun goes down, Meguiar’s MotorEx turns up After Dark on Saturday 2 May. Orkestrated, Papa Smurf and Boogs lead three hours of Melbourne sound, wild cars and fireworks. Custom builds, cruising, ..."
+    },
+    {
+      "id": "tali-9f1862ce6af7132f",
+      "dj_id": "tali",
+      "title": "Tali And Georgie Fisher at Havana in January",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939885528f4ab7849c85f398612f17&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d83686&amp;c=14364539553564639859&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2015-11-09T16:00:00.000Z",
+      "snippet": "Singer-songwriters Tali and Georgie Fisher are delighted to announce a New Zealand summer tour, travelling across the country in January. Meeting through a mutual friend amidst the vibrant street ..."
+    },
+    {
+      "id": "lucas-a0736fc7984cb6f5",
+      "dj_id": "lucas",
+      "title": "Lucas is set to make a comeback with his solo debut after a 3-year hiatus",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939887e1a74ce8927c7ce10f6e646b&amp;url=https%3a%2f%2ftimesofindia.indiatimes.com%2fentertainment%2fk-pop%2fmusic%2fnews%2flucas-is-set-to-make-a-comeback-with-his-solo-debut-after-a-3-year-hiatus%2farticleshow%2f108318181.cms&amp;c=10544631905139555414&amp;mkt=en-nz",
+      "source": "Indiatimes",
+      "published_at": "2024-03-07T21:30:00.000Z",
+      "snippet": "K-pop sensation Lucas, known for his roles in NCT U, WayV, and SuperM, is gearing up for a solo debut in April. After a hiatus following controversy and departure from NCT and WayV, Lucas is making a ..."
+    },
+    {
+      "id": "lucas-0ac5c69e7fff72b6",
+      "dj_id": "lucas",
+      "title": "Lucas Museum and Taschen Partner On Multi-Volume Visual Storytelling Collection Ahead of Opening",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939887e1a74ce8927c7ce10f6e646b&amp;url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2farticles%2flucas-museum-taschen-partner-multi-222212529.html&amp;c=2813545724210089566&amp;mkt=en-nz",
+      "source": "Yahoo",
+      "published_at": "2026-08-27T15:21:00.000Z",
+      "snippet": "The Lucas Museum of Narrative Art has partnered with art publisher Taschen to release a major new book project tracing the history of visual storytelling, timed to coincide with the museum’s grand ..."
+    },
+    {
+      "id": "lucas-0c0c1849f7e5367d",
+      "dj_id": "lucas",
+      "title": "George Lucas’ Museum Will Finally Open September 2026",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939887e1a74ce8927c7ce10f6e646b&amp;url=https%3a%2f%2fgizmodo.com%2fgeorge-lucas-museum-opening-date-los-angeles-2000685006&amp;c=2322838224704886927&amp;mkt=en-nz",
+      "source": "gizmodo",
+      "published_at": "2025-11-12T11:30:00.000Z",
+      "snippet": "Los Angeles' Lucas Museum of Narrative Art will feature more than 40,000 works, including, yes, a little bit of 'Star Wars.' Reading time 2 minutes At last, we know when George Lucas’ lavish new art ..."
+    },
+    {
+      "id": "lucas-8f3b87b2dfcf21d3",
+      "dj_id": "lucas",
+      "title": "What Spielberg, Lucas, and Coppola Got Right",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939887e1a74ce8927c7ce10f6e646b&amp;url=https%3a%2f%2fwww.theatlantic.com%2fbooks%2f2026%2f02%2fthe-real-secret-to-a-filmmakers-success%2f685934%2f&amp;c=14276791999785595462&amp;mkt=en-nz",
+      "source": "The Atlantic",
+      "published_at": "2026-02-10T08:00:00.000Z",
+      "snippet": "Steven Spielberg likes to tell a story that captures the tension between art and commerce in 1970s Hollywood: In January 1973, the young filmmaker George Lucas screened a preview of American Graffiti, ..."
+    },
+    {
+      "id": "lucas-1b9b64c12ced4d08",
+      "dj_id": "lucas",
+      "title": "Ex-NCT member Lucas ends contract with SM Entertainment",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939887e1a74ce8927c7ce10f6e646b&amp;url=https%3a%2f%2fwww.gmanetwork.com%2fnews%2fshowbiz%2fshowbizabroad%2f985194%2fex-nct-member-lucas-ends-contract-with-sm-entertainment%2fstory%2f&amp;c=11875529784478184211&amp;mkt=en-nz",
+      "source": "GMA Network",
+      "published_at": "2026-04-24T08:43:00.000Z",
+      "snippet": "Former NCT member Lucas has officially parted ways with SM Entertainment following the expiration of his exclusive contract. In a statement posted on Weverse, SM Entertainment said that the contract ..."
+    },
+    {
+      "id": "emerson-e68fbfca221f199d",
+      "dj_id": "emerson",
+      "title": "5 Wings of Fire Challenge launch with Richard Emerson",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939889d69648fe8a33f8216bee9f02&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2022%2f5-wings-of-fire-challenge-launch-with-richard-emerson%2fwellington&amp;c=14629424725145005289&amp;mkt=en-nz",
+      "source": "Eventfinda",
+      "published_at": "2022-09-14T04:30:00.000Z",
+      "snippet": "Mon 26 Sep 2022, 11:30am–9:00pm Tue 27 Sep 2022, 11:30am–9:00pm Wed 28 Sep 2022, 11:30am–9:00pm Thu 29 Sep 2022, 11:30am–9:00pm Fri 30 Sep 2022, 11:30am–9:00pm ..."
+    },
+    {
+      "id": "emerson-b694a2d9eda8982e",
+      "dj_id": "emerson",
+      "title": "Emerson’s and Harrington’s create ultimate BBQ sausage",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939889d69648fe8a33f8216bee9f02&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d123733&amp;c=9364730505040116815&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2019-11-11T16:00:00.000Z",
+      "snippet": "Two well-known Kiwi companies have collaborated to make the ultimate Kiwi BBQ sausage, using award-winning pilsner and 100% Kiwi free-range pork. Harrington’s Smallgoods from Wellington and Emersons ..."
+    },
+    {
+      "id": "serenna-dae9ea17fa82617d",
+      "dj_id": "serenna",
+      "title": "Serenna With Tragedies And Diplopoda",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93988a7e9143e5a986b864fc29ed90&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f104385%2fSerenna-With-Tragedies-And-Diplopoda.utr&amp;c=4023217233262223245&amp;mkt=en-nz",
+      "source": "Undertheradar",
+      "published_at": "2025-09-30T17:00:00.000Z",
+      "snippet": "Established in 2003, Serenna formed out of an idea to challenge the listener with unsettling themes, wrapped in a beguiling veneer. After six years of serenading audiences in Wellington and further ..."
     },
     {
       "id": "orkestrated-4bb30d314a46c3d3",
@@ -11751,6 +11964,150 @@
       "snippet": "For his latest trick, the Latin production talent takes the Melbourne bounce sound out for a spin and remixes Orkestrated, Fries & Shine and Big Nab’s appropriately titled “Melbourne Bounce.” ..."
     },
     {
+      "id": "serenna-ccf3b45492970983",
+      "dj_id": "serenna",
+      "title": "Gnarling, Western Haikus & Serenna",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93988a7e9143e5a986b864fc29ed90&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f100534%2fGnarling-Western-Haikus--Serenna.utr&amp;c=16261802539973465078&amp;mkt=en-nz",
+      "source": "Under The Radar",
+      "published_at": "2026-01-28T16:00:00.000Z",
+      "snippet": "Hey Wellington! New band here. The internet is a bit of a hell-scape now-a-days... so we thought the best way to introduce ourselves would be in person. You might already know some of us from other ..."
+    },
+    {
+      "id": "groove-city-73ff400b969c36f1",
+      "dj_id": "groove-city",
+      "title": "EXCLUSIVE: Maker Agency sign '70s funklords Groove City",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93988ea13141439171976ae79fdd3d&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fexclusive-maker-agency-sign-70s-funklords-groove-city&amp;c=5180557308233163911&amp;mkt=en-nz",
+      "source": "The Music Network",
+      "published_at": "2018-09-05T18:18:00.000Z",
+      "snippet": "Sydney-based bookers Maker Agency came down with a severe bout of Saturday Night Fever and the only cure was signing '70s inspired duo Groove City. The pair have already dominated the likes of Lost ..."
+    },
+    {
+      "id": "groove-city-5060d907dfbd7226",
+      "dj_id": "groove-city",
+      "title": "Chuck Redd: Groove City",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93988ea13141439171976ae79fdd3d&amp;url=https%3a%2f%2fwww.allaboutjazz.com%2fgroove-city-chuck-redd-dalphine-records-review-by-dan-bilawsky&amp;c=17347905817160739971&amp;mkt=en-nz",
+      "source": "Jazz",
+      "published_at": "2019-02-13T20:35:00.000Z",
+      "snippet": "How do you get into the zone, where do your thoughts travel, and what realm do you occupy when playing and recording? The answer to that multi-pronged question, while no doubt slightly different for ..."
+    },
+    {
+      "id": "groove-city-b6430c0443392d98",
+      "dj_id": "groove-city",
+      "title": "Electronic Super Joy: Groove City",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93988ea13141439171976ae79fdd3d&amp;url=https%3a%2f%2fkotaku.com%2fgames%2felectronic-super-joy-groove-city&amp;c=9892843594362463358&amp;mkt=en-nz",
+      "source": "Kotaku",
+      "published_at": "2026-07-26T00:57:00.000Z",
+      "snippet": "All the Latest Game Footage and Images from Electronic Super Joy: Groove City A sequel to Electronic Super Joy! A brave new World, ending in an Epic Boss Fight! Jump, dodge & dance among insane ..."
+    },
+    {
+      "id": "the-journey-d67481e827c6807a",
+      "dj_id": "the-journey",
+      "title": "Auckland to Wellington: It's the journey that counts",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398918aaf4c45b410a8f732f0411c&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2ftravel%2fauckland-to-wellington-its-the-journey-that-counts%2fWEPPTRZMX4IZGS6IJFH3CP45CM%2f&amp;c=6674488892220398274&amp;mkt=en-nz",
+      "source": "The New Zealand Herald",
+      "published_at": "2011-06-27T10:30:00.000Z",
+      "snippet": "Good things take time, as Danielle Wright discovers on an Overlander scenic train trip to Wellington. Britomart station in itself would have been a good daytrip for my son, Henry, who is keen on the ..."
+    },
+    {
+      "id": "mark-knight-b30fc4c076ffb61e",
+      "dj_id": "mark-knight",
+      "title": "Mark Knight’s 2025 Premiership posters revealed: Find out how to get your own copy",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939894b7584748a549f102558960eb&amp;url=https%3a%2f%2fwww.heraldsun.com.au%2fnews%2fvictoria%2fmark-knights-2025-premiership-posters-revealed%2fnews-story%2fb66d9d245dde4c092a920c321a67cd79&amp;c=15156988217211790120&amp;mkt=en-nz",
+      "source": "heraldsun.com.au",
+      "published_at": "2025-09-27T11:32:00.000Z",
+      "snippet": "Drawn by award-winning Herald Sun cartoonist Mark Knight the beloved posters have captured the champion team since 1954, raising almost $8 million for the Royal Children’s Hospital Good Friday Appeal."
+    },
+    {
+      "id": "trials-d8ede3e2bb373e3f",
+      "dj_id": "trials",
+      "title": "Open trials for the Wellington Saints",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939897901e45d9b83fcccf4d4acc4e&amp;url=https%3a%2f%2fwww.rnz.co.nz%2fnational%2fprogrammes%2fafternoons%2faudio%2f2018636883%2fopen-trials-for-the-wellington-saints&amp;c=4448862313763711224&amp;mkt=en-nz",
+      "source": "rnz",
+      "published_at": "2018-03-20T06:36:00.000Z",
+      "snippet": "The Wellington Saints basketball team is taking the unusual step of having open trials. The semi-professional Saints are two-time defending champions of the New Zealand Basketball League and the ..."
+    },
+    {
+      "id": "trials-9cc158ed6e91a9a9",
+      "dj_id": "trials",
+      "title": "Wellington Library trials new shelving system based on atua Māori",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939897901e45d9b83fcccf4d4acc4e&amp;url=https%3a%2f%2fwww.teaonews.co.nz%2f2025%2f04%2f09%2fwellington-library-trials-new-shelving-system-based-on-atua-maori%2f&amp;c=12966527386825786656&amp;mkt=en-nz",
+      "source": "teaonews",
+      "published_at": "2025-04-08T17:00:00.000Z",
+      "snippet": "A Wellington Library is trialling a new way of cataloguing its mātauranga Māori books, organising them by atua rather than by the Dewey Decimal system. The trial shelves can be found on the second ..."
+    },
+    {
+      "id": "trials-6e907945b0c47632",
+      "dj_id": "trials",
+      "title": "Wellington customers key to solar and battery trials",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939897901e45d9b83fcccf4d4acc4e&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d107896&amp;c=15784259637445423015&amp;mkt=en-nz",
+      "source": "Scoop",
+      "published_at": "2018-03-12T17:00:00.000Z",
+      "snippet": "Contact Energy and Wellington Electricity are to unveil to attendees of this year’s Downstream Technology Conference a key component behind their consumer solar and battery platform – customers. The ..."
+    },
+    {
+      "id": "trials-9e716d87b3cf1f32",
+      "dj_id": "trials",
+      "title": "Blood cancer clinical trials starting at Wellington Hospital",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a939897901e45d9b83fcccf4d4acc4e&amp;url=https%3a%2f%2fbusinessdesk.co.nz%2farticle%2fhealth%2fblood-cancer-clinical-trials-starting-at-wellington-hospital&amp;c=8483574431154075497&amp;mkt=en-nz",
+      "source": "businessdesk",
+      "published_at": "2024-07-24T18:29:00.000Z",
+      "snippet": "The Malaghan Institute is starting a phase 2 clinical trial of its CAR T-cell cancer therapy this month at Wellington Hospital.The Wellington-based medical research charity said the trial was going ..."
+    },
+    {
+      "id": "nora-en-pure-521e2a71d89d5bdb",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure Brings Purified To Seattle For A Day At Lake Union Park, And We’re Giving Away A Full VIP Experience For It",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fdancingastronaut.com%2f2026%2f08%2fnora-en-pure-brings-purified-to-seattle-for-a-day-at-lake-union-park-and-were-giving-away-a-full-vip-experience-for-it%2f&amp;c=14142040674265585509&amp;mkt=en-nz",
+      "source": "Dancing Astronaut",
+      "published_at": "2026-08-21T13:27:00.000Z",
+      "snippet": "Purified started as a radio show and grew into just about everything else. Nora En Pure has spent the last decade turning it into a weekly SiriusXM Chill fixture, ..."
+    },
+    {
+      "id": "nora-en-pure-74fe7a6135d2443b",
+      "dj_id": "nora-en-pure",
+      "title": "Electric Zoo Spotlight: Nora En Pure to debut specially curated festival stage takeover for her ‘Purified’ brand",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fsubstreammagazine.com%2f2023%2f07%2felectric-zoo-spotlight-nora-en-pure-to-debut-specially-curated-festival-stage-takeover-for-her-purified-brand%2f&amp;c=10014383823766219860&amp;mkt=en-nz",
+      "source": "Substream Magazine",
+      "published_at": "2023-07-17T07:01:00.000Z",
+      "snippet": "New York City’s leading electronic music festival, Electric Zoo returns to Randall’s Island Park this coming Labor Day Weekend, September 1st-3rd. The festival announced its 2023 Hyperspace addition, ..."
+    },
+    {
+      "id": "nora-en-pure-03098186fc76186d",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure Unveils “Pretoria”: A Euphoric Ode to Her Homeland",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fhit-channel.com%2fnora-en-pure-unveils-pretoria-a-euphoric-ode-to-her-homeland%2f&amp;c=6609967685113191640&amp;mkt=en-nz",
+      "source": "Hit-Channel",
+      "published_at": "2024-06-15T16:59:00.000Z",
+      "snippet": "After much anticipation, internationally acclaimed South African-Swiss DJ and producer, Nora En Pure, returns with her highly awaited track, “Pretoria,” now available on Enormous Tunes. This record is ..."
+    },
+    {
+      "id": "nora-en-pure-1a6ec195442bb98c",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure Releases ‘Forsaken Dream’",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fwww.forbes.com%2fsites%2flisakocay%2f2022%2f09%2f27%2fnora-en-pure-releases-forsaken-dream%2f&amp;c=636834629791548979&amp;mkt=en-nz",
+      "source": "Forbes",
+      "published_at": "2022-09-27T13:53:00.000Z",
+      "snippet": "Nora En Pure captivates audiences with her distinct sound that boasts beautiful, emotive sounds. On August 12, she did it again with the release of “Forsaken Dream.” The track precedes her latest ..."
+    },
+    {
+      "id": "nora-en-pure-756a8cd7cbc273ac",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure Talks Purified Radio Show, Upcoming Tour Plans | Billboard",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fwww.billboard.com%2fvideo%2fnora-en-pure-billboard-8258208%2f&amp;c=892336865510626221&amp;mkt=en-nz",
+      "source": "Billboard",
+      "published_at": "2018-03-23T08:48:00.000Z",
+      "snippet": "Nora En Pure chats with Billboard during Miami Music Week at SiriusXM’s “House of Chill.” A daily briefing on what matters in the music industry Send us a tip using our anonymous form. A daily ..."
+    },
+    {
+      "id": "nora-en-pure-733571f1646e985c",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure rings in 2025 with Richard Walters-assisted ‘Protected’",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fdancingastronaut.com%2f2025%2f01%2fnora-en-pure-rings-in-2025-with-richard-walters-assisted-protected%2f&amp;c=16018866344184223055&amp;mkt=en-nz",
+      "source": "Dancing Astronaut",
+      "published_at": "2025-01-10T10:21:00.000Z",
+      "snippet": "Nora En Pure, born Daniela Niederer, enters 2025 with an exceptionally crafted one-off, “Protected,” featuring UK-bred singer/songwriter Richard Walters. Once again capitalizing on the Swiss-South ..."
+    },
+    {
       "id": "dj-fitchie-05d8a7384666005e",
       "dj_id": "dj-fitchie",
       "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
@@ -11758,6 +12115,51 @@
       "source": "The Music Network",
       "published_at": "2025-07-17T19:57:00.000Z",
       "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
+    },
+    {
+      "id": "nora-en-pure-18b040596fce3069",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fwww.sfstation.com%2fnora-en-pure-e2405820&amp;c=3379149799899353293&amp;mkt=en-nz",
+      "source": "SF Station",
+      "published_at": "2026-07-03T17:00:00.000Z",
+      "snippet": "The Queen of deep house, NORA EN PURE, headlines a day party at the Napa Valley Ruins on the 4th of July! This special holiday show is going to be incredible. Support by Verbala, Elegie, G-Stav, ..."
+    },
+    {
+      "id": "nora-en-pure-44ee88eddb37863c",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure talks about ‘Us’ and the digital age",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fwww.digitaljournal.com%2farticle%2fnora-en-pure-talks-about-us-and-the-digital-age%2f&amp;c=12720927019303565662&amp;mkt=en-nz",
+      "source": "Digital Journal",
+      "published_at": "2022-06-08T10:04:00.000Z",
+      "snippet": "Nora En Pure chatted about her new track “Us,” and being an artist in the digital age. Globally renowned and adored for her cinematic soundscapes and ethereal performances, South African-born, ..."
+    },
+    {
+      "id": "nora-en-pure-ac58a83733ff45f6",
+      "dj_id": "nora-en-pure",
+      "title": "Nora En Pure - PURIFIED OPEN AIR [Final Tickets]",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9398999cf04b36bf7660945e5dae95&amp;url=https%3a%2f%2fwww.skiddle.com%2fwhats-on%2fLondon%2fThe-Cause-London%2fPurified-London---Open-Air-w-Nora-En-Pure%2f42158485%2f&amp;c=3946477100986125617&amp;mkt=en-nz",
+      "source": "Skiddle",
+      "published_at": "2026-06-20T17:00:00.000Z",
+      "snippet": "PURIFIED returns to London for a summer open air day party, for the very first time at The Cause - one of London's most popular and in-demand venues. Founded by the acclaimed Nora En Pure, PURIFIED ..."
+    },
+    {
+      "id": "shulgin-b320b6117bf43d6d",
+      "dj_id": "shulgin",
+      "title": "Ann Shulgin, 91, Who Explored Psychedelics With Her Husband, Dies",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93989a5c4b481b9688490e36dfef68&amp;url=https%3a%2f%2fwww.nytimes.com%2f2022%2f07%2f19%2fscience%2fann-shulgin-dead.html&amp;c=17427291622572149044&amp;mkt=en-nz",
+      "source": "The New York Times",
+      "published_at": "2022-07-19T13:02:00.000Z",
+      "snippet": "The couple advocated the use of hallucinogens in psychotherapy and documented their experiences with hundreds of drugs in two widely read books. By Clay Risen See more of our coverage in your search ..."
+    },
+    {
+      "id": "bwoy-de-bhajan-fecfa30606c17d34",
+      "dj_id": "bwoy-de-bhajan",
+      "title": "Bwoy De Bhajan (performer's page)",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93989da6a14bcab03680a61544bf38&amp;url=https%3a%2f%2fwww.efestivals.co.uk%2ffestivals%2fbands.php%3fb%3d100688&amp;c=14083988929867702556&amp;mkt=en-nz",
+      "source": "eFestivals",
+      "published_at": "2023-08-01T17:00:00.000Z",
+      "snippet": "Bwoy De Bhajan (band / artist / performer) forthcoming and past festivals, forthcooming shows and tickets, rumours, information, articles, photos ..."
     },
     {
       "id": "herman-saiz-99ab1a73848df87e",
@@ -14093,6 +14495,174 @@
       "title": "Technical Difficulties",
       "url": "https://soundcloud.com/myles3000/technical-difficulties",
       "platform": "soundcloud"
+    },
+    {
+      "id": "emerson-mixcloud-05e6a420adfc",
+      "dj_id": "emerson",
+      "title": "DJ Mix for John Digweed's Transitions OCT 2016",
+      "url": "https://www.mixcloud.com/darrenemerson/dj-mix-for-john-digweeds-transitions-oct-2016/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-57c15b5ed97d",
+      "dj_id": "emerson",
+      "title": "Ibiza chillout/lounge mix 2014 by Andrus Emerson",
+      "url": "https://www.mixcloud.com/DJANDRUSEMERSON/ibiza-chilloutlounge-mix-2014-by-andrus-emerson/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-eae27dba63d0",
+      "dj_id": "emerson",
+      "title": "Alejandra Guzman Mix DJ Emerson El Mago Melodico (System Music)",
+      "url": "https://www.mixcloud.com/emersongomiinola/alejandra-guzman-mix-dj-emerson-el-mago-melodico-system-music/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-33d22f9843a7",
+      "dj_id": "emerson",
+      "title": "DARREN EMERSON PRESENTS -DETONE SESSIONS 009 MIX - INTER FM JAPAN",
+      "url": "https://www.mixcloud.com/darrenemerson/darren-emerson-presents-detone-sessions-009-mix-inter-fm-japan/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-70bb7cc2a0e6",
+      "dj_id": "emerson",
+      "title": "Mix Yonics_Dj Emerson_ElMagoMelodico_SystemMusic",
+      "url": "https://www.mixcloud.com/emersongomiinola/mix-yonics_dj-emerson_elmagomelodico_systemmusic/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-20a22dcd0b82",
+      "dj_id": "emerson",
+      "title": "Mix Mega Loco Vol 5 Dj Emerson ElMagoMelodico_SystemMusic.",
+      "url": "https://www.mixcloud.com/emersongomiinola/mix-mega-loco-vol-5-dj-emerson-elmagomelodico_systemmusic/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-2e8b67e2af99",
+      "dj_id": "emerson",
+      "title": "05-RancheronesMixVol.2_Mix Banda Hits_Dj Emerson Ft Dj Velasco (System Music)",
+      "url": "https://www.mixcloud.com/emersongomiinola/05-rancheronesmixvol2_mix-banda-hits_dj-emerson-ft-dj-velasco-system-music/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-155d9cb4d1a2",
+      "dj_id": "emerson",
+      "title": "02-RancheronesMixVol.2_Mix Rancheras De Relajo_Dj Emerson Ft Dj Velasco (System Music)",
+      "url": "https://www.mixcloud.com/emersongomiinola/02-rancheronesmixvol2_mix-rancheras-de-relajo_dj-emerson-ft-dj-velasco-system-music/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "emerson-mixcloud-286ed89bcd9f",
+      "dj_id": "emerson",
+      "title": "06-Mix Alejandro Sanz Dj Elam L.G. Music",
+      "url": "https://www.mixcloud.com/emersongomiinola/06-mix-alejandro-sanz-dj-elam-lg-music/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-9b1943d98b68",
+      "dj_id": "lucas",
+      "title": "ZEnZEnZen●不仅仅是喜欢●走心●互不打扰 DJ Lucas 2K18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/zenzenzen%E4%B8%8D%E4%BB%85%E4%BB%85%E6%98%AF%E5%96%9C%E6%AC%A2%E8%B5%B0%E5%BF%83%E4%BA%92%E4%B8%8D%E6%89%93%E6%89%B0-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-56bf6183ffbb",
+      "dj_id": "lucas",
+      "title": "GucCi PraDa V5●有何不可●戒烟●习惯【Ashley专属】DJ Lucas 2k18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/gucci-prada-v5%E6%9C%89%E4%BD%95%E4%B8%8D%E5%8F%AF%E6%88%92%E7%83%9F%E4%B9%A0%E6%83%AF-ashley%E4%B8%93%E5%B1%9Edj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-c7ecffab68d1",
+      "dj_id": "lucas",
+      "title": "Astromania●Karang Guni●Ice Bell●ZEnZenZen●八神摇 ●摩托摇 Ft GucCi PraDa●Fly Away 全外文舞曲 DJ Lucas 2k18 ReMix",
+      "url": "https://www.mixcloud.com/lucas-kong2/astromaniakarang-guniice-bellzenzenzen%E5%85%AB%E7%A5%9E%E6%91%87-%E6%91%A9%E6%89%98%E6%91%87-ft-gucci-pradafly-away-%E5%85%A8%E5%A4%96%E6%96%87%E8%88%9E%E6%9B%B2-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-f887b47c26d0",
+      "dj_id": "lucas",
+      "title": "疑心病✘醉赤壁✘离人愁✘行星✘如果雨之后 DJ Lucas 2k18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/%E7%96%91%E5%BF%83%E7%97%85%E9%86%89%E8%B5%A4%E5%A3%81%E7%A6%BB%E4%BA%BA%E4%BB%87%E8%A1%8C%E6%98%9F%E5%A6%82%E6%9E%9C%E9%9B%A8%E4%B9%8B%E5%90%8E-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-929e41543d4f",
+      "dj_id": "lucas",
+      "title": "GucCi PraDa●纸短情长●戒烟●最后我们没有在一起【MouTian专属】DJ Lucas 2k18 Remix",
+      "url": "https://www.mixcloud.com/lucas-kong2/gucci-prada%E7%BA%B8%E7%9F%AD%E6%83%85%E9%95%BF%E6%88%92%E7%83%9F%E6%9C%80%E5%90%8E%E6%88%91%E4%BB%AC%E6%B2%A1%E6%9C%89%E5%9C%A8%E4%B8%80%E8%B5%B7moutian%E4%B8%93%E5%B1%9Edj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-2250f72873a9",
+      "dj_id": "lucas",
+      "title": "The Hum●Gam Gam●Church Of Hell●GucCi PraDa Special Request For AnthonyXJeremy DJ Lucas 2k18 ReMix",
+      "url": "https://www.mixcloud.com/lucas-kong2/the-humgam-gamchurch-of-hellgucci-prada-special-request-for-anthonyxjeremy-dj-lucas-2k18-remix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-0923660d9401",
+      "dj_id": "lucas",
+      "title": "『爱的故事上集メ男人KTVメ嚣张メ太阳メ我走后メDance Monkeyメ野狼Disco』2o20 Private Nonstop ReMix By DJ LuCas",
+      "url": "https://www.mixcloud.com/lucas-kong2/%E7%88%B1%E7%9A%84%E6%95%85%E4%BA%8B%E4%B8%8A%E9%9B%86%E3%83%A1%E7%94%B7%E4%BA%BAktv%E3%83%A1%E5%9A%A3%E5%BC%A0%E3%83%A1%E5%A4%AA%E9%98%B3%E3%83%A1%E6%88%91%E8%B5%B0%E5%90%8E%E3%83%A1dance-monkey%E3%83%A1%E9%87%8E%E7%8B%BCdisco2o20-private-nonstop-remix-by-dj-lucas/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-23be08a6aa9b",
+      "dj_id": "lucas",
+      "title": "STAY HOME LISTEN VINAHOUSE & FUCK U CORONA ! Vinahouse Ver2 ReMix By DJ Lucas 2o20",
+      "url": "https://www.mixcloud.com/lucas-kong2/stay-home-listen-vinahouse-fuck-u-corona-vinahouse-ver2-remix-by-dj-lucas-2o20/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-873115c2a513",
+      "dj_id": "lucas",
+      "title": "DJ Green Lantern (Rock The Bells Radio)",
+      "url": "https://www.mixcloud.com/lucas-hhs/dj-green-lantern-rock-the-bells-radio/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-433ddf256584",
+      "dj_id": "lucas",
+      "title": "『Monsterメ那女孩对我说メ心安理得メ心如止水メ你的酒馆对我打了烊メ来自天堂的魔鬼メ像鱼』2K19 Private Nonstop ReMix By DJ LuCas",
+      "url": "https://www.mixcloud.com/lucas-kong2/monster%E3%83%A1%E9%82%A3%E5%A5%B3%E5%AD%A9%E5%AF%B9%E6%88%91%E8%AF%B4%E3%83%A1%E5%BF%83%E5%AE%89%E7%90%86%E5%BE%97%E3%83%A1%E5%BF%83%E5%A6%82%E6%AD%A2%E6%B0%B4%E3%83%A1%E4%BD%A0%E7%9A%84%E9%85%92%E9%A6%86%E5%AF%B9%E6%88%91%E6%89%93%E4%BA%86%E6%A0%B7%E3%83%A1%E6%9D%A5%E4%B9%8B%E5%A4%A9%E5%A0%82%E7%9A%84%E9%AD%94%E9%AC%BC%E3%83%A1%E5%83%8F%E9%B1%BC2k19-private-nonstop-remix-by-dj-lucas/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-a2739efab8df",
+      "dj_id": "lucas",
+      "title": "DJ TED SMOOTH - PARTY MODE (94.7 THE BLOCK) 07.22.22",
+      "url": "https://www.mixcloud.com/lucas-hhs/dj-ted-smooth-party-mode-947-the-block-072222/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-40c61350bfb9",
+      "dj_id": "lucas",
+      "title": "『Stay Youngメ绿色メ雨下的瞬间メ說一句我不走了メ怎么了メ你会遇见更好的人』2K19 Private Nonstop ReMix By DJ LuCas",
+      "url": "https://www.mixcloud.com/lucas-kong2/stay-young%E3%83%A1%E7%BB%BF%E8%89%B2%E3%83%A1%E9%9B%A8%E4%B8%8B%E7%9A%84%E7%9E%AC%E9%97%B4%E3%83%A1%E5%AF%82%E5%AF%9E%E7%83%9F%E7%81%AB%E3%83%A1%E6%80%8E%E4%B9%88%E4%BA%86%E3%83%A1%E4%BD%A0%E4%BC%9A%E9%81%87%E8%A7%81%E6%9B%B4%E5%A5%BD%E7%9A%84%E4%BA%BA2k19-private-nonstop-remix-by-dj-lucas/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-ee87bf0130f2",
+      "dj_id": "lucas",
+      "title": "TECHNICIAN THE DJ - ALL CITY DAY: BRONX (ROCK THE BELLS RADIO) 08.28.21",
+      "url": "https://www.mixcloud.com/lucas-hhs/technician-the-dj-all-city-day-bronx-rock-the-bells-radio-082821/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-2369136eb2cf",
+      "dj_id": "lucas",
+      "title": "NONSTOP VIỆT MIX 2019 | Về Đây Em Lo Remix - DJ Sang Lucas mix",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/nonstop-vi%E1%BB%87t-mix-2019-v%E1%BB%81-%C4%91%C3%A2y-em-lo-remix-dj-sang-lucas-mix/",
+      "platform": "mixcloud"
+    },
+    {
+      "id": "lucas-mixcloud-479087e3417c",
+      "dj_id": "lucas",
+      "title": "Việt Mix 2019 | Ai Là Người Thương Em Remix Ft Xa em - DJ Sang Lucas mix",
+      "url": "https://www.mixcloud.com/xu%C3%A2n-sang14/vi%E1%BB%87t-mix-2019-ai-l%C3%A0-ng%C6%B0%E1%BB%9Di-th%C6%B0%C6%A1ng-em-remix-ft-xa-em-dj-sang-lucas-mix/",
+      "platform": "mixcloud"
     },
     {
       "id": "estere-soundcloud-dd7d40e5d046",
