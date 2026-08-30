@@ -47,7 +47,7 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 
 ## Loop phases
 
-- **Issues phase** (default on start): each cycle picks the highest-priority open automatable dataset issue from `scripts/dataset-fixes.ts` (duplicate merge #159/#193, stale flagging #138, junk cleanup #195, bio audit #142, completeness recalibration #140), runs the fix, and closes the issue when its acceptance criteria are met. One fix per cycle, 5-min backoff, max 6 cycles, then switches to the scrape phase.
+- **Issues phase** (default on start): each cycle audits ALL open GitHub issues into a priority + dependency-ordered queue (`.loop/queue.json`, built by `scripts/issue-queue.ts`), then works the top automatable dataset issue from `scripts/dataset-fixes.ts` (non-NZ location demote #262, duplicate merge #159/#193, stale flagging #138, junk cleanup #195, bio audit #142, completeness recalibration #140), closing it when its acceptance criteria are met. Non-automatable top issues are logged for the next agent session. One fix per cycle, 5-min backoff, max 6 cycles, then switches to the scrape phase.
 - **Scrape phase**: compact → scrape → discover → enrich → verify → snapshot → commit → push. After a scrape cycle, if any automatable dataset issue is open, the loop switches back to the issues phase.
 - Phase state lives in `.loop/phase.json`; the handoff file shows the current phase.
 - Scrapers: robots.txt-checked, 500ms+ delays, 15s timeouts, failures recorded in `scrapes` table, never fatal.
