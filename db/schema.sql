@@ -128,6 +128,10 @@ CREATE TABLE IF NOT EXISTS dj_articles (
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+-- One article per DJ per title: Bing RSS returns the same story under
+-- different URLs across runs (#37).
+CREATE UNIQUE INDEX IF NOT EXISTS idx_dj_articles_title ON dj_articles(dj_id, lower(title));
+
 CREATE TABLE IF NOT EXISTS dj_mixes (
   id            TEXT PRIMARY KEY,            -- djId-platform-slug
   dj_id         TEXT NOT NULL REFERENCES djs(id) ON DELETE CASCADE,

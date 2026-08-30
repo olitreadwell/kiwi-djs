@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-30T02:39:52.026Z",
+  "exportedAt": "2026-08-30T02:41:31.580Z",
   "djs": [
     {
       "id": "kukan-dub-lagan",
@@ -75,47 +75,6 @@
       "last_played_at": null
     },
     {
-      "id": "bbyfacekilla",
-      "name": "BBYFACEKILLA",
-      "bio": null,
-      "genres": [
-        "Footwork",
-        "Electronic",
-        "Juke",
-        "Bass"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-klzh29hkfNBHGbS2-WJuybg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/tina-klse3425",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 65,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:22.996Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "the-journey",
       "name": "The Journey",
       "bio": null,
@@ -141,14 +100,13 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:28.385Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 4,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
         "links",
-        "articles",
         "gigs"
       ],
       "is_nz": true,
@@ -185,6 +143,133 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:25.833Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "groove-city",
+      "name": "Groove City",
+      "bio": null,
+      "genres": [
+        "Disco",
+        "Boogie",
+        "Electronic",
+        "Dance",
+        "House",
+        "Minimal",
+        "Techno",
+        "Tech House"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000564701928-k2k7vg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/gcrsounds",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:25.192Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Glasgow",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "shulgin",
+      "name": "SHULGIN",
+      "bio": null,
+      "genres": [
+        "Experimental",
+        "House",
+        "Electronic",
+        "Drum and Bass",
+        "Grime",
+        "Psytrance",
+        "Deep House"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-yRCS4111EtmMJIF9-i9aymg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/tomshulgin",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:47.681Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "bbyfacekilla",
+      "name": "BBYFACEKILLA",
+      "bio": null,
+      "genres": [
+        "Footwork",
+        "Electronic",
+        "Juke",
+        "Bass"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-klzh29hkfNBHGbS2-WJuybg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/tina-klse3425",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 65,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:22.996Z",
       "updated_at": "2026-08-30T02:34:24.145Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
@@ -365,6 +450,45 @@
       "last_played_at": null
     },
     {
+      "id": "nicka35",
+      "name": "NICKA35",
+      "bio": null,
+      "genres": [
+        "Electro",
+        "Electronic",
+        "Country"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-1yifz5b0cyE5wKy6-AM2uvA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/nicka35",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 50,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:28.136Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Los Angeles",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "dirdygerdi",
       "name": "DirdyGerdi",
       "bio": null,
@@ -405,46 +529,6 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: Auckland",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "nicka35",
-      "name": "NICKA35",
-      "bio": null,
-      "genres": [
-        "Electro",
-        "Electronic",
-        "Country"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-1yifz5b0cyE5wKy6-AM2uvA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/nicka35",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 50,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:28.136Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Los Angeles",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -557,14 +641,13 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:40.287Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 4,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
         "links",
-        "articles",
         "gigs"
       ],
       "is_nz": true,
@@ -595,14 +678,93 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:24.950Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 4,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
         "links",
-        "articles",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "high-dependency-unit",
+      "name": "HIGH DEPENDENCY UNIT",
+      "bio": null,
+      "genres": [
+        "Indie",
+        "Rock",
+        "Psychedelic Rock"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/highdependencyunit",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.hdu.co.nz/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:22.962Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "mark-knight",
+      "name": "Mark Knight",
+      "bio": null,
+      "genres": [
+        "Disco",
+        "Electronic",
+        "Dance",
+        "House",
+        "Techno"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-7DSfH6ztWxU3opPO-Uz5MYg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/digital_duelist",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:25.537Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
         "gigs"
       ],
       "is_nz": true,
@@ -635,7 +797,7 @@
       "website_url": "http://www.garylucas.com/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 65,
+      "data_completeness": 60,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.591Z",
@@ -683,46 +845,6 @@
       "verification_sources": [
         "mixes",
         "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "high-dependency-unit",
-      "name": "HIGH DEPENDENCY UNIT",
-      "bio": null,
-      "genres": [
-        "Indie",
-        "Rock",
-        "Psychedelic Rock"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/highdependencyunit",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.hdu.co.nz/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 65,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:22.962Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles",
         "gigs"
       ],
       "is_nz": true,
@@ -803,48 +925,6 @@
       "verification_level": 2,
       "verification_sources": [
         "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "mark-knight",
-      "name": "Mark Knight",
-      "bio": null,
-      "genres": [
-        "Disco",
-        "Electronic",
-        "Dance",
-        "House",
-        "Techno"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-7DSfH6ztWxU3opPO-Uz5MYg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/digital_duelist",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:25.537Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles",
         "gigs"
       ],
       "is_nz": true,
@@ -1042,51 +1122,6 @@
       "last_played_at": null
     },
     {
-      "id": "groove-city",
-      "name": "Groove City",
-      "bio": null,
-      "genres": [
-        "Disco",
-        "Boogie",
-        "Electronic",
-        "Dance",
-        "House",
-        "Minimal",
-        "Techno",
-        "Tech House"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000564701928-k2k7vg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/gcrsounds",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:25.192Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Glasgow",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "christoph-el-truento",
       "name": "Christoph El truento",
       "bio": null,
@@ -1152,50 +1187,6 @@
       "verification_level": 2,
       "verification_sources": [
         "links",
-        "gigs"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "shulgin",
-      "name": "SHULGIN",
-      "bio": null,
-      "genres": [
-        "Experimental",
-        "House",
-        "Electronic",
-        "Drum and Bass",
-        "Grime",
-        "Psytrance",
-        "Deep House"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-yRCS4111EtmMJIF9-i9aymg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/tomshulgin",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:47.681Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles",
         "gigs"
       ],
       "is_nz": true,
@@ -1507,7 +1498,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 45,
+      "data_completeness": 40,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.855Z",
@@ -1715,7 +1706,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 65,
+      "data_completeness": 60,
       "source": "discovered",
       "opt_out": false,
       "created_at": "2026-08-29T04:04:29.310Z",
@@ -1882,13 +1873,12 @@
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.802Z",
-      "updated_at": "2026-08-30T02:34:24.145Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
+      "verification_level": 2,
       "verification_sources": [
         "links",
-        "articles",
         "gigs"
       ],
       "is_nz": true,
@@ -1957,63 +1947,23 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 65,
+      "data_completeness": 55,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.501Z",
-      "updated_at": "2026-08-29T11:17:07.473Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
+      "verification_level": 2,
       "verification_sources": [
         "mixes",
-        "links",
-        "articles"
+        "links"
       ],
       "is_nz": true,
       "bpm_range": null,
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: McLean, Virginia",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "dj-fitchie",
-      "name": "DJ Fitchie",
-      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
-      "genres": [
-        "Reggae",
-        "Funk",
-        "Soul",
-        "Hip-Hop"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 50,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.346Z",
-      "updated_at": "2026-08-30T02:11:38.449Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": null,
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -2043,14 +1993,13 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:21.085Z",
-      "updated_at": "2026-08-29T11:17:07.473Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 4,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
         "links",
-        "articles",
         "gigs"
       ],
       "is_nz": true,
@@ -2059,6 +2008,45 @@
       "bio_quality": null,
       "profile_location": null,
       "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
+      "id": "dj-fitchie",
+      "name": "DJ Fitchie",
+      "bio": "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
+      "genres": [
+        "Reggae",
+        "Funk",
+        "Soul",
+        "Hip-Hop"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/joedukiedjfitchie",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 45,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.346Z",
+      "updated_at": "2026-08-30T02:11:38.449Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "articles"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": "ok",
+      "profile_location": null,
+      "upcoming_events": 0,
       "last_played_at": null
     },
     {
@@ -2205,7 +2193,7 @@
       "website_url": null,
       "active": true,
       "popularity": 2,
-      "data_completeness": 65,
+      "data_completeness": 60,
       "source": "radioactive",
       "opt_out": false,
       "created_at": "2026-08-29T04:18:26.468Z",
@@ -2306,44 +2294,6 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: NZ",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "millie",
-      "name": "Millie",
-      "bio": null,
-      "genres": [
-        "Hip-Hop",
-        "Pop",
-        "Soul"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/millie-931007868",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "https://www.weirdwreckuds.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "radioactive",
-      "opt_out": false,
-      "created_at": "2026-08-29T04:18:26.622Z",
-      "updated_at": "2026-08-30T02:21:31.004Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -2486,7 +2436,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 75,
+      "data_completeness": 70,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:15.468Z",
@@ -2955,6 +2905,48 @@
       "last_played_at": null
     },
     {
+      "id": "broderbeats",
+      "name": "Broderbeats",
+      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
+      "genres": [
+        "Garage",
+        "Electronic",
+        "Dance",
+        "House",
+        "Drum and Bass",
+        "Bass",
+        "Techno"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 60,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-29T03:51:17.871Z",
+      "updated_at": "2026-08-30T02:40:54.953Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": "ok",
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "9cups",
       "name": "9cups",
       "bio": null,
@@ -3071,49 +3063,6 @@
       "last_played_at": null
     },
     {
-      "id": "broderbeats",
-      "name": "Broderbeats",
-      "bio": "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
-      "genres": [
-        "Garage",
-        "Electronic",
-        "Dance",
-        "House",
-        "Drum and Bass",
-        "Bass",
-        "Techno"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-sXKjkTFUsZfzdYif-67ftaA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/broderbeats-music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 60,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-29T03:51:17.871Z",
-      "updated_at": "2026-08-30T02:24:39.354Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "halo",
       "name": "Halo",
       "bio": null,
@@ -3210,7 +3159,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 75,
+      "data_completeness": 70,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:42.653Z",
@@ -3236,24 +3185,34 @@
   ],
   "events": [
     {
-      "id": "rogue-vagabond-102962",
-      "name": "Sunday Jazz - Cumulonimbus",
+      "id": "rogue-vagabond-102969",
+      "name": "The Racket Lounge",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-20T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102962/Sunday-Jazz---Cumulonimbus.utr",
+      "starts_at": "2026-10-07T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
       "source": "rogue-vagabond",
-      "dj_id": "cumulonimbus",
-      "dj_name": "Cumulonimbus"
+      "dj_id": null,
+      "dj_name": null
     },
     {
-      "id": "rogue-vagabond-103454",
-      "name": "Sunday Jazz - Double Take",
+      "id": "rogue-vagabond-104062",
+      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-13T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/103454/Sunday-Jazz---Double-Take.utr",
+      "starts_at": "2026-09-17T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
       "source": "rogue-vagabond",
-      "dj_id": "sunday-jazz",
-      "dj_name": "Sunday Jazz"
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "northern-bass-2026",
+      "name": "Northern Bass 2026",
+      "venue": "Kaiwaka, Northland",
+      "starts_at": "2026-12-30T00:00:00.000Z",
+      "url": "https://northernbass.co.nz/lineup",
+      "source": "northern-bass",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-104172",
@@ -3276,32 +3235,12 @@
       "dj_name": "Oscar Lavën"
     },
     {
-      "id": "rogue-vagabond-104062",
-      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-17T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104170",
-      "name": "Slow Jazz Ensemble",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-24T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104170/Slow-Jazz-Ensemble.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "slow-jazz-ensemble",
-      "dj_name": "Slow Jazz Ensemble"
-    },
-    {
-      "id": "rogue-vagabond-102969",
-      "name": "The Racket Lounge",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-07T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
-      "source": "rogue-vagabond",
+      "id": "ra-2468041",
+      "name": "Carlucci Carnival",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
       "dj_id": null,
       "dj_name": null
     },
@@ -3316,14 +3255,14 @@
       "dj_name": "Xile"
     },
     {
-      "id": "sanfran-1470011",
-      "name": "Debt Club",
+      "id": "sanfran-1477466",
+      "name": "Reece Mastin",
       "venue": "San Fran",
-      "starts_at": "2026-09-18T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/debt-club-tickets-ae1470011",
+      "starts_at": "2026-09-19T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/reece-mastin-tickets-ae1477466",
       "source": "sanfran",
-      "dj_id": "debt",
-      "dj_name": "Debt"
+      "dj_id": "reece-mastin",
+      "dj_name": "Reece Mastin"
     },
     {
       "id": "sanfran-1574004",
@@ -3346,6 +3285,16 @@
       "dj_name": null
     },
     {
+      "id": "sanfran-1470011",
+      "name": "Debt Club",
+      "venue": "San Fran",
+      "starts_at": "2026-09-18T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/debt-club-tickets-ae1470011",
+      "source": "sanfran",
+      "dj_id": "debt",
+      "dj_name": "Debt"
+    },
+    {
       "id": "sanfran-2148",
       "name": "August Burns Red",
       "venue": "San Fran",
@@ -3356,16 +3305,6 @@
       "dj_name": "August Burns Red"
     },
     {
-      "id": "undertheradar-103788",
-      "name": "Rothko Records: Mothra With Sunwraith, Crying Ivy, Scream By Tulips",
-      "venue": null,
-      "starts_at": "2026-09-11T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103788/Rothko-Records-Mothra-With-Sunwraith-Crying-Ivy-Scream-By-Tulips.utr",
-      "source": "undertheradar",
-      "dj_id": "rothko-records-mothra",
-      "dj_name": "Rothko Records: Mothra"
-    },
-    {
       "id": "sanfran-1629242",
       "name": "Mountain Boy",
       "venue": "San Fran",
@@ -3374,6 +3313,16 @@
       "source": "sanfran",
       "dj_id": "mountain-boy",
       "dj_name": "Mountain Boy"
+    },
+    {
+      "id": "undertheradar-103788",
+      "name": "Rothko Records: Mothra With Sunwraith, Crying Ivy, Scream By Tulips",
+      "venue": null,
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103788/Rothko-Records-Mothra-With-Sunwraith-Crying-Ivy-Scream-By-Tulips.utr",
+      "source": "undertheradar",
+      "dj_id": "rothko-records-mothra",
+      "dj_name": "Rothko Records: Mothra"
     },
     {
       "id": "sanfran-1603030",
@@ -3396,44 +3345,14 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1541224",
-      "name": "PRINS",
+      "id": "sanfran-436891",
+      "name": "Flyte",
       "venue": "San Fran",
-      "starts_at": "2026-11-26T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
+      "starts_at": "2026-11-14T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/flyte-tickets-ae436891",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
-    },
-    {
-      "id": "sanfran-1477466",
-      "name": "Reece Mastin",
-      "venue": "San Fran",
-      "starts_at": "2026-09-19T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/reece-mastin-tickets-ae1477466",
-      "source": "sanfran",
-      "dj_id": "reece-mastin",
-      "dj_name": "Reece Mastin"
-    },
-    {
-      "id": "sanfran-430631",
-      "name": "Uncle Acid and the Deadbeats",
-      "venue": "San Fran",
-      "starts_at": "2026-12-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1437738",
-      "name": "David Nihill - Taking Tangents Tour",
-      "venue": "San Fran",
-      "starts_at": "2026-11-29T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/david-nihill-tickets-ae1437738",
-      "source": "sanfran",
-      "dj_id": "taking-tangents",
-      "dj_name": "Taking Tangents"
     },
     {
       "id": "sanfran-1464135",
@@ -3446,11 +3365,11 @@
       "dj_name": "YĪN YĪN"
     },
     {
-      "id": "sanfran-1078519",
-      "name": "The Reytons",
+      "id": "sanfran-1541224",
+      "name": "PRINS",
       "venue": "San Fran",
-      "starts_at": "2026-12-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
+      "starts_at": "2026-11-26T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
@@ -3466,14 +3385,34 @@
       "dj_name": "Steve Hofstetter"
     },
     {
-      "id": "rogue-vagabond-104058",
-      "name": "Sunday Jazz - Oscar Lavën",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-08-30T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104058/Sunday-Jazz---Oscar-Lavn.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "sunday-jazz",
-      "dj_name": "Sunday Jazz"
+      "id": "sanfran-1078519",
+      "name": "The Reytons",
+      "venue": "San Fran",
+      "starts_at": "2026-12-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/the-reytons-tickets-ae1078519",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1437738",
+      "name": "David Nihill - Taking Tangents Tour",
+      "venue": "San Fran",
+      "starts_at": "2026-11-29T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/david-nihill-tickets-ae1437738",
+      "source": "sanfran",
+      "dj_id": "taking-tangents",
+      "dj_name": "Taking Tangents"
+    },
+    {
+      "id": "sanfran-430631",
+      "name": "Uncle Acid and the Deadbeats",
+      "venue": "San Fran",
+      "starts_at": "2026-12-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "sanfran-1221656",
@@ -3484,6 +3423,36 @@
       "source": "sanfran",
       "dj_id": "grace-petrie",
       "dj_name": "Grace Petrie"
+    },
+    {
+      "id": "rogue-vagabond-104308",
+      "name": "Bojack Funkman",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-04T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104308/Bojack-Funkman.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "bojack-funkman",
+      "dj_name": "Bojack Funkman"
+    },
+    {
+      "id": "rogue-vagabond-104058",
+      "name": "Sunday Jazz - Oscar Lavën",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-08-30T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104058/Sunday-Jazz---Oscar-Lavn.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "sunday-jazz",
+      "dj_name": "Sunday Jazz"
+    },
+    {
+      "id": "rogue-vagabond-104171",
+      "name": "Rory Johns And The Mystic",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-10T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-102968",
@@ -3506,36 +3475,6 @@
       "dj_name": "Miles Craford"
     },
     {
-      "id": "northern-bass-2026",
-      "name": "Northern Bass 2026",
-      "venue": "Kaiwaka, Northland",
-      "starts_at": "2026-12-30T00:00:00.000Z",
-      "url": "https://northernbass.co.nz/lineup",
-      "source": "northern-bass",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "ra-2468041",
-      "name": "Carlucci Carnival",
-      "venue": "Carlucci Land",
-      "starts_at": "2026-09-26T03:00:00.000Z",
-      "url": "https://ra.co/events/2468041",
-      "source": "resident-advisor",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-436891",
-      "name": "Flyte",
-      "venue": "San Fran",
-      "starts_at": "2026-11-14T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/flyte-tickets-ae436891",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
       "id": "utr-venue-2e829d445861",
       "name": "Sublimate - Wellington Jazz Festival",
       "venue": "MOON",
@@ -3556,14 +3495,14 @@
       "dj_name": " Absolutely Positively Footwork"
     },
     {
-      "id": "rogue-vagabond-104308",
-      "name": "Bojack Funkman",
+      "id": "rogue-vagabond-104059",
+      "name": "Sam Fowles And The Expierence",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-04T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104308/Bojack-Funkman.utr",
+      "starts_at": "2026-09-12T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104059/Sam-Fowles-And-The-Expierence.utr",
       "source": "rogue-vagabond",
-      "dj_id": "bojack-funkman",
-      "dj_name": "Bojack Funkman"
+      "dj_id": "sam",
+      "dj_name": "Sam"
     },
     {
       "id": "sanfran-288274",
@@ -3576,14 +3515,14 @@
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-104171",
-      "name": "Rory Johns And The Mystic",
+      "id": "rogue-vagabond-103454",
+      "name": "Sunday Jazz - Double Take",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-10T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "starts_at": "2026-09-13T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/103454/Sunday-Jazz---Double-Take.utr",
       "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
+      "dj_id": "sunday-jazz",
+      "dj_name": "Sunday Jazz"
     },
     {
       "id": "utr-venue-e85468e58aba",
@@ -3604,16 +3543,6 @@
       "source": "sanfran",
       "dj_id": null,
       "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104059",
-      "name": "Sam Fowles And The Expierence",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-12T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104059/Sam-Fowles-And-The-Expierence.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "sam",
-      "dj_name": "Sam"
     },
     {
       "id": "sanfran-1417811",
@@ -3656,14 +3585,14 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1688826",
-      "name": "Buckshot",
-      "venue": "San Fran",
-      "starts_at": "2026-12-02T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
+      "id": "rogue-vagabond-104067",
+      "name": "The New Zealand Swing Quartet - The Music Of New Orleans",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-11T21:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104067/The-New-Zealand-Swing-Quartet---The-Music-Of-New-Orleans.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "orleans",
+      "dj_name": "Orleans"
     },
     {
       "id": "utr-venue-21ee5573b9c0",
@@ -3676,14 +3605,14 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1690409",
-      "name": "Avatar - Earth, Wind & Fire Tribute",
+      "id": "sanfran-1688826",
+      "name": "Buckshot",
       "venue": "San Fran",
-      "starts_at": "2026-10-18T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/avatar-earth-wind-and-fire-tribute-tickets-ae1690409",
+      "starts_at": "2026-12-02T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
       "source": "sanfran",
-      "dj_id": "avatar",
-      "dj_name": "Avatar"
+      "dj_id": null,
+      "dj_name": null
     },
     {
       "id": "undertheradar-104079",
@@ -3806,6 +3735,36 @@
       "dj_name": null
     },
     {
+      "id": "sanfran-1690521",
+      "name": "Convergence – A Drag Night Fundraiser",
+      "venue": "San Fran",
+      "starts_at": "2026-09-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
+      "source": "sanfran",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "sanfran-1690409",
+      "name": "Avatar - Earth, Wind & Fire Tribute",
+      "venue": "San Fran",
+      "starts_at": "2026-10-18T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/avatar-earth-wind-and-fire-tribute-tickets-ae1690409",
+      "source": "sanfran",
+      "dj_id": "avatar",
+      "dj_name": "Avatar"
+    },
+    {
+      "id": "rogue-vagabond-102962",
+      "name": "Sunday Jazz - Cumulonimbus",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-20T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102962/Sunday-Jazz---Cumulonimbus.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "cumulonimbus",
+      "dj_name": "Cumulonimbus"
+    },
+    {
       "id": "eventfinda-sitemap-7f6c7ed5e55a",
       "name": "Kevin Bridges - Here If You Need Me",
       "venue": "Michael Fowler Centre",
@@ -3826,14 +3785,14 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1690521",
-      "name": "Convergence – A Drag Night Fundraiser",
-      "venue": "San Fran",
-      "starts_at": "2026-09-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
-      "source": "sanfran",
-      "dj_id": null,
-      "dj_name": null
+      "id": "rogue-vagabond-104170",
+      "name": "Slow Jazz Ensemble",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-24T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104170/Slow-Jazz-Ensemble.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "slow-jazz-ensemble",
+      "dj_name": "Slow Jazz Ensemble"
     },
     {
       "id": "eventfinda-sitemap-562ee2f8b289",
@@ -4264,16 +4223,6 @@
       "source": "northern-bass",
       "dj_id": "pearly",
       "dj_name": "PEARLY"
-    },
-    {
-      "id": "rogue-vagabond-104067",
-      "name": "The New Zealand Swing Quartet - The Music Of New Orleans",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-11T21:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104067/The-New-Zealand-Swing-Quartet---The-Music-Of-New-Orleans.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "orleans",
-      "dj_name": "Orleans"
     },
     {
       "id": "utr-venue-e7789cb0f62d",
@@ -4736,16 +4685,6 @@
       "dj_name": "ROVA"
     },
     {
-      "id": "snow-machine-2026",
-      "name": "Snow Machine 2026",
-      "venue": "Queenstown",
-      "starts_at": null,
-      "url": "https://nz.snow-machine.com/artists/",
-      "source": "snow-machine",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
       "id": "the-others-way-2025",
       "name": "The Others Way 2025",
       "venue": "Auckland",
@@ -5066,6 +5005,16 @@
       "dj_name": "Synthetic Children"
     },
     {
+      "id": "newtown-festival-2027",
+      "name": "Newtown Festival 2027",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
+      "source": "newtown-festival",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
       "id": "snow-machine-2026-kelly-tee",
       "name": "Snow Machine 2026 — Kelly Tee",
       "venue": "Queenstown",
@@ -5104,16 +5053,6 @@
       "source": "snow-machine",
       "dj_id": "lj-groove",
       "dj_name": "LJ Groove"
-    },
-    {
-      "id": "newtown-festival-2027",
-      "name": "Newtown Festival 2027",
-      "venue": "Newtown, Wellington",
-      "starts_at": "2027-03-07T00:00:00.000Z",
-      "url": "https://www.newtownfestival.org.nz/artists/",
-      "source": "newtown-festival",
-      "dj_id": null,
-      "dj_name": null
     },
     {
       "id": "undertheradar-103537",
@@ -5346,22 +5285,32 @@
       "dj_name": "Evie"
     },
     {
-      "id": "rogue-vagabond-103654",
-      "name": "Sam Manzanza's Afrobeat Band",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-08-29T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/103654/Sam-Manzanzas-Afrobeat-Band.utr",
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "dj_name": null
-    },
-    {
       "id": "earthbeat-2025",
       "name": "Earth Beat Festival 2025",
       "venue": "Kaipara, Northland",
       "starts_at": null,
       "url": "https://www.earthbeatfestival.com/music-lineup",
       "source": "earthbeat",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "snow-machine-2026",
+      "name": "Snow Machine 2026",
+      "venue": "Queenstown",
+      "starts_at": null,
+      "url": "https://nz.snow-machine.com/artists/",
+      "source": "snow-machine",
+      "dj_id": null,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-103654",
+      "name": "Sam Manzanza's Afrobeat Band",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-08-29T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/103654/Sam-Manzanzas-Afrobeat-Band.utr",
+      "source": "rogue-vagabond",
       "dj_id": null,
       "dj_name": null
     },
@@ -11784,15 +11733,6 @@
   ],
   "articles": [
     {
-      "id": "don-luchito-01862dcd12ff0faf",
-      "dj_id": "don-luchito",
-      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf5e6e94576ae661628bfbcd1cc&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2020-07-18T17:00:00.000Z",
-      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
-    },
-    {
       "id": "estere-033fa70f0843c4ea",
       "dj_id": "estere",
       "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
@@ -11800,87 +11740,6 @@
       "source": "The New Zealand Herald",
       "published_at": "2020-01-24T10:00:00.000Z",
       "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "don-luchito-f368aff247987c0b",
-      "dj_id": "don-luchito",
-      "title": "Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf5e6e94576ae661628bfbcd1cc&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2016-08-19T17:00:00.000Z",
-      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "don-luchito-3c88026c559c2a44",
-      "dj_id": "don-luchito",
-      "title": "Funk N Soul with DJ Don Luchito.",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf5e6e94576ae661628bfbcd1cc&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2015-11-06T16:00:00.000Z",
-      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "estere-1c05f6341d86aebf",
-      "dj_id": "estere",
-      "title": "Wellington Artist Estere Lets Loose 'Pro Bono Techno Zone' With Video",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9393e2a64f408babd7d074234d047f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f13006%2fWellington-Artist-Estere-Lets-Loose-Pro-Bono-Techno-Zone-With-Video.utr&amp;c=2087952119454046865&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-08-04T05:22:00.000Z",
-      "snippet": "As promised last month, Wellington artist Estère has rolled out her new \"digital doom dance song\" entitled 'Pro Bono Techno Zone'. The self-produced cut is lifted from her upcoming offering My Design, ..."
-    },
-    {
-      "id": "frida-04cac66f99f2a16f",
-      "dj_id": "frida",
-      "title": "Jazz Festival: Frida",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf84abd4e3ca05f15c02f6175ec&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-10-15T17:00:00.000Z",
-      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
-    },
-    {
-      "id": "estere-55aba42ac569999f",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "estere-6afdb904ab1e7b2b",
-      "dj_id": "estere",
-      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2020-01-24T10:00:00.000Z",
-      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "estere-1b4077323b300506",
-      "dj_id": "estere",
-      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2014-02-01T16:00:00.000Z",
-      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
-    },
-    {
-      "id": "estere-737d83faaa452a2e",
-      "dj_id": "estere",
-      "title": "Album review: Estere, My Design, On Others' Lives",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929bf9080c48c5980389015c666bea&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2falbum-review-estere-my-design-on-others-lives%2fWAVDN3Y4SJT37X36OZO466XOPY%2f&amp;c=8439857028581164344&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2018-05-02T17:00:00.000Z",
-      "snippet": "Estere's new album is a beautiful mix of everything the music world is lauding and lusting after right now. You've got African-inspired funk, hip-hop beats, richly layered production, an impressively ..."
-    },
-    {
-      "id": "sam-fd0984ab7d18c530",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c00580644febdd7de4584765508&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
     },
     {
       "id": "orkestrated-4bb30d314a46c3d3",
@@ -11892,24 +11751,6 @@
       "snippet": "For his latest trick, the Latin production talent takes the Melbourne bounce sound out for a spin and remixes Orkestrated, Fries & Shine and Big Nab’s appropriately titled “Melbourne Bounce.” ..."
     },
     {
-      "id": "tv-disko-cb69d226a5d24a8f",
-      "dj_id": "tv-disko",
-      "title": "TV Disko",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c02425444efa4b61fd93031c7c5&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-09-15T17:01:00.000Z",
-      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
-    },
-    {
-      "id": "dj-fitchie-8a4ed404fdd3f959",
-      "dj_id": "dj-fitchie",
-      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929c06787d421cbf47bf787430db7e&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
-      "source": "The Music Network",
-      "published_at": "2025-07-17T19:57:00.000Z",
-      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
-    },
-    {
       "id": "dj-fitchie-05d8a7384666005e",
       "dj_id": "dj-fitchie",
       "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
@@ -11917,87 +11758,6 @@
       "source": "The Music Network",
       "published_at": "2025-07-17T19:57:00.000Z",
       "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
-    },
-    {
-      "id": "don-luchito-fb17b67c7029429f",
-      "dj_id": "don-luchito",
-      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929de8068d461faeb0b799cf50e85f&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2020-07-18T17:00:00.000Z",
-      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
-    },
-    {
-      "id": "don-luchito-03e23b67e4c24760",
-      "dj_id": "don-luchito",
-      "title": "Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929de8068d461faeb0b799cf50e85f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2016-08-19T17:00:00.000Z",
-      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "don-luchito-29c65ba70505fdc5",
-      "dj_id": "don-luchito",
-      "title": "Funk N Soul with DJ Don Luchito.",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929de8068d461faeb0b799cf50e85f&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2015-11-06T16:00:00.000Z",
-      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "frida-6949087afba9a9a9",
-      "dj_id": "frida",
-      "title": "Jazz Festival: Frida",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dec66c9432dbc6e64fe7dcf9257&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-10-15T17:00:00.000Z",
-      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
-    },
-    {
-      "id": "estere-d07e361e5b9c12ce",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "estere-1bdeb48d1e7293fd",
-      "dj_id": "estere",
-      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2020-01-24T10:00:00.000Z",
-      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "estere-5f678b02b3c359c1",
-      "dj_id": "estere",
-      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929deedc644c0e8fe9c0137d911ce0&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2014-02-01T16:00:00.000Z",
-      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
-    },
-    {
-      "id": "tv-disko-d87a342a7947fa8c",
-      "dj_id": "tv-disko",
-      "title": "TV Disko",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df5fe544e899fb92625bdf95a4d&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-09-15T17:01:00.000Z",
-      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
-    },
-    {
-      "id": "sam-5ae1585ed04a3bff",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929df78a374966b597d2ad5b2f4475&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
     },
     {
       "id": "herman-saiz-99ab1a73848df87e",
@@ -12018,15 +11778,6 @@
       "snippet": "We're thrilled to have the one and only CLOVA host the release party for the B side of her debut album, SPIRAL. A celebrate pioneer of sonics in our city, she is a unique talent with a forward-looking ..."
     },
     {
-      "id": "musical-9fe403592769ca5f",
-      "dj_id": "musical",
-      "title": "Menopause The Musical at Positively Wellington, Opera House",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929dfb698e459e9b49d27da0ba60d8&amp;url=https%3a%2f%2fwww.broadwayworld.com%2fnew-zealand%2fregional%2fMenopause-The-Musical-161667&amp;c=6268371732042340427&amp;mkt=en-nz",
-      "source": "BroadwayWorld",
-      "published_at": "2016-08-24T17:00:00.000Z",
-      "snippet": "What’s a hot flush between friends!? Frickin’ hilarious that’s what! Ladies – and brave men keen to avoid domestic meltdowns by not attending – MENOPAUSE THE MUSICAL is set to pour more blood, sweat ..."
-    },
-    {
       "id": "emerson-7acc832978702657",
       "dj_id": "emerson",
       "title": "Emerson- \"Leap! on Tour\"",
@@ -12045,451 +11796,10 @@
       "snippet": "After slaving away at a leisurely pace for a year in Lyall Bay, dynamic Wellington rock five-piece The Blue Summer finally has something to show for their toil. Engineered by scene veteran Peter ..."
     },
     {
-      "id": "don-luchito-8f5bd652da5c9e75",
-      "dj_id": "don-luchito",
-      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fd8f7934a2d9c3b459b5e7136bb&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2020-07-18T17:00:00.000Z",
-      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
-    },
-    {
-      "id": "don-luchito-c91b4d9ccc552ebc",
-      "dj_id": "don-luchito",
-      "title": "Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fd8f7934a2d9c3b459b5e7136bb&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2016-08-19T17:00:00.000Z",
-      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "don-luchito-2c785fe7a3634436",
-      "dj_id": "don-luchito",
-      "title": "Funk N Soul with DJ Don Luchito.",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fd8f7934a2d9c3b459b5e7136bb&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2015-11-06T16:00:00.000Z",
-      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "estere-99fd6d149a945d3a",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fdc3cdb4b48a00d59f1e26c7d19&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "estere-acb87cd197ef9078",
-      "dj_id": "estere",
-      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fdc3cdb4b48a00d59f1e26c7d19&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2020-01-24T10:00:00.000Z",
-      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "estere-3bc4d4368c639f7c",
-      "dj_id": "estere",
-      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fdc3cdb4b48a00d59f1e26c7d19&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2014-02-01T16:00:00.000Z",
-      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
-    },
-    {
-      "id": "frida-358d8c0ad3d73b3b",
-      "dj_id": "frida",
-      "title": "Jazz Festival: Frida",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fddfd964234aa1b10d0f1fb7805&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-10-15T17:00:00.000Z",
-      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
-    },
-    {
-      "id": "clova-fd0e666e82412a55",
-      "dj_id": "clova",
-      "title": "Clova: Spiral B Side Release Party",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fe397404126a9d89c902cdcbb27&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102417%2fClova-Spiral-B-Side-Release-Party.utr&amp;c=2770393012493913114&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2026-05-28T17:00:00.000Z",
-      "snippet": "We're thrilled to have the one and only CLOVA host the release party for the B side of her debut album, SPIRAL. A celebrate pioneer of sonics in our city, she is a unique talent with a forward-looking ..."
-    },
-    {
-      "id": "herman-saiz-ca8a46fb7ce2551b",
-      "dj_id": "herman-saiz",
-      "title": "Morning Rave - Herman Saiz",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fe56fca46a8adce5c5546b6ceb0&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f57363%2fMorning-Rave---Herman-Saiz.utr&amp;c=15584981201017345094&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-11-07T16:00:00.000Z",
-      "snippet": "Morning People are proud to present progressive tech maestro Herman Saiz (Agua y Sed, Aprapta, Tempura and Leuchtturm Records) Squeezed between dates in South America and Bali, DJ, producer and cosmic ..."
-    },
-    {
-      "id": "serenna-e101927bc3643fa3",
-      "dj_id": "serenna",
-      "title": "The Blue Summer EP Release w/ Serenna",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fe710d04dcc978a7a56a5c1c556&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f101185%2fThe-Blue-Summer-EP-Release-w-Serenna.utr&amp;c=13983016515648085948&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2026-04-09T17:00:00.000Z",
-      "snippet": "After slaving away at a leisurely pace for a year in Lyall Bay, dynamic Wellington rock five-piece The Blue Summer finally has something to show for their toil. Engineered by scene veteran Peter ..."
-    },
-    {
-      "id": "emerson-21bef0df93f2754a",
-      "dj_id": "emerson",
-      "title": "Emerson- \"Leap! on Tour\"",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fe8fb8b4135b6eab731ecdc78b0&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2femerson-leap-on-tour%2fwellington&amp;c=520751472391549312&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2026-07-14T17:22:00.000Z",
-      "snippet": "Following a breakout two years that saw her win the 2024 Smokefree Rockquest Solo/Duo Award, earn editorial support from Spotify and Apple Music, and feature in Rolling Stone AU/NZ, Auckland alt-pop ..."
-    },
-    {
-      "id": "musical-133b3c100aecf321",
-      "dj_id": "musical",
-      "title": "Menopause The Musical at Positively Wellington, Opera House",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929feacf284315aa49ab6a0cd2f85c&amp;url=https%3a%2f%2fwww.broadwayworld.com%2fnew-zealand%2fregional%2fMenopause-The-Musical-161667&amp;c=6268371732042340427&amp;mkt=en-nz",
-      "source": "BroadwayWorld",
-      "published_at": "2016-08-24T17:00:00.000Z",
-      "snippet": "What’s a hot flush between friends!? Frickin’ hilarious that’s what! Ladies – and brave men keen to avoid domestic meltdowns by not attending – MENOPAUSE THE MUSICAL is set to pour more blood, sweat ..."
-    },
-    {
-      "id": "don-luchito-6186b0028fd4cb2e",
-      "dj_id": "don-luchito",
-      "title": "Funk N Soul with DJ Don Luchito.",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af7a11e94e6496b20a934d546e55&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2015-11-06T16:00:00.000Z",
-      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "tv-disko-2b2cb3de7f5b242b",
-      "dj_id": "tv-disko",
-      "title": "TV Disko",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fec245941acbc94c3f61da6d8df&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-09-15T17:01:00.000Z",
-      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
-    },
-    {
-      "id": "sam-89481e8126c2e91b",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fedc21a4e0f8319b7d13030f71f&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
-    },
-    {
-      "id": "sam-fdef857845403ad5",
-      "dj_id": "sam",
-      "title": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929fedc21a4e0f8319b7d13030f71f&amp;url=https%3a%2f%2fhome.nzcity.co.nz%2fnews%2farticle.aspx%3fid%3d392412&amp;c=10733410212901689449&amp;mkt=en-nz",
-      "source": "nzcity.co.nz",
-      "published_at": "2024-02-02T16:01:00.000Z",
-      "snippet": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic Tanner ran a time of 7-minutes-50-point-26 seconds in the 3000 metres, four ..."
-    },
-    {
-      "id": "don-luchito-6e0aa6f182b5b153",
-      "dj_id": "don-luchito",
-      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7a53be843b293b53b3ce46fb015&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2020-07-18T17:00:00.000Z",
-      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
-    },
-    {
-      "id": "don-luchito-79e8bb1bd2661337",
-      "dj_id": "don-luchito",
-      "title": "Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7a53be843b293b53b3ce46fb015&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2016-08-19T17:00:00.000Z",
-      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "don-luchito-3302d80077e66cc2",
-      "dj_id": "don-luchito",
-      "title": "Funk N Soul with DJ Don Luchito.",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7a53be843b293b53b3ce46fb015&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2015-11-06T16:00:00.000Z",
-      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "estere-8172df13027346d6",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7a907ea490380c3998fe7f4015d&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "estere-f3e3052b010de431",
-      "dj_id": "estere",
-      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7a907ea490380c3998fe7f4015d&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2020-01-24T10:00:00.000Z",
-      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "estere-0d6238723c5ab4e4",
-      "dj_id": "estere",
-      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7a907ea490380c3998fe7f4015d&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2014-02-01T16:00:00.000Z",
-      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
-    },
-    {
-      "id": "estere-1914352fd78bc3bd",
-      "dj_id": "estere",
-      "title": "Album review: Estere, My Design, On Others' Lives",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7a907ea490380c3998fe7f4015d&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2falbum-review-estere-my-design-on-others-lives%2fWAVDN3Y4SJT37X36OZO466XOPY%2f&amp;c=8439857028581164344&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2018-05-02T17:00:00.000Z",
-      "snippet": "Estere's new album is a beautiful mix of everything the music world is lauding and lusting after right now. You've got African-inspired funk, hip-hop beats, richly layered production, an impressively ..."
-    },
-    {
-      "id": "estere-02ad514bf2c7d710",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "frida-41ae4b3551435053",
-      "dj_id": "frida",
-      "title": "Jazz Festival: Frida",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7ab6b7a488db73718c51a34627d&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-10-15T17:00:00.000Z",
-      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
-    },
-    {
-      "id": "herman-saiz-563fd524b30df89c",
-      "dj_id": "herman-saiz",
-      "title": "Morning Rave - Herman Saiz",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7b183944e088d5b805732bb1995&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f57363%2fMorning-Rave---Herman-Saiz.utr&amp;c=15584981201017345094&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-11-07T16:00:00.000Z",
-      "snippet": "Morning People are proud to present progressive tech maestro Herman Saiz (Agua y Sed, Aprapta, Tempura and Leuchtturm Records) Squeezed between dates in South America and Bali, DJ, producer and cosmic ..."
-    },
-    {
-      "id": "clova-84d4391644e248a7",
-      "dj_id": "clova",
-      "title": "Clova: Spiral B Side Release Party",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7b2afcf48288956ff0d5f734627&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102417%2fClova-Spiral-B-Side-Release-Party.utr&amp;c=2770393012493913114&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2026-05-28T17:00:00.000Z",
-      "snippet": "We're thrilled to have the one and only CLOVA host the release party for the B side of her debut album, SPIRAL. A celebrate pioneer of sonics in our city, she is a unique talent with a forward-looking ..."
-    },
-    {
-      "id": "musical-95ac3324684f7a1e",
-      "dj_id": "musical",
-      "title": "Menopause The Musical at Positively Wellington, Opera House",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7b6811b41bda03fce0b6bef904d&amp;url=https%3a%2f%2fwww.broadwayworld.com%2fnew-zealand%2fregional%2fMenopause-The-Musical-161667&amp;c=6268371732042340427&amp;mkt=en-nz",
-      "source": "BroadwayWorld",
-      "published_at": "2016-08-24T17:00:00.000Z",
-      "snippet": "What’s a hot flush between friends!? Frickin’ hilarious that’s what! Ladies – and brave men keen to avoid domestic meltdowns by not attending – MENOPAUSE THE MUSICAL is set to pour more blood, sweat ..."
-    },
-    {
-      "id": "emerson-c5461ad4ca54b6bd",
-      "dj_id": "emerson",
-      "title": "Emerson- \"Leap! on Tour\"",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7b7b50c48db99b090dfdd627fc6&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2femerson-leap-on-tour%2fwellington&amp;c=520751472391549312&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2026-07-14T17:22:00.000Z",
-      "snippet": "Following a breakout two years that saw her win the 2024 Smokefree Rockquest Solo/Duo Award, earn editorial support from Spotify and Apple Music, and feature in Rolling Stone AU/NZ, Auckland alt-pop ..."
-    },
-    {
-      "id": "tv-disko-fc8a60a9fdeaa0f3",
-      "dj_id": "tv-disko",
-      "title": "TV Disko",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7b9710841689e0e109af4e9a935&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-09-15T17:01:00.000Z",
-      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
-    },
-    {
-      "id": "sam-d0dcfd3710ec56fa",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92a7bacc4940749dd3ca18d39da6e9&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
-    },
-    {
       "id": "estere-091b52d55106d774",
       "dj_id": "estere",
       "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9267c506dc45428d027ad742328572&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2014-02-01T16:00:00.000Z",
-      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
-    },
-    {
-      "id": "don-luchito-72fc896dd74e9d26",
-      "dj_id": "don-luchito",
-      "title": "Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af7a11e94e6496b20a934d546e55&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2016-08-19T17:00:00.000Z",
-      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "frida-7e0b174769cb6e44",
-      "dj_id": "frida",
-      "title": "Jazz Festival: Frida",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af7e2a904ab4bb86be6b3e5fa131&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-10-15T17:00:00.000Z",
-      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
-    },
-    {
-      "id": "estere-0109c9f689af3c5a",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af7f80a2462dba53df3342185896&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "estere-0e99ec06b2fe7223",
-      "dj_id": "estere",
-      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af7f80a2462dba53df3342185896&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2020-01-24T10:00:00.000Z",
-      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "estere-da78e3cf3f853a97",
-      "dj_id": "estere",
-      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af7f80a2462dba53df3342185896&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2014-02-01T16:00:00.000Z",
-      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
-    },
-    {
-      "id": "herman-saiz-5cb73b3527230b08",
-      "dj_id": "herman-saiz",
-      "title": "Morning Rave - Herman Saiz",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af862dee4859b6558de2ccc2e9ec&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f57363%2fMorning-Rave---Herman-Saiz.utr&amp;c=15584981201017345094&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-11-07T16:00:00.000Z",
-      "snippet": "Morning People are proud to present progressive tech maestro Herman Saiz (Agua y Sed, Aprapta, Tempura and Leuchtturm Records) Squeezed between dates in South America and Bali, DJ, producer and cosmic ..."
-    },
-    {
-      "id": "clova-30a9fbf21aab9a01",
-      "dj_id": "clova",
-      "title": "Clova: Spiral B Side Release Party",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af873c4841db916b77ada0954114&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102417%2fClova-Spiral-B-Side-Release-Party.utr&amp;c=2770393012493913114&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2026-05-28T17:00:00.000Z",
-      "snippet": "We're thrilled to have the one and only CLOVA host the release party for the B side of her debut album, SPIRAL. A celebrate pioneer of sonics in our city, she is a unique talent with a forward-looking ..."
-    },
-    {
-      "id": "musical-ab00041050a47285",
-      "dj_id": "musical",
-      "title": "Menopause The Musical at Positively Wellington, Opera House",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af8b0edf442da049efb133e88f1c&amp;url=https%3a%2f%2fwww.broadwayworld.com%2fnew-zealand%2fregional%2fMenopause-The-Musical-161667&amp;c=6268371732042340427&amp;mkt=en-nz",
-      "source": "BroadwayWorld",
-      "published_at": "2016-08-24T17:00:00.000Z",
-      "snippet": "What’s a hot flush between friends!? Frickin’ hilarious that’s what! Ladies – and brave men keen to avoid domestic meltdowns by not attending – MENOPAUSE THE MUSICAL is set to pour more blood, sweat ..."
-    },
-    {
-      "id": "emerson-7d791307b94fffa0",
-      "dj_id": "emerson",
-      "title": "Emerson- \"Leap! on Tour\"",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af8cacf041b2a79e5075b97237ad&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2026%2femerson-leap-on-tour%2fwellington&amp;c=520751472391549312&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2026-07-14T17:22:00.000Z",
-      "snippet": "Following a breakout two years that saw her win the 2024 Smokefree Rockquest Solo/Duo Award, earn editorial support from Spotify and Apple Music, and feature in Rolling Stone AU/NZ, Auckland alt-pop ..."
-    },
-    {
-      "id": "tv-disko-b387608e460c85c8",
-      "dj_id": "tv-disko",
-      "title": "TV Disko",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af8e01294a9db499d767f03a55c9&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-09-15T17:01:00.000Z",
-      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
-    },
-    {
-      "id": "sam-d223e3fd5f1ed014",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92af8fbf714883b9317445fdb39ef8&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
-    },
-    {
-      "id": "don-luchito-0637ad1adc991170",
-      "dj_id": "don-luchito",
-      "title": "Faovale Imperium by James Nokise and DJ Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b73e61a743dfb08eb0e4d4f1b610&amp;url=https%3a%2f%2fwww.eventfinda.co.nz%2f2020%2ffaovale-imperium-by-james-nokise-and-dj-don-luchito%2flower-hutt&amp;c=16530711944910588255&amp;mkt=en-nz",
-      "source": "Eventfinda",
-      "published_at": "2020-07-18T17:00:00.000Z",
-      "snippet": "Join Wellington’s premiere comedian James Nokise and DJ Don Luchito for an hour of laughter at the expense of Captain James Cook as he voyages through the many cultures of the Pacific spreading ..."
-    },
-    {
-      "id": "don-luchito-13d7680ef83fd034",
-      "dj_id": "don-luchito",
-      "title": "Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b73e61a743dfb08eb0e4d4f1b610&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2016-08-19T17:00:00.000Z",
-      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "don-luchito-271f36235cd49dca",
-      "dj_id": "don-luchito",
-      "title": "Funk N Soul with DJ Don Luchito.",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b73e61a743dfb08eb0e4d4f1b610&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2015-11-06T16:00:00.000Z",
-      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "frida-79ef6446c73d89aa",
-      "dj_id": "frida",
-      "title": "Jazz Festival: Frida",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b743f8194e1c80b7debc34f91ca1&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-10-15T17:00:00.000Z",
-      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
-    },
-    {
-      "id": "estere-ff282595df02eb3b",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b744642544d6a78ef4cc8a380076&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "estere-66ae776e973b18c2",
-      "dj_id": "estere",
-      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b744642544d6a78ef4cc8a380076&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2020-01-24T10:00:00.000Z",
-      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "estere-d88a4431c526538e",
-      "dj_id": "estere",
-      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b744642544d6a78ef4cc8a380076&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
       "source": "Scoop",
       "published_at": "2014-02-01T16:00:00.000Z",
       "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
@@ -12504,172 +11814,10 @@
       "snippet": "Estere's new album is a beautiful mix of everything the music world is lauding and lusting after right now. You've got African-inspired funk, hip-hop beats, richly layered production, an impressively ..."
     },
     {
-      "id": "clova-906b8dca3efcf41e",
-      "dj_id": "clova",
-      "title": "Clova: Spiral B Side Release Party",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b74ba9fa495aac6f871f8f2826ba&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102417%2fClova-Spiral-B-Side-Release-Party.utr&amp;c=2770393012493913114&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2026-05-28T17:00:00.000Z",
-      "snippet": "We're thrilled to have the one and only CLOVA host the release party for the B side of her debut album, SPIRAL. A celebrate pioneer of sonics in our city, she is a unique talent with a forward-looking ..."
-    },
-    {
-      "id": "herman-saiz-085ac53511447e40",
-      "dj_id": "herman-saiz",
-      "title": "Morning Rave - Herman Saiz",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b74d4e9844eda67e7bd039019ae0&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f57363%2fMorning-Rave---Herman-Saiz.utr&amp;c=15584981201017345094&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-11-07T16:00:00.000Z",
-      "snippet": "Morning People are proud to present progressive tech maestro Herman Saiz (Agua y Sed, Aprapta, Tempura and Leuchtturm Records) Squeezed between dates in South America and Bali, DJ, producer and cosmic ..."
-    },
-    {
-      "id": "musical-d17505644ed142c3",
-      "dj_id": "musical",
-      "title": "Menopause The Musical at Positively Wellington, Opera House",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b74e7d7a4ef58c332eb432e240f5&amp;url=https%3a%2f%2fwww.broadwayworld.com%2fnew-zealand%2fregional%2fMenopause-The-Musical-161667&amp;c=6268371732042340427&amp;mkt=en-nz",
-      "source": "BroadwayWorld",
-      "published_at": "2016-08-24T17:00:00.000Z",
-      "snippet": "What’s a hot flush between friends!? Frickin’ hilarious that’s what! Ladies – and brave men keen to avoid domestic meltdowns by not attending – MENOPAUSE THE MUSICAL is set to pour more blood, sweat ..."
-    },
-    {
       "id": "emerson-c3df7ef7eb37ead0",
       "dj_id": "emerson",
       "title": "Wellington bars drop Emerson's after sale",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b750ff6f4394b4736e5f92276d54&amp;url=https%3a%2f%2fwww.odt.co.nz%2fbusiness%2fwellington-bars-drop-emersons-after-sale&amp;c=2480403710606906610&amp;mkt=en-nz",
-      "source": "Otago Daily Times",
-      "published_at": "2012-11-05T18:30:00.000Z",
-      "snippet": "Wellington bar Hashigo Zake was quick to react to the news, issuing a media release saying it was \"saddened\" to hear of the sale of \"New Zealand's best known independent craft berwer\". Owner Dominic ..."
-    },
-    {
-      "id": "tv-disko-38b9599f0bddb4ea",
-      "dj_id": "tv-disko",
-      "title": "TV Disko",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b75266834017b3ec731ff7b10629&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-09-15T17:01:00.000Z",
-      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
-    },
-    {
-      "id": "sam-b281b93cb88a0e02",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b754ccde44d8b5e0585f016fd4d7&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
-    },
-    {
-      "id": "sam-07585f979144453b",
-      "dj_id": "sam",
-      "title": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92b754ccde44d8b5e0585f016fd4d7&amp;url=https%3a%2f%2fhome.nzcity.co.nz%2fnews%2farticle.aspx%3fid%3d392412&amp;c=10733410212901689449&amp;mkt=en-nz",
-      "source": "nzcity.co.nz",
-      "published_at": "2024-02-02T16:01:00.000Z",
-      "snippet": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic Tanner ran a time of 7-minutes-50-point-26 seconds in the 3000 metres, four ..."
-    },
-    {
-      "id": "don-luchito-8b07a235c116d0ad",
-      "dj_id": "don-luchito",
-      "title": "Funk N Soul with DJ Don Luchito.",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92beffc3ff4228b92fc97de457460d&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f47077%2fFunk-N-Soul-with-DJ-Don-Luchito.utr&amp;c=13099655455179077595&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2015-11-06T16:00:00.000Z",
-      "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "don-luchito-a14cbb200965adc0",
-      "dj_id": "don-luchito",
-      "title": "Don Luchito",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92beffc3ff4228b92fc97de457460d&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f51257%2fDon-Luchito.utr&amp;c=4898896962377963956&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2016-08-19T17:00:00.000Z",
-      "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "frida-df5b33ae76a8d0c0",
-      "dj_id": "frida",
-      "title": "Jazz Festival: Frida",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf0321e046248837bb108a650060&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f103999%2fJazz-Festival-Frida.utr&amp;c=7965864323670301212&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-10-15T17:00:00.000Z",
-      "snippet": "As part of Wellington Jazz Festival, The Undercurrent presents Frida! Frida, formed by Tristan Carter and John Rae, is an ensemble that explores the various traditional music of the violin. From ..."
-    },
-    {
-      "id": "estere-eacd56a0067828b8",
-      "dj_id": "estere",
-      "title": "Wellington's Estere Announces 'Pro Bono Techno Zone' Single Release Shows",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf05144e4f628c911690647c9536&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fnews%2f12882%2fWellingtons-Estere-Announces-Pro-Bono-Techno-Zone-Single-Release-Shows.utr&amp;c=1379098073087971025&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-07-12T02:18:00.000Z",
-      "snippet": "Wellington beat innovator Estère is readying to unveil her new single 'Pro Bono Techno Zone' and in anticipation is announcing two release shows for Auckland and Wellington next month. Coming on the ..."
-    },
-    {
-      "id": "estere-b8d17dcc849c9206",
-      "dj_id": "estere",
-      "title": "Estere: hanging with Grace Jones, Glastonbury and making a noise",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf05144e4f628c911690647c9536&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2festere-hanging-with-grace-jones-glastonbury-and-making-a-noise%2fLIAJFNKJEZ2ADOXA2K34F2PN3Q%2f&amp;c=10494838611814125066&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2020-01-24T10:00:00.000Z",
-      "snippet": "Wellington-based singer, songwriter and beat-maker Estere is about to make some noise at festivals in Wellington and Auckland. Photo / Jason Oxenham She's opened for music and fashion legend Grace ..."
-    },
-    {
-      "id": "estere-47d3c7628a137b0f",
-      "dj_id": "estere",
-      "title": "Estere and Oddisee release 3 tracks from Red Bull sessions",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf05144e4f628c911690647c9536&amp;url=https%3a%2f%2fwellington.scoop.co.nz%2f%3fp%3d64256&amp;c=13061982404974842256&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2014-02-01T16:00:00.000Z",
-      "snippet": "Wellington singer Estere and New York City producer Oddisee have released three tracks from their Red Bull Prodigy sessions. One prodigy, one mentor, one engineer, and 10 days of studio grind time."
-    },
-    {
-      "id": "estere-4f02b340676314b4",
-      "dj_id": "estere",
-      "title": "Album review: Estere, My Design, On Others' Lives",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf05144e4f628c911690647c9536&amp;url=https%3a%2f%2fwww.nzherald.co.nz%2fentertainment%2falbum-review-estere-my-design-on-others-lives%2fWAVDN3Y4SJT37X36OZO466XOPY%2f&amp;c=8439857028581164344&amp;mkt=en-nz",
-      "source": "The New Zealand Herald",
-      "published_at": "2018-05-02T17:00:00.000Z",
-      "snippet": "Estere's new album is a beautiful mix of everything the music world is lauding and lusting after right now. You've got African-inspired funk, hip-hop beats, richly layered production, an impressively ..."
-    },
-    {
-      "id": "lucas-604cb6a68053d88b",
-      "dj_id": "lucas",
-      "title": "Lucas the Spider",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a17bcaa4ec5a01cbe36c4ca5f7c&amp;url=https%3a%2f%2fwww.sky.com%2fwatch%2fseries%2fe6e235c5-a078-4a07-a9bc-6db7cf2e63bb%2fseason-1&amp;c=13735790310660953825&amp;mkt=en-nz",
-      "source": "Sky",
-      "published_at": "2025-05-12T01:21:00.000Z",
-      "snippet": "The heartwarming adventures of four-year-old Lucas, a gentle jumping spider who likes music and is always jolly. Arlo's Portrait; House Flies Don't Dance; Flying the Nest: Episode Image Episode ..."
-    },
-    {
-      "id": "herman-saiz-faf938fca9219dc7",
-      "dj_id": "herman-saiz",
-      "title": "Morning Rave - Herman Saiz",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf0bbe584220ba56e987d61854a9&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f57363%2fMorning-Rave---Herman-Saiz.utr&amp;c=15584981201017345094&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2017-11-07T16:00:00.000Z",
-      "snippet": "Morning People are proud to present progressive tech maestro Herman Saiz (Agua y Sed, Aprapta, Tempura and Leuchtturm Records) Squeezed between dates in South America and Bali, DJ, producer and cosmic ..."
-    },
-    {
-      "id": "clova-1e8675748b078627",
-      "dj_id": "clova",
-      "title": "Clova: Spiral B Side Release Party",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf0d49d744afa7dcb88ff947e663&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2fgig%2f102417%2fClova-Spiral-B-Side-Release-Party.utr&amp;c=2770393012493913114&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2026-05-28T17:00:00.000Z",
-      "snippet": "We're thrilled to have the one and only CLOVA host the release party for the B side of her debut album, SPIRAL. A celebrate pioneer of sonics in our city, she is a unique talent with a forward-looking ..."
-    },
-    {
-      "id": "musical-9d9c4d51bfb20424",
-      "dj_id": "musical",
-      "title": "Menopause The Musical at Positively Wellington, Opera House",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf0e1ced40d09b5d52fab0639895&amp;url=https%3a%2f%2fwww.broadwayworld.com%2fnew-zealand%2fregional%2fMenopause-The-Musical-161667&amp;c=6268371732042340427&amp;mkt=en-nz",
-      "source": "BroadwayWorld",
-      "published_at": "2016-08-24T17:00:00.000Z",
-      "snippet": "What’s a hot flush between friends!? Frickin’ hilarious that’s what! Ladies – and brave men keen to avoid domestic meltdowns by not attending – MENOPAUSE THE MUSICAL is set to pour more blood, sweat ..."
-    },
-    {
-      "id": "emerson-e6b98a43664e63f4",
-      "dj_id": "emerson",
-      "title": "Wellington bars drop Emerson's after sale",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf112fba445bb3cb2059d45562b3&amp;url=https%3a%2f%2fwww.odt.co.nz%2fbusiness%2fwellington-bars-drop-emersons-after-sale&amp;c=2480403710606906610&amp;mkt=en-nz",
       "source": "Otago Daily Times",
       "published_at": "2012-11-05T18:30:00.000Z",
       "snippet": "Wellington bar Hashigo Zake was quick to react to the news, issuing a media release saying it was \"saddened\" to hear of the sale of \"New Zealand's best known independent craft berwer\". Owner Dominic ..."
@@ -12682,24 +11830,6 @@
       "source": "Sky",
       "published_at": "2025-05-12T01:21:00.000Z",
       "snippet": "The heartwarming adventures of four-year-old Lucas, a gentle jumping spider who likes music and is always jolly. Arlo's Portrait; House Flies Don't Dance; Flying the Nest: Episode Image Episode ..."
-    },
-    {
-      "id": "sam-7845746c0ad869c3",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf127dff47b99f2a02b679a340c6&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
-    },
-    {
-      "id": "tv-disko-08deb31f8f2e9fea",
-      "dj_id": "tv-disko",
-      "title": "TV Disko",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a92bf1406484dd4aa322a778eba6dfa&amp;url=https%3a%2f%2fwww.undertheradar.co.nz%2futr%2fshow%2fSID%2f22734%2fN%2fTV-Disko.utr&amp;c=8548243188725996119&amp;mkt=en-nz",
-      "source": "Under The Radar",
-      "published_at": "2025-09-15T17:01:00.000Z",
-      "snippet": "info_outline This gig has been. TV DiSKO pries open the record collection for another glorious ten-hour musical marathon. A full-to-bursting selection of the trashiest vinyl treasures thrown together ..."
     },
     {
       "id": "don-luchito-203dda181ed09dfe",
@@ -12718,15 +11848,6 @@
       "source": "Under The Radar",
       "published_at": "2015-11-06T16:00:00.000Z",
       "snippet": "THIEF is proud to present: Funk 'n' Soul with DJ Don Luchito. The world-eclectic groove-magnetic Don Luchito has a short attention span when it comes to genres. Funk, Soul, Rhythm n Blues, Disco, Ska, ..."
-    },
-    {
-      "id": "lucas-40d16417958c6699",
-      "dj_id": "lucas",
-      "title": "Lucas Museum and Taschen Partner On Multi-Volume Visual Storytelling Collection Ahead of Opening",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a937ff032544495bec937dd88ad3427&amp;url=https%3a%2f%2fwww.yahoo.com%2fentertainment%2farticles%2flucas-museum-taschen-partner-multi-222212529.html&amp;c=2813545724210089566&amp;mkt=en-nz",
-      "source": "Yahoo",
-      "published_at": "2026-08-27T15:21:00.000Z",
-      "snippet": "The Lucas Museum of Narrative Art has partnered with art publisher Taschen to release a major new book project tracing the history of visual storytelling, timed to coincide with the museum’s grand ..."
     },
     {
       "id": "geneva-am-6e9fa7a7daff0565",
@@ -12792,15 +11913,6 @@
       "snippet": "Silk Collective invites you to our debut club night at the legendary Ink Bar. As summer fades, we gather indoors for a night of lush sounds and deep grooves with DirdyGerdi, Mia Kober, and Dylan C."
     },
     {
-      "id": "high-dependency-unit-2e6ac0e969272dfd",
-      "dj_id": "high-dependency-unit",
-      "title": "High Dependency Unit Announce New Zealand Tour",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a938262f14549a9b4612ce56103378c&amp;url=https%3a%2f%2fwww.scoop.co.nz%2fstories%2fCU2508%2fS00280%2fhigh-dependency-unit-announce-new-zealand-tour.htm&amp;c=7490852299457513163&amp;mkt=en-nz",
-      "source": "Scoop",
-      "published_at": "2025-08-26T02:23:00.000Z",
-      "snippet": "After close to a decade away from live stages, the mighty High Dependency Unit return this November announcing their first shows since 2016 including a key festival performance at The Others Way, and ..."
-    },
-    {
       "id": "orkestrated-f34e9703dfac455b",
       "dj_id": "orkestrated",
       "title": "Orkestrated, Melbourne’s underground EDM pioneers, revive the sound that built a city",
@@ -12835,60 +11947,6 @@
       "source": "Under The Radar",
       "published_at": "2016-08-19T17:00:00.000Z",
       "snippet": "DJ Don Luchito returns to Havana Bar in an attempt to seamlessly play one track after another until the DM says no more. A funk-infused, rap-related, Uptown Rankin', soulphonic roller coaster ride. No ..."
-    },
-    {
-      "id": "lucas-7efaad534cd24ab3",
-      "dj_id": "lucas",
-      "title": "George Lucas On Why Yoda Spoke Backwards In ‘Empire Strikes Back’: “To Get People To Actually Listen”",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9282f756054920885d4f275759859e&amp;url=https%3a%2f%2fdeadline.com%2f2025%2f04%2fgeorge-lucas-empire-strikes-back-yoda-1236376717%2f&amp;c=1548258824352435173&amp;mkt=en-nz",
-      "source": "Deadline.com",
-      "published_at": "2025-04-25T08:08:00.000Z",
-      "snippet": "There are many questions that Star Wars fans have about the George Lucas produced and co-written 1980 sequel The Empire Strikes Back which kicked off the 16th TCM Class Film Festival last night at the ..."
-    },
-    {
-      "id": "sam-158f0b7b4f5b5975",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9295ca9f374575ae75b8eeb8fb0a1f&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
-    },
-    {
-      "id": "sam-a6fee1b47859c51e",
-      "dj_id": "sam",
-      "title": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9295ca9f374575ae75b8eeb8fb0a1f&amp;url=https%3a%2f%2fhome.nzcity.co.nz%2fnews%2farticle.aspx%3fid%3d392412&amp;c=10733410212901689449&amp;mkt=en-nz",
-      "source": "nzcity.co.nz",
-      "published_at": "2024-02-02T16:01:00.000Z",
-      "snippet": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic Tanner ran a time of 7-minutes-50-point-26 seconds in the 3000 metres, four ..."
-    },
-    {
-      "id": "sam-4f0e766d7fdfdf1e",
-      "dj_id": "sam",
-      "title": "Sam Sutton: On the Wellington Phoenix still chasing the premier's plate",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a111a6c4fb09b055a892280f7ce&amp;url=https%3a%2f%2fwww.newstalkzb.co.nz%2fon-air%2fsportstalk%2faudio%2fsam-sutton-on-the-wellington-phoenix-still-chasing-the-premiers-plate%2f&amp;c=2924144839082382813&amp;mkt=en-nz",
-      "source": "Newstalk ZB",
-      "published_at": "2024-04-19T12:42:00.000Z",
-      "snippet": "Wellington Phoenix Defender Sam Sutton joined D'Arcy to preview their clash against the Newcastle Jets this evening. Get more of the radio, music and podcasts you love with the FREE iHeart app. Scan ..."
-    },
-    {
-      "id": "sam-bfbae44ac49db02d",
-      "dj_id": "sam",
-      "title": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a111a6c4fb09b055a892280f7ce&amp;url=https%3a%2f%2fhome.nzcity.co.nz%2fnews%2farticle.aspx%3fid%3d392412&amp;c=10733410212901689449&amp;mkt=en-nz",
-      "source": "nzcity.co.nz",
-      "published_at": "2024-02-02T16:01:00.000Z",
-      "snippet": "Middle distance runner Sam Tanner has fought off the Wellington weather to set a new meet record at the Capital Classic Tanner ran a time of 7-minutes-50-point-26 seconds in the 3000 metres, four ..."
-    },
-    {
-      "id": "dj-fitchie-b08f5abf05c01a26",
-      "dj_id": "dj-fitchie",
-      "title": "Chris Faiumu, Co-Founder of Fat Freddy’s Drop, Has Died",
-      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a929a13d3dc41969878e9f1f80c2785&amp;url=https%3a%2f%2fthemusicnetwork.com%2fnews%2fchris-faiumu-co-founder-of-fat-freddys-drop-has-died&amp;c=3183634947404668613&amp;mkt=en-nz",
-      "source": "The Music Network",
-      "published_at": "2025-07-17T19:57:00.000Z",
-      "snippet": "Chris Faiumu, a founding member of Fat Freddy’s Drop, one of New Zealand's biggest music exports of the past 25 years, has died. Better known to fans as Mu or DJ Fitchie, Faiumu was the producer and ..."
     },
     {
       "id": "tv-disko-6c279b40f2b9f9ed",

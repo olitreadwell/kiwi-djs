@@ -36,7 +36,7 @@ export async function upsertDjArticle(
   const id = `${djId}-${createHash('sha1').update(article.url).digest('hex').slice(0, 16)}`;
   await pool.query(
     `INSERT INTO dj_articles (id, dj_id, title, url, source, published_at, snippet) VALUES ($1, $2, $3, $4, $5, $6, $7)
-     ON CONFLICT (id) DO NOTHING`,
+     ON CONFLICT (dj_id, lower(title)) DO NOTHING`,
     [id, djId, article.title, article.url, article.source ?? null, article.publishedAt ?? null, article.snippet ?? null],
   );
 }

@@ -343,7 +343,9 @@ export async function getDjArticles(djId: string): Promise<ArticleRow[]> {
   if (!isDbMode) return (snapshot.articles as ArticleRow[] | undefined)?.filter((article) => article.dj_id === djId) ?? [];
   const pool = getPool();
   const result = await pool.query(
-    'SELECT id, title, url, source, published_at, snippet FROM dj_articles WHERE dj_id = $1 ORDER BY published_at DESC NULLS LAST',
+    `SELECT DISTINCT ON (lower(title)) id, title, url, source, published_at, snippet
+     FROM dj_articles WHERE dj_id = $1
+     ORDER BY lower(title), published_at DESC NULLS LAST`,
     [djId],
   );
   return result.rows as ArticleRow[];
