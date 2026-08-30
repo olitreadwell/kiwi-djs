@@ -294,7 +294,7 @@ function wikipediaExtractIsRelevant(djName: string, title: string, extract: stri
   const name = djName.toLowerCase();
   if (!haystack.includes(name)) return false;
   if (!NZ_SIGNAL.test(haystack)) return false;
-  if (/\balbum by\b|\bis (?:the |a |an )?(?:debut |self-titled |eponymous )?(?:studio |compilation |live )?album\b/i.test(haystack)) return false;
+  if (/\balbum by\b|\bis (?:the |a |an )?(?:debut |self-titled |eponymous )?(?:studio |compilation |live )?album\b|\brecord label\b|\bimprint\b|\bcompany\b|\bbusiness\b|\bbrand\b/i.test(haystack)) return false;
   return /\b(dj|deejay|disc jockey|musician|band|singer|songwriter|producer|rapper|group|drum and bass|dnb|electronic music|house music|techno|reggae|dub)\b/i.test(haystack);
 }
 
