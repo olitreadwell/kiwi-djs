@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-30T04:00:43.206Z",
+  "exportedAt": "2026-08-30T04:05:33.514Z",
   "djs": [
     {
       "id": "club-medder",
@@ -135,136 +135,6 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 20,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "emi-music-new-zealand",
-      "name": "EMI Music New Zealand",
-      "bio": null,
-      "genres": [],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000001766513-s11vaf-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/nzemi",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.584Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland City",
-      "summary": "EMI Music New Zealand is an Auckland-based DJ with two SoundCloud mixes and no upcoming gigs.",
-      "summary_long": "EMI Music New Zealand operates from Auckland, New Zealand. The artist has two mixes available on SoundCloud but has not listed any upcoming performances.",
-      "upcoming_events": 0,
-      "mix_count": 2,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "paige-julia",
-      "name": "Paige Julia",
-      "bio": null,
-      "genres": [
-        "Drum and Bass",
-        "140",
-        "Deep Dubstep",
-        "Grime",
-        "Breaks",
-        "UK Bass",
-        "Electronica",
-        "Melodic House & Techno"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-924604966",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 65,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:39.923Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 5,
-      "verification_sources": [
-        "gigs",
-        "links",
-        "location",
-        "mixes",
-        "multi-gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "Bandcamp: Christchurch",
-      "summary": "Wellington DJ playing drum and bass, dubstep, grime, and more. Upcoming at Carlucci Carnival.",
-      "summary_long": "Paige Julia is a Wellington-based DJ covering drum and bass, 140, deep dubstep, grime, breaks, UK bass, electronica, and melodic house and techno. She has three mixes on Mixcloud and has recently played alongside Herman Saiz, Shady Lady, Mojo Filter, and Bwoy De Bhajan. Next up is a set at Carlucci Carnival.",
-      "upcoming_events": 1,
-      "mix_count": 3,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "night-life",
-      "name": "Night Life",
-      "bio": null,
-      "genres": [
-        "Pop"
-      ],
-      "city": "queenstown",
-      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.273Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Queenstown",
-      "summary": "Queenstown pop DJ with 26 SoundCloud mixes, no upcoming gigs listed.",
-      "summary_long": "Night Life is a pop DJ based in Queenstown. They have 26 mixes available on SoundCloud. No upcoming gigs are currently listed.",
-      "upcoming_events": 0,
-      "mix_count": 26,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -447,6 +317,47 @@
       "last_played_at": null
     },
     {
+      "id": "night-life",
+      "name": "Night Life",
+      "bio": null,
+      "genres": [
+        "Pop"
+      ],
+      "city": "queenstown",
+      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.273Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Queenstown",
+      "summary": "Queenstown pop DJ with 26 SoundCloud mixes, no upcoming gigs listed.",
+      "summary_long": "Night Life is a pop DJ based in Queenstown. They have 26 mixes available on SoundCloud. No upcoming gigs are currently listed.",
+      "upcoming_events": 0,
+      "mix_count": 26,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "the-journey",
       "name": "The Journey",
       "bio": null,
@@ -491,6 +402,44 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 10,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "emi-music-new-zealand",
+      "name": "EMI Music New Zealand",
+      "bio": null,
+      "genres": [],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000001766513-s11vaf-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/nzemi",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.584Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland City",
+      "summary": "EMI Music New Zealand is an Auckland-based DJ with two SoundCloud mixes and no upcoming gigs.",
+      "summary_long": "EMI Music New Zealand operates from Auckland, New Zealand. The artist has two mixes available on SoundCloud but has not listed any upcoming performances.",
+      "upcoming_events": 0,
+      "mix_count": 2,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -804,7 +753,7 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 65,
+      "data_completeness": 70,
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:47.681Z",
@@ -967,42 +916,44 @@
       "last_played_at": null
     },
     {
-      "id": "9lives",
-      "name": "9lives",
+      "id": "lordemusic",
+      "name": "LordeMusic",
       "bio": null,
       "genres": [
-        "Hip-Hop"
+        "Electronic",
+        "Pop",
+        "Alternative"
       ],
       "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-Plky6n6oTsA142Dk-iArvJw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/9lives",
+      "image_url": "https://i1.sndcdn.com/avatars-kyDQkosF3PEouyNS-kzczHw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/lordemusic",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 25,
+      "data_completeness": 55,
       "source": "discovered-soundcloud",
       "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.189Z",
-      "updated_at": "2026-08-30T03:48:31.477Z",
+      "created_at": "2026-08-30T02:56:17.085Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
       "verification_sources": [
-        "links",
-        "multi-source"
+        "mixes",
+        "links"
       ],
       "is_nz": true,
       "bpm_range": null,
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: Auckland",
-      "summary": "9lives is an Auckland-based Hip-Hop DJ with no mixes or gigs listed yet.",
-      "summary_long": "9lives is a DJ based in Auckland, New Zealand, specializing in Hip-Hop. Currently, no mixes or upcoming gigs are listed on the directory.",
+      "summary": "Auckland-based Electronic, Pop, and Alternative DJ with 32 SoundCloud mixes.",
+      "summary_long": "LordeMusic is an Auckland-based DJ and producer working in Electronic, Pop, and Alternative genres. They have 32 mixes available on SoundCloud. No upcoming gigs are currently listed.",
       "upcoming_events": 0,
-      "mix_count": 0,
+      "mix_count": 32,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -1103,48 +1054,6 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 17,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "lordemusic",
-      "name": "LordeMusic",
-      "bio": null,
-      "genres": [
-        "Electronic",
-        "Pop",
-        "Alternative"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-kyDQkosF3PEouyNS-kzczHw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/lordemusic",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.085Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "summary": "Auckland-based Electronic, Pop, and Alternative DJ with 32 SoundCloud mixes.",
-      "summary_long": "LordeMusic is an Auckland-based DJ and producer working in Electronic, Pop, and Alternative genres. They have 32 mixes available on SoundCloud. No upcoming gigs are currently listed.",
-      "upcoming_events": 0,
-      "mix_count": 32,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -1678,44 +1587,6 @@
       "last_played_at": null
     },
     {
-      "id": "flipthescripta",
-      "name": "FlipTheScripta",
-      "bio": null,
-      "genres": [],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-duT6ZZtiDjYXJGNj-xzXgsg-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-690791248",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 50,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.382Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: West Auckland",
-      "summary": "Auckland DJ with 30 SoundCloud mixes, no listed gigs yet.",
-      "summary_long": "FlipTheScripta is based in Auckland and has uploaded 30 mixes to SoundCloud. Their genre is not specified, and no upcoming gigs are currently listed.",
-      "upcoming_events": 0,
-      "mix_count": 30,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
       "id": "orphx",
       "name": "Orphx",
       "bio": null,
@@ -1880,6 +1751,47 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 3,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "elliot-vincent",
+      "name": "ELLIOT & VINCENT",
+      "bio": null,
+      "genres": [
+        "Rock"
+      ],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 10,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:23.908Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 0,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -2055,47 +1967,6 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 75,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "elliot-vincent",
-      "name": "ELLIOT & VINCENT",
-      "bio": null,
-      "genres": [
-        "Rock"
-      ],
-      "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 10,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:23.908Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "mix_count": 0,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -2438,53 +2309,6 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 6,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "redline-records",
-      "name": "Redline Records",
-      "bio": null,
-      "genres": [
-        "Jungle",
-        "Garage",
-        "Dance",
-        "Drum and Bass",
-        "House",
-        "Breaks",
-        "Bass",
-        "Techno"
-      ],
-      "city": "christchurch",
-      "image_url": "https://i1.sndcdn.com/avatars-yDmfDFWccSHX6LEL-GKMPOQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/redlinerecords03",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.248Z",
-      "updated_at": "2026-08-30T03:04:34.959Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Christchurch",
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "mix_count": 47,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -3530,6 +3354,48 @@
       "last_played_at": null
     },
     {
+      "id": "princesschelsea",
+      "name": "princesschelsea",
+      "bio": null,
+      "genres": [
+        "Indie",
+        "Pop",
+        "Alternative"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000465472743-lwmx74-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/princesschelsea",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.291Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": "Auckland DJ playing indie, pop, and alternative with 10 SoundCloud mixes.",
+      "summary_long": "princesschelsea is based in Auckland and focuses on indie, pop, and alternative music. They have 10 mixes available on SoundCloud and currently have no upcoming gigs listed.",
+      "upcoming_events": 0,
+      "mix_count": 10,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "sunshine",
       "name": "Sunshine",
       "bio": null,
@@ -3571,48 +3437,6 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 0,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "princesschelsea",
-      "name": "princesschelsea",
-      "bio": null,
-      "genres": [
-        "Indie",
-        "Pop",
-        "Alternative"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000465472743-lwmx74-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/princesschelsea",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.291Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "summary": "Auckland DJ playing indie, pop, and alternative with 10 SoundCloud mixes.",
-      "summary_long": "princesschelsea is based in Auckland and focuses on indie, pop, and alternative music. They have 10 mixes available on SoundCloud and currently have no upcoming gigs listed.",
-      "upcoming_events": 0,
-      "mix_count": 10,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -3710,6 +3534,50 @@
       "last_played_at": null
     },
     {
+      "id": "jimi-the-kween",
+      "name": "Jimi The Kween",
+      "bio": null,
+      "genres": [
+        "Electronic",
+        "Dance",
+        "Pop"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/jimithekween-music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:25.403Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 10,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "myles",
       "name": "MYLES",
       "bio": null,
@@ -3759,140 +3627,6 @@
       "last_played_at": null
     },
     {
-      "id": "jimi-the-kween",
-      "name": "Jimi The Kween",
-      "bio": null,
-      "genres": [
-        "Electronic",
-        "Dance",
-        "Pop"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/jimithekween-music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:25.403Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "mix_count": 10,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "taylor-sol",
-      "name": "Taylor Sol",
-      "bio": null,
-      "genres": [
-        "World"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/taylor-sol",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 30,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:42.175Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "mix_count": 0,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "9cups",
-      "name": "9cups",
-      "bio": "9cups is the new house music based project from Wellington producer and longtime beatmaker Maz Hermon. (Previous projects <span class=\"peekaboo-text\">include Western Dip, Roy G & the BIVinators, Mazroy, Felix Fielding). <br><span class=\"lightweightBreak\"></span><br>9cups Debut EP Tee Time 9pm is a groove-focused exploration of soulful house — emotionally resonant, subtly nostalgic, and built for modern-day dancefloors both big and small. Kitchen to club.</span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
-      "genres": [
-        "Organic House",
-        "Lofi House",
-        "Ukg",
-        "Ukgarage",
-        "Electronic",
-        "Dance",
-        "House",
-        "Deep House"
-      ],
-      "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:30.822Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "gigs",
-        "links",
-        "location",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "Bandcamp: Wellington",
-      "summary": "Wellington producer Maz Hermon's new house project, blending soulful, groove-focused sounds for dancefloors.",
-      "summary_long": "9cups is the new house music project from Wellington producer and longtime beatmaker Maz Hermon. Their debut EP Tee Time 9pm explores soulful house with emotional resonance and subtle nostalgia, built for modern dancefloors. 9cups plays at Newtown Festival 2027.",
-      "upcoming_events": 1,
-      "mix_count": 0,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
       "id": "earth-beats",
       "name": "Earth & Beats",
       "bio": null,
@@ -3938,6 +3672,47 @@
       "last_played_at": null
     },
     {
+      "id": "taylor-sol",
+      "name": "Taylor Sol",
+      "bio": null,
+      "genres": [
+        "World"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/taylor-sol",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 30,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:42.175Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "dave-marks",
       "name": "Dave Marks",
       "bio": null,
@@ -3974,55 +3749,6 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 0,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "state-of-mind",
-      "name": "State of Mind",
-      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
-      "genres": [
-        "Drum and Bass",
-        "Electronica",
-        "House",
-        "Melodic House & Techno",
-        "Rock",
-        "Hard Dance",
-        "Hardcore",
-        "Neo Rave"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.stateofmindnz.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 70,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.356Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "location",
-        "mixes",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": "Bandcamp: New Zealand",
-      "summary": "Wellington drum & bass duo, touring internationally since the mid-2000s.",
-      "summary_long": "State of Mind is a Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s. They have 25 mixes on Soundcloud and no upcoming gigs listed.",
-      "upcoming_events": 0,
-      "mix_count": 25,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -4189,7 +3915,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.225Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -4401,55 +4127,6 @@
       "last_played_at": null
     },
     {
-      "id": "y-o-g-a",
-      "name": "Y.O.G.A.",
-      "bio": null,
-      "genres": [
-        "House",
-        "Dance",
-        "Pop",
-        "Nu Disco",
-        "Disco",
-        "Electronica",
-        "Afro House",
-        "Tech House"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/yoga50768",
-      "instagram_url": "https://www.instagram.com/youreonlygreatalways/",
-      "facebook_url": "https://www.facebook.com/youreonlygreatalways",
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:25.867Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 0,
-      "mix_count": 11,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
       "id": "gandoof",
       "name": "Gandoof",
       "bio": null,
@@ -4628,6 +4305,55 @@
       "last_played_at": null
     },
     {
+      "id": "y-o-g-a",
+      "name": "Y.O.G.A.",
+      "bio": null,
+      "genres": [
+        "House",
+        "Dance",
+        "Pop",
+        "Nu Disco",
+        "Disco",
+        "Tech House",
+        "Country",
+        "Funky House"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/yoga50768",
+      "instagram_url": "https://www.instagram.com/youreonlygreatalways/",
+      "facebook_url": "https://www.facebook.com/youreonlygreatalways",
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:25.867Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 11,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "montell2099",
       "name": "montell2099",
       "bio": null,
@@ -4648,7 +4374,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.125Z",
-      "updated_at": "2026-08-30T03:53:56.191Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -4665,6 +4391,53 @@
       "summary_long": "montell2099 is an Auckland-based DJ working in electronic and dance music. They have one mix available on SoundCloud and currently have no upcoming gigs listed.",
       "upcoming_events": 0,
       "mix_count": 1,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "redline-records",
+      "name": "Redline Records",
+      "bio": "Redline Records was an independent record label based in Perth, Australia. Started in the year 2000 as a joint project between the band, Jebediah, and its management company, Naked Ape Management, the label predominantly released recordings of Australian indie bands under licensing agreements. Redline Records was distributed by Shock Records in Australia and New Zealand.\nFollowing the final stage of the label's life, in which two albums and one EP were released in 2004 and 2005, respectively, the label's operations were closed without a press release. Since the cessation of Redline Records, artists from the label's roster have either disbanded, entered a period of hiatus or have moved on to other contractual arrangements.",
+      "genres": [
+        "Jungle",
+        "Garage",
+        "Dance",
+        "Drum and Bass",
+        "House",
+        "Breaks",
+        "Bass",
+        "Techno"
+      ],
+      "city": "christchurch",
+      "image_url": "https://i1.sndcdn.com/avatars-yDmfDFWccSHX6LEL-GKMPOQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/redlinerecords03",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 70,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.248Z",
+      "updated_at": "2026-08-30T03:04:34.959Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Christchurch",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 47,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -4704,6 +4477,46 @@
       "profile_location": "SoundCloud: Fart",
       "summary": null,
       "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "9lives",
+      "name": "9lives",
+      "bio": "Maxwell Warren Jardine (born 10 March 2004), known professionally as 9lives, is a New Zealand record producer based in Auckland. Known for aiding in the popularisation of sigilkore, a mix of trap, hyperpop, cloud rap, and electronic music, he has released music collaborations with Odetari, Trippie Redd, Kanii, and Lil Nas X. 9lives has an RIAA certified Gold single \"I Love You Hoe\" with Odetari, and was named in Rolling Stone Australia's Future of Music, a celebration of the most exciting and innovative artists from Australia and New Zealand.",
+      "genres": [
+        "Hip-Hop"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-Plky6n6oTsA142Dk-iArvJw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/9lives",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.189Z",
+      "updated_at": "2026-08-30T03:48:31.477Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": "9lives is an Auckland-based Hip-Hop DJ with no mixes or gigs listed yet.",
+      "summary_long": "9lives is a DJ based in Auckland, New Zealand, specializing in Hip-Hop. Currently, no mixes or upcoming gigs are listed on the directory.",
       "upcoming_events": 0,
       "mix_count": 0,
       "past_gig_count": 0,
@@ -4760,6 +4573,94 @@
       "last_played_at": null
     },
     {
+      "id": "paige-julia",
+      "name": "Paige Julia",
+      "bio": null,
+      "genres": [
+        "Drum and Bass",
+        "140",
+        "Deep Dubstep",
+        "Grime",
+        "Breaks",
+        "UK Bass",
+        "Electronica",
+        "Melodic House & Techno"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-924604966",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 65,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:39.923Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "Bandcamp: Christchurch",
+      "summary": "Wellington DJ playing drum and bass, dubstep, grime, and more. Upcoming at Carlucci Carnival.",
+      "summary_long": "Paige Julia is a Wellington-based DJ covering drum and bass, 140, deep dubstep, grime, breaks, UK bass, electronica, and melodic house and techno. She has three mixes on Mixcloud and has recently played alongside Herman Saiz, Shady Lady, Mojo Filter, and Bwoy De Bhajan. Next up is a set at Carlucci Carnival.",
+      "upcoming_events": 1,
+      "mix_count": 3,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "flipthescripta",
+      "name": "FlipTheScripta",
+      "bio": null,
+      "genres": [],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-duT6ZZtiDjYXJGNj-xzXgsg-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-690791248",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 50,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.382Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: West Auckland",
+      "summary": "Auckland DJ with 30 SoundCloud mixes, no listed gigs yet.",
+      "summary_long": "FlipTheScripta is based in Auckland and has uploaded 30 mixes to SoundCloud. Their genre is not specified, and no upcoming gigs are currently listed.",
+      "upcoming_events": 0,
+      "mix_count": 30,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "halo",
       "name": "Halo",
       "bio": "Halo Effect is an Italian Electronic band formed in 2001 in Rome. <br> Halo Effect music covers a wide range <span class=\"peekaboo-text\">of genres including Synth-pop, Darkwave, Future-pop, Ebm, New Wave, etc.<br> Halo Effect are: John Andrew Peverieri; <br> Alessandro Polinori; <br> Marco Cattani.<br> Join us: <a href=\"https://www.facebook.com/haloeffectband/\" rel=\"nofollow ugc\" referrerpolicy=\"strict-origin-when-cross-origin\">www.facebook.com/haloeffectband/</a> </span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
@@ -4796,6 +4697,54 @@
       "profile_location": null,
       "summary": null,
       "summary_long": null,
+      "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "9cups",
+      "name": "9cups",
+      "bio": "9cups is the new house music based project from Wellington producer and longtime beatmaker Maz Hermon. (Previous projects <span class=\"peekaboo-text\">include Western Dip, Roy G & the BIVinators, Mazroy, Felix Fielding). <br><span class=\"lightweightBreak\"></span><br>9cups Debut EP Tee Time 9pm is a groove-focused exploration of soulful house — emotionally resonant, subtly nostalgic, and built for modern-day dancefloors both big and small. Kitchen to club.</span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
+      "genres": [
+        "Organic House",
+        "Lofi House",
+        "Ukg",
+        "Ukgarage",
+        "Electronic",
+        "Dance",
+        "House",
+        "Deep House"
+      ],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:30.822Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "Bandcamp: Wellington",
+      "summary": "Wellington producer Maz Hermon's new house project, blending soulful, groove-focused sounds for dancefloors.",
+      "summary_long": "9cups is the new house music project from Wellington producer and longtime beatmaker Maz Hermon. Their debut EP Tee Time 9pm explores soulful house with emotional resonance and subtle nostalgia, built for modern dancefloors. 9cups plays at Newtown Festival 2027.",
       "upcoming_events": 1,
       "mix_count": 0,
       "past_gig_count": 0,
@@ -4935,6 +4884,54 @@
       "summary_long": null,
       "upcoming_events": 1,
       "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "state-of-mind",
+      "name": "State of Mind",
+      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
+      "genres": [
+        "Drum and Bass",
+        "Electronica",
+        "House",
+        "Melodic House & Techno",
+        "Rock",
+        "Hard Dance",
+        "Hardcore",
+        "Neo Rave"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.stateofmindnz.com/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 70,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.356Z",
+      "updated_at": "2026-08-30T04:05:24.357Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": "ok",
+      "profile_location": "Bandcamp: New Zealand",
+      "summary": "Wellington drum & bass duo, touring internationally since the mid-2000s.",
+      "summary_long": "State of Mind is a Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s. They have 25 mixes on Soundcloud and no upcoming gigs listed.",
+      "upcoming_events": 0,
+      "mix_count": 25,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -7339,11 +7336,11 @@
       "label": "Mixcloud: DARREN EMERSON"
     },
     {
-      "id": "restricted-soundcloud-31db49c23cb6",
-      "dj_id": "restricted",
+      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
+      "dj_id": "jimi-the-kween",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/itsrestricted",
-      "label": "SoundCloud: Restricted"
+      "url": "https://soundcloud.com/jimithekween-music",
+      "label": "SoundCloud: Jimi The Kween"
     },
     {
       "id": "sam-biography-cb2598af837b",
@@ -7710,6 +7707,13 @@
       "label": "purchase for download"
     },
     {
+      "id": "restricted-soundcloud-31db49c23cb6",
+      "dj_id": "restricted",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/itsrestricted",
+      "label": "SoundCloud: Restricted"
+    },
+    {
       "id": "emerson-purchase for download-50581286b137",
       "dj_id": "emerson",
       "type": "purchase for download",
@@ -8011,6 +8015,13 @@
       "label": "SoundCloud: Kukan Dub Lagan"
     },
     {
+      "id": "headland-mixcloud-d10a6a9a8cb7",
+      "dj_id": "headland",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/jaceheadland/",
+      "label": "Mixcloud: Jace Headland"
+    },
+    {
       "id": "sunshine-website-0e42fe91d138",
       "dj_id": "sunshine",
       "type": "website",
@@ -8102,11 +8113,11 @@
       "label": null
     },
     {
-      "id": "headland-mixcloud-d10a6a9a8cb7",
-      "dj_id": "headland",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/jaceheadland/",
-      "label": "Mixcloud: Jace Headland"
+      "id": "henry-tn-soundcloud-a63737f8ac35",
+      "dj_id": "henry-tn",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/henry-tn-246919002",
+      "label": "SoundCloud: Henry TN"
     },
     {
       "id": "fairbrother-bandcamp-c42bda6ae4be",
@@ -8578,11 +8589,11 @@
       "label": "free streaming"
     },
     {
-      "id": "frank-booker-mixcloud-ac569ced9731",
-      "dj_id": "frank-booker",
+      "id": "dick-johnson-mixcloud-faeb5b2af282",
+      "dj_id": "dick-johnson",
       "type": "mixcloud",
-      "url": "https://www.mixcloud.com/frankbooker/",
-      "label": "Mixcloud: Frank Booker"
+      "url": "https://www.mixcloud.com/magikj/",
+      "label": "Mixcloud: Dick Johnson / Magik J"
     },
     {
       "id": "frida-mixcloud-2a6c8c0c4df3",
@@ -8606,11 +8617,11 @@
       "label": "Mixcloud: TV DiSKO"
     },
     {
-      "id": "dick-johnson-mixcloud-faeb5b2af282",
-      "dj_id": "dick-johnson",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/magikj/",
-      "label": "Mixcloud: Dick Johnson / Magik J"
+      "id": "geneva-am-instagram-58a139520c1c",
+      "dj_id": "geneva-am",
+      "type": "instagram",
+      "url": "https://www.instagram.com/geneva_am/",
+      "label": "social network"
     },
     {
       "id": "dick-johnson-mixcloud-3b00515013a0",
@@ -8655,11 +8666,18 @@
       "label": "Mixcloud: The Journey Men"
     },
     {
-      "id": "geneva-am-instagram-58a139520c1c",
-      "dj_id": "geneva-am",
-      "type": "instagram",
-      "url": "https://www.instagram.com/geneva_am/",
-      "label": "social network"
+      "id": "freq-nasty-soundcloud-781ee255a556",
+      "dj_id": "freq-nasty",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/freqnasty",
+      "label": "SoundCloud: FreQ Nasty"
+    },
+    {
+      "id": "frank-booker-mixcloud-ac569ced9731",
+      "dj_id": "frank-booker",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/frankbooker/",
+      "label": "Mixcloud: Frank Booker"
     },
     {
       "id": "kora-ca-purchase for download-c619ab9b4f55",
@@ -8830,11 +8848,11 @@
       "label": "SoundCloud: hexadecimal"
     },
     {
-      "id": "night-life-soundcloud-03babe5d322f",
-      "dj_id": "night-life",
+      "id": "leisure-soundcloud-80707a8be668",
+      "dj_id": "leisure",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/night-life-584430914",
-      "label": "SoundCloud: Night Life"
+      "url": "https://soundcloud.com/theleisurecollective",
+      "label": "SoundCloud: LEISURE"
     },
     {
       "id": "shreddy-soundcloud-95e2388abcfe",
@@ -8851,11 +8869,11 @@
       "label": "Mixcloud: Tom Shulgin"
     },
     {
-      "id": "montell2099-soundcloud-33d32a519425",
-      "dj_id": "montell2099",
+      "id": "flipthescripta-soundcloud-3e097a087317",
+      "dj_id": "flipthescripta",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/montell2099",
-      "label": "SoundCloud: montell2099"
+      "url": "https://soundcloud.com/user-690791248",
+      "label": "SoundCloud: FlipTheScripta"
     },
     {
       "id": "lomez-brown-soundcloud-c9adc7a9e6f9",
@@ -8914,11 +8932,11 @@
       "label": "SoundCloud: Antidote Audio"
     },
     {
-      "id": "giddy-mixcloud-b944b3a53d6d",
-      "dj_id": "giddy",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/gideonngarua/",
-      "label": "Mixcloud: DJ GIDDY"
+      "id": "night-life-soundcloud-03babe5d322f",
+      "dj_id": "night-life",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/night-life-584430914",
+      "label": "SoundCloud: Night Life"
     },
     {
       "id": "k-o-n-e-c-s-soundcloud-8914a4113e4d",
@@ -8949,11 +8967,11 @@
       "label": "SoundCloud: Redline Records"
     },
     {
-      "id": "flipthescripta-soundcloud-3e097a087317",
-      "dj_id": "flipthescripta",
+      "id": "lordemusic-soundcloud-29e6ac5c20fe",
+      "dj_id": "lordemusic",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/user-690791248",
-      "label": "SoundCloud: FlipTheScripta"
+      "url": "https://soundcloud.com/lordemusic",
+      "label": "SoundCloud: LordeMusic"
     },
     {
       "id": "giddy-soundcloud-7a5bf37a103e",
@@ -9019,11 +9037,11 @@
       "label": null
     },
     {
-      "id": "princesschelsea-soundcloud-f9cad7c6d185",
-      "dj_id": "princesschelsea",
+      "id": "getafix-soundcloud-197f66de2e6f",
+      "dj_id": "getafix",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/princesschelsea",
-      "label": "SoundCloud: princesschelsea"
+      "url": "https://soundcloud.com/getafix_na_dead",
+      "label": "SoundCloud: GETAFIX"
     },
     {
       "id": "reasxn-soundcloud-ff798f8f6aa6",
@@ -9033,6 +9051,13 @@
       "label": "SoundCloud: Reasxn"
     },
     {
+      "id": "giddy-mixcloud-b944b3a53d6d",
+      "dj_id": "giddy",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/gideonngarua/",
+      "label": "Mixcloud: DJ GIDDY"
+    },
+    {
       "id": "boozie-soundcloud-a8f5b2e99f37",
       "dj_id": "boozie",
       "type": "soundcloud",
@@ -9040,18 +9065,18 @@
       "label": "SoundCloud: Boozie"
     },
     {
-      "id": "lordemusic-soundcloud-29e6ac5c20fe",
-      "dj_id": "lordemusic",
+      "id": "princesschelsea-soundcloud-f9cad7c6d185",
+      "dj_id": "princesschelsea",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/lordemusic",
-      "label": "SoundCloud: LordeMusic"
+      "url": "https://soundcloud.com/princesschelsea",
+      "label": "SoundCloud: princesschelsea"
     },
     {
-      "id": "leisure-soundcloud-80707a8be668",
-      "dj_id": "leisure",
+      "id": "montell2099-soundcloud-33d32a519425",
+      "dj_id": "montell2099",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/theleisurecollective",
-      "label": "SoundCloud: LEISURE"
+      "url": "https://soundcloud.com/montell2099",
+      "label": "SoundCloud: montell2099"
     },
     {
       "id": "community-service-soundcloud-7476d40ab5e1",
@@ -9411,13 +9436,6 @@
       "label": null
     },
     {
-      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
-      "dj_id": "jimi-the-kween",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/jimithekween-music",
-      "label": "SoundCloud: Jimi The Kween"
-    },
-    {
       "id": "halo-bandcamp-30eb88750295",
       "dj_id": "halo",
       "type": "bandcamp",
@@ -9507,6 +9525,13 @@
       "type": "youtube",
       "url": "https://www.youtube.com/@kosumusic",
       "label": null
+    },
+    {
+      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
+      "dj_id": "emi-music-new-zealand",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/nzemi",
+      "label": "SoundCloud: EMI Music New Zealand"
     },
     {
       "id": "night-life-setlistfm-124da870d223",
@@ -9600,11 +9625,179 @@
       "label": null
     },
     {
-      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
-      "dj_id": "emi-music-new-zealand",
+      "id": "cain-mos-soundcloud-59201af3d371",
+      "dj_id": "cain-mos",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/nzemi",
-      "label": "SoundCloud: EMI Music New Zealand"
+      "url": "https://soundcloud.com/cainmos",
+      "label": "SoundCloud: Cain Mos"
+    },
+    {
+      "id": "deep-notion-soundcloud-7a21984f6f49",
+      "dj_id": "deep-notion",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/deepnotion",
+      "label": "SoundCloud: Deep Notion"
+    },
+    {
+      "id": "kinetix-soundcloud-53717cf56f6c",
+      "dj_id": "kinetix",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/kinetixmusic",
+      "label": "SoundCloud: KINETIX"
+    },
+    {
+      "id": "shaun-surveillance-soundcloud-99ab70677dc2",
+      "dj_id": "shaun-surveillance",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/surveillancenzyo",
+      "label": "SoundCloud: Shaun Surveillance"
+    },
+    {
+      "id": "roche-soundcloud-c397ce5afb8e",
+      "dj_id": "roche",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/xvroche",
+      "label": "SoundCloud: Roche"
+    },
+    {
+      "id": "borderline-soundcloud-490595f3ea6d",
+      "dj_id": "borderline",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/borderlinesurlesbords",
+      "label": "SoundCloud: BORDERLINE"
+    },
+    {
+      "id": "agent-alvin-soundcloud-4aae50140785",
+      "dj_id": "agent-alvin",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/agentalvin",
+      "label": "SoundCloud: Agent Alvin"
+    },
+    {
+      "id": "tunnel-vision-soundcloud-3b86890affe4",
+      "dj_id": "tunnel-vision",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/tunnelvisionmusic-2",
+      "label": "SoundCloud: Tunnel vision"
+    },
+    {
+      "id": "tiki-soundcloud-243af032c83c",
+      "dj_id": "tiki",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/tiki_uk",
+      "label": "SoundCloud: TIKI"
+    },
+    {
+      "id": "obeisant-soundcloud-58bf55eaac1e",
+      "dj_id": "obeisant",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/obeisantaudio",
+      "label": "SoundCloud: Obeisant"
+    },
+    {
+      "id": "salmonella-dub-soundcloud-50c0ba01d591",
+      "dj_id": "salmonella-dub",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/salmonella-dub",
+      "label": "SoundCloud: Salmonella Dub"
+    },
+    {
+      "id": "bulletproof-soundcloud-1f60cfd0a7c9",
+      "dj_id": "bulletproof",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/user-228560657",
+      "label": "SoundCloud: Bulletproof"
+    },
+    {
+      "id": "bambi-soundcloud-e7b6e1f01449",
+      "dj_id": "bambi",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/bambi-dj",
+      "label": "SoundCloud: Bambi"
+    },
+    {
+      "id": "fizik-soundcloud-5b301e125bf5",
+      "dj_id": "fizik",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/links-oe",
+      "label": "SoundCloud: Fizik"
+    },
+    {
+      "id": "skopus-soundcloud-4cbba6a90d57",
+      "dj_id": "skopus",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/skopus",
+      "label": "SoundCloud: skopus"
+    },
+    {
+      "id": "hooves-soundcloud-649a97130fb0",
+      "dj_id": "hooves",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/johnnyhooves",
+      "label": "SoundCloud: Hooves"
+    },
+    {
+      "id": "feral-soundcloud-0757cebbf89e",
+      "dj_id": "feral",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/feral_music",
+      "label": "SoundCloud: Feral"
+    },
+    {
+      "id": "victim-soundcloud-fec057476752",
+      "dj_id": "victim",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/user-824172822",
+      "label": "SoundCloud: Victim"
+    },
+    {
+      "id": "sidechain-soundcloud-1136690b32e3",
+      "dj_id": "sidechain",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/jos-heat123",
+      "label": "SoundCloud: SIDECHAIN"
+    },
+    {
+      "id": "menace-soundcloud-93945f98301f",
+      "dj_id": "menace",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/user-608130007-777027898",
+      "label": "SoundCloud: MENACE"
+    },
+    {
+      "id": "inertia-soundcloud-b9120b71db71",
+      "dj_id": "inertia",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/saxon-williams-1",
+      "label": "SoundCloud: Inertia"
+    },
+    {
+      "id": "dynamix-soundcloud-437e60f13622",
+      "dj_id": "dynamix",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/dynamix_music",
+      "label": "SoundCloud: DYNAMIX"
+    },
+    {
+      "id": "hound-soundcloud-031a31f9d84f",
+      "dj_id": "hound",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lil-hound-944777819",
+      "label": "SoundCloud: Hound"
+    },
+    {
+      "id": "medium-soundcloud-cb94bd8d171e",
+      "dj_id": "medium",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/mediumnz",
+      "label": "SoundCloud: MEDIUM"
+    },
+    {
+      "id": "incognito-soundcloud-2b5d20ec95f2",
+      "dj_id": "incognito",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/user-535359695",
+      "label": "SoundCloud: Incognito ?"
     },
     {
       "id": "millie-myspace-29be51075bbc",
@@ -13021,6 +13214,15 @@
       "source": "dance-charts.de",
       "published_at": "2022-11-14T16:00:00.000Z",
       "snippet": "Ein bisschen Trance, ein bisschen House und ein bisschen Techno. So oder so ähnlich könnte man den Sound der Sunset Bros beschreiben. Auch ihre neueste Single “Days Go By“ vermischt wieder ..."
+    },
+    {
+      "id": "shulgin-a75fb236972fc4d9",
+      "dj_id": "shulgin",
+      "title": "RIP Alexander Shulgin, the “Godfather of Ecstasy”",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a93ab52bcd24fdaa28ff156a9ffba45&amp;url=https%3a%2f%2fwww.vice.com%2fen%2farticle%2frip-alexander-shulgin%2f&amp;c=10626163711376002427&amp;mkt=en-nz",
+      "source": "VICE",
+      "published_at": "2014-06-03T08:30:00.000Z",
+      "snippet": "There would be no rave culture as we know it without Alexander Shulgin. His name appears on the second page of the prologue to Energy Flash, one of dance music’s most lauded history books, because he ..."
     },
     {
       "id": "orkestrated-4bb30d314a46c3d3",
