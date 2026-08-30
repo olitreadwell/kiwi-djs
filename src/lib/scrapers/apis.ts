@@ -125,6 +125,16 @@ const MB_COLUMN_TYPES: Record<string, string> = {
   website: 'website_url',
 };
 
+// Auto-generated SoundCloud accounts carry a numeric suffix ("user-123456"
+// or "name-284744466") and are usually secondary or low-activity. A clean
+// permalink is the primary profile — prefer it as the canonical link (#304).
+function isCleanSoundcloudPermalink(url: string): boolean {
+  const match = url.match(/soundcloud\.com\/([^/?#]+)/);
+  if (!match) return false;
+  const permalink = match[1];
+  return !/user-\d+$/.test(permalink) && !/-\d+$/.test(permalink);
+}
+
 export async function enrichMusicbrainz(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
   const artist = await musicbrainzSearch(dj.name);
   if (!artist) {
@@ -163,7 +173,15 @@ export async function enrichMusicbrainz(pool: Pool, dj: DjRow): Promise<ScrapeRe
     await upsertDjLink(pool, dj.id, type, resource);
     const column = MB_COLUMN_TYPES[type];
     if (column) {
-      await pool.query(`UPDATE djs SET ${column} = COALESCE(${column}, $2) WHERE id = $1`, [dj.id, resource]);
+      if (column === 'soundcloud_url') {
+        const existing = (await pool.query(`SELECT soundcloud_url FROM djs WHERE id = $1`, [dj.id])).rows[0]
+          ?.soundcloud_url as string | undefined;
+        if (!existing || (!isCleanSoundcloudPermalink(existing) && isCleanSoundcloudPermalink(resource))) {
+          await pool.query(`UPDATE djs SET soundcloud_url = $2 WHERE id = $1`, [dj.id, resource]);
+        }
+      } else {
+        await pool.query(`UPDATE djs SET ${column} = COALESCE(${column}, $2) WHERE id = $1`, [dj.id, resource]);
+      }
     }
     found += 1;
   }
