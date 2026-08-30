@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-30T03:33:28.806Z",
+  "exportedAt": "2026-08-30T03:43:52.910Z",
   "djs": [
     {
       "id": "kora-ca",
@@ -46,6 +46,40 @@
       "last_played_at": null
     },
     {
+      "id": "emi-music-new-zealand",
+      "name": "EMI Music New Zealand",
+      "bio": null,
+      "genres": [],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000001766513-s11vaf-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/nzemi",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 40,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.584Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland City",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "norman-foreman",
       "name": "Norman Foreman",
       "bio": null,
@@ -80,6 +114,126 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: Dunedin",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "reasxn",
+      "name": "Reasxn",
+      "bio": null,
+      "genres": [
+        "UK Garage",
+        "Bassline",
+        "Drum and Bass",
+        "Dubstep",
+        "Dance"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-OHTrfnzsWorxRMym-yjOgrA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/reasxnbeats",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.510Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "six60",
+      "name": "SIX60",
+      "bio": null,
+      "genres": [
+        "Soul",
+        "Pop",
+        "Rock",
+        "Alternative Rock",
+        "R&B",
+        "Indietronica",
+        "Electronica"
+      ],
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000704417758-4w7dd5-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/six60",
+      "instagram_url": "https://www.instagram.com/six60/",
+      "facebook_url": "https://www.facebook.com/Six60",
+      "mixcloud_url": null,
+      "website_url": "http://www.six60.co.nz/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.213Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "night-life",
+      "name": "Night Life",
+      "bio": null,
+      "genres": [
+        "Pop"
+      ],
+      "city": "queenstown",
+      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.273Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Queenstown",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -250,164 +404,17 @@
       "last_played_at": null
     },
     {
-      "id": "reasxn",
-      "name": "Reasxn",
-      "bio": null,
-      "genres": [
-        "UK Garage",
-        "Bassline",
-        "Drum and Bass",
-        "Dubstep",
-        "Dance"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-OHTrfnzsWorxRMym-yjOgrA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/reasxnbeats",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.510Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "night-life",
-      "name": "Night Life",
-      "bio": null,
-      "genres": [
-        "Pop"
-      ],
-      "city": "queenstown",
-      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.273Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Queenstown",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "emi-music-new-zealand",
-      "name": "EMI Music New Zealand",
-      "bio": null,
-      "genres": [],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000001766513-s11vaf-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/nzemi",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.584Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland City",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "six60",
-      "name": "SIX60",
-      "bio": null,
-      "genres": [
-        "Pop"
-      ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000704417758-4w7dd5-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/six60",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.213Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "kukan-dub-lagan",
       "name": "Kukan Dub Lagan",
       "bio": "Those familiar with Kukan Dub Lagan tunes will know this project is much more than just chill music. Itay fuses dub, world, <span class=\"peekaboo-text\">down-tempo, funk and the indescribable to create a unique journey full of groove, bass and soulful sounds. In simpler words “sunshine music for smiling people”!! ‘</span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
       "genres": [
-        "Kukan Dub Lagan",
         "Dub",
+        "Kukan Dub Lagan",
         "Chill Out",
-        "Downtempo",
         "Spiritual",
-        "World",
+        "Downtempo",
         "Electronica",
+        "World",
         "Ambient"
       ],
       "city": "Wellington",
@@ -785,50 +792,6 @@
       "last_played_at": null
     },
     {
-      "id": "sian",
-      "name": "Sian",
-      "bio": "Wellington-born techno DJ and producer who has toured internationally. Known for driving, industrial-leaning techno.",
-      "genres": [
-        "Indie Dance",
-        "Tech House",
-        "Melodic House & Techno",
-        "Electronica",
-        "Minimal",
-        "Deep Tech",
-        "Dj Tools",
-        "Acapellas"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-MvQC1Qauzv5dT53b-KyxgRA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/sian-481302499",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.djsian.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 70,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.353Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "dirdygerdi",
       "name": "DirdyGerdi",
       "bio": null,
@@ -916,6 +879,50 @@
       "bpm_range": null,
       "stale_since": null,
       "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "sian",
+      "name": "Sian",
+      "bio": "Wellington-born techno DJ and producer who has toured internationally. Known for driving, industrial-leaning techno.",
+      "genres": [
+        "Indie Dance",
+        "Tech House",
+        "Melodic House & Techno",
+        "Electronica",
+        "Minimal",
+        "Deep Tech",
+        "Dj Tools",
+        "Acapellas"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-MvQC1Qauzv5dT53b-KyxgRA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/sian-481302499",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.djsian.com/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 70,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.353Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": "ok",
       "profile_location": null,
       "upcoming_events": 0,
       "last_played_at": null
@@ -1220,7 +1227,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.085Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -1433,40 +1440,45 @@
       "last_played_at": null
     },
     {
-      "id": "princesschelsea",
-      "name": "princesschelsea",
-      "bio": null,
+      "id": "concord-dawn",
+      "name": "Concord Dawn",
+      "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
       "genres": [
-        "Indie",
-        "Pop",
-        "Alternative"
+        "Drum and Bass",
+        "Electronica",
+        "Indie Dance",
+        "Funk",
+        "Disco",
+        "Electronic",
+        "House",
+        "Hardcore"
       ],
-      "city": "auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000465472743-lwmx74-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/princesschelsea",
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000001604320-vel4a7-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/concord-dawn-1",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": null,
+      "website_url": "http://www.concord-dawn.co.nz/",
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
-      "source": "discovered-soundcloud",
+      "data_completeness": 40,
+      "source": "seed",
       "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.291Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
+      "created_at": "2026-08-28T12:17:48.358Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
       "verification_sources": [
-        "mixes",
-        "links"
+        "links",
+        "multi-source"
       ],
       "is_nz": true,
       "bpm_range": null,
       "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
+      "bio_quality": "ok",
+      "profile_location": null,
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -1623,45 +1635,40 @@
       "last_played_at": null
     },
     {
-      "id": "concord-dawn",
-      "name": "Concord Dawn",
-      "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
+      "id": "princesschelsea",
+      "name": "princesschelsea",
+      "bio": null,
       "genres": [
-        "Drum and Bass",
-        "Electronica",
-        "Indie Dance",
-        "Funk",
-        "Disco",
-        "Electronic",
-        "House",
-        "Hardcore"
+        "Indie",
+        "Pop",
+        "Alternative"
       ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000001604320-vel4a7-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/concord-dawn-1",
+      "city": "auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000465472743-lwmx74-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/princesschelsea",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
-      "website_url": "http://www.concord-dawn.co.nz/",
+      "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 40,
-      "source": "seed",
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
       "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.358Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
+      "created_at": "2026-08-30T02:56:17.291Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
       "verification_sources": [
-        "links",
-        "multi-source"
+        "mixes",
+        "links"
       ],
       "is_nz": true,
       "bpm_range": null,
       "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -1683,7 +1690,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.382Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -1697,6 +1704,45 @@
       "bio_quality": null,
       "profile_location": "SoundCloud: West Auckland",
       "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "geneva-am",
+      "name": "Geneva AM",
+      "bio": "Geneva AM is an award winning producer and vocalist based in Aotearoa, New Zealand.</p>",
+      "genres": [
+        "Alternative"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-yuMmmnjdZ9FXES2B-pztAsw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/geneva_am",
+      "instagram_url": "https://www.instagram.com/geneva_am/",
+      "facebook_url": "https://www.facebook.com/genevaam1",
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:24.153Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "links",
+        "articles",
+        "gigs",
+        "multi-gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "upcoming_events": 1,
       "last_played_at": null
     },
     {
@@ -1734,43 +1780,6 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: Adelaide",
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "elliot-vincent",
-      "name": "ELLIOT & VINCENT",
-      "bio": null,
-      "genres": [
-        "Rock"
-      ],
-      "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 10,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:23.908Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -1857,34 +1866,32 @@
       "last_played_at": null
     },
     {
-      "id": "geneva-am",
-      "name": "Geneva AM",
-      "bio": "Geneva AM is an award winning producer and vocalist based in Aotearoa, New Zealand.</p>",
+      "id": "elliot-vincent",
+      "name": "ELLIOT & VINCENT",
+      "bio": null,
       "genres": [
-        "Alternative"
+        "Rock"
       ],
       "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-yuMmmnjdZ9FXES2B-pztAsw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/geneva_am",
-      "instagram_url": "https://www.instagram.com/geneva_am/",
-      "facebook_url": "https://www.facebook.com/genevaam1",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
+      "data_completeness": 10,
       "source": "festival",
       "opt_out": false,
-      "created_at": "2026-08-29T07:22:24.153Z",
+      "created_at": "2026-08-29T07:22:23.908Z",
       "updated_at": "2026-08-30T03:29:29.993Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 5,
+      "verification_level": 3,
       "verification_sources": [
         "links",
-        "articles",
         "gigs",
-        "multi-gigs",
         "multi-source"
       ],
       "is_nz": true,
@@ -1892,7 +1899,7 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": null,
-      "upcoming_events": 1,
+      "upcoming_events": 0,
       "last_played_at": null
     },
     {
@@ -2367,6 +2374,52 @@
       "last_played_at": null
     },
     {
+      "id": "paige-julia",
+      "name": "Paige Julia",
+      "bio": null,
+      "genres": [
+        "Drum and Bass",
+        "140",
+        "Deep Dubstep",
+        "Grime",
+        "Breaks",
+        "UK Bass",
+        "Electronica",
+        "Melodic House & Techno"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-924604966",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 65,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:39.923Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "Bandcamp: Christchurch",
+      "upcoming_events": 1,
+      "last_played_at": null
+    },
+    {
       "id": "dj651-kutmankrew",
       "name": "DJ651 (KutManKrew)",
       "bio": null,
@@ -2562,52 +2615,6 @@
       "bio_quality": null,
       "profile_location": null,
       "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "paige-julia",
-      "name": "Paige Julia",
-      "bio": null,
-      "genres": [
-        "Drum and Bass",
-        "140",
-        "Deep Dubstep",
-        "Grime",
-        "Breaks",
-        "UK Bass",
-        "Electronica",
-        "Melodic House & Techno"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-924604966",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 65,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:39.923Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 5,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs",
-        "multi-gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "Bandcamp: Christchurch",
-      "upcoming_events": 1,
       "last_played_at": null
     },
     {
@@ -2888,7 +2895,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.225Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -3361,46 +3368,6 @@
       "last_played_at": null
     },
     {
-      "id": "jimi-the-kween",
-      "name": "Jimi The Kween",
-      "bio": null,
-      "genres": [
-        "Electronic",
-        "Dance",
-        "Pop"
-      ],
-      "city": "Wellington",
-      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
-      "soundcloud_url": "https://soundcloud.com/jimithekween-music",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:25.403Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
       "id": "lj-groove",
       "name": "LJ Groove",
       "bio": null,
@@ -3442,6 +3409,46 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": "SoundCloud: Queenstown",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "jimi-the-kween",
+      "name": "Jimi The Kween",
+      "bio": null,
+      "genres": [
+        "Electronic",
+        "Dance",
+        "Pop"
+      ],
+      "city": "Wellington",
+      "image_url": "https://a1.sndcdn.com/images/default_avatar_large.png",
+      "soundcloud_url": "https://soundcloud.com/jimithekween-music",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:25.403Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -3605,6 +3612,50 @@
       "last_played_at": null
     },
     {
+      "id": "state-of-mind",
+      "name": "State of Mind",
+      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
+      "genres": [
+        "Drum and Bass",
+        "Electronica",
+        "House",
+        "Melodic House & Techno",
+        "Rock",
+        "Hard Dance",
+        "Hardcore",
+        "Neo Rave"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.stateofmindnz.com/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 70,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.356Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": "ok",
+      "profile_location": "Bandcamp: New Zealand",
+      "upcoming_events": 0,
+      "last_played_at": null
+    },
+    {
       "id": "facettes",
       "name": "Facettes",
       "bio": null,
@@ -3643,50 +3694,6 @@
       "stale_since": null,
       "bio_quality": null,
       "profile_location": null,
-      "upcoming_events": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "state-of-mind",
-      "name": "State of Mind",
-      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
-      "genres": [
-        "Drum and Bass",
-        "Electronica",
-        "House",
-        "Melodic House & Techno",
-        "Rock",
-        "Hard Dance",
-        "Hardcore",
-        "Neo Rave"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.stateofmindnz.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 70,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.356Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": "Bandcamp: New Zealand",
       "upcoming_events": 0,
       "last_played_at": null
     },
@@ -4188,7 +4195,7 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:30.822Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -4226,7 +4233,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.125Z",
-      "updated_at": "2026-08-30T03:33:17.914Z",
+      "updated_at": "2026-08-30T03:43:48.926Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -5303,22 +5310,22 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-aa5dec809bc6",
-      "name": "Dave Against The Machine- Bulls On Parade 2026",
+      "id": "utr-venue-04e2dd2b521a",
+      "name": "Negative Approach 2026 AUS &amp; NZ Tour",
       "venue": "Valhalla",
-      "starts_at": "2026-09-04T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104021/N/Dave-Against-The-Machine--Bulls-On-Parade-2026.utr",
+      "starts_at": "2026-11-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100445/N/Negative-Approach-2026-AUS--NZ-Tour.utr",
       "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
     },
     {
-      "id": "utr-venue-04e2dd2b521a",
-      "name": "Negative Approach 2026 AUS &amp; NZ Tour",
+      "id": "utr-venue-aa5dec809bc6",
+      "name": "Dave Against The Machine- Bulls On Parade 2026",
       "venue": "Valhalla",
-      "starts_at": "2026-11-13T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/100445/N/Negative-Approach-2026-AUS--NZ-Tour.utr",
+      "starts_at": "2026-09-04T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104021/N/Dave-Against-The-Machine--Bulls-On-Parade-2026.utr",
       "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
@@ -5391,23 +5398,23 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-b44a7566bdf7",
-      "name": "Pur Techno Night 011",
-      "venue": "Afters.",
-      "starts_at": "2026-09-05T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104120/N/Pur-Techno-Night-011.utr",
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": true,
-      "dj_name": null
-    },
-    {
       "id": "earthbeat-2025",
       "name": "Earth Beat Festival 2025",
       "venue": "Kaipara, Northland",
       "starts_at": null,
       "url": "https://www.earthbeatfestival.com/music-lineup",
       "source": "earthbeat",
+      "dj_id": null,
+      "is_dj_event": true,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-b44a7566bdf7",
+      "name": "Pur Techno Night 011",
+      "venue": "Afters.",
+      "starts_at": "2026-09-05T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104120/N/Pur-Techno-Night-011.utr",
+      "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": true,
       "dj_name": null
@@ -5754,22 +5761,22 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-58e7e427d78c",
-      "name": "Songwriters' Showcase #115",
-      "venue": "MOON",
-      "starts_at": "2026-09-06T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104387/N/Songwriters'-Showcase-#115.utr",
+      "id": "utr-venue-21ee5573b9c0",
+      "name": "Flyte",
+      "venue": "San Fran",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
       "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
     },
     {
-      "id": "utr-venue-45156c42cbf5",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "id": "utr-venue-58e7e427d78c",
+      "name": "Songwriters' Showcase #115",
       "venue": "MOON",
-      "starts_at": "2026-09-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104264/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "starts_at": "2026-09-06T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104387/N/Songwriters'-Showcase-#115.utr",
       "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
@@ -5798,6 +5805,17 @@
       "dj_name": null
     },
     {
+      "id": "utr-venue-45156c42cbf5",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": "2026-09-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104264/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "eventfinda-sitemap-562ee2f8b289",
       "name": "Spring Yum Cha",
       "venue": "The Botanist",
@@ -5815,17 +5833,6 @@
       "starts_at": null,
       "url": "https://www.eventfinda.co.nz/2026/te-reo-kindy-gym-session-full-immersion/wellington-region",
       "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-21ee5573b9c0",
-      "name": "Flyte",
-      "venue": "San Fran",
-      "starts_at": "2026-11-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
-      "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -5864,17 +5871,6 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104264",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "undertheradar-104178",
       "name": "Single Malt Presents ‘Wetlands’",
       "venue": null,
@@ -5891,6 +5887,17 @@
       "venue": null,
       "starts_at": "2026-09-24T00:00:00.000Z",
       "url": "https://www.undertheradar.co.nz/gig/104388/Toxa-Album-Release.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-104264",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104264/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
       "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
@@ -5919,11 +5926,22 @@
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-104062",
-      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
+      "id": "sanfran-1488974",
+      "name": "Old Mervs",
+      "venue": "San Fran",
+      "starts_at": "2026-11-06T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-102969",
+      "name": "The Racket Lounge",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-17T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
+      "starts_at": "2026-10-07T18:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
       "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
@@ -5963,12 +5981,12 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104262",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104262/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "source": "undertheradar",
+      "id": "rogue-vagabond-104171",
+      "name": "Rory Johns And The Mystic",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-10T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -6007,11 +6025,11 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104387",
-      "name": "Songwriters' Showcase #115",
+      "id": "undertheradar-104262",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
       "venue": "MOON",
       "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104387/Songwriters-Showcase-115.utr",
+      "url": "https://www.undertheradar.co.nz/gig/104262/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
       "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
@@ -6029,56 +6047,23 @@
       "dj_name": null
     },
     {
+      "id": "undertheradar-104387",
+      "name": "Songwriters' Showcase #115",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104387/Songwriters-Showcase-115.utr",
+      "source": "undertheradar",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "sanfran-436891",
       "name": "Flyte",
       "venue": "San Fran",
       "starts_at": "2026-11-14T19:00:00.000Z",
       "url": "https://sanfran.co.nz/all-events/flyte-tickets-ae436891",
       "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1488974",
-      "name": "Old Mervs",
-      "venue": "San Fran",
-      "starts_at": "2026-11-06T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-102969",
-      "name": "The Racket Lounge",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-07T18:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102969/The-Racket-Lounge.utr",
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "ra-2468041",
-      "name": "Carlucci Carnival",
-      "venue": "Carlucci Land",
-      "starts_at": "2026-09-26T03:00:00.000Z",
-      "url": "https://ra.co/events/2468041",
-      "source": "resident-advisor",
-      "dj_id": null,
-      "is_dj_event": true,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104171",
-      "name": "Rory Johns And The Mystic",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-10T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
-      "source": "rogue-vagabond",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -6103,6 +6088,28 @@
       "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-104062",
+      "name": "Te Kōkī Big Band Presents: You Can Count On Ella!",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-17T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104062/Te-Kk-Big-Band-Presents-You-Can-Count-On-Ella!.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "ra-2468041",
+      "name": "Carlucci Carnival",
+      "venue": "Carlucci Land",
+      "starts_at": "2026-09-26T03:00:00.000Z",
+      "url": "https://ra.co/events/2468041",
+      "source": "resident-advisor",
+      "dj_id": null,
+      "is_dj_event": true,
       "dj_name": null
     }
   ],
@@ -6885,6 +6892,13 @@
       "label": "Mixcloud: DARREN EMERSON"
     },
     {
+      "id": "restricted-soundcloud-31db49c23cb6",
+      "dj_id": "restricted",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/itsrestricted",
+      "label": "SoundCloud: Restricted"
+    },
+    {
       "id": "sam-biography-cb2598af837b",
       "dj_id": "sam",
       "type": "biography",
@@ -6967,13 +6981,6 @@
       "type": "soundcloud",
       "url": "https://soundcloud.com/lunavella-serenna",
       "label": "SoundCloud: Serenna"
-    },
-    {
-      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
-      "dj_id": "jimi-the-kween",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/jimithekween-music",
-      "label": "SoundCloud: Jimi The Kween"
     },
     {
       "id": "emerson-other databases-b33e493974dc",
@@ -7254,6 +7261,13 @@
       "type": "purchase for download",
       "url": "https://www.7digital.com/artist/emerson-lake-palmer",
       "label": "purchase for download"
+    },
+    {
+      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
+      "dj_id": "jimi-the-kween",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/jimithekween-music",
+      "label": "SoundCloud: Jimi The Kween"
     },
     {
       "id": "emerson-purchase for download-50581286b137",
@@ -7557,6 +7571,13 @@
       "label": "SoundCloud: Kukan Dub Lagan"
     },
     {
+      "id": "headland-mixcloud-d10a6a9a8cb7",
+      "dj_id": "headland",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/jaceheadland/",
+      "label": "Mixcloud: Jace Headland"
+    },
+    {
       "id": "sunshine-website-0e42fe91d138",
       "dj_id": "sunshine",
       "type": "website",
@@ -7646,13 +7667,6 @@
       "type": "resident-advisor",
       "url": "https://ra.co/dj/kora-ca",
       "label": null
-    },
-    {
-      "id": "headland-mixcloud-d10a6a9a8cb7",
-      "dj_id": "headland",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/jaceheadland/",
-      "label": "Mixcloud: Jace Headland"
     },
     {
       "id": "fairbrother-bandcamp-c42bda6ae4be",
@@ -8124,13 +8138,6 @@
       "label": "free streaming"
     },
     {
-      "id": "jimi-the-kween-deezer-d7b3897d1891",
-      "dj_id": "jimi-the-kween",
-      "type": "deezer",
-      "url": "https://www.deezer.com/artist/98600952",
-      "label": "free streaming"
-    },
-    {
       "id": "frida-mixcloud-2a6c8c0c4df3",
       "dj_id": "frida",
       "type": "mixcloud",
@@ -8150,6 +8157,13 @@
       "type": "mixcloud",
       "url": "https://www.mixcloud.com/tvdisko/",
       "label": "Mixcloud: TV DiSKO"
+    },
+    {
+      "id": "frank-booker-mixcloud-ac569ced9731",
+      "dj_id": "frank-booker",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/frankbooker/",
+      "label": "Mixcloud: Frank Booker"
     },
     {
       "id": "dick-johnson-mixcloud-3b00515013a0",
@@ -8201,11 +8215,11 @@
       "label": "social network"
     },
     {
-      "id": "frank-booker-mixcloud-ac569ced9731",
-      "dj_id": "frank-booker",
+      "id": "dick-johnson-mixcloud-faeb5b2af282",
+      "dj_id": "dick-johnson",
       "type": "mixcloud",
-      "url": "https://www.mixcloud.com/frankbooker/",
-      "label": "Mixcloud: Frank Booker"
+      "url": "https://www.mixcloud.com/magikj/",
+      "label": "Mixcloud: Dick Johnson / Magik J"
     },
     {
       "id": "kora-ca-purchase for download-c619ab9b4f55",
@@ -8257,11 +8271,11 @@
       "label": null
     },
     {
-      "id": "dick-johnson-mixcloud-faeb5b2af282",
-      "dj_id": "dick-johnson",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/magikj/",
-      "label": "Mixcloud: Dick Johnson / Magik J"
+      "id": "jimi-the-kween-deezer-d7b3897d1891",
+      "dj_id": "jimi-the-kween",
+      "type": "deezer",
+      "url": "https://www.deezer.com/artist/98600952",
+      "label": "free streaming"
     },
     {
       "id": "myles-soundcloud-9de6d34daf4a",
@@ -8334,13 +8348,6 @@
       "label": "SoundCloud: epoch"
     },
     {
-      "id": "giddy-mixcloud-b944b3a53d6d",
-      "dj_id": "giddy",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/gideonngarua/",
-      "label": "Mixcloud: DJ GIDDY"
-    },
-    {
       "id": "maps-soundcloud-f9a64790241b",
       "dj_id": "maps",
       "type": "soundcloud",
@@ -8383,6 +8390,13 @@
       "label": "SoundCloud: hexadecimal"
     },
     {
+      "id": "giddy-mixcloud-b944b3a53d6d",
+      "dj_id": "giddy",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/gideonngarua/",
+      "label": "Mixcloud: DJ GIDDY"
+    },
+    {
       "id": "shreddy-soundcloud-95e2388abcfe",
       "dj_id": "shreddy",
       "type": "soundcloud",
@@ -8397,11 +8411,11 @@
       "label": "Mixcloud: Tom Shulgin"
     },
     {
-      "id": "night-life-soundcloud-03babe5d322f",
-      "dj_id": "night-life",
+      "id": "flipthescripta-soundcloud-3e097a087317",
+      "dj_id": "flipthescripta",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/night-life-584430914",
-      "label": "SoundCloud: Night Life"
+      "url": "https://soundcloud.com/user-690791248",
+      "label": "SoundCloud: FlipTheScripta"
     },
     {
       "id": "lomez-brown-soundcloud-c9adc7a9e6f9",
@@ -8439,11 +8453,11 @@
       "label": "SoundCloud: DJ651 (KutManKrew)"
     },
     {
-      "id": "flipthescripta-soundcloud-3e097a087317",
-      "dj_id": "flipthescripta",
+      "id": "six60-soundcloud-22093e2a3210",
+      "dj_id": "six60",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/user-690791248",
-      "label": "SoundCloud: FlipTheScripta"
+      "url": "https://soundcloud.com/six60",
+      "label": "SoundCloud: SIX60"
     },
     {
       "id": "fat-freddy-s-drop-soundcloud-b8e08331cf44",
@@ -8458,13 +8472,6 @@
       "type": "soundcloud",
       "url": "https://soundcloud.com/antidote_audio",
       "label": "SoundCloud: Antidote Audio"
-    },
-    {
-      "id": "montell2099-soundcloud-33d32a519425",
-      "dj_id": "montell2099",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/montell2099",
-      "label": "SoundCloud: montell2099"
     },
     {
       "id": "k-o-n-e-c-s-soundcloud-8914a4113e4d",
@@ -8493,6 +8500,13 @@
       "type": "soundcloud",
       "url": "https://soundcloud.com/redlinerecords03",
       "label": "SoundCloud: Redline Records"
+    },
+    {
+      "id": "night-life-soundcloud-03babe5d322f",
+      "dj_id": "night-life",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/night-life-584430914",
+      "label": "SoundCloud: Night Life"
     },
     {
       "id": "giddy-soundcloud-7a5bf37a103e",
@@ -8558,11 +8572,11 @@
       "label": null
     },
     {
-      "id": "lordemusic-soundcloud-29e6ac5c20fe",
-      "dj_id": "lordemusic",
+      "id": "montell2099-soundcloud-33d32a519425",
+      "dj_id": "montell2099",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/lordemusic",
-      "label": "SoundCloud: LordeMusic"
+      "url": "https://soundcloud.com/montell2099",
+      "label": "SoundCloud: montell2099"
     },
     {
       "id": "reasxn-soundcloud-ff798f8f6aa6",
@@ -8572,11 +8586,11 @@
       "label": "SoundCloud: Reasxn"
     },
     {
-      "id": "six60-soundcloud-22093e2a3210",
-      "dj_id": "six60",
+      "id": "leisure-soundcloud-80707a8be668",
+      "dj_id": "leisure",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/six60",
-      "label": "SoundCloud: SIX60"
+      "url": "https://soundcloud.com/theleisurecollective",
+      "label": "SoundCloud: LEISURE"
     },
     {
       "id": "boozie-soundcloud-a8f5b2e99f37",
@@ -8586,11 +8600,18 @@
       "label": "SoundCloud: Boozie"
     },
     {
-      "id": "leisure-soundcloud-80707a8be668",
-      "dj_id": "leisure",
+      "id": "princesschelsea-soundcloud-f9cad7c6d185",
+      "dj_id": "princesschelsea",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/theleisurecollective",
-      "label": "SoundCloud: LEISURE"
+      "url": "https://soundcloud.com/princesschelsea",
+      "label": "SoundCloud: princesschelsea"
+    },
+    {
+      "id": "lordemusic-soundcloud-29e6ac5c20fe",
+      "dj_id": "lordemusic",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lordemusic",
+      "label": "SoundCloud: LordeMusic"
     },
     {
       "id": "community-service-soundcloud-7476d40ab5e1",
@@ -8600,11 +8621,11 @@
       "label": "SoundCloud: COMMUNITY SERVICE"
     },
     {
-      "id": "princesschelsea-soundcloud-f9cad7c6d185",
-      "dj_id": "princesschelsea",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/princesschelsea",
-      "label": "SoundCloud: princesschelsea"
+      "id": "six60-discogs-7fedd97be233",
+      "dj_id": "six60",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/2311497",
+      "label": null
     },
     {
       "id": "kukan-dub-lagan-free streaming-643781f78929",
@@ -8950,13 +8971,6 @@
       "label": null
     },
     {
-      "id": "restricted-soundcloud-31db49c23cb6",
-      "dj_id": "restricted",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/itsrestricted",
-      "label": "SoundCloud: Restricted"
-    },
-    {
       "id": "halo-bandcamp-30eb88750295",
       "dj_id": "halo",
       "type": "bandcamp",
@@ -9059,6 +9073,90 @@
       "dj_id": "night-life",
       "type": "setlistfm",
       "url": "https://www.setlist.fm/setlists/night-life-5bccebdc.html",
+      "label": null
+    },
+    {
+      "id": "six60-spotify-958fba7654a6",
+      "dj_id": "six60",
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/1caoBfXJrbKCwIaTzGkyHn",
+      "label": null
+    },
+    {
+      "id": "six60-last.fm-109798fbfd97",
+      "dj_id": "six60",
+      "type": "last.fm",
+      "url": "https://www.last.fm/music/Six60",
+      "label": null
+    },
+    {
+      "id": "six60-website-feac551d8c57",
+      "dj_id": "six60",
+      "type": "website",
+      "url": "http://www.six60.co.nz/",
+      "label": null
+    },
+    {
+      "id": "six60-purchase for download-e958242b5817",
+      "dj_id": "six60",
+      "type": "purchase for download",
+      "url": "https://itunes.apple.com/nz/artist/id386478059",
+      "label": null
+    },
+    {
+      "id": "six60-twitter-84f2f105a0a8",
+      "dj_id": "six60",
+      "type": "twitter",
+      "url": "https://twitter.com/six60",
+      "label": null
+    },
+    {
+      "id": "six60-facebook-5503b24e7346",
+      "dj_id": "six60",
+      "type": "facebook",
+      "url": "https://www.facebook.com/Six60",
+      "label": null
+    },
+    {
+      "id": "six60-instagram-eec40da1b471",
+      "dj_id": "six60",
+      "type": "instagram",
+      "url": "https://www.instagram.com/six60/",
+      "label": null
+    },
+    {
+      "id": "six60-songkick-d288d2142508",
+      "dj_id": "six60",
+      "type": "songkick",
+      "url": "https://www.songkick.com/artists/3369841",
+      "label": null
+    },
+    {
+      "id": "six60-tidal-6e87020dbee0",
+      "dj_id": "six60",
+      "type": "tidal",
+      "url": "https://tidal.com/artist/5230588",
+      "label": null
+    },
+    {
+      "id": "six60-wikidata-0c66523c55fe",
+      "dj_id": "six60",
+      "type": "wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1659282",
+      "label": null
+    },
+    {
+      "id": "six60-wikipedia-4f30af74a711",
+      "dj_id": "six60",
+      "type": "wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Six60",
+      "label": null
+    },
+    {
+      "id": "six60-youtube-e24f4e701f47",
+      "dj_id": "six60",
+      "type": "youtube",
+      "url": "https://www.youtube.com/Six60NZ",
       "label": null
     },
     {
@@ -11974,13 +12072,6 @@
       "label": null
     },
     {
-      "id": "jimi-the-kween-spotify-03d90760d7d2",
-      "dj_id": "jimi-the-kween",
-      "type": "spotify",
-      "url": "https://open.spotify.com/artist/0GsG618ekRVVUw6shNuxT7",
-      "label": "free streaming"
-    },
-    {
       "id": "sunshine-viaf-576e4cd6bdaa",
       "dj_id": "sunshine",
       "type": "viaf",
@@ -12037,17 +12128,24 @@
       "label": null
     },
     {
-      "id": "jimi-the-kween-apple-music-e62eeb2722ba",
-      "dj_id": "jimi-the-kween",
-      "type": "apple-music",
-      "url": "https://music.apple.com/au/artist/1519909066",
-      "label": null
-    },
-    {
       "id": "sunshine-tidal-4d4829c4aaed",
       "dj_id": "sunshine",
       "type": "tidal",
       "url": "https://tidal.com/artist/13598",
+      "label": null
+    },
+    {
+      "id": "restricted-discogs-d08637e4a8f6",
+      "dj_id": "restricted",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/129042",
+      "label": null
+    },
+    {
+      "id": "restricted-myspace-4033abff2ff2",
+      "dj_id": "restricted",
+      "type": "myspace",
+      "url": "https://myspace.com/restrictedebm",
       "label": null
     },
     {
@@ -12142,25 +12240,25 @@
       "label": "Nicka35"
     },
     {
-      "id": "restricted-discogs-d08637e4a8f6",
-      "dj_id": "restricted",
-      "type": "discogs",
-      "url": "https://www.discogs.com/artist/129042",
-      "label": null
-    },
-    {
-      "id": "restricted-myspace-4033abff2ff2",
-      "dj_id": "restricted",
-      "type": "myspace",
-      "url": "https://myspace.com/restrictedebm",
-      "label": null
-    },
-    {
       "id": "restricted-facebook-b01d580c93f8",
       "dj_id": "restricted",
       "type": "facebook",
       "url": "https://www.facebook.com/restrictedareamusic",
       "label": "social network"
+    },
+    {
+      "id": "jimi-the-kween-spotify-03d90760d7d2",
+      "dj_id": "jimi-the-kween",
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/0GsG618ekRVVUw6shNuxT7",
+      "label": "free streaming"
+    },
+    {
+      "id": "jimi-the-kween-apple-music-e62eeb2722ba",
+      "dj_id": "jimi-the-kween",
+      "type": "apple-music",
+      "url": "https://music.apple.com/au/artist/1519909066",
+      "label": null
     },
     {
       "id": "dave-marks-instagram-8d368759e892",
@@ -12366,18 +12464,18 @@
       "label": "social network"
     },
     {
-      "id": "taylor-sol-soundcloud-03ee7c50e22d",
-      "dj_id": "taylor-sol",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/taylor-sol",
-      "label": "SoundCloud: Taylor Sol"
-    },
-    {
       "id": "bbyfacekilla-mixcloud-529287dec668",
       "dj_id": "bbyfacekilla",
       "type": "mixcloud",
       "url": "https://www.mixcloud.com/bbyfacekilla333/",
       "label": "Mixcloud: BBYFACEKILLA"
+    },
+    {
+      "id": "taylor-sol-soundcloud-03ee7c50e22d",
+      "dj_id": "taylor-sol",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/taylor-sol",
+      "label": "SoundCloud: Taylor Sol"
     },
     {
       "id": "earth-beats-soundcloud-2c7ecb58a93a",
