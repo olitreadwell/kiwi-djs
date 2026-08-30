@@ -12,7 +12,8 @@
 ## Layout
 
 - `src/lib/scrapers/` — one file per source; add a scraper by implementing `Scraper` and registering it in `run-all.ts`
-- `src/lib/queries.ts` — all data access; branches DB vs snapshot mode via `isDbMode`
+- `src/lib/queries.ts` — data-access facade; picks `PostgresRepo` or `SnapshotRepo` via `isDbMode`
+- `src/lib/repo/` — `types.ts` (row types + `DataRepository` interface), `postgres.ts`, `snapshot.ts` adapters
 - `db/schema.sql` — idempotent schema
 - `scripts/` — migrate, seed, snapshot export, CLI scraper runner
 

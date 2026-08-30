@@ -30,7 +30,8 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 
 - `src/lib/scrapers/` — one file per source. `run-all.ts` orchestrates: sources → `discoverAll` → `enrichAllDjs` → `verifyDiscovered` (second pass promotes same-cycle candidates)
 - Enrichment covers active DJs first, then top candidates (by `verification_level`, then `data_completeness`); junk-marker candidates excluded
-- `src/lib/queries.ts` — all data access; branches DB vs snapshot mode via `isDbMode`
+- `src/lib/queries.ts` — data-access facade; picks `PostgresRepo` or `SnapshotRepo` via `isDbMode`
+- `src/lib/repo/` — `types.ts` (row types + `DataRepository` interface), `postgres.ts` (SQL), `snapshot.ts` (snapshot.json)
 - `src/lib/openapi.ts` — OpenAPI 3.1 spec (typed with `type-fest`); served at `/api/openapi.json`
 - `src/lib/api-types.ts` — API response types + `toDjSummary`
 - `src/app/api/v1/` — public API: `/djs`, `/djs/{id}`, `/events`, `/venues`, `/search`, `/dataset`, `/dataset.csv`
