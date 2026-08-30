@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-30 — Project rename to kiwi-djs (repo / Vercel / local dir)
+
+- GitHub repo renamed `olitreadwell/nz-djs` → `olitreadwell/kiwi-djs`; local dir → `/Users/olitreadwell/code/kiwi-djs`; origin remote updated
+- Vercel consolidated to ONE project: `nz-djs` renamed to `kiwi-djs` → live at https://kiwi-djs.vercel.app; the duplicate `wellington-djs` project was deleted and the stale `nz-djs.vercel.app` alias removed
+- launchd loop agent renamed to `com.olitreadwell.kiwi-djs-loop` with new log paths; user agents now `KiwiDJsBot`; dataset CSV export → `kiwi-djs.csv`; default GitHub repo for link-feedback votes → `olitreadwell/kiwi-djs`
+- Local docker DB keeps its legacy `wellington-djs-db` name until the Neon managed DB fully replaces it
+
 ## 2026-08-30 — Key-plug-and-play API scrapers (Last.fm / Discogs / YouTube)
 
 - `discover-lastfm-nz`: Last.fm `geo.gettopartists` (country=New Zealand) ranks NZ electronic artists by playcount; genre tags via `artist.getTopTags`, filtered to known electronic genres; gated on `LASTFM_API_KEY`
