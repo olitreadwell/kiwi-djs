@@ -7,6 +7,7 @@ import { DATASET_FIXES, dedupeEvents } from './dataset-fixes';
 import { buildIssueQueue, loadIssueQueue, writeIssueQueue, type QueueIssue } from './issue-queue';
 import { normaliseGenres } from '../src/lib/genres';
 import { isRelevantArticle } from '../src/lib/scrapers/enrich';
+import { classifyProfileLocation, hasNzLocationEvidence } from '../src/lib/locations';
 
 // Self-improving scrape loop.
 //
@@ -420,12 +421,19 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
     );
   }
 
-  const nonNzLocation = (await pool.query(
-    `SELECT name, profile_location FROM djs
+  const locationRows = (await pool.query(
+    `SELECT id, name, profile_location, verification_sources FROM djs
      WHERE opt_out = FALSE AND active = TRUE AND is_nz = TRUE
-       AND profile_location IS NOT NULL
-       AND NOT ('location' = ANY(verification_sources))`,
-  )).rows as Array<{ name: string; profile_location: string }>;
+       AND profile_location IS NOT NULL AND profile_location <> ''`,
+  )).rows as Array<{ id: string; name: string; profile_location: string; verification_sources: string[] }>;
+  const nonNzLocation: Array<{ name: string; profile_location: string }> = [];
+  for (const row of locationRows) {
+    if (classifyProfileLocation(row.profile_location) !== 'non-nz') continue;
+    const gigs = (await pool.query('SELECT count(*)::int AS n FROM event_djs WHERE dj_id = $1', [row.id])).rows[0]
+      .n as number;
+    if (hasNzLocationEvidence(row.verification_sources, gigs)) continue;
+    nonNzLocation.push({ name: row.name, profile_location: row.profile_location });
+  }
   if (nonNzLocation.length >= 2) {
     file(
       `data: ${nonNzLocation.length} DJs' profiles list a non-NZ location`,
