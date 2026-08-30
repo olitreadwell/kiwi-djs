@@ -45,7 +45,7 @@ export function GenreFilter({ genres }: { genres: string[] }) {
               key={genre}
               onClick={() => setGenre(genre)}
               className={`rounded-full border px-3 py-1 font-mono text-xs transition-colors ${
-                active === genre ? `border-transparent ${genrePill([genre])}` : 'border-edge text-muted hover:border-accent/50'
+                active === genre ? `border-transparent ${genrePill(genre)}` : 'border-edge text-muted hover:border-accent/50'
               }`}
             >
               {genre}

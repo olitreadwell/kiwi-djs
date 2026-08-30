@@ -93,7 +93,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           {dj.genres.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1.5">
               {topGenres(dj.genres).map((genre) => (
-                <span key={genre} className={`inline-block rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider ${genrePill(dj.genres)}`}>
+                <span key={genre} className={`inline-block rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider ${genrePill(genre)}`}>
                   {genre}
                 </span>
               ))}

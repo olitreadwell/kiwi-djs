@@ -243,15 +243,17 @@ const GENRE_ACCENTS: Array<[string[], string, string]> = [
 ];
 
 export function genreAccent(genres: string[]): string {
-  for (const [matches, accent] of GENRE_ACCENTS) {
-    if (genres.some((genre) => matches.includes(genre))) return accent;
+  for (const genre of genres) {
+    for (const [matches, accent] of GENRE_ACCENTS) {
+      if (matches.includes(genre)) return accent;
+    }
   }
   return 'border-edge bg-surface hover:border-accent/60';
 }
 
-export function genrePill(genres: string[]): string {
+export function genrePill(genre: string): string {
   for (const [matches, , pill] of GENRE_ACCENTS) {
-    if (genres.some((genre) => matches.includes(genre))) return pill;
+    if (matches.includes(genre)) return pill;
   }
   return 'bg-stone-500 text-white';
 }

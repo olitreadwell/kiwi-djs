@@ -4,7 +4,6 @@ import { genreAccent, genrePill, topGenres } from '@/lib/genres';
 
 export function DjCard({ dj }: { dj: DjRow }) {
   const accent = genreAccent(dj.genres);
-  const pill = genrePill(dj.genres);
   return (
     <Link
       href={`/djs/${dj.id}`}
@@ -15,7 +14,7 @@ export function DjCard({ dj }: { dj: DjRow }) {
         {topGenres(dj.genres).length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
             {topGenres(dj.genres).map((genre) => (
-              <span key={genre} className={`inline-block rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${pill}`}>
+              <span key={genre} className={`inline-block rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${genrePill(genre)}`}>
                 {genre}
               </span>
             ))}
