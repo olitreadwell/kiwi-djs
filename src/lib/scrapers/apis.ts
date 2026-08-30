@@ -275,7 +275,9 @@ async function wikipediaIntro(title: string): Promise<string | null> {
   const data = (await fetchJson(url)) as { query?: { pages?: Record<string, WikipediaPage> } };
   const page = Object.values(data.query?.pages ?? {})[0];
   const extract = page?.extract?.trim();
-  return extract ? extract.slice(0, 2000) : null;
+  // Collapse paragraph breaks to a single line — multi-line bios break the
+  // CSV export's line count and render awkwardly on cards.
+  return extract ? extract.replace(/\s+/g, ' ').trim().slice(0, 2000) : null;
 }
 
 function wikipediaTitleFromUrl(resource: string): string | null {
@@ -344,7 +346,7 @@ export async function enrichBio(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
     });
     if (res.ok) {
       const data = (await res.json()) as { biography?: string };
-      const bio = (data.biography ?? '').trim();
+      const bio = (data.biography ?? '').replace(/\s+/g, ' ').trim();
       if (bio) {
         await pool.query(`UPDATE djs SET bio = $2 WHERE id = $1`, [dj.id, bio.slice(0, 2000)]);
         return { status: 'ok', items_found: 1, items_new: 0 };
