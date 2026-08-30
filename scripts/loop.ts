@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { getPool } from './lib/db.mjs';
 import { runAllScrapers } from '../src/lib/scrapers/run-all';
 import { DATASET_FIXES, dedupeEvents } from './dataset-fixes';
+import { buildIssueQueue, loadIssueQueue, writeIssueQueue, type QueueIssue } from './issue-queue';
 import { normaliseGenres } from '../src/lib/genres';
 import { isRelevantArticle } from '../src/lib/scrapers/enrich';
 
@@ -280,19 +281,41 @@ function openIssueNumbers(): Set<number> {
   }
 }
 
-// Issues phase cycle: pick the highest-priority open automatable dataset
-// issue, run its fix, close it when resolved. Switches back to the scrape
-// phase when the queue is drained or MAX_ISSUE_CYCLES pass.
+function logQueueTop(queue: QueueIssue[], count = 3): void {
+  if (queue.length === 0) {
+    log('Issue queue: empty.');
+    return;
+  }
+  const lines = queue.slice(0, count).map((issue, i) => `  ${i + 1}. #${issue.number} ${issue.title}${issue.workable ? ' (automatable)' : ''}`);
+  log(`Issue queue (${queue.length} open):\n${lines.join('\n')}`);
+}
+
+// Issues phase cycle: audit every open issue into the prioritised,
+// dependency-ordered queue (.loop/queue.json), then work the top open
+// automatable dataset issue. Feature/research issues are logged for the
+// next agent session. Switches back to the scrape phase when nothing is
+// workable or MAX_ISSUE_CYCLES pass.
 async function runIssuesCycle(pool: ReturnType<typeof getPool>): Promise<{ switchedToScrape: boolean }> {
   const phase = loadPhase();
-  const open = openIssueNumbers();
-  const openFixes = DATASET_FIXES.filter((fix) => open.has(fix.issueNumber)).sort((a, b) => a.priority - b.priority);
-  if (openFixes.length === 0) {
+  const queue = buildIssueQueue();
+  writeIssueQueue(queue);
+  logQueueTop(queue);
+  if (queue.length === 0) {
+    log('Issues phase: no open issues — resuming data improvement runs.');
+    savePhase({ phase: 'scrape', cyclesInPhase: 0, issuesResolved: phase.issuesResolved });
+    return { switchedToScrape: true };
+  }
+  const top = queue[0];
+  if (!top.workable) {
+    log(`Issues phase: top issue #${top.number} — "${top.title}" (${top.labels.join(', ') || 'unlabelled'}) needs an agent session. Queue written to .loop/queue.json.`);
+  }
+  const workable = queue.find((issue) => issue.workable);
+  if (!workable) {
     log('Issues phase: no open automatable dataset issues — resuming data improvement runs.');
     savePhase({ phase: 'scrape', cyclesInPhase: 0, issuesResolved: phase.issuesResolved });
     return { switchedToScrape: true };
   }
-  const fix = openFixes[0];
+  const fix = DATASET_FIXES.find((candidate) => candidate.issueNumber === workable.number)!;
   log(`Issues phase (cycle ${phase.cyclesInPhase + 1}): working on #${fix.issueNumber} — ${fix.title}.`);
   try {
     const result = await fix.fix(pool);
@@ -446,6 +469,8 @@ async function writeHandoff(pool: ReturnType<typeof getPool>, totals: { totalNew
     )
   ).rows as Array<{ source: string }>;
   const phase = loadPhase();
+  const queue = loadIssueQueue();
+  const top = queue[0];
   const handoff = [
     '# Loop handoff — compact state',
     `Updated: ${new Date().toISOString()}`,
@@ -453,7 +478,8 @@ async function writeHandoff(pool: ReturnType<typeof getPool>, totals: { totalNew
     `Last cycle: ${totals.totalNew} new / ${totals.totalFound} found`,
     `Dataset: ${counts.active_djs} active DJs, ${counts.candidates} candidates, ${counts.mixes} mixes, ${counts.articles} articles, ${counts.links} links, ${counts.events} events`,
     failing.length > 0 ? `Failing sources: ${failing.map((f) => f.source).join(', ')}` : 'Failing sources: none',
-    'Next: run `pnpm loop --once`; open GitHub issues are the work queue.',
+    top ? `Next issue: #${top.number} — ${top.title}${top.workable ? ' (automatable)' : ' (needs agent)'}` : 'Next issue: none open',
+    'Queue: .loop/queue.json (priority + dependency ordered). Run `pnpm loop --once` to work the top automatable issue.',
     '',
   ].join('\n');
   const handoffDir = new URL('../.loop/', import.meta.url);
@@ -524,6 +550,9 @@ async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: n
   log(`Cycle done in ${elapsed}s: ${totalNew} new items, ${totalFound} found.`);
   await reportFailingSources(pool);
   await auditAndFileIssues(pool);
+  const queue = buildIssueQueue();
+  writeIssueQueue(queue);
+  logQueueTop(queue);
   await writeHandoff(pool, { totalNew, totalFound });
   // Regenerate every cycle and commit only when the snapshot actually
   // changed — enrichment (genres, completeness, verification) mutates the

@@ -224,38 +224,151 @@ export function hasSpecificGenre(genres: string[]): boolean {
   return genres.some((genre) => !GENERIC_GENRES.has(genre));
 }
 
-// Genre color per primary genre for cards and pills (#52). The whole card
-// takes the tint and pills use the same solid color. Tailwind classes must
-// be static literals, dark-bg friendly.
-const GENRE_ACCENTS: Array<[string[], string, string]> = [
-  [['Drum and Bass', 'Liquid Drum and Bass', 'Neurofunk', 'Jungle'], 'border-red-500/60 bg-red-500/10 hover:bg-red-500/20', 'bg-red-500 text-white'],
-  [['House', 'Deep House', 'Tech House', 'Progressive House', 'Acid House'], 'border-amber-500/60 bg-amber-500/10 hover:bg-amber-500/20', 'bg-amber-500 text-white'],
-  [['Techno', 'Hard Techno', 'Minimal Techno', 'Melodic Techno', 'Acid Techno', 'Detroit Techno'], 'border-sky-500/60 bg-sky-500/10 hover:bg-sky-500/20', 'bg-sky-500 text-white'],
-  [['Garage', 'UK Garage', '2-Step', 'Grime'], 'border-emerald-500/60 bg-emerald-500/10 hover:bg-emerald-500/20', 'bg-emerald-500 text-white'],
-  [['Dubstep', 'Deep Dubstep', 'Psytrance', 'Psy Trance', 'Psychedelic Trance'], 'border-purple-500/60 bg-purple-500/10 hover:bg-purple-500/20', 'bg-purple-500 text-white'],
-  [['Hip-Hop', 'Rap'], 'border-orange-500/60 bg-orange-500/10 hover:bg-orange-500/20', 'bg-orange-500 text-white'],
-  [['Jazz'], 'border-yellow-500/60 bg-yellow-500/10 hover:bg-yellow-500/20', 'bg-yellow-500 text-black'],
-  [['Soul', 'Funk', 'Boogie'], 'border-pink-500/60 bg-pink-500/10 hover:bg-pink-500/20', 'bg-pink-500 text-white'],
-  [['Reggae', 'Dub', 'Dancehall'], 'border-lime-500/60 bg-lime-500/10 hover:bg-lime-500/20', 'bg-lime-500 text-black'],
-  [['Disco', 'Nu-Disco'], 'border-fuchsia-500/60 bg-fuchsia-500/10 hover:bg-fuchsia-500/20', 'bg-fuchsia-500 text-white'],
-  [['Ambient', 'Downtempo', 'Trip-Hop'], 'border-teal-500/60 bg-teal-500/10 hover:bg-teal-500/20', 'bg-teal-500 text-white'],
-  [['Afro House', 'Afrobeats', 'Amapiano', 'Gqom'], 'border-rose-500/60 bg-rose-500/10 hover:bg-rose-500/20', 'bg-rose-500 text-white'],
+// Genre color per genre (#52/#283). Every genre gets its own color so the
+// pills on a card are individually distinguishable; the card tint follows
+// the top genre. Tailwind classes must be static literals, dark-bg
+// friendly. Iconic genres are anchored to a semantic color (psytrance =
+// purple, drum and bass = red, house = amber); the rest hash onto the
+// palette so new genres always get a distinct color.
+const GENRE_PALETTE: Array<{ pill: string; tint: string }> = [
+  { pill: 'bg-red-500 text-white', tint: 'border-red-500/60 bg-red-500/10 hover:bg-red-500/20' },
+  { pill: 'bg-orange-500 text-white', tint: 'border-orange-500/60 bg-orange-500/10 hover:bg-orange-500/20' },
+  { pill: 'bg-amber-500 text-black', tint: 'border-amber-500/60 bg-amber-500/10 hover:bg-amber-500/20' },
+  { pill: 'bg-yellow-500 text-black', tint: 'border-yellow-500/60 bg-yellow-500/10 hover:bg-yellow-500/20' },
+  { pill: 'bg-lime-500 text-black', tint: 'border-lime-500/60 bg-lime-500/10 hover:bg-lime-500/20' },
+  { pill: 'bg-green-500 text-white', tint: 'border-green-500/60 bg-green-500/10 hover:bg-green-500/20' },
+  { pill: 'bg-emerald-500 text-white', tint: 'border-emerald-500/60 bg-emerald-500/10 hover:bg-emerald-500/20' },
+  { pill: 'bg-teal-500 text-white', tint: 'border-teal-500/60 bg-teal-500/10 hover:bg-teal-500/20' },
+  { pill: 'bg-cyan-500 text-black', tint: 'border-cyan-500/60 bg-cyan-500/10 hover:bg-cyan-500/20' },
+  { pill: 'bg-sky-500 text-white', tint: 'border-sky-500/60 bg-sky-500/10 hover:bg-sky-500/20' },
+  { pill: 'bg-blue-500 text-white', tint: 'border-blue-500/60 bg-blue-500/10 hover:bg-blue-500/20' },
+  { pill: 'bg-indigo-500 text-white', tint: 'border-indigo-500/60 bg-indigo-500/10 hover:bg-indigo-500/20' },
+  { pill: 'bg-violet-500 text-white', tint: 'border-violet-500/60 bg-violet-500/10 hover:bg-violet-500/20' },
+  { pill: 'bg-purple-500 text-white', tint: 'border-purple-500/60 bg-purple-500/10 hover:bg-purple-500/20' },
+  { pill: 'bg-fuchsia-500 text-white', tint: 'border-fuchsia-500/60 bg-fuchsia-500/10 hover:bg-fuchsia-500/20' },
+  { pill: 'bg-pink-500 text-white', tint: 'border-pink-500/60 bg-pink-500/10 hover:bg-pink-500/20' },
+  { pill: 'bg-rose-500 text-white', tint: 'border-rose-500/60 bg-rose-500/10 hover:bg-rose-500/20' },
+  { pill: 'bg-stone-500 text-white', tint: 'border-stone-500/60 bg-stone-500/10 hover:bg-stone-500/20' },
+  { pill: 'bg-red-400 text-white', tint: 'border-red-400/60 bg-red-400/10 hover:bg-red-400/20' },
+  { pill: 'bg-orange-400 text-white', tint: 'border-orange-400/60 bg-orange-400/10 hover:bg-orange-400/20' },
+  { pill: 'bg-amber-400 text-black', tint: 'border-amber-400/60 bg-amber-400/10 hover:bg-amber-400/20' },
+  { pill: 'bg-yellow-400 text-black', tint: 'border-yellow-400/60 bg-yellow-400/10 hover:bg-yellow-400/20' },
+  { pill: 'bg-lime-400 text-black', tint: 'border-lime-400/60 bg-lime-400/10 hover:bg-lime-400/20' },
+  { pill: 'bg-green-400 text-white', tint: 'border-green-400/60 bg-green-400/10 hover:bg-green-400/20' },
+  { pill: 'bg-emerald-400 text-white', tint: 'border-emerald-400/60 bg-emerald-400/10 hover:bg-emerald-400/20' },
+  { pill: 'bg-teal-400 text-black', tint: 'border-teal-400/60 bg-teal-400/10 hover:bg-teal-400/20' },
+  { pill: 'bg-cyan-400 text-black', tint: 'border-cyan-400/60 bg-cyan-400/10 hover:bg-cyan-400/20' },
+  { pill: 'bg-sky-400 text-white', tint: 'border-sky-400/60 bg-sky-400/10 hover:bg-sky-400/20' },
+  { pill: 'bg-blue-400 text-white', tint: 'border-blue-400/60 bg-blue-400/10 hover:bg-blue-400/20' },
+  { pill: 'bg-indigo-400 text-white', tint: 'border-indigo-400/60 bg-indigo-400/10 hover:bg-indigo-400/20' },
+  { pill: 'bg-violet-400 text-white', tint: 'border-violet-400/60 bg-violet-400/10 hover:bg-violet-400/20' },
+  { pill: 'bg-purple-400 text-white', tint: 'border-purple-400/60 bg-purple-400/10 hover:bg-purple-400/20' },
+  { pill: 'bg-fuchsia-400 text-white', tint: 'border-fuchsia-400/60 bg-fuchsia-400/10 hover:bg-fuchsia-400/20' },
+  { pill: 'bg-pink-400 text-white', tint: 'border-pink-400/60 bg-pink-400/10 hover:bg-pink-400/20' },
+  { pill: 'bg-rose-400 text-white', tint: 'border-rose-400/60 bg-rose-400/10 hover:bg-rose-400/20' },
+  { pill: 'bg-stone-400 text-white', tint: 'border-stone-400/60 bg-stone-400/10 hover:bg-stone-400/20' },
 ];
+
+// Iconic genres anchored to a semantic color; everything else hashes onto
+// the palette. Sibling subgenres may share a hue (Liquid Funk vs Funk).
+const CURATED_GENRE_COLORS: Record<string, number> = {
+  'Drum and Bass': 0,
+  'Liquid Drum and Bass': 16,
+  'Liquid Funk': 15,
+  Neurofunk: 18,
+  Jungle: 6,
+  House: 2,
+  'Deep House': 3,
+  'Tech House': 4,
+  'Progressive House': 10,
+  'Acid House': 9,
+  'Melodic House & Techno': 27,
+  Techno: 11,
+  'Hard Techno': 30,
+  'Minimal Techno': 17,
+  'Melodic Techno': 12,
+  'Acid Techno': 8,
+  'Detroit Techno': 19,
+  Trance: 13,
+  Psytrance: 13,
+  'Goa Trance': 32,
+  Garage: 7,
+  'UK Garage': 26,
+  '2-Step': 5,
+  Grime: 14,
+  Dubstep: 31,
+  'Deep Dubstep': 35,
+  'Hip-Hop': 1,
+  'R&B': 33,
+  Jazz: 20,
+  Soul: 34,
+  Funk: 15,
+  Boogie: 24,
+  Reggae: 21,
+  Dub: 28,
+  Dancehall: 29,
+  Disco: 14,
+  'Nu-Disco': 14,
+  Ambient: 7,
+  Downtempo: 25,
+  'Trip-Hop': 25,
+  'Afro House': 16,
+  Afrobeats: 16,
+  Amapiano: 16,
+  Gqom: 16,
+  Electro: 8,
+  'Bass Music': 31,
+  Bass: 31,
+  'Bass House': 4,
+  Synthwave: 9,
+  Minimal: 17,
+  Hardcore: 18,
+  Hardstyle: 30,
+  'Happy Hardcore': 18,
+  Gabber: 18,
+  'Baile Funk': 15,
+  Cumbia: 21,
+  Latin: 1,
+  World: 1,
+  Pop: 15,
+  'Dance-Pop': 15,
+  'K-Pop': 15,
+  Rock: 5,
+  'Classic Rock': 5,
+  'Psychedelic Rock': 5,
+  AOR: 5,
+  Alternative: 5,
+  Indie: 5,
+  Country: 2,
+  Folk: 5,
+  Classical: 11,
+  Metal: 18,
+  Punk: 18,
+  Eclectic: 17,
+  Experimental: 17,
+  Lounge: 7,
+  Chillout: 7,
+  Electronic: 8,
+  Dance: 2,
+};
+
+function genreColorIndex(genre: string): number {
+  const curated = CURATED_GENRE_COLORS[genre];
+  if (curated !== undefined) return curated;
+  let hash = 0;
+  for (const ch of genre) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+  return hash % GENRE_PALETTE.length;
+}
 
 export function genreAccent(genres: string[]): string {
   for (const genre of genres) {
-    for (const [matches, accent] of GENRE_ACCENTS) {
-      if (matches.includes(genre)) return accent;
-    }
+    return GENRE_PALETTE[genreColorIndex(genre)].tint;
   }
   return 'border-edge bg-surface hover:border-accent/60';
 }
 
 export function genrePill(genre: string): string {
-  for (const [matches, , pill] of GENRE_ACCENTS) {
-    if (matches.includes(genre)) return pill;
-  }
-  return 'bg-stone-500 text-white';
+  return GENRE_PALETTE[genreColorIndex(genre)].pill;
 }
 
 // Show at most the top N genres — DJs accumulate long tag lists otherwise.
