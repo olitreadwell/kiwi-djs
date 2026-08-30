@@ -1,6 +1,7 @@
 import type { Pool } from 'pg';
 import { isNonDjAct } from '../src/lib/scrapers/festival';
 import { isJunkName, normalizeArtistName } from '../src/lib/scrapers/discover';
+import { classifyProfileLocation, hasNzLocationEvidence } from '../src/lib/locations';
 
 // Automatable dataset fixes. Each entry maps a GitHub issue to a rule-based
 // pass the loop can run without an LLM: implement the fix, close the issue
@@ -237,6 +238,34 @@ const COMPLETENESS_SQL = `(
 )`;
 
 export const DATASET_FIXES: DatasetFix[] = [
+  {
+    issueNumber: 262,
+    title: 'flag + demote DJs whose profiles list a non-NZ location',
+    priority: 1,
+    fix: async (pool) => {
+      const rows = (
+        await pool.query(
+          `SELECT id, name, profile_location, verification_sources FROM djs
+           WHERE opt_out = FALSE AND active = TRUE AND is_nz = TRUE
+             AND profile_location IS NOT NULL AND profile_location <> ''`,
+        )
+      ).rows as Array<{ id: string; name: string; profile_location: string; verification_sources: string[] }>;
+      const demoted: string[] = [];
+      for (const row of rows) {
+        if (classifyProfileLocation(row.profile_location) !== 'non-nz') continue;
+        const gigs = (await pool.query('SELECT count(*)::int AS n FROM event_djs WHERE dj_id = $1', [row.id])).rows[0]
+          .n as number;
+        if (hasNzLocationEvidence(row.verification_sources, gigs)) continue;
+        await pool.query(`UPDATE djs SET is_nz = FALSE WHERE id = $1`, [row.id]);
+        demoted.push(row.name);
+      }
+      const detail =
+        demoted.length > 0
+          ? `Demoted ${demoted.length} DJ(s) with non-NZ profile locations and no NZ evidence: ${demoted.join(', ')}.`
+          : 'No active DJs with non-NZ profile locations and no NZ evidence.';
+      return { resolved: true, detail };
+    },
+  },
   {
     issueNumber: 159,
     title: 'duplicate DJ detection + merge',

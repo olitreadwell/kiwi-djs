@@ -36,3 +36,44 @@ export function isNzProfileLocation(profileLocation: string | null | undefined):
   if (!profileLocation) return true;
   return cityFromLocation(profileLocation) !== null || /new zealand|aotearoa|\bnz\b/i.test(profileLocation);
 }
+
+// Well-known non-NZ countries, cities and metro areas, used to tell a
+// genuinely non-NZ profile location ("SoundCloud: Melbourne") apart from an
+// ambiguous one ("SoundCloud: Everywhere") that should not be judged.
+export const NON_NZ_PLACES = new Set([
+  'us', 'usa', 'united states', 'uk', 'united kingdom', 'england', 'scotland', 'wales', 'britain', 'ireland',
+  'australia', 'melbourne', 'sydney', 'adelaide', 'brisbane', 'perth', 'canberra',
+  'canada', 'vancouver', 'toronto', 'montreal',
+  'germany', 'berlin', 'france', 'paris', 'netherlands', 'amsterdam', 'japan', 'tokyo',
+  'south korea', 'korea', 'seoul', 'china', 'hong kong', 'singapore', 'india', 'thailand', 'indonesia',
+  'los angeles', 'new york', 'chicago', 'miami', 'tampa', 'denver', 'seattle', 'san francisco',
+  'atlanta', 'houston', 'dallas', 'boston', 'detroit', 'dmv', 'virginia', 'maryland', 'washington dc',
+  'spain', 'italy', 'sweden', 'norway', 'denmark', 'belgium', 'switzerland', 'austria', 'poland',
+  'russia', 'brazil', 'mexico', 'argentina', 'chile', 'south africa', 'nigeria', 'dubai',
+  'london', 'glasgow', 'edinburgh', 'manchester', 'dublin', 'berlin', 'amsterdam', 'paris',
+]);
+
+const NON_NZ_PATTERNS: RegExp[] = [...NON_NZ_PLACES].map(
+  (place) => new RegExp(`\\b${place.replace(/ /g, '\\s+')}\\b`),
+);
+
+export type ProfileLocationClass = 'nz' | 'non-nz' | 'unknown';
+
+// Classify a stored profile location string: 'nz' when it names a NZ city
+// or country, 'non-nz' when it names a known overseas place, 'unknown' when
+// it is ambiguous ("Everywhere") or not a location at all ("a.k.a. X").
+export function classifyProfileLocation(profileLocation: string | null | undefined): ProfileLocationClass {
+  if (!profileLocation) return 'unknown';
+  const lower = profileLocation.toLowerCase();
+  if (cityFromLocation(lower) !== null || /new zealand|aotearoa|\bnz\b/i.test(lower)) return 'nz';
+  for (const pattern of NON_NZ_PATTERNS) {
+    if (pattern.test(lower)) return 'non-nz';
+  }
+  return 'unknown';
+}
+
+// NZ evidence for a DJ: a verified location source, or at least one gig
+// (events are scraped from NZ sources, so a gig is NZ activity).
+export function hasNzLocationEvidence(verificationSources: string[], gigCount: number): boolean {
+  return verificationSources.includes('location') || gigCount > 0;
+}
