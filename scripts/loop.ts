@@ -5,6 +5,7 @@ import { getPool } from './lib/db.mjs';
 import { runAllScrapers } from '../src/lib/scrapers/run-all';
 import { DATASET_FIXES, dedupeEvents } from './dataset-fixes';
 import { normaliseGenres } from '../src/lib/genres';
+import { isRelevantArticle } from '../src/lib/scrapers/enrich';
 
 // Self-improving scrape loop.
 //
@@ -485,8 +486,22 @@ async function compactDataset(pool: ReturnType<typeof getPool>): Promise<void> {
     }
   }
   const { merged, deleted } = await dedupeEvents(pool);
+  // Re-validate stored news articles against the relevance filter: Bing
+  // returns wrong-person news for common names ("Mark Knight" the
+  // cartoonist), so drop articles that no longer pass.
+  const articleRows = (
+    await pool.query(
+      `SELECT a.id, d.name, a.title, a.snippet FROM dj_articles a JOIN djs d ON d.id = a.dj_id`,
+    )
+  ).rows as Array<{ id: string; name: string; title: string; snippet: string | null }>;
+  let articleFixes = 0;
+  for (const row of articleRows) {
+    if (isRelevantArticle(row.name, { title: row.title, link: '', source: '', pubDate: '', description: row.snippet ?? '' })) continue;
+    await pool.query(`DELETE FROM dj_articles WHERE id = $1`, [row.id]);
+    articleFixes += 1;
+  }
   await pool.query('VACUUM ANALYZE');
-  log(`Compacted: ${junk.rows.length} junk candidates, ${scrapes.rows.length} stale scrape rows, ${genreFixes} genre normalisations, ${merged} duplicate events merged (${deleted} deleted).`);
+  log(`Compacted: ${junk.rows.length} junk candidates, ${scrapes.rows.length} stale scrape rows, ${genreFixes} genre normalisations, ${merged} duplicate events merged (${deleted} deleted), ${articleFixes} irrelevant articles removed.`);
 }
 
 async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: number; totalFound: number }> {
