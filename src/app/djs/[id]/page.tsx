@@ -91,9 +91,13 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         <div>
           <h1 className="text-4xl font-black text-foreground">{dj.name}</h1>
           {dj.genres.length > 0 && (
-            <span className={`mt-2 inline-block rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider ${genrePill(dj.genres)}`}>
-              {topGenres(dj.genres).join(' / ')}
-            </span>
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {topGenres(dj.genres).map((genre) => (
+                <span key={genre} className={`inline-block rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider ${genrePill(dj.genres)}`}>
+                  {genre}
+                </span>
+              ))}
+            </div>
           )}
           {dj.bpm_range && <p className="mt-1 font-mono text-xs text-muted">{dj.bpm_range} BPM</p>}
         </div>

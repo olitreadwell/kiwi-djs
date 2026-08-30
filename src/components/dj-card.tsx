@@ -12,10 +12,14 @@ export function DjCard({ dj }: { dj: DjRow }) {
     >
       <div>
         <h3 className="text-lg font-semibold text-foreground group-hover:text-accent">{dj.name}</h3>
-        {dj.genres.length > 0 && (
-          <span className={`mt-2 inline-block rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${pill}`}>
-            {topGenres(dj.genres)[0]}
-          </span>
+        {topGenres(dj.genres).length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {topGenres(dj.genres).map((genre) => (
+              <span key={genre} className={`inline-block rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${pill}`}>
+                {genre}
+              </span>
+            ))}
+          </div>
         )}
         {dj.bio && <p className="mt-3 line-clamp-3 text-sm text-muted">{dj.bio}</p>}
       </div>
