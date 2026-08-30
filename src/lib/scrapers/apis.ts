@@ -125,7 +125,7 @@ export async function enrichMusicbrainz(pool: Pool, dj: DjRow): Promise<ScrapeRe
     const resource = relation.url?.resource;
     if (!resource) continue;
     const type = MB_LINK_TYPES[relation.type.toLowerCase()] ?? relation.type.toLowerCase();
-    await upsertDjLink(pool, dj.id, type, resource, `${relation.type}: ${resource}`);
+    await upsertDjLink(pool, dj.id, type, resource);
     const column = MB_COLUMN_TYPES[type];
     if (column) {
       await pool.query(`UPDATE djs SET ${column} = COALESCE(${column}, $2) WHERE id = $1`, [dj.id, resource]);

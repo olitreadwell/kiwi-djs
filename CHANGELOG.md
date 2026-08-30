@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-30 — Community link feedback + profile locations (#74)
+
+- All candidate links for a DJ stay in the data; each platform type shows only the best one (canonical profile, then community votes, then earliest)
+- Thumbs up/down on the smart link page votes on which link is the right profile — one vote per visitor per link, flips on re-vote
+- Link labels sanitised: pills show the platform name only, never the URL
+- Mixes and profile links only come from the artist's own Mixcloud account; news articles must mention the artist by name
+- DJs backfilled with profile locations from SoundCloud; NZ locations earn `location` verification evidence; the loop files issues for DJs whose profiles list a non-NZ location
+- Phantom "Musical" DJ junked (was an amalgam of unrelated accounts)
+
 ## 2026-08-30 — Faster genre filling + bigger enrichment budget
 
 - Enrichment budget raised from 15 to 30 DJs/run (env `ENRICH_LIMIT`); Mixcloud keeps a lower cap of 20 (env `MIXCLOUD_LIMIT`) because it rate-limits

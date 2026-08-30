@@ -6,7 +6,8 @@ import { MixList } from '@/components/mix-list';
 import { MixEmbed } from '@/components/mix-embed';
 import { SuggestForm } from '@/components/suggest-form';
 import { topGenres } from '@/lib/genres';
-import { linkLabel } from '@/lib/link-labels';
+import { linkLabel, pillLabel } from '@/lib/link-labels';
+import { pickBestLinks } from '@/lib/queries';
 import {
   buildDossier,
   getDjArticles,
@@ -52,6 +53,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
     { label: 'Mixcloud', href: dj.mixcloud_url },
     { label: 'Website', href: dj.website_url },
   ].filter((s) => s.href);
+  const bestLinks = pickBestLinks(dj, links);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
@@ -109,6 +111,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
             )}
           </p>
           <p className="mt-1 text-faint">source: {dj.source}</p>
+          {dj.profile_location && <p className="mt-1 text-faint">profile: {dj.profile_location}</p>}
         </div>
       </div>
 
@@ -121,7 +124,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
 
       {dj.bio && <p className="mt-6 text-muted">{dj.bio}</p>}
 
-      {(socials.length > 0 || links.length > 0) && (
+      {(socials.length > 0 || bestLinks.length > 0) && (
         <div className="mt-8 flex flex-wrap gap-2">
           {socials.map((social) => (
             <a
@@ -134,7 +137,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
               {social.label} ↗
             </a>
           ))}
-          {links.map((link) => (
+          {bestLinks.map((link) => (
             <a
               key={link.id}
               href={link.url}
@@ -142,7 +145,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
               rel="noopener noreferrer"
               className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
             >
-              {linkLabel(link.type, link.label)} ↗
+              {pillLabel(link.type)} ↗
             </a>
           ))}
           {links.length > 0 && (

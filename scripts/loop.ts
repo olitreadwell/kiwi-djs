@@ -395,6 +395,19 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
     );
   }
 
+  const nonNzLocation = (await pool.query(
+    `SELECT name, profile_location FROM djs
+     WHERE opt_out = FALSE AND active = TRUE AND is_nz = TRUE
+       AND profile_location IS NOT NULL
+       AND NOT ('location' = ANY(verification_sources))`,
+  )).rows as Array<{ name: string; profile_location: string }>;
+  if (nonNzLocation.length >= 2) {
+    file(
+      `data: ${nonNzLocation.length} DJs' profiles list a non-NZ location`,
+      `${nonNzLocation.slice(0, 5).map((d) => `- ${d.name} (${d.profile_location})`).join('\n')}\n\nArtists should list New Zealand as their location on at least one profile.`,
+    );
+  }
+
   const stuck = (await pool.query(
     `SELECT name FROM djs WHERE opt_out = FALSE AND is_nz = TRUE AND active = FALSE
      AND (discovery_note IS NULL OR discovery_note <> 'junk')

@@ -69,14 +69,56 @@ export async function upsertDjMix(
 interface MixcloudResult {
   name: string;
   url: string;
-  user?: { name: string; url: string };
+  user?: { name: string; url: string; city?: string; country?: string };
   created_time?: string;
   audio_length?: number;
+}
+
+const NZ_CITIES = new Set([
+  'wellington', 'auckland', 'christchurch', 'dunedin', 'hamilton', 'tauranga',
+  'queenstown', 'nelson', 'napier', 'palmerston north', 'rotorua', 'new plymouth',
+  'whanganui', 'gisborne', 'timaru', 'invercargill', 'whangarei', 'hastings',
+  'lower hutt', 'upper hutt', 'porirua', 'taupo', 'wanaka', 'blenheim', 'greymouth',
+  'oamaru', 'ashburton', 'masterton', 'levin', 'te anau', 'havelock north',
+  'cambridge', 'te awamutu', 'matamata', 'tokoroa', 'paraparaumu', 'waikanae',
+  'rangiora', 'kaiapoi', 'rolleston', 'lincoln', 'methven', 'twizel', 'geraldine',
+  'waimate', 'temuka', 'westport', 'hokitika', 'kaikoura', 'kerikeri', 'pukekohe',
+]);
+
+function isNzLocation(city?: string, country?: string, countryCode?: string): boolean {
+  if (countryCode?.toUpperCase() === 'NZ') return true;
+  if (country && /new zealand|aotearoa/i.test(country)) return true;
+  if (city && NZ_CITIES.has(city.trim().toLowerCase())) return true;
+  return false;
+}
+
+// Record where a profile says the artist is based. NZ locations earn the
+// 'location' verification evidence; non-NZ locations are kept for display
+// and flagged by the loop audit so artists list NZ somewhere (#25).
+async function recordProfileLocation(
+  pool: Pool,
+  djId: string,
+  platform: string,
+  city?: string,
+  country?: string,
+  countryCode?: string,
+): Promise<void> {
+  const parts = [city, country].filter((value): value is string => Boolean(value));
+  const display = parts.length > 0 ? `${platform}: ${parts.join(', ')}` : countryCode ? `${platform}: ${countryCode}` : '';
+  if (!display) return;
+  await pool.query(`UPDATE djs SET profile_location = COALESCE(profile_location, $2) WHERE id = $1`, [djId, display]);
+  if (isNzLocation(city, country, countryCode)) {
+    await pool.query(
+      `UPDATE djs SET verification_sources = (SELECT array_agg(DISTINCT g) FROM unnest(verification_sources || ARRAY['location']) AS g) WHERE id = $1`,
+      [djId],
+    );
+  }
 }
 
 export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
   const queries = [dj.name, `${dj.name} mix`];
   let found = 0;
+  let keeper: string | null = null;
   for (const query of queries) {
     const url = `https://api.mixcloud.com/search/?q=${encodeURIComponent(query)}&type=cloudcast`;
     const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
@@ -95,6 +137,10 @@ export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResul
       // Only the artist's own Mixcloud account counts (#25). Item-name
       // matches from other accounts (radio shows, interviews) are excluded.
       if (!owner.toLowerCase().includes(dj.name.toLowerCase())) continue;
+      // One Mixcloud profile per DJ: mixes and the profile link come from
+      // the first qualifying account, not every match.
+      if (keeper === null) keeper = owner;
+      if (owner !== keeper) continue;
       // Profile plays / stations have no real audio — not valuable (#56).
       if (!item.audio_length || item.audio_length < 60) continue;
       found += 1;
@@ -127,6 +173,9 @@ export async function enrichNews(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
     const items = parseBingNewsXml(xml);
     if (items.length === 0) continue;
     for (const item of items) {
+      // Only keep articles that actually mention the artist — Bing's quoted
+      // search still returns unrelated news for short or common names.
+      if (!isRelevantArticle(dj.name, item)) continue;
       const titleKey = `${item.source}|${item.title}`.toLowerCase();
       if (seenTitles.has(titleKey)) continue;
       seenTitles.add(titleKey);
@@ -142,6 +191,21 @@ export async function enrichNews(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
     if (found > 0) break;
   }
   return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: 0, error: found === 0 ? 'No news matches' : undefined };
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function isRelevantArticle(djName: string, item: NewsItem): boolean {
+  const haystack = `${item.title} ${item.description}`.toLowerCase();
+  const name = djName.toLowerCase();
+  const namePattern = new RegExp(`\\b${escapeRegExp(name)}\\b`);
+  if (!namePattern.test(haystack)) return false;
+  // Short names need a music-context signal so "Sam" doesn't pull in
+  // unrelated news about anything else named Sam.
+  if (name.length >= 4) return true;
+  return /\b(dj|mix|gig|music|festival|album|track|set|plays|performs|tour|band|label|release|radio|club)\b/.test(haystack);
 }
 
 export function parseBingNewsXml(xml: string): NewsItem[] {
@@ -205,12 +269,13 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
   const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
   if (!res.ok) throw new Error(`SoundCloud HTTP ${res.status}`);
   const data = (await res.json()) as {
-    collection?: Array<{ id: number; permalink: string; username: string; avatar_url?: string }>;
+    collection?: Array<{ id: number; permalink: string; username: string; avatar_url?: string; city?: string; country?: string; country_code?: string }>;
   };
   let found = 0;
   for (const user of data.collection ?? []) {
     if (!user.username.toLowerCase().includes(dj.name.toLowerCase())) continue;
     found += 1;
+    await recordProfileLocation(pool, dj.id, 'SoundCloud', user.city, user.country, user.country_code);
     await upsertDjLink(pool, dj.id, 'soundcloud', `https://soundcloud.com/${user.permalink}`, `SoundCloud: ${user.username}`);
     await pool.query(`UPDATE djs SET soundcloud_url = $1, image_url = COALESCE(image_url, $2) WHERE id = $3`, [
       `https://soundcloud.com/${user.permalink}`,

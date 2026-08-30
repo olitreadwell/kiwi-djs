@@ -32,6 +32,22 @@ export function linkLabel(type: string, label: string | null): string {
   return label ?? TYPE_LABELS[type] ?? type;
 }
 
+// Pills show the platform name only — never the URL or a raw label (#74).
+export function pillLabel(type: string): string {
+  return TYPE_LABELS[type] ?? type;
+}
+
+// List rows show a clean label: strip any URL and "type:" prefixes that
+// older enrichment runs stored in the label column.
+export function displayLabel(type: string, label: string | null): string {
+  const cleaned = (label ?? '')
+    .replace(/https?:\/\/\S+/g, '')
+    .replace(/^[a-z-]+:\s*/i, '')
+    .replace(/[:\s]+$/g, '')
+    .trim();
+  return cleaned || TYPE_LABELS[type] || type;
+}
+
 export function linkDomain(url: string): string {
   try {
     return new URL(url).hostname.replace(/^www\./, '');

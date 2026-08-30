@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS djs (
   verification_sources TEXT[] NOT NULL DEFAULT '{}', -- evidence categories: mixes, links, articles, gigs
   is_nz          BOOLEAN NOT NULL DEFAULT TRUE, -- public list is Aotearoa/NZ-only
   bpm_range      TEXT,                          -- e.g. "128-140" from track BPMs (#35)
+  profile_location TEXT,                        -- e.g. "SoundCloud: Melbourne, AU" — where a profile says the artist is based
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
@@ -37,6 +38,7 @@ ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_level INTEGER NOT NULL DEF
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS verification_sources TEXT[] NOT NULL DEFAULT '{}';
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS is_nz BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS bpm_range TEXT;
+ALTER TABLE djs ADD COLUMN IF NOT EXISTS profile_location TEXT;
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS stale_since TIMESTAMPTZ;   -- set when no gig/article activity for 12+ months (#138)
 ALTER TABLE djs ADD COLUMN IF NOT EXISTS bio_quality TEXT;          -- 'low' | 'ok' from bio quality audit (#142)
 
@@ -185,5 +187,19 @@ CREATE INDEX IF NOT EXISTS idx_events_starts ON events(starts_at);
 CREATE INDEX IF NOT EXISTS idx_profile_views_dj ON profile_views(dj_id);
 CREATE INDEX IF NOT EXISTS idx_search_events_created ON search_events(created_at);
 CREATE INDEX IF NOT EXISTS idx_dj_links_dj ON dj_links(dj_id);
+
+-- Community feedback on which link is the right profile for a DJ (#74).
+CREATE TABLE IF NOT EXISTS link_feedback (
+  id            BIGSERIAL PRIMARY KEY,
+  link_id       TEXT NOT NULL REFERENCES dj_links(id) ON DELETE CASCADE,
+  helpful       BOOLEAN NOT NULL,
+  ip_hash       TEXT,                          -- one vote per visitor per link
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE INDEX IF NOT EXISTS idx_link_feedback_link ON link_feedback(link_id);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_link_feedback_ip ON link_feedback(link_id, ip_hash);
+
+ALTER TABLE link_feedback ADD COLUMN IF NOT EXISTS ip_hash TEXT;
 CREATE INDEX IF NOT EXISTS idx_dj_articles_dj ON dj_articles(dj_id);
 CREATE INDEX IF NOT EXISTS idx_dj_mixes_dj ON dj_mixes(dj_id);
