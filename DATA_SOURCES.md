@@ -4,21 +4,38 @@ All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Verc
 
 ## Source priority policy
 
-Sources are ranked by how precisely their API/search supports the three
+No source is excluded — every source contributes. Data is verified and
+prioritized by how precisely the source's API/search supports the three
 signals that define a useful NZ DJ record:
 
 1. **Location filtering** — country/city filter, or a country-specific chart
 2. **Genre filtering** — genre filter, genre charts, or structured genre tags
 3. **Popularity sorting** — followers, plays, or chart position
 
-The database foundation comes only from sources that support all three
-(**Spotify**: genre search + NZ country chart + followers/popularity).
-Profile enrichment uses sources with location + followers per profile
-(**SoundCloud**: exact-name lookups for follower counts; **Mixcloud**).
-Catalog enumeration (MusicBrainz area + tag queries) is structured but
-unranked — fine to fill gaps, never the foundation; its discoveries stay
-unverified candidates until a rankable source confirms them. Sources that
-can't filter by location, genre, or popularity are not used to seed the DB.
+Higher-precision sources (**Spotify**: genre search + NZ country chart +
+followers/popularity) seed the ranked list directly. Mid-precision sources
+(**SoundCloud** / **Mixcloud**: location + followers on individual
+profiles) verify and enrich via exact-name lookups. Lower-precision
+sources (**MusicBrainz** area + tag queries, event-name discovery) add
+candidates and catalog data that stay unverified until higher-precision
+evidence confirms them. Nothing is thrown away — everything is used, in
+priority order, with verification as the gate to the public list.
+
+**Evidence is corroboration.** Three incomplete sources with partially
+matching info beat one complete source: a DJ is verified when distinct,
+independent sources agree (e.g. SoundCloud profile + an event listing + a
+news mention). `verifyDiscovered` implements this as `multi-source`
+evidence — the DJ appears on 3+ distinct platforms/outlets/event sources —
+and every listed DJ needs at least 2 such pieces of evidence.
+
+**Discovery vs detail.** Names can come from one source while details come
+from another: MusicBrainz area+tag lists, festival lineups and event
+co-bills give the list of names; SoundCloud/Mixcloud profiles supply mixes
+and followers, Bandcamp supplies bio/tags/location, Beatport supplies
+genres, and news supplies articles. A name only earns its place in the
+public list once details from independent sources corroborate it — the
+discovery → enrichment → verify pipeline (`discoverAll` → `enrichAllDjs`
+→ `verifyDiscovered`) is built around exactly this split.
 
 ## Working now
 

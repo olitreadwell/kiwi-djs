@@ -2,7 +2,8 @@
 
 ## 2026-08-30 — Data-source priority policy (#301)
 
-- New policy + `DATA_SOURCES.md` section: sources are ranked by location filter, genre filter, and popularity sort; only sources with all three (Spotify) seed the database foundation
+- New policy + `DATA_SOURCES.md` section: sources are never excluded — they're verified and prioritized by location filter, genre filter, and popularity sort; higher-precision sources seed the ranked list, lower-precision ones contribute candidates until verified
+- Evidence principle stated: corroboration — 3 partial sources with partially matching info beat 1 complete source; `verifyDiscovered`'s `multi-source` evidence (3+ distinct platforms) already implements it
 - MusicBrainz NZ electronic sweep added, but its discoveries stay unverified candidates until a rankable source (SoundCloud/Spotify follower data) confirms them — 161 catalog-only finds demoted to candidates
 - Spotify discovery (`discover-spotify`) added: NZ Top 50 country chart + artist genres/followers/popularity, gated on `SPOTIFY_CLIENT_ID` / `SPOTIFY_CLIENT_SECRET`
 

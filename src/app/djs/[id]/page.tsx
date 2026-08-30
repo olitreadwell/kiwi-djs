@@ -55,6 +55,19 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
     { label: 'Mixcloud', href: dj.mixcloud_url },
     { label: 'Website', href: dj.website_url },
   ].filter((s) => s.href);
+  const musicLinkTypes = new Set([
+    'soundcloud', 'mixcloud', 'bandcamp', 'spotify', 'apple-music', 'tidal', 'deezer', 'qobuz',
+    'beatport', 'youtube', 'last.fm', 'songkick', 'bandsintown', 'setlistfm', 'discogs', 'radio',
+  ]);
+  const corroboration = [
+    ...new Set([
+      ...mixes.map((mix) => mix.platform),
+      ...links.filter((link) => musicLinkTypes.has(link.type)).map((link) => link.type),
+      ...articles.map((article) => article.source ?? 'article'),
+      ...gigs.map((gig) => gig.source),
+      ...pastGigs.map((gig) => gig.source),
+    ].filter(Boolean)),
+  ];
   const bestLinks = pickBestLinks(dj, links.filter((link) => link.type !== 'festival'));
   // One pill per platform: best link first, then social columns the best
   // links don't already cover, deduped by platform so SoundCloud never
@@ -327,6 +340,11 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
             )}
           </p>
           <p className="mt-1 text-faint">source: {dj.source}</p>
+          {corroboration.length > 0 && (
+            <p className="mt-1">
+              corroborated by {corroboration.length} source{corroboration.length === 1 ? '' : 's'}: {corroboration.slice(0, 6).join(', ')}{corroboration.length > 6 ? '…' : ''}
+            </p>
+          )}
           {dj.profile_location && <p className="mt-1 text-faint">profile: {dj.profile_location}</p>}
           {dj.profile_location && !isNzProfileLocation(dj.profile_location) && (
             <p className="mt-1 text-amber-400">
