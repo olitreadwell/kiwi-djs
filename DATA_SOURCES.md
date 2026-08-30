@@ -48,6 +48,8 @@ All sources are public. Scrapers live in `src/lib/scrapers/`, run daily via Verc
 | MusicBrainz API | artist aliases, links (Bandcamp/RA/socials), genres | ✅ live (server can 503 under load) |
 | iTunes Search API | artist image, primary genre | ✅ live |
 | Nominatim (OSM) | venue address → NZ region | ✅ live |
+| Wikipedia API | about-section bios (via MusicBrainz Wikipedia relation, then strict search) | ✅ live — popular NZ acts first |
+| Mixcloud API | per-DJ mixes + user links + biography | ✅ live (biography often empty) |
 
 ## Planned
 
