@@ -54,6 +54,14 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
     { label: 'Website', href: dj.website_url },
   ].filter((s) => s.href);
   const bestLinks = pickBestLinks(dj, links);
+  // One pill per platform: best link first, then social columns the best
+  // links don't already cover, deduped by URL so SoundCloud never doubles up.
+  const pills = [
+    ...bestLinks.map((link) => ({ url: link.url, label: pillLabel(link.type) })),
+    ...socials
+      .filter((social) => social.href && !bestLinks.some((link) => link.url === social.href))
+      .map((social) => ({ url: social.href as string, label: social.label })),
+  ];
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
@@ -124,28 +132,17 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
 
       {dj.bio && <p className="mt-6 text-muted">{dj.bio}</p>}
 
-      {(socials.length > 0 || bestLinks.length > 0) && (
+      {pills.length > 0 && (
         <div className="mt-8 flex flex-wrap gap-2">
-          {socials.map((social) => (
+          {pills.map((pill) => (
             <a
-              key={social.label}
-              href={social.href!}
+              key={pill.url}
+              href={pill.url}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
             >
-              {social.label} ↗
-            </a>
-          ))}
-          {bestLinks.map((link) => (
-            <a
-              key={link.id}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
-            >
-              {pillLabel(link.type)} ↗
+              {pill.label} ↗
             </a>
           ))}
           {links.length > 0 && (
