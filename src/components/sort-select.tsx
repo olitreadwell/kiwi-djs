@@ -3,10 +3,10 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 
 const SORTS = [
-  { value: 'completeness', label: 'most info' },
-  { value: 'name', label: 'name A-Z' },
-  { value: 'recent', label: 'recently added' },
   { value: 'updated', label: 'recently updated' },
+  { value: 'completeness', label: 'most info' },
+  { value: 'recent', label: 'recently added' },
+  { value: 'name', label: 'name A-Z' },
   { value: 'gigs', label: 'most gigs' },
 ];
 
@@ -16,7 +16,7 @@ export function SortSelect({ current }: { current: string }) {
 
   function setSort(sort: string) {
     const params = new URLSearchParams(searchParams.toString());
-    if (sort && sort !== 'completeness') params.set('sort', sort);
+    if (sort && sort !== 'updated') params.set('sort', sort);
     else params.delete('sort');
     router.push(`/djs?${params.toString()}`);
   }

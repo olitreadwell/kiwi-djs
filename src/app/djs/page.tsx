@@ -23,7 +23,7 @@ export default async function DjsPage({ searchParams }: { searchParams: Promise<
         <SearchBox />
         <div className="flex flex-wrap items-center justify-between gap-3">
           <GenreFilter genres={genres} />
-          <SortSelect current={params.sort ?? 'completeness'} />
+          <SortSelect current={params.sort ?? 'updated'} />
         </div>
       </div>
       <div className="mt-8">

@@ -8,8 +8,13 @@ export function SearchBox({ autoFocus = false }: { autoFocus?: boolean }) {
   const searchParams = useSearchParams();
   const [value, setValue] = useState(searchParams.get('q') ?? '');
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const initialValue = useRef(value);
 
   useEffect(() => {
+    // Only navigate when the user actually changed the query — the effect
+    // also runs on mount, and pushing to /djs then would redirect any page
+    // that embeds the search box (e.g. the homepage) away from itself.
+    if (value === initialValue.current) return;
     if (timer.current) clearTimeout(timer.current);
     timer.current = setTimeout(() => {
       void fetch('/api/search', {

@@ -101,48 +101,6 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           )}
           {dj.bpm_range && <p className="mt-1 font-mono text-xs text-muted">{dj.bpm_range} BPM</p>}
         </div>
-        <div className="rounded-lg border border-edge bg-surface p-4 font-mono text-xs text-muted">
-          <p>{dj.data_completeness}% data complete</p>
-          <p className="mt-1 text-muted">
-            {dj.last_played_at
-              ? `last played ${new Date(dj.last_played_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}`
-              : 'last played: unknown'}
-          </p>
-          <p className="mt-1">
-            <span
-              className={
-                dj.verification_level >= 2
-                  ? 'text-emerald-400'
-                  : dj.verification_level === 1
-                    ? 'text-amber-400'
-                    : 'text-faint'
-              }
-            >
-              {dj.verification_level >= 2 ? '✓ verified' : dj.verification_level === 1 ? 'listed' : 'candidate'}
-            </span>
-            {dj.verification_sources.length > 0 && (
-              <details className="mt-1 inline-block align-middle">
-                <summary className="ml-2 inline-block cursor-pointer font-mono text-xs text-faint transition-colors hover:text-accent">
-                  evidence
-                </summary>
-                <ul className="mt-1 space-y-0.5">
-                  {dj.verification_sources.map((source) => (
-                    <li key={source} className="text-faint">
-                      {EVIDENCE_LABELS[source] ?? source}
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            )}
-          </p>
-          <p className="mt-1 text-faint">source: {dj.source}</p>
-          {dj.profile_location && <p className="mt-1 text-faint">profile: {dj.profile_location}</p>}
-          {dj.profile_location && !isNzProfileLocation(dj.profile_location) && (
-            <p className="mt-1 font-mono text-xs text-amber-400">
-              ⚠ profile says outside NZ — not verified as an NZ artist
-            </p>
-          )}
-        </div>
       </div>
 
       {summary && (
@@ -309,8 +267,46 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           Sources
         </summary>
         <div className="border-t border-edge px-4 py-3 font-mono text-xs text-muted">
-          <p className="text-muted">Verification evidence: {dj.verification_sources.join(', ') || 'none'}</p>
-          <p className="mt-1">Source: {dj.source}</p>
+          <p>{dj.data_completeness}% data complete</p>
+          <p className="mt-1">
+            {dj.last_played_at
+              ? `last played ${new Date(dj.last_played_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}`
+              : 'last played: unknown'}
+          </p>
+          <p className="mt-1">
+            <span
+              className={
+                dj.verification_level >= 2
+                  ? 'text-emerald-400'
+                  : dj.verification_level === 1
+                    ? 'text-amber-400'
+                    : 'text-faint'
+              }
+            >
+              {dj.verification_level >= 2 ? '✓ verified' : dj.verification_level === 1 ? 'listed' : 'candidate'}
+            </span>
+            {dj.verification_sources.length > 0 && (
+              <details className="mt-1 inline-block align-middle">
+                <summary className="ml-2 inline-block cursor-pointer font-mono text-xs text-faint transition-colors hover:text-accent">
+                  evidence
+                </summary>
+                <ul className="mt-1 space-y-0.5">
+                  {dj.verification_sources.map((source) => (
+                    <li key={source} className="text-faint">
+                      {EVIDENCE_LABELS[source] ?? source}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+          </p>
+          <p className="mt-1 text-faint">source: {dj.source}</p>
+          {dj.profile_location && <p className="mt-1 text-faint">profile: {dj.profile_location}</p>}
+          {dj.profile_location && !isNzProfileLocation(dj.profile_location) && (
+            <p className="mt-1 text-amber-400">
+              ⚠ profile says outside NZ — not verified as an NZ artist
+            </p>
+          )}
           {links.length > 0 && (
             <ul className="mt-2 space-y-1">
               {links.map((link) => (
