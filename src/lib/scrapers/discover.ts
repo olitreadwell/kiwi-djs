@@ -464,12 +464,16 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
          COALESCE(
            ARRAY(
              SELECT source
-             FROM unnest(ARRAY['mixes', 'links', 'articles', 'gigs', 'multi-gigs', 'multi-source']) AS source
+             FROM unnest(ARRAY['mixes', 'links', 'articles', 'gigs', 'multi-gigs', 'multi-source', 'location']) AS source
              WHERE (source = 'mixes' AND EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = d.id))
                 OR (source = 'links' AND EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = d.id AND l.type <> 'festival'))
                 OR (source = 'articles' AND EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = d.id))
                 OR (source = 'gigs' AND EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id))
                 OR (source = 'multi-gigs' AND (SELECT count(*) FROM event_djs ed WHERE ed.dj_id = d.id) >= 2)
+                OR (source = 'location' AND (
+                  'location' = ANY(d.verification_sources)
+                  OR d.profile_location ~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'
+                ))
                 OR (source = 'multi-source' AND (
                   SELECT count(DISTINCT s) FROM (
                     SELECT m.platform AS s FROM dj_mixes m WHERE m.dj_id = d.id
