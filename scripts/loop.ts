@@ -303,13 +303,19 @@ function runGh(args: string[]): string {
   return result.out;
 }
 
-function openIssueTitles(): Set<string> {
-  const out = runGh(['issue', 'list', '--state', 'open', '--limit', '50', '--json', 'title']);
+function openIssues(): Array<{ number: number; title: string }> {
+  const out = runGh(['issue', 'list', '--state', 'open', '--limit', '200', '--json', 'number,title']);
   try {
-    return new Set((JSON.parse(out) as Array<{ title: string }>).map((issue) => issue.title));
+    return JSON.parse(out) as Array<{ number: number; title: string }>;
   } catch {
-    return new Set();
+    return [];
   }
+}
+
+// Stable key for an audit issue: strip the leading "data: N " count so a
+// changed count updates the same issue instead of filing a duplicate (#322).
+function auditKey(title: string): string {
+  return title.replace(/^data: \d+ /, 'data: ');
 }
 
 function openIssueNumbers(): Set<number> {
@@ -383,15 +389,32 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
   // Audit phase: surface data gaps as GitHub issues (cheap, rule-based — no
   // LLM). Files up to 4 new issues per cycle, one per category, skipping
   // titles already open so the queue stays fresh.
-  const open = openIssueTitles();
+  const open = openIssues();
   const MAX_PER_CYCLE = 4;
   let filed = 0;
 
   const file = (title: string, body: string): void => {
-    if (filed >= MAX_PER_CYCLE || open.has(title)) return;
-    runGh(['issue', 'create', '--title', title, '--body', body]);
-    log(`Filed issue: ${title}`);
+    if (filed >= MAX_PER_CYCLE) return;
+    const key = auditKey(title);
+    const existing = open.find((issue) => auditKey(issue.title) === key);
+    if (existing) {
+      runGh(['issue', 'edit', String(existing.number), '--title', title, '--body', body]);
+      log(`Updated issue #${existing.number}: ${title}`);
+    } else {
+      runGh(['issue', 'create', '--title', title, '--body', body]);
+      log(`Filed issue: ${title}`);
+    }
     filed += 1;
+  };
+
+  // Close an open audit issue whose gap has been resolved (fewer than 2
+  // DJs affected), so each category has at most one open issue and never
+  // a stale one (#322).
+  const resolve = (title: string): void => {
+    const existing = open.find((issue) => auditKey(issue.title) === auditKey(title));
+    if (!existing) return;
+    runGh(['issue', 'close', String(existing.number), '--comment', 'Data gap resolved — closing.']);
+    log(`Closed issue #${existing.number}: ${title}`);
   };
 
   const noMixes = (await pool.query(
@@ -404,6 +427,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${noMixes.length} verified DJs have no mixes`,
       `${noMixes.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nFind SoundCloud/Mixcloud mixes or mark as not applicable.`,
     );
+  } else {
+    resolve('data: verified DJs have no mixes');
   }
 
   const failing = (await pool.query(
@@ -424,6 +449,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${noBio.length} verified DJs have no bio`,
       `${noBio.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nWrite a short bio from public sources.`,
     );
+  } else {
+    resolve('data: verified DJs have no bio');
   }
 
   const noPhoto = (await pool.query(
@@ -435,6 +462,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${noPhoto.length} verified DJs have no photo`,
       `${noPhoto.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nPull avatar from SoundCloud/Mixcloud/iTunes or mark as not applicable.`,
     );
+  } else {
+    resolve('data: verified DJs have no photo');
   }
 
   const genericGenres = (await pool.query(
@@ -448,6 +477,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${genericGenres.length} DJs have only generic genres`,
       `${genericGenres.slice(0, 5).map((d) => `- ${d.name} (${d.genres.join(', ')})`).join('\n')}\n\nPull specific subgenres from track tags.`,
     );
+  } else {
+    resolve('data: DJs have only generic genres');
   }
 
   const noRegion = (await pool.query(
@@ -458,6 +489,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${noRegion.length} venues have no region`,
       `${noRegion.slice(0, 5).map((v) => `- ${v.name}`).join('\n')}\n\nGeocode via Nominatim or set manually.`,
     );
+  } else {
+    resolve('data: venues have no region');
   }
 
   const locationRows = (await pool.query(
@@ -476,6 +509,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${nonNzLocation.length} DJs' profiles list a non-NZ location`,
       `${nonNzLocation.slice(0, 5).map((d) => `- ${d.name} (${d.profile_location})`).join('\n')}\n\nArtists should list New Zealand as their location on at least one profile.`,
     );
+  } else {
+    resolve('data: DJs\' profiles list a non-NZ location');
   }
 
   // #308/#321: a listed DJ must have at least one NZ source (profile
@@ -496,6 +531,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${noNzEvidence.length} listed DJs have no NZ source`,
       `${noNzEvidence.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nEvery listed DJ needs a profile location naming NZ, a curated/radio source, or an NZ bio mention — gigs don't count.`,
     );
+  } else {
+    resolve('data: listed DJs have no NZ source');
   }
 
   const stuck = (await pool.query(
@@ -508,6 +545,8 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
       `data: ${stuck.length} candidates stuck unverified for 7+ days`,
       `${stuck.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nReview: verify, junk, or drop.`,
     );
+  } else {
+    resolve('data: candidates stuck unverified for 7+ days');
   }
 
 }
