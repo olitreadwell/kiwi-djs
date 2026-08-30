@@ -468,9 +468,7 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
   const nonNzLocation: Array<{ name: string; profile_location: string }> = [];
   for (const row of locationRows) {
     if (classifyProfileLocation(row.profile_location) !== 'non-nz') continue;
-    const gigs = (await pool.query('SELECT count(*)::int AS n FROM event_djs WHERE dj_id = $1', [row.id])).rows[0]
-      .n as number;
-    if (hasNzLocationEvidence(row.verification_sources, gigs)) continue;
+    if (hasNzLocationEvidence(row.verification_sources)) continue;
     nonNzLocation.push({ name: row.name, profile_location: row.profile_location });
   }
   if (nonNzLocation.length >= 2) {
@@ -480,25 +478,23 @@ async function auditAndFileIssues(pool: ReturnType<typeof getPool>): Promise<voi
     );
   }
 
-  // #308: a listed DJ must have at least one NZ source (profile location,
-  // gig, radio/curated source, or NZ bio). verifyDiscovered enforces this on
-  // promotion; this audit catches anything added outside the pipeline.
+  // #308/#321: a listed DJ must have at least one NZ source (profile
+  // location, curated/radio source, or NZ bio). Gigs don't count — playing
+  // an NZ event doesn't make someone an NZ DJ. verifyDiscovered enforces
+  // this on promotion; this audit catches anything added outside the pipeline.
   const noNzEvidence = (await pool.query(
     `SELECT name FROM djs d
      WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE
        AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')
        AND NOT ('location' = ANY(d.verification_sources))
-       AND NOT EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id)
-       AND d.source NOT IN ('seed','manual','radioactive','bfm','undertheradar','sanfran','rogue-vagabond',
-                            'northern-bass','snow-machine','newtown-festival','earthbeat','tora-bombora',
-                            'jambase','the-others-way','eventfinda')
+       AND d.source NOT IN ('seed','manual','radioactive','bfm')
        AND COALESCE(d.bio, '') !~* 'new zealand|aotearoa|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke|[[:<:]]nz[[:>:]]'
        AND COALESCE(d.profile_location, '') !~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'`,
   )).rows as Array<{ name: string }>;
   if (noNzEvidence.length >= 2) {
     file(
       `data: ${noNzEvidence.length} listed DJs have no NZ source`,
-      `${noNzEvidence.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nEvery listed DJ needs at least one source saying they're from NZ (profile location, gig, radio, or curated).`,
+      `${noNzEvidence.slice(0, 5).map((d) => `- ${d.name}`).join('\n')}\n\nEvery listed DJ needs a profile location naming NZ, a curated/radio source, or an NZ bio mention — gigs don't count.`,
     );
   }
 

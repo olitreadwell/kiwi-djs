@@ -253,10 +253,8 @@ export const DATASET_FIXES: DatasetFix[] = [
       const demoted: string[] = [];
       for (const row of rows) {
         if (classifyProfileLocation(row.profile_location) !== 'non-nz') continue;
-        const gigs = (await pool.query('SELECT count(*)::int AS n FROM event_djs WHERE dj_id = $1', [row.id])).rows[0]
-          .n as number;
-        if (hasNzLocationEvidence(row.verification_sources, gigs)) continue;
-        await pool.query(`UPDATE djs SET is_nz = FALSE WHERE id = $1`, [row.id]);
+        if (hasNzLocationEvidence(row.verification_sources)) continue;
+        await pool.query(`UPDATE djs SET is_nz = FALSE, active = FALSE, verification_level = 0, updated_at = now() WHERE id = $1`, [row.id]);
         demoted.push(row.name);
       }
       const detail =
@@ -264,6 +262,43 @@ export const DATASET_FIXES: DatasetFix[] = [
           ? `Demoted ${demoted.length} DJ(s) with non-NZ profile locations and no NZ evidence: ${demoted.join(', ')}.`
           : 'No active DJs with non-NZ profile locations and no NZ evidence.';
       return { resolved: true, detail };
+    },
+  },
+  {
+    issueNumber: 321,
+    title: 'demote listed DJs whose only NZ evidence is gigs',
+    priority: 1,
+    fix: async (pool) => {
+      // Backfill: a stored profile location that names NZ is the
+      // "location" verification source (#308) — existing DJs were never
+      // backfilled, so the rule below would demote them unfairly.
+      const backfilled = await pool.query(
+        `UPDATE djs SET verification_sources = (
+           SELECT array_agg(DISTINCT g) FROM unnest(verification_sources || ARRAY['location']) AS g
+         )
+         WHERE opt_out = FALSE AND active = TRUE AND is_nz = TRUE
+           AND NOT ('location' = ANY(verification_sources))
+           AND profile_location IS NOT NULL AND profile_location <> ''
+           AND profile_location ~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'`,
+      );
+      // Demote: gigs don't make someone an NZ DJ (#321). A listed DJ needs
+      // a profile location naming NZ, a curated/radio source, or an NZ bio
+      // mention. Demoted DJs stay as candidates until a profile confirms NZ.
+      const demoted = await pool.query(
+        `UPDATE djs SET active = FALSE, verification_level = 0, updated_at = now()
+         WHERE opt_out = FALSE AND active = TRUE AND is_nz = TRUE
+           AND NOT ('location' = ANY(verification_sources))
+           AND source NOT IN ('seed','manual','radioactive','bfm')
+           AND COALESCE(bio, '') !~* 'new zealand|aotearoa|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke|[[:<:]]nz[[:>:]]'
+           AND COALESCE(profile_location, '') !~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'
+         RETURNING name`,
+      );
+      const names = (demoted.rows as Array<{ name: string }>).map((row) => row.name);
+      const detail =
+        names.length > 0
+          ? `Backfilled location source for ${backfilled.rowCount} DJ(s); demoted ${names.length} gigs-only DJ(s): ${names.join(', ')}.`
+          : `Backfilled location source for ${backfilled.rowCount} DJ(s); no gigs-only DJs left to demote.`;
+      return { resolved: names.length === 0, detail };
     },
   },
   {

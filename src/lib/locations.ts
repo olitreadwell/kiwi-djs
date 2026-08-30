@@ -72,8 +72,9 @@ export function classifyProfileLocation(profileLocation: string | null | undefin
   return 'unknown';
 }
 
-// NZ evidence for a DJ: a verified location source, or at least one gig
-// (events are scraped from NZ sources, so a gig is NZ activity).
-export function hasNzLocationEvidence(verificationSources: string[], gigCount: number): boolean {
-  return verificationSources.includes('location') || gigCount > 0;
+// NZ evidence for a DJ: a profile location source that names NZ. Playing
+// NZ gigs does not make someone an NZ DJ (a touring act can play one NZ
+// festival), so gigs are deliberately not counted here (#321).
+export function hasNzLocationEvidence(verificationSources: string[]): boolean {
+  return verificationSources.includes('location');
 }

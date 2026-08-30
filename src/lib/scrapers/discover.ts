@@ -493,10 +493,7 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
          ) AS sources,
          (CASE WHEN
             'location' = ANY(d.verification_sources)
-            OR EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id)
-            OR d.source IN ('seed','manual','radioactive','bfm','undertheradar','sanfran','rogue-vagabond',
-                            'northern-bass','snow-machine','newtown-festival','earthbeat','tora-bombora',
-                            'jambase','the-others-way','eventfinda')
+            OR d.source IN ('seed','manual','radioactive','bfm')
             OR d.bio ~* 'new zealand|aotearoa|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke|[[:<:]]nz[[:>:]]'
             OR d.profile_location ~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'
          THEN 1 ELSE 0 END) AS has_nz_evidence
