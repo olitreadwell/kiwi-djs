@@ -185,9 +185,9 @@ function isRelevantArticle(djName: string, item: NewsItem): boolean {
   const name = djName.toLowerCase();
   const namePattern = new RegExp(`\\b${escapeRegExp(name)}\\b`);
   if (!namePattern.test(haystack)) return false;
-  // Short names need a music-context signal so "Sam" doesn't pull in
-  // unrelated news about anything else named Sam.
-  if (name.length >= 4) return true;
+  // The article must also sound music-shaped: Bing returns random news for
+  // common names and phrases ("The Journey", "Sam"), so require a
+  // music-context signal instead of trusting a name match alone.
   return /\b(dj|mix|gig|music|festival|album|track|set|plays|performs|tour|band|label|release|radio|club)\b/.test(haystack);
 }
 
@@ -255,19 +255,21 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
     collection?: Array<{ id: number; permalink: string; username: string; avatar_url?: string; city?: string; country?: string; country_code?: string }>;
   };
   let found = 0;
-  for (const user of data.collection ?? []) {
-    if (!user.username.toLowerCase().includes(dj.name.toLowerCase())) continue;
+  // One SoundCloud account per DJ: the first name-matching user is the
+  // keeper — its profile, tracks and genres count; namesakes don't (#25).
+  const keeper = (data.collection ?? []).find((user) => user.username.toLowerCase().includes(dj.name.toLowerCase()));
+  if (keeper) {
     found += 1;
-    await recordProfileLocation(pool, dj.id, 'SoundCloud', user.city, user.country, user.country_code);
-    await upsertDjLink(pool, dj.id, 'soundcloud', `https://soundcloud.com/${user.permalink}`, `SoundCloud: ${user.username}`);
+    await recordProfileLocation(pool, dj.id, 'SoundCloud', keeper.city, keeper.country, keeper.country_code);
+    await upsertDjLink(pool, dj.id, 'soundcloud', `https://soundcloud.com/${keeper.permalink}`, `SoundCloud: ${keeper.username}`);
     await pool.query(`UPDATE djs SET soundcloud_url = $1, image_url = COALESCE(image_url, $2) WHERE id = $3`, [
-      `https://soundcloud.com/${user.permalink}`,
-      user.avatar_url ?? null,
+      `https://soundcloud.com/${keeper.permalink}`,
+      keeper.avatar_url ?? null,
       dj.id,
     ]);
     // Pull the artist's own tracks: aggregate genre tags (#33) and add
     // tracks as mixes. Only the artist's own uploads count (#25).
-    const tracksUrl = `https://api-v2.soundcloud.com/users/${user.id}/tracks?client_id=${clientId}&limit=50`;
+    const tracksUrl = `https://api-v2.soundcloud.com/users/${keeper.id}/tracks?client_id=${clientId}&limit=50`;
     const tracksRes = await fetch(tracksUrl, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
     if (tracksRes.ok) {
       const tracks = (await tracksRes.json()) as {
