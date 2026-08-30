@@ -14,6 +14,12 @@ const VENUES: Array<{ id: number; name: string }> = [
   { id: 6638, name: 'Cuba St Tavern' },
   { id: 5290, name: 'The Pow Wow Room' },
   { id: 3171, name: 'Valhalla' },
+  // Auckland — the main DJ-friendly rooms (via UTR gig-guide crawl, #36)
+  { id: 316, name: 'Whammy Bar' },
+  { id: 6373, name: 'Double Whammy' },
+  { id: 6921, name: 'Whammy Public Bar' },
+  { id: 1648, name: 'Ponsonby Social Club' },
+  { id: 2140, name: 'Audio Foundation' },
 ];
 
 interface RssItem {
