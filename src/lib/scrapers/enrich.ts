@@ -289,42 +289,47 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
   // keeper — its profile, tracks and genres count; namesakes don't (#25).
   const keeper = (data.collection ?? []).find((user) => user.username.toLowerCase().includes(dj.name.toLowerCase()));
   if (keeper) {
-    found += 1;
-    await recordProfileLocation(pool, dj.id, 'SoundCloud', keeper.city, keeper.country, keeper.country_code);
-    await upsertDjLink(
-      pool,
-      dj.id,
-      'soundcloud',
-      `https://soundcloud.com/${keeper.permalink}`,
-      `SoundCloud: ${keeper.username}`,
-      keeper.followers_count,
-      keeper.track_count,
-    );
-    await pool.query(`UPDATE djs SET soundcloud_url = $1, image_url = COALESCE(image_url, $2) WHERE id = $3`, [
-      `https://soundcloud.com/${keeper.permalink}`,
-      keeper.avatar_url ?? null,
-      dj.id,
-    ]);
-    // Pull the artist's own tracks: aggregate genre tags (#33) and add
-    // tracks as mixes. Only the artist's own uploads count (#25).
+    // Pull the artist's own tracks first: aggregate genre tags (#33) and
+    // add tracks as mixes. Only the artist's own uploads count (#25).
     const tracksUrl = `https://api-v2.soundcloud.com/users/${keeper.id}/tracks?client_id=${clientId}&limit=50`;
     const tracksRes = await fetch(tracksUrl, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
     if (tracksRes.ok) {
       const tracks = (await tracksRes.json()) as {
         collection?: Array<{ permalink_url: string; title: string; genre?: string; tag_list?: string; duration?: number; bpm?: number }>;
       };
+      const realTracks = (tracks.collection ?? []).filter(
+        (track) => track.permalink_url && track.title && track.duration && track.duration >= 60_000,
+      );
+      // A name-matching profile with no real tracks is a namesake or an
+      // empty account — don't link it, it's probably not the right person.
+      if (realTracks.length === 0) {
+        return { status: 'partial', items_found: 0, items_new: 0, error: 'SoundCloud match has no tracks — skipped' };
+      }
+      found += 1;
+      await recordProfileLocation(pool, dj.id, 'SoundCloud', keeper.city, keeper.country, keeper.country_code);
+      await upsertDjLink(
+        pool,
+        dj.id,
+        'soundcloud',
+        `https://soundcloud.com/${keeper.permalink}`,
+        `SoundCloud: ${keeper.username}`,
+        keeper.followers_count,
+        keeper.track_count,
+      );
+      await pool.query(`UPDATE djs SET soundcloud_url = $1, image_url = COALESCE(image_url, $2) WHERE id = $3`, [
+        `https://soundcloud.com/${keeper.permalink}`,
+        keeper.avatar_url ?? null,
+        dj.id,
+      ]);
       const genres = new Set<string>();
       const bpms: number[] = [];
-      for (const track of tracks.collection ?? []) {
-        if (!track.permalink_url || !track.title) continue;
+      for (const track of realTracks) {
         if (track.genre && isGenreTag(track.genre)) genres.add(track.genre);
         for (const tag of (track.tag_list ?? '').split(/\s+/)) {
           const clean = tag.replace(/^"|"$/g, '');
           if (clean && isGenreTag(clean)) genres.add(clean);
         }
-        if (track.duration && track.duration >= 60_000) {
-          await upsertDjMix(pool, dj.id, 'soundcloud', track.title, track.permalink_url, classifyMixTitle(track.title));
-        }
+        await upsertDjMix(pool, dj.id, 'soundcloud', track.title, track.permalink_url, classifyMixTitle(track.title));
         if (track.bpm && track.bpm >= 60 && track.bpm <= 200) bpms.push(track.bpm);
       }
       if (genres.size > 0) {
