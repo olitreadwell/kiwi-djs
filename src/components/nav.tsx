@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { MobileMenu } from './mobile-menu';
 
 const links = [
   { href: '/', label: 'Home' },
@@ -26,25 +27,7 @@ export function Nav() {
             </Link>
           ))}
         </nav>
-        <details className="group relative sm:hidden">
-          <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-md border border-edge text-muted transition-colors hover:border-accent hover:text-accent">
-            <span className="sr-only">Menu</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-              <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-          </summary>
-          <nav className="absolute right-0 top-full mt-2 max-h-[80vh] w-48 overflow-y-auto rounded-lg border border-edge bg-surface p-2 font-mono text-sm text-muted shadow-xl">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="block rounded-md px-3 py-2.5 transition-colors hover:bg-surface-2 hover:text-accent"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </details>
+        <MobileMenu links={links} />
       </div>
     </header>
   );

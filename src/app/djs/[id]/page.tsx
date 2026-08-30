@@ -7,6 +7,7 @@ import { MixEmbed } from '@/components/mix-embed';
 import { SuggestForm } from '@/components/suggest-form';
 import { genrePill, topGenres } from '@/lib/genres';
 import { linkLabel, pillLabel } from '@/lib/link-labels';
+import { isNzProfileLocation } from '@/lib/locations';
 import { pickBestLinks } from '@/lib/queries';
 import {
   buildDossier,
@@ -53,7 +54,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
     { label: 'Mixcloud', href: dj.mixcloud_url },
     { label: 'Website', href: dj.website_url },
   ].filter((s) => s.href);
-  const bestLinks = pickBestLinks(dj, links);
+  const bestLinks = pickBestLinks(dj, links.filter((link) => link.type !== 'festival'));
   // One pill per platform: best link first, then social columns the best
   // links don't already cover, deduped by platform so SoundCloud never
   // doubles up even when the stored column points at an empty namesake.
@@ -132,6 +133,11 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           </p>
           <p className="mt-1 text-faint">source: {dj.source}</p>
           {dj.profile_location && <p className="mt-1 text-faint">profile: {dj.profile_location}</p>}
+          {dj.profile_location && !isNzProfileLocation(dj.profile_location) && (
+            <p className="mt-1 font-mono text-xs text-amber-400">
+              ⚠ profile says outside NZ — not verified as an NZ artist
+            </p>
+          )}
         </div>
       </div>
 

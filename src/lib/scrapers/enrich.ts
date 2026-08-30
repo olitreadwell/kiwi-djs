@@ -3,6 +3,8 @@ import { createHash } from 'node:crypto';
 import { fetchHtml, sleep } from './http';
 import { getSoundcloudClientId } from './soundcloud-client';
 import { enrichItunes, enrichMusicbrainz } from './apis';
+import { enrichBandcamp } from './bandcamp';
+import { enrichBeatport } from './beatport';
 import { upsertDjLink } from './links';
 import { isGenreTag, normaliseGenres } from '../genres';
 import { isNzLocation } from '../locations';
@@ -386,6 +388,18 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
        ORDER BY active DESC, popularity DESC, verification_level DESC, data_completeness DESC
        LIMIT ${MIXCLOUD_LIMIT}`,
     );
+  const bandcampDjs = (): Promise<{ rows: DjRow[] }> =>
+    pool.query(
+      `SELECT DISTINCT d.id, d.name FROM dj_links l JOIN djs d ON d.id = l.dj_id
+       WHERE l.type = 'bandcamp' AND d.opt_out = FALSE AND d.is_nz = TRUE
+         AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')`,
+    );
+  const beatportDjs = (): Promise<{ rows: DjRow[] }> =>
+    pool.query(
+      `SELECT DISTINCT d.id, d.name FROM dj_links l JOIN djs d ON d.id = l.dj_id
+       WHERE l.type = 'beatport' AND d.opt_out = FALSE AND d.is_nz = TRUE
+         AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')`,
+    );
   // Genre-filling sources (SoundCloud track tags, MusicBrainz, iTunes) hit
   // DJs that still need a specific subgenre first, so the public list grows
   // faster — DJs with no genres or only umbrella genres jump the queue.
@@ -404,6 +418,8 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     preflight?: () => Promise<ScrapeResult | null>;
     run: (pool: Pool, dj: DjRow) => Promise<ScrapeResult>;
   }> = [
+    { source: 'enrich-bandcamp', getDjs: bandcampDjs, run: enrichBandcamp },
+    { source: 'enrich-beatport', getDjs: beatportDjs, run: enrichBeatport },
     { source: 'enrich-mixcloud', getDjs: mixcloudDjs, run: enrichMixcloud },
     { source: 'enrich-news', getDjs: topDjs, run: enrichNews },
     { source: 'enrich-soundcloud', getDjs: genrePriorityDjs, preflight: soundcloudPreflight, run: enrichSoundcloud },

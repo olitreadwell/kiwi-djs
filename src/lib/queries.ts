@@ -52,6 +52,7 @@ export interface EventRow {
   dj_id: string | null;
   dj_name: string | null;
   region: string | null;
+  is_dj_event?: boolean;
 }
 
 interface EventDjLink {
@@ -169,7 +170,7 @@ export async function getUpcomingEvents(limit = 60): Promise<EventRow[]> {
   if (!isDbMode) {
     const now = Date.now();
     return (snapshot.events as EventRow[])
-      .filter((event) => event.starts_at && new Date(event.starts_at).getTime() > now)
+      .filter((event) => event.is_dj_event !== false && event.starts_at && new Date(event.starts_at).getTime() > now)
       .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
       .slice(0, limit);
   }
@@ -178,6 +179,7 @@ export async function getUpcomingEvents(limit = 60): Promise<EventRow[]> {
     `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
      FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
      WHERE e.starts_at > now()
+         AND e.is_dj_event = TRUE
      ORDER BY e.starts_at ASC
      LIMIT $1`,
     [limit],
@@ -190,7 +192,7 @@ export async function getEvents(opts: { upcoming?: boolean; venue?: string; dj?:
   if (!isDbMode) {
     let rows = snapshot.events as EventRow[];
     const now = Date.now();
-    if (opts.upcoming !== false) rows = rows.filter((event) => event.starts_at && new Date(event.starts_at).getTime() > now);
+    if (opts.upcoming !== false) rows = rows.filter((event) => event.is_dj_event !== false && event.starts_at && new Date(event.starts_at).getTime() > now);
     if (opts.venue) rows = rows.filter((event) => event.venue?.toLowerCase() === opts.venue!.toLowerCase());
     if (opts.dj) rows = rows.filter((event) => event.dj_id === opts.dj);
     return rows
@@ -203,6 +205,7 @@ export async function getEvents(opts: { upcoming?: boolean; venue?: string; dj?:
   if (opts.upcoming !== false) {
     params.push(new Date().toISOString());
     where.push(`e.starts_at > $${params.length}`);
+    where.push('e.is_dj_event = TRUE');
   }
   if (opts.venue) {
     params.push(opts.venue);
@@ -235,14 +238,14 @@ export async function getGenres(): Promise<string[]> {
 }
 
 export async function getOrgs(): Promise<OrgRow[]> {
-  if (!isDbMode) return [];
+  if (!isDbMode) return (snapshot.orgs as OrgRow[] | undefined) ?? [];
   const pool = getPool();
   const result = await pool.query('SELECT id, name, city, description, website, instagram, facebook FROM orgs ORDER BY name ASC');
   return result.rows as OrgRow[];
 }
 
 export async function getSoundsystems(): Promise<SoundsystemRow[]> {
-  if (!isDbMode) return [];
+  if (!isDbMode) return (snapshot.soundsystems as SoundsystemRow[] | undefined) ?? [];
   const pool = getPool();
   const result = await pool.query('SELECT id, name, city, style, description, website FROM soundsystems ORDER BY name ASC');
   return result.rows as SoundsystemRow[];
@@ -552,7 +555,13 @@ export async function getVenueEvents(venueName: string, limit = 30): Promise<Eve
   if (!isDbMode) {
     const now = Date.now();
     return (snapshot.events as EventRow[])
-      .filter((event) => event.venue?.toLowerCase() === venueName.toLowerCase() && event.starts_at && new Date(event.starts_at).getTime() > now)
+      .filter(
+        (event) =>
+          event.is_dj_event !== false &&
+          event.venue?.toLowerCase() === venueName.toLowerCase() &&
+          event.starts_at &&
+          new Date(event.starts_at).getTime() > now,
+      )
       .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
       .slice(0, limit);
   }
@@ -560,7 +569,7 @@ export async function getVenueEvents(venueName: string, limit = 30): Promise<Eve
   const result = await pool.query(
     `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
      FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
-     WHERE e.venue ILIKE $1 AND e.starts_at > now()
+     WHERE e.venue ILIKE $1 AND e.starts_at > now() AND e.is_dj_event = TRUE
      ORDER BY e.starts_at ASC LIMIT $2`,
     [venueName, limit],
   );
@@ -613,7 +622,13 @@ export async function getWeekendEvents(limit = 60): Promise<EventRow[]> {
     const now = Date.now();
     const end = endOfWeekendUtc().getTime();
     return (snapshot.events as EventRow[])
-      .filter((event) => event.starts_at && new Date(event.starts_at).getTime() > now && new Date(event.starts_at).getTime() <= end)
+      .filter(
+        (event) =>
+          event.is_dj_event !== false &&
+          event.starts_at &&
+          new Date(event.starts_at).getTime() > now &&
+          new Date(event.starts_at).getTime() <= end,
+      )
       .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
       .slice(0, limit);
   }
@@ -621,7 +636,7 @@ export async function getWeekendEvents(limit = 60): Promise<EventRow[]> {
   const result = await pool.query(
     `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region
      FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
-     WHERE e.starts_at > now() AND e.starts_at <= $1
+     WHERE e.starts_at > now() AND e.starts_at <= $1 AND e.is_dj_event = TRUE
      ORDER BY e.starts_at ASC LIMIT $2`,
     [endOfWeekendUtc().toISOString(), limit],
   );

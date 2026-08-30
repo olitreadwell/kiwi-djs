@@ -29,3 +29,10 @@ export function cityFromLocation(profileLocation: string | null | undefined): st
   }
   return null;
 }
+
+// True when a stored profile location string names New Zealand (a city,
+// "New Zealand", "Aotearoa" or "NZ").
+export function isNzProfileLocation(profileLocation: string | null | undefined): boolean {
+  if (!profileLocation) return true;
+  return cityFromLocation(profileLocation) !== null || /new zealand|aotearoa|\bnz\b/i.test(profileLocation);
+}

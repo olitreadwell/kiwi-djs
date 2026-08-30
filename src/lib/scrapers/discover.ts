@@ -2,6 +2,8 @@ import type { Pool } from 'pg';
 import { slugify } from '../slug';
 import { sleep } from './http';
 import { upsertDjLink, upsertDjArticle, parseBingNewsXml } from './enrich';
+import { getSoundcloudClientId } from './soundcloud-client';
+import { cityFromLocation, isNzLocation } from '../locations';
 import type { ScrapeResult } from './types';
 
 const STOP_WORDS = new Set([
@@ -119,6 +121,78 @@ export async function discoverFromEvents(pool: Pool): Promise<ScrapeResult> {
     }
   }
   return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: newCount, error: found === 0 ? 'No new names' : undefined };
+}
+
+interface SoundcloudUser {
+  id: number;
+  permalink: string;
+  username: string;
+  avatar_url?: string;
+  city?: string;
+  country?: string;
+  country_code?: string;
+  followers_count?: number;
+  track_count?: number;
+}
+
+// Seed the list with the strongest NZ signal we can get for free: SoundCloud
+// profiles that list New Zealand as their location and have a real
+// following. Followers + location + profile link is strong verification.
+export async function discoverSoundcloudNz(pool: Pool): Promise<ScrapeResult> {
+  const cid = await getSoundcloudClientId();
+  if (!cid) return { status: 'error', items_found: 0, items_new: 0, error: 'no SoundCloud client id' };
+  const queries = ['new zealand', 'wellington', 'auckland', 'christchurch', 'dunedin', 'queenstown', 'hamilton', 'tauranga'];
+  const users = new Map<number, SoundcloudUser>();
+  for (const query of queries) {
+    try {
+      const res = await fetch(`https://api-v2.soundcloud.com/search/users?q=${encodeURIComponent(query)}&client_id=${cid}&limit=50`, {
+        headers: { accept: 'application/json' },
+        signal: AbortSignal.timeout(15000),
+      });
+      if (!res.ok) continue;
+      const data = (await res.json()) as { collection?: SoundcloudUser[] };
+      for (const user of data.collection ?? []) {
+        if (user.id) users.set(user.id, user);
+      }
+    } catch {
+      // keep going — one query failing shouldn't kill the city sweep
+    }
+    await sleep(500);
+  }
+  const candidates = [...users.values()]
+    .filter((u) => isNzLocation(u.city, u.country, u.country_code))
+    .filter((u) => (u.followers_count ?? 0) >= 300)
+    .filter((u) => (u.track_count ?? 0) > 0)
+    .filter((u) => !isJunkName(u.username) && !isEventSeriesName(u.username))
+    .sort((a, b) => (b.followers_count ?? 0) - (a.followers_count ?? 0))
+    .slice(0, 40);
+  const existing = await loadExistingNames(pool);
+  let found = 0;
+  let newCount = 0;
+  for (const user of candidates) {
+    const key = normalizeArtistName(user.username);
+    if (existing.has(key)) continue;
+    existing.add(key);
+    const id = slugify(user.username);
+    const location = `SoundCloud: ${[user.city, user.country].filter(Boolean).join(', ') || user.country_code || 'NZ'}`;
+    const result = await pool.query(
+      `INSERT INTO djs (id, name, source, active, data_completeness, verification_level, verification_sources,
+                        is_nz, soundcloud_url, image_url, profile_location, city, discovery_note)
+       VALUES ($1, $2, 'discovered-soundcloud', TRUE, 25, 2, ARRAY['location','links'], TRUE, $3, $4, $5, $6, NULL)
+       ON CONFLICT (id) DO NOTHING RETURNING id`,
+      [id, user.username, `https://soundcloud.com/${user.permalink}`, user.avatar_url ?? null, location, cityFromLocation(location) ?? 'Wellington'],
+    );
+    if (result.rows.length === 0) continue;
+    newCount += 1;
+    await upsertDjLink(pool, id, 'soundcloud', `https://soundcloud.com/${user.permalink}`, `SoundCloud: ${user.username}`, user.followers_count, user.track_count);
+    found += 1;
+  }
+  return {
+    status: found > 0 ? 'ok' : 'partial',
+    items_found: found,
+    items_new: newCount,
+    error: found === 0 ? 'No new NZ SoundCloud artists' : undefined,
+  };
 }
 
 async function loadExistingNames(pool: Pool): Promise<Set<string>> {
@@ -427,6 +501,7 @@ export async function discoverFromNzMusicFeeds(pool: Pool): Promise<ScrapeResult
 
 export async function discoverAll(pool: Pool): Promise<ScrapeResult[]> {
   const runners: Array<{ source: string; run: (pool: Pool) => Promise<ScrapeResult> }> = [
+    { source: 'discover-soundcloud-nz', run: discoverSoundcloudNz },
     { source: 'discover-events', run: discoverFromEvents },
     { source: 'discover-mixcloud', run: discoverFromMixcloud },
     { source: 'discover-news', run: discoverFromNewsArticles },

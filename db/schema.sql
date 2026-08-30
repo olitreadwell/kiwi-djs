@@ -61,8 +61,11 @@ CREATE TABLE IF NOT EXISTS events (
   starts_at     TIMESTAMPTZ,
   url           TEXT,
   source        TEXT NOT NULL DEFAULT 'seed',
+  is_dj_event   BOOLEAN NOT NULL DEFAULT FALSE, -- only DJ gigs hit the calendar
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+ALTER TABLE events ADD COLUMN IF NOT EXISTS is_dj_event BOOLEAN NOT NULL DEFAULT FALSE;
 
 -- One event row per festival/venue night; event_djs links every DJ on the
 -- lineup so a festival is not duplicated per DJ (#16).

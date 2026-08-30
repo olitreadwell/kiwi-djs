@@ -23,6 +23,20 @@
 - New sources go in `DATA_SOURCES.md`; behavior changes go in `CHANGELOG.md`
 - Opt-out must always work: `opt_out = TRUE` filters every public query
 
+## Feedback → issues workflow
+
+Every piece of user feedback becomes a GitHub issue, not just a one-off fix:
+
+1. Do a quick scan for the generic version of the problem — e.g. "one artist's
+   SoundCloud says Melbourne" becomes "DJs whose profiles list a non-NZ
+   location aren't flagged".
+2. Write the issue as a spec: what a user probably wants to see, acceptance
+   criteria, where to look in the code.
+3. Label it with a priority (`P0`–`P3`) and a persona
+   (`persona: attendee|promoter|dj|researcher|nz-fan`).
+4. Fixing it now is fine; otherwise it stays queued and the loop picks it up
+   later. Always cross-link the fix to the issue when it ships.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know
