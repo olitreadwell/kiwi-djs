@@ -37,6 +37,7 @@ export interface DjRow {
   verification_sources: string[];
   source: string;
   is_nz: boolean;
+  city?: string | null;
   profile_location?: string | null;
   upcoming_events: number;
   mix_count?: number;
@@ -337,6 +338,16 @@ export interface MixRow {
   kind: 'mix' | 'interview';
 }
 
+export interface ReleaseRow {
+  id: string;
+  dj_id: string;
+  title: string;
+  year: number | null;
+  label: string | null;
+  format: string | null;
+  url: string | null;
+}
+
 export interface ArticleRow {
   id: string;
   dj_id: string;
@@ -378,6 +389,16 @@ export async function getDjMixes(djId: string): Promise<MixRow[]> {
   const pool = getPool();
   const result = await pool.query('SELECT id, title, url, platform, kind FROM dj_mixes WHERE dj_id = $1 ORDER BY created_at DESC', [djId]);
   return result.rows as MixRow[];
+}
+
+export async function getDjReleases(djId: string): Promise<ReleaseRow[]> {
+  if (!isDbMode) return (snapshot.releases as ReleaseRow[] | undefined)?.filter((release) => release.dj_id === djId) ?? [];
+  const pool = getPool();
+  const result = await pool.query(
+    `SELECT id, dj_id, title, year, label, format, url FROM dj_releases WHERE dj_id = $1 ORDER BY year DESC NULLS LAST, title ASC`,
+    [djId],
+  );
+  return result.rows as ReleaseRow[];
 }
 
 export async function getDjArticles(djId: string): Promise<ArticleRow[]> {

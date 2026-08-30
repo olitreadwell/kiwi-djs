@@ -36,13 +36,14 @@ const links = (
 ).rows;
 const articles = (await pool.query('SELECT id, dj_id, title, url, source, published_at, snippet, archive_url FROM dj_articles')).rows;
 const mixes = (await pool.query('SELECT id, dj_id, title, url, platform FROM dj_mixes')).rows;
+const releases = (await pool.query('SELECT id, dj_id, title, year, label, format, url FROM dj_releases')).rows;
 const eventDjs = (await pool.query('SELECT event_id, dj_id FROM event_djs')).rows;
 const venues = (await pool.query('SELECT id, name, address, url FROM venues')).rows;
 const orgs = (await pool.query('SELECT id, name, city, description, website, instagram, facebook FROM orgs')).rows;
 const soundsystems = (await pool.query('SELECT id, name, city, style, description, website FROM soundsystems')).rows;
 writeFileSync(
   new URL('../src/data/snapshot.json', import.meta.url),
-  JSON.stringify({ exportedAt: new Date().toISOString(), djs, events, links, articles, mixes, eventDjs, venues, orgs, soundsystems }, null, 2),
+  JSON.stringify({ exportedAt: new Date().toISOString(), djs, events, links, articles, mixes, releases, eventDjs, venues, orgs, soundsystems }, null, 2),
 );
 console.log(`Snapshot written: ${djs.length} DJs, ${events.length} events, ${eventDjs.length} event-DJ links, ${venues.length} venues, ${links.length} links, ${articles.length} articles, ${mixes.length} mixes, ${orgs.length} orgs, ${soundsystems.length} soundsystems.`);
 await pool.end();

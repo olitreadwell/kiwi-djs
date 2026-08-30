@@ -7,7 +7,7 @@ import { MixEmbed } from '@/components/mix-embed';
 import { SuggestForm } from '@/components/suggest-form';
 import { genrePill, topGenres } from '@/lib/genres';
 import { linkLabel, pillLabel } from '@/lib/link-labels';
-import { isNzProfileLocation } from '@/lib/locations';
+import { cityFromLocation, isNzProfileLocation } from '@/lib/locations';
 import { profileGaps, profileTier, TIER_LABELS } from '@/lib/profile-tier';
 import { pickBestLinks } from '@/lib/queries';
 import {
@@ -20,6 +20,7 @@ import {
   getDjLinks,
   getDjMixes,
   getDjPastGigs,
+  getDjReleases,
   getSimilarDjs,
 } from '@/lib/queries';
 
@@ -34,7 +35,7 @@ const EVIDENCE_LABELS: Record<string, string> = {
 
 export default async function DjProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const [dj, gigs, pastGigs, mixes, articles, links, collabs, labels, similar, summary] = await Promise.all([
+  const [dj, gigs, pastGigs, mixes, articles, links, collabs, labels, similar, summary, releases] = await Promise.all([
     getDjById(id),
     getDjGigs(id),
     getDjPastGigs(id),
@@ -45,6 +46,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
     getDjLabels(id),
     getSimilarDjs(id),
     buildDossier(id),
+    getDjReleases(id),
   ]);
   if (!dj) notFound();
 
@@ -68,6 +70,16 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       ...pastGigs.map((gig) => gig.source),
     ].filter(Boolean)),
   ];
+  const city = cityFromLocation(dj.profile_location) ?? (dj.city && dj.city !== '' ? dj.city : null);
+  const mixCount = mixes.filter((mix) => mix.kind === 'mix').length;
+  const interviewCount = mixes.filter((mix) => mix.kind === 'interview').length;
+  const jumpLinks = [
+    mixCount > 0 && ['#mixes', 'Mixes'],
+    gigs.length > 0 && ['#gigs', 'Gigs'],
+    articles.length > 0 && ['#news', 'News'],
+    similar.length > 0 && ['#similar', 'Similar'],
+    ['#sources', 'Sources'],
+  ].filter(Boolean) as Array<[string, string]>;
   const bestLinks = pickBestLinks(dj, links.filter((link) => link.type !== 'festival'));
   // One pill per platform: best link first, then social columns the best
   // links don't already cover, deduped by platform so SoundCloud never
@@ -116,6 +128,23 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           {dj.bpm_range && <p className="mt-1 font-mono text-xs text-muted">{dj.bpm_range} BPM</p>}
         </div>
       </div>
+
+      <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-muted">
+        {city && <span>{city}</span>}
+        <span>{dj.genres.length} genre{dj.genres.length === 1 ? '' : 's'}</span>
+        <span>{mixCount} mix{mixCount === 1 ? '' : 'es'}</span>
+        <span>{gigs.length} upcoming</span>
+        {pastGigs.length > 0 && <span>{pastGigs.length} past</span>}
+        {articles.length > 0 && <span>{articles.length} article{articles.length === 1 ? '' : 's'}</span>}
+      </div>
+
+      <nav className="sticky top-14 z-30 -mx-4 mt-4 overflow-x-auto border-y border-edge bg-background/90 px-4 py-2 backdrop-blur" aria-label="On this page">
+        <div className="flex gap-4 font-mono text-xs text-muted">
+          {jumpLinks.map(([href, label]) => (
+            <a key={href} href={href} className="whitespace-nowrap transition-colors hover:text-accent">{label}</a>
+          ))}
+        </div>
+      </nav>
 
       {profileGaps(dj).length > 0 && (
         <section className="mt-6 rounded-lg border border-edge bg-surface p-4">
@@ -170,24 +199,24 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         </div>
       )}
 
-      {mixes.filter((mix) => mix.kind === 'mix').length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold text-foreground">Mixes</h2>
+      {mixCount > 0 && (
+        <section id="mixes" className="mt-12 scroll-mt-24">
+          <h2 className="text-xl font-bold text-foreground">Mixes ({mixCount})</h2>
           <MixEmbed mixes={mixes.filter((mix) => mix.kind === 'mix')} />
           <MixList mixes={mixes.filter((mix) => mix.kind === 'mix')} />
         </section>
       )}
 
-      {mixes.filter((mix) => mix.kind === 'interview').length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold text-foreground">Interviews</h2>
+      {interviewCount > 0 && (
+        <section id="interviews" className="mt-12 scroll-mt-24">
+          <h2 className="text-xl font-bold text-foreground">Interviews ({interviewCount})</h2>
           <MixList mixes={mixes.filter((mix) => mix.kind === 'interview')} />
         </section>
       )}
 
       {articles.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold text-foreground">In the news</h2>
+        <section id="news" className="mt-12 scroll-mt-24">
+          <h2 className="text-xl font-bold text-foreground">In the news ({articles.length})</h2>
           <ul className="mt-4 divide-y divide-edge rounded-lg border border-edge">
             {articles.map((article) => (
               <li key={article.id} className="px-4 py-3">
@@ -211,7 +240,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       )}
 
       {collabs.length > 0 && (
-        <section className="mt-12">
+        <section id="collabs" className="mt-12 scroll-mt-24">
           <h2 className="text-xl font-bold text-foreground">Played with</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {collabs.map((collab) => (
@@ -230,7 +259,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       )}
 
       {labels.length > 0 && (
-        <section className="mt-12">
+        <section id="labels" className="mt-12 scroll-mt-24">
           <h2 className="text-xl font-bold text-foreground">Labels & promoters</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {labels.map((label) => (
@@ -242,7 +271,29 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         </section>
       )}
 
-      <h2 className="mt-12 text-xl font-bold text-foreground">Upcoming gigs</h2>
+      {releases.length > 0 && (
+        <section id="releases" className="mt-12 scroll-mt-24">
+          <h2 className="text-xl font-bold text-foreground">Releases ({releases.length})</h2>
+          <ul className="mt-4 divide-y divide-edge rounded-lg border border-edge">
+            {releases.map((release) => (
+              <li key={release.id} className="flex items-center justify-between gap-4 px-4 py-3">
+                <div>
+                  <p className="text-sm text-foreground">{release.title}</p>
+                  {release.label && <p className="font-mono text-xs text-muted">{release.label}</p>}
+                </div>
+                <div className="text-right font-mono text-xs text-muted">
+                  {release.year ?? 'year tbc'}
+                  {release.url && (
+                    <a href={release.url} target="_blank" rel="noopener noreferrer" className="mt-1 block text-accent hover:underline">source ↗</a>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <h2 id="gigs" className="mt-12 scroll-mt-24 text-xl font-bold text-foreground">Upcoming gigs ({gigs.length})</h2>
       {gigs.length === 0 ? (
         <p className="mt-3 font-mono text-sm text-muted">No upcoming gigs listed yet.</p>
       ) : (
@@ -265,8 +316,8 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       )}
 
       {pastGigs.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold text-foreground">Past gigs</h2>
+        <section id="past" className="mt-12 scroll-mt-24">
+          <h2 className="text-xl font-bold text-foreground">Past gigs ({pastGigs.length})</h2>
           <ul className="mt-4 divide-y divide-edge rounded-lg border border-edge">
             {pastGigs.map((gig) => (
               <li key={gig.id} className="flex items-center justify-between gap-4 px-4 py-3">
@@ -284,8 +335,8 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       )}
 
       {similar.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-xl font-bold text-foreground">Similar DJs</h2>
+        <section id="similar" className="mt-12 scroll-mt-24">
+          <h2 className="text-xl font-bold text-foreground">Similar DJs ({similar.length})</h2>
           <p className="mt-1 font-mono text-xs text-muted">Same genres, same rooms.</p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {similar.map((other) => (
@@ -301,7 +352,7 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         </section>
       )}
 
-      <details className="mt-12 rounded-lg border border-edge">
+      <details id="sources" className="mt-12 scroll-mt-24 rounded-lg border border-edge">
         <summary className="cursor-pointer px-4 py-3 font-mono text-xs uppercase tracking-wider text-muted transition-colors hover:text-accent">
           Sources
         </summary>
