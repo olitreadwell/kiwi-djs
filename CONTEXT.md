@@ -52,6 +52,17 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 - Phase state lives in `.loop/phase.json`; the handoff file shows the current phase.
 - Scrapers: robots.txt-checked, 500ms+ delays, 15s timeouts, failures recorded in `scrapes` table, never fatal.
 
+## Feedback → issues (standing convention)
+
+Every piece of user feedback becomes a GitHub issue, not just a one-off fix:
+
+1. **Research first** — check whether it's a generic problem that applies across sources/venues/DJs (e.g. "Mark Knight shows cartoonist articles" → namesake disambiguation everywhere, not just news).
+2. **Spec it** — Context / Research / Spec / Acceptance, with what a user probably wants to see.
+3. **Label it** — priority (`P0`–`P3`) + persona (`persona: attendee` / `dj` / `promoter` / `researcher` / `nz-fan`).
+4. **Fix it when the loop gets to it** — quick wins can be fixed immediately (and the issue closed with a reference), but the issue is the durable record; the loop's issues phase works the automatable ones by priority, and future sessions pick up the rest. It doesn't have to be the next thing done.
+
+Recent feedback → issues: venue coverage gaps (#257), played-with graph completeness (#258), namesake disambiguation (#259), NZ-wide rough-list discovery (#260).
+
 ## Current state (2026-08-29)
 
 - 8 active seed DJs (incl. Broderbeats), 59+ events, 171 mixes, 25 articles, 57 hidden discovery candidates
