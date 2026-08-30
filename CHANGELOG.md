@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-30 — Faster genre filling + bigger enrichment budget
+
+- Enrichment budget raised from 15 to 30 DJs/run (env `ENRICH_LIMIT`); Mixcloud keeps a lower cap of 20 (env `MIXCLOUD_LIMIT`) because it rate-limits
+- SoundCloud/MusicBrainz/iTunes genre-filling now prioritises DJs with no genres or only umbrella genres, so the public list (which hides DJs without a specific subgenre) grows faster
+
 ## 2026-08-30 — Loop issues phase + dataset fixes
 
 - Loop now alternates between an **issues phase** (fixes open automatable dataset issues, one per cycle, closes them when resolved) and the scrape phase; phase state in `.loop/phase.json`
