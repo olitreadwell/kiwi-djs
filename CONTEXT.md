@@ -64,7 +64,7 @@ Open directory + dataset of Wellington (Te Whanganui-a-Tara) DJs. Public data on
 - `scripts/lib/db.mjs` keeps its own `slugify` — tsx cannot transform `.mjs` imports of `.ts` files. App code uses `src/lib/slug.ts`.
 - Google News RSS is robots-blocked → news enrichment uses Bing News RSS only.
 - SoundCloud default client id is dead (401). Needs fresh `SOUNDCLOUD_CLIENT_ID`.
-- Mixcloud rate-limits under sustained load → enrichment capped at 15 active DJs/run.
+- Mixcloud rate-limits under sustained load → enrichment capped at 30 DJs/run (`ENRICH_LIMIT`), Mixcloud at 20 (`MIXCLOUD_LIMIT`); genre-filling sources prioritise DJs that still need a specific subgenre.
 - Vercel cron: `vercel.json` schedules `/api/cron/refresh` 2am NZT; route skips gracefully without `DATABASE_URL`.
 - Self-improving loop: launchd agent `com.olitreadwell.aotearoa-djs-loop` fires daily 4:30am NZT (16:30 UTC, DeepSeek off-peak start) and self-sustains via `pnpm loop`. Single-instance lock in `logs/loop.pid`; source health in `logs/source-state.json` (3 consecutive errors disables a source for 24h). Loop commits only `src/data/snapshot.json` — never sweeps WIP.
 

@@ -13,6 +13,16 @@ interface DjRow {
   name: string;
 }
 
+// Enrichment budget per run. Bumped from 15 so the ~116 active DJs with no
+// genres can be reached; Mixcloud keeps a lower cap because it rate-limits
+// (429s set mixcloud_backoff_until).
+const ENRICH_LIMIT = Number(process.env.ENRICH_LIMIT ?? 30);
+const MIXCLOUD_LIMIT = Number(process.env.MIXCLOUD_LIMIT ?? 20);
+
+// Umbrella genres don't count as a specific subgenre (#51/#53) — a DJ with
+// only these (or none) still needs genre enrichment.
+const GENERIC_GENRE_SQL = `ARRAY['Dance','Electronic','Alternative','Pop','Rock','Country','Eclectic','World','Experimental','Indie','Metal','Punk','Folk','Classical','Lounge','Chillout']`;
+
 export async function upsertDjArticle(
   pool: Pool,
   djId: string,
@@ -272,7 +282,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
        WHERE opt_out = FALSE AND is_nz = TRUE
          AND (discovery_note IS NULL OR discovery_note <> 'junk')
        ORDER BY active DESC, popularity DESC, verification_level DESC, data_completeness DESC
-       LIMIT 15`,
+       LIMIT ${ENRICH_LIMIT}`,
     );
   const mixcloudDjs = (): Promise<{ rows: DjRow[] }> =>
     pool.query(
@@ -281,7 +291,19 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
          AND (discovery_note IS NULL OR discovery_note <> 'junk')
          AND (mixcloud_backoff_until IS NULL OR mixcloud_backoff_until <= now())
        ORDER BY active DESC, popularity DESC, verification_level DESC, data_completeness DESC
-       LIMIT 15`,
+       LIMIT ${MIXCLOUD_LIMIT}`,
+    );
+  // Genre-filling sources (SoundCloud track tags, MusicBrainz, iTunes) hit
+  // DJs that still need a specific subgenre first, so the public list grows
+  // faster — DJs with no genres or only umbrella genres jump the queue.
+  const genrePriorityDjs = (): Promise<{ rows: DjRow[] }> =>
+    pool.query(
+      `SELECT id, name FROM djs
+       WHERE opt_out = FALSE AND is_nz = TRUE
+         AND (discovery_note IS NULL OR discovery_note <> 'junk')
+       ORDER BY (cardinality(genres) = 0 OR genres <@ ${GENERIC_GENRE_SQL}) DESC,
+                active DESC, popularity DESC, verification_level DESC, data_completeness DESC
+       LIMIT ${ENRICH_LIMIT}`,
     );
   const sources: Array<{
     source: string;
@@ -291,9 +313,9 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
   }> = [
     { source: 'enrich-mixcloud', getDjs: mixcloudDjs, run: enrichMixcloud },
     { source: 'enrich-news', getDjs: topDjs, run: enrichNews },
-    { source: 'enrich-soundcloud', getDjs: topDjs, preflight: soundcloudPreflight, run: enrichSoundcloud },
-    { source: 'enrich-musicbrainz', getDjs: topDjs, run: enrichMusicbrainz },
-    { source: 'enrich-itunes', getDjs: topDjs, run: enrichItunes },
+    { source: 'enrich-soundcloud', getDjs: genrePriorityDjs, preflight: soundcloudPreflight, run: enrichSoundcloud },
+    { source: 'enrich-musicbrainz', getDjs: genrePriorityDjs, run: enrichMusicbrainz },
+    { source: 'enrich-itunes', getDjs: genrePriorityDjs, run: enrichItunes },
   ];
   for (const source of sources) {
     if (source.preflight) {
