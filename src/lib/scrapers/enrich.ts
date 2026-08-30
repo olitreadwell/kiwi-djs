@@ -70,7 +70,7 @@ export async function upsertDjMix(
 interface MixcloudResult {
   name: string;
   url: string;
-  user?: { name: string; url: string; city?: string; country?: string };
+  user?: { name: string; url: string; city?: string; country?: string; follower_count?: number; cloudcast_count?: number };
   created_time?: string;
   audio_length?: number;
 }
@@ -129,7 +129,7 @@ export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResul
       found += 1;
       await upsertDjMix(pool, dj.id, 'mixcloud', item.name, item.url, classifyMixTitle(item.name));
       if (item.user?.url) {
-        await upsertDjLink(pool, dj.id, 'mixcloud', item.user.url, `Mixcloud: ${item.user.name}`);
+        await upsertDjLink(pool, dj.id, 'mixcloud', item.user.url, `Mixcloud: ${item.user.name}`, item.user.follower_count, item.user.cloudcast_count);
       }
     }
     await sleep(500);
@@ -252,7 +252,17 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
   const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
   if (!res.ok) throw new Error(`SoundCloud HTTP ${res.status}`);
   const data = (await res.json()) as {
-    collection?: Array<{ id: number; permalink: string; username: string; avatar_url?: string; city?: string; country?: string; country_code?: string }>;
+    collection?: Array<{
+      id: number;
+      permalink: string;
+      username: string;
+      avatar_url?: string;
+      city?: string;
+      country?: string;
+      country_code?: string;
+      followers_count?: number;
+      track_count?: number;
+    }>;
   };
   let found = 0;
   // One SoundCloud account per DJ: the first name-matching user is the
@@ -261,7 +271,15 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
   if (keeper) {
     found += 1;
     await recordProfileLocation(pool, dj.id, 'SoundCloud', keeper.city, keeper.country, keeper.country_code);
-    await upsertDjLink(pool, dj.id, 'soundcloud', `https://soundcloud.com/${keeper.permalink}`, `SoundCloud: ${keeper.username}`);
+    await upsertDjLink(
+      pool,
+      dj.id,
+      'soundcloud',
+      `https://soundcloud.com/${keeper.permalink}`,
+      `SoundCloud: ${keeper.username}`,
+      keeper.followers_count,
+      keeper.track_count,
+    );
     await pool.query(`UPDATE djs SET soundcloud_url = $1, image_url = COALESCE(image_url, $2) WHERE id = $3`, [
       `https://soundcloud.com/${keeper.permalink}`,
       keeper.avatar_url ?? null,

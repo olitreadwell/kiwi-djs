@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-30 — Specific platform links (#74)
+
+- Social links reclassified by host: Instagram, X, Facebook, TikTok, YouTube, Spotify, Apple Music, Tidal, Deezer, Qobuz, Bandcamp, Mastodon, Threads, Snapchat, Twitch, Beatport — no more generic "social network" labels
+- MusicBrainz enrichment now classifies relation URLs by hostname, so future runs add platform-specific links directly
+- All off-site links open in a new tab (`target="_blank"` + `rel="noopener noreferrer"`), audited across every page
+
 ## 2026-08-30 — Community link feedback + profile locations (#74)
 
 - All candidate links for a DJ stay in the data; each platform type shows only the best one (canonical profile, then community votes, then earliest)

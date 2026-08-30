@@ -51,6 +51,13 @@ export default async function DjLinksPage({ params }: { params: Promise<{ id: st
                         {displayLabel(link.type, link.label)}
                       </a>
                       <span className="font-mono text-xs text-faint"> · {linkDomain(link.url)}</span>
+                      {(link.followers > 0 || link.track_count > 0) && (
+                        <span className="ml-2 font-mono text-xs text-faint">
+                          {link.followers > 0 ? `${link.followers.toLocaleString('en-NZ')} followers` : ''}
+                          {link.followers > 0 && link.track_count > 0 ? ' · ' : ''}
+                          {link.track_count > 0 ? `${link.track_count} mix${link.track_count === 1 ? '' : 'es'}` : ''}
+                        </span>
+                      )}
                       {bestById.has(link.id) && <span className="ml-2 font-mono text-xs text-accent">best guess</span>}
                     </div>
                     <LinkFeedback linkId={link.id} helpful={link.helpful} unhelpful={link.unhelpful} />

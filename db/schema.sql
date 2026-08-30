@@ -109,8 +109,13 @@ CREATE TABLE IF NOT EXISTS dj_links (
   type          TEXT NOT NULL,               -- soundcloud | mixcloud | instagram | facebook | website | spotify | news
   url           TEXT NOT NULL,
   label         TEXT,
+  followers     INTEGER NOT NULL DEFAULT 0,  -- profile activity, drives the best-link pick
+  track_count   INTEGER NOT NULL DEFAULT 0,
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS followers INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS track_count INTEGER NOT NULL DEFAULT 0;
 
 CREATE TABLE IF NOT EXISTS dj_articles (
   id            TEXT PRIMARY KEY,            -- djId-<hash>

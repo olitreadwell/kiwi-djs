@@ -55,11 +55,19 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
   ].filter((s) => s.href);
   const bestLinks = pickBestLinks(dj, links);
   // One pill per platform: best link first, then social columns the best
-  // links don't already cover, deduped by URL so SoundCloud never doubles up.
+  // links don't already cover, deduped by platform so SoundCloud never
+  // doubles up even when the stored column points at an empty namesake.
+  const socialType: Record<string, string> = {
+    SoundCloud: 'soundcloud',
+    Instagram: 'instagram',
+    Facebook: 'facebook',
+    Mixcloud: 'mixcloud',
+    Website: 'website',
+  };
   const pills = [
     ...bestLinks.map((link) => ({ url: link.url, label: pillLabel(link.type) })),
     ...socials
-      .filter((social) => social.href && !bestLinks.some((link) => link.url === social.href))
+      .filter((social) => social.href && !bestLinks.some((link) => link.type === socialType[social.label]))
       .map((social) => ({ url: social.href as string, label: social.label })),
   ];
 

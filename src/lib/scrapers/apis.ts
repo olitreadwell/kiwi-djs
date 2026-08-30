@@ -83,6 +83,41 @@ const MB_LINK_TYPES: Record<string, string> = {
   discogs: 'discogs',
 };
 
+// Classify a MusicBrainz relation URL by its host so social profiles get
+// specific platform types (Instagram, X, Facebook...) instead of the generic
+// "social network" bucket.
+const HOST_TO_TYPE: Array<[RegExp, string]> = [
+  [/instagram\.com/i, 'instagram'],
+  [/twitter\.com|x\.com/i, 'twitter'],
+  [/facebook\.com|fb\.com/i, 'facebook'],
+  [/tiktok\.com/i, 'tiktok'],
+  [/youtu\.?be|music\.youtube/i, 'youtube'],
+  [/mixcloud\.com/i, 'mixcloud'],
+  [/soundcloud\.com/i, 'soundcloud'],
+  [/spotify\.com/i, 'spotify'],
+  [/bandcamp\.com/i, 'bandcamp'],
+  [/residentadvisor\.net|ra\.co/i, 'resident-advisor'],
+  [/mastodon/i, 'mastodon'],
+  [/threads\.net/i, 'threads'],
+  [/myspace\.com/i, 'myspace'],
+  [/last\.fm/i, 'last.fm'],
+  [/snapchat\.com/i, 'snapchat'],
+  [/twitch\.tv/i, 'twitch'],
+  [/songkick\.com/i, 'songkick'],
+  [/beatport\.com/i, 'beatport'],
+  [/music\.apple\.com/i, 'apple-music'],
+  [/tidal\.com/i, 'tidal'],
+  [/deezer\.com/i, 'deezer'],
+  [/qobuz\.com/i, 'qobuz'],
+];
+
+function classifyLinkType(relationType: string, resource: string): string {
+  for (const [pattern, type] of HOST_TO_TYPE) {
+    if (pattern.test(resource)) return type;
+  }
+  return MB_LINK_TYPES[relationType.toLowerCase()] ?? relationType.toLowerCase();
+}
+
 const MB_COLUMN_TYPES: Record<string, string> = {
   soundcloud: 'soundcloud_url',
   instagram: 'instagram_url',
@@ -124,7 +159,7 @@ export async function enrichMusicbrainz(pool: Pool, dj: DjRow): Promise<ScrapeRe
   for (const relation of full.relations ?? []) {
     const resource = relation.url?.resource;
     if (!resource) continue;
-    const type = MB_LINK_TYPES[relation.type.toLowerCase()] ?? relation.type.toLowerCase();
+    const type = classifyLinkType(relation.type, resource);
     await upsertDjLink(pool, dj.id, type, resource);
     const column = MB_COLUMN_TYPES[type];
     if (column) {

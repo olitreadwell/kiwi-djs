@@ -317,6 +317,8 @@ export interface LinkRow {
   created_at: string | null;
   helpful: number;
   unhelpful: number;
+  followers: number;
+  track_count: number;
 }
 
 export interface CollabRow {
@@ -351,11 +353,11 @@ export async function getDjLinks(djId: string): Promise<LinkRow[]> {
   if (!isDbMode) {
     return (snapshot.links as LinkRow[] | undefined)
       ?.filter((link) => link.dj_id === djId)
-      .map((link) => ({ ...link, created_at: null, helpful: 0, unhelpful: 0 })) ?? [];
+      .map((link) => ({ ...link, created_at: null, helpful: 0, unhelpful: 0, followers: 0, track_count: 0 })) ?? [];
   }
   const pool = getPool();
   const result = await pool.query(
-    `SELECT l.id, l.dj_id, l.type, l.url, l.label, l.created_at,
+    `SELECT l.id, l.dj_id, l.type, l.url, l.label, l.created_at, l.followers, l.track_count,
             count(f.id) FILTER (WHERE f.helpful)::int AS helpful,
             count(f.id) FILTER (WHERE NOT f.helpful)::int AS unhelpful
      FROM dj_links l LEFT JOIN link_feedback f ON f.link_id = l.id
@@ -367,9 +369,11 @@ export async function getDjLinks(djId: string): Promise<LinkRow[]> {
   return result.rows as LinkRow[];
 }
 
-// The best link per platform type: the profile the site already treats as
-// canonical (djs.*_url column) wins, then community feedback, then the
-// earliest added. All links stay in the data — this only picks what to show.
+// The best link per platform type: the most active profile wins (followers
+// and mixes beat a stale canonical pick — e.g. Frank Booker's real account
+// has 11k followers while the stored column points at an empty namesake),
+// then community feedback, then the canonical column as a tiebreak, then
+// the earliest added. All links stay in the data — this only picks what to show.
 export function pickBestLinks(dj: Pick<DjRow, 'soundcloud_url' | 'mixcloud_url' | 'instagram_url' | 'facebook_url' | 'website_url'>, links: LinkRow[]): LinkRow[] {
   const canonical: Record<string, string | null> = {
     soundcloud: dj.soundcloud_url,
@@ -387,8 +391,10 @@ export function pickBestLinks(dj: Pick<DjRow, 'soundcloud_url' | 'mixcloud_url' 
   const best: LinkRow[] = [];
   for (const group of byType.values()) {
     group.sort((a, b) => {
-      const aScore = (canonical[a.type] !== null && a.url === canonical[a.type] ? 1_000_000 : 0) + a.helpful - a.unhelpful;
-      const bScore = (canonical[b.type] !== null && b.url === canonical[b.type] ? 1_000_000 : 0) + b.helpful - b.unhelpful;
+      const aScore =
+        a.followers + a.track_count * 5 + (a.helpful - a.unhelpful) * 100 + (canonical[a.type] !== null && a.url === canonical[a.type] ? 1 : 0);
+      const bScore =
+        b.followers + b.track_count * 5 + (b.helpful - b.unhelpful) * 100 + (canonical[b.type] !== null && b.url === canonical[b.type] ? 1 : 0);
       if (aScore !== bScore) return bScore - aScore;
       return String(a.created_at ?? '9999').localeCompare(String(b.created_at ?? '9999'));
     });
