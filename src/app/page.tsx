@@ -28,12 +28,12 @@ export default async function HomePage() {
   return (
     <div className="mx-auto max-w-6xl px-4">
       <section className="py-20 text-center">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">Aotearoa New Zealand</p>
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">Aotearoa</p>
         <h1 className="mt-4 text-5xl font-black tracking-tight text-foreground sm:text-7xl">
-          New Zealand <span className="text-accent">DJs</span>
+          Aotearoa <span className="text-accent">DJs</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-muted">
-          The open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials and upcoming gigs, pulled from public sources and updated daily.
+          The open directory of DJs across Aotearoa. Bios, mixes, socials and upcoming gigs, pulled from public sources and updated daily.
         </p>
         <div className="mx-auto mt-8 max-w-xl">
           <SearchBox autoFocus />
