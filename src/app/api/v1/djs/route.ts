@@ -2,15 +2,17 @@ import { NextResponse } from 'next/server';
 import { listDjs } from '@/lib/queries';
 import { toDjSummary } from '@/lib/api-types';
 import type { ListResponse, DjSummary } from '@/lib/api-types';
+import { djListQuerySchema } from '@/lib/schemas';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const q = url.searchParams.get('q') ?? undefined;
-  const genre = url.searchParams.get('genre') ?? undefined;
-  const limit = Math.min(parseInt(url.searchParams.get('limit') ?? '50', 10) || 50, 200);
-  const offset = Math.max(parseInt(url.searchParams.get('offset') ?? '0', 10) || 0, 0);
+  const parsed = djListQuerySchema.safeParse(Object.fromEntries(url.searchParams));
+  if (!parsed.success) {
+    return NextResponse.json({ error: 'Invalid query params', details: parsed.error.flatten().fieldErrors }, { status: 400 });
+  }
+  const { q, genre, limit = 50, offset = 0 } = parsed.data;
   const all = await listDjs({ query: q, genre });
   const page = all.slice(offset, offset + limit);
   const body: ListResponse<DjSummary> = {

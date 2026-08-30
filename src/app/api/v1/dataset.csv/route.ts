@@ -4,7 +4,8 @@ export const dynamic = 'force-dynamic';
 
 function csvCell(value: unknown): string {
   const text = value === null || value === undefined ? '' : String(value);
-  return /[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+  const singleLine = text.replace(/\r/g, '').replace(/\n/g, ' ');
+  return /[",\n]/.test(singleLine) ? `"${singleLine.replace(/"/g, '""')}"` : singleLine;
 }
 
 export async function GET(req: Request) {

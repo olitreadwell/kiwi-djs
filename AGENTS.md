@@ -14,6 +14,7 @@
 - `src/lib/scrapers/` — one file per source; add a scraper by implementing `Scraper` and registering it in `run-all.ts`
 - `src/lib/queries.ts` — data-access facade; picks `PostgresRepo` or `SnapshotRepo` via `isDbMode`
 - `src/lib/repo/` — `types.ts` (row types + `DataRepository` interface), `postgres.ts`, `snapshot.ts` adapters
+- `src/lib/schemas.ts` — Zod schemas for the public API (responses → OpenAPI components, query params → route validation)
 - `db/schema.sql` — idempotent schema
 - `scripts/` — migrate, seed, snapshot export, CLI scraper runner
 
