@@ -438,7 +438,7 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
     `UPDATE djs SET
        verification_level = evidence.level,
        verification_sources = evidence.sources,
-       active = evidence.level >= 2,
+       active = evidence.level >= 2 AND evidence.has_nz_evidence = 1,
        updated_at = now()
      FROM (
        SELECT d.id,
@@ -486,7 +486,16 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
                 ) >= 3)
            ),
            '{}'
-         ) AS sources
+         ) AS sources,
+         (CASE WHEN
+            'location' = ANY(d.verification_sources)
+            OR EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = d.id)
+            OR d.source IN ('seed','manual','radioactive','bfm','undertheradar','sanfran','rogue-vagabond',
+                            'northern-bass','snow-machine','newtown-festival','earthbeat','tora-bombora',
+                            'jambase','the-others-way','eventfinda')
+            OR d.bio ~* 'new zealand|aotearoa|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke|[[:<:]]nz[[:>:]]'
+            OR d.profile_location ~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'
+         THEN 1 ELSE 0 END) AS has_nz_evidence
        FROM djs d
        WHERE d.opt_out = FALSE
          AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')
@@ -495,7 +504,9 @@ export async function verifyDiscovered(pool: Pool): Promise<ScrapeResult> {
        AND djs.opt_out = FALSE
        AND djs.is_nz = TRUE
        AND (djs.discovery_note IS NULL OR djs.discovery_note <> 'junk')
-       AND (djs.verification_level <> evidence.level OR djs.verification_sources <> evidence.sources)
+       AND (djs.verification_level <> evidence.level
+            OR djs.verification_sources <> evidence.sources
+            OR djs.active <> (evidence.level >= 2 AND evidence.has_nz_evidence = 1))
      RETURNING djs.id`,
   );
   return { status: 'ok', items_found: weighted.rows.length, items_new: weighted.rows.length };
