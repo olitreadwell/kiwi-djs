@@ -2,6 +2,7 @@ import 'server-only';
 import { getPool } from './db';
 import snapshot from '@/data/snapshot.json';
 import { extractArtistNames } from './scrapers/discover';
+import { cityFromLocation } from './locations';
 
 export const isDbMode = Boolean(process.env.DATABASE_URL);
 
@@ -666,7 +667,8 @@ export async function buildDossier(djId: string): Promise<string> {
   if (!dj) return '';
   const sentences: string[] = [];
   const genreText = dj.genres.length > 0 ? `playing ${dj.genres.join(', ')}` : 'with a sound still being mapped';
-  sentences.push(`${dj.name} is a Wellington DJ ${genreText}.`);
+  const city = cityFromLocation(dj.profile_location);
+  sentences.push(city ? `${dj.name} is a ${city} DJ ${genreText}.` : `${dj.name} is a DJ ${genreText}.`);
   if (dj.bio) sentences.push(dj.bio);
   if (mixes.length > 0) {
     const platforms = [...new Set(mixes.map((mix) => mix.platform))].join(' and ');

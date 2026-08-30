@@ -5,6 +5,7 @@ import { getSoundcloudClientId } from './soundcloud-client';
 import { enrichItunes, enrichMusicbrainz } from './apis';
 import { upsertDjLink } from './links';
 import { isGenreTag, normaliseGenres } from '../genres';
+import { isNzLocation } from '../locations';
 export { upsertDjLink };
 import type { ScrapeResult } from './types';
 
@@ -72,24 +73,6 @@ interface MixcloudResult {
   user?: { name: string; url: string; city?: string; country?: string };
   created_time?: string;
   audio_length?: number;
-}
-
-const NZ_CITIES = new Set([
-  'wellington', 'auckland', 'christchurch', 'dunedin', 'hamilton', 'tauranga',
-  'queenstown', 'nelson', 'napier', 'palmerston north', 'rotorua', 'new plymouth',
-  'whanganui', 'gisborne', 'timaru', 'invercargill', 'whangarei', 'hastings',
-  'lower hutt', 'upper hutt', 'porirua', 'taupo', 'wanaka', 'blenheim', 'greymouth',
-  'oamaru', 'ashburton', 'masterton', 'levin', 'te anau', 'havelock north',
-  'cambridge', 'te awamutu', 'matamata', 'tokoroa', 'paraparaumu', 'waikanae',
-  'rangiora', 'kaiapoi', 'rolleston', 'lincoln', 'methven', 'twizel', 'geraldine',
-  'waimate', 'temuka', 'westport', 'hokitika', 'kaikoura', 'kerikeri', 'pukekohe',
-]);
-
-function isNzLocation(city?: string, country?: string, countryCode?: string): boolean {
-  if (countryCode?.toUpperCase() === 'NZ') return true;
-  if (country && /new zealand|aotearoa/i.test(country)) return true;
-  if (city && NZ_CITIES.has(city.trim().toLowerCase())) return true;
-  return false;
 }
 
 // Record where a profile says the artist is based. NZ locations earn the
