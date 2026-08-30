@@ -350,3 +350,83 @@ export const DATASET_FIXES: DatasetFix[] = [
     },
   },
 ];
+
+// Merge duplicate event rows: legacy per-artist festival events (pre-#16),
+// cross-source dupes (UTR vs UTR-venue vs Eventfinda), and same-gig rows
+// with/without parsed dates. Keeps the row with the most DJ links.
+export async function dedupeEvents(pool: Pool): Promise<{ merged: number; deleted: number }> {
+  const rows = (
+    await pool.query(`SELECT id, name, venue, starts_at, url, source FROM events`)
+  ).rows as Array<{
+    id: string;
+    name: string;
+    venue: string | null;
+    starts_at: string | null;
+    url: string | null;
+    source: string;
+  }>;
+  const norm = (s: string | null): string => (s ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const sid = (url: string | null): string => {
+    if (!url) return '';
+    return url.match(/SID\/(\d+)/)?.[1] ?? url.match(/gig\/(\d+)/)?.[1] ?? '';
+  };
+
+  const groups: Array<Array<(typeof rows)[0]>> = [];
+  const used = new Set<string>();
+  for (const row of rows) {
+    if (used.has(row.id)) continue;
+    const group = [row];
+    used.add(row.id);
+    for (const other of rows) {
+      if (used.has(other.id)) continue;
+      if (norm(other.name) !== norm(row.name) || norm(other.venue) !== norm(row.venue)) continue;
+      const rowTime = row.starts_at ? new Date(row.starts_at).getTime() : null;
+      const otherTime = other.starts_at ? new Date(other.starts_at).getTime() : null;
+      const rowSid = sid(row.url);
+      const otherSid = sid(other.url);
+      const datedMatch = rowTime !== null && otherTime !== null && Math.abs(rowTime - otherTime) < 86400000;
+      const sidMatch = rowSid !== '' && rowSid === otherSid;
+      const festivalDup =
+        rowTime === null && otherTime === null && row.source === other.source && (row.url ?? '') === (other.url ?? '');
+      if (datedMatch || sidMatch || festivalDup) {
+        group.push(other);
+        used.add(other.id);
+      }
+    }
+    groups.push(group);
+  }
+
+  let merged = 0;
+  let deleted = 0;
+  for (const group of groups) {
+    if (group.length < 2) continue;
+    const counts = await Promise.all(
+      group.map((g) => pool.query(`SELECT count(*)::int AS n FROM event_djs WHERE event_id = $1`, [g.id])),
+    );
+    // Keep the row with the most DJ links; on a tie prefer a dated row
+    // (a parsed date beats a NULL one), then the earliest id.
+    let keepIdx = 0;
+    for (let i = 1; i < group.length; i += 1) {
+      const n = counts[i].rows[0].n as number;
+      const keepN = counts[keepIdx].rows[0].n as number;
+      const dated = group[i].starts_at !== null;
+      const keepDated = group[keepIdx].starts_at !== null;
+      if (n > keepN || (n === keepN && dated && !keepDated) || (n === keepN && dated === keepDated && group[i].id < group[keepIdx].id)) {
+        keepIdx = i;
+      }
+    }
+    const keep = group[keepIdx];
+    for (const dup of group) {
+      if (dup.id === keep.id) continue;
+      await pool.query(
+        `INSERT INTO event_djs (event_id, dj_id) SELECT $1, dj_id FROM event_djs WHERE event_id = $2 ON CONFLICT DO NOTHING`,
+        [keep.id, dup.id],
+      );
+      await pool.query(`DELETE FROM event_djs WHERE event_id = $1`, [dup.id]);
+      await pool.query(`DELETE FROM events WHERE id = $1`, [dup.id]);
+      merged += 1;
+      deleted += 1;
+    }
+  }
+  return { merged, deleted };
+}

@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { getPool } from './lib/db.mjs';
 import { runAllScrapers } from '../src/lib/scrapers/run-all';
-import { DATASET_FIXES } from './dataset-fixes';
+import { DATASET_FIXES, dedupeEvents } from './dataset-fixes';
 import { normaliseGenres } from '../src/lib/genres';
 
 // Self-improving scrape loop.
@@ -484,8 +484,9 @@ async function compactDataset(pool: ReturnType<typeof getPool>): Promise<void> {
       genreFixes += 1;
     }
   }
+  const { merged, deleted } = await dedupeEvents(pool);
   await pool.query('VACUUM ANALYZE');
-  log(`Compacted: ${junk.rows.length} junk candidates, ${scrapes.rows.length} stale scrape rows, ${genreFixes} genre normalisations.`);
+  log(`Compacted: ${junk.rows.length} junk candidates, ${scrapes.rows.length} stale scrape rows, ${genreFixes} genre normalisations, ${merged} duplicate events merged (${deleted} deleted).`);
 }
 
 async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: number; totalFound: number }> {
