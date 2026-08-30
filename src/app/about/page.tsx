@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
-export const metadata = { title: 'About | Aotearoa DJs' };
+export const metadata = { title: 'About | Kiwi DJs' };
 
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16">
       <h1 className="text-3xl font-black text-foreground">About</h1>
       <p className="mt-4 leading-relaxed text-muted">
-        Aotearoa DJs is an open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials, gigs and news,
+        Kiwi DJs is an open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials, gigs and news,
         pulled from public sources and updated daily by a self-improving scraper loop.
       </p>
       <p className="mt-3 leading-relaxed text-muted">

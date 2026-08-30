@@ -1,7 +1,7 @@
 import { getOrgs } from '@/lib/queries';
 
 export const dynamic = 'force-dynamic';
-export const metadata = { title: 'Orgs | Aotearoa DJs' };
+export const metadata = { title: 'Orgs | Kiwi DJs' };
 
 export default async function OrgsPage() {
   const orgs = await getOrgs();

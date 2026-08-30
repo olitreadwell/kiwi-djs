@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS djs (
   name          TEXT NOT NULL,
   bio           TEXT,
   genres        TEXT[] NOT NULL DEFAULT '{}',
-  city          TEXT NOT NULL DEFAULT 'Wellington',
+  city          TEXT NOT NULL DEFAULT '',   -- unknown until a profile says otherwise
   image_url     TEXT,
   soundcloud_url TEXT,
   instagram_url TEXT,
@@ -136,6 +136,20 @@ CREATE TABLE IF NOT EXISTS dj_articles (
 );
 
 ALTER TABLE dj_articles ADD COLUMN IF NOT EXISTS archive_url TEXT;   -- Wayback Machine copy (#302)
+
+-- Releases/discography pulled from official artist sites (#68).
+CREATE TABLE IF NOT EXISTS dj_releases (
+  id            TEXT PRIMARY KEY,            -- djId-title-year
+  dj_id         TEXT NOT NULL REFERENCES djs(id) ON DELETE CASCADE,
+  title         TEXT NOT NULL,
+  year          INTEGER,
+  label         TEXT,
+  format        TEXT,
+  url           TEXT,
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE INDEX IF NOT EXISTS idx_dj_releases_dj ON dj_releases(dj_id);
 
 -- One article per DJ per title: Bing RSS returns the same story under
 -- different URLs across runs (#37).

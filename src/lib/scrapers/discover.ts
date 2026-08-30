@@ -183,7 +183,7 @@ export async function discoverSoundcloudNz(pool: Pool): Promise<ScrapeResult> {
                         is_nz, soundcloud_url, image_url, profile_location, city, discovery_note)
        VALUES ($1, $2, 'discovered-soundcloud', TRUE, 25, 2, ARRAY['location','links'], TRUE, $3, $4, $5, $6, NULL)
        ON CONFLICT (id) DO NOTHING RETURNING id`,
-      [id, user.username, `https://soundcloud.com/${user.permalink}`, user.avatar_url ?? null, location, cityFromLocation(location) ?? 'Wellington'],
+      [id, user.username, `https://soundcloud.com/${user.permalink}`, user.avatar_url ?? null, location, cityFromLocation(location) ?? ''],
     );
     if (result.rows.length === 0) continue;
     newCount += 1;
@@ -289,7 +289,7 @@ export async function discoverMusicbrainzNzEdm(pool: Pool): Promise<ScrapeResult
                         is_nz, image_url, profile_location, city, genres, discovery_note)
        VALUES ($1, $2, 'discovered-musicbrainz', TRUE, 25, 2, ARRAY['location'], TRUE, NULL, $3, $4, $5, NULL)
        ON CONFLICT (id) DO NOTHING RETURNING id`,
-      [id, artist.name, `MusicBrainz: ${artist.city ?? 'New Zealand'}`, artist.city ?? 'Wellington', genres],
+      [id, artist.name, `MusicBrainz: ${artist.city ?? 'New Zealand'}`, artist.city ?? '', genres],
     );
     if (result.rows.length === 0) continue;
     newCount += 1;

@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { DjCard } from '@/components/dj-card';
 import { SearchBox } from '@/components/search-box';
-import { getEventLineup, getPopularDjs, getUpcomingEvents, getGenres, getWeekendEvents, listDjs } from '@/lib/queries';
+import { getEventLineup, getUpcomingEvents, getGenres, getWeekendEvents, listDjs } from '@/lib/queries';
 import { hasSpecificGenre } from '@/lib/genres';
 
 export const dynamic = 'force-dynamic';
 
 export default async function HomePage() {
-  const [popular, events, genres, all, weekend] = await Promise.all([
-    getPopularDjs(8),
+  const [recent, events, genres, all, weekend] = await Promise.all([
+    listDjs({ sort: 'updated' }),
     getUpcomingEvents(5),
     getGenres(),
     listDjs(),
@@ -28,12 +28,12 @@ export default async function HomePage() {
   return (
     <div className="mx-auto max-w-6xl px-4">
       <section className="py-20 text-center">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">Aotearoa</p>
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">Aotearoa New Zealand</p>
         <h1 className="mt-4 text-5xl font-black tracking-tight text-foreground sm:text-7xl">
-          Aotearoa <span className="text-accent">DJs</span>
+          Kiwi <span className="text-accent">DJs</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-muted">
-          The open directory of DJs across Aotearoa. Bios, mixes, socials and upcoming gigs, pulled from public sources and updated daily.
+          The open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials and upcoming gigs, pulled from public sources and updated daily.
         </p>
         <div className="mx-auto mt-8 max-w-xl">
           <SearchBox autoFocus />
@@ -90,11 +90,11 @@ export default async function HomePage() {
 
       <section className="pb-16">
         <div className="mb-4 flex items-end justify-between">
-          <h2 className="text-2xl font-bold text-foreground">Popular right now</h2>
+          <h2 className="text-2xl font-bold text-foreground">Recently updated</h2>
           <Link href="/discover" className="font-mono text-xs text-accent hover:underline">discover →</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {popular.map((dj) => <DjCard key={dj.id} dj={dj} />)}
+          {recent.slice(0, 8).map((dj) => <DjCard key={dj.id} dj={dj} />)}
         </div>
       </section>
 

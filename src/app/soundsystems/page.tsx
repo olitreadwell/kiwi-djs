@@ -1,7 +1,7 @@
 import { getSoundsystems } from '@/lib/queries';
 
 export const dynamic = 'force-dynamic';
-export const metadata = { title: 'Soundsystems | Aotearoa DJs' };
+export const metadata = { title: 'Soundsystems | Kiwi DJs' };
 
 export default async function SoundsystemsPage() {
   const systems = await getSoundsystems();

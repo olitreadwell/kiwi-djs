@@ -65,10 +65,14 @@ async function generateSummaries(facts: DjFacts): Promise<Summaries | null> {
 
   const system =
     'You write short factual blurbs for an Aotearoa New Zealand DJ directory. ' +
-    'Use ONLY the facts given. Plain human language, no cliches, no "delve", no em-dashes, ' +
-    'no AI-sounding padding. Reply with JSON only: ' +
+    'Use ONLY the facts given. Write like a person who knows the local scene, not a template: ' +
+    'vary the structure between artists, and lead with whatever is most distinctive for THIS one ' +
+    '(a signature sound, a notable gig, a long residency, a festival slot, a label, a big following). ' +
+    'Never reuse the same sentence skeleton from one blurb to the next, avoid boilerplate like ' +
+    '"They have N mixes on..." or "Next up is..." — fold numbers in naturally or leave them out. ' +
+    'No cliches, no "delve", no em-dashes, no AI-sounding padding. Reply with JSON only: ' +
     '{"summary": "one sentence, under 24 words, for a list card", ' +
-    '"summary_long": "2-3 sentences, for the profile page"}';
+    '"summary_long": "2-4 sentences, for the profile page"}';
   try {
     const response = await fetch(DEEPSEEK_URL, {
       method: 'POST',
