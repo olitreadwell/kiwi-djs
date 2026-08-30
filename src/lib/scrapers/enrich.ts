@@ -2,7 +2,7 @@ import type { Pool } from 'pg';
 import { createHash } from 'node:crypto';
 import { fetchHtml, sleep } from './http';
 import { getSoundcloudClientId } from './soundcloud-client';
-import { enrichItunes, enrichMusicbrainz } from './apis';
+import { enrichBio, enrichItunes, enrichMusicbrainz } from './apis';
 import { enrichBandcamp } from './bandcamp';
 import { enrichBeatport } from './beatport';
 import { upsertDjLink } from './links';
@@ -412,6 +412,17 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
                 active DESC, popularity DESC, verification_level DESC, data_completeness DESC
        LIMIT ${ENRICH_LIMIT}`,
     );
+  // Bio-filling source hits DJs without an about-section first, most popular
+  // first, so the public list gains descriptions fastest (#296).
+  const bioPriorityDjs = (): Promise<{ rows: DjRow[] }> =>
+    pool.query(
+      `SELECT id, name FROM djs
+       WHERE opt_out = FALSE AND is_nz = TRUE
+         AND (discovery_note IS NULL OR discovery_note <> 'junk')
+         AND (bio IS NULL OR bio = '')
+       ORDER BY popularity DESC, data_completeness DESC, verification_level DESC
+       LIMIT ${ENRICH_LIMIT}`,
+    );
   const sources: Array<{
     source: string;
     getDjs: () => Promise<{ rows: DjRow[] }>;
@@ -425,6 +436,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     { source: 'enrich-soundcloud', getDjs: genrePriorityDjs, preflight: soundcloudPreflight, run: enrichSoundcloud },
     { source: 'enrich-musicbrainz', getDjs: genrePriorityDjs, run: enrichMusicbrainz },
     { source: 'enrich-itunes', getDjs: genrePriorityDjs, run: enrichItunes },
+    { source: 'enrich-bio', getDjs: bioPriorityDjs, run: enrichBio },
   ];
   for (const source of sources) {
     if (source.preflight) {

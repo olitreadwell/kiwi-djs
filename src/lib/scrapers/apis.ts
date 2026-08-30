@@ -257,3 +257,100 @@ export async function enrichVenueRegions(pool: Pool): Promise<ScrapeResult> {
     error: venues.length === 0 ? 'No venues awaiting geocoding' : found === 0 ? 'No regions resolved' : undefined,
   };
 }
+
+// --- Bio ("about section") enrichment (#296) ---
+// Pull a real description for DJs that lack one, starting with the most
+// popular. Sources in order: Wikipedia via the MusicBrainz URL relation
+// (authoritative mapping), Wikipedia search (strict relevance so a namesake
+// like a cartoonist never becomes a DJ bio), then the Mixcloud biography.
+// Bandcamp bios are handled by enrichBandcamp.
+
+interface WikipediaPage {
+  title: string;
+  extract?: string;
+}
+
+async function wikipediaIntro(title: string): Promise<string | null> {
+  const url = `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=1&explaintext=1&redirects=1&format=json&titles=${encodeURIComponent(title)}`;
+  const data = (await fetchJson(url)) as { query?: { pages?: Record<string, WikipediaPage> } };
+  const page = Object.values(data.query?.pages ?? {})[0];
+  const extract = page?.extract?.trim();
+  return extract ? extract.slice(0, 2000) : null;
+}
+
+function wikipediaTitleFromUrl(resource: string): string | null {
+  const match = resource.match(/wikipedia\.org\/wiki\/(.+)$/);
+  return match ? decodeURIComponent(match[1].replace(/_/g, ' ')) : null;
+}
+
+// Strict relevance for any Wikipedia bio: the page must mention the DJ name
+// and a New Zealand signal (country or NZ city), and read like a music act —
+// never an album, a namesake (cartoonist, model, footballer) or a foreign
+// act that merely toured NZ.
+const NZ_SIGNAL = /\bnew zealand\b|aotearoa|\bnz\b|auckland|wellington|christchurch|dunedin|hamilton|tauranga|queenstown|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke/i;
+
+function wikipediaExtractIsRelevant(djName: string, title: string, extract: string): boolean {
+  const haystack = `${title} ${extract}`.toLowerCase();
+  const name = djName.toLowerCase();
+  if (!haystack.includes(name)) return false;
+  if (!NZ_SIGNAL.test(haystack)) return false;
+  if (/\balbum by\b|\bis (?:the |a |an )?(?:debut |self-titled |eponymous )?(?:studio |compilation |live )?album\b/i.test(haystack)) return false;
+  return /\b(dj|deejay|disc jockey|musician|band|singer|songwriter|producer|rapper|group|drum and bass|dnb|electronic music|house music|techno|reggae|dub)\b/i.test(haystack);
+}
+
+export async function enrichBio(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
+  const existing = (await pool.query('SELECT bio FROM djs WHERE id = $1', [dj.id])).rows[0]?.bio as string | undefined;
+  if (existing) return { status: 'partial', items_found: 0, items_new: 0, error: 'Bio already present' };
+
+  // 1) Wikipedia via the MusicBrainz URL relation (authoritative).
+  try {
+    const artist = await musicbrainzSearch(dj.name);
+    if (artist) {
+      await sleep(1000);
+      const full = await musicbrainzLookup(artist.id);
+      const wikiRelation = (full?.relations ?? []).find((relation) => relation.type === 'wikipedia');
+      const wikiTitle = wikiRelation?.url?.resource ? wikipediaTitleFromUrl(wikiRelation.url.resource) : null;
+      if (wikiTitle) {
+        const bio = await wikipediaIntro(wikiTitle);
+        if (bio && wikipediaExtractIsRelevant(dj.name, wikiTitle, bio)) {
+          await pool.query(`UPDATE djs SET bio = $2 WHERE id = $1`, [dj.id, bio]);
+          return { status: 'ok', items_found: 1, items_new: 0 };
+        }
+      }
+    }
+  } catch {
+    // MusicBrainz 503s under load — fall through to the other sources.
+  }
+
+  // 2) Wikipedia search fallback with a strict relevance check.
+  const searchUrl = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(dj.name)}&format=json&srlimit=3`;
+  const search = (await fetchJson(searchUrl)) as { query?: { search?: Array<{ title: string }> } };
+  for (const hit of search.query?.search ?? []) {
+    const bio = await wikipediaIntro(hit.title);
+    if (bio && wikipediaExtractIsRelevant(dj.name, hit.title, bio)) {
+      await pool.query(`UPDATE djs SET bio = $2 WHERE id = $1`, [dj.id, bio]);
+      return { status: 'ok', items_found: 1, items_new: 0 };
+    }
+  }
+
+  // 3) Mixcloud biography.
+  const mixcloud = (await pool.query(`SELECT url FROM dj_links WHERE dj_id = $1 AND type = 'mixcloud' LIMIT 1`, [dj.id])).rows[0]
+    ?.url as string | undefined;
+  if (mixcloud) {
+    const user = mixcloud.replace(/^https?:\/\/(www\.)?mixcloud\.com\//, '').replace(/\/.*$/, '');
+    const res = await fetch(`https://api.mixcloud.com/${encodeURIComponent(user)}/`, {
+      headers: { accept: 'application/json' },
+      signal: AbortSignal.timeout(15000),
+    });
+    if (res.ok) {
+      const data = (await res.json()) as { biography?: string };
+      const bio = (data.biography ?? '').trim();
+      if (bio) {
+        await pool.query(`UPDATE djs SET bio = $2 WHERE id = $1`, [dj.id, bio.slice(0, 2000)]);
+        return { status: 'ok', items_found: 1, items_new: 0 };
+      }
+    }
+  }
+
+  return { status: 'partial', items_found: 0, items_new: 0, error: 'No bio source matched' };
+}
