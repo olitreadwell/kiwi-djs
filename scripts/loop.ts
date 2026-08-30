@@ -229,6 +229,10 @@ function commitAndPush(snapshotChanged: boolean): void {
     log(`git add failed: ${add.out}`);
     return;
   }
+  const ledgerFile = new URL('../data/link-votes.json', import.meta.url);
+  if (existsSync(ledgerFile)) {
+    run('git', ['add', 'data/link-votes.json']);
+  }
   const commit = run('git', ['commit', '-m', 'chore: self-improving loop snapshot update']);
   if (!commit.ok) {
     log(`git commit skipped: ${commit.out}`);
@@ -239,6 +243,39 @@ function commitAndPush(snapshotChanged: boolean): void {
     const push = run('git', ['push', 'origin', 'HEAD']);
     log(push.ok ? `Pushed: ${push.out}` : `Push failed: ${push.out}`);
   }
+}
+
+// Pull the GitHub vote ledger (written by the snapshot-mode API) and merge
+// it into link_feedback so the snapshot's best-link counts self-correct.
+async function mergeLedgerIntoVotes(pool: ReturnType<typeof getPool>): Promise<number> {
+  const ledgerFile = new URL('../data/link-votes.json', import.meta.url);
+  run('git', ['fetch', 'origin', '--quiet']);
+  const fetched = run('git', ['show', 'origin/main:data/link-votes.json']);
+  if (fetched.ok && fetched.out) {
+    const dir = new URL('../data/', import.meta.url);
+    if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+    writeFileSync(ledgerFile, fetched.out);
+  }
+  if (!existsSync(ledgerFile)) return 0;
+  let ledger: { votes?: Record<string, { ips?: Record<string, boolean> }> };
+  try {
+    ledger = JSON.parse(readFileSync(ledgerFile, 'utf8'));
+  } catch {
+    return 0;
+  }
+  let merged = 0;
+  for (const [linkId, entry] of Object.entries(ledger.votes ?? {})) {
+    for (const [ipHash, helpful] of Object.entries(entry.ips ?? {})) {
+      const result = await pool.query(
+        `INSERT INTO link_feedback (link_id, helpful, ip_hash) VALUES ($1, $2, $3)
+         ON CONFLICT (link_id, ip_hash) DO NOTHING`,
+        [linkId, helpful, `ledger-${ipHash}`],
+      );
+      merged += result.rowCount ?? 0;
+    }
+  }
+  if (merged > 0) log(`Merged ${merged} GitHub ledger votes into link_feedback.`);
+  return merged;
 }
 
 async function reportFailingSources(pool: ReturnType<typeof getPool>): Promise<void> {
@@ -551,6 +588,7 @@ async function runCycle(pool: ReturnType<typeof getPool>): Promise<{ totalNew: n
   const results = await runAllScrapers(pool, { disabledSources: disabled });
   updateSourceState(state, results);
   saveSourceState(state);
+  await mergeLedgerIntoVotes(pool);
   const summarizeLimit = Number(process.env.SUMMARIZE_LIMIT ?? 20);
   const summarised = await summarizeMissingDjs(pool, summarizeLimit);
   if (summarised > 0) log(`Summarised ${summarised} DJs (AI).`);

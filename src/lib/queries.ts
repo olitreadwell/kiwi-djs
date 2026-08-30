@@ -396,7 +396,7 @@ export async function getDjLinks(djId: string): Promise<LinkRow[]> {
   if (!isDbMode) {
     return (snapshot.links as LinkRow[] | undefined)
       ?.filter((link) => link.dj_id === djId)
-      .map((link) => ({ ...link, created_at: null, helpful: 0, unhelpful: 0, followers: 0, track_count: 0 })) ?? [];
+      .map((link) => ({ ...link, created_at: null, helpful: link.helpful ?? 0, unhelpful: link.unhelpful ?? 0, followers: link.followers ?? 0, track_count: link.track_count ?? 0 })) ?? [];
   }
   const pool = getPool();
   const result = await pool.query(
