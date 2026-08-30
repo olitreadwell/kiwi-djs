@@ -1,5 +1,6 @@
-// Canonical genre map (#34): fold aliases and case variants to one spelling
-// so filtering and display stay consistent. Keys are lowercase aliases.
+// Canonical genre map (#34): fold aliases, case variants, punctuation and
+// synonyms to one spelling so filtering and display stay consistent. Keys
+// are lowercase aliases; values are the canonical display spelling.
 const GENRE_ALIASES: Record<string, string> = {
   'drum & bass': 'Drum and Bass',
   'drum and bass': 'Drum and Bass',
@@ -9,68 +10,89 @@ const GENRE_ALIASES: Record<string, string> = {
   'hip-hop/rap': 'Hip-Hop',
   'hip hop': 'Hip-Hop',
   'hip-hop': 'Hip-Hop',
+  'hip hop & rap': 'Hip-Hop',
+  'hip-hop & rap': 'Hip-Hop',
+  'hip hop and rap': 'Hip-Hop',
+  'hip-hop and rap': 'Hip-Hop',
+  hip: 'Hip-Hop',
+  rap: 'Hip-Hop',
   'r&b': 'R&B',
-  'rnb': 'R&B',
+  rnb: 'R&B',
   'rhythm and blues': 'R&B',
-  'edm': 'Electronic',
-  'electronic': 'Electronic',
-  'electro': 'Electro',
-  'dance': 'Dance',
-  'house': 'House',
+  edm: 'Electronic',
+  electronic: 'Electronic',
+  electro: 'Electro',
+  dance: 'Dance',
+  house: 'House',
   'deep house': 'Deep House',
+  'deep-house': 'Deep House',
   'tech house': 'Tech House',
-  'techno': 'Techno',
+  'tech-house': 'Tech House',
+  techno: 'Techno',
   'hard techno': 'Hard Techno',
   'minimal techno': 'Minimal Techno',
-  'trance': 'Trance',
-  'garage': 'Garage',
+  trance: 'Trance',
+  garage: 'Garage',
   'uk garage': 'UK Garage',
-  'dubstep': 'Dubstep',
-  'breaks': 'Breaks',
-  'breakbeat': 'Breaks',
-  'disco': 'Disco',
+  dubstep: 'Dubstep',
+  breaks: 'Breaks',
+  breakbeat: 'Breaks',
+  disco: 'Disco',
   'nu-disco': 'Nu-Disco',
-  'funk': 'Funk',
-  'boogie': 'Boogie',
-  'soul': 'Soul',
-  'jazz': 'Jazz',
-  'reggae': 'Reggae',
-  'dub': 'Dub',
-  'dancehall': 'Dancehall',
+  funk: 'Funk',
+  boogie: 'Boogie',
+  soul: 'Soul',
+  jazz: 'Jazz',
+  reggae: 'Reggae',
+  dub: 'Dub',
+  dancehall: 'Dancehall',
   'afro house': 'Afro House',
-  'afrobeats': 'Afrobeats',
-  'latin': 'Latin',
-  'ambient': 'Ambient',
-  'downtempo': 'Downtempo',
+  afrobeats: 'Afrobeats',
+  afrobeat: 'Afrobeats',
+  'afro-beat': 'Afrobeats',
+  afro: 'Afrobeats',
+  latin: 'Latin',
+  ambient: 'Ambient',
+  downtempo: 'Downtempo',
   'trip-hop': 'Trip-Hop',
-  'pop': 'Pop',
+  trip: 'Trip-Hop',
+  pop: 'Pop',
   'k-pop': 'K-Pop',
-  'rock': 'Rock',
-  'alternative': 'Alternative',
-  'indie': 'Indie',
-  'country': 'Country',
-  'folk': 'Folk',
-  'classical': 'Classical',
-  'metal': 'Metal',
-  'punk': 'Punk',
-  'eclectic': 'Eclectic',
-  'experimental': 'Experimental',
-  'world': 'World',
-  'lounge': 'Lounge',
-  'chillout': 'Chillout',
+  'dance-pop': 'Dance-Pop',
+  rock: 'Rock',
+  'classic rock': 'Classic Rock',
+  'psychedelic rock': 'Psychedelic Rock',
+  aor: 'AOR',
+  alternative: 'Alternative',
+  indie: 'Indie',
+  country: 'Country',
+  folk: 'Folk',
+  classical: 'Classical',
+  metal: 'Metal',
+  punk: 'Punk',
+  eclectic: 'Eclectic',
+  experimental: 'Experimental',
+  world: 'World',
+  worldwide: 'World',
+  lounge: 'Lounge',
+  chillout: 'Chillout',
   'liquid drum and bass': 'Liquid Drum and Bass',
   'liquid dnb': 'Liquid Drum and Bass',
   'liquid funk': 'Liquid Funk',
-  'neurofunk': 'Neurofunk',
-  'jungle': 'Jungle',
+  neurofunk: 'Neurofunk',
+  jungle: 'Jungle',
   '2-step': '2-Step',
-  'grime': 'Grime',
+  grime: 'Grime',
   'bass music': 'Bass Music',
-  'footwork': 'Footwork',
-  'juke': 'Juke',
-  'synthwave': 'Synthwave',
-  'retrowave': 'Synthwave',
-  'minimal': 'Minimal',
+  bass: 'Bass',
+  'bass house': 'Bass House',
+  footwork: 'Footwork',
+  juke: 'Juke',
+  'jersey club': 'Jersey Club',
+  'baltimore club': 'Baltimore Club',
+  synthwave: 'Synthwave',
+  retrowave: 'Synthwave',
+  minimal: 'Minimal',
   'melodic techno': 'Melodic Techno',
   'progressive house': 'Progressive House',
   'acid house': 'Acid House',
@@ -78,30 +100,94 @@ const GENRE_ALIASES: Record<string, string> = {
   'detroit techno': 'Detroit Techno',
   'deep dubstep': 'Deep Dubstep',
   'uk bass': 'UK Bass',
-  'gqom': 'Gqom',
-  'amapiano': 'Amapiano',
+  gqom: 'Gqom',
+  amapiano: 'Amapiano',
   'baile funk': 'Baile Funk',
-  'cumbia': 'Cumbia',
-  'psytrance': 'Psytrance',
+  cumbia: 'Cumbia',
+  psytrance: 'Psytrance',
   'goa trance': 'Goa Trance',
-  'hardcore': 'Hardcore',
-  'hardstyle': 'Hardstyle',
+  hardcore: 'Hardcore',
+  hardstyle: 'Hardstyle',
   'happy hardcore': 'Happy Hardcore',
-  'gabber': 'Gabber',
+  gabber: 'Gabber',
+  mandopop: 'Mandopop',
 };
 
-export function normaliseGenre(genre: string): string {
-  const key = genre.trim().toLowerCase();
-  return GENRE_ALIASES[key] ?? genre.trim();
+// Strip the noise SoundCloud/MusicBrainz tags carry: leading hashtags,
+// trailing punctuation, accents, and stray whitespace.
+function cleanGenreKey(raw: string): string {
+  return raw
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/^#+/, '')
+    .replace(/[.,;:!?]+$/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
-export function normaliseGenres(genres: string[]): string[] {
-  return [...new Set(genres.map(normaliseGenre).filter(Boolean))];
+function titleCase(key: string): string {
+  return key
+    .split(' ')
+    .map((word) => (word ? word.charAt(0).toUpperCase() + word.slice(1) : word))
+    .join(' ');
 }
 
 // Only keep tags that resolve to a known genre, so track tags don't pollute
 // genres with artist names and track titles (#33).
 const KNOWN_GENRE_KEYS = new Set(Object.keys(GENRE_ALIASES));
+
+// Descriptors that leak in from MusicBrainz/SoundCloud tags — not genres.
+const JUNK_GENRES = new Set([
+  'singer', 'songwriter', 'vocalist', 'dj', 'producer', 'rapper', 'emcee', 'mc', 'band', 'artist',
+]);
+
+// Pull known multi-word genres out of compound tag soup ("TECH HOUSE JERSEY
+// CLUB BALTIMORE CLUB" → Tech House + Jersey Club + Baltimore Club).
+function extractKnownGenres(key: string): string[] {
+  const words = key.split(' ');
+  const found: string[] = [];
+  for (let len = 3; len >= 2; len -= 1) {
+    for (let i = 0; i + len <= words.length; i += 1) {
+      const window = words.slice(i, i + len).join(' ');
+      const canonical = GENRE_ALIASES[window];
+      if (canonical) {
+        found.push(canonical);
+        i += len - 1;
+      }
+    }
+  }
+  return found;
+}
+
+export function normaliseGenre(genre: string): string {
+  return normaliseGenres([genre])[0] ?? '';
+}
+
+// Split compound tags on commas/slashes ("deep house , techno" → two genres),
+// then normalise each part (expanding multi-word tag soup) and dedupe.
+export function normaliseGenres(genres: string[]): string[] {
+  const out: string[] = [];
+  for (const genre of genres) {
+    for (const part of genre.split(/[,/]/)) {
+      const key = cleanGenreKey(part);
+      if (!key) continue;
+      if (JUNK_GENRES.has(key)) continue;
+      const direct = GENRE_ALIASES[key];
+      if (direct) {
+        out.push(direct);
+        continue;
+      }
+      const extracted = extractKnownGenres(key);
+      if (extracted.length > 0) {
+        out.push(...extracted);
+        continue;
+      }
+      out.push(titleCase(key));
+    }
+  }
+  return [...new Set(out)];
+}
 
 // Single-word genres used to match inside compound tags ("tech house",
 // "jersey club") without matching "technology" or "house music" noise.
