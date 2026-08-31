@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-31T16:49:00.732Z",
+  "exportedAt": "2026-08-31T17:10:32.324Z",
   "djs": [
     {
       "id": "landline",
@@ -139,6 +139,51 @@
       "last_played_at": null
     },
     {
+      "id": "reasxn",
+      "name": "Reasxn",
+      "bio": null,
+      "genres": [
+        "UK Garage",
+        "Bassline",
+        "Drum and Bass",
+        "Dubstep",
+        "Dance"
+      ],
+      "city": "Auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-OHTrfnzsWorxRMym-yjOgrA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/reasxnbeats",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.510Z",
+      "updated_at": "2026-08-30T05:26:22.008Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "links",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": "Auckland's Reasxn spans UK Garage, bassline, DnB, dubstep and dance.",
+      "summary_long": "Reasxn is an Auckland-based DJ whose sets cut across UK Garage, bassline, drum and bass, dubstep and dance. No mixes or upcoming gigs are listed yet, so catch them early.",
+      "upcoming_events": 0,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "grecco-romank",
       "name": "Grecco Romank",
       "bio": null,
@@ -184,51 +229,6 @@
       "summary_long": null,
       "upcoming_events": 1,
       "mix_count": 35,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "reasxn",
-      "name": "Reasxn",
-      "bio": null,
-      "genres": [
-        "UK Garage",
-        "Bassline",
-        "Drum and Bass",
-        "Dubstep",
-        "Dance"
-      ],
-      "city": "Auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-OHTrfnzsWorxRMym-yjOgrA-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/reasxnbeats",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.510Z",
-      "updated_at": "2026-08-30T05:26:22.008Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "links",
-        "multi-source",
-        "location"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "summary": "Auckland's Reasxn spans UK Garage, bassline, DnB, dubstep and dance.",
-      "summary_long": "Reasxn is an Auckland-based DJ whose sets cut across UK Garage, bassline, drum and bass, dubstep and dance. No mixes or upcoming gigs are listed yet, so catch them early.",
-      "upcoming_events": 0,
-      "mix_count": 0,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -290,15 +290,16 @@
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 25,
+      "data_completeness": 45,
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.139Z",
-      "updated_at": "2026-08-30T05:26:22.008Z",
+      "updated_at": "2026-08-31T16:57:57.196Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
+        "mixes",
         "links",
         "multi-source",
         "location"
@@ -311,7 +312,7 @@
       "summary": "Auckland hip-hop artist lilbubblegum, no mixes or gigs yet.",
       "summary_long": "lilbubblegum is an Auckland-based hip-hop artist. No mixes or upcoming gigs are listed yet, so they're still building their presence.",
       "upcoming_events": 0,
-      "mix_count": 0,
+      "mix_count": 2,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -2000,6 +2001,55 @@
       "last_played_at": null
     },
     {
+      "id": "9cups",
+      "name": "9cups",
+      "bio": "9cups is the new house music based project from Wellington producer and longtime beatmaker Maz Hermon. (Previous projects <span class=\"peekaboo-text\">include Western Dip, Roy G & the BIVinators, Mazroy, Felix Fielding). <br><span class=\"lightweightBreak\"></span><br>9cups Debut EP Tee Time 9pm is a groove-focused exploration of soulful house — emotionally resonant, subtly nostalgic, and built for modern-day dancefloors both big and small. Kitchen to club.</span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
+      "genres": [
+        "Organic House",
+        "Lofi House",
+        "Ukg",
+        "Ukgarage",
+        "Electronic",
+        "Dance",
+        "House",
+        "Deep House"
+      ],
+      "city": "Wellington",
+      "image_url": null,
+      "soundcloud_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 25,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:30.822Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "links",
+        "gigs",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "Bandcamp: Wellington",
+      "summary": "Wellington beatmaker Maz Hermon's new house project, debuting with soulful EP Tee Time 9pm.",
+      "summary_long": "9cups is the fresh house alias of Wellington producer Maz Hermon, known for past projects like Western Dip and Roy G & the BIVinators. The debut EP Tee Time 9pm serves groove-focused, soulful house that's emotionally resonant and built for dancefloors from kitchen to club. Catch them at Newtown Festival 2027, having already shared stages with Max Maxwell and Stolen Tuesday.",
+      "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "six60",
       "name": "SIX60",
       "bio": "Six60 (stylised in all caps as SIX60) is a New Zealand pop rock band formed in Dunedin, Otago in 2008. The band consists of Matiu Walters (lead vocals, guitar), Ji Fraser (lead guitar), Chris Mac (drums, bass guitar), and Marlon Gerbes (guitar, bass guitar, synthesiser). Their self-titled debut album was released on 10 October 2011 on their own label Massive Entertainment. The album was produced and mixed by Tiki Taane and debuted at number one in the New Zealand charts and was certified gold within its first week of release. Their first two singles \"Rise Up 2.0\" and \"Don't Forget Your Roots\" reached number one and number two respectively on the RIANZ singles chart and were both certified double and triple platinum. In 2018 the band won five Vodafone New Zealand Music Awards and were the most streamed artist by New Zealanders on Spotify. On 23 February 2019, Six60 became the first New Zealand band to play a sold-out concert at the Western Springs Stadium, to a crowd of 50,000 fans. On 24 April 2021, Six60 played the first concert at Auckland's Eden Park Stadium, to a crowd of 50,000 fans. It was the closing of the Six60 Saturdays country-wide tour and the largest concert of 2021. In February 2024, founding member Eli Paewai left the band, citing his \"personal journey with music is coming to an end\".",
@@ -2182,6 +2232,104 @@
       "last_played_at": null
     },
     {
+      "id": "state-of-mind",
+      "name": "State of Mind",
+      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
+      "genres": [
+        "Drum and Bass",
+        "Electronica",
+        "House",
+        "Melodic House & Techno",
+        "Rock",
+        "Hard Dance",
+        "Hardcore",
+        "Neo Rave"
+      ],
+      "city": "Wellington",
+      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": "http://www.stateofmindnz.com/",
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 70,
+      "source": "seed",
+      "opt_out": false,
+      "created_at": "2026-08-28T12:17:48.356Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 3,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": "ok",
+      "profile_location": "Bandcamp: New Zealand",
+      "summary": "Wellington DnB duo, signed and touring internationally since the mid-2000s.",
+      "summary_long": "State of Mind are a Wellington drum & bass production and DJ duo who've been signed and touring internationally since the mid-2000s. Their sound spans drum and bass, electronica, house, melodic house & techno, rock, hard dance, hardcore, and neo rave. They've got 25 mixes on SoundCloud, though no upcoming gigs are listed right now.",
+      "upcoming_events": 0,
+      "mix_count": 25,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "ladyfem",
+      "name": "LadyFem",
+      "bio": null,
+      "genres": [
+        "World",
+        "Ambient",
+        "Dubstep",
+        "Electronic",
+        "Dance",
+        "House",
+        "Bass"
+      ],
+      "city": "",
+      "image_url": "https://i1.sndcdn.com/avatars-b59MgQT1yefASeoH-r3bywQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/femke-burger-1",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:43.697Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 8,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "repair",
       "name": "REPAIR",
       "bio": null,
@@ -2277,6 +2425,97 @@
       "last_played_at": null
     },
     {
+      "id": "k-roto",
+      "name": "Kōroto",
+      "bio": null,
+      "genres": [
+        "Downtempo",
+        "Bass",
+        "Techno",
+        "World",
+        "Ambient",
+        "Dubstep",
+        "Experimental",
+        "Electronic"
+      ],
+      "city": "",
+      "image_url": "https://i1.sndcdn.com/avatars-NW0YUlIyAOdoEQvj-VT7fVA-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/niahenson",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:43.636Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Ōtautahi",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 22,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "mathias-light",
+      "name": "Mathias Light",
+      "bio": null,
+      "genres": [],
+      "city": "",
+      "image_url": "https://i1.sndcdn.com/avatars-3DDfvmAukdRVPsxn-lIMOWQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/mathiaslightx",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 45,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:43.764Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: New Zealand / Germany / Mexico",
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 0,
+      "mix_count": 2,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "evie",
       "name": "Evie",
       "bio": "EvieMusic | EvieMusic The official website for Evie Tornquist-Karlsson Facebook Home E-Card Evie Welcomes You Hey friends! You&#8217;ve found my website: eviemusic.org, &#8220;the official Evie website.&#8221; Thanks for your interest! I&#8217;m Evie Karlsson, but you may know me by my maiden name, “Tornquist.” Or perhaps you know me as simply, “Evie”—short for “Evelyn.” Perhaps you’ve found this website because you’re interested in knowing where to find some of my older music, you have heard that there’s a concert in your area, or you’re just wondering what in the world we’re up to these days! Maybe you&#8217;ve heard about the SPECIAL HOLIDAY OFFER of 3 CDS plus one bonus gift: the CD with my husband!",
@@ -2364,6 +2603,50 @@
       "summary_long": "Estere's SoundCloud holds 13 mixes spanning tech house, Jersey and Baltimore club, hip-hop, and drum and bass. The kiwi DJ has been mentioned in three articles, though no upcoming gigs are currently listed.",
       "upcoming_events": 0,
       "mix_count": 13,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "montell2099",
+      "name": "montell2099",
+      "bio": null,
+      "genres": [
+        "Electronic",
+        "Dance"
+      ],
+      "city": "Auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-7DPbpJReUSSGXp5Q-3navYQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/montell2099",
+      "instagram_url": "https://www.instagram.com/montell2099/",
+      "facebook_url": "https://www.facebook.com/montell2099",
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 45,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.125Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 4,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "articles",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": "Auckland's montell2099 crafts electronic dance sounds, with a single SoundCloud mix to date.",
+      "summary_long": "montell2099 is an Auckland-based electronic and dance artist. Currently, they have one mix available on SoundCloud and no upcoming gigs listed.",
+      "upcoming_events": 0,
+      "mix_count": 1,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -2664,7 +2947,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.085Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -2686,89 +2969,6 @@
       "last_played_at": null
     },
     {
-      "id": "emi-music-new-zealand",
-      "name": "EMI Music New Zealand",
-      "bio": null,
-      "genres": [],
-      "city": "Auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000001766513-s11vaf-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/nzemi",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 40,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.584Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 2,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "location"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland City",
-      "summary": "Auckland-based EMI Music New Zealand, with two SoundCloud mixes and no gigs listed yet.",
-      "summary_long": "EMI Music New Zealand is a label or project based in Auckland, though its genre remains unspecified. They have two mixes on SoundCloud, but no upcoming gigs are currently listed.",
-      "upcoming_events": 0,
-      "mix_count": 2,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "montell2099",
-      "name": "montell2099",
-      "bio": null,
-      "genres": [
-        "Electronic",
-        "Dance"
-      ],
-      "city": "Auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-7DPbpJReUSSGXp5Q-3navYQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/montell2099",
-      "instagram_url": "https://www.instagram.com/montell2099/",
-      "facebook_url": "https://www.facebook.com/montell2099",
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 45,
-      "source": "discovered-soundcloud",
-      "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.125Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 4,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "articles",
-        "multi-source",
-        "location"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "summary": "Auckland's montell2099 crafts electronic dance sounds, with a single SoundCloud mix to date.",
-      "summary_long": "montell2099 is an Auckland-based electronic and dance artist. Currently, they have one mix available on SoundCloud and no upcoming gigs listed.",
-      "upcoming_events": 0,
-      "mix_count": 1,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
       "id": "flipthescripta",
       "name": "FlipTheScripta",
       "bio": null,
@@ -2786,7 +2986,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.382Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -2808,193 +3008,41 @@
       "last_played_at": null
     },
     {
-      "id": "night-life",
-      "name": "Night Life",
+      "id": "emi-music-new-zealand",
+      "name": "EMI Music New Zealand",
       "bio": null,
-      "genres": [
-        "Pop"
-      ],
-      "city": "Queenstown",
-      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
+      "genres": [],
+      "city": "Auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000001766513-s11vaf-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/nzemi",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
       "website_url": null,
       "active": true,
       "popularity": 0,
-      "data_completeness": 55,
+      "data_completeness": 40,
       "source": "discovered-soundcloud",
       "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.273Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
+      "created_at": "2026-08-30T02:56:17.584Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 3,
+      "verification_level": 2,
       "verification_sources": [
         "mixes",
         "links",
-        "multi-source",
         "location"
       ],
       "is_nz": true,
       "bpm_range": null,
       "stale_since": null,
       "bio_quality": null,
-      "profile_location": "SoundCloud: Queenstown",
-      "summary": "Queenstown pop selector with 26 SoundCloud mixes, no current gigs listed.",
-      "summary_long": "Night Life keeps Queenstown moving with a stack of pop mixes on SoundCloud—26 at last count. There's no upcoming gigs on the books right now, but the back catalogue is there for a listen.",
+      "profile_location": "SoundCloud: Auckland City",
+      "summary": "Auckland-based EMI Music New Zealand, with two SoundCloud mixes and no gigs listed yet.",
+      "summary_long": "EMI Music New Zealand is a label or project based in Auckland, though its genre remains unspecified. They have two mixes on SoundCloud, but no upcoming gigs are currently listed.",
       "upcoming_events": 0,
-      "mix_count": 26,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "9cups",
-      "name": "9cups",
-      "bio": "9cups is the new house music based project from Wellington producer and longtime beatmaker Maz Hermon. (Previous projects <span class=\"peekaboo-text\">include Western Dip, Roy G & the BIVinators, Mazroy, Felix Fielding). <br><span class=\"lightweightBreak\"></span><br>9cups Debut EP Tee Time 9pm is a groove-focused exploration of soulful house — emotionally resonant, subtly nostalgic, and built for modern-day dancefloors both big and small. Kitchen to club.</span> <span class=\"peekaboo-link\"><span class=\"peekaboo-ellipsis\">...</span> <a>more</a></span> </p>",
-      "genres": [
-        "Organic House",
-        "Lofi House",
-        "Ukg",
-        "Ukgarage",
-        "Electronic",
-        "Dance",
-        "House",
-        "Deep House"
-      ],
-      "city": "Wellington",
-      "image_url": null,
-      "soundcloud_url": null,
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 25,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:30.822Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "links",
-        "gigs",
-        "multi-source",
-        "location"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "Bandcamp: Wellington",
-      "summary": "Wellington beatmaker Maz Hermon's new house project, debuting with soulful EP Tee Time 9pm.",
-      "summary_long": "9cups is the fresh house alias of Wellington producer Maz Hermon, known for past projects like Western Dip and Roy G & the BIVinators. The debut EP Tee Time 9pm serves groove-focused, soulful house that's emotionally resonant and built for dancefloors from kitchen to club. Catch them at Newtown Festival 2027, having already shared stages with Max Maxwell and Stolen Tuesday.",
-      "upcoming_events": 1,
-      "mix_count": 0,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "paige-julia",
-      "name": "Paige Julia",
-      "bio": null,
-      "genres": [
-        "Drum and Bass",
-        "140",
-        "Deep Dubstep",
-        "Grime",
-        "Breaks",
-        "UK Bass",
-        "Electronica",
-        "Melodic House & Techno"
-      ],
-      "city": "",
-      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/user-924604966",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 2,
-      "data_completeness": 65,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:39.923Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 5,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "gigs",
-        "multi-gigs",
-        "multi-source",
-        "location"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": "Bandcamp: Christchurch",
-      "summary": "Christchurch DJ Paige Julia brings UK bass, grime, and melodic techno to Carlucci Carnival.",
-      "summary_long": "Paige Julia is a Christchurch selector with a wide-ranging ear, moving from drum and bass and deep dubstep through to grime, breaks, and melodic house and techno. She's shared decks with Herman Saiz, Shady Lady, Mojo Filter, and Bwoy De Bhajan, and has three mixes up on Mixcloud. Catch her next at Carlucci Carnival.",
-      "upcoming_events": 1,
-      "mix_count": 7,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "state-of-mind",
-      "name": "State of Mind",
-      "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
-      "genres": [
-        "Drum and Bass",
-        "Electronica",
-        "House",
-        "Melodic House & Techno",
-        "Rock",
-        "Hard Dance",
-        "Hardcore",
-        "Neo Rave"
-      ],
-      "city": "Wellington",
-      "image_url": "https://i1.sndcdn.com/avatars-000045863465-n7wy2m-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/state-of-mind-official",
-      "instagram_url": null,
-      "facebook_url": null,
-      "mixcloud_url": null,
-      "website_url": "http://www.stateofmindnz.com/",
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 70,
-      "source": "seed",
-      "opt_out": false,
-      "created_at": "2026-08-28T12:17:48.356Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 3,
-      "verification_sources": [
-        "mixes",
-        "links",
-        "multi-source",
-        "location"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": "ok",
-      "profile_location": "Bandcamp: New Zealand",
-      "summary": "Wellington DnB duo, signed and touring internationally since the mid-2000s.",
-      "summary_long": "State of Mind are a Wellington drum & bass production and DJ duo who've been signed and touring internationally since the mid-2000s. Their sound spans drum and bass, electronica, house, melodic house & techno, rock, hard dance, hardcore, and neo rave. They've got 25 mixes on SoundCloud, though no upcoming gigs are listed right now.",
-      "upcoming_events": 0,
-      "mix_count": 25,
+      "mix_count": 2,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -3042,17 +3090,15 @@
       "last_played_at": null
     },
     {
-      "id": "princesschelsea",
-      "name": "princesschelsea",
+      "id": "night-life",
+      "name": "Night Life",
       "bio": null,
       "genres": [
-        "Indie",
-        "Pop",
-        "Alternative"
+        "Pop"
       ],
-      "city": "Auckland",
-      "image_url": "https://i1.sndcdn.com/avatars-000465472743-lwmx74-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/princesschelsea",
+      "city": "Queenstown",
+      "image_url": "https://i1.sndcdn.com/avatars-VBrIB9T11cZsuUe9-qziIvQ-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/night-life-584430914",
       "instagram_url": null,
       "facebook_url": null,
       "mixcloud_url": null,
@@ -3062,25 +3108,77 @@
       "data_completeness": 55,
       "source": "discovered-soundcloud",
       "opt_out": false,
-      "created_at": "2026-08-30T02:56:17.291Z",
-      "updated_at": "2026-08-31T16:41:16.753Z",
+      "created_at": "2026-08-30T02:56:17.273Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
-      "verification_level": 2,
+      "verification_level": 3,
       "verification_sources": [
         "mixes",
         "links",
+        "multi-source",
         "location"
       ],
       "is_nz": true,
       "bpm_range": null,
       "stale_since": null,
       "bio_quality": null,
-      "profile_location": "SoundCloud: Auckland",
-      "summary": "Auckland's princesschelsea spins indie, pop, and alternative with ten SoundCloud mixes.",
-      "summary_long": "princesschelsea is an Auckland-based selector with a taste for indie, pop, and alternative sounds. They've shared ten mixes on SoundCloud, showcasing a blend that moves from dreamy to danceable. No upcoming gigs are listed right now, but their online presence keeps the vibe alive.",
+      "profile_location": "SoundCloud: Queenstown",
+      "summary": "Queenstown pop selector with 26 SoundCloud mixes, no current gigs listed.",
+      "summary_long": "Night Life keeps Queenstown moving with a stack of pop mixes on SoundCloud—26 at last count. There's no upcoming gigs on the books right now, but the back catalogue is there for a listen.",
       "upcoming_events": 0,
-      "mix_count": 10,
+      "mix_count": 26,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "paige-julia",
+      "name": "Paige Julia",
+      "bio": null,
+      "genres": [
+        "Drum and Bass",
+        "140",
+        "Deep Dubstep",
+        "Grime",
+        "Breaks",
+        "UK Bass",
+        "Electronica",
+        "Melodic House & Techno"
+      ],
+      "city": "",
+      "image_url": "https://i1.sndcdn.com/avatars-001394245487-4b4mno-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/user-924604966",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 2,
+      "data_completeness": 65,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:39.923Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "gigs",
+        "multi-gigs",
+        "multi-source",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "Bandcamp: Christchurch",
+      "summary": "Christchurch DJ Paige Julia brings UK bass, grime, and melodic techno to Carlucci Carnival.",
+      "summary_long": "Paige Julia is a Christchurch selector with a wide-ranging ear, moving from drum and bass and deep dubstep through to grime, breaks, and melodic house and techno. She's shared decks with Herman Saiz, Shady Lady, Mojo Filter, and Bwoy De Bhajan, and has three mixes up on Mixcloud. Catch her next at Carlucci Carnival.",
+      "upcoming_events": 1,
+      "mix_count": 7,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -3123,6 +3221,49 @@
       "summary_long": null,
       "upcoming_events": 0,
       "mix_count": 24,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
+      "id": "princesschelsea",
+      "name": "princesschelsea",
+      "bio": null,
+      "genres": [
+        "Indie",
+        "Pop",
+        "Alternative"
+      ],
+      "city": "Auckland",
+      "image_url": "https://i1.sndcdn.com/avatars-000465472743-lwmx74-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/princesschelsea",
+      "instagram_url": null,
+      "facebook_url": null,
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 55,
+      "source": "discovered-soundcloud",
+      "opt_out": false,
+      "created_at": "2026-08-30T02:56:17.291Z",
+      "updated_at": "2026-08-31T17:03:44.740Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 2,
+      "verification_sources": [
+        "mixes",
+        "links",
+        "location"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": "SoundCloud: Auckland",
+      "summary": "Auckland's princesschelsea spins indie, pop, and alternative with ten SoundCloud mixes.",
+      "summary_long": "princesschelsea is an Auckland-based selector with a taste for indie, pop, and alternative sounds. They've shared ten mixes on SoundCloud, showcasing a blend that moves from dreamy to danceable. No upcoming gigs are listed right now, but their online presence keeps the vibe alive.",
+      "upcoming_events": 0,
+      "mix_count": 10,
       "past_gig_count": 0,
       "last_played_at": null
     }
@@ -3177,18 +3318,6 @@
       "dj_name": " Absolutely Positively Footwork"
     },
     {
-      "id": "undertheradar-104079",
-      "name": "Soulstroke X Teraset - Dual Release Show - All Ages",
-      "venue": null,
-      "starts_at": "2026-09-12T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104079/Soulstroke-X-Teraset---Dual-Release-Show---All-Ages.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "soulstroke-x-teraset",
-      "is_dj_event": false,
-      "dj_name": "Soulstroke X Teraset"
-    },
-    {
       "id": "undertheradar-104178",
       "name": "Single Malt Presents ‘Wetlands’",
       "venue": null,
@@ -3201,16 +3330,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-6554ef5eac00",
-      "name": "Negative Approach 2026 AUS &amp; NZ Tour",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-11-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/100447/N/Negative-Approach-2026-AUS--NZ-Tour.utr",
+      "id": "undertheradar-104079",
+      "name": "Soulstroke X Teraset - Dual Release Show - All Ages",
+      "venue": null,
+      "starts_at": "2026-09-12T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104079/Soulstroke-X-Teraset---Dual-Release-Show---All-Ages.utr",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
+      "source": "undertheradar",
+      "dj_id": "soulstroke-x-teraset",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Soulstroke X Teraset"
     },
     {
       "id": "utr-venue-773a2c031ec9",
@@ -3561,6 +3690,18 @@
       "dj_name": "Sunday Jazz"
     },
     {
+      "id": "undertheradar-104388",
+      "name": "Toxa Album Release",
+      "venue": null,
+      "starts_at": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104388/Toxa-Album-Release.utr",
+      "archive_url": null,
+      "source": "undertheradar",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "eventfinda-sitemap-3b52393aa266",
       "name": "Conservation Stories from Country Calendar",
       "venue": "The Garden Room at St Peter’s on Willis",
@@ -3717,18 +3858,6 @@
       "dj_name": "Bass Borne"
     },
     {
-      "id": "undertheradar-104388",
-      "name": "Toxa Album Release",
-      "venue": null,
-      "starts_at": "2026-09-24T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104388/Toxa-Album-Release.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "undertheradar-104029",
       "name": "Delusional Dreamland 5 Year Tour - Wellington",
       "venue": "MOON",
@@ -3739,18 +3868,6 @@
       "dj_id": "delusional-dreamland-5-year",
       "is_dj_event": false,
       "dj_name": "Delusional Dreamland 5 Year"
-    },
-    {
-      "id": "undertheradar-104387",
-      "name": "Songwriters' Showcase #115",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104387/Songwriters-Showcase-115.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
     },
     {
       "id": "utr-venue-58e7e427d78c",
@@ -3885,18 +4002,6 @@
       "dj_name": "KP"
     },
     {
-      "id": "sanfran-1690521",
-      "name": "Convergence – A Drag Night FundraiserMore Info",
-      "venue": "San Fran",
-      "starts_at": "2026-09-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "sanfran-1690409",
       "name": "Avatar - Earth, Wind & Fire Tribute",
       "venue": "San Fran",
@@ -3907,6 +4012,18 @@
       "dj_id": "avatar",
       "is_dj_event": false,
       "dj_name": "Avatar"
+    },
+    {
+      "id": "sanfran-1690521",
+      "name": "Convergence – A Drag Night FundraiserMore Info",
+      "venue": "San Fran",
+      "starts_at": "2026-09-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/convergence-a-drag-night-fundraiser-tickets-ae1690521",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "convergence",
+      "is_dj_event": false,
+      "dj_name": "Convergence"
     },
     {
       "id": "sanfran-1688826",
@@ -4137,16 +4254,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-e7789cb0f62d",
-      "name": "Spring For Kaibosh - Musical Fundraiser",
+      "id": "undertheradar-104387",
+      "name": "Songwriters' Showcase #115",
       "venue": "MOON",
-      "starts_at": "2026-09-12T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103890/N/Spring-For-Kaibosh---Musical-Fundraiser.utr",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104387/Songwriters-Showcase-115.utr",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "musical",
+      "source": "undertheradar",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Musical"
+      "dj_name": null
     },
     {
       "id": "utr-venue-4f7eda0a4b7e",
@@ -4317,30 +4434,6 @@
       "dj_name": "Parasitic Infestation"
     },
     {
-      "id": "eventfinda-sitemap-7f6c7ed5e55a",
-      "name": "Kevin Bridges - Here If You Need Me",
-      "venue": "Michael Fowler Centre",
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2027/kevin-bridges-here-if-you-need-me/wellington",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": "here-if-you-need-me",
-      "is_dj_event": false,
-      "dj_name": "Here If You Need Me"
-    },
-    {
-      "id": "eventfinda-sitemap-76459d5f60ab",
-      "name": "Conservation Kōrero: Kākā in the Capital",
-      "venue": "ZEALANDIA Eco-Sanctuary",
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/conservation-korero-kaka-in-the-capital/wellington",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "undertheradar-103537",
       "name": "Silver Sonics w/ Seismic State and Electric Tapestry",
       "venue": null,
@@ -4365,16 +4458,40 @@
       "dj_name": "Serenna"
     },
     {
-      "id": "utr-venue-3259a0b50095",
-      "name": "E TŪ - Soandso Sophomore EP Debut",
-      "venue": "MOON",
-      "starts_at": "2026-09-18T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104403/N/E-TŪ---Soandso-Sophomore-EP-Debut.utr",
+      "id": "eventfinda-sitemap-7f6c7ed5e55a",
+      "name": "Kevin Bridges - Here If You Need Me",
+      "venue": "Michael Fowler Centre",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2027/kevin-bridges-here-if-you-need-me/wellington",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "soandso-sophomore",
+      "source": "eventfinda",
+      "dj_id": "here-if-you-need-me",
       "is_dj_event": false,
-      "dj_name": "Soandso Sophomore"
+      "dj_name": "Here If You Need Me"
+    },
+    {
+      "id": "eventfinda-sitemap-76459d5f60ab",
+      "name": "Conservation Kōrero: Kākā in the Capital",
+      "venue": "ZEALANDIA Eco-Sanctuary",
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/conservation-korero-kaka-in-the-capital/wellington",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-104262",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/104262/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
+      "archive_url": null,
+      "source": "undertheradar",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     },
     {
       "id": "utr-venue-69474ea01ceb",
@@ -4665,6 +4782,18 @@
       "dj_name": "Creative Arts Holiday Programme"
     },
     {
+      "id": "undertheradar-103890",
+      "name": "Spring For Kaibosh - Musical Fundraiser",
+      "venue": "MOON",
+      "starts_at": null,
+      "url": "https://www.undertheradar.co.nz/gig/103890/Spring-For-Kaibosh---Musical-Fundraiser.utr",
+      "archive_url": null,
+      "source": "undertheradar",
+      "dj_id": "musical",
+      "is_dj_event": false,
+      "dj_name": "Musical"
+    },
+    {
       "id": "utr-venue-04f6679e6dda",
       "name": "Moonday Quiz Hosted By Young Gho$t",
       "venue": "MOON",
@@ -4713,18 +4842,6 @@
       "dj_name": "Goodthings Session #025"
     },
     {
-      "id": "utr-venue-4860f6dda85e",
-      "name": "Tam Fm",
-      "venue": "Afters.",
-      "starts_at": "2026-09-18T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103883/N/Tam-Fm.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "tam-fm",
-      "is_dj_event": false,
-      "dj_name": "Tam Fm"
-    },
-    {
       "id": "utr-venue-7aefbd5903d9",
       "name": "Manawa: Ahiahi",
       "venue": "Afters.",
@@ -4735,18 +4852,6 @@
       "dj_id": "manawa-ahiahi",
       "is_dj_event": false,
       "dj_name": "Manawa: Ahiahi"
-    },
-    {
-      "id": "utr-venue-9ef6dcaeff64",
-      "name": "Bassdrop.co.nz Presents: Echoes",
-      "venue": "Afters.",
-      "starts_at": "2026-09-11T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103487/N/Bassdrop.co.nz-Presents:-Echoes.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "bassdrop-co-nz",
-      "is_dj_event": false,
-      "dj_name": "Bassdrop.co.nz"
     },
     {
       "id": "utr-venue-b44a7566bdf7",
@@ -5001,30 +5106,6 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104262",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104262/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-103890",
-      "name": "Spring For Kaibosh - Musical Fundraiser",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/103890/Spring-For-Kaibosh---Musical-Fundraiser.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "musical",
-      "is_dj_event": false,
-      "dj_name": "Musical"
-    },
-    {
       "id": "undertheradar-104264",
       "name": "Moonday Quiz Hosted By Young Gho$t",
       "venue": "MOON",
@@ -5092,9 +5173,9 @@
       "url": "https://www.undertheradar.co.nz/gig/104452/Nicholas-Joseph-Album-Release-Show.utr",
       "archive_url": null,
       "source": "undertheradar",
-      "dj_id": null,
+      "dj_id": "nicholas-joseph",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Nicholas Joseph"
     },
     {
       "id": "utr-venue-fa281dbc8c3e",
@@ -5116,9 +5197,21 @@
       "url": "http://www.undertheradar.co.nz/utr/show/SID/104422/N/Return-To-Sender-II.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "return-to-sender-ii",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Return To Sender II"
+    },
+    {
+      "id": "utr-venue-4860f6dda85e",
+      "name": "Tam Fm",
+      "venue": "Afters.",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103883/N/Tam-Fm.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "tam-fm",
+      "is_dj_event": false,
+      "dj_name": "Tam Fm"
     },
     {
       "id": "utr-venue-c0a0bc56dbdd",
@@ -5133,6 +5226,18 @@
       "dj_name": "Manawa: Ahiahi"
     },
     {
+      "id": "utr-venue-9ef6dcaeff64",
+      "name": "Bassdrop.co.nz Presents: Echoes",
+      "venue": "Afters.",
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103487/N/Bassdrop.co.nz-Presents:-Echoes.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "bassdrop-co-nz",
+      "is_dj_event": false,
+      "dj_name": "Bassdrop.co.nz"
+    },
+    {
       "id": "utr-venue-f198c6f8d12e",
       "name": "Pearly: All Night Long",
       "venue": "Afters.",
@@ -5143,90 +5248,6 @@
       "dj_id": "pearly",
       "is_dj_event": false,
       "dj_name": "PEARLY"
-    },
-    {
-      "id": "utr-venue-9e83b9b0940a",
-      "name": "Nicholas Joseph Album Release Show",
-      "venue": "MOON",
-      "starts_at": "2026-12-13T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104452/N/Nicholas-Joseph-Album-Release-Show.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-2e829d445861",
-      "name": "Sublimate - Wellington Jazz Festival",
-      "venue": "MOON",
-      "starts_at": "2026-10-18T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104409/N/Sublimate---Wellington-Jazz-Festival.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "sublimate",
-      "is_dj_event": true,
-      "dj_name": "Sublimate"
-    },
-    {
-      "id": "utr-venue-edd5a0b74237",
-      "name": "Crash Bandihoot + Special Guests (Jazz Festival)",
-      "venue": "MOON",
-      "starts_at": "2026-10-16T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104428/N/Crash-Bandihoot-+-Special-Guests-(Jazz-Festival).utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-e85468e58aba",
-      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
-      "venue": "MOON",
-      "starts_at": "2026-10-10T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/100998/N/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-45156c42cbf5",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": "2026-09-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104264/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-9b226b3f0941",
-      "name": "OvO (Italy) NZ Tour",
-      "venue": "Valhalla",
-      "starts_at": "2026-10-25T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103443/N/OvO-(Italy)-NZ-Tour.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-e8e28769ab87",
-      "name": "Imperial Slave - Existential Threat Tour - Wellington",
-      "venue": "Valhalla",
-      "starts_at": "2026-10-17T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104129/N/Imperial-Slave---Existential-Threat-Tour---Wellington.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "existential-threat",
-      "is_dj_event": false,
-      "dj_name": "Existential Threat"
     },
     {
       "id": "utr-venue-2077d831cd55",
@@ -5361,6 +5382,90 @@
       "dj_name": "Back Pocket"
     },
     {
+      "id": "utr-venue-2e829d445861",
+      "name": "Sublimate - Wellington Jazz Festival",
+      "venue": "MOON",
+      "starts_at": "2026-10-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104409/N/Sublimate---Wellington-Jazz-Festival.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "sublimate",
+      "is_dj_event": true,
+      "dj_name": "Sublimate"
+    },
+    {
+      "id": "utr-venue-9e83b9b0940a",
+      "name": "Nicholas Joseph Album Release Show",
+      "venue": "MOON",
+      "starts_at": "2026-12-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104452/N/Nicholas-Joseph-Album-Release-Show.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "nicholas-joseph",
+      "is_dj_event": false,
+      "dj_name": "Nicholas Joseph"
+    },
+    {
+      "id": "utr-venue-edd5a0b74237",
+      "name": "Crash Bandihoot + Special Guests (Jazz Festival)",
+      "venue": "MOON",
+      "starts_at": "2026-10-16T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104428/N/Crash-Bandihoot-+-Special-Guests-(Jazz-Festival).utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-e85468e58aba",
+      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
+      "venue": "MOON",
+      "starts_at": "2026-10-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100998/N/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-3259a0b50095",
+      "name": "E TŪ - Soandso Sophomore EP Debut",
+      "venue": "MOON",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104403/N/E-TŪ---Soandso-Sophomore-EP-Debut.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "soandso-sophomore",
+      "is_dj_event": false,
+      "dj_name": "Soandso Sophomore"
+    },
+    {
+      "id": "utr-venue-45156c42cbf5",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": "2026-09-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104264/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-e7789cb0f62d",
+      "name": "Spring For Kaibosh - Musical Fundraiser",
+      "venue": "MOON",
+      "starts_at": "2026-09-12T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103890/N/Spring-For-Kaibosh---Musical-Fundraiser.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "musical",
+      "is_dj_event": false,
+      "dj_name": "Musical"
+    },
+    {
       "id": "utr-venue-21ee5573b9c0",
       "name": "Flyte",
       "venue": "San Fran",
@@ -5385,6 +5490,18 @@
       "dj_name": "Emerson"
     },
     {
+      "id": "utr-venue-6554ef5eac00",
+      "name": "Negative Approach 2026 AUS &amp; NZ Tour",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100447/N/Negative-Approach-2026-AUS--NZ-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "utr-venue-f5a3bc17ccbc",
       "name": "CST Presents: Julien Dyne | Jazzfest 2026",
       "venue": "Cuba St Tavern",
@@ -5392,9 +5509,9 @@
       "url": "http://www.undertheradar.co.nz/utr/show/SID/104429/N/CST-Presents:-Julien-Dyne-|-Jazzfest-2026.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "julien-dyne",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": " Julien Dyne"
     },
     {
       "id": "utr-venue-04e2dd2b521a",
@@ -5409,6 +5526,42 @@
       "dj_name": null
     },
     {
+      "id": "utr-venue-9b226b3f0941",
+      "name": "OvO (Italy) NZ Tour",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-25T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103443/N/OvO-(Italy)-NZ-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-e8e28769ab87",
+      "name": "Imperial Slave - Existential Threat Tour - Wellington",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-17T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104129/N/Imperial-Slave---Existential-Threat-Tour---Wellington.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "existential-threat",
+      "is_dj_event": false,
+      "dj_name": "Existential Threat"
+    },
+    {
+      "id": "eventfinda-936886",
+      "name": "Tetra Pak In Relief with Ina Arraoui: CANCELLED",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/tetra-pak-in-relief-with-ina-arraoui/auckland/ponsonby",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "ina-arraoui-cancelled",
+      "is_dj_event": false,
+      "dj_name": "Ina Arraoui: CANCELLED"
+    },
+    {
       "id": "utr-venue-1ee319d0bdb9",
       "name": "Awkwatch X Doggabarka",
       "venue": "Valhalla",
@@ -5416,9 +5569,9 @@
       "url": "http://www.undertheradar.co.nz/utr/show/SID/104451/N/Awkwatch-X-Doggabarka.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "awkwatch-x-doggabarka",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Awkwatch X Doggabarka"
     },
     {
       "id": "utr-venue-96d829b48089",
@@ -5464,9 +5617,9 @@
       "url": "http://www.undertheradar.co.nz/utr/show/SID/104450/N/Nicholas-Joseph-Album-Release-Show.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "nicholas-joseph",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Nicholas Joseph"
     },
     {
       "id": "utr-venue-08527ca37229",
@@ -5481,54 +5634,6 @@
       "dj_name": "State of Mind"
     },
     {
-      "id": "sanfran-1693784",
-      "name": "Goodnight Nurse - The Always and Never (Again!) Tour",
-      "venue": "San Fran",
-      "starts_at": "2026-11-20T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/goodnight-nurse-tickets-ae1693784",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "eventfinda-941454",
-      "name": "Dream Big",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/dream-big/tauranga",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "eventfinda-945226",
-      "name": "Illuminate Lightshow",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/illuminate-lightshow/christchurch",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "eventfinda-895401",
-      "name": "Fringe Bar Comedy Club",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2025/fringe-bar-comedy-club/wellington",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "eventfinda-919516",
       "name": "Open Dance Classes",
       "venue": null,
@@ -5536,64 +5641,28 @@
       "url": "https://www.eventfinda.co.nz/2026/open-dance-classes/palmerston-north",
       "archive_url": null,
       "source": "eventfinda",
-      "dj_id": null,
+      "dj_id": "open-dance-classes",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Open Dance Classes"
     },
     {
-      "id": "eventfinda-942101",
-      "name": "Billion Star Dining",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/billion-star-dining/twizel",
+      "id": "sanfran-1693784",
+      "name": "Goodnight Nurse - The Always and Never (Again!) Tour",
+      "venue": "San Fran",
+      "starts_at": "2026-11-20T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/goodnight-nurse-tickets-ae1693784",
       "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
+      "source": "sanfran",
+      "dj_id": "goodnight-nurse",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Goodnight Nurse"
     },
     {
-      "id": "eventfinda-914963",
-      "name": "Sunset Guided Tour",
+      "id": "eventfinda-941454",
+      "name": "Dream Big",
       "venue": null,
       "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2025/sunset-guided-tour/wairarapa",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "eventfinda-914955",
-      "name": "Star Trek Laser Tour (Stargazing)",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2025/star-trek-laser-tour-stargazing/carterton",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "eventfinda-914740",
-      "name": "Self-Guided Tour of Stonehenge Aotearoa",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2025/self-guided-tour-of-stonehenge-aotearoa/carterton",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "eventfinda-936886",
-      "name": "Tetra Pak In Relief with Ina Arraoui: CANCELLED",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/tetra-pak-in-relief-with-ina-arraoui/auckland/ponsonby",
+      "url": "https://www.eventfinda.co.nz/2026/dream-big/tauranga",
       "archive_url": null,
       "source": "eventfinda",
       "dj_id": null,
@@ -5611,6 +5680,78 @@
       "dj_id": "teens",
       "is_dj_event": false,
       "dj_name": "Teens"
+    },
+    {
+      "id": "eventfinda-945226",
+      "name": "Illuminate Lightshow",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/illuminate-lightshow/christchurch",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "illuminate-lightshow",
+      "is_dj_event": false,
+      "dj_name": "Illuminate Lightshow"
+    },
+    {
+      "id": "eventfinda-895401",
+      "name": "Fringe Bar Comedy Club",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2025/fringe-bar-comedy-club/wellington",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-942101",
+      "name": "Billion Star Dining",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/billion-star-dining/twizel",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "billion-star-dining",
+      "is_dj_event": false,
+      "dj_name": "Billion Star Dining"
+    },
+    {
+      "id": "eventfinda-914963",
+      "name": "Sunset Guided Tour",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2025/sunset-guided-tour/wairarapa",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "sunset-guided",
+      "is_dj_event": false,
+      "dj_name": "Sunset Guided"
+    },
+    {
+      "id": "eventfinda-914955",
+      "name": "Star Trek Laser Tour (Stargazing)",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2025/star-trek-laser-tour-stargazing/carterton",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "star-trek-laser",
+      "is_dj_event": false,
+      "dj_name": "Star Trek Laser"
+    },
+    {
+      "id": "eventfinda-914740",
+      "name": "Self-Guided Tour of Stonehenge Aotearoa",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2025/self-guided-tour-of-stonehenge-aotearoa/carterton",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     }
   ],
   "links": [
@@ -5855,6 +5996,18 @@
       "unhelpful": 0
     },
     {
+      "id": "lilbubblegum-youtube-f08c940bd4be",
+      "dj_id": "lilbubblegum",
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCcZgRMGXA0Y20YZiXg8jr9w",
+      "label": "YouTube: lilbubblegum",
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
       "id": "sian-soundcloud-2acbeec53078",
       "dj_id": "sian",
       "type": "soundcloud",
@@ -5867,98 +6020,14 @@
       "unhelpful": 0
     },
     {
-      "id": "state-of-mind-soundcloud-6d4725b14ec7",
-      "dj_id": "state-of-mind",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/my-own-empire-state-of-mind",
-      "label": "My Own Empire State Of Mind",
-      "archive_url": null,
-      "followers": 2,
-      "track_count": 2,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
       "id": "concord-dawn-soundcloud-3edca5ccc4a0",
       "dj_id": "concord-dawn",
       "type": "soundcloud",
       "url": "https://soundcloud.com/concord-dawn",
       "label": "Concord Dawn",
-      "archive_url": null,
+      "archive_url": "http://web.archive.org/web/20260517061200/https://soundcloud.com/concord-dawn",
       "followers": 29095,
       "track_count": 118,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "concord-dawn-soundcloud-4d223bc5c708",
-      "dj_id": "concord-dawn",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/concord-dawn-official",
-      "label": "Concord Dawn Official",
-      "archive_url": null,
-      "followers": 8,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "broderbeats-soundcloud-868205a12bc1",
-      "dj_id": "broderbeats",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/broderbeats",
-      "label": "broderbeats",
-      "archive_url": null,
-      "followers": 384,
-      "track_count": 11,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "frida-soundcloud-96941a724a74",
-      "dj_id": "frida",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/frida-darko",
-      "label": "Frida Darko",
-      "archive_url": null,
-      "followers": 43993,
-      "track_count": 27,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "frida-soundcloud-46b2682b23a4",
-      "dj_id": "frida",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/frida-114959477",
-      "label": "Frida",
-      "archive_url": null,
-      "followers": 2,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "frida-soundcloud-03aa46f8ed5c",
-      "dj_id": "frida",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/fridadisc",
-      "label": "Frida",
-      "archive_url": null,
-      "followers": 195,
-      "track_count": 9,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "frida-soundcloud-e6a60643ff3d",
-      "dj_id": "frida",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/frida-311666858",
-      "label": "Frida",
-      "archive_url": null,
-      "followers": 302,
-      "track_count": 54,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -6151,6 +6220,54 @@
       "archive_url": "https://web.archive.org/web/https://soundcloud.com/stateofmindevents",
       "followers": 63,
       "track_count": 17,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "broderbeats-soundcloud-868205a12bc1",
+      "dj_id": "broderbeats",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/broderbeats",
+      "label": "broderbeats",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/broderbeats",
+      "followers": 384,
+      "track_count": 11,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "frida-soundcloud-96941a724a74",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/frida-darko",
+      "label": "Frida Darko",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/frida-darko",
+      "followers": 43993,
+      "track_count": 27,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "frida-soundcloud-46b2682b23a4",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/frida-114959477",
+      "label": "Frida",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/frida-114959477",
+      "followers": 2,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "frida-soundcloud-e6a60643ff3d",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/frida-311666858",
+      "label": "Frida",
+      "archive_url": "http://web.archive.org/web/20260506151642/https://soundcloud.com/frida-311666858",
+      "followers": 302,
+      "track_count": 54,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -8663,6 +8780,18 @@
       "unhelpful": 0
     },
     {
+      "id": "ladyfem-soundcloud-b4cb67f8861c",
+      "dj_id": "ladyfem",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/femke-burger-1",
+      "label": "SoundCloud: LadyFem",
+      "archive_url": null,
+      "followers": 56,
+      "track_count": 8,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
       "id": "sian-instagram-a6afc68bc874",
       "dj_id": "sian",
       "type": "instagram",
@@ -9311,6 +9440,18 @@
       "unhelpful": 0
     },
     {
+      "id": "lordemusic-soundcloud-29e6ac5c20fe",
+      "dj_id": "lordemusic",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/lordemusic",
+      "label": "SoundCloud: LordeMusic",
+      "archive_url": null,
+      "followers": 6273279,
+      "track_count": 80,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
       "id": "lilbubblegum-soundcloud-6f54fcbc6e1b",
       "dj_id": "lilbubblegum",
       "type": "soundcloud",
@@ -9643,18 +9784,6 @@
       "archive_url": null,
       "followers": 18239,
       "track_count": 64,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "lordemusic-soundcloud-29e6ac5c20fe",
-      "dj_id": "lordemusic",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/lordemusic",
-      "label": "SoundCloud: LordeMusic",
-      "archive_url": null,
-      "followers": 6273278,
-      "track_count": 80,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -11255,6 +11384,18 @@
       "unhelpful": 0
     },
     {
+      "id": "giddy-mixcloud-b944b3a53d6d",
+      "dj_id": "giddy",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/gideonngarua/",
+      "label": "Mixcloud: DJ GIDDY",
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
       "id": "manisah-soundcloud-918138502d76",
       "dj_id": "manisah",
       "type": "soundcloud",
@@ -11275,6 +11416,18 @@
       "archive_url": "http://web.archive.org/web/20260707095945/https://soundcloud.com/stateofmindnz",
       "followers": 46837,
       "track_count": 111,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "paige-julia-mixcloud-ffdb4a045130",
+      "dj_id": "paige-julia",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/thatsnotpanicyoufeel/",
+      "label": "Mixcloud: Paige Julia Nicholai",
+      "archive_url": null,
+      "followers": 286,
+      "track_count": 3,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -11339,26 +11492,14 @@
       "unhelpful": 0
     },
     {
-      "id": "giddy-mixcloud-b944b3a53d6d",
-      "dj_id": "giddy",
+      "id": "frank-booker-mixcloud-ac569ced9731",
+      "dj_id": "frank-booker",
       "type": "mixcloud",
-      "url": "https://www.mixcloud.com/gideonngarua/",
-      "label": "Mixcloud: DJ GIDDY",
+      "url": "https://www.mixcloud.com/frankbooker/",
+      "label": "Mixcloud: Frank Booker",
       "archive_url": null,
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "paige-julia-mixcloud-ffdb4a045130",
-      "dj_id": "paige-julia",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/thatsnotpanicyoufeel/",
-      "label": "Mixcloud: Paige Julia Nicholai",
-      "archive_url": null,
-      "followers": 286,
-      "track_count": 3,
+      "followers": 1191,
+      "track_count": 9,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -11371,18 +11512,6 @@
       "archive_url": null,
       "followers": 526,
       "track_count": 15,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "frank-booker-mixcloud-ac569ced9731",
-      "dj_id": "frank-booker",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/frankbooker/",
-      "label": "Mixcloud: Frank Booker",
-      "archive_url": null,
-      "followers": 1191,
-      "track_count": 9,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -11417,7 +11546,7 @@
       "url": "https://soundcloud.com/user-690791248",
       "label": "SoundCloud: FlipTheScripta",
       "archive_url": null,
-      "followers": 12802,
+      "followers": 12801,
       "track_count": 61,
       "helpful": 0,
       "unhelpful": 0
@@ -11431,6 +11560,30 @@
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "mathias-light-soundcloud-f48a899241d8",
+      "dj_id": "mathias-light",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/mathiaslightx",
+      "label": "SoundCloud: Mathias Light",
+      "archive_url": null,
+      "followers": 344,
+      "track_count": 2,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
+      "dj_id": "jimi-the-kween",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/jimithekween-music",
+      "label": "SoundCloud: Jimi The Kween",
+      "archive_url": null,
+      "followers": 13,
+      "track_count": 10,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -11863,18 +12016,6 @@
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
-      "dj_id": "jimi-the-kween",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/jimithekween-music",
-      "label": "SoundCloud: Jimi The Kween",
-      "archive_url": null,
-      "followers": 13,
-      "track_count": 10,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -17375,18 +17516,6 @@
       "unhelpful": 0
     },
     {
-      "id": "broderbeats-youtube-9da3bdffc8ec",
-      "dj_id": "broderbeats",
-      "type": "youtube",
-      "url": "https://www.youtube.com/channel/UCRN11hJ1IrCbJ5WDq2X2G2A",
-      "label": "YouTube: broderbeats",
-      "archive_url": null,
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
       "id": "club-medder-youtube-9d8f13601796",
       "dj_id": "club-medder",
       "type": "youtube",
@@ -17404,18 +17533,6 @@
       "type": "last.fm",
       "url": "https://www.last.fm/music/Ariana+Grande",
       "label": "Last.fm: Ariana Grande",
-      "archive_url": null,
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "headland-mixcloud-d10a6a9a8cb7",
-      "dj_id": "headland",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/jaceheadland/",
-      "label": "Mixcloud: Jace Headland",
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
@@ -17459,6 +17576,18 @@
       "unhelpful": 0
     },
     {
+      "id": "broderbeats-youtube-9da3bdffc8ec",
+      "dj_id": "broderbeats",
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCRN11hJ1IrCbJ5WDq2X2G2A",
+      "label": "YouTube: broderbeats",
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
       "id": "bbyfacekilla-mixcloud-529287dec668",
       "dj_id": "bbyfacekilla",
       "type": "mixcloud",
@@ -17471,26 +17600,26 @@
       "unhelpful": 0
     },
     {
-      "id": "night-life-soundcloud-03babe5d322f",
-      "dj_id": "night-life",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/night-life-584430914",
-      "label": "SoundCloud: Night Life",
+      "id": "headland-mixcloud-d10a6a9a8cb7",
+      "dj_id": "headland",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/jaceheadland/",
+      "label": "Mixcloud: Jace Headland",
       "archive_url": null,
-      "followers": 17426,
-      "track_count": 26,
+      "followers": 0,
+      "track_count": 0,
       "helpful": 0,
       "unhelpful": 0
     },
     {
-      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
-      "dj_id": "emi-music-new-zealand",
+      "id": "montell2099-soundcloud-33d32a519425",
+      "dj_id": "montell2099",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/nzemi",
-      "label": "SoundCloud: EMI Music New Zealand",
-      "archive_url": "http://web.archive.org/web/20250827152257/https://soundcloud.com/nzemi",
-      "followers": 6116,
-      "track_count": 19,
+      "url": "https://soundcloud.com/montell2099",
+      "label": "SoundCloud: montell2099",
+      "archive_url": null,
+      "followers": 54775,
+      "track_count": 38,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -17503,18 +17632,6 @@
       "archive_url": null,
       "followers": 426998,
       "track_count": 565,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "charli-xcx-soundcloud-5d12c6c3a4e1",
-      "dj_id": "charli-xcx",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/ochoajoseba6",
-      "label": "SoundCloud: Charli XCX",
-      "archive_url": null,
-      "followers": 884,
-      "track_count": 59,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -17591,18 +17708,6 @@
       "unhelpful": 0
     },
     {
-      "id": "montell2099-soundcloud-33d32a519425",
-      "dj_id": "montell2099",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/montell2099",
-      "label": "SoundCloud: montell2099",
-      "archive_url": null,
-      "followers": 54775,
-      "track_count": 38,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
       "id": "ariana-grande-allmusic-696b137a5875",
       "dj_id": "ariana-grande",
       "type": "allmusic",
@@ -17655,6 +17760,90 @@
       "dj_id": "ariana-grande",
       "type": "discogs",
       "url": "https://www.discogs.com/artist/3310737",
+      "label": null,
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "charli-xcx-soundcloud-5d12c6c3a4e1",
+      "dj_id": "charli-xcx",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/ochoajoseba6",
+      "label": "SoundCloud: Charli XCX",
+      "archive_url": null,
+      "followers": 884,
+      "track_count": 59,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "night-life-soundcloud-03babe5d322f",
+      "dj_id": "night-life",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/night-life-584430914",
+      "label": "SoundCloud: Night Life",
+      "archive_url": null,
+      "followers": 17426,
+      "track_count": 26,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
+      "dj_id": "emi-music-new-zealand",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/nzemi",
+      "label": "SoundCloud: EMI Music New Zealand",
+      "archive_url": "http://web.archive.org/web/20250827152257/https://soundcloud.com/nzemi",
+      "followers": 6116,
+      "track_count": 19,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-e2dd27beff3f",
+      "dj_id": "mi-casa-su-casa",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/micasa-sucasa-gt",
+      "label": "SoundCloud: Mi Casa Su Casa",
+      "archive_url": null,
+      "followers": 143,
+      "track_count": 49,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "k-roto-soundcloud-92fa781c1e62",
+      "dj_id": "k-roto",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/niahenson",
+      "label": "SoundCloud: Kōroto",
+      "archive_url": null,
+      "followers": 484,
+      "track_count": 22,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "minoa-soundcloud-b589d752cc0b",
+      "dj_id": "minoa",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/minoa-262248286",
+      "label": "SoundCloud: Minoa",
+      "archive_url": null,
+      "followers": 1,
+      "track_count": 13,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "rob-warner-discogs-bf9ca433537d",
+      "dj_id": "rob-warner",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/3697998",
       "label": null,
       "archive_url": null,
       "followers": 0,
@@ -19471,6 +19660,42 @@
       "archive_url": "https://web.archive.org/web/https://soundcloud.com/stateofmindofficial",
       "followers": 31,
       "track_count": 69,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "state-of-mind-soundcloud-6d4725b14ec7",
+      "dj_id": "state-of-mind",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/my-own-empire-state-of-mind",
+      "label": "My Own Empire State Of Mind",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/my-own-empire-state-of-mind",
+      "followers": 2,
+      "track_count": 2,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "concord-dawn-soundcloud-4d223bc5c708",
+      "dj_id": "concord-dawn",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/concord-dawn-official",
+      "label": "Concord Dawn Official",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/concord-dawn-official",
+      "followers": 8,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "frida-soundcloud-03aa46f8ed5c",
+      "dj_id": "frida",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/fridadisc",
+      "label": "Frida",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/fridadisc",
+      "followers": 195,
+      "track_count": 9,
       "helpful": 0,
       "unhelpful": 0
     }
@@ -31487,6 +31712,678 @@
       "title": "Oil & Water",
       "url": "https://soundcloud.com/thisteeks/oil-water-1",
       "platform": "soundcloud"
+    },
+    {
+      "id": "lilbubblegum-youtube-1d4a559069c1",
+      "dj_id": "lilbubblegum",
+      "title": "updated aesthetic rap mix (ft. 1nonly, lilbubblegum, &amp; more)",
+      "url": "https://www.youtube.com/watch?v=3JOYuDdUAQ4",
+      "platform": "youtube"
+    },
+    {
+      "id": "lilbubblegum-youtube-58c2e6d95906",
+      "dj_id": "lilbubblegum",
+      "title": "LILBUBBLEGUM MIX",
+      "url": "https://www.youtube.com/watch?v=ZU6y7joV5YM",
+      "platform": "youtube"
+    },
+    {
+      "id": "ladyfem-soundcloud-d8ad5e7918e7",
+      "dj_id": "ladyfem",
+      "title": "Morph Festival Set - Bass & Dubstep - Recorded in Africa",
+      "url": "https://soundcloud.com/femke-burger-1/morph-festival-set-bass",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "ladyfem-soundcloud-7c7e6785fce8",
+      "dj_id": "ladyfem",
+      "title": "Manawa Ecstatic Dance - 28 February 2026",
+      "url": "https://soundcloud.com/femke-burger-1/ecstatic-dance-28-february",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "ladyfem-soundcloud-33d10816d0d3",
+      "dj_id": "ladyfem",
+      "title": "Manawa Ecstatic Dance - 23 January 2026",
+      "url": "https://soundcloud.com/femke-burger-1/manawa-ecstatic-dance-23-january-2026",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "ladyfem-soundcloud-4dbe1add575e",
+      "dj_id": "ladyfem",
+      "title": "Piha Summer Festival Ecstatic Dance - 29 November 2025",
+      "url": "https://soundcloud.com/femke-burger-1/piha-summer-festival-ecstatic-dance-29-november-2025",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "ladyfem-soundcloud-331dd59a2286",
+      "dj_id": "ladyfem",
+      "title": "Ecstatic Bass - February 2025 at The Button Factory",
+      "url": "https://soundcloud.com/femke-burger-1/ecstatic-bass-february-2025-at-the-button-factory",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "ladyfem-soundcloud-213e9109266c",
+      "dj_id": "ladyfem",
+      "title": "Manawa Ecstatic dance - 7 November 2025",
+      "url": "https://soundcloud.com/femke-burger-1/manawa-ecstatic-dance-7-november-2025",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "ladyfem-soundcloud-c6b18df527a1",
+      "dj_id": "ladyfem",
+      "title": "Virgo New Moon Eclipse Ecstatic Dance - September 2025",
+      "url": "https://soundcloud.com/femke-burger-1/virgo-new-moon-eclipse-ecstatic-dance-september-2025",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "ladyfem-soundcloud-fa8db78439c5",
+      "dj_id": "ladyfem",
+      "title": "Re:Generate - Party Set",
+      "url": "https://soundcloud.com/femke-burger-1/regenerate-party-set",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mathias-light-soundcloud-3af78315bc82",
+      "dj_id": "mathias-light",
+      "title": "Earth Beat Festival 2025 • Kaipara Stage",
+      "url": "https://soundcloud.com/mathiaslightx/earth-beat-festival-2025-kaipara-stage",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mathias-light-soundcloud-f5c8c661f4e7",
+      "dj_id": "mathias-light",
+      "title": "Moon Dance Ecstatic Dance • Mexico City • November 2024",
+      "url": "https://soundcloud.com/mathiaslightx/moon-dance-ecstatic-dance-mexico-city-november-2024",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-2cb4a21ec9f2",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 49 - Maranta",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-49-maranta",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-8a4f96322f2d",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 48 - Stevban",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-48-stevban",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-acb1e1182fe2",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 47 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-47-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-fb43552611d6",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 46 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-46-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-ce3f7b74d0f5",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 45 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-45-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-a3513e730b7d",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 44 - Dumay",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-44-dumay",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-627766ca1459",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 43 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-43-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-a0e5d815658f",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 42 - DanceRobDance",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-42-dancerobdance",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-7844f64c391d",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 41 - Pavlo",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-41-pavlo",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-73bb3f39ed18",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 40 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-40-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-3409fcca1488",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 39 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-39-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-dc2ed64bbfad",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 38 - PrismaDeer",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-38-prismadeer",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-ee836e33a0ae",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 37 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-37-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-d99835953bcb",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 36 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-36-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-2736e80b826c",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 35 - Duglio",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-35-duglio",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-21c38cbcd1cc",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 34 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-34-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-2b661e1ba0fe",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 33 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-33-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-022328d407a4",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 32 - Ricardo Torres (NDYD)",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-32-ricardo-torres-ndyd",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-eb1c5f5e7f1a",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 31 - José Salmerón",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-31-jose-salmeron",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-bf121be81659",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 30 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-30-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-545eb7811445",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 29 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-29-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-acc75a2f4922",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 28 - Camila Camaleón",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-28-camila-camaleon",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-592cc6a916a4",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 27 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-27-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-5b9362d2d249",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 26 - Anthony Zeceña",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-26-anthony-zecena",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-723432bdd4e5",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 25 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-25-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-ce8dd0236679",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 24 - George Suarez",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-24-george-suarez",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-799ecabec150",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 23 - Daysleeper",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-23-daysleeper",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-db2051d762fc",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 22 - Naveci",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-22-naveci",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-4caf9c1fd7eb",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 21 - Mike CC",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-21-mike-cc",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-f62bcf66bdfe",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 20 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-20-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-9afb6c6c8516",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 19 - Spaisi K",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-19-spaisi-k",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-862e052082aa",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 18 - Aereocat",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-18-aereocat",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-54c6cb75db0d",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 17 - Hesler",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-17-hesler",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-cb4fd7cf7811",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 16 - Marko Santos",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-16-marko-santos",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-e2778fc96ceb",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 15 - Ale Garcia",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-15-ale-garcia",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-d2141086685a",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 14 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-14-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-5cbca85a427a",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep- 13 - Acid Jesus",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-13-acid-jesus",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-4847d32ec62c",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 12 - Poporopo",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-12-poporopo",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-6ba303d42950",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 11 - Chiru",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-11-chiru",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-a8d215734d8a",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 10 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-10-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-20a75732b215",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 9 - Gilicoco",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-9-gilicoco",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-2e3a14e56052",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 8 - Zander",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-8-zander",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-5ba9d1987c99",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 7 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-7-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-da15e7721a8f",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 6 - Jose Pretz",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-6-jose-pretz",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-07409a1542e6",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 5 - Fuyituke",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-5-fuyituke",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-6baf7ec30f0f",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 4 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep-4-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-0221cb998305",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 3 - Ale Rivera - Edu Pretz",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep3-ale-rivera-edu-pretz",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-868772891445",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 2 - Ale Rivera",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/ep2-ale-rivera",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "mi-casa-su-casa-soundcloud-cada7446539c",
+      "dj_id": "mi-casa-su-casa",
+      "title": "Ep. 1 Ale Rivera - Erick Laparra",
+      "url": "https://soundcloud.com/micasa-sucasa-gt/1-ale-rivera-erick-laparra",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-e561c981b465",
+      "dj_id": "k-roto",
+      "title": "Kōroto x SAVAGEHINE (LIVE) : Sydenham Underpass : Caru & Brandn Shiraz Tour",
+      "url": "https://soundcloud.com/niahenson/k-roto-x-savagehine-sydenham",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-0386d6378c3c",
+      "dj_id": "k-roto",
+      "title": "Obscura II Mix // AHQ :: Kōroto",
+      "url": "https://soundcloud.com/niahenson/3dece3f7-f8e5-41d1-aaf0-5d0b3d6c8170",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-0ce380a298ca",
+      "dj_id": "k-roto",
+      "title": "Valiant",
+      "url": "https://soundcloud.com/niahenson/valiant-koroto_mastered-2",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-7c4ffd902170",
+      "dj_id": "k-roto",
+      "title": "Shadowstep",
+      "url": "https://soundcloud.com/niahenson/shadowstep-koroto-mastered-1",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-2e40e6001b6f",
+      "dj_id": "k-roto",
+      "title": "KOHU SESSIONS : Kōroto @ Tīrama Mai (100% Aotearoa Music)",
+      "url": "https://soundcloud.com/niahenson/kohu-sessions-koroto-tirama-mai",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-c1bf9293d9b1",
+      "dj_id": "k-roto",
+      "title": "Shadow Work Mix :: Ambient Headquarters @ Synchronicity 2024 :: KŌROTO",
+      "url": "https://soundcloud.com/niahenson/ambient-headquarters-x-koroto-x-synchronicity-2024",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-09fde4c5dd71",
+      "dj_id": "k-roto",
+      "title": "CEASEFIRE : PALESTINE FUNDRAISER MIX @ Space Academy : KŌROTO",
+      "url": "https://soundcloud.com/niahenson/ceasefire-palestine-fundraiser-mix-space-academy-koroto",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-41d0a8f40c80",
+      "dj_id": "k-roto",
+      "title": "Revenant - Kōroto",
+      "url": "https://soundcloud.com/niahenson/revenant-koroto",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-9414299a4950",
+      "dj_id": "k-roto",
+      "title": "Young Death - Burial (Kōroto Remix)",
+      "url": "https://soundcloud.com/niahenson/young-death-burial-koroto-remix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-6d39f20f64ca",
+      "dj_id": "k-roto",
+      "title": "BRUTALIST RAVE : hard techno mix : KŌROTO",
+      "url": "https://soundcloud.com/niahenson/brutalist-rave-mix-koroto",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-ac0d74501c62",
+      "dj_id": "k-roto",
+      "title": "Response to AYALUNA : send 4 BÜKA, MEILANGE, TE MANU",
+      "url": "https://soundcloud.com/niahenson/response-to-ayaluna-send-4-buka-meilange-te-manu",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-17edf225a5a9",
+      "dj_id": "k-roto",
+      "title": "MATARIKI MIX : KŌROTO : @ Poipoi 2024",
+      "url": "https://soundcloud.com/niahenson/matariki-mix-koroto-poipoi",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-1d73964a849f",
+      "dj_id": "k-roto",
+      "title": "Send it Sessions : RDU98.5fm : Ahirā/Kōroto x friends [100% originals + OG AOTEAROA MUSIC] 2024",
+      "url": "https://soundcloud.com/niahenson/send-it-sessions-rdu-985fm-ahira-x-koroto-ogs-x-friends",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-3e3b8eb10921",
+      "dj_id": "k-roto",
+      "title": "003 - Kōroto ft. Ahirā",
+      "url": "https://soundcloud.com/niahenson/koroto-003",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-9fd093e25031",
+      "dj_id": "k-roto",
+      "title": "MYSTIC NIGHTS Vol. 1 : Tribal Bass mix : KŌROTO",
+      "url": "https://soundcloud.com/niahenson/mystic-nights-vol-1-tribal-bass-mix",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-22ab8d48bb75",
+      "dj_id": "k-roto",
+      "title": "DEBUT @ THE PALACE : spooky bass mix : KŌROTO",
+      "url": "https://soundcloud.com/niahenson/debut-the-palace-spooky-mix-by-koroto-dra",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-b056e32b7285",
+      "dj_id": "k-roto",
+      "title": "Integration - Ahirā",
+      "url": "https://soundcloud.com/niahenson/integration",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-99adc1c6ef6e",
+      "dj_id": "k-roto",
+      "title": "Morpheus - Ahirā",
+      "url": "https://soundcloud.com/niahenson/morpheus",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-5e3d0603404f",
+      "dj_id": "k-roto",
+      "title": "Transformation - Ahirā ft. Laisa Loved",
+      "url": "https://soundcloud.com/niahenson/transformation-ft-laisa-loved",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-98a182b899f2",
+      "dj_id": "k-roto",
+      "title": "wanderer fr333style // raw guitar rec",
+      "url": "https://soundcloud.com/niahenson/wanderer-fr333style-raw-guitar-rec",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-a58c47990473",
+      "dj_id": "k-roto",
+      "title": "Precipitation",
+      "url": "https://soundcloud.com/niahenson/forecast",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "k-roto-soundcloud-e1c987b6c361",
+      "dj_id": "k-roto",
+      "title": "Instrumental",
+      "url": "https://soundcloud.com/niahenson/boppityhop",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-78b34b34e91b",
+      "dj_id": "minoa",
+      "title": "The Final Feast Of The Hounds",
+      "url": "https://soundcloud.com/minoa-262248286/the-final-feast-of-the-hounds",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-97926aafcd88",
+      "dj_id": "minoa",
+      "title": "Wish Well On Your Brother",
+      "url": "https://soundcloud.com/minoa-262248286/wish-well-on-your-brother",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-209d263d1d34",
+      "dj_id": "minoa",
+      "title": "Are You Not Entertained? (Feat. Bxre Fxce)",
+      "url": "https://soundcloud.com/minoa-262248286/are-you-not-entertained-feat",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-846e73b57d3e",
+      "dj_id": "minoa",
+      "title": "What Have They Done?",
+      "url": "https://soundcloud.com/minoa-262248286/what-have-they-done",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-a7564cc6ee3e",
+      "dj_id": "minoa",
+      "title": "Literary Devices",
+      "url": "https://soundcloud.com/minoa-262248286/literary-devices",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-3aee5725d392",
+      "dj_id": "minoa",
+      "title": "FrostBite",
+      "url": "https://soundcloud.com/minoa-262248286/frostbite",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-8ab3a210d8c6",
+      "dj_id": "minoa",
+      "title": "Infernal Flesh For The Pyre",
+      "url": "https://soundcloud.com/minoa-262248286/infernal-flesh-for-the-pyre",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-58ed922913cc",
+      "dj_id": "minoa",
+      "title": "Last House On The Left",
+      "url": "https://soundcloud.com/minoa-262248286/last-house-on-the-left",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-dd9afc1ae5b2",
+      "dj_id": "minoa",
+      "title": "Planet Piss",
+      "url": "https://soundcloud.com/minoa-262248286/planet-piss",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-f30303414fcb",
+      "dj_id": "minoa",
+      "title": "Old White Guys",
+      "url": "https://soundcloud.com/minoa-262248286/old-white-guys",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-1f5718c774e1",
+      "dj_id": "minoa",
+      "title": "Antifreeze",
+      "url": "https://soundcloud.com/minoa-262248286/antifreeze",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-0dafc0d45f55",
+      "dj_id": "minoa",
+      "title": "Lights! Camera! Action! (Ft. Bxre Fxce)",
+      "url": "https://soundcloud.com/minoa-262248286/lights-camera-action-ft-bxre",
+      "platform": "soundcloud"
+    },
+    {
+      "id": "minoa-soundcloud-aea4d198caf6",
+      "dj_id": "minoa",
+      "title": "Brand New Sleigh",
+      "url": "https://soundcloud.com/minoa-262248286/brand-new-sleigh",
+      "platform": "soundcloud"
     }
   ],
   "releases": [
@@ -32893,6 +33790,15 @@
       "label": "Polar, Polar",
       "format": "DVD, Mini, D/Sided, Promo, NTSC, PAL, Boo",
       "url": "https://api.discogs.com/releases/16192278"
+    },
+    {
+      "id": "maps-cee8cf59c9d7",
+      "dj_id": "maps",
+      "title": "Better Than Electric",
+      "year": 2021,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3317542"
     },
     {
       "id": "frida-b8a10121c026",
@@ -35107,6 +36013,2688 @@
       "label": "Ποπ + Ροκ, Sabam Crescendo",
       "format": "CD, Comp",
       "url": "https://api.discogs.com/releases/3332067"
+    },
+    {
+      "id": "maps-bb6351e68179",
+      "dj_id": "maps",
+      "title": " Welcome To The Tudor Gate",
+      "year": 2025,
+      "label": "Mute",
+      "format": "8xFile, FLAC, Album + File, FLAC, Mixed + 24-",
+      "url": "https://api.discogs.com/releases/35531545"
+    },
+    {
+      "id": "maps-aae747fe5a4a",
+      "dj_id": "maps",
+      "title": "Counter Continuo",
+      "year": 2024,
+      "label": "Mute",
+      "format": "6xFile, FLAC, EP, 24-",
+      "url": "https://api.discogs.com/releases/29517892"
+    },
+    {
+      "id": "maps-18ba762787d0",
+      "dj_id": "maps",
+      "title": "LF15 / A 4'33\" Walk To Woburn Sands Station",
+      "year": 2024,
+      "label": "Mortality Tables",
+      "format": "File, WAV, Single",
+      "url": "https://api.discogs.com/releases/31373050"
+    },
+    {
+      "id": "maps-108d300a8d65",
+      "dj_id": "maps",
+      "title": "Stay Another Day (7\" Edit) / I Don't Intend To Spend Christmas Without You / Jingle Bells",
+      "year": 2024,
+      "label": "Sonic Cathedral",
+      "format": "7\", Comp, Ltd, Gre",
+      "url": "https://api.discogs.com/releases/32771727"
+    },
+    {
+      "id": "maps-f0b8470f4a78",
+      "dj_id": "maps",
+      "title": "Lack Of Sleep (Pye Corner Audio Remix)",
+      "year": 2023,
+      "label": "Mute",
+      "format": "2xFile, FLAC, 24-",
+      "url": "https://api.discogs.com/releases/26451404"
+    },
+    {
+      "id": "maps-9b1bba2d6371",
+      "dj_id": "maps",
+      "title": "But Now We're Not In The Dark",
+      "year": 2023,
+      "label": "Loki Recordings",
+      "format": "File, MP3, Single",
+      "url": "https://api.discogs.com/releases/26907386"
+    },
+    {
+      "id": "maps-0bf7dfeef6a5",
+      "dj_id": "maps",
+      "title": "Counter Mixes",
+      "year": 2023,
+      "label": "Mute",
+      "format": "6xFile, FLAC, 24-",
+      "url": "https://api.discogs.com/releases/27416757"
+    },
+    {
+      "id": "maps-ffa799011fe6",
+      "dj_id": "maps",
+      "title": "Transmission (Plaid Remix)",
+      "year": 2023,
+      "label": "Mute",
+      "format": "2xFile, FLAC, 24-",
+      "url": "https://api.discogs.com/releases/28555243"
+    },
+    {
+      "id": "maps-70e9af47c160",
+      "dj_id": "maps",
+      "title": "Counter Melodies",
+      "year": 2023,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/2974888"
+    },
+    {
+      "id": "maps-30dbff29ecdd",
+      "dj_id": "maps",
+      "title": "Witchy Feel",
+      "year": 2022,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/2897083"
+    },
+    {
+      "id": "maps-4b74c66f166c",
+      "dj_id": "maps",
+      "title": "Love Will Come (Maps' Brave New Version)",
+      "year": 2021,
+      "label": "Mute",
+      "format": "File, FLAC, Single, 24-",
+      "url": "https://api.discogs.com/releases/17763238"
+    },
+    {
+      "id": "maps-3b23036d4b4f",
+      "dj_id": "maps",
+      "title": "EP1. Colours. Remixed. Time. Loss.",
+      "year": 2020,
+      "label": "Mute",
+      "format": "3xFile, FLAC, EP, 24-",
+      "url": "https://api.discogs.com/releases/15350102"
+    },
+    {
+      "id": "maps-adb2cd95190f",
+      "dj_id": "maps",
+      "title": "EP2. Colours. Remixed. Time. Loss.",
+      "year": 2020,
+      "label": "Mute",
+      "format": "3xFile, FLAC, EP, 24-",
+      "url": "https://api.discogs.com/releases/15499809"
+    },
+    {
+      "id": "maps-b4c433a2313f",
+      "dj_id": "maps",
+      "title": "EP3. Colours. Remixed. Time. Loss.",
+      "year": 2020,
+      "label": "Mute",
+      "format": "3xFile, FLAC, EP, 24-",
+      "url": "https://api.discogs.com/releases/15636548"
+    },
+    {
+      "id": "maps-553130b8aa32",
+      "dj_id": "maps",
+      "title": "EP4. Colours. Remixed. Time. Loss.",
+      "year": 2020,
+      "label": "Mute",
+      "format": "3xFile, FLAC, EP, 24-",
+      "url": "https://api.discogs.com/releases/15798768"
+    },
+    {
+      "id": "maps-7d5d97757b8b",
+      "dj_id": "maps",
+      "title": "Colours. Remixed. Time. Loss.",
+      "year": 2020,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1792200"
+    },
+    {
+      "id": "maps-f9064e22914d",
+      "dj_id": "maps",
+      "title": "Sleep Today",
+      "year": 2020,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1858317"
+    },
+    {
+      "id": "maps-81d71a272848",
+      "dj_id": "maps",
+      "title": "Just Reflecting",
+      "year": 2019,
+      "label": "Mute",
+      "format": "2xFile, FLAC, Single, 24-",
+      "url": "https://api.discogs.com/releases/13210608"
+    },
+    {
+      "id": "maps-dc23d37da5a9",
+      "dj_id": "maps",
+      "title": "Both Sides",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1525532"
+    },
+    {
+      "id": "maps-0a933044eb98",
+      "dj_id": "maps",
+      "title": "Surveil",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1557302"
+    },
+    {
+      "id": "maps-5ff59cac52e5",
+      "dj_id": "maps",
+      "title": "Colours. Reflect. Time. Loss.",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1542976"
+    },
+    {
+      "id": "maps-2d2dbd34fdca",
+      "dj_id": "maps",
+      "title": "The Plans We Made",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1587021"
+    },
+    {
+      "id": "maps-e91988e04183",
+      "dj_id": "maps",
+      "title": "Realigned - Album Sampler",
+      "year": 2014,
+      "label": "Mute",
+      "format": "CDr, Promo, Smplr",
+      "url": "https://api.discogs.com/releases/5871009"
+    },
+    {
+      "id": "maps-2d02f9286911",
+      "dj_id": "maps",
+      "title": "Realigned",
+      "year": 2014,
+      "label": "Mute",
+      "format": "12xFile, WAV, Album + File, WAV, Mixed",
+      "url": "https://api.discogs.com/releases/6001090"
+    },
+    {
+      "id": "maps-0be2f335d50e",
+      "dj_id": "maps",
+      "title": "Vicissitude Remixes & Demo Recordings",
+      "year": 2013,
+      "label": "Mute",
+      "format": "CDr, EP, Ltd",
+      "url": "https://api.discogs.com/releases/4714144"
+    },
+    {
+      "id": "maps-91082f2899c7",
+      "dj_id": "maps",
+      "title": "Vicissitude Bonus MP3s",
+      "year": 2013,
+      "label": "Mute",
+      "format": "9xFile, MP3, EP, Comp, 320",
+      "url": "https://api.discogs.com/releases/4722763"
+    },
+    {
+      "id": "maps-b287c5268c0c",
+      "dj_id": "maps",
+      "title": "Daytrotter Session",
+      "year": 2013,
+      "label": "Daytrotter",
+      "format": "5xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/4929012"
+    },
+    {
+      "id": "maps-a0b3419f8d1b",
+      "dj_id": "maps",
+      "title": "Vicissitude Demo Recordings",
+      "year": 2013,
+      "label": "Mute",
+      "format": "CDr, Ltd, Promo",
+      "url": "https://api.discogs.com/releases/5609217"
+    },
+    {
+      "id": "maps-42d38428c3bd",
+      "dj_id": "maps",
+      "title": "Vicissitude",
+      "year": 2013,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/573995"
+    },
+    {
+      "id": "maps-adb1b094e72e",
+      "dj_id": "maps",
+      "title": "A.M.A.",
+      "year": 2013,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/565928"
+    },
+    {
+      "id": "maps-ff42563b0dd8",
+      "dj_id": "maps",
+      "title": "I Heard Them Say",
+      "year": 2013,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/565930"
+    },
+    {
+      "id": "maps-c76e67b06591",
+      "dj_id": "maps",
+      "title": "You Will Find A Way (Remixes)",
+      "year": 2013,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/648958"
+    },
+    {
+      "id": "maps-9b837042d150",
+      "dj_id": "maps",
+      "title": "The Rules Of Baseball - Rule No. 1",
+      "year": 2009,
+      "label": "Not On Label (Maps Self-released)",
+      "format": "File, MP3, Comp, Mixed, 64 ",
+      "url": "https://api.discogs.com/releases/1798358"
+    },
+    {
+      "id": "maps-700bba6903e3",
+      "dj_id": "maps",
+      "title": "The Rules Of Baseball - Rule No. 2 - Don't Be Afraid To Fall In Love For The 14th Time",
+      "year": 2009,
+      "label": "Not On Label (Maps Self-released)",
+      "format": "File, MP3, Comp, Mixed, 128",
+      "url": "https://api.discogs.com/releases/1799316"
+    },
+    {
+      "id": "maps-e91f29a8810d",
+      "dj_id": "maps",
+      "title": "The Rules Of Baseball - Rule No. 3 - Summer Is All About Barbecues, Babes, B-boys, Beats, Beverages And Baseball Bliss",
+      "year": 2009,
+      "label": "Not On Label (Maps Self-released)",
+      "format": "File, MP3, Comp, Mixed, 128",
+      "url": "https://api.discogs.com/releases/1867214"
+    },
+    {
+      "id": "maps-0bfde73f177d",
+      "dj_id": "maps",
+      "title": "Love Will Come",
+      "year": 2009,
+      "label": "Mute",
+      "format": "CDr, Promo",
+      "url": "https://api.discogs.com/releases/2784309"
+    },
+    {
+      "id": "maps-f5232e5937a2",
+      "dj_id": "maps",
+      "title": "The Rules Of Baseball - Rule No. 4 - You Gotta Love This Disco World, Chock-A-Block Full Of Cute Girls And Cowbells",
+      "year": 2009,
+      "label": "Not On Label (Maps Self-released)",
+      "format": "File, MP3, Comp, Mixed, 160",
+      "url": "https://api.discogs.com/releases/3102055"
+    },
+    {
+      "id": "maps-5a0092e042ce",
+      "dj_id": "maps",
+      "title": "The Rules Of Baseball - Rule No. 5 - You Must Travel Through The Heart Of The Abyss To Understand The True Meaning Of Bliss. Swallow It All. Every Last Drop. The Taste Of Death Makes The Taste Of Life Sweeter",
+      "year": 2009,
+      "label": "Not On Label (Maps Self-released)",
+      "format": "File, MP3, Comp, Mixed, 128",
+      "url": "https://api.discogs.com/releases/3102088"
+    },
+    {
+      "id": "maps-b46f2f04ae9f",
+      "dj_id": "maps",
+      "title": "Die Happy, Die Smiling",
+      "year": 2009,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/238213"
+    },
+    {
+      "id": "maps-c3b9cd30ec4c",
+      "dj_id": "maps",
+      "title": "I Dream Of Crystal (Club Promo)",
+      "year": 2009,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/190728"
+    },
+    {
+      "id": "maps-fe999ad441bb",
+      "dj_id": "maps",
+      "title": "Let Go Of The Fear",
+      "year": 2009,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/135607"
+    },
+    {
+      "id": "maps-cff4f1aca52d",
+      "dj_id": "maps",
+      "title": "Turning The Mind",
+      "year": 2009,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/184260"
+    },
+    {
+      "id": "maps-07442449da59",
+      "dj_id": "maps",
+      "title": "To The Sky / We Own The Sky",
+      "year": 2008,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/9378"
+    },
+    {
+      "id": "maps-a2d2ffbcd78e",
+      "dj_id": "maps",
+      "title": "Album Sampler",
+      "year": 2007,
+      "label": "Mute",
+      "format": "CDr, Promo, Smplr",
+      "url": "https://api.discogs.com/releases/1034607"
+    },
+    {
+      "id": "maps-e337f812f1b5",
+      "dj_id": "maps",
+      "title": "Region Three",
+      "year": 2007,
+      "label": "Last Space Recordings, Last Space Recordings",
+      "format": "CD, Ltd, Promo",
+      "url": "https://api.discogs.com/releases/1836362"
+    },
+    {
+      "id": "maps-be2282d45a2d",
+      "dj_id": "maps",
+      "title": "Do It Again / Pogo / It Will Find You",
+      "year": 2007,
+      "label": "Virgin, Kitsuné Music, Freestyle Dust, Mute",
+      "format": "CDr, Promo",
+      "url": "https://api.discogs.com/releases/1877602"
+    },
+    {
+      "id": "maps-02c36476b85e",
+      "dj_id": "maps",
+      "title": "New Music From Mute",
+      "year": 2007,
+      "label": "Mute",
+      "format": "CDr, Promo, Smplr",
+      "url": "https://api.discogs.com/releases/2119687"
+    },
+    {
+      "id": "maps-76d3acc816ca",
+      "dj_id": "maps",
+      "title": "Region Four",
+      "year": 2007,
+      "label": "Last Space Recordings",
+      "format": "CD, Promo",
+      "url": "https://api.discogs.com/releases/2765916"
+    },
+    {
+      "id": "maps-1afea29039cd",
+      "dj_id": "maps",
+      "title": "Rough Trade EP",
+      "year": 2007,
+      "label": "Mute",
+      "format": "CD, EP, Promo",
+      "url": "https://api.discogs.com/releases/3926508"
+    },
+    {
+      "id": "six60-e1e3c3530f54",
+      "dj_id": "six60",
+      "title": "Right Here Right Now",
+      "year": 2026,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/4130440"
+    },
+    {
+      "id": "six60-af92228333f8",
+      "dj_id": "six60",
+      "title": "The Grassroots Album",
+      "year": 2024,
+      "label": "Massive Entertainment (2)",
+      "format": "CD, Album, Num",
+      "url": "https://api.discogs.com/releases/31681910"
+    },
+    {
+      "id": "six60-42a96ef3fc05",
+      "dj_id": "six60",
+      "title": "Castle St",
+      "year": 2022,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3164925"
+    },
+    {
+      "id": "six60-44614290de83",
+      "dj_id": "six60",
+      "title": "Pepeha",
+      "year": 2021,
+      "label": "Massive Entertainment (2)",
+      "format": "File, MP3, Single, Ltd",
+      "url": "https://api.discogs.com/releases/20745295"
+    },
+    {
+      "id": "six60-1476e95ee40e",
+      "dj_id": "six60",
+      "title": "Six60 (2019)",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1646972"
+    },
+    {
+      "id": "six60-9d5cb4ef1aeb",
+      "dj_id": "six60",
+      "title": "Six60 EP",
+      "year": 2017,
+      "label": "Massive Entertainment (2)",
+      "format": "CD, EP",
+      "url": "https://api.discogs.com/releases/14483706"
+    },
+    {
+      "id": "six60-6269650eb41f",
+      "dj_id": "six60",
+      "title": "Six60",
+      "year": 2015,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1586581"
+    },
+    {
+      "id": "six60-209afc0b4dc9",
+      "dj_id": "six60",
+      "title": "SIX60 EP",
+      "year": 2013,
+      "label": "Not On Label",
+      "format": "CD, EP",
+      "url": "https://api.discogs.com/releases/7053900"
+    },
+    {
+      "id": "six60-aa8e8ddf62de",
+      "dj_id": "six60",
+      "title": "Six60",
+      "year": 2013,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/847295"
+    },
+    {
+      "id": "six60-87df757402ab",
+      "dj_id": "six60",
+      "title": "Never Coming Home",
+      "year": 2025,
+      "label": "Island Records Australia",
+      "format": "7\", Single",
+      "url": "https://api.discogs.com/releases/35268412"
+    },
+    {
+      "id": "six60-293706643a4c",
+      "dj_id": "six60",
+      "title": "Fall From The Light",
+      "year": 2025,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3926685"
+    },
+    {
+      "id": "six60-a34c240efa2b",
+      "dj_id": "six60",
+      "title": "Coterie",
+      "year": 2022,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/4082851"
+    },
+    {
+      "id": "six60-878c37409d54",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 60",
+      "year": 2019,
+      "label": "Universal Music New Zealand, Sony Music, Warner Music New Zealand",
+      "format": "2xCD, Comp, S/Edition",
+      "url": "https://api.discogs.com/releases/28707196"
+    },
+    {
+      "id": "six60-432104462e53",
+      "dj_id": "six60",
+      "title": "Waiata / Anthems",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3849249"
+    },
+    {
+      "id": "six60-5b19d5806313",
+      "dj_id": "six60",
+      "title": "So Fresh: The Hits Of Autumn 2020",
+      "year": 2020,
+      "label": "Sony Music, Universal Music",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/15230881"
+    },
+    {
+      "id": "six60-823820362706",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 61",
+      "year": 2020,
+      "label": "Universal Music New Zealand, Sony Music, Warner Music New Zealand",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/16996692"
+    },
+    {
+      "id": "six60-6fb1c647441e",
+      "dj_id": "six60",
+      "title": "Ten Guitars Homegrown Heroes Vol 2",
+      "year": 2018,
+      "label": "Universal Music",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/15053881"
+    },
+    {
+      "id": "six60-ebd353b24b6d",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 56",
+      "year": 2018,
+      "label": "Universal Music New Zealand",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/24947995"
+    },
+    {
+      "id": "six60-138d5efa982e",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 57",
+      "year": 2018,
+      "label": "Universal Music New Zealand, Sony Music, Warner Music New Zealand",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/28707295"
+    },
+    {
+      "id": "six60-05f06f45a13f",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 58",
+      "year": 2018,
+      "label": "Universal Music New Zealand Limited, Sony Music, Warner Music New Zealand",
+      "format": "2xCD, Comp, S/Edition",
+      "url": "https://api.discogs.com/releases/30665248"
+    },
+    {
+      "id": "six60-a7d3303be51a",
+      "dj_id": "six60",
+      "title": "Ten Guitars Homegrown Heroes 42 Tracks From The Long White Cloud",
+      "year": 2017,
+      "label": "Universal",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/16120529"
+    },
+    {
+      "id": "six60-f35499ae0658",
+      "dj_id": "six60",
+      "title": "Volume (Making Music In Aotearoa)",
+      "year": 2016,
+      "label": "Sony Music, Universal Music Group New Zealand",
+      "format": "5xCD, Comp, Box",
+      "url": "https://api.discogs.com/releases/26699273"
+    },
+    {
+      "id": "six60-2afc4fb6f623",
+      "dj_id": "six60",
+      "title": "Volume (Making Music In Aotearoa) 2000s",
+      "year": 2016,
+      "label": "Sony Music, Universal Music Group New Zealand",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/26879945"
+    },
+    {
+      "id": "six60-124383395cdd",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 48",
+      "year": 2015,
+      "label": "Universal Music New Zealand, Sony Music, Warner Music New Zealand",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/14962192"
+    },
+    {
+      "id": "six60-e99ae568f1b6",
+      "dj_id": "six60",
+      "title": "Kiwi Hit Disc Special Edition [25 x 25]",
+      "year": 2015,
+      "label": "NZ On Air",
+      "format": "2xCD, Comp, Promo",
+      "url": "https://api.discogs.com/releases/15233748"
+    },
+    {
+      "id": "six60-da515e269ccd",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 49",
+      "year": 2015,
+      "label": "Universal Music New Zealand, Sony Music, Warner Music New Zealand",
+      "format": "2xCD, Comp, S/Edition",
+      "url": "https://api.discogs.com/releases/20932357"
+    },
+    {
+      "id": "six60-8fd5d3bcf913",
+      "dj_id": "six60",
+      "title": "Now That's What I Call Music 47",
+      "year": 2015,
+      "label": "Sony Music",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/22647533"
+    },
+    {
+      "id": "six60-9f5d2df611b9",
+      "dj_id": "six60",
+      "title": "Vaterfreuden (Original Motion Picture Soundtrack)",
+      "year": 2014,
+      "label": "Four Music",
+      "format": "CD, Album",
+      "url": "https://api.discogs.com/releases/5421153"
+    },
+    {
+      "id": "six60-fda30e7821f9",
+      "dj_id": "six60",
+      "title": "The Dome Vol. 69",
+      "year": 2014,
+      "label": "Sony Music",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/5840773"
+    },
+    {
+      "id": "six60-bddbfa4ce20c",
+      "dj_id": "six60",
+      "title": "Nature's Best (40 NZ Number Ones 1970-2013)",
+      "year": 2013,
+      "label": "Sony Music",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/15562354"
+    },
+    {
+      "id": "six60-7a2f288e7ce5",
+      "dj_id": "six60",
+      "title": "New Zealand @ SXSW 2013",
+      "year": 2013,
+      "label": "New Zealand Music Commission",
+      "format": "CD, Album, Promo",
+      "url": "https://api.discogs.com/releases/15694917"
+    },
+    {
+      "id": "six60-214d34de9067",
+      "dj_id": "six60",
+      "title": "SessioNZ",
+      "year": 2012,
+      "label": "Ministry Of Sound",
+      "format": "2xCD, Comp, Mixed",
+      "url": "https://api.discogs.com/releases/3579711"
+    },
+    {
+      "id": "six60-217bb0b73959",
+      "dj_id": "six60",
+      "title": "Music Week Presents March 2012",
+      "year": 2012,
+      "label": "Music Week",
+      "format": "CD, Comp, Promo",
+      "url": "https://api.discogs.com/releases/6375012"
+    },
+    {
+      "id": "six60-f9a9096d064a",
+      "dj_id": "six60",
+      "title": "Vodafone NZ Music Awards 2012",
+      "year": 2012,
+      "label": "RIANZ",
+      "format": "CD, Comp + DVD, Comp",
+      "url": "https://api.discogs.com/releases/11095687"
+    },
+    {
+      "id": "six60-2a9567c9fe3d",
+      "dj_id": "six60",
+      "title": "Kiwi Hit Clips 2012",
+      "year": 2012,
+      "label": "NZ On Air",
+      "format": "DVD-V, Comp, Promo, PAL",
+      "url": "https://api.discogs.com/releases/15221787"
+    },
+    {
+      "id": "six60-ddecdda5582c",
+      "dj_id": "six60",
+      "title": "Kiwi Hit Clips 2011",
+      "year": 2011,
+      "label": "NZ On Air",
+      "format": "DVD-V, Comp, Promo, PAL",
+      "url": "https://api.discogs.com/releases/14934804"
+    },
+    {
+      "id": "six60-2187cfd69951",
+      "dj_id": "six60",
+      "title": "Weekend Sessions 2",
+      "year": 2011,
+      "label": "Liberation Music New Zealand Ltd.",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/21019897"
+    },
+    {
+      "id": "six60-fa9f9f51e4e2",
+      "dj_id": "six60",
+      "title": "Kiwi Hit Disc 140 (August | 2011)",
+      "year": 2011,
+      "label": "NZ On Air",
+      "format": "2xCD, Comp, Promo",
+      "url": "https://api.discogs.com/releases/25081477"
+    },
+    {
+      "id": "six60-345ca74bb59b",
+      "dj_id": "six60",
+      "title": "The 46th Annual Vodafone NZ Music Awards 2011",
+      "year": 2011,
+      "label": "Recorded Music NZ",
+      "format": "CD, Comp, Promo + DVD, Comp, Promo",
+      "url": "https://api.discogs.com/releases/29440120"
+    },
+    {
+      "id": "six60-e2b0641504fc",
+      "dj_id": "six60",
+      "title": "Kiwi HIt Disc 144  - December 2011",
+      "year": 2011,
+      "label": "NZ On Air",
+      "format": "CD",
+      "url": "https://api.discogs.com/releases/31061639"
+    },
+    {
+      "id": "six60-ddfd14327e77",
+      "dj_id": "six60",
+      "title": "Kiwi Hit Disc 131 - October | 2010",
+      "year": 2010,
+      "label": "NZ On Air",
+      "format": "CD, Comp, Promo",
+      "url": "https://api.discogs.com/releases/2964273"
+    },
+    {
+      "id": "kosu-1e0395bcf37c",
+      "dj_id": "kosu",
+      "title": "All Nighter Vol. 10",
+      "year": 2025,
+      "label": "FORM (9)",
+      "format": "47xFile, MP3, Comp, 320",
+      "url": "https://api.discogs.com/releases/35009837"
+    },
+    {
+      "id": "kosu-3ea822bb3654",
+      "dj_id": "kosu",
+      "title": "All Nighter Vol. 9",
+      "year": 2024,
+      "label": "FORM (9)",
+      "format": "45xFile, MP3, Comp, 320",
+      "url": "https://api.discogs.com/releases/31504871"
+    },
+    {
+      "id": "kosu-fb8c0f18867f",
+      "dj_id": "kosu",
+      "title": "Exobolt 011",
+      "year": 2024,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/4215069"
+    },
+    {
+      "id": "kosu-783ad65c8474",
+      "dj_id": "kosu",
+      "title": "All Nighter Vol. 7",
+      "year": 2022,
+      "label": "FORM (9)",
+      "format": "44xFile, MP3, Comp, 320",
+      "url": "https://api.discogs.com/releases/24220544"
+    },
+    {
+      "id": "leisure-4d6d536496c3",
+      "dj_id": "leisure",
+      "title": "Welcome To The Mood",
+      "year": 2025,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/4005607"
+    },
+    {
+      "id": "leisure-e6c50880da69",
+      "dj_id": "leisure",
+      "title": "Leisurevision",
+      "year": 2023,
+      "label": "Nettwerk",
+      "format": "LP, Album, Gre",
+      "url": "https://api.discogs.com/releases/28460932"
+    },
+    {
+      "id": "leisure-25246c5cec55",
+      "dj_id": "leisure",
+      "title": "Side B",
+      "year": 2021,
+      "label": "Not On Label (Leisure (13) Self-released)",
+      "format": "5xFile, AAC, EP, 256",
+      "url": "https://api.discogs.com/releases/23929649"
+    },
+    {
+      "id": "leisure-ae931598a16d",
+      "dj_id": "leisure",
+      "title": "Sunsetter",
+      "year": 2021,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/2753054"
+    },
+    {
+      "id": "leisure-77d5c25ce3cd",
+      "dj_id": "leisure",
+      "title": "Side A - EP",
+      "year": 2020,
+      "label": "Not On Label (Leisure (13) Self-released)",
+      "format": "5xFile, AAC, EP, 256",
+      "url": "https://api.discogs.com/releases/23929607"
+    },
+    {
+      "id": "leisure-1c3b33e419a5",
+      "dj_id": "leisure",
+      "title": "Twister",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1597557"
+    },
+    {
+      "id": "leisure-913e4b09a6ad",
+      "dj_id": "leisure",
+      "title": "Alone Together",
+      "year": 2017,
+      "label": "Not On Label (Leisure (13) Self-released)",
+      "format": "File, AAC, Single, 256",
+      "url": "https://api.discogs.com/releases/23929619"
+    },
+    {
+      "id": "leisure-fb9e709b73a5",
+      "dj_id": "leisure",
+      "title": "Leisure",
+      "year": 2016,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3908224"
+    },
+    {
+      "id": "leisure-1ff454864421",
+      "dj_id": "leisure",
+      "title": "It’s Alright (On The Suez Canal)",
+      "year": 2010,
+      "label": "The Doorway",
+      "format": "File, AAC, Single, 256",
+      "url": "https://api.discogs.com/releases/36540184"
+    },
+    {
+      "id": "leisure-be7ea56fb4f2",
+      "dj_id": "leisure",
+      "title": "Nova La Plage",
+      "year": 2026,
+      "label": "Nova Records",
+      "format": "2xLP, Comp",
+      "url": "https://api.discogs.com/releases/37985928"
+    },
+    {
+      "id": "leisure-8681765c0bf9",
+      "dj_id": "leisure",
+      "title": "Echoes of the Emerald Sands",
+      "year": 2026,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/4268460"
+    },
+    {
+      "id": "leisure-db54f6ffff0e",
+      "dj_id": "leisure",
+      "title": "FUV Live 27",
+      "year": 2024,
+      "label": "WFUV",
+      "format": "CD",
+      "url": "https://api.discogs.com/releases/34113646"
+    },
+    {
+      "id": "leisure-8038fcab82af",
+      "dj_id": "leisure",
+      "title": "Nu Soul: The Finest Soul Tracks From The New Generation",
+      "year": 2022,
+      "label": "Wagram Music",
+      "format": "LP, Comp",
+      "url": "https://api.discogs.com/releases/23362040"
+    },
+    {
+      "id": "leisure-ec368572a9e1",
+      "dj_id": "leisure",
+      "title": "RAM Café 16",
+      "year": 2021,
+      "label": "Magic Records",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/21302785"
+    },
+    {
+      "id": "leisure-ddce85baa46f",
+      "dj_id": "leisure",
+      "title": "No Sleep Till Brentwood",
+      "year": 2019,
+      "label": "New Zealand Music Commission",
+      "format": "LP, Comp, Ltd, Promo, Smplr",
+      "url": "https://api.discogs.com/releases/14359208"
+    },
+    {
+      "id": "leisure-4d09e7bb50ad",
+      "dj_id": "leisure",
+      "title": "Alpine Grooves Easy Beats 3",
+      "year": 2019,
+      "label": "Musicpark Records",
+      "format": "CD, Comp, Mixed",
+      "url": "https://api.discogs.com/releases/34663306"
+    },
+    {
+      "id": "leisure-0d37b9ece8e1",
+      "dj_id": "leisure",
+      "title": "Chillout Sessions 20",
+      "year": 2018,
+      "label": "Ministry Of Sound",
+      "format": "2xCD, Comp, Mixed",
+      "url": "https://api.discogs.com/releases/12548806"
+    },
+    {
+      "id": "leisure-abc5bada6716",
+      "dj_id": "leisure",
+      "title": "Haute Musique II Nova",
+      "year": 2017,
+      "label": "Nova Records, Wagram Music",
+      "format": "6xCD, Comp + Box",
+      "url": "https://api.discogs.com/releases/11217064"
+    },
+    {
+      "id": "leisure-39920d644ac3",
+      "dj_id": "leisure",
+      "title": "Three Summers",
+      "year": 2017,
+      "label": "Universal",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/17469160"
+    },
+    {
+      "id": "leisure-7cd2a756f2bc",
+      "dj_id": "leisure",
+      "title": "Kitsuné Maison 18: The Hysterical Advisory Issue",
+      "year": 2016,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1398021"
+    },
+    {
+      "id": "millie-61d1b0f015a8",
+      "dj_id": "millie",
+      "title": "Now That You Got / Hypocrisy",
+      "year": 2026,
+      "label": "Rocafort Records",
+      "format": "7\", RE",
+      "url": "https://api.discogs.com/releases/36600724"
+    },
+    {
+      "id": "millie-0d01e929fd17",
+      "dj_id": "millie",
+      "title": "Spring Revisted v Kenny Dope -The 45 Mixes ",
+      "year": 2026,
+      "label": "Acid Jazz",
+      "format": "7\"",
+      "url": "https://api.discogs.com/releases/37312209"
+    },
+    {
+      "id": "millie-84957ad25e57",
+      "dj_id": "millie",
+      "title": "Spring Revisited vs Kenny Dope: The 45 Remixes",
+      "year": 2026,
+      "label": "Acid Jazz",
+      "format": "7\"",
+      "url": "https://api.discogs.com/releases/37724223"
+    },
+    {
+      "id": "millie-abd2788192ee",
+      "dj_id": "millie",
+      "title": "What Went Wrong Last Night (Natasha Diggs Remix)",
+      "year": 2026,
+      "label": "Cosmos Music (6)",
+      "format": "3xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/38027133"
+    },
+    {
+      "id": "millie-d4d91380e856",
+      "dj_id": "millie",
+      "title": "Don't Send Nobody Else (A Magnus Frykberg & Kenny Dope Joint)",
+      "year": 2025,
+      "label": "Cosmos Music (6)",
+      "format": "File, MP3, 320",
+      "url": "https://api.discogs.com/releases/34963916"
+    },
+    {
+      "id": "millie-e7a7d20e914a",
+      "dj_id": "millie",
+      "title": "The Stars Of Spring",
+      "year": 2018,
+      "label": "Kent Soul",
+      "format": "7\", EP, Comp, Mono, Ltd, RM",
+      "url": "https://api.discogs.com/releases/12818301"
+    },
+    {
+      "id": "millie-c04f3b17aeb1",
+      "dj_id": "millie",
+      "title": "Exposed: The Multi Track Sessions",
+      "year": 2018,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1396662"
+    },
+    {
+      "id": "millie-c73493566305",
+      "dj_id": "millie",
+      "title": "The Tide Is Turning & Back To The S**t",
+      "year": 2017,
+      "label": "Floating World",
+      "format": "CD, Album, RE + CD, Album, RE + Comp",
+      "url": "https://api.discogs.com/releases/11750753"
+    },
+    {
+      "id": "millie-47c6d10ee852",
+      "dj_id": "millie",
+      "title": "On The Soul Country Side",
+      "year": 2014,
+      "label": "Kent Soul",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/6101952"
+    },
+    {
+      "id": "millie-d382229bdd66",
+      "dj_id": "millie",
+      "title": "The Moods Of Millie Jackson (Her Best Ballads)",
+      "year": 2013,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3755103"
+    },
+    {
+      "id": "millie-9d67879ba406",
+      "dj_id": "millie",
+      "title": "Soul For The Dancefloor",
+      "year": 2008,
+      "label": "Kent Dance",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/2534263"
+    },
+    {
+      "id": "millie-5e8ec152ecf8",
+      "dj_id": "millie",
+      "title": "If That Don't Turn You On / You Can't Stand The Thought Of Another Man Loving Me",
+      "year": 2008,
+      "label": "Kent Records",
+      "format": "7\", Single",
+      "url": "https://api.discogs.com/releases/2882971"
+    },
+    {
+      "id": "millie-de7ecb85c7de",
+      "dj_id": "millie",
+      "title": "House For Sale / Come Through Me",
+      "year": 2007,
+      "label": "Kent Records",
+      "format": "7\", Mono",
+      "url": "https://api.discogs.com/releases/1462694"
+    },
+    {
+      "id": "millie-afb7336cb8e5",
+      "dj_id": "millie",
+      "title": "Soul Circuit Retrospectives",
+      "year": 2006,
+      "label": "DM Records",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/19792954"
+    },
+    {
+      "id": "millie-9439f25589cd",
+      "dj_id": "millie",
+      "title": "Don't Walk Away",
+      "year": 2004,
+      "label": "Planet Song",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/3246352"
+    },
+    {
+      "id": "millie-8182f29e7756",
+      "dj_id": "millie",
+      "title": "Don't Send Nobody Else / Two Wrongs Don't Make A Right",
+      "year": 2002,
+      "label": "Kent Records",
+      "format": "7\"",
+      "url": "https://api.discogs.com/releases/1528949"
+    },
+    {
+      "id": "millie-7dd5c444d3cb",
+      "dj_id": "millie",
+      "title": "Butt-A-Cize",
+      "year": 2001,
+      "label": "Weird Wreckuds",
+      "format": "CD, Maxi",
+      "url": "https://api.discogs.com/releases/644538"
+    },
+    {
+      "id": "millie-3c999b870acc",
+      "dj_id": "millie",
+      "title": "Essentials",
+      "year": 2001,
+      "label": "Bellmark Records",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/19446895"
+    },
+    {
+      "id": "millie-d23a4337c43b",
+      "dj_id": "millie",
+      "title": "Not For Church Folk!",
+      "year": 2001,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1375164"
+    },
+    {
+      "id": "millie-28a64f6166b5",
+      "dj_id": "millie",
+      "title": "Sex And Soul",
+      "year": 2000,
+      "label": "7-N Music",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/11462786"
+    },
+    {
+      "id": "millie-eccb1be67df7",
+      "dj_id": "millie",
+      "title": "Comme Un Aimant Instru",
+      "year": 2000,
+      "label": "Not On Label",
+      "format": "12\", Tour",
+      "url": "https://api.discogs.com/releases/15496714"
+    },
+    {
+      "id": "millie-664d02030c02",
+      "dj_id": "millie",
+      "title": "Between The Sheets",
+      "year": 1999,
+      "label": "7-N Music",
+      "format": "CD, Comp, RM",
+      "url": "https://api.discogs.com/releases/3136755"
+    },
+    {
+      "id": "millie-428a66a6e9b9",
+      "dj_id": "millie",
+      "title": "Did You Think I Wouldn't Cry",
+      "year": 1997,
+      "label": "Ichiban Records",
+      "format": "7\"",
+      "url": "https://api.discogs.com/releases/6029832"
+    },
+    {
+      "id": "millie-bc709609dc32",
+      "dj_id": "millie",
+      "title": "Totally Unrestricted! (The Millie Jackson Anthology)",
+      "year": 1997,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3897181"
+    },
+    {
+      "id": "millie-f14f18110ed4",
+      "dj_id": "millie",
+      "title": "The Sequel: It Ain't Over",
+      "year": 1997,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/2609621"
+    },
+    {
+      "id": "millie-0a9852a7cba2",
+      "dj_id": "millie",
+      "title": "Breaking Up Somebody's Home",
+      "year": 1996,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1281361"
+    },
+    {
+      "id": "millie-69896dd9ba7d",
+      "dj_id": "millie",
+      "title": "It's Over!?",
+      "year": 1995,
+      "label": "Ichiban Records",
+      "format": "CD, Album",
+      "url": "https://api.discogs.com/releases/3129564"
+    },
+    {
+      "id": "millie-b613d77895a9",
+      "dj_id": "millie",
+      "title": "The Lies That We Live",
+      "year": 1995,
+      "label": "Ichiban Records",
+      "format": "7\"",
+      "url": "https://api.discogs.com/releases/6029814"
+    },
+    {
+      "id": "millie-b73e93a3e583",
+      "dj_id": "millie",
+      "title": "Rock n Soul Sampler",
+      "year": 1995,
+      "label": "Ichiban Records",
+      "format": "CD, Promo, Smplr",
+      "url": "https://api.discogs.com/releases/10811875"
+    },
+    {
+      "id": "millie-ad66839e07af",
+      "dj_id": "millie",
+      "title": "Love Quake",
+      "year": 1994,
+      "label": "Ichiban Records",
+      "format": "CD, Single, Promo",
+      "url": "https://api.discogs.com/releases/5895073"
+    },
+    {
+      "id": "millie-322f74997c3a",
+      "dj_id": "millie",
+      "title": "Check In The Mail",
+      "year": 1994,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3351631"
+    },
+    {
+      "id": "millie-d5544a8a329a",
+      "dj_id": "millie",
+      "title": "Rock 'N' Soul",
+      "year": 1994,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/882012"
+    },
+    {
+      "id": "millie-801f552e561d",
+      "dj_id": "millie",
+      "title": "The Very Best Of Millie Jackson",
+      "year": 1994,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/2220976"
+    },
+    {
+      "id": "millie-ad8fe09c7319",
+      "dj_id": "millie",
+      "title": "21 Of The Best (1971-1983)",
+      "year": 1994,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1545194"
+    },
+    {
+      "id": "millie-b0f92a38dee9",
+      "dj_id": "millie",
+      "title": "I Wish It Would Rain Down",
+      "year": 1993,
+      "label": "Ichiban Records",
+      "format": "7\", Single",
+      "url": "https://api.discogs.com/releases/12118037"
+    },
+    {
+      "id": "millie-a2f145a9d1e5",
+      "dj_id": "millie",
+      "title": "4 Tracks From The Cast Album",
+      "year": 1993,
+      "label": "Ichiban Records",
+      "format": "CD, Promo",
+      "url": "https://api.discogs.com/releases/15762216"
+    },
+    {
+      "id": "millie-6f8ecc87d0d1",
+      "dj_id": "millie",
+      "title": "Young Man, Older Woman - The Cast Album",
+      "year": 1993,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1524388"
+    },
+    {
+      "id": "millie-378c6d145418",
+      "dj_id": "millie",
+      "title": "Golden Classics of the 70's",
+      "year": 1992,
+      "label": "Collectables",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/16176272"
+    },
+    {
+      "id": "millie-5625701a1954",
+      "dj_id": "millie",
+      "title": "Young Man, Older Woman",
+      "year": 1991,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1062783"
+    },
+    {
+      "id": "millie-f7b21de90def",
+      "dj_id": "millie",
+      "title": "My Man, A Sweet Man",
+      "year": 1989,
+      "label": "Southbound",
+      "format": "CD, Maxi, Car",
+      "url": "https://api.discogs.com/releases/3206991"
+    },
+    {
+      "id": "millie-eabf7b49d5d8",
+      "dj_id": "millie",
+      "title": "Will You Love Me Tomorrow",
+      "year": 1989,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/556079"
+    },
+    {
+      "id": "millie-31bda6ab66b1",
+      "dj_id": "millie",
+      "title": "Back To The S..t!",
+      "year": 1989,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/212923"
+    },
+    {
+      "id": "millie-51e463c09e1a",
+      "dj_id": "millie",
+      "title": "You Knocked The Love (Right Outta My Heart)",
+      "year": 1988,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/821326"
+    },
+    {
+      "id": "millie-5f3e5acf1549",
+      "dj_id": "millie",
+      "title": "The Tide Is Turning",
+      "year": 1988,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1197298"
+    },
+    {
+      "id": "millie-3511d971d976",
+      "dj_id": "millie",
+      "title": "Something You Can Feel",
+      "year": 1988,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/255407"
+    },
+    {
+      "id": "millie-8e75ce6d98e9",
+      "dj_id": "millie",
+      "title": "Be Yourself",
+      "year": 1987,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/42842"
+    },
+    {
+      "id": "millie-ffbe0c75ebe7",
+      "dj_id": "millie",
+      "title": "Love Is A Dangerous Game",
+      "year": 1986,
+      "label": "Jive",
+      "format": "VHS, Promo, PAL",
+      "url": "https://api.discogs.com/releases/2939255"
+    },
+    {
+      "id": "millie-290092bd5518",
+      "dj_id": "millie",
+      "title": "It's A Thang",
+      "year": 1986,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/556078"
+    },
+    {
+      "id": "state-of-mind-8dd8da6024a8",
+      "dj_id": "state-of-mind",
+      "title": "Red Sky",
+      "year": 2024,
+      "label": "Eatbrain",
+      "format": "File, MP3, Single, 320",
+      "url": "https://api.discogs.com/releases/31487363"
+    },
+    {
+      "id": "state-of-mind-f6e84d7d17ae",
+      "dj_id": "state-of-mind",
+      "title": "Consume The Power",
+      "year": 2024,
+      "label": "Blackout Music NL",
+      "format": "File, MP3, Single, 320",
+      "url": "https://api.discogs.com/releases/32675013"
+    },
+    {
+      "id": "state-of-mind-c7209e2d887c",
+      "dj_id": "state-of-mind",
+      "title": "Modern Propaganda",
+      "year": 2023,
+      "label": "Blackout Music NL",
+      "format": "3xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/28007511"
+    },
+    {
+      "id": "state-of-mind-1cfbcbd93ccb",
+      "dj_id": "state-of-mind",
+      "title": "Shout / Cabera",
+      "year": 2023,
+      "label": "Blackout Music NL",
+      "format": "2xFile, MP3, Single, 320",
+      "url": "https://api.discogs.com/releases/28342846"
+    },
+    {
+      "id": "state-of-mind-5e79199c0fdc",
+      "dj_id": "state-of-mind",
+      "title": "Ice Cold / Amerika March",
+      "year": 2023,
+      "label": "Eatbrain",
+      "format": "2xFile, MP3, Single, 320",
+      "url": "https://api.discogs.com/releases/29286208"
+    },
+    {
+      "id": "state-of-mind-cb8b812a26c2",
+      "dj_id": "state-of-mind",
+      "title": "Runaway Train",
+      "year": 2022,
+      "label": "Blackout Music NL",
+      "format": "File, MP3, Single, 320",
+      "url": "https://api.discogs.com/releases/22719992"
+    },
+    {
+      "id": "state-of-mind-a708efa698ac",
+      "dj_id": "state-of-mind",
+      "title": "ESP",
+      "year": 2022,
+      "label": "Blackout Music NL",
+      "format": "File, MP3, 320",
+      "url": "https://api.discogs.com/releases/24339107"
+    },
+    {
+      "id": "state-of-mind-1e9b5ba5b34e",
+      "dj_id": "state-of-mind",
+      "title": "Prophecy / Nyx",
+      "year": 2020,
+      "label": "Blackout Music NL",
+      "format": "2xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/15809088"
+    },
+    {
+      "id": "state-of-mind-ca4c5369900d",
+      "dj_id": "state-of-mind",
+      "title": "State Of Mind Remixed",
+      "year": 2019,
+      "label": "Eatbrain",
+      "format": "4xFile, MP3, EP, 320",
+      "url": "https://api.discogs.com/releases/13684502"
+    },
+    {
+      "id": "state-of-mind-53f4881d2aa4",
+      "dj_id": "state-of-mind",
+      "title": "Land Of The Blind",
+      "year": 2019,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/2952745"
+    },
+    {
+      "id": "state-of-mind-81ee02f2f485",
+      "dj_id": "state-of-mind",
+      "title": "Land Of The Blind Part 1",
+      "year": 2018,
+      "label": "Blackout Music NL",
+      "format": "5xFile, MP3, EP, 320",
+      "url": "https://api.discogs.com/releases/11683750"
+    },
+    {
+      "id": "state-of-mind-a9b416c1cfcd",
+      "dj_id": "state-of-mind",
+      "title": "Land Of The Blind Part 2",
+      "year": 2018,
+      "label": "Blackout Music NL",
+      "format": "5xFile, MP3, EP, 320",
+      "url": "https://api.discogs.com/releases/12556201"
+    },
+    {
+      "id": "state-of-mind-76ab8137e3b6",
+      "dj_id": "state-of-mind",
+      "title": "Automata EP",
+      "year": 2017,
+      "label": "Eatbrain",
+      "format": "6xFile, MP3, EP, 320",
+      "url": "https://api.discogs.com/releases/10371800"
+    },
+    {
+      "id": "state-of-mind-71dd00c198d8",
+      "dj_id": "state-of-mind",
+      "title": "Thug",
+      "year": 2016,
+      "label": "Blackout Music NL",
+      "format": "File, MP3, 320",
+      "url": "https://api.discogs.com/releases/8045560"
+    },
+    {
+      "id": "state-of-mind-f401de102e6a",
+      "dj_id": "state-of-mind",
+      "title": "Caterpillar",
+      "year": 2016,
+      "label": "Blackout Music NL",
+      "format": "3xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/9487486"
+    },
+    {
+      "id": "state-of-mind-a4e63d1ffb78",
+      "dj_id": "state-of-mind",
+      "title": "The Violent Five",
+      "year": 2016,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1029808"
+    },
+    {
+      "id": "state-of-mind-f913139c77b0",
+      "dj_id": "state-of-mind",
+      "title": "Until The World Ends",
+      "year": 2015,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/865941"
+    },
+    {
+      "id": "state-of-mind-96651c3b614f",
+      "dj_id": "state-of-mind",
+      "title": "The Full Force EP",
+      "year": 2015,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/814757"
+    },
+    {
+      "id": "state-of-mind-2947a00698fc",
+      "dj_id": "state-of-mind",
+      "title": "No-Operative",
+      "year": 2014,
+      "label": "Blackout Music NL",
+      "format": "2xFile, MP3, Single, 320",
+      "url": "https://api.discogs.com/releases/5435128"
+    },
+    {
+      "id": "state-of-mind-ce163f828195",
+      "dj_id": "state-of-mind",
+      "title": "Mr. Cover Up",
+      "year": 2014,
+      "label": "Blackout Music NL",
+      "format": "4xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/5435154"
+    },
+    {
+      "id": "state-of-mind-acbb9738e111",
+      "dj_id": "state-of-mind",
+      "title": "Eat The Rich - Remixes",
+      "year": 2014,
+      "label": "Blackout Music NL",
+      "format": "7xFile, MP3, EP, 320",
+      "url": "https://api.discogs.com/releases/6317342"
+    },
+    {
+      "id": "state-of-mind-652d8fa3ddf6",
+      "dj_id": "state-of-mind",
+      "title": "Ego",
+      "year": 2014,
+      "label": "Blackout Music NL",
+      "format": "File, MP3, 320",
+      "url": "https://api.discogs.com/releases/6404834"
+    },
+    {
+      "id": "state-of-mind-73937f96e92d",
+      "dj_id": "state-of-mind",
+      "title": "Biology EP",
+      "year": 2014,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/787984"
+    },
+    {
+      "id": "state-of-mind-d65216b17927",
+      "dj_id": "state-of-mind",
+      "title": "Nothing Lasts Forever (Trei Remix) / Gradient",
+      "year": 2014,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/774684"
+    },
+    {
+      "id": "state-of-mind-6f31164f3c2c",
+      "dj_id": "state-of-mind",
+      "title": "Eat The Rich",
+      "year": 2014,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/671308"
+    },
+    {
+      "id": "state-of-mind-3c5f55d05a70",
+      "dj_id": "state-of-mind",
+      "title": "Change Your Mind / Breed",
+      "year": 2013,
+      "label": "SOM Music (2)",
+      "format": "2xFile, FLAC",
+      "url": "https://api.discogs.com/releases/4270681"
+    },
+    {
+      "id": "state-of-mind-e85b978a9e22",
+      "dj_id": "state-of-mind",
+      "title": "Predator / Get Humpty",
+      "year": 2013,
+      "label": "SOM Music (2)",
+      "format": "2xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/4940017"
+    },
+    {
+      "id": "state-of-mind-9d3641e5192b",
+      "dj_id": "state-of-mind",
+      "title": "Friends From All Over Part 3",
+      "year": 2013,
+      "label": "M-Atome",
+      "format": "12\"",
+      "url": "https://api.discogs.com/releases/5012947"
+    },
+    {
+      "id": "state-of-mind-6d9bb947c078",
+      "dj_id": "state-of-mind",
+      "title": "Together In The Night / The Burning",
+      "year": 2013,
+      "label": "FATE Recordings (2)",
+      "format": "2xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/5774283"
+    },
+    {
+      "id": "state-of-mind-a622d4f0a4c7",
+      "dj_id": "state-of-mind",
+      "title": "Live!",
+      "year": 2012,
+      "label": "SOM Music (2)",
+      "format": "29xFile, MP3, Album, Comp, Mixed",
+      "url": "https://api.discogs.com/releases/3517209"
+    },
+    {
+      "id": "state-of-mind-83735d5e5b35",
+      "dj_id": "state-of-mind",
+      "title": "Mass Media / Five Breaths",
+      "year": 2012,
+      "label": "Subsonik Sound Recordings",
+      "format": "12\"",
+      "url": "https://api.discogs.com/releases/3680792"
+    },
+    {
+      "id": "state-of-mind-a94a96d31da4",
+      "dj_id": "state-of-mind",
+      "title": "Azwell / Nighttide",
+      "year": 2012,
+      "label": "SOM Music (2)",
+      "format": "2xFile, FLAC",
+      "url": "https://api.discogs.com/releases/4270627"
+    },
+    {
+      "id": "state-of-mind-0bde5da885cf",
+      "dj_id": "state-of-mind",
+      "title": "Deadzone (State Of Mind Remix) / The Jackal (Zardonic Remix)",
+      "year": 2012,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/459372"
+    },
+    {
+      "id": "state-of-mind-51d70f88974d",
+      "dj_id": "state-of-mind",
+      "title": "Roulette (Gridlok Remix) / Two Perfect Moments",
+      "year": 2012,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/428869"
+    },
+    {
+      "id": "state-of-mind-b97a01fb4747",
+      "dj_id": "state-of-mind",
+      "title": "Friends From All Over Part 2",
+      "year": 2012,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/472952"
+    },
+    {
+      "id": "state-of-mind-0d9735b01786",
+      "dj_id": "state-of-mind",
+      "title": "Nil By Ear: Remixes",
+      "year": 2011,
+      "label": "SOM Music (2)",
+      "format": "5xFile, MP3, EP, 320",
+      "url": "https://api.discogs.com/releases/2934348"
+    },
+    {
+      "id": "state-of-mind-a732e9d7c30b",
+      "dj_id": "state-of-mind",
+      "title": "Here We Go / Audio Hypnosis",
+      "year": 2011,
+      "label": "Eatbrain",
+      "format": "12\"",
+      "url": "https://api.discogs.com/releases/3031713"
+    },
+    {
+      "id": "state-of-mind-8bc23edf3063",
+      "dj_id": "state-of-mind",
+      "title": "Wanna Hear",
+      "year": 2011,
+      "label": "SOM Music (2)",
+      "format": "File, MP3, 320",
+      "url": "https://api.discogs.com/releases/3254374"
+    },
+    {
+      "id": "state-of-mind-572e49f7d1b5",
+      "dj_id": "state-of-mind",
+      "title": "Sleepcreep / Futurus",
+      "year": 2011,
+      "label": "SOM Music (2)",
+      "format": "2xFile, MP3, EP, 320",
+      "url": "https://api.discogs.com/releases/3517131"
+    },
+    {
+      "id": "state-of-mind-02fc1a6291bd",
+      "dj_id": "state-of-mind",
+      "title": "Nil By Ear",
+      "year": 2011,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/340244"
+    },
+    {
+      "id": "state-of-mind-ef2f3803016d",
+      "dj_id": "state-of-mind",
+      "title": "Quasars / Bad Virus",
+      "year": 2011,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/378254"
+    },
+    {
+      "id": "state-of-mind-3059e8cd5ef4",
+      "dj_id": "state-of-mind",
+      "title": "Ronald Reagan / Pitch Dryfter",
+      "year": 2011,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/378256"
+    },
+    {
+      "id": "state-of-mind-79ae77dbd73e",
+      "dj_id": "state-of-mind",
+      "title": "Dead In Detroit / Frankenfunk",
+      "year": 2011,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/373232"
+    },
+    {
+      "id": "state-of-mind-7fc046dc2f8c",
+      "dj_id": "state-of-mind",
+      "title": "Universe / Turning Point",
+      "year": 2010,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/272033"
+    },
+    {
+      "id": "state-of-mind-b1535bd3eb05",
+      "dj_id": "state-of-mind",
+      "title": "Krueger / Space Chase",
+      "year": 2010,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/450263"
+    },
+    {
+      "id": "state-of-mind-e0bb8066cb54",
+      "dj_id": "state-of-mind",
+      "title": "Way Of The Samurai 2",
+      "year": 2009,
+      "label": "Samurai Music",
+      "format": "12\", Smplr",
+      "url": "https://api.discogs.com/releases/1723188"
+    },
+    {
+      "id": "state-of-mind-5c6a3e210c6a",
+      "dj_id": "state-of-mind",
+      "title": "Move On / Floor 14 (Bungle Rmx)",
+      "year": 2009,
+      "label": "Syntax Audio",
+      "format": "12\"",
+      "url": "https://api.discogs.com/releases/1831218"
+    },
+    {
+      "id": "state-of-mind-fba90bfbf578",
+      "dj_id": "state-of-mind",
+      "title": "Innuendo Phase Three",
+      "year": 2009,
+      "label": "Samurai Music",
+      "format": "12\", Smplr",
+      "url": "https://api.discogs.com/releases/1986971"
+    },
+    {
+      "id": "state-of-mind-2a05418aca48",
+      "dj_id": "state-of-mind",
+      "title": "Faster Than Light",
+      "year": 2009,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/199041"
+    },
+    {
+      "id": "state-of-mind-045d6e9a7796",
+      "dj_id": "state-of-mind",
+      "title": "Division Ten / Flawless (Sigma Remix)",
+      "year": 2009,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/8594"
+    },
+    {
+      "id": "evie-1ec5cd75c379",
+      "dj_id": "evie",
+      "title": "På Norsk Och Svenska",
+      "year": 2014,
+      "label": "Whitefield Music",
+      "format": "CD, Album",
+      "url": "https://api.discogs.com/releases/26889374"
+    },
+    {
+      "id": "evie-f1f76f95827b",
+      "dj_id": "evie",
+      "title": "Songs From The Hymn Book",
+      "year": 2013,
+      "label": "Whitefield Music",
+      "format": "CD, Album",
+      "url": "https://api.discogs.com/releases/7680889"
+    },
+    {
+      "id": "evie-1c26031c0a00",
+      "dj_id": "evie",
+      "title": "We Pray For The World",
+      "year": 2012,
+      "label": "Whitefield Music",
+      "format": "CD, Album",
+      "url": "https://api.discogs.com/releases/7680888"
+    },
+    {
+      "id": "evie-75158b653224",
+      "dj_id": "evie",
+      "title": "Two Classic Albums From Evie",
+      "year": 2007,
+      "label": "Lynor A/S",
+      "format": "CD, Comp, RE",
+      "url": "https://api.discogs.com/releases/7680879"
+    },
+    {
+      "id": "evie-f3f339e13ae6",
+      "dj_id": "evie",
+      "title": "Evies Beste",
+      "year": 2007,
+      "label": "Lynor A/S",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/7680887"
+    },
+    {
+      "id": "evie-79f666cd0728",
+      "dj_id": "evie",
+      "title": "Evie",
+      "year": 2007,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1238943"
+    },
+    {
+      "id": "evie-cba144866d7b",
+      "dj_id": "evie",
+      "title": "Jul Med Evie",
+      "year": 2007,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1430981"
+    },
+    {
+      "id": "evie-8647184842fc",
+      "dj_id": "evie",
+      "title": "Evie På Svenska ",
+      "year": 2006,
+      "label": "Linx Music",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/7680403"
+    },
+    {
+      "id": "evie-d1ae2aea2259",
+      "dj_id": "evie",
+      "title": "Give Them All To Jesus",
+      "year": 2005,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1400926"
+    },
+    {
+      "id": "evie-b999de93b008",
+      "dj_id": "evie",
+      "title": "Come On Ring Those Bells",
+      "year": 2004,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/4241721"
+    },
+    {
+      "id": "evie-689ff5080598",
+      "dj_id": "evie",
+      "title": "Kingdom Connection",
+      "year": 2002,
+      "label": "Whitefield Music",
+      "format": "CD, Album",
+      "url": "https://api.discogs.com/releases/23335454"
+    },
+    {
+      "id": "evie-c7ef954719c7",
+      "dj_id": "evie",
+      "title": "Day By Day",
+      "year": 1996,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1399175"
+    },
+    {
+      "id": "evie-c9f1a4c77875",
+      "dj_id": "evie",
+      "title": "Our ReCollections",
+      "year": 1996,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1158443"
+    },
+    {
+      "id": "evie-2722f3c0b5f2",
+      "dj_id": "evie",
+      "title": "Special Christmas Delivery",
+      "year": 1995,
+      "label": "Word",
+      "format": "CD, Album, Comp",
+      "url": "https://api.discogs.com/releases/7589561"
+    },
+    {
+      "id": "evie-56d938edf6f2",
+      "dj_id": "evie",
+      "title": "Mer Av Dig - Sånger För Hans Lärjungar",
+      "year": 1994,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1709840"
+    },
+    {
+      "id": "evie-457776f20d68",
+      "dj_id": "evie",
+      "title": "O Holy Night",
+      "year": 1991,
+      "label": "Studio Series",
+      "format": "Cass, Single",
+      "url": "https://api.discogs.com/releases/21902935"
+    },
+    {
+      "id": "evie-346bd38d3aff",
+      "dj_id": "evie",
+      "title": "Songs From “The Gift Goes On” / Songs From “Christmas Memories”",
+      "year": 1987,
+      "label": "Word",
+      "format": "LP, Comp",
+      "url": "https://api.discogs.com/releases/16215748"
+    },
+    {
+      "id": "evie-1ca296e7304a",
+      "dj_id": "evie",
+      "title": "Christmas Memories",
+      "year": 1987,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/579625"
+    },
+    {
+      "id": "evie-54b14bc5ae1d",
+      "dj_id": "evie",
+      "title": "When All Is Said And Done",
+      "year": 1986,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/599650"
+    },
+    {
+      "id": "evie-828a259a8825",
+      "dj_id": "evie",
+      "title": "Loving Promises (From Heaven To Your Heart)",
+      "year": 1985,
+      "label": "Word",
+      "format": "2xLP, Comp",
+      "url": "https://api.discogs.com/releases/5393000"
+    },
+    {
+      "id": "evie-7a7c8e8304d8",
+      "dj_id": "evie",
+      "title": "Mina Älsklingssånger",
+      "year": 1984,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1552548"
+    },
+    {
+      "id": "evie-4f176f0255c0",
+      "dj_id": "evie",
+      "title": "Christmas. A Happy Time",
+      "year": 1984,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/599646"
+    },
+    {
+      "id": "evie-6cad17f64e69",
+      "dj_id": "evie",
+      "title": "Restoration",
+      "year": 1983,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/493343"
+    },
+    {
+      "id": "evie-a95313d041fb",
+      "dj_id": "evie",
+      "title": "Hymns",
+      "year": 1983,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/599639"
+    },
+    {
+      "id": "evie-e78322543fa6",
+      "dj_id": "evie",
+      "title": "På Svenska (Volym II)",
+      "year": 1982,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1547845"
+    },
+    {
+      "id": "evie-b13eafd67a65",
+      "dj_id": "evie",
+      "title": "Unfailing Love",
+      "year": 1981,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/425353"
+    },
+    {
+      "id": "evie-e9a2eedac0f2",
+      "dj_id": "evie",
+      "title": "The Very Best Of Evie",
+      "year": 1981,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/3017555"
+    },
+    {
+      "id": "evie-c20ae1d82519",
+      "dj_id": "evie",
+      "title": "Teach Us Your Way:  Together In Prayer And Worship",
+      "year": 1980,
+      "label": "Word",
+      "format": "8-Trk, Album",
+      "url": "https://api.discogs.com/releases/32734440"
+    },
+    {
+      "id": "evie-47fb0b96df57",
+      "dj_id": "evie",
+      "title": "Evie Favorites Volume 1",
+      "year": 1980,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/517974"
+    },
+    {
+      "id": "evie-679dcb62b282",
+      "dj_id": "evie",
+      "title": "In-Store LP",
+      "year": 1979,
+      "label": "Word",
+      "format": "LP, Promo, Smplr",
+      "url": "https://api.discogs.com/releases/12456468"
+    },
+    {
+      "id": "evie-e26d550bf7a6",
+      "dj_id": "evie",
+      "title": "Home ",
+      "year": 1979,
+      "label": "Word",
+      "format": "7\", Mono, Promo",
+      "url": "https://api.discogs.com/releases/12881983"
+    },
+    {
+      "id": "evie-7a4a2bcbf940",
+      "dj_id": "evie",
+      "title": "Special Delivery",
+      "year": 1979,
+      "label": "Word",
+      "format": "7\", Single",
+      "url": "https://api.discogs.com/releases/15290184"
+    },
+    {
+      "id": "evie-1e374c166067",
+      "dj_id": "evie",
+      "title": "Never The Same",
+      "year": 1979,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/105001"
+    },
+    {
+      "id": "evie-e1896349d791",
+      "dj_id": "evie",
+      "title": "Öppnade Ögon",
+      "year": 1979,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/983028"
+    },
+    {
+      "id": "evie-2eacfd9add1c",
+      "dj_id": "evie",
+      "title": "Step Into The Sunshine",
+      "year": 1978,
+      "label": "Word",
+      "format": "7\"",
+      "url": "https://api.discogs.com/releases/6512739"
+    },
+    {
+      "id": "evie-d634f81b81f3",
+      "dj_id": "evie",
+      "title": "If Heaven Never Was Promised To Me / Jesus I Believe What You Said",
+      "year": 1978,
+      "label": "Word",
+      "format": "7\", Promo",
+      "url": "https://api.discogs.com/releases/35852554"
+    },
+    {
+      "id": "evie-136e4116a0e1",
+      "dj_id": "evie",
+      "title": "Julens Klockor, Ring",
+      "year": 1978,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1552542"
+    },
+    {
+      "id": "evie-fe6359107251",
+      "dj_id": "evie",
+      "title": "A Little Song Of Joy For My Little Friends",
+      "year": 1978,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/489661"
+    },
+    {
+      "id": "evie-a6dd771886f2",
+      "dj_id": "evie",
+      "title": "Come On, Ring Those Bells / A Thousand Candles",
+      "year": 1977,
+      "label": "Word",
+      "format": "7\", Single, Promo",
+      "url": "https://api.discogs.com/releases/7726980"
+    },
+    {
+      "id": "evie-6bd1c46313d4",
+      "dj_id": "evie",
+      "title": "Till Mina Små Vänner",
+      "year": 1977,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1552551"
+    },
+    {
+      "id": "evie-9e0cd43ddbaa",
+      "dj_id": "evie",
+      "title": "Come On, Ring Those Bells",
+      "year": 1977,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/307579"
+    },
+    {
+      "id": "evie-017815ed9286",
+      "dj_id": "evie",
+      "title": "Pass It On / Broken Up People",
+      "year": 1976,
+      "label": "Word",
+      "format": "7\", Single",
+      "url": "https://api.discogs.com/releases/11847070"
+    },
+    {
+      "id": "evie-4df603efadc0",
+      "dj_id": "evie",
+      "title": "Gentle Moments",
+      "year": 1976,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/380730"
+    },
+    {
+      "id": "evie-f96d174488c4",
+      "dj_id": "evie",
+      "title": "Mirror",
+      "year": 1976,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/479956"
+    },
+    {
+      "id": "evie-4801d79249dc",
+      "dj_id": "evie",
+      "title": "Evie Again",
+      "year": 1975,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/500639"
+    },
+    {
+      "id": "evie-df5fc67496d8",
+      "dj_id": "evie",
+      "title": "Evie-Favoritter",
+      "year": 1975,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/1571373"
+    },
+    {
+      "id": "evie-28f084c1004d",
+      "dj_id": "evie",
+      "title": "Du Skulle Vara Med I Sången",
+      "year": 1975,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/733400"
+    },
+    {
+      "id": "evie-025edf51c519",
+      "dj_id": "evie",
+      "title": "Evie 2",
+      "year": 1974,
+      "label": "Klango",
+      "format": "LP, Mono",
+      "url": "https://api.discogs.com/releases/6733709"
+    },
+    {
+      "id": "evie-b80e6fd51006",
+      "dj_id": "evie",
+      "title": "Bønn",
+      "year": 1974,
+      "label": "Triola",
+      "format": "7\", Single",
+      "url": "https://api.discogs.com/releases/7589112"
+    },
+    {
+      "id": "high-dependency-unit-79620d079833",
+      "dj_id": "high-dependency-unit",
+      "title": "Metamathics Re-Mixes",
+      "year": 2011,
+      "label": "Flying Nun Records",
+      "format": "6xFile, MP3, 320",
+      "url": "https://api.discogs.com/releases/3375146"
+    },
+    {
+      "id": "high-dependency-unit-c8e21a0ca0ad",
+      "dj_id": "high-dependency-unit",
+      "title": "Stupormodel / Blue Skies",
+      "year": 2007,
+      "label": "Shoot The Freak Records, Tardus Music",
+      "format": "7\", Single",
+      "url": "https://api.discogs.com/releases/1518956"
+    },
+    {
+      "id": "high-dependency-unit-5d2ead62be14",
+      "dj_id": "high-dependency-unit",
+      "title": "Metamathics",
+      "year": 2007,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/405298"
+    },
+    {
+      "id": "high-dependency-unit-a9bd6786f103",
+      "dj_id": "high-dependency-unit",
+      "title": "Tunguska",
+      "year": 2006,
+      "label": "Furtherist",
+      "format": "CD, Single, Enh",
+      "url": "https://api.discogs.com/releases/10702382"
+    },
+    {
+      "id": "high-dependency-unit-03feef88abac",
+      "dj_id": "high-dependency-unit",
+      "title": "Fire Works",
+      "year": 2001,
+      "label": "Flying Nun Records",
+      "format": "CD, Album",
+      "url": "https://api.discogs.com/releases/1359953"
+    },
+    {
+      "id": "high-dependency-unit-6e905a45f74d",
+      "dj_id": "high-dependency-unit",
+      "title": "Memento Mori",
+      "year": 2000,
+      "label": "Flying Nun Records",
+      "format": "CD, EP",
+      "url": "https://api.discogs.com/releases/612692"
+    },
+    {
+      "id": "high-dependency-unit-64e624d35bfd",
+      "dj_id": "high-dependency-unit",
+      "title": "Crosschannel Multitap",
+      "year": 1998,
+      "label": "Flying Nun Records",
+      "format": "CD",
+      "url": "https://api.discogs.com/releases/491527"
+    },
+    {
+      "id": "high-dependency-unit-166561672875",
+      "dj_id": "high-dependency-unit",
+      "title": "Higher",
+      "year": 1997,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/405201"
+    },
+    {
+      "id": "high-dependency-unit-9d469b3b0399",
+      "dj_id": "high-dependency-unit",
+      "title": "Sum Of The Few",
+      "year": 1996,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/267043"
+    },
+    {
+      "id": "high-dependency-unit-acf5b7ff677f",
+      "dj_id": "high-dependency-unit",
+      "title": "The Vital System",
+      "year": 1995,
+      "label": "Not On Label (High Dependency Unit Self-released)",
+      "format": "Cass, Promo",
+      "url": "https://api.discogs.com/releases/7599600"
+    },
+    {
+      "id": "high-dependency-unit-a7bad19fda67",
+      "dj_id": "high-dependency-unit",
+      "title": "Abstinence:Acrimony",
+      "year": 1995,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/216380"
+    },
+    {
+      "id": "high-dependency-unit-7d996586eede",
+      "dj_id": "high-dependency-unit",
+      "title": "High Dependency Unit",
+      "year": 1994,
+      "label": "Not On Label (High Dependency Unit Self-released)",
+      "format": "Cass, EP, Ltd",
+      "url": "https://api.discogs.com/releases/21413428"
+    },
+    {
+      "id": "high-dependency-unit-8b5882fd16aa",
+      "dj_id": "high-dependency-unit",
+      "title": "A Low Hum DVD 3",
+      "year": 2006,
+      "label": "A Low Hum",
+      "format": "DVD, Comp",
+      "url": "https://api.discogs.com/releases/13965498"
+    },
+    {
+      "id": "high-dependency-unit-d2e9a9f3b396",
+      "dj_id": "high-dependency-unit",
+      "title": "Waves (Selected New Zealand Masterpieces)",
+      "year": 2003,
+      "label": "Capitol Music, Capitol Music",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/3021083"
+    },
+    {
+      "id": "high-dependency-unit-0589088932c8",
+      "dj_id": "high-dependency-unit",
+      "title": "I'll Make You Happy",
+      "year": 1999,
+      "label": "Flying Nun Records",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/1853698"
+    },
+    {
+      "id": "high-dependency-unit-52aa385e30fa",
+      "dj_id": "high-dependency-unit",
+      "title": "Tally Ho! (Flying Nun's Greatest Bits)",
+      "year": 2011,
+      "label": "Flying Nun Records",
+      "format": "2xCD, Comp",
+      "url": "https://api.discogs.com/releases/3550366"
+    },
+    {
+      "id": "high-dependency-unit-e0c6f2176a0a",
+      "dj_id": "high-dependency-unit",
+      "title": "91 FM A Century Of Seasons (25 Years Of Radio One Dunedin)",
+      "year": 2009,
+      "label": "Radio One (2), NZ On Air, Dunedin City Council, Radio New Zealand National",
+      "format": "2xCD, Album, Comp",
+      "url": "https://api.discogs.com/releases/12394571"
+    },
+    {
+      "id": "high-dependency-unit-864daaed710c",
+      "dj_id": "high-dependency-unit",
+      "title": "A Flip And Two Twisters",
+      "year": 2007,
+      "label": "The Kingsland Vinyl Appreciation Society",
+      "format": "2xLP, Comp",
+      "url": "https://api.discogs.com/releases/2174267"
+    },
+    {
+      "id": "high-dependency-unit-b7bae0557dfe",
+      "dj_id": "high-dependency-unit",
+      "title": "Flying Nun 25th Anniversary Box Set",
+      "year": 2006,
+      "label": "Flying Nun Records",
+      "format": "4xCD, Comp, RM + Box, Ltd",
+      "url": "https://api.discogs.com/releases/1038214"
+    },
+    {
+      "id": "high-dependency-unit-98cfc43f049b",
+      "dj_id": "high-dependency-unit",
+      "title": "Very Short Films - Flying Nun DVD",
+      "year": 2004,
+      "label": "Flying Nun Records",
+      "format": "DVD, Comp, PAL",
+      "url": "https://api.discogs.com/releases/824340"
+    },
+    {
+      "id": "high-dependency-unit-6d4381f49916",
+      "dj_id": "high-dependency-unit",
+      "title": "Second Season - Flying Nun DVD II",
+      "year": 2004,
+      "label": "Flying Nun Records",
+      "format": "DVD, Comp",
+      "url": "https://api.discogs.com/releases/1455124"
+    },
+    {
+      "id": "high-dependency-unit-c5c17c4d61a8",
+      "dj_id": "high-dependency-unit",
+      "title": "Speed Of Sound",
+      "year": 2003,
+      "label": "Flying Nun Records",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/1457698"
+    },
+    {
+      "id": "high-dependency-unit-73c85a8a46df",
+      "dj_id": "high-dependency-unit",
+      "title": "Under The Influence - 21 Years Of Flying Nun Records",
+      "year": 2002,
+      "label": "Flying Nun Records",
+      "format": "2xCD, Album",
+      "url": "https://api.discogs.com/releases/525911"
+    },
+    {
+      "id": "high-dependency-unit-45bc3fbdb318",
+      "dj_id": "high-dependency-unit",
+      "title": "All Tomorrow's Parties 2002 (Curated By Shellac)",
+      "year": 2002,
+      "label": "All Tomorrow's Parties",
+      "format": "3xCD, Comp, Ltd, Promo, S/Edition",
+      "url": "https://api.discogs.com/releases/1583644"
+    },
+    {
+      "id": "high-dependency-unit-81719bf8a274",
+      "dj_id": "high-dependency-unit",
+      "title": "All Tomorrow's Parties 2.0 (Curated By Shellac)",
+      "year": 2002,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/313213"
+    },
+    {
+      "id": "high-dependency-unit-f22b039ad80a",
+      "dj_id": "high-dependency-unit",
+      "title": "Indie Hit Disc 14",
+      "year": 2001,
+      "label": "NZ On Air",
+      "format": "CD, Comp, Promo",
+      "url": "https://api.discogs.com/releases/13563902"
+    },
+    {
+      "id": "high-dependency-unit-961fceacf6dd",
+      "dj_id": "high-dependency-unit",
+      "title": "Where Is The Love",
+      "year": 2000,
+      "label": "Radio One (2)",
+      "format": "CD, Comp, Smplr",
+      "url": "https://api.discogs.com/releases/20502067"
+    },
+    {
+      "id": "high-dependency-unit-36c15d282443",
+      "dj_id": "high-dependency-unit",
+      "title": "We Are Now Flying @ 10,000 Feet (A Sensory Compilation)",
+      "year": 1999,
+      "label": "Sensory Projects, Cavalier Music",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/1702173"
+    },
+    {
+      "id": "high-dependency-unit-7a23a31bc1da",
+      "dj_id": "high-dependency-unit",
+      "title": "God Save The Clean, A Tribute To The Clean",
+      "year": 1998,
+      "label": "Flying Nun Records",
+      "format": "CD",
+      "url": "https://api.discogs.com/releases/1283278"
+    },
+    {
+      "id": "high-dependency-unit-73c6d1219f52",
+      "dj_id": "high-dependency-unit",
+      "title": "How Much For Trade?",
+      "year": 1998,
+      "label": "Flying Nun Records",
+      "format": "CD, Smplr",
+      "url": "https://api.discogs.com/releases/1446942"
+    },
+    {
+      "id": "high-dependency-unit-1187e69b523a",
+      "dj_id": "high-dependency-unit",
+      "title": "Pavement Magazine 5th Birthday NZ Music Sampler",
+      "year": 1998,
+      "label": "Pavement Magazine",
+      "format": "CD, Comp, Promo, Smplr",
+      "url": "https://api.discogs.com/releases/13518756"
+    },
+    {
+      "id": "high-dependency-unit-cd077cecd290",
+      "dj_id": "high-dependency-unit",
+      "title": "Valve No.7 - Device Was Too Fleshy",
+      "year": 1996,
+      "label": "Yellow Bike Records",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/4953544"
+    },
+    {
+      "id": "high-dependency-unit-0ae52edb1947",
+      "dj_id": "high-dependency-unit",
+      "title": "Heaven ?! 81-96 ",
+      "year": 1996,
+      "label": "Flying Nun Records, Les Inrockuptibles, PIAS France",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/6722174"
+    },
+    {
+      "id": "high-dependency-unit-1b301b6b6337",
+      "dj_id": "high-dependency-unit",
+      "title": "Pop Eyed",
+      "year": 1996,
+      "label": null,
+      "format": null,
+      "url": "https://api.discogs.com/masters/606396"
+    },
+    {
+      "id": "high-dependency-unit-9f5893dad962",
+      "dj_id": "high-dependency-unit",
+      "title": "15",
+      "year": 1995,
+      "label": "Flying Nun Records",
+      "format": "CD",
+      "url": "https://api.discogs.com/releases/810896"
+    },
+    {
+      "id": "high-dependency-unit-e4c276ce5a4a",
+      "dj_id": "high-dependency-unit",
+      "title": "Disturbed (A Dunedin Compilation)",
+      "year": 1995,
+      "label": "IMD",
+      "format": "CD, Comp",
+      "url": "https://api.discogs.com/releases/948743"
+    },
+    {
+      "id": "high-dependency-unit-991d95082ed1",
+      "dj_id": "high-dependency-unit",
+      "title": "Phase Five - NZ Music (Sampler 07)",
+      "year": null,
+      "label": "NZ On Air",
+      "format": "CD, Comp, Promo",
+      "url": "https://api.discogs.com/releases/3878733"
     }
   ],
   "eventDjs": [
