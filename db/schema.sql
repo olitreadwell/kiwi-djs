@@ -71,12 +71,21 @@ ALTER TABLE events ADD COLUMN IF NOT EXISTS is_dj_event BOOLEAN NOT NULL DEFAULT
 ALTER TABLE events ADD COLUMN IF NOT EXISTS archive_url TEXT;        -- Wayback Machine copy (#302)
 
 -- One event row per festival/venue night; event_djs links every DJ on the
--- lineup so a festival is not duplicated per DJ (#16).
+-- lineup so a festival is not duplicated per DJ (#16). A row is also a
+-- timetable slot when the poster publishes set times (#328): stage + start/end
+-- plus the act label exactly as billed (a b2b bill gets one row per DJ,
+-- sharing the stage, times and act_label).
 CREATE TABLE IF NOT EXISTS event_djs (
   event_id      TEXT NOT NULL REFERENCES events(id) ON DELETE CASCADE,
   dj_id         TEXT NOT NULL REFERENCES djs(id) ON DELETE CASCADE,
   PRIMARY KEY (event_id, dj_id)
 );
+
+ALTER TABLE event_djs ADD COLUMN IF NOT EXISTS stage TEXT;
+ALTER TABLE event_djs ADD COLUMN IF NOT EXISTS starts_at TIMESTAMPTZ;   -- set time (#328)
+ALTER TABLE event_djs ADD COLUMN IF NOT EXISTS ends_at TIMESTAMPTZ;     -- set end (#328)
+ALTER TABLE event_djs ADD COLUMN IF NOT EXISTS act_label TEXT;          -- billing text as printed
+ALTER TABLE event_djs ADD COLUMN IF NOT EXISTS source TEXT;             -- which listing published the slot
 
 CREATE TABLE IF NOT EXISTS scrapes (
   id            BIGSERIAL PRIMARY KEY,

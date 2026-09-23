@@ -9,6 +9,7 @@ import type {
   DjRow,
   EventDjLink,
   EventQueryOptions,
+  EventSetRow,
   EventRow,
   LabelRow,
   LinkRow,
@@ -224,6 +225,31 @@ export class SnapshotRepo implements DataRepository {
     const djById = new Map((snapshot.djs as DjRow[]).map((dj) => [dj.id, dj]));
     const ids = ((snapshot.eventDjs ?? []) as EventDjLink[]).filter((link) => link.event_id === eventId).map((link) => link.dj_id);
     return ids.map((djId) => djById.get(djId)).filter((dj): dj is DjRow => Boolean(dj));
+  }
+
+  async getEventSets(eventId: string): Promise<EventSetRow[]> {
+    const djById = new Map((snapshot.djs as DjRow[]).map((dj) => [dj.id, dj]));
+    return ((snapshot.eventDjs ?? []) as EventDjLink[])
+      .filter((link) => link.event_id === eventId && (link.stage ?? link.starts_at))
+      .map((link) => {
+        const dj = djById.get(link.dj_id);
+        return {
+          event_id: link.event_id,
+          dj_id: link.dj_id,
+          act_label: link.act_label ?? dj?.name ?? link.dj_id,
+          dj_name: dj?.name ?? link.dj_id,
+          stage: link.stage ?? null,
+          starts_at: link.starts_at ?? null,
+          ends_at: link.ends_at ?? null,
+          dj_listed: Boolean(dj),
+        };
+      })
+      .sort(
+        (a, b) =>
+          String(a.stage ?? '').localeCompare(String(b.stage ?? '')) ||
+          new Date(a.starts_at ?? 0).getTime() - new Date(b.starts_at ?? 0).getTime() ||
+          a.dj_name.localeCompare(b.dj_name),
+      );
   }
 
   async getWeekendEvents(limit = 60): Promise<EventRow[]> {

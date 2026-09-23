@@ -2,6 +2,7 @@ import 'server-only';
 import { getPool } from '@/lib/db';
 import { extractArtistNames } from '@/lib/scrapers/discover';
 import type {
+  EventSetRow,
   ArticleRow,
   CollabRow,
   DataRepository,
@@ -359,6 +360,22 @@ export class PostgresRepo implements DataRepository {
       [eventId],
     );
     return result.rows as DjRow[];
+  }
+
+  async getEventSets(eventId: string): Promise<EventSetRow[]> {
+    const pool = getPool();
+    const result = await pool.query(
+      `SELECT ed.event_id, ed.dj_id, ed.act_label, ed.stage, ed.starts_at, ed.ends_at,
+              d.name AS dj_name,
+              (d.active = TRUE AND d.opt_out = FALSE AND d.is_nz = TRUE) AS dj_listed
+       FROM event_djs ed JOIN djs d ON d.id = ed.dj_id
+       WHERE ed.event_id = $1
+         AND d.opt_out = FALSE
+         AND (ed.stage IS NOT NULL OR ed.starts_at IS NOT NULL)
+       ORDER BY ed.stage ASC NULLS LAST, ed.starts_at ASC NULLS LAST, d.name ASC`,
+      [eventId],
+    );
+    return result.rows as EventSetRow[];
   }
 
   async getWeekendEvents(limit = 60): Promise<EventRow[]> {

@@ -8,6 +8,14 @@ import type { ScrapeResult } from './types';
 export interface FestivalArtist {
   name: string;
   description?: string;
+  /** Stage the act plays, when the source publishes a timetable (#328). */
+  stage?: string;
+  /** Set start, when the source publishes a timetable (#328). */
+  startsAt?: Date | null;
+  /** Set end, when the source publishes a timetable (#328). */
+  endsAt?: Date | null;
+  /** Billing text exactly as printed, for b2b and support sets (#328). */
+  actLabel?: string;
 }
 
 export interface FestivalLineup {
@@ -21,6 +29,45 @@ export interface FestivalLineup {
   exclude?: string[];
   include?: string[];
   djSource?: string;
+  /**
+   * Split billed acts into individual DJs on `b2b`, `&`, `w/` and `w`
+   * ("Manakin b2b J.A.P.R" -> Manakin, J.A.P.R). Every split DJ keeps the
+   * billed slot, so a poster timetable renders unchanged while each name
+   * earns its own candidate row (#328).
+   */
+  splitB2b?: boolean;
+}
+
+/**
+ * Split a billed act into individual DJ names. Returns the input unchanged
+ * when it holds a single act.
+ */
+export function splitBilledAct(act: string): string[] {
+  return act
+    .split(/\s+(?:b2b|&|w\/|with|w)\s+/i)
+    .map((part) => part.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+}
+
+/**
+ * Write one timetable slot (stage + set times) onto an event/DJ link. Slots
+ * are additive: a source without set times leaves the columns alone. (#328)
+ */
+export async function upsertEventSlot(
+  pool: Pool,
+  slot: { eventId: string; djId: string; stage?: string; startsAt?: Date | null; endsAt?: Date | null; actLabel?: string; source: string },
+): Promise<void> {
+  await pool.query(
+    `INSERT INTO event_djs (event_id, dj_id, stage, starts_at, ends_at, act_label, source)
+     VALUES ($1, $2, $3, $4, $5, $6, $7)
+     ON CONFLICT (event_id, dj_id) DO UPDATE
+       SET stage = COALESCE(EXCLUDED.stage, event_djs.stage),
+           starts_at = COALESCE(EXCLUDED.starts_at, event_djs.starts_at),
+           ends_at = COALESCE(EXCLUDED.ends_at, event_djs.ends_at),
+           act_label = COALESCE(EXCLUDED.act_label, event_djs.act_label),
+           source = EXCLUDED.source`,
+    [slot.eventId, slot.djId, slot.stage ?? null, slot.startsAt ?? null, slot.endsAt ?? null, slot.actLabel ?? null, slot.source],
+  );
 }
 
 // Strict DJ signals — unambiguous DJ markers and electronic genres. Used for
@@ -121,7 +168,14 @@ export async function ingestFestivalLineup(pool: Pool, source: string, lineup: F
     lineup.artists
       .map((artist) => {
         const entry = typeof artist === 'string' ? { name: artist } : artist;
-        return { name: entry.name.replace(/\s+/g, ' ').trim(), description: entry.description?.replace(/\s+/g, ' ').trim() };
+        return {
+          name: entry.name.replace(/\s+/g, ' ').trim(),
+          description: entry.description?.replace(/\s+/g, ' ').trim(),
+          stage: entry.stage?.replace(/\s+/g, ' ').trim(),
+          startsAt: entry.startsAt ?? null,
+          endsAt: entry.endsAt ?? null,
+          actLabel: entry.actLabel?.replace(/\s+/g, ' ').trim(),
+        };
       })
       .filter((artist) => artist.name)
       .map((artist) => [artist.name.toLowerCase(), artist]),
@@ -129,34 +183,12 @@ export async function ingestFestivalLineup(pool: Pool, source: string, lineup: F
   let found = 0;
   let newCount = 0;
   for (const artist of artists) {
-    const name = artist.name;
-    if (exclude.has(name.toLowerCase())) continue;
-    const isDj = lineup.includeAll
-      ? true
-      : include.has(name.toLowerCase()) || isDjAct(name, artist.description);
-    if (!isDj) continue;
-    // Junk filter catches placeholder names from free-text event titles
-    // ("DJ", "special guest"), but a name with an explicit DJ signal like
-    // "DJ ATU-D2" or "KB the DJ" is a real act — keep it.
-    if (isJunkName(name) && !isDjAct(name)) continue;
-    const key = normalizeArtistName(name);
-    if (!key || key.length < 3) continue;
-    found += 1;
-    const id = slugify(name);
-    const result = await pool.query(
-      `INSERT INTO djs (id, name, source, data_completeness, active, discovery_note)
-       VALUES ($1, $2, $3, 15, FALSE, NULL)
-       ON CONFLICT (id) DO NOTHING RETURNING id`,
-      [id, name, lineup.djSource ?? 'festival'],
-    );
-    if (result.rows.length > 0) {
-      newCount += 1;
-      await pool.query(`INSERT INTO dj_aliases (dj_id, alias) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [id, key]);
-      await upsertDjLink(pool, id, 'festival', lineup.url, `${lineup.eventName} lineup`);
-      console.log(`  ${source}: candidate ${name}`);
-    }
-    // One event row per festival, not one per DJ (#16). Every DJ on the
-    // lineup links via event_djs.
+    const billed = artist.name;
+    if (exclude.has(billed.toLowerCase())) continue;
+    // A b2b or support billing is one poster slot with several DJs. Each DJ
+    // gets a candidate row and shares the stage, times and billing text.
+    const names = lineup.splitB2b ? splitBilledAct(billed) : [billed];
+    const actLabel = artist.actLabel ?? (names.length > 1 ? billed : undefined);
     await upsertEvent(pool, {
       id: lineup.eventIdPrefix,
       name: lineup.eventName,
@@ -165,7 +197,44 @@ export async function ingestFestivalLineup(pool: Pool, source: string, lineup: F
       url: lineup.url,
       source,
     });
-    await pool.query(`INSERT INTO event_djs (event_id, dj_id) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [lineup.eventIdPrefix, id]);
+    for (const name of names) {
+      if (exclude.has(name.toLowerCase())) continue;
+      const isDj = lineup.includeAll
+        ? true
+        : include.has(name.toLowerCase()) || isDjAct(name, artist.description);
+      if (!isDj) continue;
+      // Junk filter catches placeholder names from free-text event titles
+      // ("DJ", "special guest"), but a name with an explicit DJ signal like
+      // "DJ ATU-D2" or "KB the DJ" is a real act — keep it.
+      if (isJunkName(name) && !isDjAct(name)) continue;
+      const key = normalizeArtistName(name);
+      if (!key || key.length < 3) continue;
+      found += 1;
+      const id = slugify(name);
+      const result = await pool.query(
+        `INSERT INTO djs (id, name, source, data_completeness, active, discovery_note)
+         VALUES ($1, $2, $3, 15, FALSE, NULL)
+         ON CONFLICT (id) DO NOTHING RETURNING id`,
+        [id, name, lineup.djSource ?? 'festival'],
+      );
+      if (result.rows.length > 0) {
+        newCount += 1;
+        await pool.query(`INSERT INTO dj_aliases (dj_id, alias) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [id, key]);
+        await upsertDjLink(pool, id, 'festival', lineup.url, `${lineup.eventName} lineup`);
+        console.log(`  ${source}: candidate ${name}`);
+      }
+      // One event row per festival, not one per DJ (#16). Every DJ on the
+      // lineup links via event_djs, which is also the timetable slot (#328).
+      await upsertEventSlot(pool, {
+        eventId: lineup.eventIdPrefix,
+        djId: id,
+        stage: artist.stage,
+        startsAt: artist.startsAt,
+        endsAt: artist.endsAt,
+        actLabel,
+        source: lineup.djSource ?? 'festival',
+      });
+    }
   }
   return {
     status: artists.length > 0 ? 'ok' : 'partial',

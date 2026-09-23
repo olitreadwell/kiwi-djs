@@ -14,6 +14,7 @@ import { earthbeatScraper } from './earthbeat';
 import { toraBomboraScraper } from './torabombora';
 import { jamBaseScraper } from './jambase';
 import { residentAdvisorScraper } from './residentadvisor';
+import { carlucciCarnivalScraper } from './carlucci-carnival';
 import { bestEffortScrapers } from './best-effort';
 import { officialSiteScraper } from './official-site';
 import { enrichDiscogsReleases } from './discogs';
@@ -38,6 +39,7 @@ const scrapers: Scraper[] = [
   toraBomboraScraper,
   jamBaseScraper,
   residentAdvisorScraper,
+  carlucciCarnivalScraper,
   ...bestEffortScrapers,
   { source: 'enrich-venue-regions', run: enrichVenueRegions },
   officialSiteScraper,

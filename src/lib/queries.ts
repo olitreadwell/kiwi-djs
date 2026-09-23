@@ -11,6 +11,7 @@ export type {
   DjRow,
   EventQueryOptions,
   EventRow,
+  EventSetRow,
   LabelRow,
   LinkRow,
   MixRow,
@@ -122,6 +123,10 @@ export function getEventById(id: string): ReturnType<DataRepository['getEventByI
 
 export function getEventLineup(eventId: string): ReturnType<DataRepository['getEventLineup']> {
   return getRepo().getEventLineup(eventId);
+}
+
+export function getEventSets(eventId: string): ReturnType<DataRepository['getEventSets']> {
+  return getRepo().getEventSets(eventId);
 }
 
 export function getWeekendEvents(limit = 60): ReturnType<DataRepository['getWeekendEvents']> {

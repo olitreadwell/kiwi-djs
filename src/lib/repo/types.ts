@@ -46,6 +46,28 @@ export interface EventRow {
 export interface EventDjLink {
   event_id: string;
   dj_id: string;
+  /** Stage and set times when the source published a timetable (#328). */
+  stage?: string | null;
+  starts_at?: string | null;
+  ends_at?: string | null;
+  /** Billing text as printed: "Manakin b2b J.A.P.R" for a shared slot. */
+  act_label?: string | null;
+  source?: string | null;
+}
+
+/**
+ * One timetable slot as a page reads it: the billed act, its stage, its set
+ * times, and whether the DJ has a public profile to link to (#328).
+ */
+export interface EventSetRow {
+  event_id: string;
+  dj_id: string;
+  act_label: string | null;
+  dj_name: string;
+  stage: string | null;
+  starts_at: string | null;
+  ends_at: string | null;
+  dj_listed: boolean;
 }
 
 export interface OrgRow {
@@ -181,6 +203,7 @@ export interface DataRepository {
   getVenueEvents(venueName: string, limit?: number): Promise<EventRow[]>;
   getEventById(id: string): Promise<EventRow | null>;
   getEventLineup(eventId: string): Promise<DjRow[]>;
+  getEventSets(eventId: string): Promise<EventSetRow[]>;
   getWeekendEvents(limit?: number): Promise<EventRow[]>;
   getSimilarDjs(djId: string, limit?: number): Promise<SimilarDjRow[]>;
 }
