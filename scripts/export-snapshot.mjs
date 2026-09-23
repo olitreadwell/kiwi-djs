@@ -10,11 +10,11 @@ const djs = (
             (CASE WHEN d.image_url IS NOT NULL THEN 10 ELSE 0 END) +
             (CASE WHEN d.soundcloud_url IS NOT NULL OR d.instagram_url IS NOT NULL OR d.facebook_url IS NOT NULL
                    OR d.website_url IS NOT NULL OR d.mixcloud_url IS NOT NULL THEN 10 ELSE 0 END) +
-            (SELECT LEAST(30, count(*)::int * 10) FROM dj_mixes m WHERE m.dj_id = d.id) +
+            (SELECT LEAST(30, count(*)::int * 10) FROM dj_mixes m WHERE m.dj_id = d.id AND m.status <> 'dead') +
             (SELECT LEAST(20, count(*)::int * 5) FROM event_djs ed WHERE ed.dj_id = d.id) +
             (SELECT LEAST(10, count(*)::int * 5) FROM dj_articles a WHERE a.dj_id = d.id) AS data_completeness,
             (SELECT count(*)::int FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
-            (SELECT count(*)::int FROM dj_mixes m WHERE m.dj_id = d.id) AS mix_count,
+            (SELECT count(*)::int FROM dj_mixes m WHERE m.dj_id = d.id AND m.status <> 'dead') AS mix_count,
             (SELECT count(*)::int FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS past_gig_count,
             (SELECT max(e2.starts_at)::text FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at
      FROM djs d WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,
@@ -28,14 +28,14 @@ const events = (
 ).rows;
 const links = (
   await pool.query(
-    `SELECT l.id, l.dj_id, l.type, l.url, l.label, l.archive_url, l.followers, l.track_count,
+    `SELECT l.id, l.dj_id, l.type, l.url, l.label, l.archive_url, l.followers, l.track_count, l.status,
             (SELECT count(*) FILTER (WHERE f.helpful) FROM link_feedback f WHERE f.link_id = l.id)::int AS helpful,
             (SELECT count(*) FILTER (WHERE NOT f.helpful) FROM link_feedback f WHERE f.link_id = l.id)::int AS unhelpful
      FROM dj_links l`,
   )
 ).rows;
 const articles = (await pool.query('SELECT id, dj_id, title, url, source, published_at, snippet, archive_url FROM dj_articles')).rows;
-const mixes = (await pool.query('SELECT id, dj_id, title, url, platform FROM dj_mixes')).rows;
+const mixes = (await pool.query('SELECT id, dj_id, title, url, platform, status FROM dj_mixes')).rows;
 const releases = (await pool.query('SELECT id, dj_id, title, year, label, format, url FROM dj_releases')).rows;
 const eventDjs = (await pool.query('SELECT event_id, dj_id, stage, starts_at, ends_at, act_label, source FROM event_djs')).rows;
 const venues = (await pool.query('SELECT id, name, address, url FROM venues')).rows;

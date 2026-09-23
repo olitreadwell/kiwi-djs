@@ -132,6 +132,8 @@ CREATE TABLE IF NOT EXISTS dj_links (
 ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS followers INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS track_count INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS archive_url TEXT;      -- Wayback Machine copy (#302)
+ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS status TEXT NOT NULL DEFAULT 'live';  -- link health (#130)
+ALTER TABLE dj_links ADD COLUMN IF NOT EXISTS last_checked_at TIMESTAMPTZ;
 
 CREATE TABLE IF NOT EXISTS dj_articles (
   id            TEXT PRIMARY KEY,            -- djId-<hash>
@@ -175,6 +177,12 @@ CREATE TABLE IF NOT EXISTS dj_mixes (
 );
 
 ALTER TABLE dj_mixes ADD COLUMN IF NOT EXISTS kind TEXT NOT NULL DEFAULT 'mix';
+
+-- Link health (#130): 'live' | 'dead' (404/410) | 'blocked' (401/403, private
+-- or bot-hostile) | 'unknown'. Dead rows stay in the table for the monthly
+-- retry and are hidden from every public read.
+ALTER TABLE dj_mixes ADD COLUMN IF NOT EXISTS status TEXT NOT NULL DEFAULT 'live';
+ALTER TABLE dj_mixes ADD COLUMN IF NOT EXISTS last_checked_at TIMESTAMPTZ;
 
 CREATE TABLE IF NOT EXISTS dj_aliases (
   dj_id         TEXT NOT NULL REFERENCES djs(id) ON DELETE CASCADE,

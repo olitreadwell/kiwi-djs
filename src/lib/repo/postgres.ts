@@ -27,7 +27,7 @@ const completenessSql = `(
   (CASE WHEN image_url IS NOT NULL THEN 10 ELSE 0 END) +
   (CASE WHEN soundcloud_url IS NOT NULL OR instagram_url IS NOT NULL OR facebook_url IS NOT NULL
          OR website_url IS NOT NULL OR mixcloud_url IS NOT NULL THEN 10 ELSE 0 END) +
-  (SELECT LEAST(30, count(*)::int * 10) FROM dj_mixes m WHERE m.dj_id = d.id) +
+  (SELECT LEAST(30, count(*)::int * 10) FROM dj_mixes m WHERE m.dj_id = d.id AND m.status <> 'dead') +
   (SELECT LEAST(20, count(*)::int * 5) FROM event_djs ed WHERE ed.dj_id = d.id) +
   (SELECT LEAST(10, count(*)::int * 5) FROM dj_articles a WHERE a.dj_id = d.id)
 )`;
@@ -38,7 +38,7 @@ const djSelect = `SELECT d.id, d.name, d.bio, d.summary, d.summary_long, d.genre
        d.is_nz, d.created_at, d.updated_at, d.bpm_range,
        ${completenessSql} AS data_completeness,
        (SELECT count(*) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = d.id AND e.starts_at > now()) AS upcoming_events,
-       (SELECT count(*) FROM dj_mixes m WHERE m.dj_id = d.id) AS mix_count,
+       (SELECT count(*) FROM dj_mixes m WHERE m.dj_id = d.id AND m.status <> 'dead') AS mix_count,
        (SELECT count(*) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS past_gig_count,
        (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at`;
 
@@ -212,7 +212,11 @@ export class PostgresRepo implements DataRepository {
 
   async getDjMixes(djId: string): Promise<MixRow[]> {
     const pool = getPool();
-    const result = await pool.query('SELECT id, title, url, platform, kind FROM dj_mixes WHERE dj_id = $1 ORDER BY created_at DESC', [djId]);
+    const result = await pool.query(
+      `SELECT id, title, url, platform, kind FROM dj_mixes
+       WHERE dj_id = $1 AND status <> 'dead' ORDER BY created_at DESC`,
+      [djId],
+    );
     return result.rows as MixRow[];
   }
 
@@ -243,7 +247,7 @@ export class PostgresRepo implements DataRepository {
               count(f.id) FILTER (WHERE f.helpful)::int AS helpful,
               count(f.id) FILTER (WHERE NOT f.helpful)::int AS unhelpful
        FROM dj_links l LEFT JOIN link_feedback f ON f.link_id = l.id
-       WHERE l.dj_id = $1
+       WHERE l.dj_id = $1 AND l.status <> 'dead'
        GROUP BY l.id
        ORDER BY l.type, l.created_at`,
       [djId],

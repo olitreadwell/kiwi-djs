@@ -125,7 +125,9 @@ export class SnapshotRepo implements DataRepository {
   }
 
   async getDjMixes(djId: string): Promise<MixRow[]> {
-    return (snapshot.mixes as MixRow[] | undefined)?.filter((mix) => mix.dj_id === djId) ?? [];
+    return (
+      (snapshot.mixes as MixRow[] | undefined)?.filter((mix) => mix.dj_id === djId && mix.status !== 'dead') ?? []
+    );
   }
 
   async getDjReleases(djId: string): Promise<ReleaseRow[]> {
@@ -139,7 +141,7 @@ export class SnapshotRepo implements DataRepository {
   async getDjLinks(djId: string): Promise<LinkRow[]> {
     return (
       (snapshot.links as LinkRow[] | undefined)
-        ?.filter((link) => link.dj_id === djId)
+        ?.filter((link) => link.dj_id === djId && link.status !== 'dead')
         .map((link) => ({ ...link, created_at: null, helpful: link.helpful ?? 0, unhelpful: link.unhelpful ?? 0, followers: link.followers ?? 0, track_count: link.track_count ?? 0 })) ?? []
     );
   }

@@ -96,6 +96,8 @@ export interface MixRow {
   url: string;
   platform: string;
   kind: 'mix' | 'interview';
+  /** Link health from the 404 sweep (#130): live | dead | private | unknown. */
+  status?: string;
 }
 
 export interface ReleaseRow {
@@ -131,6 +133,8 @@ export interface LinkRow {
   followers: number;
   archive_url?: string | null;
   track_count: number;
+  /** Link health from the 404 sweep (#130): live | dead | private | unknown. */
+  status?: string;
 }
 
 export interface CollabRow {

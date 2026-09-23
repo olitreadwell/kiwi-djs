@@ -2,11 +2,16 @@ import type { Pool } from 'pg';
 import { isNonDjAct } from '../src/lib/scrapers/festival';
 import { isJunkName, normalizeArtistName } from '../src/lib/scrapers/discover';
 import { classifyProfileLocation, hasNzLocationEvidence } from '../src/lib/locations';
+import { sweepLinkHealth, type LinkStatus } from '../src/lib/link-health';
 
 // Automatable dataset fixes. Each entry maps a GitHub issue to a rule-based
 // pass the loop can run without an LLM: implement the fix, close the issue
 // when its acceptance criteria are met, otherwise leave it open and report
 // progress. Lower `priority` runs first.
+
+// How many URLs one link-health pass probes (500ms each, so ~4 minutes per
+// 500). The loop cycles until every row has been checked once (#130).
+const LINK_CHECK_LIMIT = 300;
 
 export interface DatasetFixResult {
   resolved: boolean;
@@ -399,6 +404,60 @@ export const DATASET_FIXES: DatasetFix[] = [
       const { low, ok } = await runBioQualityPass(pool);
       const detail = `Audited ${low + ok} active DJ bios: ${low} low quality, ${ok} ok.`;
       return { resolved: true, detail };
+    },
+  },
+  {
+    issueNumber: 130,
+    title: 'dead link detection (#130)',
+    priority: 5,
+    fix: async (pool) => {
+      // Sweep the least recently checked rows first: a full pass over every
+      // mix and link runs for hours at 500ms per probe, so each loop cycle
+      // checks a slice and the 30-day retry naturally follows.
+      const mixes = (
+        await pool.query(
+          `SELECT id, url FROM dj_mixes
+           WHERE platform IN ('soundcloud', 'mixcloud')
+             AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days')
+           ORDER BY last_checked_at NULLS FIRST
+           LIMIT $1`,
+          [LINK_CHECK_LIMIT],
+        )
+      ).rows as Array<{ id: string; url: string }>;
+      const links = (
+        await pool.query(
+          `SELECT id, url FROM dj_links
+           WHERE url LIKE 'http%'
+             AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days')
+           ORDER BY last_checked_at NULLS FIRST
+           LIMIT $1`,
+          [LINK_CHECK_LIMIT],
+        )
+      ).rows as Array<{ id: string; url: string }>;
+
+      const counts: Record<LinkStatus, number> = { live: 0, dead: 0, blocked: 0, unknown: 0 };
+      const apply = async (table: 'dj_mixes' | 'dj_links', rows: Array<{ id: string; url: string }>) => {
+        if (rows.length === 0) return;
+        const results = await sweepLinkHealth(rows.map((row) => row.url), {
+          onResult: (_url, status) => {
+            counts[status] += 1;
+          },
+        });
+        for (const row of rows) {
+          const status = results.get(row.url) ?? 'unknown';
+          await pool.query(`UPDATE ${table} SET status = $1, last_checked_at = now() WHERE id = $2`, [status, row.id]);
+        }
+      };
+      await apply('dj_mixes', mixes);
+      await apply('dj_links', links);
+
+      const remaining = await pool.query(
+        `SELECT
+           (SELECT count(*)::int FROM dj_mixes WHERE platform IN ('soundcloud', 'mixcloud') AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days'))
+         + (SELECT count(*)::int FROM dj_links WHERE url LIKE 'http%' AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days')) AS n`,
+      );
+      const detail = `Checked ${mixes.length + links.length} link(s): ${counts.live} live, ${counts.dead} dead, ${counts.blocked} blocked, ${counts.unknown} unknown. ${remaining.rows[0].n} still unchecked.`;
+      return { resolved: remaining.rows[0].n === 0, detail };
     },
   },
   {
