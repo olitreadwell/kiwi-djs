@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Standalone output is what the Dockerfile and scripts/smoke.sh boot.
+  // Vercel ignores it and builds its own server bundle.
+  output: "standalone",
 };
 
 export default nextConfig;

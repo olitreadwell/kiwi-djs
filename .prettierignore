@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+dist
+coverage
+playwright-report
+test-results
+pnpm-lock.yaml
+public
+*.md
+next-env.d.ts
+*.yml
+*.yaml
+src/data/snapshot.json
