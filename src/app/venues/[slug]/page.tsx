@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { getEventLineup, getVenueById, getVenueEvents } from '@/lib/queries';
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getEventLineup, getVenueById, getVenueEvents } from "@/lib/queries";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export default async function VenuePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -14,14 +14,21 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
-      <Link href="/venues" className="font-mono text-xs text-muted hover:text-accent">← all venues</Link>
+      <Link href="/venues" className="font-mono text-xs text-muted hover:text-accent">
+        ← all venues
+      </Link>
       <h1 className="mt-4 text-3xl font-black text-foreground">{venue.name}</h1>
       <p className="mt-2 font-mono text-xs text-muted">
-        {venue.address ?? 'address tbc'}
-        {venue.region ? ` · ${venue.region}` : ''}
+        {venue.address ?? "address tbc"}
+        {venue.region ? ` · ${venue.region}` : ""}
       </p>
       {venue.url && (
-        <a href={venue.url} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block font-mono text-xs text-accent hover:underline">
+        <a
+          href={venue.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-1 inline-block font-mono text-xs text-accent hover:underline"
+        >
           venue site ↗
         </a>
       )}
@@ -34,11 +41,18 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
           {events.map((event, index) => (
             <li key={event.id} className="px-4 py-4">
               <div className="flex items-center justify-between gap-4">
-                <Link href={`/events/${event.id}`} className="text-sm font-semibold text-foreground transition-colors hover:text-accent">
+                <Link
+                  href={`/events/${event.id}`}
+                  className="text-sm font-semibold text-foreground transition-colors hover:text-accent"
+                >
                   {event.name}
                 </Link>
                 <p className="font-mono text-xs text-muted">
-                  {new Date(event.starts_at).toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric', month: 'short' })}
+                  {new Date(event.starts_at).toLocaleDateString("en-NZ", {
+                    weekday: "short",
+                    day: "numeric",
+                    month: "short",
+                  })}
                 </p>
               </div>
               {lineups[index].length > 0 && (
@@ -55,7 +69,12 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
                 </div>
               )}
               {event.url && (
-                <a href={event.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block font-mono text-xs text-faint hover:text-accent">
+                <a
+                  href={event.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block font-mono text-xs text-faint hover:text-accent"
+                >
                   source ↗
                 </a>
               )}

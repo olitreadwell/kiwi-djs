@@ -1,8 +1,8 @@
-import type { Pool } from 'pg';
-import { isNonDjAct } from '../src/lib/scrapers/festival';
-import { isJunkName, normalizeArtistName } from '../src/lib/scrapers/discover';
-import { classifyProfileLocation, hasNzLocationEvidence } from '../src/lib/locations';
-import { sweepLinkHealth, type LinkStatus } from '../src/lib/link-health';
+import type { Pool } from "pg";
+import { isNonDjAct } from "../src/lib/scrapers/festival";
+import { isJunkName, normalizeArtistName } from "../src/lib/scrapers/discover";
+import { classifyProfileLocation, hasNzLocationEvidence } from "../src/lib/locations";
+import { sweepLinkHealth, type LinkStatus } from "../src/lib/link-health";
 
 // Automatable dataset fixes. Each entry maps a GitHub issue to a rule-based
 // pass the loop can run without an LLM: implement the fix, close the issue
@@ -52,12 +52,15 @@ function bigramSimilarity(a: string, b: string): number {
   return inter / (ga.size + gb.size - inter);
 }
 
-async function evidenceCounts(pool: Pool, djId: string): Promise<{ mixes: number; links: number; articles: number; gigs: number }> {
+async function evidenceCounts(
+  pool: Pool,
+  djId: string
+): Promise<{ mixes: number; links: number; articles: number; gigs: number }> {
   const [mixes, links, articles, gigs] = await Promise.all([
-    pool.query('SELECT count(*)::int AS n FROM dj_mixes WHERE dj_id = $1', [djId]),
-    pool.query('SELECT count(*)::int AS n FROM dj_links WHERE dj_id = $1', [djId]),
-    pool.query('SELECT count(*)::int AS n FROM dj_articles WHERE dj_id = $1', [djId]),
-    pool.query('SELECT count(*)::int AS n FROM event_djs WHERE dj_id = $1', [djId]),
+    pool.query("SELECT count(*)::int AS n FROM dj_mixes WHERE dj_id = $1", [djId]),
+    pool.query("SELECT count(*)::int AS n FROM dj_links WHERE dj_id = $1", [djId]),
+    pool.query("SELECT count(*)::int AS n FROM dj_articles WHERE dj_id = $1", [djId]),
+    pool.query("SELECT count(*)::int AS n FROM event_djs WHERE dj_id = $1", [djId]),
   ]);
   return {
     mixes: mixes.rows[0].n as number,
@@ -69,16 +72,20 @@ async function evidenceCounts(pool: Pool, djId: string): Promise<{ mixes: number
 
 // Merge a candidate's evidence into an active DJ, then delete the candidate.
 // Evidence tables use ON CONFLICT DO NOTHING so an active DJ's own rows win.
-async function mergeCandidateIntoActive(pool: Pool, activeId: string, candId: string): Promise<void> {
+async function mergeCandidateIntoActive(
+  pool: Pool,
+  activeId: string,
+  candId: string
+): Promise<void> {
   const client = await pool.connect();
   try {
-    await client.query('BEGIN');
+    await client.query("BEGIN");
     await client.query(
       `INSERT INTO dj_mixes (id, dj_id, platform, title, url, kind, created_at)
        SELECT regexp_replace(id, '^[^-]+-', $1 || '-'), $1, platform, title, url, kind, created_at
        FROM dj_mixes WHERE dj_id = $2
        ON CONFLICT (id) DO NOTHING`,
-      [activeId, candId],
+      [activeId, candId]
     );
     await client.query(`DELETE FROM dj_mixes WHERE dj_id = $1`, [candId]);
     await client.query(
@@ -86,7 +93,7 @@ async function mergeCandidateIntoActive(pool: Pool, activeId: string, candId: st
        SELECT regexp_replace(id, '^[^-]+-', $1 || '-'), $1, type, url, label, created_at
        FROM dj_links WHERE dj_id = $2
        ON CONFLICT (id) DO NOTHING`,
-      [activeId, candId],
+      [activeId, candId]
     );
     await client.query(`DELETE FROM dj_links WHERE dj_id = $1`, [candId]);
     await client.query(
@@ -94,21 +101,21 @@ async function mergeCandidateIntoActive(pool: Pool, activeId: string, candId: st
        SELECT regexp_replace(id, '^[^-]+-', $1 || '-'), $1, title, url, source, published_at, snippet, created_at
        FROM dj_articles WHERE dj_id = $2
        ON CONFLICT (id) DO NOTHING`,
-      [activeId, candId],
+      [activeId, candId]
     );
     await client.query(`DELETE FROM dj_articles WHERE dj_id = $1`, [candId]);
     await client.query(
       `INSERT INTO event_djs (event_id, dj_id)
        SELECT event_id, $1 FROM event_djs WHERE dj_id = $2
        ON CONFLICT (event_id, dj_id) DO NOTHING`,
-      [activeId, candId],
+      [activeId, candId]
     );
     await client.query(`DELETE FROM event_djs WHERE dj_id = $1`, [candId]);
     await client.query(`UPDATE events SET dj_id = $1 WHERE dj_id = $2`, [activeId, candId]);
     await client.query(
       `INSERT INTO dj_aliases (dj_id, alias)
        SELECT $1, alias FROM dj_aliases WHERE dj_id = $2 ON CONFLICT DO NOTHING`,
-      [activeId, candId],
+      [activeId, candId]
     );
     await client.query(`DELETE FROM dj_aliases WHERE dj_id = $1`, [candId]);
     // Carry over missing profile fields from the candidate.
@@ -123,12 +130,12 @@ async function mergeCandidateIntoActive(pool: Pool, activeId: string, candId: st
          mixcloud_url = COALESCE(mixcloud_url, (SELECT mixcloud_url FROM djs WHERE id = $2)),
          website_url = COALESCE(website_url, (SELECT website_url FROM djs WHERE id = $2))
        WHERE id = $1`,
-      [activeId, candId],
+      [activeId, candId]
     );
     await client.query(`DELETE FROM djs WHERE id = $1`, [candId]);
-    await client.query('COMMIT');
+    await client.query("COMMIT");
   } catch (err) {
-    await client.query('ROLLBACK');
+    await client.query("ROLLBACK");
     throw err;
   } finally {
     client.release();
@@ -138,7 +145,9 @@ async function mergeCandidateIntoActive(pool: Pool, activeId: string, candId: st
 // Shared duplicate pass (#159 + #193): find candidate/active pairs, score
 // match confidence (name similarity + alias overlap + shared evidence), and
 // auto-merge only pairs above the 0.9 threshold.
-async function runDuplicateMergePass(pool: Pool): Promise<{ merged: number; remaining: MergePair[] }> {
+async function runDuplicateMergePass(
+  pool: Pool
+): Promise<{ merged: number; remaining: MergePair[] }> {
   const pairs = (
     await pool.query(
       `SELECT a.id AS active_id, a.name AS active_name, c.id AS cand_id, c.name AS cand_name,
@@ -147,11 +156,20 @@ async function runDuplicateMergePass(pool: Pool): Promise<{ merged: number; rema
        WHERE a.opt_out = FALSE AND c.opt_out = FALSE
          AND (c.discovery_note IS NULL OR c.discovery_note <> 'junk')
          AND similarity(a.name, c.name) > 0.5
-       ORDER BY name_sim DESC`,
+       ORDER BY name_sim DESC`
     )
-  ).rows as Array<{ active_id: string; active_name: string; cand_id: string; cand_name: string; name_sim: number }>;
+  ).rows as Array<{
+    active_id: string;
+    active_name: string;
+    cand_id: string;
+    cand_name: string;
+    name_sim: number;
+  }>;
 
-  const aliases = (await pool.query('SELECT dj_id, alias FROM dj_aliases')).rows as Array<{ dj_id: string; alias: string }>;
+  const aliases = (await pool.query("SELECT dj_id, alias FROM dj_aliases")).rows as Array<{
+    dj_id: string;
+    alias: string;
+  }>;
   const aliasByDj = new Map<string, Set<string>>();
   for (const row of aliases) {
     const set = aliasByDj.get(row.dj_id) ?? new Set<string>();
@@ -207,7 +225,7 @@ async function runBioQualityPass(pool: Pool): Promise<{ low: number; ok: number 
       `SELECT id, name, bio FROM djs
        WHERE opt_out = FALSE AND is_nz = TRUE AND active = TRUE
          AND (discovery_note IS NULL OR discovery_note <> 'junk')
-         AND bio IS NOT NULL`,
+         AND bio IS NOT NULL`
     )
   ).rows as Array<{ id: string; name: string; bio: string }>;
   const normalizedBios = new Map<string, number>();
@@ -224,7 +242,10 @@ async function runBioQualityPass(pool: Pool): Promise<{ low: number; ok: number 
       trimmed.length < 20 ||
       (trimmed.length < 40 && GENERIC_BIO_PATTERNS.some((re) => re.test(trimmed))) ||
       (normalizedBios.get(key) ?? 0) > 1;
-    await pool.query(`UPDATE djs SET bio_quality = $1 WHERE id = $2`, [isLow ? 'low' : 'ok', row.id]);
+    await pool.query(`UPDATE djs SET bio_quality = $1 WHERE id = $2`, [
+      isLow ? "low" : "ok",
+      row.id,
+    ]);
     if (isLow) low += 1;
     else ok += 1;
   }
@@ -245,33 +266,41 @@ const COMPLETENESS_SQL = `(
 export const DATASET_FIXES: DatasetFix[] = [
   {
     issueNumber: 262,
-    title: 'flag + demote DJs whose profiles list a non-NZ location',
+    title: "flag + demote DJs whose profiles list a non-NZ location",
     priority: 1,
     fix: async (pool) => {
       const rows = (
         await pool.query(
           `SELECT id, name, profile_location, verification_sources FROM djs
            WHERE opt_out = FALSE AND active = TRUE AND is_nz = TRUE
-             AND profile_location IS NOT NULL AND profile_location <> ''`,
+             AND profile_location IS NOT NULL AND profile_location <> ''`
         )
-      ).rows as Array<{ id: string; name: string; profile_location: string; verification_sources: string[] }>;
+      ).rows as Array<{
+        id: string;
+        name: string;
+        profile_location: string;
+        verification_sources: string[];
+      }>;
       const demoted: string[] = [];
       for (const row of rows) {
-        if (classifyProfileLocation(row.profile_location) !== 'non-nz') continue;
+        if (classifyProfileLocation(row.profile_location) !== "non-nz") continue;
         if (hasNzLocationEvidence(row.verification_sources)) continue;
-        await pool.query(`UPDATE djs SET is_nz = FALSE, active = FALSE, verification_level = 0, updated_at = now() WHERE id = $1`, [row.id]);
+        await pool.query(
+          `UPDATE djs SET is_nz = FALSE, active = FALSE, verification_level = 0, updated_at = now() WHERE id = $1`,
+          [row.id]
+        );
         demoted.push(row.name);
       }
       const detail =
         demoted.length > 0
-          ? `Demoted ${demoted.length} DJ(s) with non-NZ profile locations and no NZ evidence: ${demoted.join(', ')}.`
-          : 'No active DJs with non-NZ profile locations and no NZ evidence.';
+          ? `Demoted ${demoted.length} DJ(s) with non-NZ profile locations and no NZ evidence: ${demoted.join(", ")}.`
+          : "No active DJs with non-NZ profile locations and no NZ evidence.";
       return { resolved: true, detail };
     },
   },
   {
     issueNumber: 321,
-    title: 'demote listed DJs whose only NZ evidence is gigs',
+    title: "demote listed DJs whose only NZ evidence is gigs",
     priority: 1,
     fix: async (pool) => {
       // Backfill: a stored profile location that names NZ is the
@@ -284,7 +313,7 @@ export const DATASET_FIXES: DatasetFix[] = [
          WHERE opt_out = FALSE AND active = TRUE AND is_nz = TRUE
            AND NOT ('location' = ANY(verification_sources))
            AND profile_location IS NOT NULL AND profile_location <> ''
-           AND profile_location ~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'`,
+           AND profile_location ~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'`
       );
       // Demote: gigs don't make someone an NZ DJ (#321). A listed DJ needs
       // a profile location naming NZ, a curated/radio source, or an NZ bio
@@ -296,19 +325,19 @@ export const DATASET_FIXES: DatasetFix[] = [
            AND source NOT IN ('seed','manual','radioactive','bfm')
            AND COALESCE(bio, '') !~* 'new zealand|aotearoa|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke|[[:<:]]nz[[:>:]]'
            AND COALESCE(profile_location, '') !~* 'new zealand|aotearoa|[[:<:]]nz[[:>:]]|wellington|auckland|christchurch|dunedin|queenstown|hamilton|tauranga|nelson|napier|rotorua|palmerston north|new plymouth|whanganui|gisborne|timaru|invercargill|whangarei|hastings|lower hutt|upper hutt|porirua|taupo|wanaka|blenheim|waiheke'
-         RETURNING name`,
+         RETURNING name`
       );
       const names = (demoted.rows as Array<{ name: string }>).map((row) => row.name);
       const detail =
         names.length > 0
-          ? `Backfilled location source for ${backfilled.rowCount} DJ(s); demoted ${names.length} gigs-only DJ(s): ${names.join(', ')}.`
+          ? `Backfilled location source for ${backfilled.rowCount} DJ(s); demoted ${names.length} gigs-only DJ(s): ${names.join(", ")}.`
           : `Backfilled location source for ${backfilled.rowCount} DJ(s); no gigs-only DJs left to demote.`;
       return { resolved: names.length === 0, detail };
     },
   },
   {
     issueNumber: 159,
-    title: 'duplicate DJ detection + merge',
+    title: "duplicate DJ detection + merge",
     priority: 1,
     fix: async (pool) => {
       const { merged, remaining } = await runDuplicateMergePass(pool);
@@ -318,7 +347,7 @@ export const DATASET_FIXES: DatasetFix[] = [
   },
   {
     issueNumber: 193,
-    title: 'multi-source name match confidence scoring',
+    title: "multi-source name match confidence scoring",
     priority: 2,
     fix: async (pool) => {
       const { merged, remaining } = await runDuplicateMergePass(pool);
@@ -328,7 +357,7 @@ export const DATASET_FIXES: DatasetFix[] = [
   },
   {
     issueNumber: 138,
-    title: 'stale DJ flagging (no activity >12 months)',
+    title: "stale DJ flagging (no activity >12 months)",
     priority: 3,
     fix: async (pool) => {
       const flagged = await pool.query(
@@ -345,7 +374,7 @@ export const DATASET_FIXES: DatasetFix[] = [
              COALESCE((SELECT max(e.starts_at) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = djs.id), '-infinity'::timestamptz),
              COALESCE((SELECT max(a.published_at) FROM dj_articles a WHERE a.dj_id = djs.id), '-infinity'::timestamptz),
              COALESCE((SELECT max(m.created_at) FROM dj_mixes m WHERE m.dj_id = djs.id), '-infinity'::timestamptz)
-           ) < now() - interval '12 months'`,
+           ) < now() - interval '12 months'`
       );
       const cleared = await pool.query(
         `UPDATE djs SET stale_since = NULL
@@ -354,7 +383,7 @@ export const DATASET_FIXES: DatasetFix[] = [
              COALESCE((SELECT max(e.starts_at) FROM event_djs ed JOIN events e ON e.id = ed.event_id WHERE ed.dj_id = djs.id), '-infinity'::timestamptz),
              COALESCE((SELECT max(a.published_at) FROM dj_articles a WHERE a.dj_id = djs.id), '-infinity'::timestamptz),
              COALESCE((SELECT max(m.created_at) FROM dj_mixes m WHERE m.dj_id = djs.id), '-infinity'::timestamptz)
-           ) >= now() - interval '12 months'`,
+           ) >= now() - interval '12 months'`
       );
       const detail = `Flagged ${flagged.rowCount} stale DJ(s), cleared ${cleared.rowCount} active again.`;
       return { resolved: true, detail };
@@ -362,16 +391,16 @@ export const DATASET_FIXES: DatasetFix[] = [
   },
   {
     issueNumber: 195,
-    title: 'junk candidate auto-cleanup improvements',
+    title: "junk candidate auto-cleanup improvements",
     priority: 4,
     fix: async (pool) => {
-      const venues = (await pool.query('SELECT name FROM venues')).rows as Array<{ name: string }>;
+      const venues = (await pool.query("SELECT name FROM venues")).rows as Array<{ name: string }>;
       const venueNames = new Set(venues.map((v) => normalizeArtistName(v.name)));
       const candidates = (
         await pool.query(
           `SELECT id, name FROM djs
            WHERE active = FALSE AND opt_out = FALSE
-             AND (discovery_note IS NULL OR discovery_note <> 'junk')`,
+             AND (discovery_note IS NULL OR discovery_note <> 'junk')`
         )
       ).rows as Array<{ id: string; name: string }>;
       let marked = 0;
@@ -390,7 +419,7 @@ export const DATASET_FIXES: DatasetFix[] = [
          AND NOT EXISTS (SELECT 1 FROM dj_mixes m WHERE m.dj_id = djs.id)
          AND NOT EXISTS (SELECT 1 FROM dj_links l WHERE l.dj_id = djs.id)
          AND NOT EXISTS (SELECT 1 FROM dj_articles a WHERE a.dj_id = djs.id)
-         AND NOT EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = djs.id)`,
+         AND NOT EXISTS (SELECT 1 FROM event_djs ed WHERE ed.dj_id = djs.id)`
       );
       const detail = `Marked ${marked} candidate(s) junk (venue/non-DJ/junk-name signals); deleted ${deleted.rowCount} evidence-free junk candidate(s).`;
       return { resolved: true, detail };
@@ -398,7 +427,7 @@ export const DATASET_FIXES: DatasetFix[] = [
   },
   {
     issueNumber: 142,
-    title: 'bio quality audit (duplicate/generic bios)',
+    title: "bio quality audit (duplicate/generic bios)",
     priority: 5,
     fix: async (pool) => {
       const { low, ok } = await runBioQualityPass(pool);
@@ -408,7 +437,7 @@ export const DATASET_FIXES: DatasetFix[] = [
   },
   {
     issueNumber: 130,
-    title: 'dead link detection (#130)',
+    title: "dead link detection (#130)",
     priority: 5,
     fix: async (pool) => {
       // Sweep the least recently checked rows first: a full pass over every
@@ -421,7 +450,7 @@ export const DATASET_FIXES: DatasetFix[] = [
              AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days')
            ORDER BY last_checked_at NULLS FIRST
            LIMIT $1`,
-          [LINK_CHECK_LIMIT],
+          [LINK_CHECK_LIMIT]
         )
       ).rows as Array<{ id: string; url: string }>;
       const links = (
@@ -431,30 +460,39 @@ export const DATASET_FIXES: DatasetFix[] = [
              AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days')
            ORDER BY last_checked_at NULLS FIRST
            LIMIT $1`,
-          [LINK_CHECK_LIMIT],
+          [LINK_CHECK_LIMIT]
         )
       ).rows as Array<{ id: string; url: string }>;
 
       const counts: Record<LinkStatus, number> = { live: 0, dead: 0, blocked: 0, unknown: 0 };
-      const apply = async (table: 'dj_mixes' | 'dj_links', rows: Array<{ id: string; url: string }>) => {
+      const apply = async (
+        table: "dj_mixes" | "dj_links",
+        rows: Array<{ id: string; url: string }>
+      ) => {
         if (rows.length === 0) return;
-        const results = await sweepLinkHealth(rows.map((row) => row.url), {
-          onResult: (_url, status) => {
-            counts[status] += 1;
-          },
-        });
+        const results = await sweepLinkHealth(
+          rows.map((row) => row.url),
+          {
+            onResult: (_url, status) => {
+              counts[status] += 1;
+            },
+          }
+        );
         for (const row of rows) {
-          const status = results.get(row.url) ?? 'unknown';
-          await pool.query(`UPDATE ${table} SET status = $1, last_checked_at = now() WHERE id = $2`, [status, row.id]);
+          const status = results.get(row.url) ?? "unknown";
+          await pool.query(
+            `UPDATE ${table} SET status = $1, last_checked_at = now() WHERE id = $2`,
+            [status, row.id]
+          );
         }
       };
-      await apply('dj_mixes', mixes);
-      await apply('dj_links', links);
+      await apply("dj_mixes", mixes);
+      await apply("dj_links", links);
 
       const remaining = await pool.query(
         `SELECT
            (SELECT count(*)::int FROM dj_mixes WHERE platform IN ('soundcloud', 'mixcloud') AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days'))
-         + (SELECT count(*)::int FROM dj_links WHERE url LIKE 'http%' AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days')) AS n`,
+         + (SELECT count(*)::int FROM dj_links WHERE url LIKE 'http%' AND (last_checked_at IS NULL OR last_checked_at < now() - interval '30 days')) AS n`
       );
       const detail = `Checked ${mixes.length + links.length} link(s): ${counts.live} live, ${counts.dead} dead, ${counts.blocked} blocked, ${counts.unknown} unknown. ${remaining.rows[0].n} still unchecked.`;
       return { resolved: remaining.rows[0].n === 0, detail };
@@ -462,12 +500,10 @@ export const DATASET_FIXES: DatasetFix[] = [
   },
   {
     issueNumber: 140,
-    title: 'data_completeness scoring recalibration',
+    title: "data_completeness scoring recalibration",
     priority: 6,
     fix: async (pool) => {
-      const updated = await pool.query(
-        `UPDATE djs d SET data_completeness = ${COMPLETENESS_SQL}`,
-      );
+      const updated = await pool.query(`UPDATE djs d SET data_completeness = ${COMPLETENESS_SQL}`);
       const detail = `Recalibrated data_completeness for ${updated.rowCount} DJ(s) (mixes 30 / gigs 20 / bio 15 / photo 10 / links 10 / articles 10 / genres 5).`;
       return { resolved: true, detail };
     },
@@ -478,9 +514,8 @@ export const DATASET_FIXES: DatasetFix[] = [
 // cross-source dupes (UTR vs UTR-venue vs Eventfinda), and same-gig rows
 // with/without parsed dates. Keeps the row with the most DJ links.
 export async function dedupeEvents(pool: Pool): Promise<{ merged: number; deleted: number }> {
-  const rows = (
-    await pool.query(`SELECT id, name, venue, starts_at, url, source FROM events`)
-  ).rows as Array<{
+  const rows = (await pool.query(`SELECT id, name, venue, starts_at, url, source FROM events`))
+    .rows as Array<{
     id: string;
     name: string;
     venue: string | null;
@@ -488,10 +523,10 @@ export async function dedupeEvents(pool: Pool): Promise<{ merged: number; delete
     url: string | null;
     source: string;
   }>;
-  const norm = (s: string | null): string => (s ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const norm = (s: string | null): string => (s ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
   const sid = (url: string | null): string => {
-    if (!url) return '';
-    return url.match(/SID\/(\d+)/)?.[1] ?? url.match(/gig\/(\d+)/)?.[1] ?? '';
+    if (!url) return "";
+    return url.match(/SID\/(\d+)/)?.[1] ?? url.match(/gig\/(\d+)/)?.[1] ?? "";
   };
 
   const groups: Array<Array<(typeof rows)[0]>> = [];
@@ -507,10 +542,14 @@ export async function dedupeEvents(pool: Pool): Promise<{ merged: number; delete
       const otherTime = other.starts_at ? new Date(other.starts_at).getTime() : null;
       const rowSid = sid(row.url);
       const otherSid = sid(other.url);
-      const datedMatch = rowTime !== null && otherTime !== null && Math.abs(rowTime - otherTime) < 86400000;
-      const sidMatch = rowSid !== '' && rowSid === otherSid;
+      const datedMatch =
+        rowTime !== null && otherTime !== null && Math.abs(rowTime - otherTime) < 86400000;
+      const sidMatch = rowSid !== "" && rowSid === otherSid;
       const festivalDup =
-        rowTime === null && otherTime === null && row.source === other.source && (row.url ?? '') === (other.url ?? '');
+        rowTime === null &&
+        otherTime === null &&
+        row.source === other.source &&
+        (row.url ?? "") === (other.url ?? "");
       if (datedMatch || sidMatch || festivalDup) {
         group.push(other);
         used.add(other.id);
@@ -524,7 +563,9 @@ export async function dedupeEvents(pool: Pool): Promise<{ merged: number; delete
   for (const group of groups) {
     if (group.length < 2) continue;
     const counts = await Promise.all(
-      group.map((g) => pool.query(`SELECT count(*)::int AS n FROM event_djs WHERE event_id = $1`, [g.id])),
+      group.map((g) =>
+        pool.query(`SELECT count(*)::int AS n FROM event_djs WHERE event_id = $1`, [g.id])
+      )
     );
     // Keep the row with the most DJ links; on a tie prefer a dated row
     // (a parsed date beats a NULL one), then the earliest id.
@@ -534,7 +575,11 @@ export async function dedupeEvents(pool: Pool): Promise<{ merged: number; delete
       const keepN = counts[keepIdx].rows[0].n as number;
       const dated = group[i].starts_at !== null;
       const keepDated = group[keepIdx].starts_at !== null;
-      if (n > keepN || (n === keepN && dated && !keepDated) || (n === keepN && dated === keepDated && group[i].id < group[keepIdx].id)) {
+      if (
+        n > keepN ||
+        (n === keepN && dated && !keepDated) ||
+        (n === keepN && dated === keepDated && group[i].id < group[keepIdx].id)
+      ) {
         keepIdx = i;
       }
     }
@@ -543,7 +588,7 @@ export async function dedupeEvents(pool: Pool): Promise<{ merged: number; delete
       if (dup.id === keep.id) continue;
       await pool.query(
         `INSERT INTO event_djs (event_id, dj_id) SELECT $1, dj_id FROM event_djs WHERE event_id = $2 ON CONFLICT DO NOTHING`,
-        [keep.id, dup.id],
+        [keep.id, dup.id]
       );
       await pool.query(`DELETE FROM event_djs WHERE event_id = $1`, [dup.id]);
       await pool.query(`DELETE FROM events WHERE id = $1`, [dup.id]);

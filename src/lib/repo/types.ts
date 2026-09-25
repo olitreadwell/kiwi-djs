@@ -95,7 +95,7 @@ export interface MixRow {
   title: string;
   url: string;
   platform: string;
-  kind: 'mix' | 'interview';
+  kind: "mix" | "interview";
   /** Link health from the 404 sweep (#130): live | dead | private | unknown. */
   status?: string;
 }

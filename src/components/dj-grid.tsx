@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { DjCard } from '@/components/dj-card';
-import type { DjRow } from '@/lib/queries';
+import { useState } from "react";
+import { DjCard } from "@/components/dj-card";
+import type { DjRow } from "@/lib/queries";
 
 const PAGE_SIZE = 36;
 
@@ -12,7 +12,9 @@ export function DjGrid({ djs }: { djs: DjRow[] }) {
   return (
     <>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {shown.map((dj) => <DjCard key={dj.id} dj={dj} />)}
+        {shown.map((dj) => (
+          <DjCard key={dj.id} dj={dj} />
+        ))}
       </div>
       {visible < djs.length && (
         <div className="mt-6 text-center">

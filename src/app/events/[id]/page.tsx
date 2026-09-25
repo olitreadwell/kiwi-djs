@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  getEventById,
-  getEventLineup,
-  getEventSets,
-  getVenues,
-} from "@/lib/queries";
+import { getEventById, getEventLineup, getEventSets, getVenues } from "@/lib/queries";
 import type { EventSetRow } from "@/lib/repo/types";
 
 export const dynamic = "force-dynamic";
@@ -49,17 +44,10 @@ function groupSetsByStage(sets: EventSetRow[]): Array<[string, SetSlot[]]> {
     slots.set(key, slot);
     stages.set(stage, slots);
   }
-  return [...stages.entries()].map(([stage, slots]) => [
-    stage,
-    [...slots.values()],
-  ]);
+  return [...stages.entries()].map(([stage, slots]) => [stage, [...slots.values()]]);
 }
 
-export default async function EventPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function EventPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const [event, lineup, sets, venues] = await Promise.all([
     getEventById(id),
@@ -71,17 +59,11 @@ export default async function EventPage({
   if (!event) notFound();
 
   const venue = event.venue
-    ? venues.find(
-        (candidate) =>
-          candidate.name.toLowerCase() === event.venue!.toLowerCase(),
-      )
+    ? venues.find((candidate) => candidate.name.toLowerCase() === event.venue!.toLowerCase())
     : undefined;
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
-      <Link
-        href="/events"
-        className="font-mono text-xs text-muted hover:text-accent"
-      >
+      <Link href="/events" className="font-mono text-xs text-muted hover:text-accent">
         ← event calendar
       </Link>
       <h1 className="mt-4 text-3xl font-black text-foreground">{event.name}</h1>
@@ -135,25 +117,17 @@ export default async function EventPage({
           <h2 className="mt-10 text-xl font-bold text-foreground">Set times</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {timetable.map(([stage, slots]) => (
-              <section
-                key={stage}
-                className="rounded-lg border border-edge bg-surface p-4"
-              >
-                <h3 className="font-mono text-xs uppercase tracking-wider text-accent">
-                  {stage}
-                </h3>
+              <section key={stage} className="rounded-lg border border-edge bg-surface p-4">
+                <h3 className="font-mono text-xs uppercase tracking-wider text-accent">{stage}</h3>
                 <ul className="mt-3 space-y-2">
                   {slots.map((slot) => {
                     // Only DJs we hold a public profile for are named and
                     // linked; the slot label already carries the full billing.
-                    const listedMembers = slot.djs.filter(
-                      (set) => set.dj_listed,
-                    );
+                    const listedMembers = slot.djs.filter((set) => set.dj_listed);
                     return (
                       <li key={slot.key} className="flex gap-3">
                         <span className="w-28 shrink-0 font-mono text-xs text-muted">
-                          {formatSetTime(slot.startsAt)} –{" "}
-                          {formatSetTime(slot.endsAt)}
+                          {formatSetTime(slot.startsAt)} – {formatSetTime(slot.endsAt)}
                         </span>
                         <span className="text-sm text-foreground">
                           {slot.djs.length === 1 && slot.djs[0].dj_listed ? (
@@ -196,9 +170,7 @@ export default async function EventPage({
 
       <h2 className="mt-10 text-xl font-bold text-foreground">Lineup</h2>
       {lineup.length === 0 ? (
-        <p className="mt-3 font-mono text-sm text-muted">
-          No DJs mapped to this event yet.
-        </p>
+        <p className="mt-3 font-mono text-sm text-muted">No DJs mapped to this event yet.</p>
       ) : (
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {lineup.map((dj) => (
@@ -219,10 +191,7 @@ export default async function EventPage({
       {event.dj_id && (
         <p className="mt-8 font-mono text-xs text-muted">
           Headliner:{" "}
-          <Link
-            href={`/djs/${event.dj_id}`}
-            className="text-accent hover:underline"
-          >
+          <Link href={`/djs/${event.dj_id}`} className="text-accent hover:underline">
             {event.dj_name}
           </Link>
         </p>

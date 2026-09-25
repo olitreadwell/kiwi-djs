@@ -1,40 +1,42 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-const FIELDS = ['bio', 'genres', 'mixes', 'socials', 'photo', 'events', 'other'];
+const FIELDS = ["bio", "genres", "mixes", "socials", "photo", "events", "other"];
 
 export function SuggestForm({ djId, djName }: { djId: string; djName: string }) {
-  const [field, setField] = useState('other');
-  const [suggestedValue, setSuggestedValue] = useState('');
-  const [sourceUrl, setSourceUrl] = useState('');
-  const [note, setNote] = useState('');
-  const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
-  const [error, setError] = useState('');
+  const [field, setField] = useState("other");
+  const [suggestedValue, setSuggestedValue] = useState("");
+  const [sourceUrl, setSourceUrl] = useState("");
+  const [note, setNote] = useState("");
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [error, setError] = useState("");
 
   async function submit(event: React.FormEvent) {
     event.preventDefault();
-    setStatus('sending');
-    setError('');
-    const res = await fetch('/api/suggestions', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
+    setStatus("sending");
+    setError("");
+    const res = await fetch("/api/suggestions", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
       body: JSON.stringify({ djId, djName, field, suggestedValue, sourceUrl, note }),
     });
     if (res.ok) {
-      setStatus('done');
-      setSuggestedValue('');
-      setSourceUrl('');
-      setNote('');
+      setStatus("done");
+      setSuggestedValue("");
+      setSourceUrl("");
+      setNote("");
     } else {
       const data = (await res.json().catch(() => ({}))) as { error?: string };
-      setStatus('error');
-      setError(data.error ?? 'Something went wrong');
+      setStatus("error");
+      setError(data.error ?? "Something went wrong");
     }
   }
 
-  if (status === 'done') {
-    return <p className="font-mono text-xs text-emerald-400">Thanks — suggestion received for review.</p>;
+  if (status === "done") {
+    return (
+      <p className="font-mono text-xs text-emerald-400">Thanks — suggestion received for review.</p>
+    );
   }
 
   return (
@@ -48,7 +50,9 @@ export function SuggestForm({ djId, djName }: { djId: string; djName: string }) 
             className="ml-2 rounded-md border border-edge bg-surface px-2 py-1 text-foreground"
           >
             {FIELDS.map((option) => (
-              <option key={option} value={option}>{option}</option>
+              <option key={option} value={option}>
+                {option}
+              </option>
             ))}
           </select>
         </label>
@@ -73,13 +77,13 @@ export function SuggestForm({ djId, djName }: { djId: string; djName: string }) 
         placeholder="Note (optional)"
         className="w-full rounded-md border border-edge bg-surface px-3 py-2 text-sm text-foreground placeholder:text-faint"
       />
-      {status === 'error' && <p className="font-mono text-xs text-red-400">{error}</p>}
+      {status === "error" && <p className="font-mono text-xs text-red-400">{error}</p>}
       <button
         type="submit"
-        disabled={status === 'sending' || suggestedValue.length < 3}
+        disabled={status === "sending" || suggestedValue.length < 3}
         className="rounded-full border border-accent/60 px-4 py-1.5 font-mono text-xs text-accent transition-colors hover:bg-accent/10 disabled:opacity-50"
       >
-        {status === 'sending' ? 'Sending…' : 'Submit suggestion'}
+        {status === "sending" ? "Sending…" : "Submit suggestion"}
       </button>
     </form>
   );

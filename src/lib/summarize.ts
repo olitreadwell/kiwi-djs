@@ -4,8 +4,8 @@
 // OpenAI-compatible endpoint when DEEPSEEK_API_KEY is set; otherwise it
 // degrades gracefully to null and the UI falls back to bio/rule-based
 // text. Never invents facts — the prompt only sees what the dataset holds.
-import type { Pool } from 'pg';
-import { cityFromLocation } from './locations';
+import type { Pool } from "pg";
+import { cityFromLocation } from "./locations";
 
 interface DjFacts {
   name: string;
@@ -26,33 +26,41 @@ export interface Summaries {
   summary_long: string;
 }
 
-const DEEPSEEK_URL = 'https://api.deepseek.com/chat/completions';
-const DEEPSEEK_MODEL = 'deepseek-chat';
+const DEEPSEEK_URL = "https://api.deepseek.com/chat/completions";
+const DEEPSEEK_MODEL = "deepseek-chat";
 
 async function generateSummaries(facts: DjFacts): Promise<Summaries | null> {
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) return null;
-  const genreText = facts.genres.length > 0 ? `genres: ${facts.genres.join(', ')}` : 'genres: unknown yet';
+  const genreText =
+    facts.genres.length > 0 ? `genres: ${facts.genres.join(", ")}` : "genres: unknown yet";
   const mixText =
     facts.mixes.count > 0
-      ? `${facts.mixes.count} mix${facts.mixes.count === 1 ? '' : 'es'} on ${facts.mixes.platforms.join(' and ')}`
-      : 'no mixes listed yet';
-  const gigsText = facts.upcomingGigs.length > 0 ? `upcoming: ${facts.upcomingGigs.join('; ')}` : 'no upcoming gigs listed';
-  const pastText = facts.pastGigs.length > 0 ? `recent gigs: ${facts.pastGigs.join(', ')}` : '';
-  const collabText = facts.collabs.length > 0 ? `recently played with: ${facts.collabs.join(', ')}` : '';
-  const labelText = facts.labels.length > 0 ? `associated with: ${facts.labels.join(', ')}` : '';
-  const articleText = facts.articles > 0 ? `mentioned in ${facts.articles} article${facts.articles === 1 ? '' : 's'}` : '';
+      ? `${facts.mixes.count} mix${facts.mixes.count === 1 ? "" : "es"} on ${facts.mixes.platforms.join(" and ")}`
+      : "no mixes listed yet";
+  const gigsText =
+    facts.upcomingGigs.length > 0
+      ? `upcoming: ${facts.upcomingGigs.join("; ")}`
+      : "no upcoming gigs listed";
+  const pastText = facts.pastGigs.length > 0 ? `recent gigs: ${facts.pastGigs.join(", ")}` : "";
+  const collabText =
+    facts.collabs.length > 0 ? `recently played with: ${facts.collabs.join(", ")}` : "";
+  const labelText = facts.labels.length > 0 ? `associated with: ${facts.labels.join(", ")}` : "";
+  const articleText =
+    facts.articles > 0
+      ? `mentioned in ${facts.articles} article${facts.articles === 1 ? "" : "s"}`
+      : "";
   // The profile location is the only city we can verify — never claim the
   // default Wellington when a profile says otherwise (or says nothing).
   const location = facts.profileLocation ? cityFromLocation(facts.profileLocation) : null;
   const basedText = location
     ? `Based: ${location.replace(/\b\w/g, (char) => char.toUpperCase())}`
-    : 'Based: NZ (kiwi)';
+    : "Based: NZ (kiwi)";
   const factsText = [
     `Name: ${facts.name}`,
     basedText,
     genreText,
-    facts.bio ? `Bio: ${facts.bio}` : '',
+    facts.bio ? `Bio: ${facts.bio}` : "",
     mixText,
     gigsText,
     pastText,
@@ -61,34 +69,34 @@ async function generateSummaries(facts: DjFacts): Promise<Summaries | null> {
     articleText,
   ]
     .filter(Boolean)
-    .join('\n');
+    .join("\n");
 
   const system =
-    'You write short factual blurbs for an Aotearoa New Zealand DJ directory. ' +
-    'Use ONLY the facts given. Write like a person who knows the local scene, not a template: ' +
-    'vary the structure between artists, and lead with whatever is most distinctive for THIS one ' +
-    '(a signature sound, a notable gig, a long residency, a festival slot, a label, a big following). ' +
-    'Never reuse the same sentence skeleton from one blurb to the next, avoid boilerplate like ' +
+    "You write short factual blurbs for an Aotearoa New Zealand DJ directory. " +
+    "Use ONLY the facts given. Write like a person who knows the local scene, not a template: " +
+    "vary the structure between artists, and lead with whatever is most distinctive for THIS one " +
+    "(a signature sound, a notable gig, a long residency, a festival slot, a label, a big following). " +
+    "Never reuse the same sentence skeleton from one blurb to the next, avoid boilerplate like " +
     '"They have N mixes on..." or "Next up is..." — fold numbers in naturally or leave them out. ' +
     'No cliches, no "delve", no em-dashes, no AI-sounding padding. Reply with JSON only: ' +
     '{"summary": "one sentence, under 24 words, for a list card", ' +
     '"summary_long": "2-4 sentences, for the profile page"}';
   try {
     const response = await fetch(DEEPSEEK_URL, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'content-type': 'application/json',
+        "content-type": "application/json",
         authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
         model: DEEPSEEK_MODEL,
         messages: [
-          { role: 'system', content: system },
-          { role: 'user', content: factsText },
+          { role: "system", content: system },
+          { role: "user", content: factsText },
         ],
         temperature: 0.4,
         max_tokens: 400,
-        response_format: { type: 'json_object' },
+        response_format: { type: "json_object" },
       }),
       signal: AbortSignal.timeout(30_000),
     });
@@ -96,10 +104,10 @@ async function generateSummaries(facts: DjFacts): Promise<Summaries | null> {
     const data = (await response.json()) as {
       choices?: Array<{ message?: { content?: string } }>;
     };
-    const content = data.choices?.[0]?.message?.content ?? '';
+    const content = data.choices?.[0]?.message?.content ?? "";
     const parsed = JSON.parse(content) as Partial<Summaries>;
-    const summary = (parsed.summary ?? '').trim();
-    const summaryLong = (parsed.summary_long ?? '').trim();
+    const summary = (parsed.summary ?? "").trim();
+    const summaryLong = (parsed.summary_long ?? "").trim();
     if (!summary || !summaryLong) return null;
     return { summary, summary_long: summaryLong };
   } catch {
@@ -111,9 +119,16 @@ async function loadFacts(pool: Pool, djId: string): Promise<DjFacts | null> {
   const dj = (
     await pool.query(
       `SELECT id, name, bio, genres, city, profile_location FROM djs WHERE id = $1`,
-      [djId],
+      [djId]
     )
-  ).rows[0] as { id: string; name: string; bio: string | null; genres: string[]; city: string | null; profile_location: string | null };
+  ).rows[0] as {
+    id: string;
+    name: string;
+    bio: string | null;
+    genres: string[];
+    city: string | null;
+    profile_location: string | null;
+  };
   if (!dj) return null;
   const [mixes, upcoming, past, articles, collabs, labels] = await Promise.all([
     pool.query(`SELECT platform FROM dj_mixes WHERE dj_id = $1`, [djId]),
@@ -122,12 +137,12 @@ async function loadFacts(pool: Pool, djId: string): Promise<DjFacts | null> {
        JOIN events e ON e.id = ed.event_id
        LEFT JOIN venues v ON v.name = e.venue
        WHERE ed.dj_id = $1 AND e.starts_at > now() ORDER BY e.starts_at ASC LIMIT 3`,
-      [djId],
+      [djId]
     ),
     pool.query(
       `SELECT e.name FROM event_djs ed JOIN events e ON e.id = ed.event_id
        WHERE ed.dj_id = $1 AND e.starts_at <= now() ORDER BY e.starts_at DESC LIMIT 3`,
-      [djId],
+      [djId]
     ),
     pool.query(`SELECT count(*)::int AS n FROM dj_articles WHERE dj_id = $1`, [djId]),
     pool.query(
@@ -135,9 +150,12 @@ async function loadFacts(pool: Pool, djId: string): Promise<DjFacts | null> {
        JOIN event_djs ed2 ON ed2.event_id = ed1.event_id AND ed2.dj_id <> ed1.dj_id
        JOIN djs d2 ON d2.id = ed2.dj_id
        WHERE ed1.dj_id = $1 GROUP BY d2.name ORDER BY c DESC LIMIT 4`,
-      [djId],
+      [djId]
     ),
-    pool.query(`SELECT label AS name FROM dj_links WHERE dj_id = $1 AND type IN ('label', 'promoter')`, [djId]),
+    pool.query(
+      `SELECT label AS name FROM dj_links WHERE dj_id = $1 AND type IN ('label', 'promoter')`,
+      [djId]
+    ),
   ]);
   return {
     name: dj.name,
@@ -149,7 +167,9 @@ async function loadFacts(pool: Pool, djId: string): Promise<DjFacts | null> {
       count: mixes.rows.length,
       platforms: [...new Set((mixes.rows as Array<{ platform: string }>).map((m) => m.platform))],
     },
-    upcomingGigs: (upcoming.rows as Array<{ name: string; venue: string | null }>).map((g) => `${g.name}${g.venue ? ` at ${g.venue}` : ''}`),
+    upcomingGigs: (upcoming.rows as Array<{ name: string; venue: string | null }>).map(
+      (g) => `${g.name}${g.venue ? ` at ${g.venue}` : ""}`
+    ),
     pastGigs: (past.rows as Array<{ name: string }>).map((g) => g.name),
     articles: articles.rows[0].n as number,
     collabs: (collabs.rows as Array<{ name: string }>).map((c) => c.name),
@@ -168,7 +188,7 @@ export async function summarizeMissingDjs(pool: Pool, limit = 20): Promise<numbe
          AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')
        ORDER BY d.popularity DESC, d.updated_at DESC
        LIMIT $1`,
-      [limit],
+      [limit]
     )
   ).rows as Array<{ id: string }>;
   let done = 0;
@@ -179,7 +199,7 @@ export async function summarizeMissingDjs(pool: Pool, limit = 20): Promise<numbe
     if (!summaries) break; // no key or API down — stop hammering
     await pool.query(
       `UPDATE djs SET summary = $2, summary_long = $3, updated_at = now() WHERE id = $1`,
-      [row.id, summaries.summary, summaries.summary_long],
+      [row.id, summaries.summary, summaries.summary_long]
     );
     done += 1;
     await new Promise((resolve) => setTimeout(resolve, 250));

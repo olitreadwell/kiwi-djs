@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server';
-import { openApiSpec } from '@/lib/openapi';
+import { NextResponse } from "next/server";
+import { openApiSpec } from "@/lib/openapi";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   return NextResponse.json(openApiSpec);

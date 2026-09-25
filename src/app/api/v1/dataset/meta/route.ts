@@ -1,8 +1,8 @@
-import { NextResponse } from 'next/server';
-import { buildDataset } from '@/lib/dataset';
-import type { DatasetMeta } from '@/lib/api-types';
+import { NextResponse } from "next/server";
+import { buildDataset } from "@/lib/dataset";
+import type { DatasetMeta } from "@/lib/api-types";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   const { dataset, version } = await buildDataset();
@@ -17,8 +17,8 @@ export async function GET() {
       articles: dataset.articles.length,
       mixes: dataset.mixes.length,
     },
-    license: 'Public data only. Opt-out respected — see /opt-out.',
-    sources: ['undertheradar', 'sanfran', 'rogue', 'mixcloud', 'bing-news', 'manual'],
+    license: "Public data only. Opt-out respected — see /opt-out.",
+    sources: ["undertheradar", "sanfran", "rogue", "mixcloud", "bing-news", "manual"],
   };
-  return NextResponse.json(meta, { headers: { 'cache-control': 'public, max-age=3600' } });
+  return NextResponse.json(meta, { headers: { "cache-control": "public, max-age=3600" } });
 }

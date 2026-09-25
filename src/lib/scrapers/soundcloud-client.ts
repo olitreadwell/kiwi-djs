@@ -1,13 +1,16 @@
 // SoundCloud API v2 needs a public web client id. Prefer SOUNDCLOUD_CLIENT_ID
 // env, else probe known-good public ids, else scrape one from the web app JS.
-const KNOWN_IDS = ['Pb72ranhoyt6gw7hM7TkzUItXlMWSNSo', 'iZIs9mchVcX5lhVRyQGGAYlNtmpld4pT'];
+const KNOWN_IDS = ["Pb72ranhoyt6gw7hM7TkzUItXlMWSNSo", "iZIs9mchVcX5lhVRyQGGAYlNtmpld4pT"];
 
 let cached: string | null | undefined;
 
 async function probe(clientId: string): Promise<boolean> {
   try {
     const url = `https://api-v2.soundcloud.com/search/users?q=wellington&client_id=${clientId}&limit=1`;
-    const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(10000) });
+    const res = await fetch(url, {
+      headers: { accept: "application/json" },
+      signal: AbortSignal.timeout(10000),
+    });
     return res.ok;
   } catch {
     return false;
@@ -16,15 +19,23 @@ async function probe(clientId: string): Promise<boolean> {
 
 async function scrapeClientId(): Promise<string | null> {
   try {
-    const res = await fetch('https://soundcloud.com', {
-      headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36' },
+    const res = await fetch("https://soundcloud.com", {
+      headers: {
+        "user-agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+      },
       signal: AbortSignal.timeout(15000),
     });
     const html = await res.text();
-    const assets = [...html.matchAll(/https:\/\/a-v2\.sndcdn\.com\/assets\/[^"]+\.js/g)].map((m) => m[0]);
+    const assets = [...html.matchAll(/https:\/\/a-v2\.sndcdn\.com\/assets\/[^"]+\.js/g)].map(
+      (m) => m[0]
+    );
     for (const asset of assets.slice(0, 10)) {
       const jsRes = await fetch(asset, {
-        headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36' },
+        headers: {
+          "user-agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+        },
         signal: AbortSignal.timeout(15000),
       });
       const js = await jsRes.text();

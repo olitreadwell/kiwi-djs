@@ -1,14 +1,20 @@
-import Link from 'next/link';
-import { DjCard } from '@/components/dj-card';
-import { SearchBox } from '@/components/search-box';
-import { getEventLineup, getUpcomingEvents, getGenres, getWeekendEvents, listDjs } from '@/lib/queries';
-import { hasSpecificGenre } from '@/lib/genres';
+import Link from "next/link";
+import { DjCard } from "@/components/dj-card";
+import { SearchBox } from "@/components/search-box";
+import {
+  getEventLineup,
+  getUpcomingEvents,
+  getGenres,
+  getWeekendEvents,
+  listDjs,
+} from "@/lib/queries";
+import { hasSpecificGenre } from "@/lib/genres";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const [recent, events, genres, all, weekend] = await Promise.all([
-    listDjs({ sort: 'updated' }),
+    listDjs({ sort: "updated" }),
     getUpcomingEvents(5),
     getGenres(),
     listDjs(),
@@ -28,12 +34,15 @@ export default async function HomePage() {
   return (
     <div className="mx-auto max-w-6xl px-4">
       <section className="py-20 text-center">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">Aotearoa New Zealand</p>
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
+          Aotearoa New Zealand
+        </p>
         <h1 className="mt-4 text-5xl font-black tracking-tight text-foreground sm:text-7xl">
           Kiwi <span className="text-accent">DJs</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-muted">
-          The open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials and upcoming gigs, pulled from public sources and updated daily.
+          The open directory of DJs across Aotearoa New Zealand. Bios, mixes, socials and upcoming
+          gigs, pulled from public sources and updated daily.
         </p>
         <div className="mx-auto mt-8 max-w-xl">
           <SearchBox autoFocus />
@@ -49,22 +58,31 @@ export default async function HomePage() {
         <section className="pb-16">
           <div className="mb-4 flex items-end justify-between">
             <h2 className="text-2xl font-bold text-foreground">Who&apos;s playing this weekend</h2>
-            <Link href="/events" className="font-mono text-xs text-accent hover:underline">calendar →</Link>
+            <Link href="/events" className="font-mono text-xs text-accent hover:underline">
+              calendar →
+            </Link>
           </div>
           <div className="space-y-6">
             {[...weekendByDay.entries()].map(([day, dayEvents]) => (
               <div key={day}>
                 <h3 className="font-mono text-xs uppercase tracking-wider text-accent">
-                  {new Date(day).toLocaleDateString('en-NZ', { weekday: 'long', day: 'numeric', month: 'long' })}
+                  {new Date(day).toLocaleDateString("en-NZ", {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                  })}
                 </h3>
                 <ul className="mt-3 divide-y divide-edge rounded-lg border border-edge">
                   {dayEvents.map((event) => (
                     <li key={event.id} className="px-4 py-3">
                       <div className="flex items-center justify-between gap-4">
-                        <Link href={`/events/${event.id}`} className="text-sm text-foreground transition-colors hover:text-accent">
+                        <Link
+                          href={`/events/${event.id}`}
+                          className="text-sm text-foreground transition-colors hover:text-accent"
+                        >
                           {event.name}
                         </Link>
-                        <p className="font-mono text-xs text-muted">{event.venue ?? 'TBC'}</p>
+                        <p className="font-mono text-xs text-muted">{event.venue ?? "TBC"}</p>
                       </div>
                       {lineupByEvent.get(event.id) && lineupByEvent.get(event.id)!.length > 0 && (
                         <div className="mt-2 flex flex-wrap gap-1.5">
@@ -91,31 +109,48 @@ export default async function HomePage() {
       <section className="pb-16">
         <div className="mb-4 flex items-end justify-between">
           <h2 className="text-2xl font-bold text-foreground">Recently updated</h2>
-          <Link href="/discover" className="font-mono text-xs text-accent hover:underline">discover →</Link>
+          <Link href="/discover" className="font-mono text-xs text-accent hover:underline">
+            discover →
+          </Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {recent.slice(0, 8).map((dj) => <DjCard key={dj.id} dj={dj} />)}
+          {recent.slice(0, 8).map((dj) => (
+            <DjCard key={dj.id} dj={dj} />
+          ))}
         </div>
       </section>
 
       <section className="pb-16">
         <div className="mb-4 flex items-end justify-between">
           <h2 className="text-2xl font-bold text-foreground">Next gigs</h2>
-          <Link href="/events" className="font-mono text-xs text-accent hover:underline">calendar →</Link>
+          <Link href="/events" className="font-mono text-xs text-accent hover:underline">
+            calendar →
+          </Link>
         </div>
         <ul className="divide-y divide-edge rounded-lg border border-edge">
           {events.map((event) => (
             <li key={event.id} className="flex items-center justify-between gap-4 px-4 py-3">
               <div>
-                <Link href={`/events/${event.id}`} className="text-sm text-foreground transition-colors hover:text-accent">
+                <Link
+                  href={`/events/${event.id}`}
+                  className="text-sm text-foreground transition-colors hover:text-accent"
+                >
                   {event.name}
                 </Link>
                 <p className="font-mono text-xs text-muted">
-                  {event.venue ?? 'TBC'} · {new Date(event.starts_at).toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric', month: 'short' })}
+                  {event.venue ?? "TBC"} ·{" "}
+                  {new Date(event.starts_at).toLocaleDateString("en-NZ", {
+                    weekday: "short",
+                    day: "numeric",
+                    month: "short",
+                  })}
                 </p>
               </div>
               {event.dj_id && (
-                <Link href={`/djs/${event.dj_id}`} className="font-mono text-xs text-accent hover:underline">
+                <Link
+                  href={`/djs/${event.dj_id}`}
+                  className="font-mono text-xs text-accent hover:underline"
+                >
                   {event.dj_name}
                 </Link>
               )}

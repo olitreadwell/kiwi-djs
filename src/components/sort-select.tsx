@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from "next/navigation";
 
 const SORTS = [
-  { value: 'updated', label: 'recently updated' },
-  { value: 'completeness', label: 'most info' },
-  { value: 'recent', label: 'recently added' },
-  { value: 'name', label: 'name A-Z' },
-  { value: 'gigs', label: 'most gigs' },
+  { value: "updated", label: "recently updated" },
+  { value: "completeness", label: "most info" },
+  { value: "recent", label: "recently added" },
+  { value: "name", label: "name A-Z" },
+  { value: "gigs", label: "most gigs" },
 ];
 
 export function SortSelect({ current }: { current: string }) {
@@ -16,8 +16,8 @@ export function SortSelect({ current }: { current: string }) {
 
   function setSort(sort: string) {
     const params = new URLSearchParams(searchParams.toString());
-    if (sort && sort !== 'updated') params.set('sort', sort);
-    else params.delete('sort');
+    if (sort && sort !== "updated") params.set("sort", sort);
+    else params.delete("sort");
     router.push(`/djs?${params.toString()}`);
   }
 
@@ -30,7 +30,9 @@ export function SortSelect({ current }: { current: string }) {
         className="ml-2 rounded-md border border-edge bg-surface px-2 py-1.5 text-foreground"
       >
         {SORTS.map((option) => (
-          <option key={option.value} value={option.value}>{option.label}</option>
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
         ))}
       </select>
     </label>

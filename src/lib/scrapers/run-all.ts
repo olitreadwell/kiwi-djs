@@ -1,27 +1,27 @@
-import type { Pool } from 'pg';
-import { undertheradarScraper } from './undertheradar';
-import { undertheradarVenuesScraper } from './undertheradar-venues';
-import { sanfranScraper } from './sanfran';
-import { rogueScraper } from './rogue';
-import { radioactiveScraper } from './radioactive';
-import { soundcloudScraper } from './soundcloud';
-import { eventfindaScraper } from './eventfinda';
-import { northernBassScraper } from './northernbass';
-import { othersWayScraper } from './theothersway';
-import { snowMachineScraper } from './snowmachine';
-import { newtownFestivalScraper } from './newtownfestival';
-import { earthbeatScraper } from './earthbeat';
-import { toraBomboraScraper } from './torabombora';
-import { jamBaseScraper } from './jambase';
-import { residentAdvisorScraper } from './residentadvisor';
-import { carlucciCarnivalScraper } from './carlucci-carnival';
-import { bestEffortScrapers } from './best-effort';
-import { officialSiteScraper } from './official-site';
-import { enrichDiscogsReleases } from './discogs';
-import { enrichAllDjs } from './enrich';
-import { enrichVenueRegions } from './apis';
-import { discoverAll, verifyDiscovered } from './discover';
-import type { Scraper, ScrapeResult } from './types';
+import type { Pool } from "pg";
+import { undertheradarScraper } from "./undertheradar";
+import { undertheradarVenuesScraper } from "./undertheradar-venues";
+import { sanfranScraper } from "./sanfran";
+import { rogueScraper } from "./rogue";
+import { radioactiveScraper } from "./radioactive";
+import { soundcloudScraper } from "./soundcloud";
+import { eventfindaScraper } from "./eventfinda";
+import { northernBassScraper } from "./northernbass";
+import { othersWayScraper } from "./theothersway";
+import { snowMachineScraper } from "./snowmachine";
+import { newtownFestivalScraper } from "./newtownfestival";
+import { earthbeatScraper } from "./earthbeat";
+import { toraBomboraScraper } from "./torabombora";
+import { jamBaseScraper } from "./jambase";
+import { residentAdvisorScraper } from "./residentadvisor";
+import { carlucciCarnivalScraper } from "./carlucci-carnival";
+import { bestEffortScrapers } from "./best-effort";
+import { officialSiteScraper } from "./official-site";
+import { enrichDiscogsReleases } from "./discogs";
+import { enrichAllDjs } from "./enrich";
+import { enrichVenueRegions } from "./apis";
+import { discoverAll, verifyDiscovered } from "./discover";
+import type { Scraper, ScrapeResult } from "./types";
 
 const scrapers: Scraper[] = [
   undertheradarScraper,
@@ -41,14 +41,14 @@ const scrapers: Scraper[] = [
   residentAdvisorScraper,
   carlucciCarnivalScraper,
   ...bestEffortScrapers,
-  { source: 'enrich-venue-regions', run: enrichVenueRegions },
+  { source: "enrich-venue-regions", run: enrichVenueRegions },
   officialSiteScraper,
-  { source: 'enrich-discogs-releases', run: enrichDiscogsReleases },
+  { source: "enrich-discogs-releases", run: enrichDiscogsReleases },
 ];
 
 export async function runAllScrapers(
   pool: Pool,
-  options: { disabledSources?: Set<string> } = {},
+  options: { disabledSources?: Set<string> } = {}
 ): Promise<ScrapeResult[]> {
   const results: ScrapeResult[] = [];
   const activeScrapers = options.disabledSources
@@ -61,12 +61,25 @@ export async function runAllScrapers(
       result = await scraper.run(pool);
       result.source = scraper.source;
     } catch (err) {
-      result = { source: scraper.source, status: 'error', items_found: 0, items_new: 0, error: err instanceof Error ? err.message : String(err) };
+      result = {
+        source: scraper.source,
+        status: "error",
+        items_found: 0,
+        items_new: 0,
+        error: err instanceof Error ? err.message : String(err),
+      };
     }
     await pool.query(
       `INSERT INTO scrapes (source, status, items_found, items_new, error, started_at, finished_at)
        VALUES ($1, $2, $3, $4, $5, $6, now())`,
-      [scraper.source, result.status, result.items_found, result.items_new, result.error ?? null, startedAt],
+      [
+        scraper.source,
+        result.status,
+        result.items_found,
+        result.items_new,
+        result.error ?? null,
+        startedAt,
+      ]
     );
     results.push(result);
   }
@@ -78,7 +91,7 @@ export async function runAllScrapers(
   await pool.query(
     `INSERT INTO scrapes (source, status, items_found, items_new, error, started_at, finished_at)
      VALUES ('verify-discovered', $1, $2, $2, NULL, now(), now())`,
-    [verifyAfter.status, verifyAfter.items_found],
+    [verifyAfter.status, verifyAfter.items_found]
   );
   results.push(verifyAfter);
   return results;

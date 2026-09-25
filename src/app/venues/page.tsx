@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { getVenuesWithCounts } from '@/lib/queries';
+import Link from "next/link";
+import { getVenuesWithCounts } from "@/lib/queries";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export default async function VenuesPage() {
   const venues = await getVenuesWithCounts();
@@ -24,12 +24,14 @@ export default async function VenuesPage() {
               <div>
                 <p className="text-sm font-semibold text-foreground">{venue.name}</p>
                 <p className="font-mono text-xs text-muted">
-                  {venue.address ?? 'address tbc'}
-                  {venue.region ? ` · ${venue.region}` : ''}
+                  {venue.address ?? "address tbc"}
+                  {venue.region ? ` · ${venue.region}` : ""}
                 </p>
               </div>
-              <span className={`font-mono text-xs ${venue.upcoming_events > 0 ? 'text-accent' : 'text-faint'}`}>
-                {venue.upcoming_events > 0 ? `${venue.upcoming_events} upcoming` : 'no listings'}
+              <span
+                className={`font-mono text-xs ${venue.upcoming_events > 0 ? "text-accent" : "text-faint"}`}
+              >
+                {venue.upcoming_events > 0 ? `${venue.upcoming_events} upcoming` : "no listings"}
               </span>
             </Link>
           </li>

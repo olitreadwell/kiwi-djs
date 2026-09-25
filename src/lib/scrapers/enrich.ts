@@ -1,15 +1,15 @@
-import type { Pool } from 'pg';
-import { createHash } from 'node:crypto';
-import { fetchHtml, sleep } from './http';
-import { getSoundcloudClientId } from './soundcloud-client';
-import { enrichBio, enrichItunes, enrichMusicbrainz } from './apis';
-import { enrichBandcamp } from './bandcamp';
-import { enrichBeatport } from './beatport';
-import { upsertDjLink } from './links';
-import { isGenreTag, normaliseGenres } from '../genres';
-import { isNzLocation, NZ_CITIES } from '../locations';
+import type { Pool } from "pg";
+import { createHash } from "node:crypto";
+import { fetchHtml, sleep } from "./http";
+import { getSoundcloudClientId } from "./soundcloud-client";
+import { enrichBio, enrichItunes, enrichMusicbrainz } from "./apis";
+import { enrichBandcamp } from "./bandcamp";
+import { enrichBeatport } from "./beatport";
+import { upsertDjLink } from "./links";
+import { isGenreTag, normaliseGenres } from "../genres";
+import { isNzLocation, NZ_CITIES } from "../locations";
 export { upsertDjLink };
-import type { ScrapeResult } from './types';
+import type { ScrapeResult } from "./types";
 
 interface DjRow {
   id: string;
@@ -29,50 +29,74 @@ const GENERIC_GENRE_SQL = `ARRAY['Dance','Electronic','Alternative','Pop','Rock'
 export async function upsertDjArticle(
   pool: Pool,
   djId: string,
-  article: { title: string; url: string; source?: string; publishedAt?: Date | null; snippet?: string },
+  article: {
+    title: string;
+    url: string;
+    source?: string;
+    publishedAt?: Date | null;
+    snippet?: string;
+  }
 ): Promise<void> {
   // Dedupe by title per DJ (#37): Bing RSS returns the same article under
   // different URLs across queries/runs.
-  const existing = await pool.query(`SELECT 1 FROM dj_articles WHERE dj_id = $1 AND lower(title) = lower($2) LIMIT 1`, [djId, article.title]);
+  const existing = await pool.query(
+    `SELECT 1 FROM dj_articles WHERE dj_id = $1 AND lower(title) = lower($2) LIMIT 1`,
+    [djId, article.title]
+  );
   if (existing.rows.length > 0) return;
-  const id = `${djId}-${createHash('sha1').update(article.url).digest('hex').slice(0, 16)}`;
+  const id = `${djId}-${createHash("sha1").update(article.url).digest("hex").slice(0, 16)}`;
   await pool.query(
     `INSERT INTO dj_articles (id, dj_id, title, url, source, published_at, snippet) VALUES ($1, $2, $3, $4, $5, $6, $7)
      ON CONFLICT (dj_id, lower(title)) DO NOTHING`,
-    [id, djId, article.title, article.url, article.source ?? null, article.publishedAt ?? null, article.snippet ?? null],
+    [
+      id,
+      djId,
+      article.title,
+      article.url,
+      article.source ?? null,
+      article.publishedAt ?? null,
+      article.snippet ?? null,
+    ]
   );
 }
 
-export type MixKind = 'mix' | 'interview';
+export type MixKind = "mix" | "interview";
 
 // Interviews, podcasts and talk segments are not mixes (#55). Profile plays
 // and stations have no real audio and are not valuable (#56).
 const INTERVIEW_PATTERN = /\b(interview|podcast|chat|talks? with|conversation|q&a|q\.?a\.?)\b/i;
 
 export function classifyMixTitle(title: string): MixKind {
-  return INTERVIEW_PATTERN.test(title) ? 'interview' : 'mix';
+  return INTERVIEW_PATTERN.test(title) ? "interview" : "mix";
 }
 
 export async function upsertDjMix(
   pool: Pool,
   djId: string,
-  platform: 'soundcloud' | 'mixcloud',
+  platform: "soundcloud" | "mixcloud",
   title: string,
   url: string,
-  kind: MixKind = 'mix',
+  kind: MixKind = "mix"
 ): Promise<void> {
-  const id = `${djId}-${platform}-${createHash('sha1').update(url).digest('hex').slice(0, 12)}`;
+  const id = `${djId}-${platform}-${createHash("sha1").update(url).digest("hex").slice(0, 12)}`;
   await pool.query(
     `INSERT INTO dj_mixes (id, dj_id, platform, title, url, kind) VALUES ($1, $2, $3, $4, $5, $6)
      ON CONFLICT (id) DO NOTHING`,
-    [id, djId, platform, title, url, kind],
+    [id, djId, platform, title, url, kind]
   );
 }
 
 interface MixcloudResult {
   name: string;
   url: string;
-  user?: { name: string; url: string; city?: string; country?: string; follower_count?: number; cloudcast_count?: number };
+  user?: {
+    name: string;
+    url: string;
+    city?: string;
+    country?: string;
+    follower_count?: number;
+    cloudcast_count?: number;
+  };
   created_time?: string;
   audio_length?: number;
 }
@@ -86,12 +110,20 @@ async function recordProfileLocation(
   platform: string,
   city?: string,
   country?: string,
-  countryCode?: string,
+  countryCode?: string
 ): Promise<void> {
   const parts = [city, country].filter((value): value is string => Boolean(value));
-  const display = parts.length > 0 ? `${platform}: ${parts.join(', ')}` : countryCode ? `${platform}: ${countryCode}` : '';
+  const display =
+    parts.length > 0
+      ? `${platform}: ${parts.join(", ")}`
+      : countryCode
+        ? `${platform}: ${countryCode}`
+        : "";
   if (!display) return;
-  await pool.query(`UPDATE djs SET profile_location = COALESCE(profile_location, $2) WHERE id = $1`, [djId, display]);
+  await pool.query(
+    `UPDATE djs SET profile_location = COALESCE(profile_location, $2) WHERE id = $1`,
+    [djId, display]
+  );
   if (isNzLocation(city, country, countryCode)) {
     // A profile that names a known NZ city also fixes the default
     // Wellington city (#126) — e.g. a Mixcloud profile saying "Auckland"
@@ -101,12 +133,15 @@ async function recordProfileLocation(
       const canonical = named
         .split(/\s+/)
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
-      await pool.query(`UPDATE djs SET city = $2 WHERE id = $1 AND city ILIKE 'wellington'`, [djId, canonical]);
+        .join(" ");
+      await pool.query(`UPDATE djs SET city = $2 WHERE id = $1 AND city ILIKE 'wellington'`, [
+        djId,
+        canonical,
+      ]);
     }
     await pool.query(
       `UPDATE djs SET verification_sources = (SELECT array_agg(DISTINCT g) FROM unnest(verification_sources || ARRAY['location']) AS g) WHERE id = $1`,
-      [djId],
+      [djId]
     );
   }
 }
@@ -117,19 +152,24 @@ export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResul
   let keeper: string | null = null;
   for (const query of queries) {
     const url = `https://api.mixcloud.com/search/?q=${encodeURIComponent(query)}&type=cloudcast`;
-    const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+    const res = await fetch(url, {
+      headers: { accept: "application/json" },
+      signal: AbortSignal.timeout(15000),
+    });
     if (res.status === 429) {
-      const retryAfter = Number(res.headers.get('retry-after') ?? '60');
-      await pool.query(`UPDATE djs SET mixcloud_backoff_until = now() + make_interval(secs => $2) WHERE id = $1`, [
-        dj.id,
-        Number.isFinite(retryAfter) ? retryAfter : 60,
-      ]);
-      throw new Error(`Mixcloud rate-limited (HTTP 429) — backoff until ${new Date(Date.now() + retryAfter * 1000).toISOString()}`);
+      const retryAfter = Number(res.headers.get("retry-after") ?? "60");
+      await pool.query(
+        `UPDATE djs SET mixcloud_backoff_until = now() + make_interval(secs => $2) WHERE id = $1`,
+        [dj.id, Number.isFinite(retryAfter) ? retryAfter : 60]
+      );
+      throw new Error(
+        `Mixcloud rate-limited (HTTP 429) — backoff until ${new Date(Date.now() + retryAfter * 1000).toISOString()}`
+      );
     }
     if (!res.ok) throw new Error(`Mixcloud HTTP ${res.status}`);
     const data = (await res.json()) as { data?: MixcloudResult[] };
     for (const item of data.data ?? []) {
-      const owner = item.user?.name ?? '';
+      const owner = item.user?.name ?? "";
       // Only the artist's own Mixcloud account counts (#25). Item-name
       // matches from other accounts (radio shows, interviews) are excluded.
       if (!owner.toLowerCase().includes(dj.name.toLowerCase())) continue;
@@ -140,18 +180,31 @@ export async function enrichMixcloud(pool: Pool, dj: DjRow): Promise<ScrapeResul
       // Profile plays / stations have no real audio — not valuable (#56).
       if (!item.audio_length || item.audio_length < 60) continue;
       found += 1;
-      await upsertDjMix(pool, dj.id, 'mixcloud', item.name, item.url, classifyMixTitle(item.name));
+      await upsertDjMix(pool, dj.id, "mixcloud", item.name, item.url, classifyMixTitle(item.name));
       // Record where the Mixcloud profile says the artist is based — without
       // this, a DJ whose Mixcloud says "Auckland" keeps the default
       // Wellington city (#126).
-      await recordProfileLocation(pool, dj.id, 'Mixcloud', item.user?.city, item.user?.country);
+      await recordProfileLocation(pool, dj.id, "Mixcloud", item.user?.city, item.user?.country);
       if (item.user?.url) {
-        await upsertDjLink(pool, dj.id, 'mixcloud', item.user.url, `Mixcloud: ${item.user.name}`, item.user.follower_count, item.user.cloudcast_count);
+        await upsertDjLink(
+          pool,
+          dj.id,
+          "mixcloud",
+          item.user.url,
+          `Mixcloud: ${item.user.name}`,
+          item.user.follower_count,
+          item.user.cloudcast_count
+        );
       }
     }
     await sleep(500);
   }
-  return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: 0, error: found === 0 ? 'No Mixcloud matches' : undefined };
+  return {
+    status: found > 0 ? "ok" : "partial",
+    items_found: found,
+    items_new: 0,
+    error: found === 0 ? "No Mixcloud matches" : undefined,
+  };
 }
 
 interface NewsItem {
@@ -184,17 +237,22 @@ export async function enrichNews(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
         url: item.link,
         source: item.source,
         publishedAt: item.pubDate ? new Date(item.pubDate) : null,
-        snippet: item.description.replace(/<[^>]+>/g, '').slice(0, 300),
+        snippet: item.description.replace(/<[^>]+>/g, "").slice(0, 300),
       });
       found += 1;
     }
     if (found > 0) break;
   }
-  return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: 0, error: found === 0 ? 'No news matches' : undefined };
+  return {
+    status: found > 0 ? "ok" : "partial",
+    items_found: found,
+    items_new: 0,
+    error: found === 0 ? "No news matches" : undefined,
+  };
 }
 
 function escapeRegExp(value: string): string {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 export function isRelevantArticle(djName: string, item: NewsItem): boolean {
@@ -206,26 +264,35 @@ export function isRelevantArticle(djName: string, item: NewsItem): boolean {
   // A name followed by a capitalised surname is a different person
   // ("Sam Sutton" the footballer, not the DJ "Sam").
   const titleWords = item.title.split(/\s+/);
-  const nameWords = name.split(' ');
+  const nameWords = name.split(" ");
   for (let i = 0; i + nameWords.length < titleWords.length; i += 1) {
-    if (titleWords.slice(i, i + nameWords.length).join(' ').toLowerCase() !== name) continue;
+    if (
+      titleWords
+        .slice(i, i + nameWords.length)
+        .join(" ")
+        .toLowerCase() !== name
+    )
+      continue;
     if (/^[A-Z]/.test(titleWords[i + nameWords.length])) return false;
   }
   // A name used as a common noun ("The Musical", "The Journey") is not the
   // artist — the DJ name would stand alone or carry a DJ signal.
-  if (new RegExp(`\\bthe\\s+${escapeRegExp(name)}\\b`, 'i').test(item.title)) return false;
+  if (new RegExp(`\\bthe\\s+${escapeRegExp(name)}\\b`, "i").test(item.title)) return false;
   // The article must also sound music-shaped: Bing returns random news for
   // common names and phrases ("The Journey", "Sam", "Mark Knight" the
   // cartoonist), so require a strong music-context signal instead of
   // trusting a name match alone. Ambiguous words like "set", "plays",
   // "tour" and "club" are excluded — they match sports and AFL news; bare
   // "house" is excluded too ("Opera House", "White House").
-  const strongMusic = /\b(dj|deejay|disc jockey|mixes?|mixing|mixtape|remix|music|festival|album|track|single|release|producer|vinyl|gig|concert|playlist|label|record|radio show|dancefloor|techno|house music|deep house|tech house|house dj|house set|house night|drum and bass|dnb|trance|garage|dubstep|nightclub|club night|soundcloud|mixcloud|bandcamp|spotify)\b/i;
+  const strongMusic =
+    /\b(dj|deejay|disc jockey|mixes?|mixing|mixtape|remix|music|festival|album|track|single|release|producer|vinyl|gig|concert|playlist|label|record|radio show|dancefloor|techno|house music|deep house|tech house|house dj|house set|house night|drum and bass|dnb|trance|garage|dubstep|nightclub|club night|soundcloud|mixcloud|bandcamp|spotify)\b/i;
   if (!strongMusic.test(haystack)) return false;
   // Name in the title is a strong signal; a body-only name match needs an
   // unambiguous music word (a DJ/mix/producer mention, not just "music").
   if (namePattern.test(title)) return true;
-  return /\b(dj|deejay|mixes?|mixing|mixtape|remix|producer|vinyl|dancefloor|nightclub|club night|soundcloud|mixcloud|bandcamp|spotify)\b/i.test(haystack);
+  return /\b(dj|deejay|mixes?|mixing|mixtape|remix|producer|vinyl|dancefloor|nightclub|club night|soundcloud|mixcloud|bandcamp|spotify)\b/i.test(
+    haystack
+  );
 }
 
 export function parseBingNewsXml(xml: string): NewsItem[] {
@@ -234,11 +301,16 @@ export function parseBingNewsXml(xml: string): NewsItem[] {
   let match: RegExpExecArray | null;
   while ((match = itemRegex.exec(xml)) !== null) {
     const block = match[1];
-    const title = decodeHtmlEntities(block.match(/<title>(.*?)<\/title>/)?.[1] ?? '');
-    const link = block.match(/<link>(.*?)<\/link>/)?.[1] ?? '';
-    const source = block.match(/<News:Source[^>]*>(.*?)<\/News:Source>/)?.[1] ?? block.match(/<source[^>]*>(.*?)<\/source>/)?.[1] ?? '';
-    const pubDate = block.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] ?? '';
-    const description = decodeHtmlEntities(block.match(/<description>(.*?)<\/description>/)?.[1] ?? '');
+    const title = decodeHtmlEntities(block.match(/<title>(.*?)<\/title>/)?.[1] ?? "");
+    const link = block.match(/<link>(.*?)<\/link>/)?.[1] ?? "";
+    const source =
+      block.match(/<News:Source[^>]*>(.*?)<\/News:Source>/)?.[1] ??
+      block.match(/<source[^>]*>(.*?)<\/source>/)?.[1] ??
+      "";
+    const pubDate = block.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] ?? "";
+    const description = decodeHtmlEntities(
+      block.match(/<description>(.*?)<\/description>/)?.[1] ?? ""
+    );
     if (title && link) items.push({ title, link, source, pubDate, description });
   }
   return items;
@@ -246,36 +318,36 @@ export function parseBingNewsXml(xml: string): NewsItem[] {
 
 // Decode HTML entities (&#232; → è, &amp; → &, ...) in RSS titles/snippets.
 const NAMED_ENTITIES: Record<string, string> = {
-  amp: '&',
-  lt: '<',
-  gt: '>',
+  amp: "&",
+  lt: "<",
+  gt: ">",
   quot: '"',
   apos: "'",
-  nbsp: ' ',
-  ndash: '–',
-  mdash: '—',
-  lsquo: '‘',
-  rsquo: '’',
-  ldquo: '“',
-  rdquo: '”',
-  hellip: '…',
-  eacute: 'é',
-  egrave: 'è',
-  agrave: 'à',
-  ugrave: 'ù',
-  oacute: 'ó',
-  aacute: 'á',
-  iacute: 'í',
-  uacute: 'ú',
-  ntilde: 'ñ',
-  ccedil: 'ç',
-  szlig: 'ß',
+  nbsp: " ",
+  ndash: "–",
+  mdash: "—",
+  lsquo: "‘",
+  rsquo: "’",
+  ldquo: "“",
+  rdquo: "”",
+  hellip: "…",
+  eacute: "é",
+  egrave: "è",
+  agrave: "à",
+  ugrave: "ù",
+  oacute: "ó",
+  aacute: "á",
+  iacute: "í",
+  uacute: "ú",
+  ntilde: "ñ",
+  ccedil: "ç",
+  szlig: "ß",
 };
 
 export function decodeHtmlEntities(input: string): string {
   return input.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (entity, code: string) => {
-    if (code.startsWith('#x')) return String.fromCodePoint(parseInt(code.slice(2), 16));
-    if (code.startsWith('#')) return String.fromCodePoint(parseInt(code.slice(1), 10));
+    if (code.startsWith("#x")) return String.fromCodePoint(parseInt(code.slice(2), 16));
+    if (code.startsWith("#")) return String.fromCodePoint(parseInt(code.slice(1), 10));
     return NAMED_ENTITIES[code] ?? entity;
   });
 }
@@ -283,10 +355,18 @@ export function decodeHtmlEntities(input: string): string {
 export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeResult> {
   const clientId = await getSoundcloudClientId();
   if (!clientId) {
-    return { status: 'partial', items_found: 0, items_new: 0, error: 'no valid SoundCloud client id' };
+    return {
+      status: "partial",
+      items_found: 0,
+      items_new: 0,
+      error: "no valid SoundCloud client id",
+    };
   }
   const url = `https://api-v2.soundcloud.com/search/users?q=${encodeURIComponent(dj.name)}&client_id=${clientId}&limit=5`;
-  const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+  const res = await fetch(url, {
+    headers: { accept: "application/json" },
+    signal: AbortSignal.timeout(15000),
+  });
   if (!res.ok) throw new Error(`SoundCloud HTTP ${res.status}`);
   const data = (await res.json()) as {
     collection?: Array<{
@@ -304,56 +384,86 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
   let found = 0;
   // One SoundCloud account per DJ: the first name-matching user is the
   // keeper — its profile, tracks and genres count; namesakes don't (#25).
-  const keeper = (data.collection ?? []).find((user) => user.username.toLowerCase().includes(dj.name.toLowerCase()));
+  const keeper = (data.collection ?? []).find((user) =>
+    user.username.toLowerCase().includes(dj.name.toLowerCase())
+  );
   if (keeper) {
     // Pull the artist's own tracks first: aggregate genre tags (#33) and
     // add tracks as mixes. Only the artist's own uploads count (#25).
     const tracksUrl = `https://api-v2.soundcloud.com/users/${keeper.id}/tracks?client_id=${clientId}&limit=50`;
-    const tracksRes = await fetch(tracksUrl, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+    const tracksRes = await fetch(tracksUrl, {
+      headers: { accept: "application/json" },
+      signal: AbortSignal.timeout(15000),
+    });
     if (tracksRes.ok) {
       const tracks = (await tracksRes.json()) as {
-        collection?: Array<{ permalink_url: string; title: string; genre?: string; tag_list?: string; duration?: number; bpm?: number }>;
+        collection?: Array<{
+          permalink_url: string;
+          title: string;
+          genre?: string;
+          tag_list?: string;
+          duration?: number;
+          bpm?: number;
+        }>;
       };
       const realTracks = (tracks.collection ?? []).filter(
-        (track) => track.permalink_url && track.title && track.duration && track.duration >= 60_000,
+        (track) => track.permalink_url && track.title && track.duration && track.duration >= 60_000
       );
       // A name-matching profile with no real tracks is a namesake or an
       // empty account — don't link it, it's probably not the right person.
       if (realTracks.length === 0) {
-        return { status: 'partial', items_found: 0, items_new: 0, error: 'SoundCloud match has no tracks — skipped' };
+        return {
+          status: "partial",
+          items_found: 0,
+          items_new: 0,
+          error: "SoundCloud match has no tracks — skipped",
+        };
       }
       found += 1;
-      await recordProfileLocation(pool, dj.id, 'SoundCloud', keeper.city, keeper.country, keeper.country_code);
+      await recordProfileLocation(
+        pool,
+        dj.id,
+        "SoundCloud",
+        keeper.city,
+        keeper.country,
+        keeper.country_code
+      );
       await upsertDjLink(
         pool,
         dj.id,
-        'soundcloud',
+        "soundcloud",
         `https://soundcloud.com/${keeper.permalink}`,
         `SoundCloud: ${keeper.username}`,
         keeper.followers_count,
-        keeper.track_count,
+        keeper.track_count
       );
-      await pool.query(`UPDATE djs SET soundcloud_url = $1, image_url = COALESCE(image_url, $2) WHERE id = $3`, [
-        `https://soundcloud.com/${keeper.permalink}`,
-        keeper.avatar_url ?? null,
-        dj.id,
-      ]);
+      await pool.query(
+        `UPDATE djs SET soundcloud_url = $1, image_url = COALESCE(image_url, $2) WHERE id = $3`,
+        [`https://soundcloud.com/${keeper.permalink}`, keeper.avatar_url ?? null, dj.id]
+      );
       const genres = new Set<string>();
       const bpms: number[] = [];
       for (const track of realTracks) {
         if (track.genre && isGenreTag(track.genre)) genres.add(track.genre);
-        for (const tag of (track.tag_list ?? '').split(/\s+/)) {
-          const clean = tag.replace(/^"|"$/g, '');
+        for (const tag of (track.tag_list ?? "").split(/\s+/)) {
+          const clean = tag.replace(/^"|"$/g, "");
           if (clean && isGenreTag(clean)) genres.add(clean);
         }
-        await upsertDjMix(pool, dj.id, 'soundcloud', track.title, track.permalink_url, classifyMixTitle(track.title));
+        await upsertDjMix(
+          pool,
+          dj.id,
+          "soundcloud",
+          track.title,
+          track.permalink_url,
+          classifyMixTitle(track.title)
+        );
         if (track.bpm && track.bpm >= 60 && track.bpm <= 200) bpms.push(track.bpm);
       }
       if (genres.size > 0) {
         const normalised = normaliseGenres([...genres]);
         await pool.query(
           `UPDATE djs SET genres = (SELECT array_agg(g) FROM (SELECT DISTINCT g FROM unnest(genres || $2::text[]) AS g LIMIT 8) t) WHERE id = $1`,
-          [dj.id, normalised],
+          [dj.id, normalised]
         );
       }
       if (bpms.length >= 3) {
@@ -365,18 +475,36 @@ export async function enrichSoundcloud(pool: Pool, dj: DjRow): Promise<ScrapeRes
     }
     await sleep(500);
   }
-  return { status: found > 0 ? 'ok' : 'partial', items_found: found, items_new: 0, error: found === 0 ? 'No SoundCloud match' : undefined };
+  return {
+    status: found > 0 ? "ok" : "partial",
+    items_found: found,
+    items_new: 0,
+    error: found === 0 ? "No SoundCloud match" : undefined,
+  };
 }
 
 export async function soundcloudPreflight(): Promise<ScrapeResult | null> {
   const clientId = await getSoundcloudClientId();
   if (!clientId) {
-    return { status: 'error', items_found: 0, items_new: 0, error: 'SoundCloud auth failed — no valid client id (set SOUNDCLOUD_CLIENT_ID)' };
+    return {
+      status: "error",
+      items_found: 0,
+      items_new: 0,
+      error: "SoundCloud auth failed — no valid client id (set SOUNDCLOUD_CLIENT_ID)",
+    };
   }
   const url = `https://api-v2.soundcloud.com/search/users?q=wellington&client_id=${clientId}&limit=1`;
-  const res = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(15000) });
+  const res = await fetch(url, {
+    headers: { accept: "application/json" },
+    signal: AbortSignal.timeout(15000),
+  });
   if (!res.ok) {
-    return { status: 'error', items_found: 0, items_new: 0, error: `SoundCloud auth failed (HTTP ${res.status}) — set a fresh SOUNDCLOUD_CLIENT_ID` };
+    return {
+      status: "error",
+      items_found: 0,
+      items_new: 0,
+      error: `SoundCloud auth failed (HTTP ${res.status}) — set a fresh SOUNDCLOUD_CLIENT_ID`,
+    };
   }
   return null;
 }
@@ -392,7 +520,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
        WHERE opt_out = FALSE AND is_nz = TRUE
          AND (discovery_note IS NULL OR discovery_note <> 'junk')
        ORDER BY active DESC, popularity DESC, verification_level DESC, data_completeness DESC
-       LIMIT ${ENRICH_LIMIT}`,
+       LIMIT ${ENRICH_LIMIT}`
     );
   const mixcloudDjs = (): Promise<{ rows: DjRow[] }> =>
     pool.query(
@@ -401,19 +529,19 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
          AND (discovery_note IS NULL OR discovery_note <> 'junk')
          AND (mixcloud_backoff_until IS NULL OR mixcloud_backoff_until <= now())
        ORDER BY active DESC, popularity DESC, verification_level DESC, data_completeness DESC
-       LIMIT ${MIXCLOUD_LIMIT}`,
+       LIMIT ${MIXCLOUD_LIMIT}`
     );
   const bandcampDjs = (): Promise<{ rows: DjRow[] }> =>
     pool.query(
       `SELECT DISTINCT d.id, d.name FROM dj_links l JOIN djs d ON d.id = l.dj_id
        WHERE l.type = 'bandcamp' AND d.opt_out = FALSE AND d.is_nz = TRUE
-         AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')`,
+         AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')`
     );
   const beatportDjs = (): Promise<{ rows: DjRow[] }> =>
     pool.query(
       `SELECT DISTINCT d.id, d.name FROM dj_links l JOIN djs d ON d.id = l.dj_id
        WHERE l.type = 'beatport' AND d.opt_out = FALSE AND d.is_nz = TRUE
-         AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')`,
+         AND (d.discovery_note IS NULL OR d.discovery_note <> 'junk')`
     );
   // Genre-filling sources (SoundCloud track tags, MusicBrainz, iTunes) hit
   // DJs that still need a specific subgenre first, so the public list grows
@@ -425,7 +553,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
          AND (discovery_note IS NULL OR discovery_note <> 'junk')
        ORDER BY (cardinality(genres) = 0 OR genres <@ ${GENERIC_GENRE_SQL}) DESC,
                 active DESC, popularity DESC, verification_level DESC, data_completeness DESC
-       LIMIT ${ENRICH_LIMIT}`,
+       LIMIT ${ENRICH_LIMIT}`
     );
   // Bio-filling source hits DJs without an about-section first, most popular
   // first, so the public list gains descriptions fastest (#296).
@@ -436,7 +564,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
          AND (discovery_note IS NULL OR discovery_note <> 'junk')
          AND (bio IS NULL OR bio = '')
        ORDER BY popularity DESC, data_completeness DESC, verification_level DESC
-       LIMIT ${ENRICH_LIMIT}`,
+       LIMIT ${ENRICH_LIMIT}`
     );
   const sources: Array<{
     source: string;
@@ -444,14 +572,19 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     preflight?: () => Promise<ScrapeResult | null>;
     run: (pool: Pool, dj: DjRow) => Promise<ScrapeResult>;
   }> = [
-    { source: 'enrich-bandcamp', getDjs: bandcampDjs, run: enrichBandcamp },
-    { source: 'enrich-beatport', getDjs: beatportDjs, run: enrichBeatport },
-    { source: 'enrich-mixcloud', getDjs: mixcloudDjs, run: enrichMixcloud },
-    { source: 'enrich-news', getDjs: topDjs, run: enrichNews },
-    { source: 'enrich-soundcloud', getDjs: genrePriorityDjs, preflight: soundcloudPreflight, run: enrichSoundcloud },
-    { source: 'enrich-musicbrainz', getDjs: genrePriorityDjs, run: enrichMusicbrainz },
-    { source: 'enrich-itunes', getDjs: genrePriorityDjs, run: enrichItunes },
-    { source: 'enrich-bio', getDjs: bioPriorityDjs, run: enrichBio },
+    { source: "enrich-bandcamp", getDjs: bandcampDjs, run: enrichBandcamp },
+    { source: "enrich-beatport", getDjs: beatportDjs, run: enrichBeatport },
+    { source: "enrich-mixcloud", getDjs: mixcloudDjs, run: enrichMixcloud },
+    { source: "enrich-news", getDjs: topDjs, run: enrichNews },
+    {
+      source: "enrich-soundcloud",
+      getDjs: genrePriorityDjs,
+      preflight: soundcloudPreflight,
+      run: enrichSoundcloud,
+    },
+    { source: "enrich-musicbrainz", getDjs: genrePriorityDjs, run: enrichMusicbrainz },
+    { source: "enrich-itunes", getDjs: genrePriorityDjs, run: enrichItunes },
+    { source: "enrich-bio", getDjs: bioPriorityDjs, run: enrichBio },
   ];
   for (const source of sources) {
     if (source.preflight) {
@@ -459,7 +592,7 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
       if (preflight) {
         await pool.query(
           `INSERT INTO scrapes (source, status, items_found, items_new, error, started_at, finished_at) VALUES ($1, $2, $3, 0, $4, now(), now())`,
-          [source.source, preflight.status, preflight.items_found, preflight.error ?? null],
+          [source.source, preflight.status, preflight.items_found, preflight.error ?? null]
         );
         results.push(preflight);
         continue;
@@ -473,12 +606,14 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
       try {
         const result = await source.run(pool, dj);
         found += result.items_found;
-        if (result.status === 'error') errors += 1;
-        console.log(`  ${source.source}: ${dj.name} → ${result.status}${result.error ? ` (${result.error})` : ''}`);
+        if (result.status === "error") errors += 1;
+        console.log(
+          `  ${source.source}: ${dj.name} → ${result.status}${result.error ? ` (${result.error})` : ""}`
+        );
       } catch (err) {
         errors += 1;
         const message = err instanceof Error ? err.message : String(err);
-        if (message.includes('429')) rateLimited += 1;
+        if (message.includes("429")) rateLimited += 1;
         console.log(`  ${source.source}: ${dj.name} → error (${message})`);
       }
       await sleep(300);
@@ -486,14 +621,20 @@ export async function enrichAllDjs(pool: Pool): Promise<ScrapeResult[]> {
     const djCount = djs.length;
     const result: ScrapeResult = {
       source: source.source,
-      status: djCount === 0 ? 'partial' : errors === djCount ? 'error' : found > 0 ? 'ok' : 'partial',
+      status:
+        djCount === 0 ? "partial" : errors === djCount ? "error" : found > 0 ? "ok" : "partial",
       items_found: found,
       items_new: 0,
-      error: djCount === 0 ? 'No DJs eligible (all rate-limited?)' : errors > 0 ? `${errors}/${djCount} DJs errored${rateLimited > 0 ? `, ${rateLimited} rate-limited` : ''}` : undefined,
+      error:
+        djCount === 0
+          ? "No DJs eligible (all rate-limited?)"
+          : errors > 0
+            ? `${errors}/${djCount} DJs errored${rateLimited > 0 ? `, ${rateLimited} rate-limited` : ""}`
+            : undefined,
     };
     await pool.query(
       `INSERT INTO scrapes (source, status, items_found, items_new, error, started_at, finished_at) VALUES ($1, $2, $3, 0, $4, now(), now())`,
-      [source.source, result.status, result.items_found, result.error ?? null],
+      [source.source, result.status, result.items_found, result.error ?? null]
     );
     results.push(result);
   }

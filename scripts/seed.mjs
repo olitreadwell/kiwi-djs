@@ -1,4 +1,4 @@
-import { getPool, slugify } from './lib/db.mjs';
+import { getPool, slugify } from "./lib/db.mjs";
 
 const pool = getPool();
 
@@ -6,88 +6,93 @@ const pool = getPool();
 // No links included unless verified at seed time — scrapers add them.
 const djs = [
   {
-    name: 'Dick Johnson',
-    bio: 'Veteran Wellington DJ and radio host active since the 1980s. Long-running figure of the Wellington music scene.',
-    genres: ['eclectic', 'funk', 'soul'],
+    name: "Dick Johnson",
+    bio: "Veteran Wellington DJ and radio host active since the 1980s. Long-running figure of the Wellington music scene.",
+    genres: ["eclectic", "funk", "soul"],
   },
   {
-    name: 'DJ Fitchie',
-    bio: 'Wellington DJ and producer, founding member of Fat Freddy\'s Drop. Long-running selector across funk, reggae, soul and hip-hop.',
-    genres: ['funk', 'reggae', 'soul', 'hip-hop'],
+    name: "DJ Fitchie",
+    bio: "Wellington DJ and producer, founding member of Fat Freddy's Drop. Long-running selector across funk, reggae, soul and hip-hop.",
+    genres: ["funk", "reggae", "soul", "hip-hop"],
   },
   {
-    name: 'DJ CXL',
-    bio: 'Wellington drum & bass DJ and producer. Regular on the NZ DnB circuit.',
-    genres: ['drum & bass'],
+    name: "DJ CXL",
+    bio: "Wellington drum & bass DJ and producer. Regular on the NZ DnB circuit.",
+    genres: ["drum & bass"],
   },
   {
-    name: 'Frank Booker',
-    bio: 'Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.',
-    genres: ['house', 'boogie', 'disco'],
+    name: "Frank Booker",
+    bio: "Wellington-based DJ and producer known for house, boogie and disco selections, plus studio work.",
+    genres: ["house", "boogie", "disco"],
   },
   {
-    name: 'Sian',
-    bio: 'Wellington-born techno DJ and producer who has toured internationally. Known for driving, industrial-leaning techno.',
-    genres: ['techno'],
+    name: "Sian",
+    bio: "Wellington-born techno DJ and producer who has toured internationally. Known for driving, industrial-leaning techno.",
+    genres: ["techno"],
   },
   {
-    name: 'State of Mind',
-    bio: 'Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.',
-    genres: ['drum & bass'],
+    name: "State of Mind",
+    bio: "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
+    genres: ["drum & bass"],
   },
   {
-    name: 'Concord Dawn',
-    bio: 'Wellington drum & bass duo with a long catalogue on NZ and international labels.',
-    genres: ['drum & bass'],
+    name: "Concord Dawn",
+    bio: "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
+    genres: ["drum & bass"],
   },
   {
-    name: 'Broderbeats',
-    bio: 'Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.',
+    name: "Broderbeats",
+    bio: "Wellington DJ. Name surfaced in coverage of ULTRA NZ 2026.",
     genres: [],
   },
 ];
 
 const venues = [
-  { id: 'san-fran', name: 'San Fran', address: '171 Cuba Street, Te Aro, Wellington' },
-  { id: 'meow', name: 'Meow', address: '9 Edward Street, Te Aro, Wellington' },
-  { id: 'valhalla', name: 'Valhalla', address: '154 Vivian Street, Te Aro, Wellington' },
-  { id: 'caroline', name: 'Caroline', address: '1 Ghuznee Street, Te Aro, Wellington' },
-  { id: 'ivy-bar', name: 'Ivy Bar', address: '67-69 Courtenay Place, Wellington' },
-  { id: 'sly-bar', name: 'Sly Bar', address: '2/35 Ghuznee Street, Te Aro, Wellington' },
-  { id: 'deadpool', name: 'Deadpool', address: null },
-  { id: 'the-third-eye', name: 'The Third Eye', address: null },
-  { id: 'rogue-vagabond', name: 'The Rogue & Vagabond', address: '18 Garrett Street, Te Aro, Wellington' },
-  { id: 'moon', name: 'Moon', address: '13 Wigan Street, Te Aro, Wellington' },
+  { id: "san-fran", name: "San Fran", address: "171 Cuba Street, Te Aro, Wellington" },
+  { id: "meow", name: "Meow", address: "9 Edward Street, Te Aro, Wellington" },
+  { id: "valhalla", name: "Valhalla", address: "154 Vivian Street, Te Aro, Wellington" },
+  { id: "caroline", name: "Caroline", address: "1 Ghuznee Street, Te Aro, Wellington" },
+  { id: "ivy-bar", name: "Ivy Bar", address: "67-69 Courtenay Place, Wellington" },
+  { id: "sly-bar", name: "Sly Bar", address: "2/35 Ghuznee Street, Te Aro, Wellington" },
+  { id: "deadpool", name: "Deadpool", address: null },
+  { id: "the-third-eye", name: "The Third Eye", address: null },
+  {
+    id: "rogue-vagabond",
+    name: "The Rogue & Vagabond",
+    address: "18 Garrett Street, Te Aro, Wellington",
+  },
+  { id: "moon", name: "Moon", address: "13 Wigan Street, Te Aro, Wellington" },
 ];
 
 // Event orgs / collectives (#18) and soundsystems (#19) — curated from
 // public knowledge; scrapers enrich over time.
 const orgs = [
   {
-    name: 'Last Light',
-    city: 'Wellington',
-    description: 'Wellington event collective known for club nights and festival stages across house, techno and beyond.',
-    website: 'https://www.instagram.com/lastlightnz',
+    name: "Last Light",
+    city: "Wellington",
+    description:
+      "Wellington event collective known for club nights and festival stages across house, techno and beyond.",
+    website: "https://www.instagram.com/lastlightnz",
   },
   {
-    name: 'Good Things',
-    city: 'Wellington',
-    description: 'Wellington DJ collective and event series.',
+    name: "Good Things",
+    city: "Wellington",
+    description: "Wellington DJ collective and event series.",
   },
 ];
 
 const soundsystems = [
   {
-    name: 'Scorpios Nest Soundsystem',
-    city: 'Wellington',
-    style: 'Dub / reggae',
-    description: 'Wellington soundsystem crew playing dub and reggae.',
+    name: "Scorpios Nest Soundsystem",
+    city: "Wellington",
+    style: "Dub / reggae",
+    description: "Wellington soundsystem crew playing dub and reggae.",
   },
   {
-    name: 'Bigbada Boom Sound System',
-    city: 'Wellington',
-    style: 'Dub / reggae',
-    description: 'Wellington soundsystem.',
+    name: "Bigbada Boom Sound System",
+    city: "Wellington",
+    style: "Dub / reggae",
+    description: "Wellington soundsystem.",
   },
 ];
 
@@ -97,7 +102,7 @@ for (const dj of djs) {
      VALUES ($1, $2, $3, $4, 'seed', 30)
      ON CONFLICT (id) DO UPDATE
        SET name = EXCLUDED.name, bio = EXCLUDED.bio, genres = EXCLUDED.genres`,
-    [slugify(dj.name), dj.name, dj.bio, dj.genres],
+    [slugify(dj.name), dj.name, dj.bio, dj.genres]
   );
 }
 
@@ -105,7 +110,7 @@ for (const venue of venues) {
   await pool.query(
     `INSERT INTO venues (id, name, address) VALUES ($1, $2, $3)
      ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, address = EXCLUDED.address`,
-    [venue.id, venue.name, venue.address],
+    [venue.id, venue.name, venue.address]
   );
 }
 
@@ -113,7 +118,7 @@ for (const org of orgs) {
   await pool.query(
     `INSERT INTO orgs (id, name, city, description, website) VALUES ($1, $2, $3, $4, $5)
      ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, city = EXCLUDED.city, description = EXCLUDED.description, website = EXCLUDED.website`,
-    [slugify(org.name), org.name, org.city ?? null, org.description ?? null, org.website ?? null],
+    [slugify(org.name), org.name, org.city ?? null, org.description ?? null, org.website ?? null]
   );
 }
 
@@ -121,9 +126,17 @@ for (const system of soundsystems) {
   await pool.query(
     `INSERT INTO soundsystems (id, name, city, style, description) VALUES ($1, $2, $3, $4, $5)
      ON CONFLICT (id) DO UPDATE SET name = EXCLUDED.name, city = EXCLUDED.city, style = EXCLUDED.style, description = EXCLUDED.description`,
-    [slugify(system.name), system.name, system.city ?? null, system.style ?? null, system.description ?? null],
+    [
+      slugify(system.name),
+      system.name,
+      system.city ?? null,
+      system.style ?? null,
+      system.description ?? null,
+    ]
   );
 }
 
-console.log(`Seeded ${djs.length} DJs, ${venues.length} venues, ${orgs.length} orgs, ${soundsystems.length} soundsystems.`);
+console.log(
+  `Seeded ${djs.length} DJs, ${venues.length} venues, ${orgs.length} orgs, ${soundsystems.length} soundsystems.`
+);
 await pool.end();

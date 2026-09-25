@@ -1,9 +1,9 @@
-import type { Pool } from 'pg';
-import { slugify } from '../slug';
-import { upsertEvent } from './upsert';
-import { upsertDjLink } from './enrich';
-import { isJunkName, normalizeArtistName } from './discover';
-import type { ScrapeResult } from './types';
+import type { Pool } from "pg";
+import { slugify } from "../slug";
+import { upsertEvent } from "./upsert";
+import { upsertDjLink } from "./enrich";
+import { isJunkName, normalizeArtistName } from "./discover";
+import type { ScrapeResult } from "./types";
 
 export interface FestivalArtist {
   name: string;
@@ -45,7 +45,7 @@ export interface FestivalLineup {
 export function splitBilledAct(act: string): string[] {
   return act
     .split(/\s+(?:b2b|&|w\/|with|w)\s+/i)
-    .map((part) => part.replace(/\s+/g, ' ').trim())
+    .map((part) => part.replace(/\s+/g, " ").trim())
     .filter(Boolean);
 }
 
@@ -55,7 +55,15 @@ export function splitBilledAct(act: string): string[] {
  */
 export async function upsertEventSlot(
   pool: Pool,
-  slot: { eventId: string; djId: string; stage?: string; startsAt?: Date | null; endsAt?: Date | null; actLabel?: string; source: string },
+  slot: {
+    eventId: string;
+    djId: string;
+    stage?: string;
+    startsAt?: Date | null;
+    endsAt?: Date | null;
+    actLabel?: string;
+    source: string;
+  }
 ): Promise<void> {
   await pool.query(
     `INSERT INTO event_djs (event_id, dj_id, stage, starts_at, ends_at, act_label, source)
@@ -66,7 +74,15 @@ export async function upsertEventSlot(
            ends_at = COALESCE(EXCLUDED.ends_at, event_djs.ends_at),
            act_label = COALESCE(EXCLUDED.act_label, event_djs.act_label),
            source = EXCLUDED.source`,
-    [slot.eventId, slot.djId, slot.stage ?? null, slot.startsAt ?? null, slot.endsAt ?? null, slot.actLabel ?? null, slot.source],
+    [
+      slot.eventId,
+      slot.djId,
+      slot.stage ?? null,
+      slot.startsAt ?? null,
+      slot.endsAt ?? null,
+      slot.actLabel ?? null,
+      slot.source,
+    ]
   );
 }
 
@@ -75,22 +91,60 @@ export async function upsertEventSlot(
 // like "beats", "bass", "dub" or "halftime" are unreliable (a band blurb can
 // say "drum beats" or "halftime oranges").
 const STRICT_DJ_SIGNALS: RegExp[] = [
-  /\bdj\b/i, /\bdeejay\b/i, /\bdisc jockey\b/i,
-  /\bb2b\b/i, /\bsoundsystem\b/i, /\bsound system\b/i,
-  /\btechno\b/i, /\btrance\b/i, /\bpsytrance\b/i,
-  /\bhouse\b/i, /\bdrum ?(?:and|&) ?bass\b/i, /\bdnb\b/i, /\bjungle\b/i,
-  /\bgarage\b/i, /\bukg\b/i, /\bgrime\b/i, /\bdubstep\b/i,
-  /\bbreaks\b/i, /\belectro\b/i, /\bhardstyle\b/i, /\bminimal\b/i,
-  /\bIDM\b/i, /\bEDM\b/i, /\bdisco\b/i, /\bdisko\b/i, /\brave\b/i,
-  /\bvinyl\b/i, /\bturntabl\w*\b/i, /\bdecks\b/i, /\bcrates?\b/i,
-  /\bmix(?:es|ing|master|set|tape)\b/i, /\bbeat ?maker\b/i,
-  /\bdancefloor\b/i, /\bdance ?floors?\b/i, /\bsets\b/i,
-  /\bwobble\b/i, /\bselector\b/i, /\bresident\b/i, /\bspinning\b/i,
-  /\bsteppers\b/i, /\bmid[- ]?tempo\b/i, /\belectroswing\b/i,
-  /\bsynth\b/i, /\bbounce\b/i, /\b4am\b/i, /\bdance music\b/i,
-  /\bclub music\b/i, /\belectronic music\b/i, /\belectronic dance\b/i,
-  /\bindie dance\b/i, /\bdancehall\b/i, /\bnightlife\b/i,
-  /\bambient\b/i, /\bdowntempo\b/i,
+  /\bdj\b/i,
+  /\bdeejay\b/i,
+  /\bdisc jockey\b/i,
+  /\bb2b\b/i,
+  /\bsoundsystem\b/i,
+  /\bsound system\b/i,
+  /\btechno\b/i,
+  /\btrance\b/i,
+  /\bpsytrance\b/i,
+  /\bhouse\b/i,
+  /\bdrum ?(?:and|&) ?bass\b/i,
+  /\bdnb\b/i,
+  /\bjungle\b/i,
+  /\bgarage\b/i,
+  /\bukg\b/i,
+  /\bgrime\b/i,
+  /\bdubstep\b/i,
+  /\bbreaks\b/i,
+  /\belectro\b/i,
+  /\bhardstyle\b/i,
+  /\bminimal\b/i,
+  /\bIDM\b/i,
+  /\bEDM\b/i,
+  /\bdisco\b/i,
+  /\bdisko\b/i,
+  /\brave\b/i,
+  /\bvinyl\b/i,
+  /\bturntabl\w*\b/i,
+  /\bdecks\b/i,
+  /\bcrates?\b/i,
+  /\bmix(?:es|ing|master|set|tape)\b/i,
+  /\bbeat ?maker\b/i,
+  /\bdancefloor\b/i,
+  /\bdance ?floors?\b/i,
+  /\bsets\b/i,
+  /\bwobble\b/i,
+  /\bselector\b/i,
+  /\bresident\b/i,
+  /\bspinning\b/i,
+  /\bsteppers\b/i,
+  /\bmid[- ]?tempo\b/i,
+  /\belectroswing\b/i,
+  /\bsynth\b/i,
+  /\bbounce\b/i,
+  /\b4am\b/i,
+  /\bdance music\b/i,
+  /\bclub music\b/i,
+  /\belectronic music\b/i,
+  /\belectronic dance\b/i,
+  /\bindie dance\b/i,
+  /\bdancehall\b/i,
+  /\bnightlife\b/i,
+  /\bambient\b/i,
+  /\bdowntempo\b/i,
 ];
 
 // Non-DJ signals — bands, choirs, dance troupes, circus, singers,
@@ -107,7 +161,7 @@ const NON_DJ_SIGNALS: RegExp[] = [
 
 export function isDjAct(name: string, description?: string): boolean {
   const nameText = name.toLowerCase();
-  const descText = (description ?? '').toLowerCase();
+  const descText = (description ?? "").toLowerCase();
   if (STRICT_DJ_SIGNALS.some((re) => re.test(nameText) || re.test(descText))) return true;
   if (NON_DJ_SIGNALS.some((re) => re.test(nameText) || re.test(descText))) return false;
   return false;
@@ -118,28 +172,75 @@ export function isDjAct(name: string, description?: string): boolean {
 // ("Zinc", "Sam") return false — absence of a DJ signal is not a junk signal.
 export function isNonDjAct(name: string, description?: string): boolean {
   const nameText = name.toLowerCase();
-  const descText = (description ?? '').toLowerCase();
+  const descText = (description ?? "").toLowerCase();
   return NON_DJ_SIGNALS.some((re) => re.test(nameText) || re.test(descText));
 }
 
 // Lenient DJ signals for structured genre tags (Earth Beat contributor pages
 // tag every act, e.g. "Deep house and techno", "Acoustic Funk").
 const GENRE_DJ_SIGNALS: RegExp[] = [
-  /\bdj\b/i, /\bdeejay\b/i, /\bsoundsystem\b/i, /\bsound system\b/i,
-  /\btechno\b/i, /\btrance\b/i, /\bpsytrance\b/i, /\bhouse\b/i,
-  /\bdrum ?(?:and|&) ?bass\b/i, /\bdnb\b/i, /\bjungle\b/i, /\bgarage\b/i,
-  /\bukg\b/i, /\bgrime\b/i, /\bdubstep\b/i, /\bbreaks\b/i, /\belectro\b/i,
-  /\belectronic\b/i, /\belectronica\b/i, /\bambient\b/i, /\bdowntempo\b/i,
-  /\bhardstyle\b/i, /\bminimal\b/i, /\bIDM\b/i, /\bEDM\b/i, /\bdub\b/i,
-  /\bdisco\b/i, /\bclub\b/i, /\brave\b/i, /\bvinyl\b/i, /\bturntabl\w*\b/i,
-  /\bdecks\b/i, /\bselector\b/i, /\bresident\b/i, /\bspinning\b/i, /\bsets\b/i,
-  /\bmix(?:es|ing|master|set|tape)\b/i, /\bproducer\b/i, /\bbeats\b/i,
-  /\bbass\b/i, /\bdancefloor\b/i, /\bdance music\b/i, /\bclub music\b/i,
-  /\belectronic music\b/i, /\bindie dance\b/i, /\bdancehall\b/i,
-  /\bnightlife\b/i, /\b4am\b/i, /\bwobble\b/i, /\bbaselines?\b/i,
-  /\bcrates?\b/i, /\bwax\b/i, /\bmid[- ]?tempo\b/i, /\belectroswing\b/i,
-  /\bsynth\b/i, /\bbounce\b/i, /\bsteppers\b/i, /\bhalftime\b/i,
-  /\bdubwise\b/i, /\bworld beats\b/i, /\bearth bass\b/i, /\buk bass\b/i,
+  /\bdj\b/i,
+  /\bdeejay\b/i,
+  /\bsoundsystem\b/i,
+  /\bsound system\b/i,
+  /\btechno\b/i,
+  /\btrance\b/i,
+  /\bpsytrance\b/i,
+  /\bhouse\b/i,
+  /\bdrum ?(?:and|&) ?bass\b/i,
+  /\bdnb\b/i,
+  /\bjungle\b/i,
+  /\bgarage\b/i,
+  /\bukg\b/i,
+  /\bgrime\b/i,
+  /\bdubstep\b/i,
+  /\bbreaks\b/i,
+  /\belectro\b/i,
+  /\belectronic\b/i,
+  /\belectronica\b/i,
+  /\bambient\b/i,
+  /\bdowntempo\b/i,
+  /\bhardstyle\b/i,
+  /\bminimal\b/i,
+  /\bIDM\b/i,
+  /\bEDM\b/i,
+  /\bdub\b/i,
+  /\bdisco\b/i,
+  /\bclub\b/i,
+  /\brave\b/i,
+  /\bvinyl\b/i,
+  /\bturntabl\w*\b/i,
+  /\bdecks\b/i,
+  /\bselector\b/i,
+  /\bresident\b/i,
+  /\bspinning\b/i,
+  /\bsets\b/i,
+  /\bmix(?:es|ing|master|set|tape)\b/i,
+  /\bproducer\b/i,
+  /\bbeats\b/i,
+  /\bbass\b/i,
+  /\bdancefloor\b/i,
+  /\bdance music\b/i,
+  /\bclub music\b/i,
+  /\belectronic music\b/i,
+  /\bindie dance\b/i,
+  /\bdancehall\b/i,
+  /\bnightlife\b/i,
+  /\b4am\b/i,
+  /\bwobble\b/i,
+  /\bbaselines?\b/i,
+  /\bcrates?\b/i,
+  /\bwax\b/i,
+  /\bmid[- ]?tempo\b/i,
+  /\belectroswing\b/i,
+  /\bsynth\b/i,
+  /\bbounce\b/i,
+  /\bsteppers\b/i,
+  /\bhalftime\b/i,
+  /\bdubwise\b/i,
+  /\bworld beats\b/i,
+  /\bearth bass\b/i,
+  /\buk bass\b/i,
 ];
 
 const GENRE_NON_DJ_SIGNALS: RegExp[] = [
@@ -161,25 +262,31 @@ export function isDjGenreTag(name: string, tag: string): boolean {
 // so a DJ appearing at 2+ festivals/events earns the 'multi-gigs'
 // verification evidence in verifyDiscovered. Non-DJ acts are skipped
 // entirely — no candidate, no event.
-export async function ingestFestivalLineup(pool: Pool, source: string, lineup: FestivalLineup): Promise<ScrapeResult> {
+export async function ingestFestivalLineup(
+  pool: Pool,
+  source: string,
+  lineup: FestivalLineup
+): Promise<ScrapeResult> {
   const exclude = new Set((lineup.exclude ?? []).map((name) => name.toLowerCase()));
   const include = new Set((lineup.include ?? []).map((name) => name.toLowerCase()));
-  const artists = [...new Map(
-    lineup.artists
-      .map((artist) => {
-        const entry = typeof artist === 'string' ? { name: artist } : artist;
-        return {
-          name: entry.name.replace(/\s+/g, ' ').trim(),
-          description: entry.description?.replace(/\s+/g, ' ').trim(),
-          stage: entry.stage?.replace(/\s+/g, ' ').trim(),
-          startsAt: entry.startsAt ?? null,
-          endsAt: entry.endsAt ?? null,
-          actLabel: entry.actLabel?.replace(/\s+/g, ' ').trim(),
-        };
-      })
-      .filter((artist) => artist.name)
-      .map((artist) => [artist.name.toLowerCase(), artist]),
-  ).values()];
+  const artists = [
+    ...new Map(
+      lineup.artists
+        .map((artist) => {
+          const entry = typeof artist === "string" ? { name: artist } : artist;
+          return {
+            name: entry.name.replace(/\s+/g, " ").trim(),
+            description: entry.description?.replace(/\s+/g, " ").trim(),
+            stage: entry.stage?.replace(/\s+/g, " ").trim(),
+            startsAt: entry.startsAt ?? null,
+            endsAt: entry.endsAt ?? null,
+            actLabel: entry.actLabel?.replace(/\s+/g, " ").trim(),
+          };
+        })
+        .filter((artist) => artist.name)
+        .map((artist) => [artist.name.toLowerCase(), artist])
+    ).values(),
+  ];
   let found = 0;
   let newCount = 0;
   for (const artist of artists) {
@@ -215,12 +322,15 @@ export async function ingestFestivalLineup(pool: Pool, source: string, lineup: F
         `INSERT INTO djs (id, name, source, data_completeness, active, discovery_note)
          VALUES ($1, $2, $3, 15, FALSE, NULL)
          ON CONFLICT (id) DO NOTHING RETURNING id`,
-        [id, name, lineup.djSource ?? 'festival'],
+        [id, name, lineup.djSource ?? "festival"]
       );
       if (result.rows.length > 0) {
         newCount += 1;
-        await pool.query(`INSERT INTO dj_aliases (dj_id, alias) VALUES ($1, $2) ON CONFLICT DO NOTHING`, [id, key]);
-        await upsertDjLink(pool, id, 'festival', lineup.url, `${lineup.eventName} lineup`);
+        await pool.query(
+          `INSERT INTO dj_aliases (dj_id, alias) VALUES ($1, $2) ON CONFLICT DO NOTHING`,
+          [id, key]
+        );
+        await upsertDjLink(pool, id, "festival", lineup.url, `${lineup.eventName} lineup`);
         console.log(`  ${source}: candidate ${name}`);
       }
       // One event row per festival, not one per DJ (#16). Every DJ on the
@@ -232,14 +342,14 @@ export async function ingestFestivalLineup(pool: Pool, source: string, lineup: F
         startsAt: artist.startsAt,
         endsAt: artist.endsAt,
         actLabel,
-        source: lineup.djSource ?? 'festival',
+        source: lineup.djSource ?? "festival",
       });
     }
   }
   return {
-    status: artists.length > 0 ? 'ok' : 'partial',
+    status: artists.length > 0 ? "ok" : "partial",
     items_found: found,
     items_new: newCount,
-    error: artists.length === 0 ? 'No artists parsed' : undefined,
+    error: artists.length === 0 ? "No artists parsed" : undefined,
   };
 }

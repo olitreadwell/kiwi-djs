@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { notFound } from 'next/navigation';
-import { ProfileViewTracker } from '@/components/profile-view-tracker';
-import { MixList } from '@/components/mix-list';
-import { MixEmbed } from '@/components/mix-embed';
-import { SuggestForm } from '@/components/suggest-form';
-import { genrePill, topGenres } from '@/lib/genres';
-import { linkLabel, pillLabel } from '@/lib/link-labels';
-import { cityFromLocation, isNzProfileLocation } from '@/lib/locations';
-import { profileGaps, profileTier, TIER_LABELS } from '@/lib/profile-tier';
-import { pickBestLinks } from '@/lib/queries';
+import Link from "next/link";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { ProfileViewTracker } from "@/components/profile-view-tracker";
+import { MixList } from "@/components/mix-list";
+import { MixEmbed } from "@/components/mix-embed";
+import { SuggestForm } from "@/components/suggest-form";
+import { genrePill, topGenres } from "@/lib/genres";
+import { linkLabel, pillLabel } from "@/lib/link-labels";
+import { cityFromLocation, isNzProfileLocation } from "@/lib/locations";
+import { profileGaps, profileTier, TIER_LABELS } from "@/lib/profile-tier";
+import { pickBestLinks } from "@/lib/queries";
 import {
   buildDossier,
   getDjArticles,
@@ -22,86 +22,111 @@ import {
   getDjPastGigs,
   getDjReleases,
   getSimilarDjs,
-} from '@/lib/queries';
+} from "@/lib/queries";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 const EVIDENCE_LABELS: Record<string, string> = {
-  mixes: 'Mixes',
-  links: 'Links',
-  articles: 'News coverage',
-  gigs: 'Gigs',
+  mixes: "Mixes",
+  links: "Links",
+  articles: "News coverage",
+  gigs: "Gigs",
 };
 
 export default async function DjProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const [dj, gigs, pastGigs, mixes, articles, links, collabs, labels, similar, summary, releases] = await Promise.all([
-    getDjById(id),
-    getDjGigs(id),
-    getDjPastGigs(id),
-    getDjMixes(id),
-    getDjArticles(id),
-    getDjLinks(id),
-    getDjCollabs(id),
-    getDjLabels(id),
-    getSimilarDjs(id),
-    buildDossier(id),
-    getDjReleases(id),
-  ]);
+  const [dj, gigs, pastGigs, mixes, articles, links, collabs, labels, similar, summary, releases] =
+    await Promise.all([
+      getDjById(id),
+      getDjGigs(id),
+      getDjPastGigs(id),
+      getDjMixes(id),
+      getDjArticles(id),
+      getDjLinks(id),
+      getDjCollabs(id),
+      getDjLabels(id),
+      getSimilarDjs(id),
+      buildDossier(id),
+      getDjReleases(id),
+    ]);
   if (!dj) notFound();
 
   const socials = [
-    { label: 'SoundCloud', href: dj.soundcloud_url },
-    { label: 'Instagram', href: dj.instagram_url },
-    { label: 'Facebook', href: dj.facebook_url },
-    { label: 'Mixcloud', href: dj.mixcloud_url },
-    { label: 'Website', href: dj.website_url },
+    { label: "SoundCloud", href: dj.soundcloud_url },
+    { label: "Instagram", href: dj.instagram_url },
+    { label: "Facebook", href: dj.facebook_url },
+    { label: "Mixcloud", href: dj.mixcloud_url },
+    { label: "Website", href: dj.website_url },
   ].filter((s) => s.href);
   const musicLinkTypes = new Set([
-    'soundcloud', 'mixcloud', 'bandcamp', 'spotify', 'apple-music', 'tidal', 'deezer', 'qobuz',
-    'beatport', 'youtube', 'last.fm', 'songkick', 'bandsintown', 'setlistfm', 'discogs', 'radio',
+    "soundcloud",
+    "mixcloud",
+    "bandcamp",
+    "spotify",
+    "apple-music",
+    "tidal",
+    "deezer",
+    "qobuz",
+    "beatport",
+    "youtube",
+    "last.fm",
+    "songkick",
+    "bandsintown",
+    "setlistfm",
+    "discogs",
+    "radio",
   ]);
   const corroboration = [
-    ...new Set([
-      ...mixes.map((mix) => mix.platform),
-      ...links.filter((link) => musicLinkTypes.has(link.type)).map((link) => link.type),
-      ...articles.map((article) => article.source ?? 'article'),
-      ...gigs.map((gig) => gig.source),
-      ...pastGigs.map((gig) => gig.source),
-    ].filter(Boolean)),
+    ...new Set(
+      [
+        ...mixes.map((mix) => mix.platform),
+        ...links.filter((link) => musicLinkTypes.has(link.type)).map((link) => link.type),
+        ...articles.map((article) => article.source ?? "article"),
+        ...gigs.map((gig) => gig.source),
+        ...pastGigs.map((gig) => gig.source),
+      ].filter(Boolean)
+    ),
   ];
-  const city = cityFromLocation(dj.profile_location) ?? (dj.city && dj.city !== '' ? dj.city : null);
-  const mixCount = mixes.filter((mix) => mix.kind === 'mix').length;
-  const interviewCount = mixes.filter((mix) => mix.kind === 'interview').length;
+  const city =
+    cityFromLocation(dj.profile_location) ?? (dj.city && dj.city !== "" ? dj.city : null);
+  const mixCount = mixes.filter((mix) => mix.kind === "mix").length;
+  const interviewCount = mixes.filter((mix) => mix.kind === "interview").length;
   const jumpLinks = [
-    mixCount > 0 && ['#mixes', 'Mixes'],
-    gigs.length > 0 && ['#gigs', 'Gigs'],
-    articles.length > 0 && ['#news', 'News'],
-    similar.length > 0 && ['#similar', 'Similar'],
-    ['#sources', 'Sources'],
+    mixCount > 0 && ["#mixes", "Mixes"],
+    gigs.length > 0 && ["#gigs", "Gigs"],
+    articles.length > 0 && ["#news", "News"],
+    similar.length > 0 && ["#similar", "Similar"],
+    ["#sources", "Sources"],
   ].filter(Boolean) as Array<[string, string]>;
-  const bestLinks = pickBestLinks(dj, links.filter((link) => link.type !== 'festival'));
+  const bestLinks = pickBestLinks(
+    dj,
+    links.filter((link) => link.type !== "festival")
+  );
   // One pill per platform: best link first, then social columns the best
   // links don't already cover, deduped by platform so SoundCloud never
   // doubles up even when the stored column points at an empty namesake.
   const socialType: Record<string, string> = {
-    SoundCloud: 'soundcloud',
-    Instagram: 'instagram',
-    Facebook: 'facebook',
-    Mixcloud: 'mixcloud',
-    Website: 'website',
+    SoundCloud: "soundcloud",
+    Instagram: "instagram",
+    Facebook: "facebook",
+    Mixcloud: "mixcloud",
+    Website: "website",
   };
   const pills = [
     ...bestLinks.map((link) => ({ url: link.url, label: pillLabel(link.type) })),
     ...socials
-      .filter((social) => social.href && !bestLinks.some((link) => link.type === socialType[social.label]))
+      .filter(
+        (social) => social.href && !bestLinks.some((link) => link.type === socialType[social.label])
+      )
       .map((social) => ({ url: social.href as string, label: social.label })),
   ];
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <ProfileViewTracker djId={dj.id} />
-      <Link href="/djs" className="font-mono text-xs text-muted hover:text-accent">← all DJs</Link>
+      <Link href="/djs" className="font-mono text-xs text-muted hover:text-accent">
+        ← all DJs
+      </Link>
 
       <div className="mt-6 flex flex-wrap items-start justify-between gap-6">
         {dj.image_url && (
@@ -119,7 +144,10 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           {dj.genres.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1.5">
               {topGenres(dj.genres).map((genre) => (
-                <span key={genre} className={`inline-block rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider ${genrePill(genre)}`}>
+                <span
+                  key={genre}
+                  className={`inline-block rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider ${genrePill(genre)}`}
+                >
                   {genre}
                 </span>
               ))}
@@ -131,17 +159,34 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
 
       <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-muted">
         {city && <span>{city}</span>}
-        <span>{dj.genres.length} genre{dj.genres.length === 1 ? '' : 's'}</span>
-        <span>{mixCount} mix{mixCount === 1 ? '' : 'es'}</span>
+        <span>
+          {dj.genres.length} genre{dj.genres.length === 1 ? "" : "s"}
+        </span>
+        <span>
+          {mixCount} mix{mixCount === 1 ? "" : "es"}
+        </span>
         <span>{gigs.length} upcoming</span>
         {pastGigs.length > 0 && <span>{pastGigs.length} past</span>}
-        {articles.length > 0 && <span>{articles.length} article{articles.length === 1 ? '' : 's'}</span>}
+        {articles.length > 0 && (
+          <span>
+            {articles.length} article{articles.length === 1 ? "" : "s"}
+          </span>
+        )}
       </div>
 
-      <nav className="sticky top-14 z-30 -mx-4 mt-4 overflow-x-auto border-y border-edge bg-background/90 px-4 py-2 backdrop-blur" aria-label="On this page">
+      <nav
+        className="sticky top-14 z-30 -mx-4 mt-4 overflow-x-auto border-y border-edge bg-background/90 px-4 py-2 backdrop-blur"
+        aria-label="On this page"
+      >
         <div className="flex gap-4 font-mono text-xs text-muted">
           {jumpLinks.map(([href, label]) => (
-            <a key={href} href={href} className="whitespace-nowrap transition-colors hover:text-accent">{label}</a>
+            <a
+              key={href}
+              href={href}
+              className="whitespace-nowrap transition-colors hover:text-accent"
+            >
+              {label}
+            </a>
           ))}
         </div>
       </nav>
@@ -152,11 +197,16 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
             <h2 className="font-mono text-xs uppercase tracking-wider text-muted">
               {TIER_LABELS[profileTier(dj)]} — help build it
             </h2>
-            <a href="#suggest" className="font-mono text-xs text-accent hover:underline">suggest an update →</a>
+            <a href="#suggest" className="font-mono text-xs text-accent hover:underline">
+              suggest an update →
+            </a>
           </div>
           <div className="mt-3 flex flex-wrap gap-1.5">
             {profileGaps(dj).map((gap) => (
-              <span key={gap} className="rounded-full border border-dashed border-edge px-2.5 py-0.5 font-mono text-xs text-muted">
+              <span
+                key={gap}
+                className="rounded-full border border-dashed border-edge px-2.5 py-0.5 font-mono text-xs text-muted"
+              >
                 missing: {gap}
               </span>
             ))}
@@ -202,15 +252,15 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
       {mixCount > 0 && (
         <section id="mixes" className="mt-12 scroll-mt-24">
           <h2 className="text-xl font-bold text-foreground">Mixes ({mixCount})</h2>
-          <MixEmbed mixes={mixes.filter((mix) => mix.kind === 'mix')} />
-          <MixList mixes={mixes.filter((mix) => mix.kind === 'mix')} />
+          <MixEmbed mixes={mixes.filter((mix) => mix.kind === "mix")} />
+          <MixList mixes={mixes.filter((mix) => mix.kind === "mix")} />
         </section>
       )}
 
       {interviewCount > 0 && (
         <section id="interviews" className="mt-12 scroll-mt-24">
           <h2 className="text-xl font-bold text-foreground">Interviews ({interviewCount})</h2>
-          <MixList mixes={mixes.filter((mix) => mix.kind === 'interview')} />
+          <MixList mixes={mixes.filter((mix) => mix.kind === "interview")} />
         </section>
       )}
 
@@ -220,15 +270,27 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           <ul className="mt-4 divide-y divide-edge rounded-lg border border-edge">
             {articles.map((article) => (
               <li key={article.id} className="px-4 py-3">
-                <a href={article.url} target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-accent">
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground hover:text-accent"
+                >
                   {article.title}
                 </a>
                 <p className="mt-1 font-mono text-xs text-muted">
-                  {article.source ?? 'press'}
-                  {article.published_at ? ` · ${new Date(article.published_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}` : ''}
+                  {article.source ?? "press"}
+                  {article.published_at
+                    ? ` · ${new Date(article.published_at).toLocaleDateString("en-NZ", { day: "numeric", month: "short", year: "numeric" })}`
+                    : ""}
                 </p>
                 {article.archive_url && (
-                  <a href={article.archive_url} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block font-mono text-xs text-faint transition-colors hover:text-accent">
+                  <a
+                    href={article.archive_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-block font-mono text-xs text-faint transition-colors hover:text-accent"
+                  >
                     archived copy ↗
                   </a>
                 )}
@@ -243,17 +305,24 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         <section id="collabs" className="mt-12 scroll-mt-24">
           <h2 className="text-xl font-bold text-foreground">Played with</h2>
           <div className="mt-4 flex flex-wrap gap-2">
-            {collabs.map((collab) => (
+            {collabs.map((collab) =>
               collab.dj_id ? (
-                <Link key={collab.name} href={`/djs/${collab.dj_id}`} className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted hover:border-accent hover:text-accent">
+                <Link
+                  key={collab.name}
+                  href={`/djs/${collab.dj_id}`}
+                  className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted hover:border-accent hover:text-accent"
+                >
                   {collab.name} ×{collab.count}
                 </Link>
               ) : (
-                <span key={collab.name} className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted">
+                <span
+                  key={collab.name}
+                  className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted"
+                >
                   {collab.name} ×{collab.count}
                 </span>
               )
-            ))}
+            )}
           </div>
         </section>
       )}
@@ -263,7 +332,10 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           <h2 className="text-xl font-bold text-foreground">Labels & promoters</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             {labels.map((label) => (
-              <span key={label.name} className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted">
+              <span
+                key={label.name}
+                className="rounded-full border border-edge px-3 py-1 font-mono text-xs text-muted"
+              >
                 {label.name} ×{label.count}
               </span>
             ))}
@@ -282,9 +354,16 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
                   {release.label && <p className="font-mono text-xs text-muted">{release.label}</p>}
                 </div>
                 <div className="text-right font-mono text-xs text-muted">
-                  {release.year ?? 'year tbc'}
+                  {release.year ?? "year tbc"}
                   {release.url && (
-                    <a href={release.url} target="_blank" rel="noopener noreferrer" className="mt-1 block text-accent hover:underline">source ↗</a>
+                    <a
+                      href={release.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 block text-accent hover:underline"
+                    >
+                      source ↗
+                    </a>
                   )}
                 </div>
               </li>
@@ -293,7 +372,9 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
         </section>
       )}
 
-      <h2 id="gigs" className="mt-12 scroll-mt-24 text-xl font-bold text-foreground">Upcoming gigs ({gigs.length})</h2>
+      <h2 id="gigs" className="mt-12 scroll-mt-24 text-xl font-bold text-foreground">
+        Upcoming gigs ({gigs.length})
+      </h2>
       {gigs.length === 0 ? (
         <p className="mt-3 font-mono text-sm text-muted">No upcoming gigs listed yet.</p>
       ) : (
@@ -302,12 +383,23 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
             <li key={gig.id} className="flex items-center justify-between gap-4 px-4 py-3">
               <div>
                 <p className="text-sm text-foreground">{gig.name}</p>
-                <p className="font-mono text-xs text-muted">{gig.venue ?? 'TBC'}</p>
+                <p className="font-mono text-xs text-muted">{gig.venue ?? "TBC"}</p>
               </div>
               <div className="text-right font-mono text-xs text-muted">
-                {new Date(gig.starts_at).toLocaleDateString('en-NZ', { weekday: 'short', day: 'numeric', month: 'short' })}
+                {new Date(gig.starts_at).toLocaleDateString("en-NZ", {
+                  weekday: "short",
+                  day: "numeric",
+                  month: "short",
+                })}
                 {gig.url && (
-                  <a href={gig.url} target="_blank" rel="noopener noreferrer" className="mt-1 block text-accent hover:underline">tickets ↗</a>
+                  <a
+                    href={gig.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block text-accent hover:underline"
+                  >
+                    tickets ↗
+                  </a>
                 )}
               </div>
             </li>
@@ -323,10 +415,14 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
               <li key={gig.id} className="flex items-center justify-between gap-4 px-4 py-3">
                 <div>
                   <p className="text-sm text-foreground">{gig.name}</p>
-                  <p className="font-mono text-xs text-muted">{gig.venue ?? 'TBC'}</p>
+                  <p className="font-mono text-xs text-muted">{gig.venue ?? "TBC"}</p>
                 </div>
                 <p className="font-mono text-xs text-muted">
-                  {new Date(gig.starts_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}
+                  {new Date(gig.starts_at).toLocaleDateString("en-NZ", {
+                    day: "numeric",
+                    month: "short",
+                    year: "numeric",
+                  })}
                 </p>
               </li>
             ))}
@@ -340,11 +436,17 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           <p className="mt-1 font-mono text-xs text-muted">Same genres, same rooms.</p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {similar.map((other) => (
-              <Link key={other.id} href={`/djs/${other.id}`} className="rounded-lg border border-edge bg-surface p-4 transition-colors hover:border-accent/60">
+              <Link
+                key={other.id}
+                href={`/djs/${other.id}`}
+                className="rounded-lg border border-edge bg-surface p-4 transition-colors hover:border-accent/60"
+              >
                 <p className="text-sm font-semibold text-foreground">{other.name}</p>
                 <p className="mt-1 font-mono text-xs text-muted">
-                  {other.genres.slice(0, 3).join(' / ') || 'genre tbc'}
-                  {other.shared_events > 0 ? ` · ${other.shared_events} shared night${other.shared_events === 1 ? '' : 's'}` : ''}
+                  {other.genres.slice(0, 3).join(" / ") || "genre tbc"}
+                  {other.shared_events > 0
+                    ? ` · ${other.shared_events} shared night${other.shared_events === 1 ? "" : "s"}`
+                    : ""}
                 </p>
               </Link>
             ))}
@@ -360,20 +462,24 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           <p>{dj.data_completeness}% data complete</p>
           <p className="mt-1">
             {dj.last_played_at
-              ? `last played ${new Date(dj.last_played_at).toLocaleDateString('en-NZ', { day: 'numeric', month: 'short', year: 'numeric' })}`
-              : 'last played: unknown'}
+              ? `last played ${new Date(dj.last_played_at).toLocaleDateString("en-NZ", { day: "numeric", month: "short", year: "numeric" })}`
+              : "last played: unknown"}
           </p>
           <p className="mt-1">
             <span
               className={
                 dj.verification_level >= 2
-                  ? 'text-emerald-400'
+                  ? "text-emerald-400"
                   : dj.verification_level === 1
-                    ? 'text-amber-400'
-                    : 'text-faint'
+                    ? "text-amber-400"
+                    : "text-faint"
               }
             >
-              {dj.verification_level >= 2 ? '✓ verified' : dj.verification_level === 1 ? 'listed' : 'candidate'}
+              {dj.verification_level >= 2
+                ? "✓ verified"
+                : dj.verification_level === 1
+                  ? "listed"
+                  : "candidate"}
             </span>
             {dj.verification_sources.length > 0 && (
               <details className="mt-1 inline-block align-middle">
@@ -393,7 +499,9 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           <p className="mt-1 text-faint">source: {dj.source}</p>
           {corroboration.length > 0 && (
             <p className="mt-1">
-              corroborated by {corroboration.length} source{corroboration.length === 1 ? '' : 's'}: {corroboration.slice(0, 6).join(', ')}{corroboration.length > 6 ? '…' : ''}
+              corroborated by {corroboration.length} source{corroboration.length === 1 ? "" : "s"}:{" "}
+              {corroboration.slice(0, 6).join(", ")}
+              {corroboration.length > 6 ? "…" : ""}
             </p>
           )}
           {dj.profile_location && <p className="mt-1 text-faint">profile: {dj.profile_location}</p>}
@@ -406,11 +514,21 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
             <ul className="mt-2 space-y-1">
               {links.map((link) => (
                 <li key={link.id}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted hover:text-accent"
+                  >
                     {linkLabel(link.type, link.label)}: {link.url}
                   </a>
                   {link.archive_url && (
-                    <a href={link.archive_url} target="_blank" rel="noopener noreferrer" className="ml-2 text-faint hover:text-accent">
+                    <a
+                      href={link.archive_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2 text-faint hover:text-accent"
+                    >
                       archived ↗
                     </a>
                   )}
@@ -426,7 +544,9 @@ export default async function DjProfilePage({ params }: { params: Promise<{ id: 
           Suggest an update
         </summary>
         <div className="border-t border-edge px-4 py-3">
-          <p className="font-mono text-xs text-muted">Spot a mistake or something new? Tell us — reviewed before publish.</p>
+          <p className="font-mono text-xs text-muted">
+            Spot a mistake or something new? Tell us — reviewed before publish.
+          </p>
           <SuggestForm djId={dj.id} djName={dj.name} />
         </div>
       </details>

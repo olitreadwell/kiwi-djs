@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from "next/navigation";
 
 export function RegionFilter({ regions }: { regions: string[] }) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const active = searchParams.get('region') ?? '';
+  const active = searchParams.get("region") ?? "";
 
   function setRegion(region: string) {
     const params = new URLSearchParams(searchParams.toString());
-    if (region) params.set('region', region);
-    else params.delete('region');
+    if (region) params.set("region", region);
+    else params.delete("region");
     router.push(`/events?${params.toString()}`);
   }
 
@@ -24,7 +24,9 @@ export function RegionFilter({ regions }: { regions: string[] }) {
       >
         <option value="">all</option>
         {regions.map((region) => (
-          <option key={region} value={region}>{region}</option>
+          <option key={region} value={region}>
+            {region}
+          </option>
         ))}
       </select>
     </label>

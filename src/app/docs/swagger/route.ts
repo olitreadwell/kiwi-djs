@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   const html = `<!DOCTYPE html>
@@ -24,5 +24,5 @@ export async function GET() {
   </script>
 </body>
 </html>`;
-  return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8' } });
+  return new Response(html, { headers: { "content-type": "text/html; charset=utf-8" } });
 }

@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useSyncExternalStore, useState } from 'react';
+import { useSyncExternalStore, useState } from "react";
 
-const STORAGE_PREFIX = 'nz-vote-';
+const STORAGE_PREFIX = "nz-vote-";
 
 function readStoredVote(linkId: string): boolean | null {
   try {
     const stored = window.localStorage.getItem(STORAGE_PREFIX + linkId);
-    if (stored === 'true' || stored === 'false') return stored === 'true';
+    if (stored === "true" || stored === "false") return stored === "true";
   } catch {
     // private mode — voting still works for the session
   }
@@ -23,9 +23,21 @@ function subscribe(): () => void {
 // database when DATABASE_URL is configured; on the snapshot-mode deploy
 // (no DB) they persist in localStorage so the visitor's vote still
 // registers on their device instead of silently doing nothing.
-export function LinkFeedback({ linkId, helpful, unhelpful }: { linkId: string; helpful: number; unhelpful: number }) {
+export function LinkFeedback({
+  linkId,
+  helpful,
+  unhelpful,
+}: {
+  linkId: string;
+  helpful: number;
+  unhelpful: number;
+}) {
   const [votes, setVotes] = useState({ helpful, unhelpful });
-  const localVote = useSyncExternalStore(subscribe, () => readStoredVote(linkId), () => null);
+  const localVote = useSyncExternalStore(
+    subscribe,
+    () => readStoredVote(linkId),
+    () => null
+  );
   const [saving, setSaving] = useState(false);
   const [savedLocally, setSavedLocally] = useState(false);
 
@@ -48,9 +60,9 @@ export function LinkFeedback({ linkId, helpful, unhelpful }: { linkId: string; h
       // ignore — session-only vote
     }
     try {
-      const res = await fetch('/api/v1/link-feedback', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
+      const res = await fetch("/api/v1/link-feedback", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
         body: JSON.stringify({ linkId, helpful: isHelpful }),
       });
       if (res.ok) {
@@ -74,7 +86,7 @@ export function LinkFeedback({ linkId, helpful, unhelpful }: { linkId: string; h
         onClick={() => void vote(true)}
         aria-label="This is the right link"
         aria-pressed={localVote === true}
-        className={`rounded-md border px-2 py-1 transition-colors hover:border-emerald-400 hover:text-emerald-400 ${localVote === true ? 'border-emerald-400 text-emerald-400' : 'border-edge'}`}
+        className={`rounded-md border px-2 py-1 transition-colors hover:border-emerald-400 hover:text-emerald-400 ${localVote === true ? "border-emerald-400 text-emerald-400" : "border-edge"}`}
       >
         ✓ {votes.helpful}
       </button>
@@ -83,13 +95,11 @@ export function LinkFeedback({ linkId, helpful, unhelpful }: { linkId: string; h
         onClick={() => void vote(false)}
         aria-label="This is the wrong link"
         aria-pressed={localVote === false}
-        className={`rounded-md border px-2 py-1 transition-colors hover:border-red-400 hover:text-red-400 ${localVote === false ? 'border-red-400 text-red-400' : 'border-edge'}`}
+        className={`rounded-md border px-2 py-1 transition-colors hover:border-red-400 hover:text-red-400 ${localVote === false ? "border-red-400 text-red-400" : "border-edge"}`}
       >
         ✗ {votes.unhelpful}
       </button>
-      {savedLocally && (
-        <span className="ml-1 text-[10px] text-faint">saved on this device</span>
-      )}
+      {savedLocally && <span className="ml-1 text-[10px] text-faint">saved on this device</span>}
     </div>
   );
 }

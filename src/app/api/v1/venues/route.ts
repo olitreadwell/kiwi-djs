@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server';
-import { getVenues } from '@/lib/queries';
+import { NextResponse } from "next/server";
+import { getVenues } from "@/lib/queries";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   const venues = await getVenues();

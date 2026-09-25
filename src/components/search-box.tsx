@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 export function SearchBox({ autoFocus = false }: { autoFocus?: boolean }) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [value, setValue] = useState(searchParams.get('q') ?? '');
+  const [value, setValue] = useState(searchParams.get("q") ?? "");
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const initialValue = useRef(value);
 
@@ -17,14 +17,14 @@ export function SearchBox({ autoFocus = false }: { autoFocus?: boolean }) {
     if (value === initialValue.current) return;
     if (timer.current) clearTimeout(timer.current);
     timer.current = setTimeout(() => {
-      void fetch('/api/search', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
+      void fetch("/api/search", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
         body: JSON.stringify({ query: value.trim() }),
       }).catch(() => undefined);
       const params = new URLSearchParams(searchParams.toString());
-      if (value.trim()) params.set('q', value.trim());
-      else params.delete('q');
+      if (value.trim()) params.set("q", value.trim());
+      else params.delete("q");
       router.push(`/djs?${params.toString()}`, { scroll: false });
     }, 300);
     return () => {

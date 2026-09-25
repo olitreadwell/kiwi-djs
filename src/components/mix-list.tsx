@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import type { MixRow } from '@/lib/queries';
+import { useState } from "react";
+import type { MixRow } from "@/lib/queries";
 
 const PAGE_SIZE = 20;
 
@@ -14,7 +14,12 @@ export function MixList({ mixes }: { mixes: MixRow[] }) {
         {shown.map((mix) => (
           <li key={mix.id} className="flex items-center justify-between gap-4 px-4 py-3">
             <p className="text-sm text-foreground">{mix.title}</p>
-            <a href={mix.url} target="_blank" rel="noopener noreferrer" className="font-mono text-xs text-accent hover:underline">
+            <a
+              href={mix.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-accent hover:underline"
+            >
               {mix.platform} ↗
             </a>
           </li>

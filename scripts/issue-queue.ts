@@ -5,13 +5,13 @@
 // issue. Lower score = work first; blockers always land before the issues
 // that depend on them.
 
-import { spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { DATASET_FIXES } from './dataset-fixes';
+import { spawnSync } from "node:child_process";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { DATASET_FIXES } from "./dataset-fixes";
 
-const REPO_ROOT = fileURLToPath(new URL('..', import.meta.url));
-const QUEUE_FILE = new URL('../.loop/queue.json', import.meta.url);
+const REPO_ROOT = fileURLToPath(new URL("..", import.meta.url));
+const QUEUE_FILE = new URL("../.loop/queue.json", import.meta.url);
 
 export interface QueueIssue {
   number: number;
@@ -25,18 +25,21 @@ export interface QueueIssue {
   score: number;
 }
 
-const PRIORITY_ORDER = ['P0', 'P1', 'P2', 'P3'];
+const PRIORITY_ORDER = ["P0", "P1", "P2", "P3"];
 
 function runGh(args: string[]): string {
-  const result = spawnSync('gh', args, { cwd: REPO_ROOT, encoding: 'utf8' });
-  return result.stdout || result.stderr || '';
+  const result = spawnSync("gh", args, { cwd: REPO_ROOT, encoding: "utf8" });
+  return result.stdout || result.stderr || "";
 }
 
 // Strong dependency edges from issue bodies: "depends on #12", "blocked by
 // #12", "blocks #12", "part of #12", "parent of #12", "child of #12".
-const DEP_KEYWORDS: Array<[RegExp, 'blocks' | 'blockedBy']> = [
-  [/\b(?:depends? on|blocked by|requires?|needs?|waiting on|after|part of|child of|sub-?issue of)\s+#(\d+)/gi, 'blockedBy'],
-  [/\b(?:blocks?|unblocks?|prerequisite for|before|parent of|parent)\s+#(\d+)/gi, 'blocks'],
+const DEP_KEYWORDS: Array<[RegExp, "blocks" | "blockedBy"]> = [
+  [
+    /\b(?:depends? on|blocked by|requires?|needs?|waiting on|after|part of|child of|sub-?issue of)\s+#(\d+)/gi,
+    "blockedBy",
+  ],
+  [/\b(?:blocks?|unblocks?|prerequisite for|before|parent of|parent)\s+#(\d+)/gi, "blocks"],
 ];
 
 // Bare "#12" references ("see #12", "related to #12") are weak edges: they
@@ -58,10 +61,10 @@ function priorityOf(labels: string[]): number {
 }
 
 function personaOf(labels: string[]): string | null {
-  return labels.find((label) => label.startsWith('persona:')) ?? null;
+  return labels.find((label) => label.startsWith("persona:")) ?? null;
 }
 
-function collectEdges(text: string, kind: 'blocks' | 'blockedBy'): number[] {
+function collectEdges(text: string, kind: "blocks" | "blockedBy"): number[] {
   const out = new Set<number>();
   for (const [pattern, edgeKind] of DEP_KEYWORDS) {
     if (edgeKind !== kind) continue;
@@ -78,8 +81,14 @@ function weakRefs(text: string): number[] {
 
 export function buildIssueQueue(): QueueIssue[] {
   const raw = runGh([
-    'issue', 'list', '--state', 'open', '--limit', '200',
-    '--json', 'number,title,body,labels',
+    "issue",
+    "list",
+    "--state",
+    "open",
+    "--limit",
+    "200",
+    "--json",
+    "number,title,body,labels",
   ]);
   let issues: RawIssue[] = [];
   try {
@@ -91,15 +100,15 @@ export function buildIssueQueue(): QueueIssue[] {
   const byNumber = new Map<number, QueueIssue>();
   for (const issue of issues) {
     const labels = issue.labels.map((label) => label.name);
-    const text = `${issue.title}\n${issue.body ?? ''}`;
+    const text = `${issue.title}\n${issue.body ?? ""}`;
     byNumber.set(issue.number, {
       number: issue.number,
       title: issue.title,
       priority: priorityOf(labels),
       persona: personaOf(labels),
       labels,
-      blocks: collectEdges(text, 'blocks').filter((n) => n !== issue.number),
-      blockedBy: collectEdges(text, 'blockedBy').filter((n) => n !== issue.number),
+      blocks: collectEdges(text, "blocks").filter((n) => n !== issue.number),
+      blockedBy: collectEdges(text, "blockedBy").filter((n) => n !== issue.number),
       workable: workableNumbers.has(issue.number),
       score: 0,
     });
@@ -107,7 +116,7 @@ export function buildIssueQueue(): QueueIssue[] {
   // Weak edges: referencing issue lands just after the referenced one.
   const weakCount = new Map<number, number>();
   for (const issue of issues) {
-    const refs = weakRefs(`${issue.title}\n${issue.body ?? ''}`).filter((n) => n !== issue.number);
+    const refs = weakRefs(`${issue.title}\n${issue.body ?? ""}`).filter((n) => n !== issue.number);
     weakCount.set(issue.number, refs.length);
   }
   // Topological order: blockers before dependents, priority first, then
@@ -149,18 +158,18 @@ export function buildIssueQueue(): QueueIssue[] {
 }
 
 export function writeIssueQueue(queue: QueueIssue[]): void {
-  const dir = new URL('../.loop/', import.meta.url);
+  const dir = new URL("../.loop/", import.meta.url);
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
   writeFileSync(
     QUEUE_FILE,
-    JSON.stringify({ generatedAt: new Date().toISOString(), issues: queue }, null, 2),
+    JSON.stringify({ generatedAt: new Date().toISOString(), issues: queue }, null, 2)
   );
 }
 
 export function loadIssueQueue(): QueueIssue[] {
   if (!existsSync(QUEUE_FILE)) return [];
   try {
-    const parsed = JSON.parse(readFileSync(QUEUE_FILE, 'utf8')) as { issues: QueueIssue[] };
+    const parsed = JSON.parse(readFileSync(QUEUE_FILE, "utf8")) as { issues: QueueIssue[] };
     return parsed.issues ?? [];
   } catch {
     return [];

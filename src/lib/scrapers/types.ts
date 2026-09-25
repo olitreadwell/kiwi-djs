@@ -1,8 +1,8 @@
-import type { Pool } from 'pg';
+import type { Pool } from "pg";
 
 export interface ScrapeResult {
   source?: string;
-  status: 'ok' | 'partial' | 'error';
+  status: "ok" | "partial" | "error";
   items_found: number;
   items_new: number;
   error?: string;

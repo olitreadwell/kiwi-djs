@@ -2,13 +2,13 @@
 // we store the link but don't scrape the bio, releases, or shows. This
 // enrichment pass fixes that — bio first (highest value), releases
 // best-effort, one site per second, robots.txt-respecting.
-import type { Pool } from 'pg';
-import { fetchHtml, sleep } from './http';
-import { slugify } from '../slug';
-import type { Scraper, ScrapeResult } from './types';
+import type { Pool } from "pg";
+import { fetchHtml, sleep } from "./http";
+import { slugify } from "../slug";
+import type { Scraper, ScrapeResult } from "./types";
 
-const BIO_PAGES = ['/about', '/bio', '/history', '/info'];
-const RELEASE_PAGES = ['/music', '/releases', '/discography', '/albums', '/songs'];
+const BIO_PAGES = ["/about", "/bio", "/history", "/info"];
+const RELEASE_PAGES = ["/music", "/releases", "/discography", "/albums", "/songs"];
 
 const MUSIC_WORDS =
   /\b(dj|producer|house|techno|disco|funk|soul|bass|drum|mix|set|label|release|vinyl|edit|remix|club|festival|radio|resident|selector|boogie|garage|dub|trance|breaks|hip hop|r&b|jazz|afro|amapiano|gqom|electronic|dance)\b/i;
@@ -17,22 +17,25 @@ const NAV_WORDS =
 
 function stripHtml(html: string): string {
   return html
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&nbsp;/g, ' ')
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&nbsp;/g, " ")
     .replace(/&#x27;|&#39;/g, "'")
-    .replace(/&mdash;|&ndash;/g, '—')
-    .replace(/\s+/g, ' ')
+    .replace(/&mdash;|&ndash;/g, "—")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
 // Longest sentence-run that mentions the artist or music — the bio.
 function extractBio(text: string, artistName: string): { bio: string; score: number } | null {
-  const sentences = text.split(/(?<=[.!?])\s+/).map((s) => s.trim()).filter((s) => s.length > 0);
-  const lastName = artistName.split(' ').pop()?.toLowerCase() ?? '';
-  let best = '';
+  const sentences = text
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0);
+  const lastName = artistName.split(" ").pop()?.toLowerCase() ?? "";
+  let best = "";
   let bestScore = -Infinity;
   for (let i = 0; i < sentences.length; i += 1) {
     let run = sentences[i];
@@ -40,7 +43,7 @@ function extractBio(text: string, artistName: string): { bio: string; score: num
       run += ` ${sentences[j]}`;
     }
     const mentionsArtist = run.toLowerCase().includes(artistName.toLowerCase());
-    const mentionsLastName = lastName !== '' && run.toLowerCase().includes(lastName);
+    const mentionsLastName = lastName !== "" && run.toLowerCase().includes(lastName);
     const musicHits = (run.match(MUSIC_WORDS) ?? []).length;
     const navHits = (run.match(NAV_WORDS) ?? []).length;
     if (run.length < 120 || musicHits < 2) continue;
@@ -64,11 +67,16 @@ function extractReleases(text: string): Array<{ title: string; year: number }> {
   ];
   for (const pattern of patterns) {
     for (const match of text.matchAll(pattern)) {
-      const title = match[1].trim().replace(/\s+/g, ' ');
+      const title = match[1].trim().replace(/\s+/g, " ");
       const year = Number(match[2]);
       if (year < 1990 || year > 2026) continue;
       if (title.length < 3 || title.length > 60) continue;
-      if (/^(home|about|contact|news|music|releases|discography|albums|songs|shop|tour|bio|history|info|listen|watch|press|merch|videos?)$/i.test(title)) continue;
+      if (
+        /^(home|about|contact|news|music|releases|discography|albums|songs|shop|tour|bio|history|info|listen|watch|press|merch|videos?)$/i.test(
+          title
+        )
+      )
+        continue;
       const key = `${title.toLowerCase()}-${year}`;
       if (seen.has(key)) continue;
       seen.add(key);
@@ -79,8 +87,12 @@ function extractReleases(text: string): Array<{ title: string; year: number }> {
 }
 
 async function sitePages(baseUrl: string): Promise<string[]> {
-  const root = baseUrl.replace(/\/$/, '');
-  const pages = new Set<string>([baseUrl, ...BIO_PAGES.map((path) => `${root}${path}`), ...RELEASE_PAGES.map((path) => `${root}${path}`)]);
+  const root = baseUrl.replace(/\/$/, "");
+  const pages = new Set<string>([
+    baseUrl,
+    ...BIO_PAGES.map((path) => `${root}${path}`),
+    ...RELEASE_PAGES.map((path) => `${root}${path}`),
+  ]);
   try {
     const sitemap = await fetchHtml(`${root}/sitemap.xml`);
     let sitemapUrls = 0;
@@ -109,7 +121,7 @@ export async function enrichOfficialSites(pool: Pool, limit = 15): Promise<Scrap
          AND (d.bio IS NULL OR length(d.bio) < 200)
        ORDER BY d.popularity DESC
        LIMIT $1`,
-      [limit],
+      [limit]
     )
   ).rows as Array<{ id: string; name: string; bio: string | null; site: string }>;
   let enriched = 0;
@@ -133,7 +145,10 @@ export async function enrichOfficialSites(pool: Pool, limit = 15): Promise<Scrap
       // site unreachable or robots-blocked — skip, never fatal
     }
     if (bestBio && (!target.bio || bestBio.bio.length > target.bio.length)) {
-      await pool.query(`UPDATE djs SET bio = $2, updated_at = now() WHERE id = $1`, [target.id, bestBio.bio]);
+      await pool.query(`UPDATE djs SET bio = $2, updated_at = now() WHERE id = $1`, [
+        target.id,
+        bestBio.bio,
+      ]);
       enriched += 1;
     }
     for (const release of releases) {
@@ -141,17 +156,18 @@ export async function enrichOfficialSites(pool: Pool, limit = 15): Promise<Scrap
       const result = await pool.query(
         `INSERT INTO dj_releases (id, dj_id, title, year, url) VALUES ($1, $2, $3, $4, $5)
          ON CONFLICT (id) DO NOTHING RETURNING id`,
-        [id, target.id, release.title, release.year, target.site],
+        [id, target.id, release.title, release.year, target.site]
       );
       if (result.rows.length > 0) releasesFound += 1;
     }
   }
   return {
-    status: enriched > 0 || releasesFound > 0 ? 'ok' : 'partial',
+    status: enriched > 0 || releasesFound > 0 ? "ok" : "partial",
     items_found: enriched + releasesFound,
     items_new: enriched + releasesFound,
-    error: enriched === 0 && releasesFound === 0 ? 'No official-site bios or releases found' : undefined,
+    error:
+      enriched === 0 && releasesFound === 0 ? "No official-site bios or releases found" : undefined,
   };
 }
 
-export const officialSiteScraper: Scraper = { source: 'official-site', run: enrichOfficialSites };
+export const officialSiteScraper: Scraper = { source: "official-site", run: enrichOfficialSites };

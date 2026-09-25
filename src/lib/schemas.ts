@@ -1,5 +1,5 @@
-import { z } from 'zod';
-import type { JsonObject } from 'type-fest';
+import { z } from "zod";
+import type { JsonObject } from "type-fest";
 
 // Single source of truth for the public API: response payloads (used to
 // generate the OpenAPI components) and query params (validated at the route
@@ -104,7 +104,7 @@ export const mixSchema = z.object({
   title: z.string(),
   url: z.string(),
   platform: z.string(),
-  kind: z.enum(['mix', 'interview']),
+  kind: z.enum(["mix", "interview"]),
 });
 
 export const articleSchema = z.object({

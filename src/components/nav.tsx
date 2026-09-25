@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import { MobileMenu } from './mobile-menu';
+import Link from "next/link";
+import { MobileMenu } from "./mobile-menu";
 
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/djs', label: 'DJs' },
-  { href: '/events', label: 'Events' },
-  { href: '/venues', label: 'Venues' },
-  { href: '/discover', label: 'Discover' },
-  { href: '/orgs', label: 'Orgs' },
-  { href: '/soundsystems', label: 'Soundsystems' },
-  { href: '/about', label: 'About' },
-  { href: '/opt-out', label: 'Opt out' },
+  { href: "/", label: "Home" },
+  { href: "/djs", label: "DJs" },
+  { href: "/events", label: "Events" },
+  { href: "/venues", label: "Venues" },
+  { href: "/discover", label: "Discover" },
+  { href: "/orgs", label: "Orgs" },
+  { href: "/soundsystems", label: "Soundsystems" },
+  { href: "/about", label: "About" },
+  { href: "/opt-out", label: "Opt out" },
 ];
 
 export function Nav() {

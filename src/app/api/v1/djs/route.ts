@@ -1,16 +1,19 @@
-import { NextResponse } from 'next/server';
-import { listDjs } from '@/lib/queries';
-import { toDjSummary } from '@/lib/api-types';
-import type { ListResponse, DjSummary } from '@/lib/api-types';
-import { djListQuerySchema } from '@/lib/schemas';
+import { NextResponse } from "next/server";
+import { listDjs } from "@/lib/queries";
+import { toDjSummary } from "@/lib/api-types";
+import type { ListResponse, DjSummary } from "@/lib/api-types";
+import { djListQuerySchema } from "@/lib/schemas";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const parsed = djListQuerySchema.safeParse(Object.fromEntries(url.searchParams));
   if (!parsed.success) {
-    return NextResponse.json({ error: 'Invalid query params', details: parsed.error.flatten().fieldErrors }, { status: 400 });
+    return NextResponse.json(
+      { error: "Invalid query params", details: parsed.error.flatten().fieldErrors },
+      { status: 400 }
+    );
   }
   const { q, genre, limit = 50, offset = 0 } = parsed.data;
   const all = await listDjs({ query: q, genre });

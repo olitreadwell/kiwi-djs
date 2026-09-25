@@ -1,5 +1,14 @@
-import type { SetRequired } from 'type-fest';
-import type { DjRow, EventRow, MixRow, ArticleRow, LinkRow, CollabRow, LabelRow, SimilarDjRow } from './queries';
+import type { SetRequired } from "type-fest";
+import type {
+  DjRow,
+  EventRow,
+  MixRow,
+  ArticleRow,
+  LinkRow,
+  CollabRow,
+  LabelRow,
+  SimilarDjRow,
+} from "./queries";
 
 export interface DjSummary {
   id: string;
@@ -48,7 +57,7 @@ export interface DatasetRow {
   mixes: MixRow[];
 }
 
-export type DatasetExport = SetRequired<DatasetRow, 'djs' | 'events' | 'venues'> & {
+export type DatasetExport = SetRequired<DatasetRow, "djs" | "events" | "venues"> & {
   exportedAt: string;
   version: string;
 };
@@ -56,7 +65,14 @@ export type DatasetExport = SetRequired<DatasetRow, 'djs' | 'events' | 'venues'>
 export interface DatasetMeta {
   version: string;
   exportedAt: string;
-  counts: { djs: number; events: number; venues: number; links: number; articles: number; mixes: number };
+  counts: {
+    djs: number;
+    events: number;
+    venues: number;
+    links: number;
+    articles: number;
+    mixes: number;
+  };
   license: string;
   sources: string[];
 }

@@ -1,4 +1,4 @@
-import { checkRobots, UA } from './scrapers/http';
+import { checkRobots, UA } from "./scrapers/http";
 
 /**
  * Health of a link we publish. `dead` means the resource is gone (404/410)
@@ -7,16 +7,16 @@ import { checkRobots, UA } from './scrapers/http';
  * (rateyourmusic, allmusic, ra.co). Those rows stay visible — the link works
  * in a real browser — and are only reported.
  */
-export type LinkStatus = 'live' | 'dead' | 'blocked' | 'unknown';
+export type LinkStatus = "live" | "dead" | "blocked" | "unknown";
 
 /** How long to wait between probes on one origin. */
 export const LINK_CHECK_DELAY_MS = 500;
 
 function statusFromHttp(code: number): LinkStatus {
-  if (code >= 200 && code < 400) return 'live';
-  if (code === 404 || code === 410) return 'dead';
-  if (code === 401 || code === 403) return 'blocked';
-  return 'unknown';
+  if (code >= 200 && code < 400) return "live";
+  if (code === 404 || code === 410) return "dead";
+  if (code === 401 || code === 403) return "blocked";
+  return "unknown";
 }
 
 /**
@@ -29,13 +29,13 @@ export async function checkSoundCloudUrl(url: string): Promise<LinkStatus> {
   try {
     const target = `https://soundcloud.com/oembed?format=json&url=${encodeURIComponent(url)}`;
     const res = await fetch(target, {
-      headers: { 'user-agent': UA, accept: 'application/json' },
-      redirect: 'follow',
+      headers: { "user-agent": UA, accept: "application/json" },
+      redirect: "follow",
       signal: AbortSignal.timeout(15000),
     });
     return statusFromHttp(res.status);
   } catch {
-    return 'unknown';
+    return "unknown";
   }
 }
 
@@ -46,21 +46,21 @@ export async function checkSoundCloudUrl(url: string): Promise<LinkStatus> {
  */
 export async function checkLinkHealth(url: string): Promise<LinkStatus> {
   if (/^https?:\/\/(?:www\.)?soundcloud\.com\//i.test(url)) {
-    if (!(await checkRobots(url))) return 'unknown';
+    if (!(await checkRobots(url))) return "unknown";
     return checkSoundCloudUrl(url);
   }
   try {
     const res = await fetch(url, {
-      headers: { 'user-agent': UA },
-      redirect: 'follow',
+      headers: { "user-agent": UA },
+      redirect: "follow",
       signal: AbortSignal.timeout(15000),
     });
     // Mixcloud and friends rate-limit bursts with 429 — that says nothing
     // about whether the link is gone.
-    if (res.status === 429) return 'unknown';
+    if (res.status === 429) return "unknown";
     return statusFromHttp(res.status);
   } catch {
-    return 'unknown';
+    return "unknown";
   }
 }
 
@@ -70,7 +70,7 @@ export async function checkLinkHealth(url: string): Promise<LinkStatus> {
  */
 export async function sweepLinkHealth(
   urls: string[],
-  options: { delayMs?: number; onResult?: (url: string, status: LinkStatus) => void } = {},
+  options: { delayMs?: number; onResult?: (url: string, status: LinkStatus) => void } = {}
 ): Promise<Map<string, LinkStatus>> {
   const delayMs = options.delayMs ?? LINK_CHECK_DELAY_MS;
   const results = new Map<string, LinkStatus>();
