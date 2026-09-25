@@ -252,3 +252,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_link_feedback_ip ON link_feedback(link_id,
 ALTER TABLE link_feedback ADD COLUMN IF NOT EXISTS ip_hash TEXT;
 CREATE INDEX IF NOT EXISTS idx_dj_articles_dj ON dj_articles(dj_id);
 CREATE INDEX IF NOT EXISTS idx_dj_mixes_dj ON dj_mixes(dj_id);
+
+-- Backfill (#329): nothing set is_dj_event, so the calendar reads found no
+-- events. An event with a lineup is a DJ event.
+UPDATE events e SET is_dj_event = TRUE
+WHERE EXISTS (SELECT 1 FROM event_djs ed WHERE ed.event_id = e.id) AND is_dj_event = FALSE;

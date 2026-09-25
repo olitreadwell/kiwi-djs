@@ -1,6 +1,6 @@
-import 'server-only';
-import { getPool } from '@/lib/db';
-import { extractArtistNames } from '@/lib/scrapers/discover';
+import "server-only";
+import { getPool } from "@/lib/db";
+import { extractArtistNames } from "@/lib/scrapers/discover";
 import type {
   EventSetRow,
   ArticleRow,
@@ -19,7 +19,12 @@ import type {
   SoundsystemRow,
   VenueRow,
   VenueWithCounts,
-} from './types';
+} from "./types";
+
+// An event is a DJ event when the flag is set or when a lineup links DJs to
+// it (#329). Nothing wrote the flag, so until now every calendar read was
+// empty and the /events page rendered nothing.
+const djEventPredicate = `(e.is_dj_event OR EXISTS (SELECT 1 FROM event_djs ed WHERE ed.event_id = e.id))`;
 
 const completenessSql = `(
   (CASE WHEN bio IS NOT NULL THEN 15 ELSE 0 END) +
@@ -46,19 +51,19 @@ const eventSelect = `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source,
 
 function sortSql(sort?: string): string {
   switch (sort) {
-    case 'name':
-      return 'ORDER BY name ASC';
-    case 'popularity':
-      return 'ORDER BY popularity DESC, name ASC';
-    case 'recent':
-      return 'ORDER BY created_at DESC, name ASC';
-    case 'updated':
-      return 'ORDER BY updated_at DESC, name ASC';
-    case 'gigs':
-      return 'ORDER BY upcoming_events DESC, name ASC';
-    case 'completeness':
+    case "name":
+      return "ORDER BY name ASC";
+    case "popularity":
+      return "ORDER BY popularity DESC, name ASC";
+    case "recent":
+      return "ORDER BY created_at DESC, name ASC";
+    case "updated":
+      return "ORDER BY updated_at DESC, name ASC";
+    case "gigs":
+      return "ORDER BY upcoming_events DESC, name ASC";
+    case "completeness":
     default:
-      return 'ORDER BY data_completeness DESC, name ASC';
+      return "ORDER BY data_completeness DESC, name ASC";
   }
 }
 
@@ -79,10 +84,12 @@ export class PostgresRepo implements DataRepository {
   async listDjs(opts: DjQueryOptions = {}): Promise<DjRow[]> {
     const pool = getPool();
     const params: unknown[] = [];
-    const where: string[] = ['opt_out = FALSE AND active = TRUE AND is_nz = TRUE'];
+    const where: string[] = ["opt_out = FALSE AND active = TRUE AND is_nz = TRUE"];
     if (opts.query) {
       params.push(`%${opts.query}%`);
-      where.push(`(name ILIKE $${params.length} OR bio ILIKE $${params.length} OR array_to_string(genres, ' ') ILIKE $${params.length})`);
+      where.push(
+        `(name ILIKE $${params.length} OR bio ILIKE $${params.length} OR array_to_string(genres, ' ') ILIKE $${params.length})`
+      );
     }
     if (opts.genre) {
       params.push(opts.genre);
@@ -92,10 +99,10 @@ export class PostgresRepo implements DataRepository {
       `SELECT * FROM (
          ${djSelect}
        FROM djs d
-       WHERE ${where.join(' AND ')}
+       WHERE ${where.join(" AND ")}
        ) sub
        ${sortSql(opts.sort)}`,
-      params,
+      params
     );
     return result.rows as DjRow[];
   }
@@ -105,7 +112,7 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `${djSelect}
        FROM djs d WHERE d.id = $1 AND d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE`,
-      [id],
+      [id]
     );
     return (result.rows[0] as DjRow) ?? null;
   }
@@ -115,10 +122,10 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `${eventSelect}
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
-       WHERE e.starts_at > now() AND e.is_dj_event = TRUE
+       WHERE e.starts_at > now() AND ${djEventPredicate}
        ORDER BY e.starts_at ASC
        LIMIT $1`,
-      [limit],
+      [limit]
     );
     return result.rows as EventRow[];
   }
@@ -128,10 +135,10 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `${eventSelect}
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
-       WHERE e.starts_at <= now() AND e.is_dj_event = TRUE
+       WHERE e.starts_at <= now() AND ${djEventPredicate}
        ORDER BY e.starts_at DESC
        LIMIT $1`,
-      [limit],
+      [limit]
     );
     return result.rows as EventRow[];
   }
@@ -144,7 +151,7 @@ export class PostgresRepo implements DataRepository {
     if (opts.upcoming !== false) {
       params.push(new Date().toISOString());
       where.push(`e.starts_at > $${params.length}`);
-      where.push('e.is_dj_event = TRUE');
+      where.push(djEventPredicate);
     }
     if (opts.venue) {
       params.push(opts.venue);
@@ -157,10 +164,10 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `${eventSelect}
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
-       ${where.length > 0 ? `WHERE ${where.join(' AND ')}` : ''}
+       ${where.length > 0 ? `WHERE ${where.join(" AND ")}` : ""}
        ORDER BY e.starts_at ASC NULLS LAST
        LIMIT $${params.length + 1}`,
-      [...params, limit],
+      [...params, limit]
     );
     return result.rows as EventRow[];
   }
@@ -168,20 +175,24 @@ export class PostgresRepo implements DataRepository {
   async getGenres(): Promise<string[]> {
     const pool = getPool();
     const result = await pool.query(
-      `SELECT DISTINCT unnest(genres) AS genre FROM djs WHERE opt_out = FALSE AND active = TRUE ORDER BY genre`,
+      `SELECT DISTINCT unnest(genres) AS genre FROM djs WHERE opt_out = FALSE AND active = TRUE ORDER BY genre`
     );
     return result.rows.map((row) => row.genre as string);
   }
 
   async getOrgs(): Promise<OrgRow[]> {
     const pool = getPool();
-    const result = await pool.query('SELECT id, name, city, description, website, instagram, facebook FROM orgs ORDER BY name ASC');
+    const result = await pool.query(
+      "SELECT id, name, city, description, website, instagram, facebook FROM orgs ORDER BY name ASC"
+    );
     return result.rows as OrgRow[];
   }
 
   async getSoundsystems(): Promise<SoundsystemRow[]> {
     const pool = getPool();
-    const result = await pool.query('SELECT id, name, city, style, description, website FROM soundsystems ORDER BY name ASC');
+    const result = await pool.query(
+      "SELECT id, name, city, style, description, website FROM soundsystems ORDER BY name ASC"
+    );
     return result.rows as SoundsystemRow[];
   }
 
@@ -193,7 +204,7 @@ export class PostgresRepo implements DataRepository {
        WHERE d.opt_out = FALSE AND d.active = TRUE AND d.is_nz = TRUE
        ORDER BY d.popularity DESC, d.name ASC
        LIMIT $1`,
-      [limit],
+      [limit]
     );
     return result.rows as DjRow[];
   }
@@ -205,7 +216,7 @@ export class PostgresRepo implements DataRepository {
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id
        WHERE e.id IN (SELECT event_id FROM event_djs WHERE dj_id = $1) AND e.starts_at > now()
        ORDER BY e.starts_at ASC LIMIT $2`,
-      [djId, limit],
+      [djId, limit]
     );
     return result.rows as EventRow[];
   }
@@ -215,7 +226,7 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `SELECT id, title, url, platform, kind FROM dj_mixes
        WHERE dj_id = $1 AND status <> 'dead' ORDER BY created_at DESC`,
-      [djId],
+      [djId]
     );
     return result.rows as MixRow[];
   }
@@ -224,7 +235,7 @@ export class PostgresRepo implements DataRepository {
     const pool = getPool();
     const result = await pool.query(
       `SELECT id, dj_id, title, year, label, format, url FROM dj_releases WHERE dj_id = $1 ORDER BY year DESC NULLS LAST, title ASC`,
-      [djId],
+      [djId]
     );
     return result.rows as ReleaseRow[];
   }
@@ -235,7 +246,7 @@ export class PostgresRepo implements DataRepository {
       `SELECT DISTINCT ON (lower(title)) id, title, url, source, published_at, snippet
        FROM dj_articles WHERE dj_id = $1
        ORDER BY lower(title), published_at DESC NULLS LAST`,
-      [djId],
+      [djId]
     );
     return result.rows as ArticleRow[];
   }
@@ -250,7 +261,7 @@ export class PostgresRepo implements DataRepository {
        WHERE l.dj_id = $1 AND l.status <> 'dead'
        GROUP BY l.id
        ORDER BY l.type, l.created_at`,
-      [djId],
+      [djId]
     );
     return result.rows as LinkRow[];
   }
@@ -262,16 +273,16 @@ export class PostgresRepo implements DataRepository {
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id
        WHERE e.id IN (SELECT event_id FROM event_djs WHERE dj_id = $1) AND e.starts_at <= now()
        ORDER BY e.starts_at DESC LIMIT $2`,
-      [djId, limit],
+      [djId, limit]
     );
     return result.rows as EventRow[];
   }
 
   async getDjCollabs(djId: string): Promise<CollabRow[]> {
     const pool = getPool();
-    const dj = await pool.query('SELECT name FROM djs WHERE id = $1', [djId]);
-    const djName = (dj.rows[0]?.name as string | undefined)?.toLowerCase() ?? '';
-    const events = await pool.query('SELECT name FROM events WHERE dj_id = $1', [djId]);
+    const dj = await pool.query("SELECT name FROM djs WHERE id = $1", [djId]);
+    const djName = (dj.rows[0]?.name as string | undefined)?.toLowerCase() ?? "";
+    const events = await pool.query("SELECT name FROM events WHERE dj_id = $1", [djId]);
     const counts = new Map<string, number>();
     for (const event of events.rows) {
       for (const name of extractArtistNames(event.name as string)) {
@@ -279,8 +290,12 @@ export class PostgresRepo implements DataRepository {
         counts.set(name, (counts.get(name) ?? 0) + 1);
       }
     }
-    const known = await pool.query('SELECT id, name FROM djs WHERE opt_out = FALSE AND active = TRUE');
-    const knownByName = new Map(known.rows.map((row) => [(row.name as string).toLowerCase(), row.id as string]));
+    const known = await pool.query(
+      "SELECT id, name FROM djs WHERE opt_out = FALSE AND active = TRUE"
+    );
+    const knownByName = new Map(
+      known.rows.map((row) => [(row.name as string).toLowerCase(), row.id as string])
+    );
     return [...counts.entries()]
       .map(([name, count]) => ({ name, dj_id: knownByName.get(name.toLowerCase()) ?? null, count }))
       .sort((a, b) => b.count - a.count)
@@ -289,7 +304,7 @@ export class PostgresRepo implements DataRepository {
 
   async getDjLabels(djId: string): Promise<LabelRow[]> {
     const pool = getPool();
-    const events = await pool.query('SELECT name FROM events WHERE dj_id = $1', [djId]);
+    const events = await pool.query("SELECT name FROM events WHERE dj_id = $1", [djId]);
     const counts = new Map<string, number>();
     for (const event of events.rows) {
       const name = event.name as string;
@@ -297,8 +312,12 @@ export class PostgresRepo implements DataRepository {
       const org = name.match(/(.+?(?:records|music|sounds|collective|label|promotions))\b/i);
       const candidate = presents?.[1] ?? org?.[1];
       if (candidate) {
-        const clean = candidate.replace(/[|,;&/]+/g, ' ').replace(/\s+/g, ' ').trim();
-        if (clean.length >= 3 && clean.length <= 50) counts.set(clean, (counts.get(clean) ?? 0) + 1);
+        const clean = candidate
+          .replace(/[|,;&/]+/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+        if (clean.length >= 3 && clean.length <= 50)
+          counts.set(clean, (counts.get(clean) ?? 0) + 1);
       }
     }
     return [...counts.entries()]
@@ -309,7 +328,9 @@ export class PostgresRepo implements DataRepository {
 
   async getVenues(): Promise<VenueRow[]> {
     const pool = getPool();
-    const result = await pool.query('SELECT id, name, address, url, region FROM venues ORDER BY name');
+    const result = await pool.query(
+      "SELECT id, name, address, url, region FROM venues ORDER BY name"
+    );
     return result.rows as VenueRow[];
   }
 
@@ -318,14 +339,17 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `SELECT v.id, v.name, v.address, v.url, v.region,
               (SELECT count(*) FROM events e WHERE e.venue = v.name AND e.starts_at > now()) AS upcoming_events
-       FROM venues v ORDER BY v.name`,
+       FROM venues v ORDER BY v.name`
     );
     return result.rows as VenueWithCounts[];
   }
 
   async getVenueById(id: string): Promise<VenueRow | null> {
     const pool = getPool();
-    const result = await pool.query('SELECT id, name, address, url, region FROM venues WHERE id = $1', [id]);
+    const result = await pool.query(
+      "SELECT id, name, address, url, region FROM venues WHERE id = $1",
+      [id]
+    );
     return (result.rows[0] as VenueRow) ?? null;
   }
 
@@ -334,9 +358,9 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `${eventSelect}
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
-       WHERE e.venue ILIKE $1 AND e.starts_at > now() AND e.is_dj_event = TRUE
+       WHERE e.venue ILIKE $1 AND e.starts_at > now() AND ${djEventPredicate}
        ORDER BY e.starts_at ASC LIMIT $2`,
-      [venueName, limit],
+      [venueName, limit]
     );
     return result.rows as EventRow[];
   }
@@ -347,7 +371,7 @@ export class PostgresRepo implements DataRepository {
       `${eventSelect}
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
        WHERE e.id = $1`,
-      [id],
+      [id]
     );
     return (result.rows[0] as EventRow) ?? null;
   }
@@ -361,7 +385,7 @@ export class PostgresRepo implements DataRepository {
        FROM event_djs ed JOIN djs d ON d.id = ed.dj_id
        WHERE ed.event_id = $1 AND d.opt_out = FALSE AND d.active = TRUE
        ORDER BY d.name ASC`,
-      [eventId],
+      [eventId]
     );
     return result.rows as DjRow[];
   }
@@ -377,7 +401,7 @@ export class PostgresRepo implements DataRepository {
          AND d.opt_out = FALSE
          AND (ed.stage IS NOT NULL OR ed.starts_at IS NOT NULL)
        ORDER BY ed.stage ASC NULLS LAST, ed.starts_at ASC NULLS LAST, d.name ASC`,
-      [eventId],
+      [eventId]
     );
     return result.rows as EventSetRow[];
   }
@@ -387,9 +411,9 @@ export class PostgresRepo implements DataRepository {
     const result = await pool.query(
       `${eventSelect}
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
-       WHERE e.starts_at > now() AND e.starts_at <= $1 AND e.is_dj_event = TRUE
+       WHERE e.starts_at > now() AND e.starts_at <= $1 AND ${djEventPredicate}
        ORDER BY e.starts_at ASC LIMIT $2`,
-      [endOfWeekendUtc().toISOString(), limit],
+      [endOfWeekendUtc().toISOString(), limit]
     );
     return result.rows as EventRow[];
   }
@@ -408,7 +432,7 @@ export class PostgresRepo implements DataRepository {
        WHERE t.genre_overlap > 0 OR t.shared_events > 0
        ORDER BY t.genre_overlap DESC, t.shared_events DESC, t.popularity DESC
        LIMIT $2`,
-      [djId, limit],
+      [djId, limit]
     );
     return result.rows as SimilarDjRow[];
   }
