@@ -45,3 +45,7 @@ yarn-error.log*
 next-env.d.ts
 .env.local
 !.env.example
+# test and audit output
+/playwright-report
+/test-results
+/.lighthouseci
