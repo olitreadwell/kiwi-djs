@@ -77,7 +77,7 @@ export default async function EventsPage({
                     {event.dj_id && (
                       <Link
                         href={`/djs/${event.dj_id}`}
-                        className="font-mono text-xs text-accent hover:underline"
+                        className="inline-flex min-h-6 items-center font-mono text-xs text-accent hover:underline"
                       >
                         {event.dj_name}
                       </Link>
@@ -87,7 +87,7 @@ export default async function EventsPage({
                         href={event.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-1 block font-mono text-xs text-muted hover:text-accent"
+                        className="mt-1 block py-1 font-mono text-xs text-muted hover:text-accent"
                       >
                         source ↗
                       </a>
