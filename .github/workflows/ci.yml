@@ -38,7 +38,8 @@ jobs:
           fi
 
   check:
-    name: Check (mirrors pnpm check)
+    # Branch protection requires a status check called exactly "check".
+    name: check
     runs-on: ubuntu-latest
     timeout-minutes: 25
     needs: preflight
