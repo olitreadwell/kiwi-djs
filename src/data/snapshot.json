@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-09-25T00:59:49.443Z",
+  "exportedAt": "2026-09-25T01:15:02.300Z",
   "djs": [
     {
       "id": "landline",
@@ -2918,6 +2918,49 @@
       "last_played_at": null
     },
     {
+      "id": "geneva-am",
+      "name": "Geneva AM",
+      "bio": "Geneva AM is an award winning producer and vocalist based in Aotearoa, New Zealand.</p>",
+      "genres": [
+        "Alternative"
+      ],
+      "city": "",
+      "image_url": "https://i1.sndcdn.com/avatars-yuMmmnjdZ9FXES2B-pztAsw-large.jpg",
+      "soundcloud_url": "https://soundcloud.com/geneva_am",
+      "instagram_url": "https://www.instagram.com/geneva_am/",
+      "facebook_url": "https://www.facebook.com/genevaam1",
+      "mixcloud_url": null,
+      "website_url": null,
+      "active": true,
+      "popularity": 0,
+      "data_completeness": 60,
+      "source": "festival",
+      "opt_out": false,
+      "created_at": "2026-08-29T07:22:24.153Z",
+      "updated_at": "2026-08-30T03:29:29.993Z",
+      "mixcloud_backoff_until": null,
+      "discovery_note": null,
+      "verification_level": 5,
+      "verification_sources": [
+        "links",
+        "articles",
+        "gigs",
+        "multi-gigs",
+        "multi-source"
+      ],
+      "is_nz": true,
+      "bpm_range": null,
+      "stale_since": null,
+      "bio_quality": null,
+      "profile_location": null,
+      "summary": null,
+      "summary_long": null,
+      "upcoming_events": 1,
+      "mix_count": 0,
+      "past_gig_count": 0,
+      "last_played_at": null
+    },
+    {
       "id": "concord-dawn",
       "name": "Concord Dawn",
       "bio": "Wellington drum & bass duo with a long catalogue on NZ and international labels.",
@@ -3006,49 +3049,6 @@
       "summary_long": "HIGH DEPENDENCY UNIT are a NZ-based indie and psychedelic rock outfit who've been carving out a space in the local scene with a string of live shows. Their recent gigs alongside BBYFACEKILLA, ELLIOT & VINCENT, BABETECH, and Geneva AM show they're plugged into the underground's current pulse. With 13 mixes up on SoundCloud, they've got a solid archive of their sound for anyone wanting to dig in.",
       "upcoming_events": 0,
       "mix_count": 13,
-      "past_gig_count": 0,
-      "last_played_at": null
-    },
-    {
-      "id": "geneva-am",
-      "name": "Geneva AM",
-      "bio": "Geneva AM is an award winning producer and vocalist based in Aotearoa, New Zealand.</p>",
-      "genres": [
-        "Alternative"
-      ],
-      "city": "",
-      "image_url": "https://i1.sndcdn.com/avatars-yuMmmnjdZ9FXES2B-pztAsw-large.jpg",
-      "soundcloud_url": "https://soundcloud.com/geneva_am",
-      "instagram_url": "https://www.instagram.com/geneva_am/",
-      "facebook_url": "https://www.facebook.com/genevaam1",
-      "mixcloud_url": null,
-      "website_url": null,
-      "active": true,
-      "popularity": 0,
-      "data_completeness": 60,
-      "source": "festival",
-      "opt_out": false,
-      "created_at": "2026-08-29T07:22:24.153Z",
-      "updated_at": "2026-08-30T03:29:29.993Z",
-      "mixcloud_backoff_until": null,
-      "discovery_note": null,
-      "verification_level": 5,
-      "verification_sources": [
-        "links",
-        "articles",
-        "gigs",
-        "multi-gigs",
-        "multi-source"
-      ],
-      "is_nz": true,
-      "bpm_range": null,
-      "stale_since": null,
-      "bio_quality": null,
-      "profile_location": null,
-      "summary": null,
-      "summary_long": null,
-      "upcoming_events": 1,
-      "mix_count": 0,
       "past_gig_count": 0,
       "last_played_at": null
     },
@@ -3448,7 +3448,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.584Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -3579,7 +3579,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.382Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -3656,11 +3656,11 @@
         "Funk",
         "Progressive House",
         "Electronic",
-        "Chill",
         "Dance",
+        "Chill",
         "UK Bass",
-        "House",
-        "Drum and Bass"
+        "Drum and Bass",
+        "House"
       ],
       "city": "",
       "image_url": null,
@@ -3675,7 +3675,7 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:33.828Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -3724,7 +3724,7 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:30.822Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -3766,7 +3766,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.273Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -3810,7 +3810,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.085Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -3979,8 +3979,8 @@
         "Boca Raton",
         "Contemporary R&b",
         "Dance",
-        "Future Bass",
         "Pop",
+        "Future Bass",
         "Trap",
         "R&B",
         "Alt-pop"
@@ -4071,8 +4071,8 @@
       "bio": null,
       "genres": [
         "Deep Dubstep",
-        "Electronic",
         "140",
+        "Electronic",
         "Experimental Electronic",
         "UK Bass",
         "Drum and Bass",
@@ -4092,7 +4092,7 @@
       "source": "festival",
       "opt_out": false,
       "created_at": "2026-08-29T07:22:39.923Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 5,
@@ -4185,7 +4185,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.125Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 4,
@@ -4214,12 +4214,12 @@
       "bio": "Wellington drum & bass production and DJ duo, signed and touring internationally since the mid-2000s.",
       "genres": [
         "Electronic",
-        "House",
         "Drum and Bass",
-        "Neo Rave",
+        "House",
         "Rock",
-        "Hardcore",
+        "Neo Rave",
         "Melodic House & Techno",
+        "Hardcore",
         "Hard Dance"
       ],
       "city": "Wellington",
@@ -4235,7 +4235,7 @@
       "source": "seed",
       "opt_out": false,
       "created_at": "2026-08-28T12:17:48.356Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 3,
@@ -4279,7 +4279,7 @@
       "source": "discovered-soundcloud",
       "opt_out": false,
       "created_at": "2026-08-30T02:56:17.291Z",
-      "updated_at": "2026-09-25T00:58:52.618Z",
+      "updated_at": "2026-09-25T01:13:50.505Z",
       "mixcloud_backoff_until": null,
       "discovery_note": null,
       "verification_level": 2,
@@ -4315,16 +4315,16 @@
       "dj_name": "Serenna"
     },
     {
-      "id": "utr-venue-7dbcb0659ee2",
-      "name": "BOG (supports tba)",
+      "id": "utr-venue-2e829d445861",
+      "name": "Sublimate - Wellington Jazz Festival",
       "venue": "MOON",
-      "starts_at": "2026-10-23T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104728/N/BOG-(supports-tba).utr",
+      "starts_at": "2026-10-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104409/N/Sublimate---Wellington-Jazz-Festival.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
+      "dj_id": "sublimate",
+      "is_dj_event": true,
+      "dj_name": "Sublimate"
     },
     {
       "id": "undertheradar-104178",
@@ -4363,28 +4363,28 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104317",
-      "name": "Emily Alice",
-      "venue": null,
-      "starts_at": "2026-10-03T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104317/Emily-Alice.utr",
+      "id": "utr-venue-000156a42e58",
+      "name": "Backroom Audio Freaky Friday",
+      "venue": "Afters.",
+      "starts_at": "2026-10-30T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104787/N/Backroom-Audio-Freaky-Friday.utr",
       "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "emily-alice",
+      "source": "undertheradar-venues",
+      "dj_id": "frida",
       "is_dj_event": false,
-      "dj_name": "Emily Alice"
+      "dj_name": "Frida"
     },
     {
-      "id": "undertheradar-104634",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104634/Moonday-Quiz-Hosted-By-Young-Ghot.utr",
-      "archive_url": null,
+      "id": "undertheradar-104441",
+      "name": "Velveteen Shakes - The Book Of Velveteen Album Release Show",
+      "venue": null,
+      "starts_at": "2026-09-25T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104441/Velveteen-Shakes---The-Book-Of-Velveteen-Album-Release-Show.utr",
+      "archive_url": "http://web.archive.org/web/20260914124422/https://www.undertheradar.co.nz/gig/104441/Velveteen-Shakes---The-Book-Of-Velveteen-Album-Release-Show.utr",
       "source": "undertheradar",
-      "dj_id": null,
+      "dj_id": "velveteen-shakes",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Velveteen Shakes"
     },
     {
       "id": "undertheradar-104248",
@@ -4399,30 +4399,6 @@
       "dj_name": "Dancing Apes: Human Must Dance"
     },
     {
-      "id": "sanfran-1488974",
-      "name": "Old Mervs",
-      "venue": "San Fran",
-      "starts_at": "2026-11-06T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104700",
-      "name": "Indie Pop Night Featuring Jaycee, Falling To And Sabreen",
-      "venue": null,
-      "starts_at": "2026-10-02T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104700/Indie-Pop-Night-Featuring-Jaycee-Falling-To-And-Sabreen.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "sanfran-436891",
       "name": "Flyte",
       "venue": "San Fran",
@@ -4435,16 +4411,40 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104441",
-      "name": "Velveteen Shakes - The Book Of Velveteen Album Release Show",
+      "id": "undertheradar-104317",
+      "name": "Emily Alice",
       "venue": null,
-      "starts_at": "2026-09-25T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104441/Velveteen-Shakes---The-Book-Of-Velveteen-Album-Release-Show.utr",
-      "archive_url": "http://web.archive.org/web/20260914124422/https://www.undertheradar.co.nz/gig/104441/Velveteen-Shakes---The-Book-Of-Velveteen-Album-Release-Show.utr",
+      "starts_at": "2026-10-03T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104317/Emily-Alice.utr",
+      "archive_url": null,
       "source": "undertheradar",
-      "dj_id": "velveteen-shakes",
+      "dj_id": "emily-alice",
       "is_dj_event": false,
-      "dj_name": "Velveteen Shakes"
+      "dj_name": "Emily Alice"
+    },
+    {
+      "id": "sanfran-1464135",
+      "name": "YĪN YĪN",
+      "venue": "San Fran",
+      "starts_at": "2026-11-27T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/yīn-yīn-tickets-ae1464135",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "y-n-y-n",
+      "is_dj_event": false,
+      "dj_name": "YĪN YĪN"
+    },
+    {
+      "id": "undertheradar-104304",
+      "name": "Beka Grey | The Silvertone Session | Ft. Chlo",
+      "venue": null,
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104304/Beka-Grey--The-Silvertone-Session--Ft-Chlo.utr",
+      "archive_url": null,
+      "source": "undertheradar",
+      "dj_id": "silvertone-session",
+      "is_dj_event": false,
+      "dj_name": "Silvertone Session"
     },
     {
       "id": "undertheradar-104012",
@@ -4471,28 +4471,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-2e829d445861",
-      "name": "Sublimate - Wellington Jazz Festival",
+      "id": "utr-venue-28278986e517",
+      "name": "Loose Parts (Jazz Festival)",
       "venue": "MOON",
-      "starts_at": "2026-10-18T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104409/N/Sublimate---Wellington-Jazz-Festival.utr",
+      "starts_at": "2026-10-15T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104487/N/Loose-Parts-(Jazz-Festival).utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "sublimate",
-      "is_dj_event": true,
-      "dj_name": "Sublimate"
-    },
-    {
-      "id": "sanfran-1464135",
-      "name": "YĪN YĪN",
-      "venue": "San Fran",
-      "starts_at": "2026-11-27T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/yīn-yīn-tickets-ae1464135",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "y-n-y-n",
+      "dj_id": "loose-parts",
       "is_dj_event": false,
-      "dj_name": "YĪN YĪN"
+      "dj_name": "Loose Parts"
     },
     {
       "id": "sanfran-1078519",
@@ -4507,37 +4495,37 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-28278986e517",
-      "name": "Loose Parts (Jazz Festival)",
-      "venue": "MOON",
-      "starts_at": "2026-10-15T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104487/N/Loose-Parts-(Jazz-Festival).utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "loose-parts",
-      "is_dj_event": false,
-      "dj_name": "Loose Parts"
-    },
-    {
-      "id": "undertheradar-104304",
-      "name": "Beka Grey | The Silvertone Session | Ft. Chlo",
-      "venue": null,
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104304/Beka-Grey--The-Silvertone-Session--Ft-Chlo.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "silvertone-session",
-      "is_dj_event": false,
-      "dj_name": "Silvertone Session"
-    },
-    {
-      "id": "sanfran-430631",
-      "name": "Uncle Acid and the Deadbeats",
+      "id": "sanfran-1434150",
+      "name": "Steve Hofstetter",
       "venue": "San Fran",
-      "starts_at": "2026-12-11T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
+      "starts_at": "2027-02-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/steve-hofstetter-tickets-ae1434150",
       "archive_url": null,
       "source": "sanfran",
+      "dj_id": "steve-hofstetter",
+      "is_dj_event": false,
+      "dj_name": "Steve Hofstetter"
+    },
+    {
+      "id": "utr-venue-21ee5573b9c0",
+      "name": "Flyte",
+      "venue": "San Fran",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "undertheradar-104700",
+      "name": "Indie Pop Night Featuring Jaycee, Falling To And Sabreen",
+      "venue": null,
+      "starts_at": "2026-10-02T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104700/Indie-Pop-Night-Featuring-Jaycee-Falling-To-And-Sabreen.utr",
+      "archive_url": null,
+      "source": "undertheradar",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -4555,30 +4543,6 @@
       "dj_name": "Grace Petrie"
     },
     {
-      "id": "rogue-vagabond-104172",
-      "name": "Loose Parts",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-19T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104172/Loose-Parts.utr",
-      "archive_url": "http://web.archive.org/web/20260923164236/https://www.undertheradar.co.nz/gig/104172/Loose-Parts.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "loose-parts",
-      "is_dj_event": false,
-      "dj_name": "Loose Parts"
-    },
-    {
-      "id": "sanfran-1434150",
-      "name": "Steve Hofstetter",
-      "venue": "San Fran",
-      "starts_at": "2027-02-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/steve-hofstetter-tickets-ae1434150",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "steve-hofstetter",
-      "is_dj_event": false,
-      "dj_name": "Steve Hofstetter"
-    },
-    {
       "id": "rogue-vagabond-102969",
       "name": "The Racket Lounge",
       "venue": "The Rogue & Vagabond",
@@ -4591,16 +4555,28 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1541224",
-      "name": "PRINS",
-      "venue": "San Fran",
-      "starts_at": "2026-11-26T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": null,
+      "id": "rogue-vagabond-104172",
+      "name": "Loose Parts",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-19T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104172/Loose-Parts.utr",
+      "archive_url": "http://web.archive.org/web/20260923164236/https://www.undertheradar.co.nz/gig/104172/Loose-Parts.utr",
+      "source": "rogue-vagabond",
+      "dj_id": "loose-parts",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Loose Parts"
+    },
+    {
+      "id": "utr-venue-b697a29de57a",
+      "name": "Induna - Favourite Colours (Release Show)",
+      "venue": "MOON",
+      "starts_at": "2026-10-30T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104467/N/Induna---Favourite-Colours-(Release-Show).utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "favourite-colours",
+      "is_dj_event": false,
+      "dj_name": "Favourite Colours"
     },
     {
       "id": "northern-bass-2026",
@@ -4627,6 +4603,18 @@
       "dj_name": null
     },
     {
+      "id": "sanfran-1541224",
+      "name": "PRINS",
+      "venue": "San Fran",
+      "starts_at": "2026-11-26T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/prins-tickets-ae1541224",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "undertheradar-104249",
       "name": "Lila School Of Bands 2026 Term 3 Showcase - Night 1/2",
       "venue": null,
@@ -4639,28 +4627,28 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-000156a42e58",
-      "name": "Backroom Audio Freaky Friday",
-      "venue": "Afters.",
-      "starts_at": "2026-10-30T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104787/N/Backroom-Audio-Freaky-Friday.utr",
+      "id": "utr-venue-7dbcb0659ee2",
+      "name": "BOG (supports tba)",
+      "venue": "MOON",
+      "starts_at": "2026-10-23T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104728/N/BOG-(supports-tba).utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "frida",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Frida"
+      "dj_name": null
     },
     {
-      "id": "utr-venue-b697a29de57a",
-      "name": "Induna - Favourite Colours (Release Show)",
-      "venue": "MOON",
-      "starts_at": "2026-10-30T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104467/N/Induna---Favourite-Colours-(Release-Show).utr",
+      "id": "utr-venue-588e093054ea",
+      "name": "vegetable.machine.animal 'Trio Album Release' With Deo (AUS), Uniform",
+      "venue": "Audio Foundation",
+      "starts_at": "2026-10-03T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104392/N/vegetable.machine.animal-'Trio-Album-Release'-With-Deo-(AUS),-Uniform.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "favourite-colours",
+      "dj_id": "vegetable-machine-animal",
       "is_dj_event": false,
-      "dj_name": "Favourite Colours"
+      "dj_name": "vegetable.machine.animal"
     },
     {
       "id": "rogue-vagabond-104308",
@@ -4735,18 +4723,6 @@
       "dj_name": "Noise Drone Repeat LXXXII"
     },
     {
-      "id": "sanfran-2148",
-      "name": "August Burns Red",
-      "venue": "San Fran",
-      "starts_at": "2026-10-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/august-burns-red-tickets-ae2148",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "august-burns-red",
-      "is_dj_event": false,
-      "dj_name": "August Burns Red"
-    },
-    {
       "id": "sanfran-1629242",
       "name": "Mountain Boy",
       "venue": "San Fran",
@@ -4757,6 +4733,18 @@
       "dj_id": "mountain-boy",
       "is_dj_event": false,
       "dj_name": "Mountain Boy"
+    },
+    {
+      "id": "sanfran-1603030",
+      "name": "Where’s Jai",
+      "venue": "San Fran",
+      "starts_at": "2026-10-10T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/where-s-jai-tickets-ae1603030",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "where-s-jai",
+      "is_dj_event": false,
+      "dj_name": "Where’s Jai"
     },
     {
       "id": "eventfinda-sitemap-0a3527fae22f",
@@ -4879,16 +4867,16 @@
       "dj_name": "Children Creative Arts Holiday Programme"
     },
     {
-      "id": "sanfran-1603030",
-      "name": "Where’s Jai",
+      "id": "sanfran-1488974",
+      "name": "Old Mervs",
       "venue": "San Fran",
-      "starts_at": "2026-10-10T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/where-s-jai-tickets-ae1603030",
+      "starts_at": "2026-11-06T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/old-mervs-tickets-ae1488974",
       "archive_url": null,
       "source": "sanfran",
-      "dj_id": "where-s-jai",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Where’s Jai"
+      "dj_name": null
     },
     {
       "id": "utr-venue-5379745acd76",
@@ -4939,11 +4927,11 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1693142",
-      "name": "Myshaan",
+      "id": "sanfran-430631",
+      "name": "Uncle Acid and the Deadbeats",
       "venue": "San Fran",
-      "starts_at": "2026-11-07T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
+      "starts_at": "2026-12-11T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/uncle-acid-and-the-deadbeats-tickets-ae430631",
       "archive_url": null,
       "source": "sanfran",
       "dj_id": null,
@@ -4963,16 +4951,16 @@
       "dj_name": "Slow Jazz Ensemble"
     },
     {
-      "id": "undertheradar-104474",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104474/Moon-Jam-Nite.utr",
+      "id": "utr-venue-1ec1177a860a",
+      "name": "A Night To Dismember",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-07T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104625/N/A-Night-To-Dismember.utr",
       "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
+      "source": "undertheradar-venues",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Jam Nite"
+      "dj_name": null
     },
     {
       "id": "eventfinda-935151",
@@ -4987,16 +4975,28 @@
       "dj_name": "Open Mic"
     },
     {
-      "id": "utr-venue-1ec1177a860a",
-      "name": "A Night To Dismember",
-      "venue": "Valhalla",
-      "starts_at": "2026-10-07T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104625/N/A-Night-To-Dismember.utr",
+      "id": "sanfran-1415326",
+      "name": "KITAMore Info",
+      "venue": "San Fran",
+      "starts_at": "2026-09-25T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
+      "source": "sanfran",
+      "dj_id": "kita-indie-filmtronica",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Kita: Indie Filmtronica"
+    },
+    {
+      "id": "sanfran-2148",
+      "name": "August Burns Red",
+      "venue": "San Fran",
+      "starts_at": "2026-10-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/august-burns-red-tickets-ae2148",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "august-burns-red",
+      "is_dj_event": false,
+      "dj_name": "August Burns Red"
     },
     {
       "id": "rogue-vagabond-104059",
@@ -5023,16 +5023,16 @@
       "dj_name": "KP"
     },
     {
-      "id": "sanfran-1415326",
-      "name": "KITAMore Info",
+      "id": "sanfran-1693142",
+      "name": "Myshaan",
       "venue": "San Fran",
-      "starts_at": "2026-09-25T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/kita-tickets-ae1415326",
+      "starts_at": "2026-11-07T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/myshaan-tickets-ae1693142",
       "archive_url": null,
       "source": "sanfran",
-      "dj_id": "kita-indie-filmtronica",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Kita: Indie Filmtronica"
+      "dj_name": null
     },
     {
       "id": "sanfran-1574004",
@@ -5239,18 +5239,6 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-461c7978867f",
-      "name": "Old Mervs",
-      "venue": "Double Whammy",
-      "starts_at": "2026-11-07T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103558/N/Old-Mervs.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "eventfinda-901797",
       "name": "CSO Lamb & Hayward Curator’s Series: Gabrieli, Lilburn, Martinů",
       "venue": null,
@@ -5261,6 +5249,18 @@
       "dj_id": "hayward-curator-s-series-gabrieli",
       "is_dj_event": false,
       "dj_name": "Hayward Curator’s Series: Gabrieli"
+    },
+    {
+      "id": "eventfinda-937502",
+      "name": "Bini - Signals World Tour - Auckland",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/bini-signals-world-tour-auckland/auckland/wairau-valley",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "auckland",
+      "is_dj_event": false,
+      "dj_name": "Auckland"
     },
     {
       "id": "sanfran-1681897",
@@ -5275,16 +5275,16 @@
       "dj_name": null
     },
     {
-      "id": "eventfinda-946037",
-      "name": "Motronica: Full Spectrum Bass",
+      "id": "eventfinda-947999",
+      "name": "Marist Hockey 2026 Senior Prizegiving",
       "venue": null,
       "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/motronica-full-spectrum-bass/motueka",
+      "url": "https://www.eventfinda.co.nz/2026/marist-hockey-2026-senior-prizegiving/christchurch-district",
       "archive_url": null,
       "source": "eventfinda",
-      "dj_id": "motronica-full-spectrum-bass",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Motronica: Full Spectrum Bass"
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-104067",
@@ -5299,18 +5299,6 @@
       "dj_name": "Orleans"
     },
     {
-      "id": "undertheradar-104965",
-      "name": "Mintaka - Siren - Oblong",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104965/Mintaka---Siren---Oblong.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "mintaka",
-      "is_dj_event": false,
-      "dj_name": "Mintaka"
-    },
-    {
       "id": "utr-venue-c2c6623d1662",
       "name": "Moon Jam Nite",
       "venue": "MOON",
@@ -5321,6 +5309,30 @@
       "dj_id": "jam-nite",
       "is_dj_event": false,
       "dj_name": "Jam Nite"
+    },
+    {
+      "id": "utr-venue-461c7978867f",
+      "name": "Old Mervs",
+      "venue": "Double Whammy",
+      "starts_at": "2026-11-07T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103558/N/Old-Mervs.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-946037",
+      "name": "Motronica: Full Spectrum Bass",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/motronica-full-spectrum-bass/motueka",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "motronica-full-spectrum-bass",
+      "is_dj_event": false,
+      "dj_name": "Motronica: Full Spectrum Bass"
     },
     {
       "id": "utr-venue-253eaf492fcf",
@@ -5359,30 +5371,6 @@
       "dj_name": null
     },
     {
-      "id": "eventfinda-937502",
-      "name": "Bini - Signals World Tour - Auckland",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/bini-signals-world-tour-auckland/auckland/wairau-valley",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": "auckland",
-      "is_dj_event": false,
-      "dj_name": "Auckland"
-    },
-    {
-      "id": "eventfinda-947999",
-      "name": "Marist Hockey 2026 Senior Prizegiving",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/marist-hockey-2026-senior-prizegiving/christchurch-district",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "sanfran-1477466",
       "name": "Reece Mastin",
       "venue": "San Fran",
@@ -5393,18 +5381,6 @@
       "dj_id": "reece-mastin",
       "is_dj_event": false,
       "dj_name": "Reece Mastin"
-    },
-    {
-      "id": "sanfran-268668",
-      "name": "Inspiral Carpets",
-      "venue": "San Fran",
-      "starts_at": "2027-05-12T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/inspiral-carpets-tickets-ae268668",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "inspiral-carpets",
-      "is_dj_event": false,
-      "dj_name": "Inspiral Carpets"
     },
     {
       "id": "utr-venue-66d9d2c69472",
@@ -5443,16 +5419,52 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104488",
-      "name": "Louis TM (Jazz Festival)",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104488/Louis-TM-Jazz-Festival.utr",
+      "id": "utr-venue-334564a5e267",
+      "name": "Tech Hypnosis",
+      "venue": "Afters.",
+      "starts_at": "2026-10-16T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104785/N/Tech-Hypnosis.utr",
       "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "louis-tm",
+      "source": "undertheradar-venues",
+      "dj_id": "tech-hypnosis",
       "is_dj_event": false,
-      "dj_name": "Louis TM"
+      "dj_name": "Tech Hypnosis"
+    },
+    {
+      "id": "undertheradar-103697",
+      "name": "Soul Void, Molosser (EP Release), Parasitic Infestation, Dredge",
+      "venue": null,
+      "starts_at": "2026-08-29T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/103697/Soul-Void-Molosser-EP-Release-Parasitic-Infestation-Dredge.utr",
+      "archive_url": "http://web.archive.org/web/20260819080820/https://www.undertheradar.co.nz/gig/103697/Soul-Void-Molosser-EP-Release-Parasitic-Infestation-Dredge.utr",
+      "source": "undertheradar",
+      "dj_id": "parasitic-infestation",
+      "is_dj_event": false,
+      "dj_name": "Parasitic Infestation"
+    },
+    {
+      "id": "utr-venue-9e83b9b0940a",
+      "name": "Nicholas Joseph Album Release Show",
+      "venue": "MOON",
+      "starts_at": "2026-12-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104452/N/Nicholas-Joseph-Album-Release-Show.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "nicholas-joseph",
+      "is_dj_event": false,
+      "dj_name": "Nicholas Joseph"
+    },
+    {
+      "id": "sanfran-268668",
+      "name": "Inspiral Carpets",
+      "venue": "San Fran",
+      "starts_at": "2027-05-12T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/inspiral-carpets-tickets-ae268668",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "inspiral-carpets",
+      "is_dj_event": false,
+      "dj_name": "Inspiral Carpets"
     },
     {
       "id": "eventfinda-950059",
@@ -5479,90 +5491,6 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-103697",
-      "name": "Soul Void, Molosser (EP Release), Parasitic Infestation, Dredge",
-      "venue": null,
-      "starts_at": "2026-08-29T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/103697/Soul-Void-Molosser-EP-Release-Parasitic-Infestation-Dredge.utr",
-      "archive_url": "http://web.archive.org/web/20260819080820/https://www.undertheradar.co.nz/gig/103697/Soul-Void-Molosser-EP-Release-Parasitic-Infestation-Dredge.utr",
-      "source": "undertheradar",
-      "dj_id": "parasitic-infestation",
-      "is_dj_event": false,
-      "dj_name": "Parasitic Infestation"
-    },
-    {
-      "id": "undertheradar-104897",
-      "name": "Dng #009 - PŌneke Invitational",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104897/Dng-009---Pneke-Invitational.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "p-neke-invitational",
-      "is_dj_event": false,
-      "dj_name": "PŌneke Invitational"
-    },
-    {
-      "id": "undertheradar-104582",
-      "name": "Festivalbar - Italian Hits 70s 80s 90s",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104582/Festivalbar---Italian-Hits-70s-80s-90s.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "tali",
-      "is_dj_event": false,
-      "dj_name": "TALI"
-    },
-    {
-      "id": "undertheradar-104475",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104475/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
-      "id": "undertheradar-100998",
-      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/100998/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104782",
-      "name": "Songwriters' Showcase #116",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104782/Songwriters-Showcase-116.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "undertheradar-104476",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104476/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
       "id": "eventfinda-sitemap-7f6c7ed5e55a",
       "name": "Kevin Bridges - Here If You Need Me",
       "venue": "Michael Fowler Centre",
@@ -5573,18 +5501,6 @@
       "dj_id": "here-if-you-need-me",
       "is_dj_event": false,
       "dj_name": "Here If You Need Me"
-    },
-    {
-      "id": "undertheradar-104487",
-      "name": "Loose Parts (Jazz Festival)",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104487/Loose-Parts-Jazz-Festival.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "loose-parts",
-      "is_dj_event": false,
-      "dj_name": "Loose Parts"
     },
     {
       "id": "eventfinda-sitemap-76459d5f60ab",
@@ -5599,18 +5515,6 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104409",
-      "name": "Sublimate - Wellington Jazz Festival",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104409/Sublimate---Wellington-Jazz-Festival.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "sublimate",
-      "is_dj_event": false,
-      "dj_name": "Sublimate"
-    },
-    {
       "id": "utr-venue-96e8340f082a",
       "name": "Lipstick + Frank On Tap - Mini Tour",
       "venue": "Whammy Bar",
@@ -5621,42 +5525,6 @@
       "dj_id": "lips",
       "is_dj_event": false,
       "dj_name": "LIPS"
-    },
-    {
-      "id": "undertheradar-104477",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104477/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
-      "id": "undertheradar-104927",
-      "name": "Call Centre // With Hominid And Health And Education",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104927/Call-Centre--With-Hominid-And-Health-And-Education.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "call-centre",
-      "is_dj_event": false,
-      "dj_name": "Call Centre"
-    },
-    {
-      "id": "undertheradar-104728",
-      "name": "BOG (supports tba)",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104728/BOG-supports-tba.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
     },
     {
       "id": "utr-venue-a3f61e46b3a4",
@@ -5681,42 +5549,6 @@
       "dj_id": "plasmaphonic-future-orchestra",
       "is_dj_event": false,
       "dj_name": "Plasmaphonic Future Orchestra"
-    },
-    {
-      "id": "undertheradar-104558",
-      "name": "Luna And The Aether - The Metanoia Album Tour",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104558/Luna-And-The-Aether---The-Metanoia-Album-Tour.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "metanoia",
-      "is_dj_event": false,
-      "dj_name": "Metanoia"
-    },
-    {
-      "id": "utr-venue-334564a5e267",
-      "name": "Tech Hypnosis",
-      "venue": "Afters.",
-      "starts_at": "2026-10-16T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104785/N/Tech-Hypnosis.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "tech-hypnosis",
-      "is_dj_event": false,
-      "dj_name": "Tech Hypnosis"
-    },
-    {
-      "id": "utr-venue-9e83b9b0940a",
-      "name": "Nicholas Joseph Album Release Show",
-      "venue": "MOON",
-      "starts_at": "2026-12-13T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104452/N/Nicholas-Joseph-Album-Release-Show.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "nicholas-joseph",
-      "is_dj_event": false,
-      "dj_name": "Nicholas Joseph"
     },
     {
       "id": "utr-venue-cf03f559379e",
@@ -5791,28 +5623,16 @@
       "dj_name": "Creative Arts Holiday Programme"
     },
     {
-      "id": "the-others-way-2025",
-      "name": "The Others Way 2025",
-      "venue": "Auckland",
-      "starts_at": null,
-      "url": "https://www.theothersway.co.nz/lineup",
+      "id": "newtown-festival-2027",
+      "name": "Newtown Festival 2027",
+      "venue": "Newtown, Wellington",
+      "starts_at": "2027-03-07T00:00:00.000Z",
+      "url": "https://www.newtownfestival.org.nz/artists/",
       "archive_url": null,
-      "source": "the-others-way",
+      "source": "newtown-festival",
       "dj_id": null,
       "is_dj_event": true,
       "dj_name": null
-    },
-    {
-      "id": "utr-venue-734593d659ef",
-      "name": "Kameano's Jungle Birthday Bash",
-      "venue": "Afters.",
-      "starts_at": "2026-10-03T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104788/N/Kameano's-Jungle-Birthday-Bash.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "kameano-s-jungle-birthday-bash",
-      "is_dj_event": false,
-      "dj_name": "Kameano's Jungle Birthday Bash"
     },
     {
       "id": "utr-venue-36b8d6090b92",
@@ -5825,6 +5645,30 @@
       "dj_id": "jam-nite",
       "is_dj_event": false,
       "dj_name": "Jam Nite"
+    },
+    {
+      "id": "utr-venue-bfa1a72ce3a7",
+      "name": "Yurt Party - Street Party Music | Wellington",
+      "venue": "San Fran",
+      "starts_at": "2026-12-12T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104125/N/Yurt-Party---Street-Party-Music-|-Wellington.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "street",
+      "is_dj_event": false,
+      "dj_name": "Street"
+    },
+    {
+      "id": "utr-venue-1fab2d9a7b4f",
+      "name": "3 Cities. 3 Nights. Wlg",
+      "venue": "Afters.",
+      "starts_at": "2026-11-27T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104831/N/3-Cities.-3-Nights.-Wlg.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     },
     {
       "id": "eventfinda-941401",
@@ -5851,28 +5695,28 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-7043548ac965",
-      "name": "Festivalbar - Italian Hits 70s 80s 90s",
-      "venue": "MOON",
-      "starts_at": "2026-10-04T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104582/N/Festivalbar---Italian-Hits-70s-80s-90s.utr",
+      "id": "utr-venue-734593d659ef",
+      "name": "Kameano's Jungle Birthday Bash",
+      "venue": "Afters.",
+      "starts_at": "2026-10-03T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104788/N/Kameano's-Jungle-Birthday-Bash.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "tali",
+      "dj_id": "kameano-s-jungle-birthday-bash",
       "is_dj_event": false,
-      "dj_name": "TALI"
+      "dj_name": "Kameano's Jungle Birthday Bash"
     },
     {
-      "id": "utr-venue-b7a19274a262",
-      "name": "Mintaka - Siren - Oblong",
-      "venue": "MOON",
+      "id": "utr-venue-703abec5ae2d",
+      "name": "Claemus - Prototype Single Release Show",
+      "venue": "Valhalla",
       "starts_at": "2026-10-02T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104965/N/Mintaka---Siren---Oblong.utr",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104920/N/Claemus---Prototype-Single-Release-Show.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "mintaka",
+      "dj_id": "prototype",
       "is_dj_event": false,
-      "dj_name": "Mintaka"
+      "dj_name": "Prototype"
     },
     {
       "id": "utr-venue-1b9a2c32ce4f",
@@ -5923,40 +5767,28 @@
       "dj_name": "Goodthings Session #025"
     },
     {
-      "id": "utr-venue-bfa1a72ce3a7",
-      "name": "Yurt Party - Street Party Music | Wellington",
-      "venue": "San Fran",
-      "starts_at": "2026-12-12T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104125/N/Yurt-Party---Street-Party-Music-|-Wellington.utr",
+      "id": "the-others-way-2025",
+      "name": "The Others Way 2025",
+      "venue": "Auckland",
+      "starts_at": null,
+      "url": "https://www.theothersway.co.nz/lineup",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "street",
-      "is_dj_event": false,
-      "dj_name": "Street"
-    },
-    {
-      "id": "utr-venue-703abec5ae2d",
-      "name": "Claemus - Prototype Single Release Show",
-      "venue": "Valhalla",
-      "starts_at": "2026-10-02T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104920/N/Claemus---Prototype-Single-Release-Show.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "prototype",
-      "is_dj_event": false,
-      "dj_name": "Prototype"
-    },
-    {
-      "id": "newtown-festival-2027",
-      "name": "Newtown Festival 2027",
-      "venue": "Newtown, Wellington",
-      "starts_at": "2027-03-07T00:00:00.000Z",
-      "url": "https://www.newtownfestival.org.nz/artists/",
-      "archive_url": null,
-      "source": "newtown-festival",
+      "source": "the-others-way",
       "dj_id": null,
       "is_dj_event": true,
       "dj_name": null
+    },
+    {
+      "id": "utr-venue-7043548ac965",
+      "name": "Festivalbar - Italian Hits 70s 80s 90s",
+      "venue": "MOON",
+      "starts_at": "2026-10-04T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104582/N/Festivalbar---Italian-Hits-70s-80s-90s.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "tali",
+      "is_dj_event": false,
+      "dj_name": "TALI"
     },
     {
       "id": "sanfran-1690529",
@@ -5983,28 +5815,16 @@
       "dj_name": null
     },
     {
-      "id": "undertheradar-104478",
-      "name": "Moon Jam Nite",
+      "id": "utr-venue-b7a19274a262",
+      "name": "Mintaka - Siren - Oblong",
       "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104478/Moon-Jam-Nite.utr",
+      "starts_at": "2026-10-02T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104965/N/Mintaka---Siren---Oblong.utr",
       "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
+      "source": "undertheradar-venues",
+      "dj_id": "mintaka",
       "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
-      "id": "undertheradar-104467",
-      "name": "Induna - Favourite Colours (Release Show)",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104467/Induna---Favourite-Colours-Release-Show.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "favourite-colours",
-      "is_dj_event": false,
-      "dj_name": "Favourite Colours"
+      "dj_name": "Mintaka"
     },
     {
       "id": "sanfran-1690521",
@@ -6019,30 +5839,6 @@
       "dj_name": "Convergence"
     },
     {
-      "id": "undertheradar-104731",
-      "name": "Halloween Havoc",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104731/Halloween-Havoc.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "halloween-havoc",
-      "is_dj_event": false,
-      "dj_name": "Halloween Havoc"
-    },
-    {
-      "id": "undertheradar-104845",
-      "name": "Stephen Roy Hill EP Launch",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104845/Stephen-Roy-Hill-EP-Launch.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "utr-venue-62c6679011cf",
       "name": "Evie Bamford 'Now Rising, Now Falling' Release Tour ",
       "venue": "San Fran",
@@ -6053,18 +5849,6 @@
       "dj_id": "evie",
       "is_dj_event": false,
       "dj_name": "Evie"
-    },
-    {
-      "id": "utr-venue-1fab2d9a7b4f",
-      "name": "3 Cities. 3 Nights. Wlg",
-      "venue": "Afters.",
-      "starts_at": "2026-11-27T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104831/N/3-Cities.-3-Nights.-Wlg.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
     },
     {
       "id": "utr-venue-04f6679e6dda",
@@ -6115,35 +5899,11 @@
       "dj_name": "Back Pocket"
     },
     {
-      "id": "eventfinda-943331",
-      "name": "2026 Art Salon Opening Ceremony",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/2026-art-salon-opening-ceremony/auckland",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-d265ab7bbbb9",
-      "name": "Moonday Quiz Hosted By Young Gho$t",
-      "venue": "MOON",
-      "starts_at": "2026-09-28T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104634/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-93d531a5d0e4",
+      "id": "utr-venue-a63e6d6ca888",
       "name": "Moon Jam Nite",
       "venue": "MOON",
-      "starts_at": "2026-10-27T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104478/N/Moon-Jam-Nite.utr",
+      "starts_at": "2026-11-24T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104482/N/Moon-Jam-Nite.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
       "dj_id": "jam-nite",
@@ -6151,13 +5911,13 @@
       "dj_name": "Jam Nite"
     },
     {
-      "id": "utr-venue-493681cb9c1f",
-      "name": "Mortiis Aotearoa Tour 2026",
-      "venue": "Valhalla",
-      "starts_at": "2026-11-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/102942/N/Mortiis-Aotearoa-Tour-2026.utr",
+      "id": "eventfinda-943331",
+      "name": "2026 Art Salon Opening Ceremony",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/2026-art-salon-opening-ceremony/auckland",
       "archive_url": null,
-      "source": "undertheradar-venues",
+      "source": "eventfinda",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -6175,13 +5935,49 @@
       "dj_name": "Emo Is Back"
     },
     {
-      "id": "undertheradar-104479",
+      "id": "utr-venue-d265ab7bbbb9",
+      "name": "Moonday Quiz Hosted By Young Gho$t",
+      "venue": "MOON",
+      "starts_at": "2026-09-28T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104634/N/Moonday-Quiz-Hosted-By-Young-Gho$t.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-7de4cc12b064",
+      "name": "T O U R I S T - Single Release Tour",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-29T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104709/N/T-O-U-R-I-S-T---Single-Release-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "t-o-u-r-i-s-t",
+      "is_dj_event": false,
+      "dj_name": "T O U R I S T"
+    },
+    {
+      "id": "utr-venue-3b14ea29873e",
       "name": "Moon Jam Nite",
       "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104479/Moon-Jam-Nite.utr",
+      "starts_at": "2026-11-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104480/N/Moon-Jam-Nite.utr",
       "archive_url": null,
-      "source": "undertheradar",
+      "source": "undertheradar-venues",
+      "dj_id": "jam-nite",
+      "is_dj_event": false,
+      "dj_name": "Jam Nite"
+    },
+    {
+      "id": "utr-venue-93d531a5d0e4",
+      "name": "Moon Jam Nite",
+      "venue": "MOON",
+      "starts_at": "2026-10-27T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104478/N/Moon-Jam-Nite.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
       "dj_id": "jam-nite",
       "is_dj_event": false,
       "dj_name": "Jam Nite"
@@ -6247,6 +6043,18 @@
       "dj_name": "PEARLY"
     },
     {
+      "id": "utr-venue-a60904ac0a17",
+      "name": "Dancing Apes: Human Must Dance",
+      "venue": "MOON",
+      "starts_at": "2026-09-30T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104248/N/Dancing-Apes:-Human-Must-Dance.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "dancing-apes-human-must-dance",
+      "is_dj_event": false,
+      "dj_name": "Dancing Apes: Human Must Dance"
+    },
+    {
       "id": "utr-venue-7aefbd5903d9",
       "name": "Manawa: Ahiahi",
       "venue": "Afters.",
@@ -6283,52 +6091,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-7de4cc12b064",
-      "name": "T O U R I S T - Single Release Tour",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-29T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104709/N/T-O-U-R-I-S-T---Single-Release-Tour.utr",
+      "id": "utr-venue-493681cb9c1f",
+      "name": "Mortiis Aotearoa Tour 2026",
+      "venue": "Valhalla",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102942/N/Mortiis-Aotearoa-Tour-2026.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "t-o-u-r-i-s-t",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "T O U R I S T"
-    },
-    {
-      "id": "undertheradar-104840",
-      "name": "Midwave Breaks Album Release Tour",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104840/Midwave-Breaks-Album-Release-Tour.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "break",
-      "is_dj_event": false,
-      "dj_name": "BREAK"
-    },
-    {
-      "id": "undertheradar-104480",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104480/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
-      "id": "utr-venue-a60904ac0a17",
-      "name": "Dancing Apes: Human Must Dance",
-      "venue": "MOON",
-      "starts_at": "2026-09-30T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104248/N/Dancing-Apes:-Human-Must-Dance.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "dancing-apes-human-must-dance",
-      "is_dj_event": false,
-      "dj_name": "Dancing Apes: Human Must Dance"
+      "dj_name": null
     },
     {
       "id": "undertheradar-104079",
@@ -6355,30 +6127,6 @@
       "dj_name": "Supporting Te Tiriti as a Pākehā"
     },
     {
-      "id": "utr-venue-3b14ea29873e",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": "2026-11-10T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104480/N/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
-      "id": "undertheradar-104481",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104481/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
       "id": "rogue-vagabond-102968",
       "name": "The Racket Lounge",
       "venue": "The Rogue & Vagabond",
@@ -6389,18 +6137,6 @@
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
-    },
-    {
-      "id": "utr-venue-a63e6d6ca888",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": "2026-11-24T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104482/N/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
     },
     {
       "id": "utr-venue-4860f6dda85e",
@@ -6451,16 +6187,16 @@
       "dj_name": "Ina Arraoui: CANCELLED"
     },
     {
-      "id": "utr-venue-cf82be60f398",
-      "name": "Minho Choi",
-      "venue": "Ponsonby Social Club",
-      "starts_at": "2026-10-03T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104182/N/Minho-Choi.utr",
+      "id": "sanfran-1696963",
+      "name": "The Fake Sangeet",
+      "venue": "San Fran",
+      "starts_at": "2026-10-25T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/the-fake-sangeet-tickets-ae1696963",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "minho-choi",
+      "source": "sanfran",
+      "dj_id": "fake-sangeet",
       "is_dj_event": false,
-      "dj_name": "Minho Choi"
+      "dj_name": "Fake Sangeet"
     },
     {
       "id": "eventfinda-942101",
@@ -6475,28 +6211,28 @@
       "dj_name": "Billion Star Dining"
     },
     {
-      "id": "utr-venue-773a2c031ec9",
-      "name": "Shonen Knife - Aotearoa Tour 2026",
+      "id": "utr-venue-d3770e9d0c80",
+      "name": "Break It Live Akl",
       "venue": "Whammy Bar",
-      "starts_at": "2026-11-08T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104194/N/Shonen-Knife---Aotearoa-Tour-2026.utr",
+      "starts_at": "2026-10-30T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104910/N/Break-It-Live-Akl.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "shonen-knife",
+      "dj_id": "break",
       "is_dj_event": false,
-      "dj_name": "Shonen Knife"
+      "dj_name": "BREAK"
     },
     {
-      "id": "sanfran-1696963",
-      "name": "The Fake Sangeet",
+      "id": "sanfran-1529071",
+      "name": "Sleeping Village - FOUR Album Release Show",
       "venue": "San Fran",
-      "starts_at": "2026-10-25T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/the-fake-sangeet-tickets-ae1696963",
+      "starts_at": "2026-10-30T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/sleeping-village-tickets-ae1529071",
       "archive_url": null,
       "source": "sanfran",
-      "dj_id": "fake-sangeet",
+      "dj_id": "sleeping-village",
       "is_dj_event": false,
-      "dj_name": "Fake Sangeet"
+      "dj_name": "Sleeping Village"
     },
     {
       "id": "eventfinda-895401",
@@ -6511,16 +6247,28 @@
       "dj_name": null
     },
     {
-      "id": "sanfran-1529071",
-      "name": "Sleeping Village - FOUR Album Release Show",
-      "venue": "San Fran",
-      "starts_at": "2026-10-30T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/sleeping-village-tickets-ae1529071",
+      "id": "utr-venue-fa281dbc8c3e",
+      "name": "Inky Fingers Kiwiburn Fundraiser",
+      "venue": "Afters.",
+      "starts_at": "2026-10-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103494/N/Inky-Fingers-Kiwiburn-Fundraiser.utr",
       "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "sleeping-village",
+      "source": "undertheradar-venues",
+      "dj_id": "inky-fingers-kiwiburn",
       "is_dj_event": false,
-      "dj_name": "Sleeping Village"
+      "dj_name": "Inky Fingers Kiwiburn"
+    },
+    {
+      "id": "utr-venue-e4b61e8be221",
+      "name": "Stephen Roy Hill EP Launch",
+      "venue": "MOON",
+      "starts_at": "2026-11-01T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104845/N/Stephen-Roy-Hill-EP-Launch.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     },
     {
       "id": "utr-venue-a27332572eca",
@@ -6547,40 +6295,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-645f16486ddf",
-      "name": "Dougfest 4 - Saturday Only",
-      "venue": "Double Whammy",
-      "starts_at": "2026-10-24T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104602/N/Dougfest-4---Saturday-Only.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "saturday-only",
-      "is_dj_event": false,
-      "dj_name": "Saturday Only"
-    },
-    {
-      "id": "utr-venue-d3770e9d0c80",
-      "name": "Break It Live Akl",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-30T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104910/N/Break-It-Live-Akl.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "break",
-      "is_dj_event": false,
-      "dj_name": "BREAK"
-    },
-    {
-      "id": "utr-venue-feb3fb1f5987",
-      "name": "Oots (AUS) - Pōneke",
-      "venue": "San Fran",
+      "id": "utr-venue-cf82be60f398",
+      "name": "Minho Choi",
+      "venue": "Ponsonby Social Club",
       "starts_at": "2026-10-03T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104933/N/Oots-(AUS)---Pōneke.utr",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104182/N/Minho-Choi.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "p-neke",
+      "dj_id": "minho-choi",
       "is_dj_event": false,
-      "dj_name": "Pōneke"
+      "dj_name": "Minho Choi"
     },
     {
       "id": "utr-venue-d5a607e90a85",
@@ -6595,16 +6319,40 @@
       "dj_name": "Papa M + Mick Turner"
     },
     {
-      "id": "undertheradar-104482",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104482/Moon-Jam-Nite.utr",
+      "id": "utr-venue-7b8e48f3c8a3",
+      "name": "DECEITS Aotearoa tour 2026",
+      "venue": "Valhalla",
+      "starts_at": "2026-11-29T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103080/N/DECEITS-Aotearoa-tour-2026.utr",
       "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "jam-nite",
+      "source": "undertheradar-venues",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Jam Nite"
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-b1c2b5c2e5b1",
+      "name": "Dukes Of Hammersmith - Featuring Colt",
+      "venue": "Double Whammy",
+      "starts_at": "2026-11-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103518/N/Dukes-Of-Hammersmith---Featuring-Colt.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "featuring-colt",
+      "is_dj_event": false,
+      "dj_name": "Featuring Colt"
+    },
+    {
+      "id": "utr-venue-feb3fb1f5987",
+      "name": "Oots (AUS) - Pōneke",
+      "venue": "San Fran",
+      "starts_at": "2026-10-03T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104933/N/Oots-(AUS)---Pōneke.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "p-neke",
+      "is_dj_event": false,
+      "dj_name": "Pōneke"
     },
     {
       "id": "utr-venue-08527ca37229",
@@ -6631,18 +6379,6 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-7b8e48f3c8a3",
-      "name": "DECEITS Aotearoa tour 2026",
-      "venue": "Valhalla",
-      "starts_at": "2026-11-29T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103080/N/DECEITS-Aotearoa-tour-2026.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "utr-venue-6554ef5eac00",
       "name": "Negative Approach 2026 AUS &amp; NZ Tour",
       "venue": "Whammy Bar",
@@ -6653,6 +6389,30 @@
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
+    },
+    {
+      "id": "utr-venue-773a2c031ec9",
+      "name": "Shonen Knife - Aotearoa Tour 2026",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-11-08T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104194/N/Shonen-Knife---Aotearoa-Tour-2026.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "shonen-knife",
+      "is_dj_event": false,
+      "dj_name": "Shonen Knife"
+    },
+    {
+      "id": "utr-venue-645f16486ddf",
+      "name": "Dougfest 4 - Saturday Only",
+      "venue": "Double Whammy",
+      "starts_at": "2026-10-24T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104602/N/Dougfest-4---Saturday-Only.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "saturday-only",
+      "is_dj_event": false,
+      "dj_name": "Saturday Only"
     },
     {
       "id": "rogue-vagabond-104066",
@@ -6679,42 +6439,6 @@
       "dj_name": "Siege Machine"
     },
     {
-      "id": "utr-venue-b1c2b5c2e5b1",
-      "name": "Dukes Of Hammersmith - Featuring Colt",
-      "venue": "Double Whammy",
-      "starts_at": "2026-11-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103518/N/Dukes-Of-Hammersmith---Featuring-Colt.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "featuring-colt",
-      "is_dj_event": false,
-      "dj_name": "Featuring Colt"
-    },
-    {
-      "id": "undertheradar-104452",
-      "name": "Nicholas Joseph Album Release Show",
-      "venue": "MOON",
-      "starts_at": null,
-      "url": "https://www.undertheradar.co.nz/gig/104452/Nicholas-Joseph-Album-Release-Show.utr",
-      "archive_url": null,
-      "source": "undertheradar",
-      "dj_id": "nicholas-joseph",
-      "is_dj_event": false,
-      "dj_name": "Nicholas Joseph"
-    },
-    {
-      "id": "utr-venue-fa281dbc8c3e",
-      "name": "Inky Fingers Kiwiburn Fundraiser",
-      "venue": "Afters.",
-      "starts_at": "2026-10-10T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103494/N/Inky-Fingers-Kiwiburn-Fundraiser.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "inky-fingers-kiwiburn",
-      "is_dj_event": false,
-      "dj_name": "Inky Fingers Kiwiburn"
-    },
-    {
       "id": "eventfinda-942273",
       "name": "Sounds Like Movies - The Blues Brothers",
       "venue": null,
@@ -6725,18 +6449,6 @@
       "dj_id": "sounds-like-movies",
       "is_dj_event": false,
       "dj_name": "Sounds Like Movies"
-    },
-    {
-      "id": "utr-venue-e4b61e8be221",
-      "name": "Stephen Roy Hill EP Launch",
-      "venue": "MOON",
-      "starts_at": "2026-11-01T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104845/N/Stephen-Roy-Hill-EP-Launch.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
     },
     {
       "id": "eventfinda-945226",
@@ -6799,52 +6511,28 @@
       "dj_name": "Teens"
     },
     {
-      "id": "rogue-vagabond-104231",
-      "name": "Rogue Late Lounge | Overtime",
+      "id": "rogue-vagabond-104235",
+      "name": "Chelsea Prastiti Plays Disney With Strings",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-17T23:59:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104231/Rogue-Late-Lounge--Overtime.utr",
+      "starts_at": "2026-10-18T19:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104235/Chelsea-Prastiti-Plays-Disney-With-Strings.utr",
       "archive_url": null,
       "source": "rogue-vagabond",
-      "dj_id": "overtime",
+      "dj_id": "chelsea-prastiti-plays-disney",
       "is_dj_event": false,
-      "dj_name": "Overtime"
+      "dj_name": "Chelsea Prastiti Plays Disney"
     },
     {
-      "id": "utr-venue-5a83fd8e8769",
-      "name": "The Favoured’s Return Home",
+      "id": "utr-venue-1ee319d0bdb9",
+      "name": "Awkwatch X Doggabarka",
       "venue": "Valhalla",
-      "starts_at": "2026-10-21T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104520/N/The-Favoured’s-Return-Home.utr",
+      "starts_at": "2026-10-01T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104451/N/Awkwatch-X-Doggabarka.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "favoured-s-return-home",
+      "dj_id": "awkwatch-x-doggabarka",
       "is_dj_event": false,
-      "dj_name": "Favoured’s Return Home"
-    },
-    {
-      "id": "utr-venue-21ee5573b9c0",
-      "name": "Flyte",
-      "venue": "San Fran",
-      "starts_at": "2026-11-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/102628/N/Flyte.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-b7a3a89a105c",
-      "name": "Open Decks And DJ Workshop Hosted By Intec (Third Eye Hifi)",
-      "venue": "MOON",
-      "starts_at": "2026-09-10T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104513/N/Open-Decks-And-DJ-Workshop-Hosted-By-Intec-(Third-Eye-Hifi).utr",
-      "archive_url": "http://web.archive.org/web/20260924164234/https://www.undertheradar.co.nz/utr/show/SID/104513/N/Open-Decks-And-DJ-Workshop-Hosted-By-Intec-(Third-Eye-Hifi).utr",
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Awkwatch X Doggabarka"
     },
     {
       "id": "utr-venue-3647a9c6f84b",
@@ -6857,6 +6545,18 @@
       "dj_id": "halloween-havoc",
       "is_dj_event": false,
       "dj_name": "Halloween Havoc"
+    },
+    {
+      "id": "utr-venue-b7a3a89a105c",
+      "name": "Open Decks And DJ Workshop Hosted By Intec (Third Eye Hifi)",
+      "venue": "MOON",
+      "starts_at": "2026-09-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104513/N/Open-Decks-And-DJ-Workshop-Hosted-By-Intec-(Third-Eye-Hifi).utr",
+      "archive_url": "http://web.archive.org/web/20260924164234/https://www.undertheradar.co.nz/utr/show/SID/104513/N/Open-Decks-And-DJ-Workshop-Hosted-By-Intec-(Third-Eye-Hifi).utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     },
     {
       "id": "eventfinda-942913",
@@ -6883,54 +6583,6 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-1ee319d0bdb9",
-      "name": "Awkwatch X Doggabarka",
-      "venue": "Valhalla",
-      "starts_at": "2026-10-01T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104451/N/Awkwatch-X-Doggabarka.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "awkwatch-x-doggabarka",
-      "is_dj_event": false,
-      "dj_name": "Awkwatch X Doggabarka"
-    },
-    {
-      "id": "rogue-vagabond-104243",
-      "name": "Zoe Moon Presents | Blue Moon",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-17T20:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104243/Zoe-Moon-Presents--Blue-Moon.utr",
-      "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104227",
-      "name": "The Ben Wilcock Quartet",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-17T19:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104227/The-Ben-Wilcock-Quartet.utr",
-      "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": "ben-wilcock-quartet",
-      "is_dj_event": false,
-      "dj_name": "Ben Wilcock Quartet"
-    },
-    {
-      "id": "utr-venue-04e2dd2b521a",
-      "name": "Negative Approach 2026 AUS &amp; NZ Tour",
-      "venue": "Valhalla",
-      "starts_at": "2026-11-13T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/100445/N/Negative-Approach-2026-AUS--NZ-Tour.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "utr-venue-4763b7bb08f4",
       "name": "Sclera, Mothburn, Lucid",
       "venue": "Valhalla",
@@ -6941,30 +6593,6 @@
       "dj_id": "mothburn",
       "is_dj_event": false,
       "dj_name": "Mothburn"
-    },
-    {
-      "id": "utr-venue-4c51d3dfb2a5",
-      "name": "Christoph El Truento With Dylan Biscuit And Rubi Du",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-09-11T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104443/N/Christoph-El-Truento-With-Dylan-Biscuit-And-Rubi-Du.utr",
-      "archive_url": "http://web.archive.org/web/20260924040129/https://www.undertheradar.co.nz/utr/show/SID/104443/N/Christoph-El-Truento-With-Dylan-Biscuit-And-Rubi-Du.utr",
-      "source": "undertheradar-venues",
-      "dj_id": "christoph-el-truento",
-      "is_dj_event": false,
-      "dj_name": "Christoph El truento"
-    },
-    {
-      "id": "utr-venue-48715eeffded",
-      "name": "Teknotitts - Hot Hard And Heavy 4",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-11-28T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104279/N/Teknotitts---Hot-Hard-And-Heavy-4.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "teknotitts",
-      "is_dj_event": false,
-      "dj_name": "Teknotitts"
     },
     {
       "id": "rogue-vagabond-104228",
@@ -6979,6 +6607,90 @@
       "dj_name": "Slow Jazz Ensemble"
     },
     {
+      "id": "rogue-vagabond-104243",
+      "name": "Zoe Moon Presents | Blue Moon",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-17T20:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104243/Zoe-Moon-Presents--Blue-Moon.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-5a83fd8e8769",
+      "name": "The Favoured’s Return Home",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-21T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104520/N/The-Favoured’s-Return-Home.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "favoured-s-return-home",
+      "is_dj_event": false,
+      "dj_name": "Favoured’s Return Home"
+    },
+    {
+      "id": "utr-venue-48715eeffded",
+      "name": "Teknotitts - Hot Hard And Heavy 4",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-11-28T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104279/N/Teknotitts---Hot-Hard-And-Heavy-4.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "teknotitts",
+      "is_dj_event": false,
+      "dj_name": "Teknotitts"
+    },
+    {
+      "id": "utr-venue-4c51d3dfb2a5",
+      "name": "Christoph El Truento With Dylan Biscuit And Rubi Du",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104443/N/Christoph-El-Truento-With-Dylan-Biscuit-And-Rubi-Du.utr",
+      "archive_url": "http://web.archive.org/web/20260924040129/https://www.undertheradar.co.nz/utr/show/SID/104443/N/Christoph-El-Truento-With-Dylan-Biscuit-And-Rubi-Du.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "christoph-el-truento",
+      "is_dj_event": false,
+      "dj_name": "Christoph El truento"
+    },
+    {
+      "id": "utr-venue-cb4dc80b7088",
+      "name": "DECEITS Aotearoa tour 2026",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-11-27T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103078/N/DECEITS-Aotearoa-tour-2026.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-104231",
+      "name": "Rogue Late Lounge | Overtime",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-17T23:59:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104231/Rogue-Late-Lounge--Overtime.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": "overtime",
+      "is_dj_event": false,
+      "dj_name": "Overtime"
+    },
+    {
+      "id": "rogue-vagabond-104227",
+      "name": "The Ben Wilcock Quartet",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-17T19:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104227/The-Ben-Wilcock-Quartet.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": "ben-wilcock-quartet",
+      "is_dj_event": false,
+      "dj_name": "Ben Wilcock Quartet"
+    },
+    {
       "id": "sanfran-1693784",
       "name": "Goodnight Nurse - The Always and Never (Again!) Tour",
       "venue": "San Fran",
@@ -6991,28 +6703,16 @@
       "dj_name": "Goodnight Nurse"
     },
     {
-      "id": "utr-venue-59416a50519a",
-      "name": "Surf Trash - No Chaser - Album Tour",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-11T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104083/N/Surf-Trash---No-Chaser---Album-Tour.utr",
+      "id": "utr-venue-40fe15b13703",
+      "name": "Single Malt Presents ‘Wetlands’",
+      "venue": "MOON",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104178/N/Single-Malt-Presents-‘Wetlands’.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "surf-trash",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Surf Trash"
-    },
-    {
-      "id": "rogue-vagabond-104235",
-      "name": "Chelsea Prastiti Plays Disney With Strings",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-18T19:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104235/Chelsea-Prastiti-Plays-Disney-With-Strings.utr",
-      "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": "chelsea-prastiti-plays-disney",
-      "is_dj_event": false,
-      "dj_name": "Chelsea Prastiti Plays Disney"
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-104062",
@@ -7039,18 +6739,6 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-40fe15b13703",
-      "name": "Single Malt Presents ‘Wetlands’",
-      "venue": "MOON",
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104178/N/Single-Malt-Presents-‘Wetlands’.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "utr-venue-9f6cdc72bb75",
       "name": "Wet Denim - Water For Dogs EP Release Tour",
       "venue": "San Fran",
@@ -7063,6 +6751,30 @@
       "dj_name": "Wet Denim"
     },
     {
+      "id": "utr-venue-04e2dd2b521a",
+      "name": "Negative Approach 2026 AUS &amp; NZ Tour",
+      "venue": "Valhalla",
+      "starts_at": "2026-11-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100445/N/Negative-Approach-2026-AUS--NZ-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-59416a50519a",
+      "name": "Surf Trash - No Chaser - Album Tour",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104083/N/Surf-Trash---No-Chaser---Album-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "surf-trash",
+      "is_dj_event": false,
+      "dj_name": "Surf Trash"
+    },
+    {
       "id": "eventfinda-946660",
       "name": "Speak with Confidence, for people with learning difficulties",
       "venue": null,
@@ -7073,18 +6785,6 @@
       "dj_id": "learning-difficulties",
       "is_dj_event": false,
       "dj_name": "learning difficulties"
-    },
-    {
-      "id": "utr-venue-cb4dc80b7088",
-      "name": "DECEITS Aotearoa tour 2026",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-11-27T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103078/N/DECEITS-Aotearoa-tour-2026.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
     },
     {
       "id": "utr-venue-cf77e856bf81",
@@ -7147,18 +6847,6 @@
       "dj_name": "Evie"
     },
     {
-      "id": "rogue-vagabond-104242",
-      "name": "Rogue Classic Albums Live | Anita Sings The Most",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-17T17:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104242/Rogue-Classic-Albums-Live--Anita-Sings-The-Most.utr",
-      "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": "classic-albums",
-      "is_dj_event": false,
-      "dj_name": "Classic Albums"
-    },
-    {
       "id": "utr-venue-69c7f33c1524",
       "name": "Te Wiki O Te Reo Māori W/ Hine And Flowback",
       "venue": "MOON",
@@ -7207,16 +6895,16 @@
       "dj_name": "Don’t Tell Me To Smile"
     },
     {
-      "id": "utr-venue-6b0317acaff6",
-      "name": "Louis TM (Jazz Festival)",
+      "id": "utr-venue-d12a7aa0c87e",
+      "name": "Moon Jam Nite",
       "venue": "MOON",
-      "starts_at": "2026-10-14T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104488/N/Louis-TM-(Jazz-Festival).utr",
+      "starts_at": "2026-09-29T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104474/N/Moon-Jam-Nite.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "louis-tm",
+      "dj_id": "jam-nite",
       "is_dj_event": false,
-      "dj_name": "Louis TM"
+      "dj_name": "Jam Nite"
     },
     {
       "id": "utr-venue-9ef6dcaeff64",
@@ -7267,16 +6955,16 @@
       "dj_name": "Auckland"
     },
     {
-      "id": "utr-venue-d12a7aa0c87e",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": "2026-09-29T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104474/N/Moon-Jam-Nite.utr",
+      "id": "utr-venue-f5a3bc17ccbc",
+      "name": "CST Presents: Julien Dyne | Jazzfest 2026",
+      "venue": "Cuba St Tavern",
+      "starts_at": "2026-10-16T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104429/N/CST-Presents:-Julien-Dyne-|-Jazzfest-2026.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "jam-nite",
+      "dj_id": "julien-dyne",
       "is_dj_event": false,
-      "dj_name": "Jam Nite"
+      "dj_name": " Julien Dyne"
     },
     {
       "id": "utr-venue-188d72e8aec6",
@@ -7303,28 +6991,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-af371862330b",
-      "name": "Call Centre // With Hominid And Health And Education",
+      "id": "utr-venue-6b0317acaff6",
+      "name": "Louis TM (Jazz Festival)",
       "venue": "MOON",
-      "starts_at": "2026-10-21T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104927/N/Call-Centre-//-With-Hominid-And-Health-And-Education.utr",
+      "starts_at": "2026-10-14T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104488/N/Louis-TM-(Jazz-Festival).utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "call-centre",
+      "dj_id": "louis-tm",
       "is_dj_event": false,
-      "dj_name": "Call Centre"
-    },
-    {
-      "id": "utr-venue-588e093054ea",
-      "name": "vegetable.machine.animal 'Trio Album Release' With Deo (AUS), Uniform",
-      "venue": "Audio Foundation",
-      "starts_at": "2026-10-03T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104392/N/vegetable.machine.animal-'Trio-Album-Release'-With-Deo-(AUS),-Uniform.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "vegetable-machine-animal",
-      "is_dj_event": false,
-      "dj_name": "vegetable.machine.animal"
+      "dj_name": "Louis TM"
     },
     {
       "id": "rogue-vagabond-104224",
@@ -7351,6 +7027,30 @@
       "dj_name": "Three Rays"
     },
     {
+      "id": "utr-venue-af371862330b",
+      "name": "Call Centre // With Hominid And Health And Education",
+      "venue": "MOON",
+      "starts_at": "2026-10-21T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104927/N/Call-Centre-//-With-Hominid-And-Health-And-Education.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "call-centre",
+      "is_dj_event": false,
+      "dj_name": "Call Centre"
+    },
+    {
+      "id": "rogue-vagabond-104242",
+      "name": "Rogue Classic Albums Live | Anita Sings The Most",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-17T17:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104242/Rogue-Classic-Albums-Live--Anita-Sings-The-Most.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": "classic-albums",
+      "is_dj_event": false,
+      "dj_name": "Classic Albums"
+    },
+    {
       "id": "utr-venue-c8902a5e9e22",
       "name": "Make A Move: Gig Series - Naakz And Babyzoot, Kenzie From Welly And RNZŌ",
       "venue": "MOON",
@@ -7363,16 +7063,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-f5a3bc17ccbc",
-      "name": "CST Presents: Julien Dyne | Jazzfest 2026",
-      "venue": "Cuba St Tavern",
-      "starts_at": "2026-10-16T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104429/N/CST-Presents:-Julien-Dyne-|-Jazzfest-2026.utr",
+      "id": "eventfinda-935149",
+      "name": "The L8 Show: 2026!",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/the-l8-show-20262/auckland",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "julien-dyne",
+      "source": "eventfinda",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": " Julien Dyne"
+      "dj_name": null
     },
     {
       "id": "eventfinda-945327",
@@ -7397,18 +7097,6 @@
       "dj_id": "libbianski-suffering",
       "is_dj_event": false,
       "dj_name": "Libbianski Suffering"
-    },
-    {
-      "id": "eventfinda-935149",
-      "name": "The L8 Show: 2026!",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/the-l8-show-20262/auckland",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
     },
     {
       "id": "eventfinda-942275",
@@ -7471,16 +7159,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-4f000a07463d",
-      "name": "Music And The City",
-      "venue": "Cuba St Tavern",
-      "starts_at": "2026-10-03T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104521/N/Music-And-The-City.utr",
+      "id": "utr-venue-2077d831cd55",
+      "name": "Cindy Album Release Tour With Homing And Cruelly",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103942/N/Cindy-Album-Release-Tour-With-Homing-And-Cruelly.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "cindy",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Cindy"
     },
     {
       "id": "utr-venue-0087805503ad",
@@ -7495,16 +7183,16 @@
       "dj_name": "BREAK"
     },
     {
-      "id": "utr-venue-6b85a3a518a0",
-      "name": "Discovery - Daft Punk Tribute Show",
-      "venue": "Double Whammy",
-      "starts_at": "2026-10-09T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104183/N/Discovery---Daft-Punk-Tribute-Show.utr",
+      "id": "utr-venue-89d48706df64",
+      "name": "Henri Woodley",
+      "venue": "Ponsonby Social Club",
+      "starts_at": "2026-10-30T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104492/N/Henri-Woodley.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "discovery",
+      "dj_id": "henri-woodley",
       "is_dj_event": false,
-      "dj_name": "Discovery"
+      "dj_name": "Henri Woodley"
     },
     {
       "id": "utr-venue-738e8684fc1e",
@@ -7519,6 +7207,18 @@
       "dj_name": "Trioglodyte"
     },
     {
+      "id": "sanfran-1688826",
+      "name": "Buckshot",
+      "venue": "San Fran",
+      "starts_at": "2026-12-02T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
       "id": "utr-venue-b3fcadcee373",
       "name": "Ozi Ozaa",
       "venue": "Ponsonby Social Club",
@@ -7529,18 +7229,6 @@
       "dj_id": "ozi-ozaa",
       "is_dj_event": false,
       "dj_name": "Ozi Ozaa"
-    },
-    {
-      "id": "utr-venue-89d48706df64",
-      "name": "Henri Woodley",
-      "venue": "Ponsonby Social Club",
-      "starts_at": "2026-10-30T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104492/N/Henri-Woodley.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "henri-woodley",
-      "is_dj_event": false,
-      "dj_name": "Henri Woodley"
     },
     {
       "id": "utr-venue-68635478bcb6",
@@ -7603,16 +7291,16 @@
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-104241",
-      "name": "Wallace Sings Music From The Movies",
+      "id": "rogue-vagabond-104226",
+      "name": "Rogue Late Lounge | Bojack Funkman",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-16T20:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104241/Wallace-Sings-Music-From-The-Movies.utr",
+      "starts_at": "2026-10-16T23:59:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104226/Rogue-Late-Lounge--Bojack-Funkman.utr",
       "archive_url": null,
       "source": "rogue-vagabond",
-      "dj_id": null,
+      "dj_id": "bojack-funkman",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Bojack Funkman"
     },
     {
       "id": "undertheradar-103788",
@@ -7639,28 +7327,16 @@
       "dj_name": "Meet your MP Candidates"
     },
     {
-      "id": "sanfran-1688826",
-      "name": "Buckshot",
-      "venue": "San Fran",
-      "starts_at": "2026-12-02T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/buckshot-with-sidney-phillips-and-oscar18-tickets-ae1688826",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104226",
-      "name": "Rogue Late Lounge | Bojack Funkman",
+      "id": "rogue-vagabond-104620",
+      "name": "Sunday Jazz - Fernanda Diaz",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-16T23:59:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104226/Rogue-Late-Lounge--Bojack-Funkman.utr",
+      "starts_at": "2027-01-17T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104620/Sunday-Jazz---Fernanda-Diaz.utr",
       "archive_url": null,
       "source": "rogue-vagabond",
-      "dj_id": "bojack-funkman",
+      "dj_id": "sunday-jazz",
       "is_dj_event": false,
-      "dj_name": "Bojack Funkman"
+      "dj_name": "Sunday Jazz"
     },
     {
       "id": "eventfinda-921596",
@@ -7675,28 +7351,16 @@
       "dj_name": "Competency Programme"
     },
     {
-      "id": "rogue-vagabond-104620",
-      "name": "Sunday Jazz - Fernanda Diaz",
+      "id": "rogue-vagabond-104241",
+      "name": "Wallace Sings Music From The Movies",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2027-01-17T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104620/Sunday-Jazz---Fernanda-Diaz.utr",
+      "starts_at": "2026-10-16T20:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104241/Wallace-Sings-Music-From-The-Movies.utr",
       "archive_url": null,
       "source": "rogue-vagabond",
-      "dj_id": "sunday-jazz",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Sunday Jazz"
-    },
-    {
-      "id": "utr-venue-2077d831cd55",
-      "name": "Cindy Album Release Tour With Homing And Cruelly",
-      "venue": "Valhalla",
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103942/N/Cindy-Album-Release-Tour-With-Homing-And-Cruelly.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "cindy",
-      "is_dj_event": false,
-      "dj_name": "Cindy"
+      "dj_name": null
     },
     {
       "id": "utr-venue-b82907f1edd8",
@@ -7709,6 +7373,30 @@
       "dj_id": "nicholas-joseph",
       "is_dj_event": false,
       "dj_name": "Nicholas Joseph"
+    },
+    {
+      "id": "utr-venue-4f000a07463d",
+      "name": "Music And The City",
+      "venue": "Cuba St Tavern",
+      "starts_at": "2026-10-03T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104521/N/Music-And-The-City.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-6b85a3a518a0",
+      "name": "Discovery - Daft Punk Tribute Show",
+      "venue": "Double Whammy",
+      "starts_at": "2026-10-09T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104183/N/Discovery---Daft-Punk-Tribute-Show.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "discovery",
+      "is_dj_event": false,
+      "dj_name": "Discovery"
     },
     {
       "id": "eventfinda-933705",
@@ -7735,18 +7423,6 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-53bac7b7b9f2",
-      "name": "Afters 8: The Most Afters Of All Time In The History Of Time That....",
-      "venue": "Afters.",
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104830/N/Afters-8:-The-Most-Afters-Of-All-Time-In-The-History-Of-Time-That.....utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "utr-venue-3a374729b41a",
       "name": "Moon Jam Nite",
       "venue": "MOON",
@@ -7757,90 +7433,6 @@
       "dj_id": "jam-nite",
       "is_dj_event": false,
       "dj_name": "Jam Nite"
-    },
-    {
-      "id": "utr-venue-baede17399b7",
-      "name": "Same Name Confusion",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-11-20T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104916/N/Same-Name-Confusion.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "sam",
-      "is_dj_event": false,
-      "dj_name": "Sam"
-    },
-    {
-      "id": "utr-venue-514bc8badf6a",
-      "name": "Dale Kerrigan - Heavy Greasy Noise Bitch",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-17T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103692/N/Dale-Kerrigan---Heavy-Greasy-Noise-Bitch.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "heavy-greasy-noise-bitch",
-      "is_dj_event": false,
-      "dj_name": "Heavy Greasy Noise Bitch"
-    },
-    {
-      "id": "utr-venue-bab1242b7a4f",
-      "name": "Teenage Bottlerocket &amp; Brendan Kelly (The Lawrence Arms)",
-      "venue": "Whammy Bar",
-      "starts_at": "2027-02-11T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104445/N/Teenage-Bottlerocket--Brendan-Kelly-(The-Lawrence-Arms).utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "teenage-bottlerocket",
-      "is_dj_event": false,
-      "dj_name": "Teenage Bottlerocket"
-    },
-    {
-      "id": "sanfran-1695058",
-      "name": "La Latina",
-      "venue": "San Fran",
-      "starts_at": "2026-10-10T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/la-latina-tickets-ae1695058",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "la-latina",
-      "is_dj_event": false,
-      "dj_name": "La Latina"
-    },
-    {
-      "id": "utr-venue-009e7e00a658",
-      "name": "Make Nice",
-      "venue": "Cuba St Tavern",
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104869/N/Make-Nice.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "make-nice",
-      "is_dj_event": false,
-      "dj_name": "Make Nice"
-    },
-    {
-      "id": "utr-venue-9b226b3f0941",
-      "name": "OvO (Italy) NZ Tour",
-      "venue": "Valhalla",
-      "starts_at": "2026-10-25T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103443/N/OvO-(Italy)-NZ-Tour.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-3259a0b50095",
-      "name": "E TŪ - Soandso Sophomore EP Debut",
-      "venue": "MOON",
-      "starts_at": "2026-09-18T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104403/N/E-TŪ---Soandso-Sophomore-EP-Debut.utr",
-      "archive_url": "http://web.archive.org/web/20260923235354/https://www.undertheradar.co.nz/utr/show/SID/104403/N/E-T%C5%AA---Soandso-Sophomore-EP-Debut.utr",
-      "source": "undertheradar-venues",
-      "dj_id": "soandso-sophomore",
-      "is_dj_event": false,
-      "dj_name": "Soandso Sophomore"
     },
     {
       "id": "utr-venue-4186f875212d",
@@ -7855,16 +7447,52 @@
       "dj_name": "Metanoia"
     },
     {
-      "id": "utr-venue-9ae4aba38961",
-      "name": "Broderbeats Presents Intuition Vol. 3",
-      "venue": "San Fran",
-      "starts_at": "2026-10-09T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104761/N/Broderbeats-Presents-Intuition-Vol.-3.utr",
+      "id": "utr-venue-514bc8badf6a",
+      "name": "Dale Kerrigan - Heavy Greasy Noise Bitch",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-17T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103692/N/Dale-Kerrigan---Heavy-Greasy-Noise-Bitch.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "broderbeats",
+      "dj_id": "heavy-greasy-noise-bitch",
       "is_dj_event": false,
-      "dj_name": "Broderbeats"
+      "dj_name": "Heavy Greasy Noise Bitch"
+    },
+    {
+      "id": "utr-venue-d4986af9aa97",
+      "name": "Mudhoney | Auckland",
+      "venue": "Double Whammy",
+      "starts_at": "2026-11-01T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103273/N/Mudhoney-|-Auckland.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "auckland",
+      "is_dj_event": false,
+      "dj_name": "Auckland"
+    },
+    {
+      "id": "utr-venue-baede17399b7",
+      "name": "Same Name Confusion",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-11-20T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104916/N/Same-Name-Confusion.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "sam",
+      "is_dj_event": false,
+      "dj_name": "Sam"
+    },
+    {
+      "id": "sanfran-1437738",
+      "name": "David Nihill - Taking Tangents Tour",
+      "venue": "San Fran",
+      "starts_at": "2026-11-29T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/david-nihill-tickets-ae1437738",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "taking-tangents",
+      "is_dj_event": false,
+      "dj_name": "Taking Tangents"
     },
     {
       "id": "utr-venue-4f5ba99b37c7",
@@ -7891,16 +7519,28 @@
       "dj_name": "Feeling Lonely?"
     },
     {
-      "id": "rogue-vagabond-102962",
-      "name": "Sunday Jazz - Cumulonimbus",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-20T17:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/102962/Sunday-Jazz---Cumulonimbus.utr",
-      "archive_url": "http://web.archive.org/web/20260923164326/https://www.undertheradar.co.nz/gig/102962/Sunday-Jazz---Cumulonimbus.utr",
-      "source": "rogue-vagabond",
-      "dj_id": "cumulonimbus",
+      "id": "utr-venue-3259a0b50095",
+      "name": "E TŪ - Soandso Sophomore EP Debut",
+      "venue": "MOON",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104403/N/E-TŪ---Soandso-Sophomore-EP-Debut.utr",
+      "archive_url": "http://web.archive.org/web/20260923235354/https://www.undertheradar.co.nz/utr/show/SID/104403/N/E-T%C5%AA---Soandso-Sophomore-EP-Debut.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "soandso-sophomore",
       "is_dj_event": false,
-      "dj_name": "Cumulonimbus"
+      "dj_name": "Soandso Sophomore"
+    },
+    {
+      "id": "utr-venue-9ae4aba38961",
+      "name": "Broderbeats Presents Intuition Vol. 3",
+      "venue": "San Fran",
+      "starts_at": "2026-10-09T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104761/N/Broderbeats-Presents-Intuition-Vol.-3.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "broderbeats",
+      "is_dj_event": false,
+      "dj_name": "Broderbeats"
     },
     {
       "id": "utr-venue-b537db7fba49",
@@ -7913,42 +7553,6 @@
       "dj_id": "spring-sessions",
       "is_dj_event": false,
       "dj_name": " Spring Sessions"
-    },
-    {
-      "id": "eventfinda-947136",
-      "name": "Lunchtime Recital: Lara Hall & Rachael Griffiths-Hughes",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/lunchtime-recital-lara-hall-lorelle-mcnaughton/hamilton",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": "rachael-griffiths-hughes",
-      "is_dj_event": false,
-      "dj_name": "Rachael Griffiths-Hughes"
-    },
-    {
-      "id": "sanfran-1437738",
-      "name": "David Nihill - Taking Tangents Tour",
-      "venue": "San Fran",
-      "starts_at": "2026-11-29T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/david-nihill-tickets-ae1437738",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "taking-tangents",
-      "is_dj_event": false,
-      "dj_name": "Taking Tangents"
-    },
-    {
-      "id": "rogue-vagabond-104068",
-      "name": "Undubbed Goes Rogue",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-25T21:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104068/Undubbed-Goes-Rogue.utr",
-      "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": "undubbed-goes",
-      "is_dj_event": false,
-      "dj_name": "Undubbed Goes"
     },
     {
       "id": "utr-venue-bb270e2c11aa",
@@ -7975,28 +7579,100 @@
       "dj_name": " Sting"
     },
     {
-      "id": "rogue-vagabond-104239",
-      "name": "The Lily Shaw Quartet",
+      "id": "rogue-vagabond-102962",
+      "name": "Sunday Jazz - Cumulonimbus",
       "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-15T20:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104239/The-Lily-Shaw-Quartet.utr",
-      "archive_url": null,
+      "starts_at": "2026-09-20T17:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/102962/Sunday-Jazz---Cumulonimbus.utr",
+      "archive_url": "http://web.archive.org/web/20260923164326/https://www.undertheradar.co.nz/gig/102962/Sunday-Jazz---Cumulonimbus.utr",
       "source": "rogue-vagabond",
-      "dj_id": "lily-shaw-quartet",
+      "dj_id": "cumulonimbus",
       "is_dj_event": false,
-      "dj_name": "Lily Shaw Quartet"
+      "dj_name": "Cumulonimbus"
     },
     {
-      "id": "utr-venue-d4986af9aa97",
-      "name": "Mudhoney | Auckland",
-      "venue": "Double Whammy",
-      "starts_at": "2026-11-01T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103273/N/Mudhoney-|-Auckland.utr",
+      "id": "utr-venue-009e7e00a658",
+      "name": "Make Nice",
+      "venue": "Cuba St Tavern",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104869/N/Make-Nice.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "auckland",
+      "dj_id": "make-nice",
       "is_dj_event": false,
-      "dj_name": "Auckland"
+      "dj_name": "Make Nice"
+    },
+    {
+      "id": "eventfinda-947136",
+      "name": "Lunchtime Recital: Lara Hall & Rachael Griffiths-Hughes",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/lunchtime-recital-lara-hall-lorelle-mcnaughton/hamilton",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "rachael-griffiths-hughes",
+      "is_dj_event": false,
+      "dj_name": "Rachael Griffiths-Hughes"
+    },
+    {
+      "id": "rogue-vagabond-104068",
+      "name": "Undubbed Goes Rogue",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-25T21:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104068/Undubbed-Goes-Rogue.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": "undubbed-goes",
+      "is_dj_event": false,
+      "dj_name": "Undubbed Goes"
+    },
+    {
+      "id": "rogue-vagabond-104531",
+      "name": "Moon Goose And Butter Wouldn't Melt",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-02T19:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104531/Moon-Goose-And-Butter-Wouldnt-Melt.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-9b226b3f0941",
+      "name": "OvO (Italy) NZ Tour",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-25T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103443/N/OvO-(Italy)-NZ-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-bab1242b7a4f",
+      "name": "Teenage Bottlerocket &amp; Brendan Kelly (The Lawrence Arms)",
+      "venue": "Whammy Bar",
+      "starts_at": "2027-02-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104445/N/Teenage-Bottlerocket--Brendan-Kelly-(The-Lawrence-Arms).utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "teenage-bottlerocket",
+      "is_dj_event": false,
+      "dj_name": "Teenage Bottlerocket"
+    },
+    {
+      "id": "utr-venue-53bac7b7b9f2",
+      "name": "Afters 8: The Most Afters Of All Time In The History Of Time That....",
+      "venue": "Afters.",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104830/N/Afters-8:-The-Most-Afters-Of-All-Time-In-The-History-Of-Time-That.....utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     },
     {
       "id": "utr-venue-d6bdda218c84",
@@ -8011,16 +7687,16 @@
       "dj_name": "Street"
     },
     {
-      "id": "rogue-vagabond-104531",
-      "name": "Moon Goose And Butter Wouldn't Melt",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-02T19:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104531/Moon-Goose-And-Butter-Wouldnt-Melt.utr",
+      "id": "sanfran-1695058",
+      "name": "La Latina",
+      "venue": "San Fran",
+      "starts_at": "2026-10-10T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/la-latina-tickets-ae1695058",
       "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": null,
+      "source": "sanfran",
+      "dj_id": "la-latina",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "La Latina"
     },
     {
       "id": "rogue-vagabond-104238",
@@ -8047,6 +7723,18 @@
       "dj_name": "Mingus 'Changes One'"
     },
     {
+      "id": "rogue-vagabond-104239",
+      "name": "The Lily Shaw Quartet",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-15T20:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104239/The-Lily-Shaw-Quartet.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": "lily-shaw-quartet",
+      "is_dj_event": false,
+      "dj_name": "Lily Shaw Quartet"
+    },
+    {
       "id": "utr-venue-e731756891dc",
       "name": "AceTones Live At Ponsonby Social Club",
       "venue": "Ponsonby Social Club",
@@ -8054,18 +7742,6 @@
       "url": "http://www.undertheradar.co.nz/utr/show/SID/104254/N/AceTones-Live-At-Ponsonby-Social-Club.utr",
       "archive_url": "http://web.archive.org/web/20260923171420/https://www.undertheradar.co.nz/utr/show/SID/104254/N/AceTones-Live-At-Ponsonby-Social-Club.utr",
       "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "sanfran-1694380",
-      "name": "Shake-’em-On-Downers",
-      "venue": "San Fran",
-      "starts_at": "2026-10-17T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/shake-em-on-downers-tickets-ae1694380",
-      "archive_url": null,
-      "source": "sanfran",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
@@ -8083,18 +7759,6 @@
       "dj_name": "Avatar"
     },
     {
-      "id": "utr-venue-a0c6591d33a5",
-      "name": "Toxa Album Release",
-      "venue": "MOON",
-      "starts_at": "2026-09-24T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104388/N/Toxa-Album-Release.utr",
-      "archive_url": "http://web.archive.org/web/20260924001012/https://www.undertheradar.co.nz/utr/show/SID/104388/N/Toxa-Album-Release.utr",
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "rogue-vagabond-104953",
       "name": "Oscar Lavën's Elegant Calamity Orchestra",
       "venue": "The Rogue & Vagabond",
@@ -8107,11 +7771,35 @@
       "dj_name": "Oscar Lavën"
     },
     {
-      "id": "utr-venue-49642edeb333",
-      "name": "Kylesa - 2027",
+      "id": "utr-venue-a0c6591d33a5",
+      "name": "Toxa Album Release",
+      "venue": "MOON",
+      "starts_at": "2026-09-24T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104388/N/Toxa-Album-Release.utr",
+      "archive_url": "http://web.archive.org/web/20260924001012/https://www.undertheradar.co.nz/utr/show/SID/104388/N/Toxa-Album-Release.utr",
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "rogue-vagabond-104240",
+      "name": "Voyage Into The Abyssal Plain: Jake Baxendale And Friends (syd/wgtn)",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-16T17:30:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104240/Voyage-Into-The-Abyssal-Plain-Jake-Baxendale-And-Friends-sydwgtn.utr",
+      "archive_url": null,
+      "source": "rogue-vagabond",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-1d46db14ced3",
+      "name": "DARTZ",
       "venue": "Double Whammy",
-      "starts_at": "2027-02-10T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104778/N/Kylesa---2027.utr",
+      "starts_at": "2026-10-25T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104722/N/DARTZ.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
       "dj_id": null,
@@ -8131,40 +7819,16 @@
       "dj_name": "September Sounds"
     },
     {
-      "id": "sanfran-1676416",
-      "name": "Star Time | Wellington Jazz Festival",
+      "id": "sanfran-1514198",
+      "name": "Wet Denim Water For Dogs EP Release TourMore Info",
       "venue": "San Fran",
-      "starts_at": "2026-10-16T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/star-time-tickets-ae1676416",
+      "starts_at": "2026-09-26T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/wet-denim-tickets-ae1514198",
       "archive_url": null,
       "source": "sanfran",
-      "dj_id": "star-time",
+      "dj_id": "wet-denim",
       "is_dj_event": false,
-      "dj_name": "Star Time"
-    },
-    {
-      "id": "utr-venue-1d861f921d0b",
-      "name": "High Altar",
-      "venue": "Audio Foundation",
-      "starts_at": "2026-10-10T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104675/N/High-Altar.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "high-altar",
-      "is_dj_event": false,
-      "dj_name": "High Altar"
-    },
-    {
-      "id": "rogue-vagabond-104240",
-      "name": "Voyage Into The Abyssal Plain: Jake Baxendale And Friends (syd/wgtn)",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-16T17:30:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104240/Voyage-Into-The-Abyssal-Plain-Jake-Baxendale-And-Friends-sydwgtn.utr",
-      "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Wet Denim"
     },
     {
       "id": "sanfran-1699433",
@@ -8179,6 +7843,18 @@
       "dj_name": "Twisted Frequency: Bass Taste"
     },
     {
+      "id": "sanfran-1676416",
+      "name": "Star Time | Wellington Jazz Festival",
+      "venue": "San Fran",
+      "starts_at": "2026-10-16T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/star-time-tickets-ae1676416",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "star-time",
+      "is_dj_event": false,
+      "dj_name": "Star Time"
+    },
+    {
       "id": "utr-venue-9af39697f061",
       "name": "Weezel - Thirty Years Of Pinkerton",
       "venue": "Valhalla",
@@ -8191,71 +7867,11 @@
       "dj_name": "Weezel"
     },
     {
-      "id": "utr-venue-2ca88da8ba02",
-      "name": "Lálá - Between Worlds",
-      "venue": "Ponsonby Social Club",
-      "starts_at": "2026-10-11T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104673/N/Lálá---Between-Worlds.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "between-worlds",
-      "is_dj_event": false,
-      "dj_name": "Between Worlds"
-    },
-    {
-      "id": "utr-venue-5f43e18ee0e4",
-      "name": "Dougfest 4 - Friday And Weekend Pass",
-      "venue": "Double Whammy",
-      "starts_at": "2026-10-23T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104601/N/Dougfest-4---Friday-And-Weekend-Pass.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "frida",
-      "is_dj_event": false,
-      "dj_name": "Frida"
-    },
-    {
-      "id": "utr-venue-683c9ea77b3b",
-      "name": "Gilsons (Brazil)",
-      "venue": "Double Whammy",
-      "starts_at": "2026-10-11T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/101759/N/Gilsons-(Brazil).utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
       "id": "utr-venue-908feb51107d",
       "name": "Otium",
       "venue": "Whammy Bar",
       "starts_at": "2026-10-09T00:00:00.000Z",
       "url": "http://www.undertheradar.co.nz/utr/show/SID/104871/N/Otium.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-8c021998f530",
-      "name": "Flotsam And Jetsam (USA)",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-04T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/102736/N/Flotsam-And-Jetsam-(USA).utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "sam",
-      "is_dj_event": false,
-      "dj_name": "Sam"
-    },
-    {
-      "id": "utr-venue-1d46db14ced3",
-      "name": "DARTZ",
-      "venue": "Double Whammy",
-      "starts_at": "2026-10-25T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104722/N/DARTZ.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
       "dj_id": null,
@@ -8275,28 +7891,64 @@
       "dj_name": null
     },
     {
-      "id": "rogue-vagabond-104171",
-      "name": "Rory Johns And The Mystic",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-09-10T20:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
-      "archive_url": "http://web.archive.org/web/20260924174948/https://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
-      "source": "rogue-vagabond",
+      "id": "utr-venue-683c9ea77b3b",
+      "name": "Gilsons (Brazil)",
+      "venue": "Double Whammy",
+      "starts_at": "2026-10-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/101759/N/Gilsons-(Brazil).utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
     },
     {
-      "id": "utr-venue-bbbc3900ee6a",
-      "name": "Vitamin-S pool night",
-      "venue": "Audio Foundation",
-      "starts_at": "2026-10-13T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104790/N/Vitamin-S-pool-night.utr",
+      "id": "utr-venue-f8d5afffed07",
+      "name": "Juliana Sian Single Release Concert",
+      "venue": "Ponsonby Social Club",
+      "starts_at": "2026-10-31T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104889/N/Juliana-Sian-Single-Release-Concert.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "vitamin-s-pool",
+      "dj_id": "sian",
       "is_dj_event": false,
-      "dj_name": "Vitamin-S pool"
+      "dj_name": "Sian"
+    },
+    {
+      "id": "utr-venue-8c021998f530",
+      "name": "Flotsam And Jetsam (USA)",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-04T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/102736/N/Flotsam-And-Jetsam-(USA).utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "sam",
+      "is_dj_event": false,
+      "dj_name": "Sam"
+    },
+    {
+      "id": "utr-venue-49642edeb333",
+      "name": "Kylesa - 2027",
+      "venue": "Double Whammy",
+      "starts_at": "2027-02-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104778/N/Kylesa---2027.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-5f43e18ee0e4",
+      "name": "Dougfest 4 - Friday And Weekend Pass",
+      "venue": "Double Whammy",
+      "starts_at": "2026-10-23T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104601/N/Dougfest-4---Friday-And-Weekend-Pass.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "frida",
+      "is_dj_event": false,
+      "dj_name": "Frida"
     },
     {
       "id": "utr-venue-61e66fa835b1",
@@ -8311,16 +7963,40 @@
       "dj_name": "Vitamin-S pool"
     },
     {
-      "id": "sanfran-1514198",
-      "name": "Wet Denim Water For Dogs EP Release TourMore Info",
-      "venue": "San Fran",
-      "starts_at": "2026-09-26T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/wet-denim-tickets-ae1514198",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "wet-denim",
+      "id": "rogue-vagabond-104171",
+      "name": "Rory Johns And The Mystic",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-09-10T20:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "archive_url": "http://web.archive.org/web/20260924174948/https://www.undertheradar.co.nz/gig/104171/Rory-Johns-And-The-Mystic.utr",
+      "source": "rogue-vagabond",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Wet Denim"
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-1d861f921d0b",
+      "name": "High Altar",
+      "venue": "Audio Foundation",
+      "starts_at": "2026-10-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104675/N/High-Altar.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "high-altar",
+      "is_dj_event": false,
+      "dj_name": "High Altar"
+    },
+    {
+      "id": "utr-venue-bbbc3900ee6a",
+      "name": "Vitamin-S pool night",
+      "venue": "Audio Foundation",
+      "starts_at": "2026-10-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104790/N/Vitamin-S-pool-night.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "vitamin-s-pool",
+      "is_dj_event": false,
+      "dj_name": "Vitamin-S pool"
     },
     {
       "id": "sanfran-1693849",
@@ -8347,18 +8023,6 @@
       "dj_name": "Oots"
     },
     {
-      "id": "utr-venue-c14b94b4e2bf",
-      "name": "The Golden Awesome, Beach Balls, Ceramic, S.L. Reflex",
-      "venue": "Valhalla",
-      "starts_at": "2026-09-11T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103666/N/The-Golden-Awesome,-Beach-Balls,-Ceramic,-S.L.-Reflex.utr",
-      "archive_url": "http://web.archive.org/web/20260924041825/https://www.undertheradar.co.nz/utr/show/SID/103666/N/The-Golden-Awesome,-Beach-Balls,-Ceramic,-S.L.-Reflex.utr",
-      "source": "undertheradar-venues",
-      "dj_id": "golden-awesome",
-      "is_dj_event": false,
-      "dj_name": "Golden Awesome"
-    },
-    {
       "id": "sanfran-1613836",
       "name": "BRODERBEATS Presents INTUITION Vol.",
       "venue": "San Fran",
@@ -8371,16 +8035,40 @@
       "dj_name": "Broderbeats"
     },
     {
-      "id": "utr-venue-f8d5afffed07",
-      "name": "Juliana Sian Single Release Concert",
+      "id": "utr-venue-c14b94b4e2bf",
+      "name": "The Golden Awesome, Beach Balls, Ceramic, S.L. Reflex",
+      "venue": "Valhalla",
+      "starts_at": "2026-09-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103666/N/The-Golden-Awesome,-Beach-Balls,-Ceramic,-S.L.-Reflex.utr",
+      "archive_url": "http://web.archive.org/web/20260924041825/https://www.undertheradar.co.nz/utr/show/SID/103666/N/The-Golden-Awesome,-Beach-Balls,-Ceramic,-S.L.-Reflex.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "golden-awesome",
+      "is_dj_event": false,
+      "dj_name": "Golden Awesome"
+    },
+    {
+      "id": "sanfran-1694380",
+      "name": "Shake-’em-On-Downers",
+      "venue": "San Fran",
+      "starts_at": "2026-10-17T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/shake-em-on-downers-tickets-ae1694380",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-2ca88da8ba02",
+      "name": "Lálá - Between Worlds",
       "venue": "Ponsonby Social Club",
-      "starts_at": "2026-10-31T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104889/N/Juliana-Sian-Single-Release-Concert.utr",
+      "starts_at": "2026-10-11T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104673/N/Lálá---Between-Worlds.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "sian",
+      "dj_id": "between-worlds",
       "is_dj_event": false,
-      "dj_name": "Sian"
+      "dj_name": "Between Worlds"
     },
     {
       "id": "utr-venue-84d4b7371bfc",
@@ -8395,54 +8083,6 @@
       "dj_name": "Return To Sender II"
     },
     {
-      "id": "utr-venue-656d8191e8d4",
-      "name": "The Early November + Hellogoodbye (USA)",
-      "venue": "San Fran",
-      "starts_at": "2027-03-21T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104818/N/The-Early-November-+-Hellogoodbye-(USA).utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "early-november-hellogoodbye",
-      "is_dj_event": false,
-      "dj_name": "Early November + Hellogoodbye"
-    },
-    {
-      "id": "utr-venue-c47c2fa386f5",
-      "name": "Serenna With Tragedies And Diplopoda",
-      "venue": "MOON",
-      "starts_at": "2026-10-01T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104385/N/Serenna-With-Tragedies-And-Diplopoda.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "serenna",
-      "is_dj_event": true,
-      "dj_name": "Serenna"
-    },
-    {
-      "id": "utr-venue-e8e28769ab87",
-      "name": "Imperial Slave - Existential Threat Tour - Wellington",
-      "venue": "Valhalla",
-      "starts_at": "2026-10-17T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104129/N/Imperial-Slave---Existential-Threat-Tour---Wellington.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "existential-threat",
-      "is_dj_event": false,
-      "dj_name": "Existential Threat"
-    },
-    {
-      "id": "undertheradar-104485",
-      "name": "Charis - Catching Flights N Feelings Release Night",
-      "venue": null,
-      "starts_at": "2026-09-23T00:00:00.000Z",
-      "url": "https://www.undertheradar.co.nz/gig/104485/Charis---Catching-Flights-N-Feelings-Release-Night.utr",
-      "archive_url": "http://web.archive.org/web/20260907164924/https://www.undertheradar.co.nz/gig/104485/Charis---Catching-Flights-N-Feelings-Release-Night.utr",
-      "source": "undertheradar",
-      "dj_id": "catching-flights-n-feelings",
-      "is_dj_event": false,
-      "dj_name": "Catching Flights N Feelings"
-    },
-    {
       "id": "utr-venue-ec67b58598e1",
       "name": "Afterhours FM.",
       "venue": "Valhalla",
@@ -8455,40 +8095,16 @@
       "dj_name": "Afterhours FM"
     },
     {
-      "id": "eventfinda-946293",
-      "name": "Ngā Uri o Tū",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/nga-uri-tu/paraparaumu",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": "ng-uri-o-t",
-      "is_dj_event": false,
-      "dj_name": "Ngā Uri o Tū"
-    },
-    {
-      "id": "utr-venue-93419dba1fc4",
-      "name": "Dog Music Presents - Missing!",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-10T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104644/N/Dog-Music-Presents---Missing!.utr",
+      "id": "utr-venue-656d8191e8d4",
+      "name": "The Early November + Hellogoodbye (USA)",
+      "venue": "San Fran",
+      "starts_at": "2027-03-21T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104818/N/The-Early-November-+-Hellogoodbye-(USA).utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "early-november-hellogoodbye",
       "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "rogue-vagabond-104223",
-      "name": "Album Release | Oscar Lavën 'Flamingovision'",
-      "venue": "The Rogue & Vagabond",
-      "starts_at": "2026-10-15T22:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/gig/104223/Album-Release--Oscar-Lavn-Flamingovision.utr",
-      "archive_url": null,
-      "source": "rogue-vagabond",
-      "dj_id": "oscar-lav-n",
-      "is_dj_event": false,
-      "dj_name": "Oscar Lavën"
+      "dj_name": "Early November + Hellogoodbye"
     },
     {
       "id": "utr-venue-509184ce1791",
@@ -8503,76 +8119,40 @@
       "dj_name": "UK Indie-folk 'Good Habits'"
     },
     {
-      "id": "sanfran-68979",
-      "name": "The Smyths (UK) perform The Very Best of The Smith",
-      "venue": "San Fran",
-      "starts_at": "2027-02-13T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/the-smyths-tickets-ae68979",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": null,
+      "id": "undertheradar-104485",
+      "name": "Charis - Catching Flights N Feelings Release Night",
+      "venue": null,
+      "starts_at": "2026-09-23T00:00:00.000Z",
+      "url": "https://www.undertheradar.co.nz/gig/104485/Charis---Catching-Flights-N-Feelings-Release-Night.utr",
+      "archive_url": "http://web.archive.org/web/20260907164924/https://www.undertheradar.co.nz/gig/104485/Charis---Catching-Flights-N-Feelings-Release-Night.utr",
+      "source": "undertheradar",
+      "dj_id": "catching-flights-n-feelings",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Catching Flights N Feelings"
     },
     {
-      "id": "utr-venue-537f9569cd38",
-      "name": "303 Events Pres. Hard Labour",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-25T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104676/N/303-Events-Pres.-Hard-Labour.utr",
+      "id": "utr-venue-e8e28769ab87",
+      "name": "Imperial Slave - Existential Threat Tour - Wellington",
+      "venue": "Valhalla",
+      "starts_at": "2026-10-17T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104129/N/Imperial-Slave---Existential-Threat-Tour---Wellington.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "existential-threat",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Existential Threat"
     },
     {
-      "id": "eventfinda-941681",
-      "name": "Office Comedy Clash",
+      "id": "eventfinda-946293",
+      "name": "Ngā Uri o Tū",
       "venue": null,
       "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/office-comedy-clash/auckland/ponsonby",
+      "url": "https://www.eventfinda.co.nz/2026/nga-uri-tu/paraparaumu",
       "archive_url": null,
       "source": "eventfinda",
-      "dj_id": "office-comedy-clash",
+      "dj_id": "ng-uri-o-t",
       "is_dj_event": false,
-      "dj_name": "Office Comedy Clash"
-    },
-    {
-      "id": "eventfinda-930890",
-      "name": "Wicked",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/wicked/tauranga",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": null,
-      "is_dj_event": false,
-      "dj_name": null
-    },
-    {
-      "id": "utr-venue-293c56d2b13a",
-      "name": "Fairly Obvious | It Should Be | Album Release Tour",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-18T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104743/N/Fairly-Obvious-|-It-Should-Be-|-Album-Release-Tour.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "fairly-obvious",
-      "is_dj_event": false,
-      "dj_name": "Fairly Obvious"
-    },
-    {
-      "id": "eventfinda-919516",
-      "name": "Open Dance Classes",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/open-dance-classes/palmerston-north",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": "open-dance-classes",
-      "is_dj_event": false,
-      "dj_name": "Open Dance Classes"
+      "dj_name": "Ngā Uri o Tū"
     },
     {
       "id": "utr-venue-7bd7915c5d74",
@@ -8587,76 +8167,16 @@
       "dj_name": null
     },
     {
-      "id": "eventfinda-944917",
-      "name": "Ngā Mokopuna Tour",
-      "venue": null,
-      "starts_at": null,
-      "url": "https://www.eventfinda.co.nz/2026/nga-mokopuna-tour2/wellington",
-      "archive_url": null,
-      "source": "eventfinda",
-      "dj_id": "ng-mokopuna",
-      "is_dj_event": false,
-      "dj_name": "Ngā Mokopuna"
-    },
-    {
-      "id": "utr-venue-c9dd9711e83d",
-      "name": "Midwave Breaks Album Release Tour",
-      "venue": "Double Whammy",
-      "starts_at": "2026-11-27T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104841/N/Midwave-Breaks-Album-Release-Tour.utr",
+      "id": "utr-venue-c47c2fa386f5",
+      "name": "Serenna With Tragedies And Diplopoda",
+      "venue": "MOON",
+      "starts_at": "2026-10-01T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104385/N/Serenna-With-Tragedies-And-Diplopoda.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "break",
-      "is_dj_event": false,
-      "dj_name": "BREAK"
-    },
-    {
-      "id": "utr-venue-46e58da0b64f",
-      "name": "Kraus 'Water Music' Album Release, w/ Half Sister",
-      "venue": "Audio Foundation",
-      "starts_at": "2026-09-19T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104255/N/Kraus-'Water-Music'-Album-Release,-w/-Half-Sister.utr",
-      "archive_url": "http://web.archive.org/web/20260923171435/https://www.undertheradar.co.nz/utr/show/SID/104255/N/Kraus-%27Water-Music%27-Album-Release,-w/-Half-Sister.utr",
-      "source": "undertheradar-venues",
-      "dj_id": "kraus-water-music",
-      "is_dj_event": false,
-      "dj_name": "Kraus 'Water Music'"
-    },
-    {
-      "id": "utr-venue-e53cb7a3bfec",
-      "name": "Kipper Reid / Coppelia / Greyhound",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-09-25T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104775/N/Kipper-Reid-/-Coppelia-/-Greyhound.utr",
-      "archive_url": "http://web.archive.org/web/20260925001347/https://www.undertheradar.co.nz/utr/show/SID/104775/N/Kipper-Reid-/-Coppelia-/-Greyhound.utr",
-      "source": "undertheradar-venues",
-      "dj_id": "hound",
-      "is_dj_event": false,
-      "dj_name": "Hound"
-    },
-    {
-      "id": "utr-venue-2409ef382c2e",
-      "name": "Debt Club - Foothold Release Tour w/ First Reserve and Dillon Jo",
-      "venue": "San Fran",
-      "starts_at": "2026-09-18T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/103151/N/Debt-Club---Foothold-Release-Tour-w/-First-Reserve-and-Dillon-Jo.utr",
-      "archive_url": "http://web.archive.org/web/20260923173232/https://www.undertheradar.co.nz/utr/show/SID/103151/N/Debt-Club---Foothold-Release-Tour-w/-First-Reserve-and-Dillon-Jo.utr",
-      "source": "undertheradar-venues",
-      "dj_id": "debt",
+      "dj_id": "serenna",
       "is_dj_event": true,
-      "dj_name": "Debt"
-    },
-    {
-      "id": "sanfran-1613271",
-      "name": "Taking Back Saturday Halloween: Emo & Pop Punk Party",
-      "venue": "San Fran",
-      "starts_at": "2026-10-31T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/taking-back-saturday-halloween-emo-and-pop-punk-party-tickets-ae1613271",
-      "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "taking-back-saturday-halloween-emo",
-      "is_dj_event": false,
-      "dj_name": "Taking Back Saturday Halloween: Emo"
+      "dj_name": "Serenna"
     },
     {
       "id": "rogue-vagabond-104232",
@@ -8671,16 +8191,16 @@
       "dj_name": "Alex Trask Septet Play Duke Ellington"
     },
     {
-      "id": "sanfran-1694479",
-      "name": "Yurt Party",
-      "venue": "San Fran",
-      "starts_at": "2026-12-12T19:00:00.000Z",
-      "url": "https://sanfran.co.nz/all-events/yurt-party-tickets-ae1694479",
+      "id": "utr-venue-537f9569cd38",
+      "name": "303 Events Pres. Hard Labour",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-25T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104676/N/303-Events-Pres.-Hard-Labour.utr",
       "archive_url": null,
-      "source": "sanfran",
-      "dj_id": "yurt",
+      "source": "undertheradar-venues",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Yurt"
+      "dj_name": null
     },
     {
       "id": "sanfran-1696222",
@@ -8693,6 +8213,162 @@
       "dj_id": "early-november-hellogoodbye",
       "is_dj_event": false,
       "dj_name": "Early November + Hellogoodbye"
+    },
+    {
+      "id": "utr-venue-293c56d2b13a",
+      "name": "Fairly Obvious | It Should Be | Album Release Tour",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104743/N/Fairly-Obvious-|-It-Should-Be-|-Album-Release-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "fairly-obvious",
+      "is_dj_event": false,
+      "dj_name": "Fairly Obvious"
+    },
+    {
+      "id": "eventfinda-930890",
+      "name": "Wicked",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/wicked/tauranga",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "eventfinda-919516",
+      "name": "Open Dance Classes",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/open-dance-classes/palmerston-north",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "open-dance-classes",
+      "is_dj_event": false,
+      "dj_name": "Open Dance Classes"
+    },
+    {
+      "id": "utr-venue-93419dba1fc4",
+      "name": "Dog Music Presents - Missing!",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-10T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104644/N/Dog-Music-Presents---Missing!.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
+    },
+    {
+      "id": "utr-venue-e53cb7a3bfec",
+      "name": "Kipper Reid / Coppelia / Greyhound",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-09-25T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104775/N/Kipper-Reid-/-Coppelia-/-Greyhound.utr",
+      "archive_url": "http://web.archive.org/web/20260925001347/https://www.undertheradar.co.nz/utr/show/SID/104775/N/Kipper-Reid-/-Coppelia-/-Greyhound.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "hound",
+      "is_dj_event": false,
+      "dj_name": "Hound"
+    },
+    {
+      "id": "eventfinda-944917",
+      "name": "Ngā Mokopuna Tour",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/nga-mokopuna-tour2/wellington",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "ng-mokopuna",
+      "is_dj_event": false,
+      "dj_name": "Ngā Mokopuna"
+    },
+    {
+      "id": "sanfran-1613271",
+      "name": "Taking Back Saturday Halloween: Emo & Pop Punk Party",
+      "venue": "San Fran",
+      "starts_at": "2026-10-31T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/taking-back-saturday-halloween-emo-and-pop-punk-party-tickets-ae1613271",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "taking-back-saturday-halloween-emo",
+      "is_dj_event": false,
+      "dj_name": "Taking Back Saturday Halloween: Emo"
+    },
+    {
+      "id": "utr-venue-46e58da0b64f",
+      "name": "Kraus 'Water Music' Album Release, w/ Half Sister",
+      "venue": "Audio Foundation",
+      "starts_at": "2026-09-19T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104255/N/Kraus-'Water-Music'-Album-Release,-w/-Half-Sister.utr",
+      "archive_url": "http://web.archive.org/web/20260923171435/https://www.undertheradar.co.nz/utr/show/SID/104255/N/Kraus-%27Water-Music%27-Album-Release,-w/-Half-Sister.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "kraus-water-music",
+      "is_dj_event": false,
+      "dj_name": "Kraus 'Water Music'"
+    },
+    {
+      "id": "utr-venue-c9dd9711e83d",
+      "name": "Midwave Breaks Album Release Tour",
+      "venue": "Double Whammy",
+      "starts_at": "2026-11-27T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104841/N/Midwave-Breaks-Album-Release-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "break",
+      "is_dj_event": false,
+      "dj_name": "BREAK"
+    },
+    {
+      "id": "utr-venue-2409ef382c2e",
+      "name": "Debt Club - Foothold Release Tour w/ First Reserve and Dillon Jo",
+      "venue": "San Fran",
+      "starts_at": "2026-09-18T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/103151/N/Debt-Club---Foothold-Release-Tour-w/-First-Reserve-and-Dillon-Jo.utr",
+      "archive_url": "http://web.archive.org/web/20260923173232/https://www.undertheradar.co.nz/utr/show/SID/103151/N/Debt-Club---Foothold-Release-Tour-w/-First-Reserve-and-Dillon-Jo.utr",
+      "source": "undertheradar-venues",
+      "dj_id": "debt",
+      "is_dj_event": true,
+      "dj_name": "Debt"
+    },
+    {
+      "id": "sanfran-1694479",
+      "name": "Yurt Party",
+      "venue": "San Fran",
+      "starts_at": "2026-12-12T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/yurt-party-tickets-ae1694479",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": "yurt",
+      "is_dj_event": false,
+      "dj_name": "Yurt"
+    },
+    {
+      "id": "eventfinda-941681",
+      "name": "Office Comedy Clash",
+      "venue": null,
+      "starts_at": null,
+      "url": "https://www.eventfinda.co.nz/2026/office-comedy-clash/auckland/ponsonby",
+      "archive_url": null,
+      "source": "eventfinda",
+      "dj_id": "office-comedy-clash",
+      "is_dj_event": false,
+      "dj_name": "Office Comedy Clash"
+    },
+    {
+      "id": "sanfran-68979",
+      "name": "The Smyths (UK) perform The Very Best of The Smith",
+      "venue": "San Fran",
+      "starts_at": "2027-02-13T19:00:00.000Z",
+      "url": "https://sanfran.co.nz/all-events/the-smyths-tickets-ae68979",
+      "archive_url": null,
+      "source": "sanfran",
+      "dj_id": null,
+      "is_dj_event": false,
+      "dj_name": null
     },
     {
       "id": "rogue-vagabond-104823",
@@ -8719,28 +8395,16 @@
       "dj_name": "Vagabond's Jazz Extravaganza"
     },
     {
-      "id": "utr-venue-02d1ebf091ef",
-      "name": "Sounded Presents: Ciko",
-      "venue": "Afters.",
-      "starts_at": "2026-10-02T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104784/N/Sounded-Presents:-Ciko.utr",
+      "id": "rogue-vagabond-104223",
+      "name": "Album Release | Oscar Lavën 'Flamingovision'",
+      "venue": "The Rogue & Vagabond",
+      "starts_at": "2026-10-15T22:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/gig/104223/Album-Release--Oscar-Lavn-Flamingovision.utr",
       "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "sounded",
+      "source": "rogue-vagabond",
+      "dj_id": "oscar-lav-n",
       "is_dj_event": false,
-      "dj_name": "Sounded"
-    },
-    {
-      "id": "utr-venue-ad9a54cae708",
-      "name": "CST Presents: abey sparks, Aslan, Chris Beernink, Dave Wilson",
-      "venue": "Cuba St Tavern",
-      "starts_at": "2026-09-24T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104501/N/CST-Presents:-abey-sparks,-Aslan,-Chris-Beernink,-Dave-Wilson.utr",
-      "archive_url": "http://web.archive.org/web/20260924001023/https://www.undertheradar.co.nz/utr/show/SID/104501/N/CST-Presents:-abey-sparks,-Aslan,-Chris-Beernink,-Dave-Wilson.utr",
-      "source": "undertheradar-venues",
-      "dj_id": "chris-beernink",
-      "is_dj_event": false,
-      "dj_name": "Chris Beernink"
+      "dj_name": "Oscar Lavën"
     },
     {
       "id": "utr-venue-ab584cc8b705",
@@ -8755,28 +8419,40 @@
       "dj_name": " Re:bar 003"
     },
     {
-      "id": "utr-venue-4fa7947469dc",
-      "name": "Wet Denim - Water For Dogs EP Release Tour",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-10-03T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104175/N/Wet-Denim---Water-For-Dogs-EP-Release-Tour.utr",
-      "archive_url": null,
+      "id": "utr-venue-ad9a54cae708",
+      "name": "CST Presents: abey sparks, Aslan, Chris Beernink, Dave Wilson",
+      "venue": "Cuba St Tavern",
+      "starts_at": "2026-09-24T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104501/N/CST-Presents:-abey-sparks,-Aslan,-Chris-Beernink,-Dave-Wilson.utr",
+      "archive_url": "http://web.archive.org/web/20260924001023/https://www.undertheradar.co.nz/utr/show/SID/104501/N/CST-Presents:-abey-sparks,-Aslan,-Chris-Beernink,-Dave-Wilson.utr",
       "source": "undertheradar-venues",
-      "dj_id": "wet-denim",
+      "dj_id": "chris-beernink",
       "is_dj_event": false,
-      "dj_name": "Wet Denim"
+      "dj_name": "Chris Beernink"
     },
     {
-      "id": "utr-venue-1f517c0c5112",
-      "name": "Abandoned Carparks Celica EP Tour w/ Groopchat And Clementine",
-      "venue": "Whammy Public Bar",
-      "starts_at": "2026-10-21T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104747/N/Abandoned-Carparks-Celica-EP-Tour-w/-Groopchat-And-Clementine.utr",
+      "id": "utr-venue-5d0deb031f97",
+      "name": "Moon Jam Nite",
+      "venue": "MOON",
+      "starts_at": "2026-11-17T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104481/N/Moon-Jam-Nite.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": null,
+      "dj_id": "jam-nite",
       "is_dj_event": false,
-      "dj_name": null
+      "dj_name": "Jam Nite"
+    },
+    {
+      "id": "utr-venue-2352996de243",
+      "name": "The Early November + Hellogoodbye (USA)",
+      "venue": "Double Whammy",
+      "starts_at": "2027-03-20T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104817/N/The-Early-November-+-Hellogoodbye-(USA).utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "early-november-hellogoodbye",
+      "is_dj_event": false,
+      "dj_name": "Early November + Hellogoodbye"
     },
     {
       "id": "utr-venue-7334e7113d74",
@@ -8789,6 +8465,18 @@
       "dj_id": "carli-oso",
       "is_dj_event": false,
       "dj_name": "Carli Oso"
+    },
+    {
+      "id": "utr-venue-ded3145ff5d8",
+      "name": "Nat Hathaway - 'Catrina, Go' Album Release",
+      "venue": "Ponsonby Social Club",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104345/N/Nat-Hathaway---'Catrina,-Go'-Album-Release.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "nat-hathaway",
+      "is_dj_event": false,
+      "dj_name": "Nat Hathaway"
     },
     {
       "id": "utr-venue-1150ba367503",
@@ -8827,28 +8515,16 @@
       "dj_name": null
     },
     {
-      "id": "utr-venue-ded3145ff5d8",
-      "name": "Nat Hathaway - 'Catrina, Go' Album Release",
-      "venue": "Ponsonby Social Club",
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104345/N/Nat-Hathaway---'Catrina,-Go'-Album-Release.utr",
+      "id": "utr-venue-a212b557aae7",
+      "name": "Kina:suttsu (Japan), Soft Rock, Monsterwitch",
+      "venue": "Audio Foundation",
+      "starts_at": "2026-10-09T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104882/N/Kina:suttsu-(Japan),-Soft-Rock,-Monsterwitch.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "nat-hathaway",
+      "dj_id": "soft-rock",
       "is_dj_event": false,
-      "dj_name": "Nat Hathaway"
-    },
-    {
-      "id": "utr-venue-2352996de243",
-      "name": "The Early November + Hellogoodbye (USA)",
-      "venue": "Double Whammy",
-      "starts_at": "2027-03-20T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104817/N/The-Early-November-+-Hellogoodbye-(USA).utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "early-november-hellogoodbye",
-      "is_dj_event": false,
-      "dj_name": "Early November + Hellogoodbye"
+      "dj_name": "Soft Rock"
     },
     {
       "id": "utr-venue-0935fdf3f698",
@@ -8875,16 +8551,16 @@
       "dj_name": "Desperately Seeking 80s!"
     },
     {
-      "id": "utr-venue-a212b557aae7",
-      "name": "Kina:suttsu (Japan), Soft Rock, Monsterwitch",
-      "venue": "Audio Foundation",
-      "starts_at": "2026-10-09T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104882/N/Kina:suttsu-(Japan),-Soft-Rock,-Monsterwitch.utr",
+      "id": "utr-venue-485fefa90ed5",
+      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
+      "venue": "Double Whammy",
+      "starts_at": "2026-09-26T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/100976/N/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
-      "dj_id": "soft-rock",
+      "dj_id": null,
       "is_dj_event": false,
-      "dj_name": "Soft Rock"
+      "dj_name": null
     },
     {
       "id": "utr-venue-94fcf5912ed3",
@@ -8899,40 +8575,28 @@
       "dj_name": "Colleen Coco Collins"
     },
     {
-      "id": "utr-venue-485fefa90ed5",
-      "name": "Other Voices Perform The Music Of Siouxsie And The Banshees",
-      "venue": "Double Whammy",
-      "starts_at": "2026-09-26T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/100976/N/Other-Voices-Perform-The-Music-Of-Siouxsie-And-The-Banshees.utr",
+      "id": "utr-venue-02d1ebf091ef",
+      "name": "Sounded Presents: Ciko",
+      "venue": "Afters.",
+      "starts_at": "2026-10-02T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104784/N/Sounded-Presents:-Ciko.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "sounded",
+      "is_dj_event": false,
+      "dj_name": "Sounded"
+    },
+    {
+      "id": "utr-venue-1f517c0c5112",
+      "name": "Abandoned Carparks Celica EP Tour w/ Groopchat And Clementine",
+      "venue": "Whammy Public Bar",
+      "starts_at": "2026-10-21T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104747/N/Abandoned-Carparks-Celica-EP-Tour-w/-Groopchat-And-Clementine.utr",
       "archive_url": null,
       "source": "undertheradar-venues",
       "dj_id": null,
       "is_dj_event": false,
       "dj_name": null
-    },
-    {
-      "id": "utr-venue-5d0deb031f97",
-      "name": "Moon Jam Nite",
-      "venue": "MOON",
-      "starts_at": "2026-11-17T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104481/N/Moon-Jam-Nite.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "jam-nite",
-      "is_dj_event": false,
-      "dj_name": "Jam Nite"
-    },
-    {
-      "id": "utr-venue-931041e0169c",
-      "name": "Ha The Unclear - Astigmatic! EP Release Tour",
-      "venue": "Whammy Bar",
-      "starts_at": "2026-11-13T00:00:00.000Z",
-      "url": "http://www.undertheradar.co.nz/utr/show/SID/104593/N/Ha-The-Unclear---Astigmatic!-EP-Release-Tour.utr",
-      "archive_url": null,
-      "source": "undertheradar-venues",
-      "dj_id": "astigmatic",
-      "is_dj_event": false,
-      "dj_name": "Astigmatic!"
     },
     {
       "id": "utr-venue-51c95704f004",
@@ -8945,6 +8609,18 @@
       "dj_id": "break",
       "is_dj_event": false,
       "dj_name": "BREAK"
+    },
+    {
+      "id": "utr-venue-4fa7947469dc",
+      "name": "Wet Denim - Water For Dogs EP Release Tour",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-10-03T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104175/N/Wet-Denim---Water-For-Dogs-EP-Release-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "wet-denim",
+      "is_dj_event": false,
+      "dj_name": "Wet Denim"
     },
     {
       "id": "utr-venue-b87d69dc88a0",
@@ -9005,6 +8681,18 @@
       "dj_id": "silver-sonics-w",
       "is_dj_event": false,
       "dj_name": "Silver Sonics w"
+    },
+    {
+      "id": "utr-venue-931041e0169c",
+      "name": "Ha The Unclear - Astigmatic! EP Release Tour",
+      "venue": "Whammy Bar",
+      "starts_at": "2026-11-13T00:00:00.000Z",
+      "url": "http://www.undertheradar.co.nz/utr/show/SID/104593/N/Ha-The-Unclear---Astigmatic!-EP-Release-Tour.utr",
+      "archive_url": null,
+      "source": "undertheradar-venues",
+      "dj_id": "astigmatic",
+      "is_dj_event": false,
+      "dj_name": "Astigmatic!"
     },
     {
       "id": "utr-venue-ca1bdf6ae47d",
@@ -13905,18 +13593,6 @@
       "unhelpful": 0
     },
     {
-      "id": "montell2099-tidal-389192fc44b5",
-      "dj_id": "montell2099",
-      "type": "tidal",
-      "url": "https://tidal.com/artist/8594129",
-      "label": null,
-      "archive_url": null,
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
       "id": "dick-johnson-mixcloud-05cab615c66b",
       "dj_id": "dick-johnson",
       "type": "mixcloud",
@@ -13946,6 +13622,18 @@
       "type": "news",
       "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&amp;aid=&amp;tid=6a9b193a99cc4a92bccf41d9f567a68d&amp;url=https%3a%2f%2fwww.guampdn.com%2fopinion%2fletter-governor-clarifies-comments-made-on-rnz-interview%2farticle_4ad84b7e-6350-11ef-bfff-37c7e494a138.html&amp;c=6016732350099052023&amp;mkt=en-nz",
       "label": "News: Pacific Daily News",
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "montell2099-tidal-389192fc44b5",
+      "dj_id": "montell2099",
+      "type": "tidal",
+      "url": "https://tidal.com/artist/8594129",
+      "label": null,
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
@@ -19269,23 +18957,11 @@
       "unhelpful": 0
     },
     {
-      "id": "geneva-am-bandcamp-5532dca0e7a7",
+      "id": "geneva-am-biography-06e72bed7210",
       "dj_id": "geneva-am",
-      "type": "bandcamp",
-      "url": "https://genevaam.bandcamp.com/",
+      "type": "biography",
+      "url": "https://www.nzonscreen.com/title/geneva-am",
       "label": null,
-      "archive_url": "http://web.archive.org/web/20260529023843/https://genevaam.bandcamp.com/",
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "geneva-am-facebook-204c463b08a1",
-      "dj_id": "geneva-am",
-      "type": "facebook",
-      "url": "https://www.facebook.com/genevaam1",
-      "label": "social network",
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
@@ -19298,6 +18974,18 @@
       "type": "instagram",
       "url": "https://www.instagram.com/geneva_am/",
       "label": "social network",
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "montell2099-twitter-77c55a9734f6",
+      "dj_id": "montell2099",
+      "type": "twitter",
+      "url": "https://twitter.com/montell2099",
+      "label": null,
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
@@ -19365,11 +19053,11 @@
       "unhelpful": 0
     },
     {
-      "id": "geneva-am-biography-06e72bed7210",
+      "id": "geneva-am-facebook-204c463b08a1",
       "dj_id": "geneva-am",
-      "type": "biography",
-      "url": "https://www.nzonscreen.com/title/geneva-am",
-      "label": null,
+      "type": "facebook",
+      "url": "https://www.facebook.com/genevaam1",
+      "label": "social network",
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
@@ -19443,6 +19131,18 @@
       "url": "https://www.last.fm/music/Rihanna",
       "label": "Last.fm: Rihanna",
       "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "geneva-am-bandcamp-5532dca0e7a7",
+      "dj_id": "geneva-am",
+      "type": "bandcamp",
+      "url": "https://genevaam.bandcamp.com/",
+      "label": null,
+      "archive_url": "http://web.archive.org/web/20260529023843/https://genevaam.bandcamp.com/",
       "followers": 0,
       "track_count": 0,
       "helpful": 0,
@@ -19529,18 +19229,6 @@
       "archive_url": "http://web.archive.org/web/20250731042719/https://soundcloud.com/micasa-sucasa-gt",
       "followers": 143,
       "track_count": 49,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "montell2099-twitter-77c55a9734f6",
-      "dj_id": "montell2099",
-      "type": "twitter",
-      "url": "https://twitter.com/montell2099",
-      "label": null,
-      "archive_url": null,
-      "followers": 0,
-      "track_count": 0,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -24165,18 +23853,6 @@
       "unhelpful": 0
     },
     {
-      "id": "giddy-mixcloud-b944b3a53d6d",
-      "dj_id": "giddy",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/gideonngarua/",
-      "label": "Mixcloud: DJ GIDDY",
-      "archive_url": "http://web.archive.org/web/20201108041834/https://www.mixcloud.com/gideonngarua/",
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
       "id": "fairbrother-soundcloud-1f26fc645421",
       "dj_id": "fairbrother",
       "type": "soundcloud",
@@ -24197,6 +23873,18 @@
       "archive_url": "http://web.archive.org/web/20250523222553/https://soundcloud.com/getafix_na_dead",
       "followers": 506,
       "track_count": 167,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "giddy-mixcloud-b944b3a53d6d",
+      "dj_id": "giddy",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/gideonngarua/",
+      "label": "Mixcloud: DJ GIDDY",
+      "archive_url": "http://web.archive.org/web/20201108041834/https://www.mixcloud.com/gideonngarua/",
+      "followers": 0,
+      "track_count": 0,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -24501,26 +24189,14 @@
       "unhelpful": 0
     },
     {
-      "id": "headland-mixcloud-d10a6a9a8cb7",
-      "dj_id": "headland",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/jaceheadland/",
-      "label": "Mixcloud: Jace Headland",
-      "archive_url": "http://web.archive.org/web/20230924094155/https://www.mixcloud.com/jaceheadland/",
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "jimi-the-kween-apple-music-e62eeb2722ba",
-      "dj_id": "jimi-the-kween",
-      "type": "apple-music",
-      "url": "https://music.apple.com/au/artist/1519909066",
-      "label": null,
-      "archive_url": null,
-      "followers": 0,
-      "track_count": 0,
+      "id": "mathias-light-soundcloud-f48a899241d8",
+      "dj_id": "mathias-light",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/mathiaslightx",
+      "label": "SoundCloud: Mathias Light",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/mathiaslightx",
+      "followers": 345,
+      "track_count": 2,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -24609,14 +24285,14 @@
       "unhelpful": 0
     },
     {
-      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
-      "dj_id": "jimi-the-kween",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/jimithekween-music",
-      "label": "SoundCloud: Jimi The Kween",
-      "archive_url": "http://web.archive.org/web/20241225132926/https://soundcloud.com/jimithekween-music",
-      "followers": 13,
-      "track_count": 14,
+      "id": "montell2099-spotify-a58d0a55ee50",
+      "dj_id": "montell2099",
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/47MGg5VHBSS5yHRuMGt6b0",
+      "label": null,
+      "archive_url": "http://web.archive.org/web/20260705162729/https://open.spotify.com/artist/47MGg5VHBSS5yHRuMGt6b0",
+      "followers": 0,
+      "track_count": 0,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -24633,6 +24309,18 @@
       "unhelpful": 0
     },
     {
+      "id": "jimi-the-kween-apple-music-e62eeb2722ba",
+      "dj_id": "jimi-the-kween",
+      "type": "apple-music",
+      "url": "https://music.apple.com/au/artist/1519909066",
+      "label": null,
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
       "id": "montell2099-deezer-30085aefbf27",
       "dj_id": "montell2099",
       "type": "deezer",
@@ -24645,24 +24333,24 @@
       "unhelpful": 0
     },
     {
-      "id": "montell2099-spotify-a58d0a55ee50",
-      "dj_id": "montell2099",
-      "type": "spotify",
-      "url": "https://open.spotify.com/artist/47MGg5VHBSS5yHRuMGt6b0",
-      "label": null,
-      "archive_url": "http://web.archive.org/web/20260705162729/https://open.spotify.com/artist/47MGg5VHBSS5yHRuMGt6b0",
-      "followers": 0,
-      "track_count": 0,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
       "id": "high-dependency-unit-bandcamp-fdbbe3d80806",
       "dj_id": "high-dependency-unit",
       "type": "bandcamp",
       "url": "https://highdependencyunit.bandcamp.com/",
       "label": null,
       "archive_url": "http://web.archive.org/web/20251214040450/https://highdependencyunit.bandcamp.com/",
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "headland-mixcloud-d10a6a9a8cb7",
+      "dj_id": "headland",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/jaceheadland/",
+      "label": "Mixcloud: Jace Headland",
+      "archive_url": "http://web.archive.org/web/20230924094155/https://www.mixcloud.com/jaceheadland/",
       "followers": 0,
       "track_count": 0,
       "helpful": 0,
@@ -24705,14 +24393,14 @@
       "unhelpful": 0
     },
     {
-      "id": "mathias-light-soundcloud-f48a899241d8",
-      "dj_id": "mathias-light",
+      "id": "jimi-the-kween-soundcloud-7cbe9b07ed50",
+      "dj_id": "jimi-the-kween",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/mathiaslightx",
-      "label": "SoundCloud: Mathias Light",
-      "archive_url": "https://web.archive.org/web/https://soundcloud.com/mathiaslightx",
-      "followers": 345,
-      "track_count": 2,
+      "url": "https://soundcloud.com/jimithekween-music",
+      "label": "SoundCloud: Jimi The Kween",
+      "archive_url": "http://web.archive.org/web/20241225132926/https://soundcloud.com/jimithekween-music",
+      "followers": 13,
+      "track_count": 14,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -24885,38 +24573,38 @@
       "unhelpful": 0
     },
     {
-      "id": "frida-mixcloud-51da1fe59ac3",
-      "dj_id": "frida",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/frida84/",
-      "label": "Mixcloud: frida_s",
-      "archive_url": "http://web.archive.org/web/20200706070712/https://www.mixcloud.com/frida84/",
-      "followers": 526,
-      "track_count": 15,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "jimi-the-kween-deezer-d7b3897d1891",
+      "id": "jimi-the-kween-spotify-03d90760d7d2",
       "dj_id": "jimi-the-kween",
-      "type": "deezer",
-      "url": "https://www.deezer.com/artist/98600952",
+      "type": "spotify",
+      "url": "https://open.spotify.com/artist/0GsG618ekRVVUw6shNuxT7",
       "label": "free streaming",
-      "archive_url": null,
+      "archive_url": "http://web.archive.org/web/20260620051058/https://open.spotify.com/artist/0GsG618ekRVVUw6shNuxT7",
       "followers": 0,
       "track_count": 0,
       "helpful": 0,
       "unhelpful": 0
     },
     {
-      "id": "montell2099-soundcloud-33d32a519425",
-      "dj_id": "montell2099",
+      "id": "elliot-vincent-bandcamp-9565eee3af59",
+      "dj_id": "elliot-vincent",
+      "type": "bandcamp",
+      "url": "https://elliotandvincent.bandcamp.com/",
+      "label": null,
+      "archive_url": "http://web.archive.org/web/20251206182338/https://elliotandvincent.bandcamp.com/",
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "night-life-soundcloud-03babe5d322f",
+      "dj_id": "night-life",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/montell2099",
-      "label": "SoundCloud: montell2099",
-      "archive_url": "http://web.archive.org/web/20260705162730/https://soundcloud.com/montell2099",
-      "followers": 54796,
-      "track_count": 38,
+      "url": "https://soundcloud.com/night-life-584430914",
+      "label": "SoundCloud: Night Life",
+      "archive_url": "https://web.archive.org/web/https://soundcloud.com/night-life-584430914",
+      "followers": 17434,
+      "track_count": 26,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -24945,14 +24633,14 @@
       "unhelpful": 0
     },
     {
-      "id": "night-life-soundcloud-03babe5d322f",
-      "dj_id": "night-life",
+      "id": "lordemusic-soundcloud-29e6ac5c20fe",
+      "dj_id": "lordemusic",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/night-life-584430914",
-      "label": "SoundCloud: Night Life",
-      "archive_url": "https://web.archive.org/web/https://soundcloud.com/night-life-584430914",
-      "followers": 17434,
-      "track_count": 26,
+      "url": "https://soundcloud.com/lordemusic",
+      "label": "SoundCloud: LordeMusic",
+      "archive_url": "http://web.archive.org/web/20260824173309/https://soundcloud.com/lordemusic",
+      "followers": 6273376,
+      "track_count": 80,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -24989,18 +24677,6 @@
       "archive_url": "http://web.archive.org/web/20250702171438/https://soundcloud.com/dadamoog",
       "followers": 397,
       "track_count": 42,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "elliot-vincent-bandcamp-9565eee3af59",
-      "dj_id": "elliot-vincent",
-      "type": "bandcamp",
-      "url": "https://elliotandvincent.bandcamp.com/",
-      "label": null,
-      "archive_url": "http://web.archive.org/web/20251206182338/https://elliotandvincent.bandcamp.com/",
-      "followers": 0,
-      "track_count": 0,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -25049,6 +24725,18 @@
       "archive_url": null,
       "followers": 0,
       "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "frida-mixcloud-51da1fe59ac3",
+      "dj_id": "frida",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/frida84/",
+      "label": "Mixcloud: frida_s",
+      "archive_url": "http://web.archive.org/web/20200706070712/https://www.mixcloud.com/frida84/",
+      "followers": 526,
+      "track_count": 15,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -25137,14 +24825,14 @@
       "unhelpful": 0
     },
     {
-      "id": "lordemusic-soundcloud-29e6ac5c20fe",
-      "dj_id": "lordemusic",
+      "id": "montell2099-soundcloud-33d32a519425",
+      "dj_id": "montell2099",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/lordemusic",
-      "label": "SoundCloud: LordeMusic",
-      "archive_url": "http://web.archive.org/web/20260824173309/https://soundcloud.com/lordemusic",
-      "followers": 6273376,
-      "track_count": 80,
+      "url": "https://soundcloud.com/montell2099",
+      "label": "SoundCloud: montell2099",
+      "archive_url": "http://web.archive.org/web/20260705162730/https://soundcloud.com/montell2099",
+      "followers": 54796,
+      "track_count": 38,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -25221,12 +24909,12 @@
       "unhelpful": 0
     },
     {
-      "id": "jimi-the-kween-spotify-03d90760d7d2",
+      "id": "jimi-the-kween-deezer-d7b3897d1891",
       "dj_id": "jimi-the-kween",
-      "type": "spotify",
-      "url": "https://open.spotify.com/artist/0GsG618ekRVVUw6shNuxT7",
+      "type": "deezer",
+      "url": "https://www.deezer.com/artist/98600952",
       "label": "free streaming",
-      "archive_url": "http://web.archive.org/web/20260620051058/https://open.spotify.com/artist/0GsG618ekRVVUw6shNuxT7",
+      "archive_url": null,
       "followers": 0,
       "track_count": 0,
       "helpful": 0,
@@ -26253,22 +25941,22 @@
       "unhelpful": 0
     },
     {
-      "id": "juni-mixcloud-eb6d5e2900fe",
-      "dj_id": "juni",
-      "type": "mixcloud",
-      "url": "https://www.mixcloud.com/d1junis/",
-      "label": "Mixcloud: D1 Junis",
-      "archive_url": "https://web.archive.org/web/https://www.mixcloud.com/d1junis/",
-      "followers": 0,
-      "track_count": 0,
+      "id": "flipthescripta-soundcloud-3e097a087317",
+      "dj_id": "flipthescripta",
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/user-690791248",
+      "label": "SoundCloud: FlipTheScripta",
+      "archive_url": "http://web.archive.org/web/20250922183118/https://soundcloud.com/user-690791248",
+      "followers": 12843,
+      "track_count": 25,
       "helpful": 0,
       "unhelpful": 0
     },
     {
-      "id": "montell2099-facebook-bdf71748b99a",
+      "id": "montell2099-instagram-559506b55224",
       "dj_id": "montell2099",
-      "type": "facebook",
-      "url": "https://www.facebook.com/montell2099",
+      "type": "instagram",
+      "url": "https://www.instagram.com/montell2099/",
       "label": null,
       "archive_url": null,
       "followers": 0,
@@ -26277,14 +25965,14 @@
       "unhelpful": 0
     },
     {
-      "id": "princesschelsea-soundcloud-f9cad7c6d185",
-      "dj_id": "princesschelsea",
+      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
+      "dj_id": "emi-music-new-zealand",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/princesschelsea",
-      "label": "SoundCloud: princesschelsea",
-      "archive_url": "http://web.archive.org/web/20260812105350/https://soundcloud.com/princesschelsea",
-      "followers": 16530,
-      "track_count": 118,
+      "url": "https://soundcloud.com/nzemi",
+      "label": "SoundCloud: EMI Music New Zealand",
+      "archive_url": "http://web.archive.org/web/20250827152257/https://soundcloud.com/nzemi",
+      "followers": 6116,
+      "track_count": 19,
       "helpful": 0,
       "unhelpful": 0
     },
@@ -26313,22 +26001,22 @@
       "unhelpful": 0
     },
     {
-      "id": "night-life-setlistfm-124da870d223",
-      "dj_id": "night-life",
-      "type": "setlistfm",
-      "url": "https://www.setlist.fm/setlists/night-life-5bccebdc.html",
-      "label": null,
-      "archive_url": null,
+      "id": "juni-mixcloud-eb6d5e2900fe",
+      "dj_id": "juni",
+      "type": "mixcloud",
+      "url": "https://www.mixcloud.com/d1junis/",
+      "label": "Mixcloud: D1 Junis",
+      "archive_url": "https://web.archive.org/web/https://www.mixcloud.com/d1junis/",
       "followers": 0,
       "track_count": 0,
       "helpful": 0,
       "unhelpful": 0
     },
     {
-      "id": "montell2099-discogs-c5f6f7c5d5de",
+      "id": "montell2099-facebook-bdf71748b99a",
       "dj_id": "montell2099",
-      "type": "discogs",
-      "url": "https://www.discogs.com/artist/5437922",
+      "type": "facebook",
+      "url": "https://www.facebook.com/montell2099",
       "label": null,
       "archive_url": null,
       "followers": 0,
@@ -26349,22 +26037,10 @@
       "unhelpful": 0
     },
     {
-      "id": "emi-music-new-zealand-soundcloud-7eaac39a19bf",
-      "dj_id": "emi-music-new-zealand",
-      "type": "soundcloud",
-      "url": "https://soundcloud.com/nzemi",
-      "label": "SoundCloud: EMI Music New Zealand",
-      "archive_url": "http://web.archive.org/web/20250827152257/https://soundcloud.com/nzemi",
-      "followers": 6116,
-      "track_count": 19,
-      "helpful": 0,
-      "unhelpful": 0
-    },
-    {
-      "id": "montell2099-apple-music-4492254e543b",
+      "id": "montell2099-discogs-c5f6f7c5d5de",
       "dj_id": "montell2099",
-      "type": "apple-music",
-      "url": "https://music.apple.com/nz/artist/1106039851",
+      "type": "discogs",
+      "url": "https://www.discogs.com/artist/5437922",
       "label": null,
       "archive_url": null,
       "followers": 0,
@@ -26373,10 +26049,22 @@
       "unhelpful": 0
     },
     {
-      "id": "montell2099-instagram-559506b55224",
+      "id": "night-life-setlistfm-124da870d223",
+      "dj_id": "night-life",
+      "type": "setlistfm",
+      "url": "https://www.setlist.fm/setlists/night-life-5bccebdc.html",
+      "label": null,
+      "archive_url": null,
+      "followers": 0,
+      "track_count": 0,
+      "helpful": 0,
+      "unhelpful": 0
+    },
+    {
+      "id": "montell2099-apple-music-4492254e543b",
       "dj_id": "montell2099",
-      "type": "instagram",
-      "url": "https://www.instagram.com/montell2099/",
+      "type": "apple-music",
+      "url": "https://music.apple.com/nz/artist/1106039851",
       "label": null,
       "archive_url": null,
       "followers": 0,
@@ -26409,14 +26097,14 @@
       "unhelpful": 0
     },
     {
-      "id": "flipthescripta-soundcloud-3e097a087317",
-      "dj_id": "flipthescripta",
+      "id": "princesschelsea-soundcloud-f9cad7c6d185",
+      "dj_id": "princesschelsea",
       "type": "soundcloud",
-      "url": "https://soundcloud.com/user-690791248",
-      "label": "SoundCloud: FlipTheScripta",
-      "archive_url": "http://web.archive.org/web/20250922183118/https://soundcloud.com/user-690791248",
-      "followers": 12843,
-      "track_count": 25,
+      "url": "https://soundcloud.com/princesschelsea",
+      "label": "SoundCloud: princesschelsea",
+      "archive_url": "http://web.archive.org/web/20260812105350/https://soundcloud.com/princesschelsea",
+      "followers": 16530,
+      "track_count": 118,
       "helpful": 0,
       "unhelpful": 0
     },
