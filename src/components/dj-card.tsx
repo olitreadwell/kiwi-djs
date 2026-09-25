@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import type { DjRow } from '@/lib/queries';
-import { genreAccent, genrePill, topGenres } from '@/lib/genres';
-import { profileTier, TIER_LABELS } from '@/lib/profile-tier';
+import Link from "next/link";
+import type { DjRow } from "@/lib/queries";
+import { genreAccent, genrePill, topGenres } from "@/lib/genres";
+import { profileTier, TIER_LABELS } from "@/lib/profile-tier";
 
 export function DjCard({ dj }: { dj: DjRow }) {
   const accent = genreAccent(dj.genres);
@@ -12,15 +12,22 @@ export function DjCard({ dj }: { dj: DjRow }) {
     >
       <div>
         <div className="flex items-center justify-between gap-2">
-          <h3 className="text-lg font-semibold text-foreground group-hover:text-accent">{dj.name}</h3>
-          {profileTier(dj) === 'tier1' && (
-            <span className="font-mono text-[10px] uppercase tracking-wider text-accent">{TIER_LABELS.tier1}</span>
+          <h2 className="text-lg font-semibold text-foreground group-hover:text-accent">
+            {dj.name}
+          </h2>
+          {profileTier(dj) === "tier1" && (
+            <span className="font-mono text-[10px] uppercase tracking-wider text-accent">
+              {TIER_LABELS.tier1}
+            </span>
           )}
         </div>
         {topGenres(dj.genres).length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
             {topGenres(dj.genres).map((genre) => (
-              <span key={genre} className={`inline-block rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${genrePill(genre)}`}>
+              <span
+                key={genre}
+                className={`inline-block rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider ${genrePill(genre)}`}
+              >
                 {genre}
               </span>
             ))}
@@ -29,13 +36,19 @@ export function DjCard({ dj }: { dj: DjRow }) {
         {(dj.summary || dj.bio) && (
           <p className="mt-3 line-clamp-3 text-sm text-muted">
             {dj.summary ?? dj.bio}
-            {dj.summary && <span className="ml-1.5 font-mono text-[10px] uppercase tracking-wider text-faint">AI</span>}
+            {dj.summary && (
+              <span className="ml-1.5 font-mono text-[10px] uppercase tracking-wider text-faint">
+                AI
+              </span>
+            )}
           </p>
         )}
       </div>
       {dj.upcoming_events > 0 && (
         <div className="mt-4 flex items-center justify-between font-mono text-[11px] text-muted">
-          <span>{dj.upcoming_events} upcoming gig{dj.upcoming_events === 1 ? '' : 's'}</span>
+          <span>
+            {dj.upcoming_events} upcoming gig{dj.upcoming_events === 1 ? "" : "s"}
+          </span>
         </div>
       )}
     </Link>
