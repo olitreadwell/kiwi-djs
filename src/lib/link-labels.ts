@@ -64,19 +64,20 @@ export function linkDomain(url: string): string {
 }
 
 // Pills on an event lineup are capped, so the order decides what a visitor
-// sees: music first (they came for the sets), then socials and profiles.
+// sees: the artist's own channels first (SoundCloud, Mixcloud, Bandcamp,
+// socials), then the streaming catalogs, then directory entries.
 export const EVENT_LINK_PRIORITY: string[] = [
   "soundcloud",
   "mixcloud",
   "bandcamp",
-  "spotify",
-  "apple-music",
-  "beatport",
-  "youtube",
   "instagram",
   "facebook",
   "twitter",
   "resident-advisor",
+  "spotify",
+  "apple-music",
+  "beatport",
+  "youtube",
   "website",
   "radio",
   "festival",

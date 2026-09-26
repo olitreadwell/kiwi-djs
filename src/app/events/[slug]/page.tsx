@@ -195,11 +195,11 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
       ) : (
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {lineup.map((dj) => {
-            // The card is capped at five pills, so put the artist's music and
-            // socials first and skip the pill that points back at this event.
+            // The card is capped at six pills, so put the artist's own
+            // channels first and skip the pill that points back at this event.
             const djLinks = prioritiseEventLinks(
               (linksByDj.get(dj.id) ?? []).filter((link) => link.url !== event.url)
-            ).slice(0, 5);
+            ).slice(0, 6);
             return (
               <div
                 key={dj.id}
