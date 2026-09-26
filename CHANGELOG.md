@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-26 — Lineup artists link to their own profiles (#340)
+
+- The `resident-advisor` scraper now reads each listed artist's SoundCloud, Instagram, Facebook, Twitter, Bandcamp, Discogs and website off the RA GraphQL artist record, writes them as `dj_links`, and adds the artist's RA profile. 25 links landed for the Carlucci Carnival lineup, all from the exact artist on the listing, so no link comes from name matching
+- Profile URLs are normalised before they are stored (https, no `www.`, no trailing slash), and RA's signed-out Instagram stub is dropped, so one destination stays one pill
+- Event lineup cards order pills with music and socials first and no longer show the pill that points back at the event being read
+
 ## 2026-08-30 — Project rename to kiwi-djs (repo / Vercel / local dir)
 
 - GitHub repo renamed `olitreadwell/nz-djs` → `olitreadwell/kiwi-djs`; local dir → `/Users/olitreadwell/code/kiwi-djs`; origin remote updated

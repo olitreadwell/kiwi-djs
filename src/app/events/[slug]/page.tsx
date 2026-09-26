@@ -8,7 +8,7 @@ import {
   getEventSets,
   getVenues,
 } from "@/lib/queries";
-import { displayLabel, linkDomain } from "@/lib/link-labels";
+import { displayLabel, linkDomain, prioritiseEventLinks } from "@/lib/link-labels";
 import type { EventSetRow, LinkRow } from "@/lib/repo/types";
 
 export const dynamic = "force-dynamic";
@@ -195,7 +195,11 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
       ) : (
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {lineup.map((dj) => {
-            const djLinks = (linksByDj.get(dj.id) ?? []).slice(0, 5);
+            // The card is capped at five pills, so put the artist's music and
+            // socials first and skip the pill that points back at this event.
+            const djLinks = prioritiseEventLinks(
+              (linksByDj.get(dj.id) ?? []).filter((link) => link.url !== event.url)
+            ).slice(0, 5);
             return (
               <div
                 key={dj.id}

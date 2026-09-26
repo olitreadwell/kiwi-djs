@@ -62,3 +62,58 @@ export function linkDomain(url: string): string {
     return url;
   }
 }
+
+// Pills on an event lineup are capped, so the order decides what a visitor
+// sees: music first (they came for the sets), then socials and profiles.
+export const EVENT_LINK_PRIORITY: string[] = [
+  "soundcloud",
+  "mixcloud",
+  "bandcamp",
+  "spotify",
+  "apple-music",
+  "beatport",
+  "youtube",
+  "instagram",
+  "facebook",
+  "twitter",
+  "resident-advisor",
+  "website",
+  "radio",
+  "festival",
+];
+
+/** Same URL written two ways (".../bandcamp.com" vs ".../bandcamp.com/"). */
+function linkIdentity(url: string): string {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./i, "").toLowerCase();
+    return `https://${host}${parsed.pathname.replace(/\/+$/, "")}${parsed.search}`.toLowerCase();
+  } catch {
+    return url.toLowerCase();
+  }
+}
+
+/**
+ * Order one artist's links for a lineup card: known platforms first, and one
+ * pill per destination even when two sources stored the URL differently.
+ */
+export function prioritiseEventLinks<T extends { type: string; url: string }>(links: T[]): T[] {
+  const seen = new Set<string>();
+  return links
+    .filter((link) => {
+      const identity = linkIdentity(link.url);
+      if (seen.has(identity)) return false;
+      seen.add(identity);
+      return true;
+    })
+    .map((link, index) => ({ link, index }))
+    .sort((a, b) => {
+      const rank = (type: string): number => {
+        const position = EVENT_LINK_PRIORITY.indexOf(type);
+        return position === -1 ? EVENT_LINK_PRIORITY.length : position;
+      };
+      const byRank = rank(a.link.type) - rank(b.link.type);
+      return byRank !== 0 ? byRank : a.index - b.index;
+    })
+    .map((entry) => entry.link);
+}

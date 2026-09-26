@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { displayLabel, linkDomain, linkLabel, pillLabel } from "./link-labels";
+import {
+  displayLabel,
+  linkDomain,
+  linkLabel,
+  pillLabel,
+  prioritiseEventLinks,
+} from "./link-labels";
 
 describe("linkLabel", () => {
   it("prefers a stored label", () => {
@@ -42,5 +48,35 @@ describe("linkDomain", () => {
 
   it("returns the input when the URL is malformed", () => {
     expect(linkDomain("not a url")).toBe("not a url");
+  });
+});
+
+describe("prioritiseEventLinks", () => {
+  it("puts music and socials ahead of database entries", () => {
+    const sorted = prioritiseEventLinks([
+      { type: "discogs", url: "https://discogs.com/artist/1" },
+      { type: "instagram", url: "https://instagram.com/paigejulia.music" },
+      { type: "soundcloud", url: "https://soundcloud.com/paigelol" },
+    ]);
+    expect(sorted.map((link) => link.type)).toEqual(["soundcloud", "instagram", "discogs"]);
+  });
+
+  it("keeps one pill per destination when two sources stored the URL differently", () => {
+    const sorted = prioritiseEventLinks([
+      { type: "bandcamp", url: "https://paigejulia.bandcamp.com/" },
+      { type: "bandcamp", url: "https://www.paigejulia.bandcamp.com" },
+    ]);
+    expect(sorted).toHaveLength(1);
+  });
+
+  it("keeps the incoming order among equally ranked links", () => {
+    const sorted = prioritiseEventLinks([
+      { type: "website", url: "https://booking.example" },
+      { type: "website", url: "https://label.example" },
+    ]);
+    expect(sorted.map((link) => link.url)).toEqual([
+      "https://booking.example",
+      "https://label.example",
+    ]);
   });
 });
