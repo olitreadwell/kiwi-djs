@@ -32,6 +32,8 @@ export interface DjRow {
 export interface EventRow {
   id: string;
   name: string;
+  /** URL slug, "2026-carlucci-carnival" (#339). Null on rows written before the column. */
+  slug?: string | null;
   venue: string | null;
   starts_at: string;
   url: string | null;
@@ -206,6 +208,9 @@ export interface DataRepository {
   getVenueById(id: string): Promise<VenueRow | null>;
   getVenueEvents(venueName: string, limit?: number): Promise<EventRow[]>;
   getEventById(id: string): Promise<EventRow | null>;
+  getEventBySlug(slug: string): Promise<EventRow | null>;
+  /** Live links for a whole lineup in one read, so a gig page is not N queries (#340). */
+  getDjLinksForDjs(djIds: string[]): Promise<LinkRow[]>;
   getEventLineup(eventId: string): Promise<DjRow[]>;
   getEventSets(eventId: string): Promise<EventSetRow[]>;
   getWeekendEvents(limit?: number): Promise<EventRow[]>;

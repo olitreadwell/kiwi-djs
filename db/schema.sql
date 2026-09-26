@@ -257,3 +257,31 @@ CREATE INDEX IF NOT EXISTS idx_dj_mixes_dj ON dj_mixes(dj_id);
 -- events. An event with a lineup is a DJ event.
 UPDATE events e SET is_dj_event = TRUE
 WHERE EXISTS (SELECT 1 FROM event_djs ed WHERE ed.event_id = e.id) AND is_dj_event = FALSE;
+
+-- Event slugs (#339): /events/2026-carlucci-carnival reads better than
+-- /events/ra-2468041, and the scraper id stays valid as a redirect source.
+ALTER TABLE events ADD COLUMN IF NOT EXISTS slug TEXT;
+CREATE UNIQUE INDEX IF NOT EXISTS events_slug_unique ON events(slug) WHERE slug IS NOT NULL;
+
+-- Backfill slugs for rows that predate the column. Same shape the writer uses
+-- in src/lib/event-slug.ts: year in the venue timezone, then the name. Events
+-- that share a name and a year get -2, -3 and so on, ordered by date and id.
+WITH base AS (
+  SELECT id,
+         to_char(starts_at AT TIME ZONE 'Pacific/Auckland', 'YYYY')
+           || '-' ||
+           trim(both '-' from regexp_replace(lower(name), '[^a-z0-9]+', '-', 'g')) AS candidate,
+         starts_at
+  FROM events
+  WHERE slug IS NULL
+    AND name IS NOT NULL
+    AND starts_at IS NOT NULL
+    AND trim(both '-' from regexp_replace(lower(name), '[^a-z0-9]+', '-', 'g')) <> ''
+), numbered AS (
+  SELECT id, candidate, row_number() OVER (PARTITION BY candidate ORDER BY starts_at, id) AS n
+  FROM base
+)
+UPDATE events e
+SET slug = CASE WHEN n.n = 1 THEN n.candidate ELSE n.candidate || '-' || n.n END
+FROM numbered n
+WHERE e.id = n.id;

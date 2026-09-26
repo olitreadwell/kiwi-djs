@@ -43,6 +43,14 @@ export function getDjById(id: string): ReturnType<DataRepository["getDjById"]> {
   return getRepo().getDjById(id);
 }
 
+export function getEventBySlug(slug: string): ReturnType<DataRepository["getEventBySlug"]> {
+  return getRepo().getEventBySlug(slug);
+}
+
+export function getDjLinksForDjs(djIds: string[]): ReturnType<DataRepository["getDjLinksForDjs"]> {
+  return getRepo().getDjLinksForDjs(djIds);
+}
+
 export function getUpcomingEvents(limit = 60): ReturnType<DataRepository["getUpcomingEvents"]> {
   return getRepo().getUpcomingEvents(limit);
 }

@@ -42,7 +42,7 @@ export default async function VenuePage({ params }: { params: Promise<{ slug: st
             <li key={event.id} className="px-4 py-4">
               <div className="flex items-center justify-between gap-4">
                 <Link
-                  href={`/events/${event.id}`}
+                  href={`/events/${event.slug ?? event.id}`}
                   className="text-sm font-semibold text-foreground transition-colors hover:text-accent"
                 >
                   {event.name}

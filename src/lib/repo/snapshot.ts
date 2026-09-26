@@ -203,6 +203,21 @@ export class SnapshotRepo implements DataRepository {
     );
   }
 
+  async getDjLinksForDjs(djIds: string[]): Promise<LinkRow[]> {
+    const wanted = new Set(djIds);
+    return ((snapshot.links as LinkRow[] | undefined) ?? [])
+      .filter((link) => wanted.has(link.dj_id) && link.status !== "dead")
+      .map((link) => ({
+        ...link,
+        created_at: null,
+        helpful: link.helpful ?? 0,
+        unhelpful: link.unhelpful ?? 0,
+        followers: link.followers ?? 0,
+        track_count: link.track_count ?? 0,
+      }))
+      .sort((a, b) => a.dj_id.localeCompare(b.dj_id) || a.type.localeCompare(b.type));
+  }
+
   async getDjPastGigs(djId: string, limit = 20): Promise<EventRow[]> {
     const now = Date.now();
     const djEventIds = new Set(
@@ -297,6 +312,10 @@ export class SnapshotRepo implements DataRepository {
 
   async getEventById(id: string): Promise<EventRow | null> {
     return (snapshot.events as EventRow[]).find((event) => event.id === id) ?? null;
+  }
+
+  async getEventBySlug(slug: string): Promise<EventRow | null> {
+    return (snapshot.events as EventRow[]).find((event) => event.slug === slug) ?? null;
   }
 
   async getEventLineup(eventId: string): Promise<DjRow[]> {

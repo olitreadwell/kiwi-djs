@@ -1,4 +1,5 @@
 import type { Pool } from "pg";
+import { eventSlug, uniqueEventSlug } from "@/lib/event-slug";
 
 export interface EventRecord {
   id: string;
@@ -29,13 +30,36 @@ export async function upsertEvent(pool: Pool, event: EventRecord): Promise<boole
       return false;
     }
   }
+  const baseSlug = eventSlug(event.name, event.startsAt?.toISOString());
+  let slug = baseSlug;
+  if (baseSlug) {
+    // A new event takes the first free slug for its year and name; an existing
+    // row keeps the slug it already has, so URLs do not churn on every scrape.
+    const taken = await pool.query(
+      `SELECT slug FROM events WHERE id <> $2 AND (slug = $1 OR slug LIKE $1 || '-%')`,
+      [baseSlug, event.id]
+    );
+    slug = uniqueEventSlug(
+      baseSlug,
+      taken.rows.map((row) => String(row.slug))
+    );
+  }
   const result = await pool.query(
-    `INSERT INTO events (id, name, venue, starts_at, url, source)
-     VALUES ($1, $2, $3, $4, $5, $6)
+    `INSERT INTO events (id, name, venue, starts_at, url, source, slug)
+     VALUES ($1, $2, $3, $4, $5, $6, $7)
      ON CONFLICT (id) DO UPDATE
-       SET name = EXCLUDED.name, venue = EXCLUDED.venue, starts_at = EXCLUDED.starts_at, url = EXCLUDED.url
+       SET name = EXCLUDED.name, venue = EXCLUDED.venue, starts_at = EXCLUDED.starts_at, url = EXCLUDED.url,
+           slug = COALESCE(events.slug, EXCLUDED.slug)
      RETURNING (xmax = 0) AS inserted`,
-    [event.id, event.name, event.venue ?? null, event.startsAt, event.url ?? null, event.source]
+    [
+      event.id,
+      event.name,
+      event.venue ?? null,
+      event.startsAt,
+      event.url ?? null,
+      event.source,
+      slug,
+    ]
   );
   return result.rows[0]?.inserted === true;
 }

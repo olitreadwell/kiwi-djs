@@ -117,6 +117,13 @@ const { fixture } = vi.hoisted(() => ({
         url: "https://instagram.com/gone",
         status: "dead",
       },
+      {
+        id: "link-other",
+        dj_id: "retired-dj",
+        type: "soundcloud",
+        url: "https://soundcloud.com/retired",
+        status: "live",
+      },
     ],
     eventDjs: [
       {
@@ -315,7 +322,24 @@ describe("SnapshotRepo events, venues and dossiers", () => {
 
   it("returns empty lists for a DJ with nothing recorded", async () => {
     expect(await repo.getDjMixes("retired-dj")).toEqual([]);
-    expect(await repo.getDjLinks("retired-dj")).toEqual([]);
+    expect(await repo.getDjLinks("nobody-at-all")).toEqual([]);
     expect(await repo.getDjReleases("retired-dj")).toEqual([]);
+  });
+});
+
+describe("SnapshotRepo links for a lineup", () => {
+  it("returns every live link for the asked DJs in one read", async () => {
+    const links = await repo.getDjLinksForDjs(["paige-julia", "retired-dj"]);
+    expect(links.map((link) => link.id)).toEqual(["link-live", "link-other"]);
+  });
+
+  it("hides dead links and fills the counters", async () => {
+    const links = await repo.getDjLinksForDjs(["paige-julia"]);
+    expect(links.map((link) => link.id)).toEqual(["link-live"]);
+    expect(links[0]).toMatchObject({ helpful: 0, followers: 0, track_count: 0 });
+  });
+
+  it("answers an empty list for DJs with no links", async () => {
+    expect(await repo.getDjLinksForDjs(["nobody"])).toEqual([]);
   });
 });

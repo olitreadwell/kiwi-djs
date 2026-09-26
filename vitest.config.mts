@@ -23,6 +23,7 @@ export default defineConfig({
       // scripts/smoke.sh, scripts/contract-test.mjs and the e2e suite.
       include: [
         "src/lib/dataset.ts",
+        "src/lib/event-slug.ts",
         "src/lib/genres.ts",
         "src/lib/link-health.ts",
         "src/lib/link-labels.ts",

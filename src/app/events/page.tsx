@@ -66,7 +66,7 @@ export default async function EventsPage({
                 <li key={event.id} className="flex items-center justify-between gap-4 px-4 py-3">
                   <div>
                     <Link
-                      href={`/events/${event.id}`}
+                      href={`/events/${event.slug ?? event.id}`}
                       className="text-sm text-foreground transition-colors hover:text-accent"
                     >
                       {event.name}

@@ -22,7 +22,7 @@ const djs = (
 ).rows;
 const events = (
   await pool.query(
-    `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.archive_url, e.source, e.dj_id,
+    `SELECT e.id, e.name, e.slug, e.venue, e.starts_at, e.url, e.archive_url, e.source, e.dj_id,
        (e.is_dj_event OR EXISTS (SELECT 1 FROM event_djs ed WHERE ed.event_id = e.id)) AS is_dj_event,
        d.name AS dj_name
      FROM events e LEFT JOIN djs d ON d.id = e.dj_id`

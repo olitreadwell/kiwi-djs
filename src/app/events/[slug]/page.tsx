@@ -1,7 +1,15 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { getEventById, getEventLineup, getEventSets, getVenues } from "@/lib/queries";
-import type { EventSetRow } from "@/lib/repo/types";
+import { notFound, permanentRedirect } from "next/navigation";
+import {
+  getDjLinksForDjs,
+  getEventById,
+  getEventBySlug,
+  getEventLineup,
+  getEventSets,
+  getVenues,
+} from "@/lib/queries";
+import { displayLabel, linkDomain } from "@/lib/link-labels";
+import type { EventSetRow, LinkRow } from "@/lib/repo/types";
 
 export const dynamic = "force-dynamic";
 
@@ -47,16 +55,29 @@ function groupSetsByStage(sets: EventSetRow[]): Array<[string, SetSlot[]]> {
   return [...stages.entries()].map(([stage, slots]) => [stage, [...slots.values()]]);
 }
 
-export default async function EventPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const [event, lineup, sets, venues] = await Promise.all([
-    getEventById(id),
-    getEventLineup(id),
-    getEventSets(id),
+export default async function EventPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  // Slugs are the canonical URL. The scraper id still resolves, and sends the
+  // visitor on to the slug so old links and search results keep working (#339).
+  const event = (await getEventBySlug(slug)) ?? (await getEventById(slug));
+  if (!event) notFound();
+  if (event.slug && event.slug !== slug) permanentRedirect(`/events/${event.slug}`);
+
+  const [lineup, sets, venues] = await Promise.all([
+    getEventLineup(event.id),
+    getEventSets(event.id),
     getVenues(),
   ]);
   const timetable = groupSetsByStage(sets);
-  if (!event) notFound();
+
+  // One read for the whole lineup (#340), then group it so each card can show
+  // the artist's own SoundCloud, Instagram and the rest without leaving a gig.
+  const linksByDj = new Map<string, LinkRow[]>();
+  for (const link of await getDjLinksForDjs(lineup.map((dj) => dj.id))) {
+    const list = linksByDj.get(link.dj_id) ?? [];
+    list.push(link);
+    linksByDj.set(link.dj_id, list);
+  }
 
   const venue = event.venue
     ? venues.find((candidate) => candidate.name.toLowerCase() === event.venue!.toLowerCase())
@@ -173,18 +194,45 @@ export default async function EventPage({ params }: { params: Promise<{ id: stri
         <p className="mt-3 font-mono text-sm text-muted">No DJs mapped to this event yet.</p>
       ) : (
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          {lineup.map((dj) => (
-            <Link
-              key={dj.id}
-              href={`/djs/${dj.id}`}
-              className="rounded-lg border border-edge bg-surface p-4 transition-colors hover:border-accent/60"
-            >
-              <p className="text-sm font-semibold text-foreground">{dj.name}</p>
-              <p className="mt-1 font-mono text-xs text-muted">
-                {dj.genres.slice(0, 4).join(" / ") || "genre tbc"}
-              </p>
-            </Link>
-          ))}
+          {lineup.map((dj) => {
+            const djLinks = (linksByDj.get(dj.id) ?? []).slice(0, 5);
+            return (
+              <div
+                key={dj.id}
+                className="rounded-lg border border-edge bg-surface p-4 transition-colors hover:border-accent/60"
+              >
+                <Link
+                  href={`/djs/${dj.id}`}
+                  className="text-sm font-semibold text-foreground hover:text-accent"
+                >
+                  {dj.name}
+                </Link>
+                <p className="mt-1 font-mono text-xs text-muted">
+                  {dj.genres.slice(0, 4).join(" / ") || "genre tbc"}
+                </p>
+                {djLinks.length > 0 && (
+                  <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
+                    {djLinks.map((link) => (
+                      <li key={link.id}>
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex min-h-6 items-center font-mono text-xs text-accent hover:underline"
+                        >
+                          {displayLabel(link.type, link.label)} ↗
+                          <span className="sr-only">
+                            {" "}
+                            ({linkDomain(link.url)}, opens in a new tab)
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
 

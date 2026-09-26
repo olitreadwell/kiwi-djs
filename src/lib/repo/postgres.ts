@@ -47,7 +47,7 @@ const djSelect = `SELECT d.id, d.name, d.bio, d.summary, d.summary_long, d.genre
        (SELECT count(*) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS past_gig_count,
        (SELECT max(e2.starts_at) FROM event_djs ed2 JOIN events e2 ON e2.id = ed2.event_id WHERE ed2.dj_id = d.id AND e2.starts_at <= now()) AS last_played_at`;
 
-const eventSelect = `SELECT e.id, e.name, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region`;
+const eventSelect = `SELECT e.id, e.name, e.slug, e.venue, e.starts_at, e.url, e.source, e.dj_id, d.name AS dj_name, v.region`;
 
 function sortSql(sort?: string): string {
   switch (sort) {
@@ -266,6 +266,20 @@ export class PostgresRepo implements DataRepository {
     return result.rows as LinkRow[];
   }
 
+  async getDjLinksForDjs(djIds: string[]): Promise<LinkRow[]> {
+    if (djIds.length === 0) return [];
+    const pool = getPool();
+    const result = await pool.query(
+      `SELECT l.id, l.dj_id, l.type, l.url, l.label, l.archive_url, l.followers, l.track_count, l.status, l.created_at,
+              0::int AS helpful, 0::int AS unhelpful
+       FROM dj_links l
+       WHERE l.dj_id = ANY($1) AND l.status <> 'dead'
+       ORDER BY l.dj_id, l.type`,
+      [djIds]
+    );
+    return result.rows as LinkRow[];
+  }
+
   async getDjPastGigs(djId: string, limit = 20): Promise<EventRow[]> {
     const pool = getPool();
     const result = await pool.query(
@@ -372,6 +386,17 @@ export class PostgresRepo implements DataRepository {
        FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
        WHERE e.id = $1`,
       [id]
+    );
+    return (result.rows[0] as EventRow) ?? null;
+  }
+
+  async getEventBySlug(slug: string): Promise<EventRow | null> {
+    const pool = getPool();
+    const result = await pool.query(
+      `${eventSelect}
+       FROM events e LEFT JOIN djs d ON d.id = e.dj_id LEFT JOIN venues v ON v.name = e.venue
+       WHERE e.slug = $1`,
+      [slug]
     );
     return (result.rows[0] as EventRow) ?? null;
   }
