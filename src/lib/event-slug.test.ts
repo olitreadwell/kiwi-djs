@@ -29,7 +29,7 @@ describe("eventYear", () => {
     expect(eventYear("2027-01-01T01:00:00+13:00")).toBe("2027");
   });
 
-  it("returns null for a missing or unparseable date", () => {
+  it("returns null for a missing or unparsable date", () => {
     expect(eventYear(null)).toBeNull();
     expect(eventYear("not a date")).toBeNull();
   });

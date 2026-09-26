@@ -50,7 +50,8 @@ export function parseUpdates(body) {
   const pipRe = /Updates:?\s+([\w.-]+) from ([\w.+-]+) to ([\w.+-]+)/g;
   const backtickRe = /Updates?\s+`([^`]+)` from ([\w.+-]+) to ([\w.+-]+)/g;
   for (const m of body.matchAll(linkTableRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
-  for (const m of body.matchAll(plainTableRe)) updates.push({ name: m[1].trim(), from: m[2], to: m[3] });
+  for (const m of body.matchAll(plainTableRe))
+    updates.push({ name: m[1].trim(), from: m[2], to: m[3] });
   for (const m of body.matchAll(singleRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
   for (const m of body.matchAll(pipRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
   for (const m of body.matchAll(backtickRe)) updates.push({ name: m[1], from: m[2], to: m[3] });
@@ -91,18 +92,24 @@ export async function pypiReleaseDate(name, version) {
 }
 
 export async function githubReleaseDate(name, version) {
-  const headers = process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {};
+  const headers = process.env.GITHUB_TOKEN
+    ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+    : {};
   const tags = [];
   if (!/^[0-9a-f]{40}$/.test(version)) tags.push(version, `v${version}`);
   for (const tag of tags) {
-    const release = await fetch(`https://api.github.com/repos/${name}/releases/tags/${tag}`, { headers });
+    const release = await fetch(`https://api.github.com/repos/${name}/releases/tags/${tag}`, {
+      headers,
+    });
     if (release.ok) {
       const doc = await release.json();
       if (doc?.published_at) return new Date(doc.published_at);
     }
   }
   for (const tag of tags) {
-    const ref = await fetch(`https://api.github.com/repos/${name}/git/ref/tags/${tag}`, { headers });
+    const ref = await fetch(`https://api.github.com/repos/${name}/git/ref/tags/${tag}`, {
+      headers,
+    });
     if (!ref.ok) continue;
     const refDoc = await ref.json();
     const sha = refDoc?.object?.sha;
@@ -166,7 +173,13 @@ export function dependencyTypeOf(name, body) {
 // A job that never started because the account is out of Actions minutes says
 // nothing about the dependency bump, and no dependency change can fix it.
 const BILLING_MARKER = "recent account payments have failed";
-const FAILED_CONCLUSIONS = ["FAILURE", "CANCELLED", "TIMED_OUT", "STARTUP_FAILURE", "ACTION_REQUIRED"];
+const FAILED_CONCLUSIONS = [
+  "FAILURE",
+  "CANCELLED",
+  "TIMED_OUT",
+  "STARTUP_FAILURE",
+  "ACTION_REQUIRED",
+];
 
 export function repoSlug(prUrl) {
   if (process.env.GITHUB_REPOSITORY) return process.env.GITHUB_REPOSITORY;
@@ -184,7 +197,9 @@ export function billingOnlyFailure(repo, check) {
   if (!repo || !jobId) return false;
   try {
     const lines = gh(`api repos/${repo}/check-runs/${jobId}/annotations --jq '.[].message'`)
-      .split("\n").map((line) => line.trim()).filter(Boolean);
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
     return lines.length > 0 && lines.every((line) => line.includes(BILLING_MARKER));
   } catch {
     return false;
@@ -196,7 +211,9 @@ export function billingOnlyFailure(repo, check) {
 function failingOnBaseBranch(repo, branch) {
   const red = new Set();
   try {
-    const runs = JSON.parse(gh(`api repos/${repo}/commits/${branch}/check-runs?filter=latest&per_page=100`)).check_runs ?? [];
+    const runs =
+      JSON.parse(gh(`api repos/${repo}/commits/${branch}/check-runs?filter=latest&per_page=100`))
+        .check_runs ?? [];
     for (const run of runs) if (run.conclusion === "failure") red.add(run.name);
   } catch {
     return red;
@@ -219,7 +236,10 @@ export function blockingCheck(prUrl) {
   const repo = repoSlug(prUrl);
   const failed = rollup.filter((c) => FAILED_CONCLUSIONS.includes(c.conclusion));
   const billing = failed.filter((c) => billingOnlyFailure(repo, c));
-  const baseRed = repo && baseBranch && failed.length > billing.length ? failingOnBaseBranch(repo, baseBranch) : new Set();
+  const baseRed =
+    repo && baseBranch && failed.length > billing.length
+      ? failingOnBaseBranch(repo, baseBranch)
+      : new Set();
   const real = failed.filter((c) => !billing.includes(c) && !baseRed.has(c.name));
   if (real.length > 0) {
     return `failing checks: ${real.map((c) => c.name).join(", ")}`;
@@ -228,20 +248,21 @@ export function blockingCheck(prUrl) {
   // job that never started carries no signal while that lasts.
   const billingBlocked = billing.length > 0;
   const pending = rollup.filter(
-    (c) => c.status !== "COMPLETED" && (billingBlocked ? Boolean(c.startedAt) : true),
+    (c) => c.status !== "COMPLETED" && (billingBlocked ? Boolean(c.startedAt) : true)
   );
   if (pending.length > 0) {
     return `checks still running: ${pending.map((c) => c.name).join(", ")}`;
   }
   const ignored = billing.length + failed.filter((c) => baseRed.has(c.name)).length;
   if (ignored > 0) {
-    console.log(`dependabot-auto-merge: ignoring ${ignored} check(s) that never ran or were already red on ${baseBranch}`);
+    console.log(
+      `dependabot-auto-merge: ignoring ${ignored} check(s) that never ran or were already red on ${baseBranch}`
+    );
   }
   return null;
 }
 
 async function releaseDateFor(name, version, ecosystem) {
-
   if (ecosystem === "pip") return pypiReleaseDate(name, version);
   if (ecosystem === "actions") return githubReleaseDate(name, version);
   return npmReleaseDate(name, version);
@@ -257,7 +278,10 @@ function ecosystemOf(body) {
 async function main() {
   const info = prUrl
     ? JSON.parse(gh(`pr view ${prUrl} --json body,labels -q .`))
-    : { body: process.env.PR_BODY ?? "", labels: (process.env.PR_LABELS ?? "").split(",").filter(Boolean) };
+    : {
+        body: process.env.PR_BODY ?? "",
+        labels: (process.env.PR_LABELS ?? "").split(",").filter(Boolean),
+      };
   const body = info.body;
   const labels = (info.labels ?? []).map((l) => (typeof l === "string" ? l : l.name));
   const updates = parseUpdates(body);
@@ -282,18 +306,23 @@ async function main() {
 
     if (security) continue;
     const lowRisk =
-      delta !== null && delta !== "major" &&
+      delta !== null &&
+      delta !== "major" &&
       (depType === "development" || depType === "actions" || delta === "patch");
     if (!lowRisk) {
       allow = false;
-      console.log(`dependabot-auto-merge: human review needed, ${update.name} ${update.from} -> ${update.to} (${depType}, ${delta ?? "?"})`);
+      console.log(
+        `dependabot-auto-merge: human review needed, ${update.name} ${update.from} -> ${update.to} (${depType}, ${delta ?? "?"})`
+      );
     }
   }
 
   const mature = security || (youngest !== null && youngest >= MIN_AGE_DAYS);
   if (!mature) {
     allow = false;
-    console.log(`dependabot-auto-merge: youngest release ${youngest === null ? "unknown" : youngest.toFixed(1) + " days"} old, need ${MIN_AGE_DAYS}; waiting`);
+    console.log(
+      `dependabot-auto-merge: youngest release ${youngest === null ? "unknown" : youngest.toFixed(1) + " days"} old, need ${MIN_AGE_DAYS}; waiting`
+    );
   }
 
   if (allow && requireGreenChecks()) {
@@ -306,13 +335,17 @@ async function main() {
 
   if (allow) {
     if (dryRun) {
-      console.log(`dependabot-auto-merge: dry-run would enable auto-merge (${updates.map((u) => u.name).join(", ")})`);
+      console.log(
+        `dependabot-auto-merge: dry-run would enable auto-merge (${updates.map((u) => u.name).join(", ")})`
+      );
     } else {
       try {
         gh(`pr merge ${prUrl} --auto --squash`);
         console.log(`dependabot-auto-merge: auto-merge enabled for ${prUrl}`);
       } catch (err) {
-        console.log(`dependabot-auto-merge: could not enable auto-merge (${err.message.split("\n")[0]}); keeping PR open`);
+        console.log(
+          `dependabot-auto-merge: could not enable auto-merge (${err.message.split("\n")[0]}); keeping PR open`
+        );
       }
     }
   } else {
